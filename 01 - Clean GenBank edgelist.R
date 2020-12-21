@@ -2,7 +2,7 @@
 library(tidyverse)
 setwd("~/Github/virion")
 
-source("taxize-cleaner-clone.R")
+source("00-taxize-cleaner-clone.R")
 
 # read in host data
 
