@@ -7,9 +7,13 @@ VIRION is the crown jewel of Verena's open data ecosystem, and is the largest op
 ### Active Curators
 
 Gregory Albery (Georgetown University)
+
 Colin Carlson (Georgetown University)
+
 Ryan Connor (NCBI)
+
 Rory Gibb (London School of Tropical Medicine and Hygiene)
+
 Timothée Poisot (Université de Montreal)
 
 ### Points of Contact
