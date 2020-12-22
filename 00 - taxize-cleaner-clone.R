@@ -85,7 +85,7 @@ findSyns2 = function(x){
   # synonyms = unique(recs$canonicalform)
   
   # (4) search for species synonyms in ITIS
-  syns = tryCatch(suppressMessages(synonyms(taxa, db='itis')), error=function(e) e)
+  syns = tryCatch(suppressMessages(synonyms(get_tsn(taxa, ask = FALSE, accepted = TRUE), db='itis')), error=function(e) e)
   if(class(syns)[1] == 'simpleError'){ return(data.frame(Original=taxname, Submitted=taxa, Accepted_name="failed", Selected_family=family2, Selected_order=order2, Selected_class=class2, Synonyms="failed"))}
   syns = as.data.frame(syns[[1]])
   
