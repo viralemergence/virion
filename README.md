@@ -39,24 +39,24 @@ Unlike nearly every dataset familiar to disease ecologists, the dataset includes
 
 ### Current Workflow (Dec. 20, 2020)
 
-1. Processing the GenBank dataset
+1. Processing the NCBI GenBank dataset
 - GenBank data were downloaded as a flat file on Nov. 20, 2020
 - A script has been adapted from the CLOVER workflow that implements taxonomic cleaning using the R package `taxize`
-- All 8,000+ hosts in GenBank need to be cleaned following this protocol
+- All 8,000+ hosts in GenBank were cleaned following this protocol, and bound to the GenBank file
+- This was then subsetted to vertebrate records only
 - (Not yet implemented) These need to be linked to the NCBI taxonomy using either `taxize` or `NCBITaxonomy.jl`, which will capture records at high taxonomic levels (e.g., bacterial family: Enterobacteriaceae), including specific use cases of unresolved names (e.g., "Bacillus sp." needs to be split into "Bacillus" based on a special "* sp." case, so the genus can be linked to _Bacillus_)
 - (Not yet implemented) All host and virus taxonomy should be filtered to every virus recorded associated with vertebrates
 
-2. Merging GenBank into the CLOVER backbone (Not yet implemented)
-- The column names need to be harmonized across these datasets
-- Bespoke columns need to be added to the GenBank component that identify the provenance of the data (GenBank), the diagnostic method ("PCR / Sequence")
-- The records need to be joined
+2. Processing the NCBI SRA dataset
+- @Tim and @Ryan eventually we need a lot more about how we get from SRA raw to NCBI-SRA 
+- Using a Python script with the list of host names, every mammal name is subsetted to a file that is used to filter the SRA data down
+- SRA-Mammals is compared against CLOVER and a cutoff log(score) is selected that maximizes the kappa statistic, treating CLOVER records as true presences and every other pair as pseudoabsences
+- SRA-Vertebrates is re-thresholded 
 
-3. Processing the NCBI SRA dataset
-- (?)
-
-4. Merging the NCBI SRA dataset into the CLOVER backbone
-- (?)
-
+3. VIRION is assembled
+- GenBank is formatted into the CLOVER template, and added
+- SRA is formatted into the CLOVER template, and added
+- (Not yet implemented) as a final step, all phage families are removed using NCBITaxonomy or Ryan's python script
 
 # The team
 
