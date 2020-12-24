@@ -6,21 +6,17 @@ VIRION is the crown jewel of Verena's open data ecosystem, and is the largest op
 
 # The team
 
-### Active Curators
+### Developers 
+- Gregory Albery (Georgetown University)
+- Colin Carlson (Georgetown University)
+- Ryan Connor (NCBI)
+- Rory Gibb (London School of Tropical Medicine and Hygiene)
+- Timothée Poisot (Université de Montreal)
 
-Gregory Albery (Georgetown University)
-
-Colin Carlson (Georgetown University)
-
-Ryan Connor (NCBI)
-
-Rory Gibb (London School of Tropical Medicine and Hygiene)
-
-Timothée Poisot (Université de Montreal)
-
-### Points of Contact
-
-If you have a question about the structure of the data, please reach out to Timothée Poisot (timothee.poisot@umontreal.ca) or Colin Carlson (colin.carlson@georgetown.edu).
+### Contact
+- For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu).
+- For specific questions about VIRION-SRA, please contact Timothée Poisot (timothee.poisot@umontreal.ca) 
+- For specific questions about CLOVER, please contact Rory Gibb (rory.gibb.14@ucl.ac.uk)
 
 # The workflow
 
