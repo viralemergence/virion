@@ -6,7 +6,7 @@ setwd("~/Github/virion")
 
 # Load SRA, process to a maximum score based edgelist
 
-sra <- read_delim("SRA_as_Edgelist.edges", delim = ',')
+sra <- read_delim("./Source/SRA_as_Edgelist.edges", delim = ',')
 
 sra %>% 
   group_by(from, to) %>%
@@ -17,7 +17,7 @@ sra %>%
 
 # Load SRA-mammals courtesy of Ryan's python script, and subset, to threshold appropriately
 
-mammals <- read_csv("taxonomy_mammal_hosts.csv")
+mammals <- read_csv("./Intermediate/taxonomy_mammal_hosts.csv")
 
 sra.v %>% 
   filter(Host %in% mammals$name) -> sra.m
@@ -72,7 +72,7 @@ cut.score <- th$scaled[th$Method == 'MaxKappa']
 
 # Now it's time to use this threshold 
 
-virion <- read_csv("Virion-Temp.csv")
+virion <- read_csv("./Intermediate/Virion-Temp.csv")
 
 maxscore <- max(log(sra.m$score))
 
@@ -103,37 +103,37 @@ write_csv(virion, 'VIRION.csv')
 ########################################################
 
 # Quickly check overlaps
-
-memory.limit(10000000000)
-
-library(ggregplot); library(igraph); library(colorspace); library(cowplot); library(patchwork)
-
-virion %>% dplyr::select(Host, Virus, Database) %>% unique %>% 
-  unite("Assoc", Host, Virus, sep = "_") %>% 
-  table() -> M1
-
-SocGraph <- graph_from_incidence_matrix(M1)
-Proj <- bipartite.projection(SocGraph)$proj2
-AM <- Proj %>% get.adjacency(attr = "weight") %>% as.matrix
-Observations = colSums(M1)
-Matrix <- AM
-N <- Matrix %>% nrow
-A <- rep(Observations, each = N)
-AMatrix <- matrix(A, ncol = N)
-AM <- (Matrix/(AMatrix))
-
-AM %>% reshape2::melt() %>% 
-  rename_all(~str_replace(.x, "Var", "DB")) %>% 
-  mutate_at("value", 
-            ~(.x*100) %>% round) %>% 
-  mutate(Percent = paste0(value, "%")) %>% 
-  filter(!DB1 == DB2) %>% 
-  ggplot(aes(DB1, DB2)) + 
-  geom_tile(aes(fill = value)) + 
-  scale_y_discrete(limits = c(rev(colnames(AM)))) +
-  coord_fixed() + 
-  labs(x = NULL, y = NULL, fill = "% Shared") +
-  geom_text(aes(label = Percent, colour = as.factor(value>60))) +
-  scale_colour_manual(values = c("black", "white"), guide = F) +
-  scale_fill_continuous_sequential(palette = AlberPalettes[[1]], limits = c(0, 100))
-
+# 
+# memory.limit(10000000000)
+# 
+# library(ggregplot); library(igraph); library(colorspace); library(cowplot); library(patchwork)
+# 
+# virion %>% dplyr::select(Host, Virus, Database) %>% unique %>% 
+#   unite("Assoc", Host, Virus, sep = "_") %>% 
+#   table() -> M1
+# 
+# SocGraph <- graph_from_incidence_matrix(M1)
+# Proj <- bipartite.projection(SocGraph)$proj2
+# AM <- Proj %>% get.adjacency(attr = "weight") %>% as.matrix
+# Observations = colSums(M1)
+# Matrix <- AM
+# N <- Matrix %>% nrow
+# A <- rep(Observations, each = N)
+# AMatrix <- matrix(A, ncol = N)
+# AM <- (Matrix/(AMatrix))
+# 
+# AM %>% reshape2::melt() %>% 
+#   rename_all(~str_replace(.x, "Var", "DB")) %>% 
+#   mutate_at("value", 
+#             ~(.x*100) %>% round) %>% 
+#   mutate(Percent = paste0(value, "%")) %>% 
+#   filter(!DB1 == DB2) %>% 
+#   ggplot(aes(DB1, DB2)) + 
+#   geom_tile(aes(fill = value)) + 
+#   scale_y_discrete(limits = c(rev(colnames(AM)))) +
+#   coord_fixed() + 
+#   labs(x = NULL, y = NULL, fill = "% Shared") +
+#   geom_text(aes(label = Percent, colour = as.factor(value>60))) +
+#   scale_colour_manual(values = c("black", "white"), guide = F) +
+#   scale_fill_continuous_sequential(palette = AlberPalettes[[1]], limits = c(0, 100))
+# 

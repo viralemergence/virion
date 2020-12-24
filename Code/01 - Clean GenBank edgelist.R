@@ -1,19 +1,19 @@
 
 library(tidyverse)
-setwd("/nfs/ccarlson-data/virion-main")
+setwd("~/Github/virion")
 
-source("00 - taxize-cleaner-clone.R")
+source("./Code/00 - taxize-cleaner-clone.R")
 
 # Read in host data
 
-unzip("GenBank_as_Edgelist.zip", exdir = getwd())
-gb <- data.table::fread("GenBank_as_Edgelist.csv")
+unzip("./Source/GenBank_as_Edgelist.zip", exdir = './Source/')
+gb <- data.table::fread("./Source/GenBank_as_Edgelist.csv")
 gb %>% as_tibble -> gb
 hosts_vec <- unique(na.omit(gb$Host))
 synonyms <- lapply(1:length(hosts_vec), findSyns3)
 synonyms %>% bind_rows() -> host.dictionary
 
-write_rds(host.dictionary, "HostDictionary.RDS")
+write_rds(host.dictionary, "./Intermediate/HostDictionary.RDS")
 
 # Double check if the dictionary needs expansion
 
@@ -47,5 +47,5 @@ gb2 %>% filter(Selected_class %in% c("Mammalia",
   unique() -> gb2
 
 
-#data.table::fwrite(gb2, 'GenBank-Taxized.csv')
-#zip(zipfile = 'GBTaxized.zip', files = 'GenBank-Taxized.csv') 
+data.table::fwrite(gb2, './Intermediate/GenBank-Taxized.csv')
+zip(zipfile = './Intermediate/GBTaxized.zip', files = './Intermediate/GenBank-Taxized.csv') 
