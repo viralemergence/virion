@@ -1,4 +1,4 @@
-<img align="right" src="Verena Icons_VIrion Black.png"  width="200">
+<img align="right" src="virion.png"  width="200">
 
 # VIRION: The Global Virome, in One Network
 
