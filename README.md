@@ -1,6 +1,6 @@
 <img align="right" src="Virion.png"  width="200">
 
-# VIRION: The Global Virome, in One Network
+# VIRION: The Virome, in One Network
 
 VIRION is the crown jewel of Verena's open data ecosystem, and is the largest open database of host-virus interactions encompassing the vertebrate virome. The VIRION database is curated by an entire team of researchers, with the aim of being up-to-date, accurrate, transparent, and useful.
 
