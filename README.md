@@ -6,6 +6,8 @@ VIRION is the crown jewel of Verena's open data ecosystem, and is the largest op
 
 # The team
 
+VIRION owes significant thanks to the entire Verena Consortium for conception, design input, and beta testing.
+
 ### Developers 
 - Gregory Albery (Georgetown University)
 - Colin Carlson (Georgetown University)
