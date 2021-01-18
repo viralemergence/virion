@@ -13,17 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: dependencies
+    - name: dependencies 1
       run: |
-        Rscript -e 'user_lib <- Sys.getenv("R_LIBS_USER"); install.packages(c("taxize","rgbif","doParallel","plyr"), lib = user_lib)'
+        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","plyr"))'
     - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
       run: |
         Rscript -e 'source("Code/01-Clean-GenBank-edgelist.R")'
-  Virion:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: dependencies
+    - name: dependencies 2
       run: |
         Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
         Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
@@ -31,11 +27,7 @@ jobs:
     - name: create VIRION
       run: |
         Rscript -e 'source("Code/02-Create-VIRION-from-GenBank-and-CLOVER.R")'
-  VirionSRA:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: dependencies
+    - name: dependencies 3
       run: |
         Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
         Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
