@@ -9,7 +9,7 @@ on:
     - cron: "0 0 * * 0"
   workflow_dispatch:
 jobs:
-  001:
+  cleanUp:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
     - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
       run: |
         Rscript -e 'source("Code/01-Clean-GenBank-edgelist.R")'
-  02:
+  Virion:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -34,7 +34,7 @@ jobs:
     - name: create VIRION
       run: |
         Rscript -e 'source("Code/02-Create-VIRION-from-GenBank-and-CLOVER.R")'
-  03:
+  VirionSRA:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
