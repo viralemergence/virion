@@ -15,11 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: dependencies
       run: |
-        Rscript -e 'user_lib <- Sys.getenv("R_LIBS_USER")'         
-        Rscript -e 'install.packages("taxize", lib = user_lib)'
-        Rscript -e 'install.packages("rgbif", lib = user_lib)'
-        Rscript -e 'install.packages("doParallel", repos="https://cloud.r-project.org")'
-        Rscript -e 'install.packages("plyr", repos="https://cloud.r-project.org")'
+        Rscript -e 'user_lib <- Sys.getenv("R_LIBS_USER"); install.packages(c("taxize","rgbif","doParallel","plyr"), lib = user_lib)'
     - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
       run: |
         Rscript -e 'source("Code/01-Clean-GenBank-edgelist.R")'
