@@ -1,12 +1,15 @@
 
 library(tidyverse)
-setwd("~/Github/virion")
+
+# setwd("~/Github/virion")
+
+setwd(here::here())
 
 source("./Code/00 - taxize-cleaner-clone.R")
 
 # Read in host data
 
-unzip("./Source/GenBank_as_Edgelist.zip", exdir = './Source/')
+unzip("./Source/GenBank_as_Edgelist.zip", exdir = 'Source')
 gb <- data.table::fread("./Source/GenBank_as_Edgelist.csv")
 gb %>% as_tibble -> gb
 hosts_vec <- unique(na.omit(gb$Host))
