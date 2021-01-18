@@ -1,0 +1,47 @@
+name: Compile virion
+
+# Controls when the action will run. 
+on:
+  push:
+    branches: [ master ]
+  # run once a week
+  schedule:
+    - cron: "0 0 * * 0"
+jobs:
+  001:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: |
+        Rscript -e 'install.packages("taxize", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("rgbif", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("doParallel", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("plyr", repos="https://cloud.r-project.org")'
+    - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
+      run: |
+        Rscript -e 'source("Code/01-Clean-GenBank-edgelist.R")'
+  02:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: |
+        Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("readr", repos="https://cloud.r-project.org")'
+    - name: create VIRION
+      run: |
+        Rscript -e 'source("Code/02-Create-VIRION-from-GenBank-and-CLOVER.R")'
+  03:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: dependencies
+      run: |
+        Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
+        Rscript -e 'install.packages("PresenceAbsence", repos="https://cloud.r-project.org")'
+    - name: run 03 format SRA and merge into VIRION
+      run: |
+        Rscript -e 'source("Code/03-Format-SRA-and-merge-into-VIRION.R")'
