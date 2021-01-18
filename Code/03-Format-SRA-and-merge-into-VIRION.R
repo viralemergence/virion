@@ -1,14 +1,10 @@
-
 library(magrittr)
 library(tidyverse)
-
-# setwd("~/Github/virion")
-
-setwd(here::here())
+library(PresenceAbsence)
 
 # Load SRA, process to a maximum score based edgelist
 
-sra <- read_delim("./Source/SRA_as_Edgelist.edges", delim = ',')
+sra <- read_delim("Source/SRA_as_Edgelist.edges", delim = ',')
 
 sra %>% 
   group_by(from, to) %>%
@@ -18,13 +14,14 @@ sra %>%
   unique() -> sra.v
 
 # Load SRA-mammals courtesy of Ryan's python script, and subset, to threshold appropriately
-
-mammals <- read_csv("./Intermediate/taxonomy_mammal_hosts.csv")
+mammals <- read_csv("Intermediate/taxonomy_mammal_hosts.csv")
 
 sra.v %>% 
   filter(Host %in% mammals$name) -> sra.m
 
-clo <- read_csv("~/github/clover/output/Clover_v1.0_NBCIreconciled_20201211.csv")
+# clo <- read_csv("~/github/clover/output/Clover_v1.0_NBCIreconciled_20201211.csv")
+
+clo <- read.csv('Intermediate/clover.csv')
 
 # Mark the ones that are in CLOVER
 clo %<>% mutate(Clover = 1)
@@ -35,17 +32,14 @@ clo %<>% right_join(sra.m)
 # Mark the ones that AREN'T in CLOVER
 clo$Clover[is.na(clo$Clover)] <- 0
 
+
 # Check out how score behaves
-
 library(ggplot2)
-
 ggplot(clo, aes(x = factor(Clover), y = log(score))) + 
   geom_violin()
 
+
 # Time to threshold this in such a way that we're sure of what we're working with
-
-library(PresenceAbsence)
-
 clo %>% mutate(rownum = c(1:nrow(clo)),
                scaled = log(score)/max(log(score))) -> clo
 
@@ -67,14 +61,15 @@ clo %<>% filter(Clover == 1 | scaled > th$scaled[th$Method == 'MaxKappa'])
 clo %>% count(Clover)
 
 # Pull out the threshold from SRA-M we're going to apply to all of SRA-V
-
 cut.score <- th$scaled[th$Method == 'MaxKappa']
 
-########################################################
 
+
+
+########################################################
 # Now it's time to use this threshold 
 
-virion <- read_csv("./Intermediate/Virion-Temp.csv")
+virion <- read_csv("Intermediate/Virion-Temp.csv")
 
 maxscore <- max(log(sra.m$score))
 
@@ -100,7 +95,8 @@ sra.v %>%
 
 virion %<>% bind_rows(virion.sra)
 
-write_csv(virion, 'VIRION.csv')
+write_csv(virion, 'VIRION_yay.csv')
+
 
 ########################################################
 

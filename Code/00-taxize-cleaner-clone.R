@@ -1,11 +1,14 @@
-
-# taxize/GBIF
 library(taxize)
 library(rgbif)
 library(doParallel)
 library(plyr)
 
-# function to find and resolve taxonomic synonyms based on Encyclopedia of Life
+
+#' function to find and resolve taxonomic synonyms based on Encyclopedia of Life
+#'
+#'
+#' @param x
+#' @return a thing
 findSyns2 = function(x){
   
   # get specific species name
@@ -112,8 +115,14 @@ findSyns2 = function(x){
   return(result)
 }
 
-# nest function within a tryCatch call in case of any errors
+
+#' nest function within a tryCatch call in case of any errors
+#'
+#'
+#' @param x
+#' @return a thing
 findSyns3 = function(x){
   result = tryCatch(findSyns2(x), error=function(e) NULL)
   return(result)
 }
+
