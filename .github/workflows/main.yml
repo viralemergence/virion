@@ -9,29 +9,19 @@ on:
     - cron: "0 0 * * 0"
   workflow_dispatch:
 jobs:
-  cleanUp:
+  doTheThing:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: dependencies 1
+    - name: dependencies!!!!
       run: |
-        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","plyr"))'
+        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr", "PresenceAbsence"))'
     - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
       run: |
         Rscript -e 'source("Code/01-Clean-GenBank-edgelist.R")'
-    - name: dependencies 2
-      run: |
-        Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
-        Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
-        Rscript -e 'install.packages("readr", repos="https://cloud.r-project.org")'
     - name: create VIRION
       run: |
         Rscript -e 'source("Code/02-Create-VIRION-from-GenBank-and-CLOVER.R")'
-    - name: dependencies 3
-      run: |
-        Rscript -e 'install.packages("tidyverse", repos="https://cloud.r-project.org")'
-        Rscript -e 'install.packages("magrittr", repos="https://cloud.r-project.org")'
-        Rscript -e 'install.packages("PresenceAbsence", repos="https://cloud.r-project.org")'
     - name: run 03 format SRA and merge into VIRION
       run: |
         Rscript -e 'source("Code/03-Format-SRA-and-merge-into-VIRION.R")'
