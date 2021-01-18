@@ -3,14 +3,41 @@
 
 library(tidyverse)
 library(magrittr)
+library(readr)
 
 # Pull in the required pieces
 
-setwd("~/Github/virion")
+setwd(here::here())
 
-clo <- read_csv("~/github/clover/output/Clover_v1.0_NBCIreconciled_20201211.csv")
+# setwd("~/Github/virion")
+# clo <- read_csv("~/github/clover/output/Clover_v1.0_NBCIreconciled_20201211.csv")
+# Greg just flagging that this was an old version 
 
-gb <- read_csv("./Intermediate/GenBank-Taxized.csv")
+if(file.exists("Intermediate/clover.csv")){
+  
+  clo <- read.csv("Intermediate/clover.csv")
+  
+}else{
+  
+  clo <- 
+    read.csv("https://raw.githubusercontent.com/viralemergence/clover/main/output/Clover_v1.0_NBCIreconciled_20201218.csv")
+  
+  write.csv(clo, file = "Intermediate/clover.csv")
+  
+}
+
+if(file.exists("Intermediate/GenBank-Taxized.csv")){
+  
+  gb <- read_csv("Intermediate/GenBank-Taxized.csv")
+  
+}else{  
+  
+  unzip(zipfile = './Intermediate/GBTaxized.zip', exdir = './Intermediate') 
+  
+  gb <- read_csv("Intermediate/GenBank-Taxized.csv")
+  
+}
+
 
 gb %<>% mutate(Year = NA, # Fix the fact it drops year at the import stage 
               YearType = "GenBank", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format

@@ -52,3 +52,8 @@ gb2 %>% filter(Selected_class %in% c("Mammalia",
 
 data.table::fwrite(gb2, './Intermediate/GenBank-Taxized.csv')
 zip(zipfile = './Intermediate/GBTaxized.zip', files = './Intermediate/GenBank-Taxized.csv') 
+
+
+# Greg Edits for dates ####
+
+unzip(zipfile = './Intermediate/GBTaxized.zip', exdir = './Intermediate') 

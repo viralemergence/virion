@@ -2,7 +2,9 @@
 library(magrittr)
 library(tidyverse)
 
-setwd("~/Github/virion")
+# setwd("~/Github/virion")
+
+setwd(here::here())
 
 # Load SRA, process to a maximum score based edgelist
 
