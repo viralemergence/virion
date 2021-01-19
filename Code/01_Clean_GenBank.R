@@ -27,8 +27,8 @@ gb <- data.table::fread("Source/sequences.csv") %>%
   as_tibble
 
 gb %>% 
-  rename(Publication_Date = Release_Date) %>% 
-  mutate_at("Publication_Date", ~.x %>% # Modifying date column to make sense
+  rename(Release_Date = Release_Date) %>% 
+  mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
               str_split("T") %>% # Splitting at this midpoint
               map_chr(1) %>% # Taking the first component 
               lubridate::ymd() # Coding as YMD (shouldn't throw errors)
@@ -133,7 +133,7 @@ gb2 %>% filter(Selected_class %in% c("Mammalia", # Selecting host taxa
          Virus = Species, # Selecting and renaming columns
          Host = Accepted_name, 
          Selected_family, Selected_order, Selected_class,
-         Publication_Date, 
+         Release_Date, 
          Collection_Date) %>% 
   unique() -> gb2
 
@@ -147,10 +147,10 @@ gb2 %>%
 if(1){
   
   gb2 %>% # Selecting just the first identification of a given association
-    arrange(Host, Virus, Publication_Date) %>% 
+    arrange(Host, Virus, Release_Date) %>% 
     group_by(Host, Virus) %>% 
     # dplyr::count() %>% pull(n) %>% table
-    filter(Publication_Date == min(Publication_Date)) %>% 
+    filter(Release_Date == min(Release_Date)) %>% 
     mutate(N = 1:n()) %>% filter(N == 1) %>% 
     dplyr::select(-N) -> gb2
   

@@ -29,8 +29,8 @@ Accumulation %>%
 virion %>% mutate_at(vars(contains("Date")), ~.x %>% str_split("-") %>% map_chr(1) %>% as.numeric) %>% 
   RandomSlice %>% 
   mutate(Colour = as.factor(1:n())) %>% 
-  filter(Collection_Date > 1950) %>% 
-  ggplot(aes(Collection_Date, Publication_Date)) + 
+  filter(Collection_Date > 1950, Release_Date>2000) %>% 
+  ggplot(aes(Collection_Date, Release_Date)) + 
   # geom_point(colour = AlberColours[[3]]) + 
   geom_point(aes(colour = Colour), alpha = 0.1) +
   scale_colour_discrete_sequential(palette = AlberPalettes[[3]]) +
@@ -39,14 +39,21 @@ virion %>% mutate_at(vars(contains("Date")), ~.x %>% str_split("-") %>% map_chr(
   geom_abline() + 
   coord_fixed() +
   theme(legend.position = "none") +
-  ggsave("Figures/CollectionPublicationDate.jpeg", units = "mm", height = 150, width = 200, dpi = 600)
+  labs(x = "Collection date", y = "Publication date") +
+  ggsave("Figures/CollectionPublicationDate.jpeg", units = "mm", height = 120, width = 200, dpi = 600)
 
+# library(ggridges)
 # virion %>% mutate_at(vars(contains("Date")), ~.x %>% str_split("-") %>% map_chr(1) %>% as.numeric) %>% 
-#   filter(Collection_Date > 1950, Publication_Date > 2004) %>% 
-#   ggplot(aes(x = Collection_Date, y = as.factor(Publication_Date))) + 
+#   filter(Collection_Date > 1950, Release_Date > 2004) %>% 
+#   ggplot(aes(x = Collection_Date, y = as.factor(Release_Date))) + 
 #   geom_density_ridges2(alpha = 0.8, colour = NA,
 #                        fill = AlberColours[[3]]) +
 #   labs(x = "Collection Date", y = "Publication Date")
+
+# virion %>% mutate_at(vars(contains("Date")), ~.x %>% str_split("-") %>% map_chr(1) %>% as.numeric) %>%
+#   mutate(Diff = Release_Date - Collection_Date) %>%
+# BarGraph("Year", "Diff", Just = T) +
+# scale_fill_discrete_sequential(palette = AlberPalettes[[3]])
 
 # Proportion overlap ####
 

@@ -28,21 +28,21 @@ if(!file.exists("Intermediate/GenBank-Taxized.csv")){
 gb <- read_csv("Intermediate/GenBank-Taxized.csv")
 
 # Keep this here so that it doesn't take up MB as a csv
-gb %<>% mutate(Year = Publication_Date %>% str_split("-") %>% map_chr(1) %>% as.numeric, # Taking first argument of date
-                YearType = "GenBank", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format
-                Database = "GenBank",
-                DatabaseVersion = "Jan2021FlatFile",
-                DetectionMethod = "PCR/Sequencing", # Choice to call Nucleotide all sequence and not isolation is potentially problematic - revisit 
-                Detection_NotSpecified = FALSE,
-                Detection_Serology = FALSE,
-                Detection_Genetic = TRUE,
-                Detection_Isolation = FALSE,
-                Host_Original = Host,
-                Virus_Original = Virus,
-                DetectionMethod_Original = "GenBank", # Just to keep separate from EID2 Nucleotide entries
-                Host_NCBIResolved = TRUE,
-                Virus_NCBIResolved = TRUE,
-                HostSynonyms = NA) # Fix the HostSynonyms at the 01 import stage
+gb %<>% mutate(Year = Release_Date %>% str_split("-") %>% map_chr(1) %>% as.numeric, # Taking first argument of date
+               YearType = "GenBank", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format
+               Database = "GenBank",
+               DatabaseVersion = "Jan2021FlatFile",
+               DetectionMethod = "PCR/Sequencing", # Choice to call Nucleotide all sequence and not isolation is potentially problematic - revisit 
+               Detection_NotSpecified = FALSE,
+               Detection_Serology = FALSE,
+               Detection_Genetic = TRUE,
+               Detection_Isolation = FALSE,
+               Host_Original = Host,
+               Virus_Original = Virus,
+               DetectionMethod_Original = "GenBank", # Just to keep separate from EID2 Nucleotide entries
+               Host_NCBIResolved = TRUE,
+               Virus_NCBIResolved = TRUE,
+               HostSynonyms = NA) # Fix the HostSynonyms at the 01 import stage
 
 virion <- bind_rows(clo, gb) %>% 
   arrange(Host, Virus)
