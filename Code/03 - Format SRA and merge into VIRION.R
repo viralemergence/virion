@@ -167,7 +167,11 @@ for (i in 1:nrow(dict2)) {
   }
 }
 
-dict2 %>% # Adding the Taxize information to the data frame
+ToGroup <- dict2 %>% names %>% setdiff(c("Submitted", "Synonyms"))
+
+dict2 %>% 
+  group_by_at(ToGroup) %>% #names
+  summarise_at(c("Submitted", "Synonyms"), list) %>% # Adding the Taxize information to the data frame
   dplyr::select(-c(Submitted, Synonyms)) %>% 
   unique %>% #nrow %>% 
   left_join(virion.sra, ., by = c('Host' = 'Original')) ->

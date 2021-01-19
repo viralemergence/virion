@@ -110,9 +110,13 @@ host.dictionary <- dict2
 
 # Making the cleaned dataset ####
 
-host.dictionary %>% # Adding the Taxize information to the data frame
-  dplyr::select(-c(Submitted, Synonyms)) %>% 
-  unique %>% #nrow %>% 
+ToGroup <- host.dictionary %>% names %>% setdiff(c("Submitted", "Synonyms"))
+
+host.dictionary %>% 
+  group_by_at(ToGroup) %>% #names
+  summarise_at(c("Submitted", "Synonyms"), list) %>% # Adding the Taxize information to the data frame
+  # dplyr::select(-c(Submitted, Synonyms)) %>% 
+  # unique %>% #nrow %>% 
   left_join(gb, ., by = c('Host' = 'Original')) ->
   gb2 # <- left_join(gb, host.dictionary, by = c('Host' = 'Original'))
 
