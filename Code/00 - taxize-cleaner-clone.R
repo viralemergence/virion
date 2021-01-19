@@ -3,7 +3,7 @@
 library(taxize)
 library(rgbif)
 library(doParallel)
-library(plyr)
+# library(plyr)
 
 # function to find and resolve taxonomic synonyms based on Encyclopedia of Life
 findSyns2 = function(x){

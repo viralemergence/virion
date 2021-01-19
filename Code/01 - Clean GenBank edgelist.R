@@ -24,9 +24,7 @@ if(!file.exists("Source/sequences.csv")){
 gb <- data.table::fread("Source/sequences.csv") %>% 
   as_tibble
 
-# Removing GenBank entries with only one word names ####
-
-if(0){
+if(0){ # Removing GenBank entries with only one word names?
   
   gb %>% mutate(NWords = str_count(Host, " ")) %>% 
     filter(NWords>1) -> gb
@@ -43,7 +41,7 @@ NotInDictionary <- hosts_vec %>% # Identify host names not in the dictionary
   setdiff(host.dictionary$Original) %>%
   sort
 
-if(length(NotInDictionary)>0){ 
+if(length(NotInDictionary)>0){ # Expanding the dictionary
   
   synonyms <- NotInDictionary %>% # Go through these names and Taxize them 
     lapply(findSyns3)
@@ -121,9 +119,24 @@ gb2 %>%
               str_split("T") %>% # Splitting at this midpoint
               map_chr(1) %>% # Taking the first component 
               lubridate::ymd() # Coding as YMD (shouldn't throw errors)
-            ) -> gb2
+  ) -> gb2
+
+if(1){
+  
+  gb2 %>% # Selecting just the first identification of a given association
+    arrange(Host, Virus, Publication_Date) %>% 
+    group_by(Host, Virus) %>% 
+    # dplyr::count() %>% pull(n) %>% table
+    mutate(N = 1:n()) %>% filter(N == 1) %>% 
+    dplyr::select(-N) -> gb2
+  
+}
 
 data.table::fwrite(gb2, 'Intermediate/GenBank-Taxized.csv')
 
-zip(zipfile = 'Intermediate/GBTaxized.zip', 
-    files = 'Intermediate/GenBank-Taxized.csv') 
+library(fs)
+
+file_delete("Intermediate/GBTaxized.zip")
+
+zip(zipfile = './Intermediate/GBTaxized.zip', 
+    files = './Intermediate/GenBank-Taxized.csv') 
