@@ -102,19 +102,26 @@ host.dictionary %>% # Adding the Taxize information to the data frame
   left_join(gb, ., by = c('Host' = 'Original')) ->
   gb2 # <- left_join(gb, host.dictionary, by = c('Host' = 'Original'))
 
-gb2 %>% filter(Selected_class %in% c("Mammalia",
+gb2 %>% filter(Selected_class %in% c("Mammalia", # Selecting host taxa
                                      "Aves",
                                      "Reptilia",
                                      "Amphibia",
                                      "Chondrichthyes",
-                                     "Elasmobranchii")) %>% 
-  select(Species, Accepted_name, Selected_family, Selected_order, Selected_class) %>%
-  dplyr::rename(Virus = Species,
-                Host = Accepted_name,
-                HostFamily = Selected_family,
-                HostOrder = Selected_order,
-                HostClass = Selected_class) %>%
+                                     "Elasmobranchii")) %>%
+  
+  select(Virus = Species, # Selecting and renaming columns
+         Host = Accepted_name, 
+         Selected_family, Selected_order, Selected_class,
+         Publication_Date = Release_Date, 
+         Collection_Date) %>% 
   unique() -> gb2
+
+gb2 %>% 
+  mutate_at("Publication_Date", ~.x %>% # Modifying date column to make sense
+              str_split("T") %>% # Splitting at this midpoint
+              map_chr(1) %>% # Taking the first component 
+              lubridate::ymd() # Coding as YMD (shouldn't throw errors)
+            ) -> gb2
 
 data.table::fwrite(gb2, 'Intermediate/GenBank-Taxized.csv')
 
