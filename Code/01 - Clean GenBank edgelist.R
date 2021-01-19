@@ -1,6 +1,8 @@
 
 # 01_Setup ####
 
+rm(list = ls())
+
 library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip)
 
 # setwd("~/Github/virion")
@@ -121,7 +123,8 @@ gb2 %>% filter(Selected_class %in% c("Mammalia", # Selecting host taxa
                                      "Chondrichthyes",
                                      "Elasmobranchii")) %>%
   
-  select(Virus = Species, # Selecting and renaming columns
+  select(Accession, 
+         Virus = Species, # Selecting and renaming columns
          Host = Accepted_name, 
          Selected_family, Selected_order, Selected_class,
          Publication_Date, 
