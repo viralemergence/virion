@@ -4,3 +4,5 @@ data/.Rhistory
 GenBank_as_Edgelist.csv
 GenBank-Taxized.csv
 SRA_as_Edgelist.edges
+.Rproj.user
+Intermediate/clover.csv
