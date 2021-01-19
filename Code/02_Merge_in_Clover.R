@@ -1,16 +1,10 @@
 
 # 02_Merging Clover in ####
+# Created and cleaned in https://github.com/viralemergence/clover
 
-library(tidyverse)
-library(magrittr)
-library(readr)
+library(tidyverse); library(magrittr); library(readr)
 
 # Pull in the required pieces ####
-
-# setwd(here::here())
-# setwd("~/Github/virion")
-# clo <- read_csv("~/github/clover/output/Clover_v1.0_NBCIreconciled_20201211.csv")
-# Greg just flagging that this was an old version 
 
 if(file.exists("Intermediate/clover.csv")){
   
@@ -24,8 +18,6 @@ if(file.exists("Intermediate/clover.csv")){
   write.csv(clo, file = "Intermediate/clover.csv", row.names = F)
   
 }
-
-# clo %<>% mutate_at(c("Reference"), as.character)
 
 if(!file.exists("Intermediate/GenBank-Taxized.csv")){
   

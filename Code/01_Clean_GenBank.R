@@ -8,7 +8,7 @@ library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip
 # setwd("~/Github/virion")
 # setwd(here::here())
 
-source("Code/00 - taxize-cleaner-clone.R")
+source("Code/00_TaxiseCleaner.R")
 
 # Read in host data ####
 
@@ -57,26 +57,28 @@ NotInDictionary <- hosts_vec %>% # Identify host names not in the dictionary
   setdiff(host.dictionary$Original) %>%
   sort
 
-if(length(NotInDictionary)>0){ # Expanding the dictionary
-  
-  synonyms <- NotInDictionary %>% # Go through these names and Taxize them 
-    lapply(findSyns3)
-  
-  # synonyms %>% 
-  #   seq_along %>% 
-  #   map(~ifelse(is.null(synonyms[[.x]]), 
-  #               data.frame(Original = NotInDictionary[.x]),
-  #               synonyms[[.x]])) ->
-  #   synonyms
-  
-  synonyms %>% bind_rows() %>% # Attach those taxized names to the dictionary
-    bind_rows(host.dictionary) -> 
-    host.dictionary
-  
-  host.dictionary %<>% arrange(Original) # arrange by name
-  
-  write_rds(host.dictionary, "Intermediate/HostDictionary.RDS")
-  
+if(0){ # Not running
+  if(length(NotInDictionary)>0){ # Expanding the dictionary
+    
+    synonyms <- NotInDictionary %>% # Go through these names and Taxize them 
+      lapply(findSyns3)
+    
+    # synonyms %>% 
+    #   seq_along %>% 
+    #   map(~ifelse(is.null(synonyms[[.x]]), 
+    #               data.frame(Original = NotInDictionary[.x]),
+    #               synonyms[[.x]])) ->
+    #   synonyms
+    
+    synonyms %>% bind_rows() %>% # Attach those taxized names to the dictionary
+      bind_rows(host.dictionary) -> 
+      host.dictionary
+    
+    host.dictionary %<>% arrange(Original) # arrange by name
+    
+    write_rds(host.dictionary, "Intermediate/HostDictionary.RDS")
+    
+  }
 }
 
 StillNotInDictionary <- hosts_vec %>% # Identify host names STILL not in the dictionary
