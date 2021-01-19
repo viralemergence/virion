@@ -1,7 +1,7 @@
 
 # 01_Setup ####
 
-library(tidyverse); library(taxize); library(magrittr)
+library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip)
 
 # setwd("~/Github/virion")
 # setwd(here::here())
@@ -24,6 +24,14 @@ if(!file.exists("Source/sequences.csv")){
 gb <- data.table::fread("Source/sequences.csv") %>% 
   as_tibble
 
+gb %>% 
+  rename(Publication_Date = Release_Date) %>% 
+  mutate_at("Publication_Date", ~.x %>% # Modifying date column to make sense
+              str_split("T") %>% # Splitting at this midpoint
+              map_chr(1) %>% # Taking the first component 
+              lubridate::ymd() # Coding as YMD (shouldn't throw errors)
+  ) -> gb
+
 if(0){ # Removing GenBank entries with only one word names?
   
   gb %>% mutate(NWords = str_count(Host, " ")) %>% 
@@ -31,9 +39,15 @@ if(0){ # Removing GenBank entries with only one word names?
   
 }
 
-hosts_vec <- unique(na.omit(gb$Host))
+# Add import download step? ####
+# https://cran.r-project.org/web/packages/biomartr/biomartr.pdf
+# Or https://ropensci.org/blog/2020/11/10/coronaviruses-and-hosts/
+# Or https://rdrr.io/cran/insect/man/searchGB.html
+
 
 # Taxizing ####
+
+hosts_vec <- unique(na.omit(gb$Host))
 
 host.dictionary <- readRDS("Intermediate/HostDictionary.RDS")
 
@@ -110,16 +124,16 @@ gb2 %>% filter(Selected_class %in% c("Mammalia", # Selecting host taxa
   select(Virus = Species, # Selecting and renaming columns
          Host = Accepted_name, 
          Selected_family, Selected_order, Selected_class,
-         Publication_Date = Release_Date, 
+         Publication_Date, 
          Collection_Date) %>% 
   unique() -> gb2
 
+# Renaming to match other databases 
 gb2 %>% 
-  mutate_at("Publication_Date", ~.x %>% # Modifying date column to make sense
-              str_split("T") %>% # Splitting at this midpoint
-              map_chr(1) %>% # Taking the first component 
-              lubridate::ymd() # Coding as YMD (shouldn't throw errors)
-  ) -> gb2
+  rename_all(~.x %>% str_replace_all("Selected_", "Host") %>% 
+               str_replace_all(c("class" = "Class", "order" = "Order", "family" = "Family"))) ->
+  
+  gb2
 
 if(1){
   
@@ -127,6 +141,7 @@ if(1){
     arrange(Host, Virus, Publication_Date) %>% 
     group_by(Host, Virus) %>% 
     # dplyr::count() %>% pull(n) %>% table
+    filter(Publication_Date == min(Publication_Date)) %>% 
     mutate(N = 1:n()) %>% filter(N == 1) %>% 
     dplyr::select(-N) -> gb2
   
@@ -134,9 +149,7 @@ if(1){
 
 data.table::fwrite(gb2, 'Intermediate/GenBank-Taxized.csv')
 
-library(fs)
-
 file_delete("Intermediate/GBTaxized.zip")
 
-zip(zipfile = './Intermediate/GBTaxized.zip', 
-    files = './Intermediate/GenBank-Taxized.csv') 
+zip(zipfile = 'Intermediate/GBTaxized.zip', 
+    files = 'Intermediate/GenBank-Taxized.csv') 

@@ -21,7 +21,7 @@ if(file.exists("Intermediate/clover.csv")){
   clo <- 
     read.csv("https://raw.githubusercontent.com/viralemergence/clover/main/output/Clover_v1.0_NBCIreconciled_20201218.csv")
   
-  write.csv(clo, file = "Intermediate/clover.csv")
+  write.csv(clo, file = "Intermediate/clover.csv", row.names = F)
   
 }
 
