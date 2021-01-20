@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: dependencies!!!!
       run: |
-        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr", "PresenceAbsence"))'
+        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr","zip", "fs", "PresenceAbsence"))'
     - name: run 01-Clean-GenBank-edgelist (implicitly runs 00)
       run: |
         Rscript -e 'source("Code/01_Clean_GenBank.R")'
