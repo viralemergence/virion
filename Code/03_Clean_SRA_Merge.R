@@ -94,8 +94,8 @@ sra.m %>%
   mutate(scaled = log(score)/maxscore) %>% # Needs to be scaled by the max sra.m score, because maybe there are other higher scores
   filter(scaled > cut.score) %>%  
   select(-scaled) %>%
-  mutate(Year = NA, # Fix at the SRA generation stage @TP
-         YearType = "SRA", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format
+  mutate(#Year = NA, # Fix at the SRA generation stage @TP
+         #YearType = "SRA", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format
          Database = "SRA",
          DatabaseVersion = "Dec2020FlatFile",
          DetectionMethod = "kmer", # Choice to call Nucleotide all sequence and not isolation is potentially problematic - revisit 
@@ -188,9 +188,9 @@ virion.sra2 %>%
                                "Elasmobranchii")) %>%
   
   select(Virus, # Selecting and renaming columns
-         Host, 
-         Selected_family, Selected_order, Selected_class,
-         Year) %>% 
+         Host,
+         # Year, 
+         Selected_family, Selected_order, Selected_class) %>% 
   unique() -> virion.sra2
 
 virion.sra2 %>% # Renaming to match other databases 
@@ -200,7 +200,7 @@ virion.sra2 %>% # Renaming to match other databases
   virion.sra2
 
 virion.sra2 %<>%
-  mutate(Year = NA, # Fix at the SRA generation stage @TP
+  mutate(# Year = NA, # Fix at the SRA generation stage @TP
          YearType = "SRA", # Address collection-date versus publication-date by finding a way to include both - maybe reshape CLOVER format
          Database = "SRA",
          DatabaseVersion = "Dec2020FlatFile",

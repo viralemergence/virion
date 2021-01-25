@@ -130,7 +130,7 @@ gb2 %>% filter(Selected_class %in% c("Mammalia", # Selecting host taxa
                                      "Elasmobranchii")) %>%
   
   select(Accession, 
-         Virus = Species, # Selecting and renaming columns
+         Virus = Species, #Genus, # Selecting and renaming columns
          Host = Accepted_name, 
          Selected_family, Selected_order, Selected_class,
          Release_Date, 
