@@ -222,4 +222,4 @@ virion <- read_csv("Intermediate/Virion-Temp.csv")
 
 virion %<>% bind_rows(virion.sra2)
 
-write_csv(virion, 'VIRION.csv')
+write_csv(virion, 'Virion/Virion-Master.csv')
