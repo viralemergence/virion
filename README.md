@@ -1,4 +1,4 @@
-<img align="right" src="Virion.png"  width="200">
+<img align="right" src="Virion.png" width="200">
 
 # VIRION: The Virome, in One Network
 
