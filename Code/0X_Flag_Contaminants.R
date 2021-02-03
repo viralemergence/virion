@@ -74,6 +74,6 @@ problems <- c("Vesicular stomatitis virus",
               "Torque teno virus",
               "Semliki Forest virus")
 
-virion %<>% mutate(VirusFlag = ifelse((Virus %in% problems) &  (Database == 'SRA'), 'Flagged', NA))
+virion %<>% mutate(VirusFlag = ifelse((Virus %in% problems) & (Database == 'SRA'), 'Yes', 'No'))
 
 write_csv(virion, "Virion/Virion-Master.csv")

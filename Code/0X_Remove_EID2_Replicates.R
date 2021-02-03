@@ -16,6 +16,6 @@ eid2 %>%
 
 anti_join(eid2, eid2.good) -> eid2.bad
 
-virion %<>% anti_join(eid2.bad)
+virion %>% anti_join(eid2.bad) %>% View()
 
 write_csv(virion, "Virion/Virion-Master.csv")
