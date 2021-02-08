@@ -3,25 +3,26 @@ using DataFrames
 import CSV
 
 # Read the virion master data
-virion = DataFrames(CSV.File(joinpath("Virion", "Virion-Master.csv")))
+virion = DataFrame(CSV.File(joinpath("Virion", "Virion-Master.csv")))
 
 # DF for results
-virion_cleanup = DataFrame(original = String[], name = String[], taxid = Int64[], fuzzy = Bool[], synonym = Bool[])
+virion_cleanup = DataFrame(original = String[], name = String[], type = String[], taxid = Int64[], fuzzy = Bool[], synonym = Bool[])
 virion_tax = DataFrame(taxid = String[], rank = String[], name = String[], id = Int64[])
 
-# Get the unique hosts
-for sp in species
-    portal_name = sp["species"] == "sp." ? sp["genus"] : sp["genus"]*" "*sp["species"]
-    ncbi_tax = taxid(portal_name)
+unique_hosts = unique(virion.Host)
+unique_viruses = unique(virion.Virus)
+
+hf = vertebratefinder(true)
+vf = virusfinder()
+
+for host in unique_hosts[1:10]
+    ncbi_tax = hf(host)
+    fuzzy = false
     if isnothing(ncbi_tax)
-        ncbi_tax = taxid(portal_name; fuzzy=true)
+        fuzzy = true
+        ncbi_tax = hf(host; fuzzy=true)
     end
-    ncbi_lin = lineage(ncbi_tax)
-    push!(cleanup,
-        (
-            sp["species_id"], portal_name, ncbi_tax.name, rank(ncbi_tax),
-            first(filter(t -> isequal(:order)(rank(t)), lineage(ncbi_tax))).name,
-            ncbi_tax.id
-        )
-    )
+    push!(virion_cleanup,(
+        host, ncbi_tax.name, "host", ncbi_tax.id, fuzzy, host == ncbi_tax.name
+    ))
 end
