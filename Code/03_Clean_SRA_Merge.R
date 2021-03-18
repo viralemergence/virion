@@ -89,8 +89,8 @@ virion <- read_csv("Intermediate/Virion-Temp.csv")
 
 maxscore <- max(log(sra.m$score))
 
-# sra.v %>% 
-sra.m %>% 
+sra.v %>% 
+# sra.m %>% 
   mutate(scaled = log(score)/maxscore) %>% # Needs to be scaled by the max sra.m score, because maybe there are other higher scores
   filter(scaled > cut.score) %>%  
   select(-scaled) %>%
