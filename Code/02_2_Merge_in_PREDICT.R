@@ -250,3 +250,15 @@ ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusOrder"] <- "Nido
 # Merge that bastard in
 
 predict %<>% left_join(bind_rows(predictionary, ncbi.tax))
+
+# How many don't have a genus?
+
+predict %>% select(Virus, VirusGenus) %>% unique() %>% is.na %>% table()
+
+# Now, the host taxonomy 
+
+predict %>% pull(Host) %>% unique() -> hosts
+
+hosts %>% # Go through these names and Taxize them 
+  lapply(findSyns3) %>%
+  bind_rows() -> test
