@@ -156,6 +156,15 @@ if(1){
   
 }
 
+# Add viral tax
+# Greg rewrite this step***
+
+gb2.viruses.tax.df <- data.table::fread(gb2.viruses.tax.df, 'GenBank-VirusesTaxized.csv')
+
+gb2  <- left_join(gb2, gb2.viruses.tax.df)
+ 
+# Check later if adding those columns breaks anything :grimace:
+
 data.table::fwrite(gb2, 'Intermediate/GenBank-Taxized.csv')
 
 file_delete("Intermediate/GBTaxized.zip")
