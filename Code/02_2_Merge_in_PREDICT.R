@@ -262,3 +262,19 @@ predict %>% pull(Host) %>% unique() -> hosts
 hosts %>% # Go through these names and Taxize them 
   lapply(findSyns3) %>%
   bind_rows() -> test
+
+tolin <- function(spnames) {
+#   #library(JuliaCall)
+#   #julia_setup(installJulia = TRUE)
+#   julia_install_package_if_needed("NCBItaxonomy")
+#   julia_install_package_if_needed("NCBItaxonomy")
+#   julia_install_package_if_needed("CSV")
+  raw <- data.frame(Name = spnames)
+  write_csv(raw, '~/Github/virion/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
+  system("julia C:/Users/cjcar/Documents/Github/virion/Code_Dev/host.jl")
+  clean <- read_csv("~/Github/virion/Code_Dev/TaxonomyTempOut.csv")
+  return(clean)
+}
+
+bageltime <- c("Human parainfluenzavirus 1")
+tolin(bageltime)
