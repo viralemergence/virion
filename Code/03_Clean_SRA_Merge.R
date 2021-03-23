@@ -216,6 +216,31 @@ virion.sra2 %<>%
          Virus_NCBIResolved = TRUE,
          HostSynonyms = NA)
 
+### Add the viral higher taxonomy
+
+virion.sra2 %>% pull(Virus) %>% unique() %>% sort() -> ncbi.names
+
+sra.tax <- data.frame(Virus = ncbi.names,
+                       VirusGenus = NA, 
+                       VirusFamily = NA, 
+                       VirusOrder = NA)
+
+for (i in 1:nrow(sra.tax)) {
+  sra.num <- taxize::get_uid(sra.tax$Virus[i])
+  sra.high <- taxize::classification(sra.num, db = "ncbi")
+  if(!is.na(sra.high[[1]][1])){
+    if("genus" %in% sra.high[[1]]$rank) {sra.tax$VirusGenus[i] <- sra.high[[1]][which(sra.high[[1]]$rank=='genus'), 'name']}
+    if("family" %in% sra.high[[1]]$rank) {sra.tax$VirusFamily[i] <- sra.high[[1]][which(sra.high[[1]]$rank=='family'), 'name']}
+    if("order" %in% sra.high[[1]]$rank) {sra.tax$VirusOrder[i] <- sra.high[[1]][which(sra.high[[1]]$rank=='order'), 'name']}
+  }
+}
+
+virion.sra2 %<>% left_join(sra.tax)
+
+# NOW... kill the virus associations but leave the originals
+
+virion.sra2$Virus <- NA
+
 # Combining with the rest of virion ####
 
 virion <- read_csv("Intermediate/Virion-Temp.csv")

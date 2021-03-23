@@ -263,18 +263,25 @@ hosts %>% # Go through these names and Taxize them
   lapply(findSyns3) %>%
   bind_rows() -> test
 
-tolin <- function(spnames) {
-#   #library(JuliaCall)
-#   #julia_setup(installJulia = TRUE)
-#   julia_install_package_if_needed("NCBItaxonomy")
-#   julia_install_package_if_needed("NCBItaxonomy")
-#   julia_install_package_if_needed("CSV")
-  raw <- data.frame(Name = spnames)
-  write_csv(raw, '~/Github/virion/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
-  system("julia C:/Users/cjcar/Documents/Github/virion/Code_Dev/host.jl")
-  clean <- read_csv("~/Github/virion/Code_Dev/TaxonomyTempOut.csv")
-  return(clean)
-}
+table(test$Submitted == test$Accepted_name) # That's good, all valid names
 
-bageltime <- c("Human parainfluenzavirus 1")
-tolin(bageltime)
+test %>% rename(Host_Original = 'Original',
+                Host = "Accepted_name",
+                HostFamily = "Selected_family",
+                HostOrder = "Selected_order", 
+                HostClass = "Selected_class",
+                HostSynonyms = "Synonyms") %>%
+  select(-Submitted) %>%
+  as_tibble() %>%
+  group_by_at(vars(-HostSynonyms)) %>%
+  summarise(HostSynonyms = toString(HostSynonyms)) -> test
+
+predict %>% rename(Host_Original = "Host") %>% left_join(test) -> predict
+
+virion <- read_csv('Intermediate/Virion-Temp.csv')
+
+virion <- bind_rows(virion, predict) %>% 
+  arrange(Host, Virus)
+
+write_csv(virion, 'Intermediate/Virion-Temp.csv')
+
