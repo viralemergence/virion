@@ -247,6 +247,14 @@ ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusGenus"] <- "Beta
 ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusFamily"] <- "Coronaviridae"
 ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusOrder"] <- "Nidovirales"
 
+### Test run NCBI 
+
+ncbi.tax %>% filter(is.na(VirusGenus)) -> ncbi.fails
+
+floop <- jncbi(ncbi.fails$Virus, type = 'virus')
+
+# Come back to this when fuzzy is enabled?
+
 # Merge that bastard in
 
 predict %<>% left_join(bind_rows(predictionary, ncbi.tax))
@@ -277,6 +285,14 @@ test %>% rename(Host_Original = 'Original',
   summarise(HostSynonyms = toString(HostSynonyms)) -> test
 
 predict %>% rename(Host_Original = "Host") %>% left_join(test) -> predict
+
+##### Double check the NCBItaxonomy on the viruses I guess
+
+test %>% filter(is.na(HostGenus))
+
+
+##### Bind into VIRION
+
 
 virion <- read_csv('Intermediate/Virion-Temp.csv')
 

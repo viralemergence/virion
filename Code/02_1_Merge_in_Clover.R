@@ -8,25 +8,25 @@ library(tidyverse); library(magrittr); library(readr)
 
 if(file.exists("Intermediate/clover.csv")){
   
-  clo <- read.csv("Intermediate/clover.csv")
+  clo <- read_csv("Intermediate/clover.csv")
   
 }else{
   
   clo <- 
-    read.csv("https://raw.githubusercontent.com/viralemergence/clover/main/output/Clover_v1.0_NBCIreconciled_20201218.csv")
+    read_csv("Intermediate/CLOVERT_ReconciledAssociations_Taxize.csv")
   
-  write.csv(clo, file = "Intermediate/clover.csv", row.names = F)
+  write_csv(clo, file = "Intermediate/clover.csv")
   
 }
 
 # Altering the year column for Clover ####
 
-clo %<>% 
+#clo %<>% 
   # mutate_at("YearType", as.character) %>% 
-  mutate_at("YearType", 
-            ~ifelse(str_detect(.x, "Nucleotide"), "Release_Year", "Publication_Year")) %>% 
-  tidyr::pivot_wider(names_from = YearType, values_from = Year) %>%
-  rename(Other_Year = `NA`)
+  #mutate_at("YearType", 
+  #          ~ifelse(str_detect(.x, "Nucleotide"), "Release_Year", "Publication_Year")) %>% 
+  #tidyr::pivot_wider(names_from = YearType, values_from = Year) %>%
+  #rename(Other_Year = `NA`)
 
 # Attaching GenBank ####
 
