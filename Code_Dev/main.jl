@@ -9,14 +9,16 @@ name_file = "CLOVERT_HostswSyns_forNCBITaxonomy.csv"
 names = DataFrame(CSV.File(name_file))
 synonyms = unique(uppercasefirst.(names.Name))
 
-nf = NCBITaxonomy.vertebratefinder()
+# The name finder functions have been removed to instead use a DF passed as a first argument to taxon
+vert = verterbratefilter()
 
 results = [DataFrame(name = String[], matched = Bool[], match = Union{Missing,String}[], taxid = Union{Missing,Int64}[]) for i in 1:Threads.nthreads()]
 
 n = length(synonyms)
 p = Progress(n)
 Threads.@threads for i in 1:n
-    nm = nf(synonyms[i])
+    # New syntax is taxon(df, name)
+    nm = taxon(vert, synonyms[i])
     if !isnothing(nm)
         push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, lowercase(nm.name), nm.id))
     else
@@ -36,14 +38,16 @@ name_file = "CLOVERT_Pathogens_forNCBITaxonomy.csv"
 names = DataFrame(CSV.File(name_file))
 synonyms = unique(uppercasefirst.(names.Name))
 
-nf = NCBITaxonomy._divisionfinder([:BCT, :INV, :VRL, :PLN])
+# We can build a namefilter from an array of division codes
+# This should probably be an enumerated type but hey
+pathogens = namefilter([:BCT, :INV, :VRL, :PLN])
 
 results = [DataFrame(name = String[], matched = Bool[], match = Union{Missing,String}[], taxid = Union{Missing,Int64}[]) for i in 1:Threads.nthreads()]
 
 n = length(synonyms)
 p = Progress(n)
 Threads.@threads for i in 1:n
-    nm = nf(synonyms[i])
+    nm = taxon(pathogens, synonyms[i])
     if !isnothing(nm)
         push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, lowercase(nm.name), nm.id))
     else
