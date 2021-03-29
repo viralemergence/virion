@@ -3,60 +3,63 @@ using DataFrames
 import CSV
 using ProgressMeter
 
-## Part 1 - hosts
+"""
+    taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 
-name_file = "CLOVERT_HostswSyns_forNCBITaxonomy.csv"
-names = DataFrame(CSV.File(name_file))
-synonyms = unique(uppercasefirst.(names.Name))
+Returns a dataframe of cleaned names for either hosts or pathogens, where the
+original names are stored in the `names` column of the first argument (to be
+given as a `Symbol`).
 
-# The name finder functions have been removed to instead use a DF passed as a first argument to taxon
-vert = verterbratefilter()
+Example:
 
-results = [DataFrame(name = String[], matched = Bool[], match = Union{Missing,String}[], taxid = Union{Missing,Int64}[]) for i in 1:Threads.nthreads()]
+~~~ julia
+df = DataFrame(CSV.File("MyTaxonomy.csv))
+clean = taxonomizer(df, :pathogens; names=Symbol("species name"))
+~~~
 
-n = length(synonyms)
-p = Progress(n)
-Threads.@threads for i in 1:n
-    # New syntax is taxon(df, name)
-    nm = taxon(vert, synonyms[i])
-    if !isnothing(nm)
-        push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, lowercase(nm.name), nm.id))
-    else
-        push!(results[Threads.threadid()], (lowercase(synonyms[i]), false, missing, missing))
+If the name is not found using a strict match, this function will then attempt a
+fuzzy match. By default, the function uses threading, the number of which can be
+changed in Julia configuration file, on the command line when calling julia
+(`julia -t 8`), or in the Julia VSCode extension.
+"""
+function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
+    
+    # Check that the name type is either hosts or pathogens
+    @assert type ∈ [:hosts, :pathogens]
+    
+    # And build the appropriate nametype
+    namelist = isequal(:hosts)(type) ? vertebratefilter() : namefilter([:BCT, :INV, :VRL, :PLN])
+
+    # Get the names from the correct column (usually `Name` but we can change it with the `names` argument)
+    synonyms = unique(uppercasefirst.(df[:,names]))
+
+    # Prepare a dataframe from every thread
+    results = [DataFrame(name = String[], matched = Bool[], match = Union{Missing,String}[], taxid = Union{Missing,Int64}[]) for i in 1:Threads.nthreads()]
+
+    # Prepare the progressbar
+    n = length(synonyms)
+    p = Progress(n)
+
+    # GO BR
+    Threads.@threads for i in 1:n
+        nm = taxon(namelist, synonyms[i])
+        if !isnothing(nm)
+            push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, nm.name, nm.id))
+        else
+            nm = taxon(namelist, synonyms[i]; strict=false)
+            push!(results[Threads.threadid()], (lowercase(synonyms[i]), false, nm.name, nm.id))
+        end
+        next!(p)
     end
-    next!(p)
+    return vcat(results...)
 end
 
-cleanup = vcat(results...)
-clovirion_tax = leftjoin(names, cleanup, on = :Name => :name)
+# TODO IMPORTANT USE THE FILES YOU WANT HERE
+hosts = DataFrame(CSV.File("CLOVERT_HostswSyns_forNCBITaxonomy.csv"))
+reconciled_hosts = taxonomizer(hosts, :hosts; names=:Name)
+CSV.write("ncbi-tax-host-output.csv", leftjoin(hosts, reconciled_hosts, on=:Name => :name))
 
-CSV.write("CLOVERT_hostchek.csv", clovirion_tax)
-
-## Part 2 - pathogens
-
-name_file = "CLOVERT_Pathogens_forNCBITaxonomy.csv"
-names = DataFrame(CSV.File(name_file))
-synonyms = unique(uppercasefirst.(names.Name))
-
-# We can build a namefilter from an array of division codes
-# This should probably be an enumerated type but hey
-pathogens = namefilter([:BCT, :INV, :VRL, :PLN])
-
-results = [DataFrame(name = String[], matched = Bool[], match = Union{Missing,String}[], taxid = Union{Missing,Int64}[]) for i in 1:Threads.nthreads()]
-
-n = length(synonyms)
-p = Progress(n)
-Threads.@threads for i in 1:n
-    nm = taxon(pathogens, synonyms[i])
-    if !isnothing(nm)
-        push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, lowercase(nm.name), nm.id))
-    else
-        push!(results[Threads.threadid()], (lowercase(synonyms[i]), false, missing, missing))
-    end
-    next!(p)
-end
-
-cleanup = vcat(results...)
-clovirion_tax = leftjoin(names, cleanup, on = :Name => :name)
-
-CSV.write("CLOVERT_pathchek.csv", clovirion_tax)
+# TODO IMPORTANT USE THE FILES YOU WANT HERE
+pathogens = DataFrame(CSV.File("CLOVERT_Pathogens_forNCBITaxonomy.csv"))
+reconciled_pathogens = taxonomizer(pathogens, :pathogens; names=:Name)
+CSV.write("ncbi-tax-path-output.csv", leftjoin(pathogens, reconciled_pathogens, on=:Name => :name))
