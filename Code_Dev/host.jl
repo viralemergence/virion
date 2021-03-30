@@ -5,30 +5,26 @@ using ProgressMeter
 
 """
     taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
-
 Returns a dataframe of cleaned names for either hosts or pathogens, where the
 original names are stored in the `names` column of the first argument (to be
 given as a `Symbol`).
-
 Example:
-
 ~~~ julia
 df = DataFrame(CSV.File("MyTaxonomy.csv))
 clean = taxonomizer(df, :pathogens; names=Symbol("species name"))
 ~~~
-
 If the name is not found using a strict match, this function will then attempt a
 fuzzy match. By default, the function uses threading, the number of which can be
 changed in Julia configuration file, on the command line when calling julia
 (`julia -t 8`), or in the Julia VSCode extension.
 """
 function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
-    
+
     # Check that the name type is either hosts or pathogens
     @assert type ∈ [:hosts, :pathogens]
-    
+
     # And build the appropriate nametype
-    namelist = isequal(:hosts)(type) ? vertebratefilter() : namefilter([:BCT, :INV, :VRL, :PLN])
+    namelist = isequal(:hosts)(type) ? vertebratefilter() : virusfilter()
 
     # Get the names from the correct column (usually `Name` but we can change it with the `names` argument)
     synonyms = unique(uppercasefirst.(df[:,names]))
@@ -54,12 +50,6 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
     return vcat(results...)
 end
 
-# TODO IMPORTANT USE THE FILES YOU WANT HERE
-hosts = DataFrame(CSV.File("CLOVERT_HostswSyns_forNCBITaxonomy.csv"))
+hosts = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"))
 reconciled_hosts = taxonomizer(hosts, :hosts; names=:Name)
-CSV.write("ncbi-tax-host-output.csv", leftjoin(hosts, reconciled_hosts, on=:Name => :name))
-
-# TODO IMPORTANT USE THE FILES YOU WANT HERE
-pathogens = DataFrame(CSV.File("CLOVERT_Pathogens_forNCBITaxonomy.csv"))
-reconciled_pathogens = taxonomizer(pathogens, :pathogens; names=:Name)
-CSV.write("ncbi-tax-path-output.csv", leftjoin(pathogens, reconciled_pathogens, on=:Name => :name))
+CSV.write("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(hosts), reconciled_hosts, on=:Name => :name))
