@@ -34,4 +34,23 @@ j = (j + 1)
 
 }
 
+j = 0
+k = 1 
+
+while(k > 0) {
+  
+  page <- get_interactions_by_taxa(sourcetaxon = 'Viruses',
+                                   targettaxon = 'Vertebrata',
+                                   otherkeys = list("limit" = 1000, "skip" = 1000*j))
+  k = nrow(page)
+  
+  all <- rbind(page,all)
+  
+  print(j)
+  j = (j + 1)
+  
+}
+
+all %>% unique() -> all 
+
 write_csv(all, 'Source/GLOBI-raw.csv')

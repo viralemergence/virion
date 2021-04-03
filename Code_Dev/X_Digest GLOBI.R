@@ -27,7 +27,9 @@ globi %>%
 globi %>% pull(Host.ID) %>% sapply(function(x) {word(string = x, 1, sep = ":")}) %>% table()
 globi %>% pull(Virus.ID) %>% sapply(function(x) {word(string = x, 1, sep = ":")}) %>% table()
 
-# Now, only pull in names that are resolved enough to make sense of, and none of the messy names
+
+#### Actually call NCBI 
+# Only pull in names that are resolved enough to make sense of, and none of the messy names
 
 globi %>% mutate(is.flu = str_detect(Virus, "Influenza A")) %>%
   rowwise() %>%
@@ -64,8 +66,131 @@ globi %>% rename(Virus_Original = 'Virus',
   na.omit() %>%
   select(Host, Virus, Host_Original, Virus_Original) -> globi
 
-virion <- read_csv("~/Github/virion/Virion/Virion-Master.csv")
-virion %>% select(Host, Virus) %>%
-  mutate(Host = tolower(Host),
-         Virus = tolower(Virus)) %>%
-  unique() -> virion
+globi %<>% rename(Host_Intermediate = "Host",
+                  Virus_Intermediate = "Virus")
+
+##### Grab the higher taxonomy
+
+globi %>% pull(Virus_Intermediate) %>% unique() %>% sort() -> ncbi.names
+
+ncbi.tax.virus <- data.frame(Virus_Intermediate = ncbi.names,
+                             Virus = ncbi.names,
+                             VirusGenus = NA, 
+                             VirusFamily = NA, 
+                             VirusOrder = NA,
+                             VirusClass = NA)
+
+for (i in 1:nrow(ncbi.tax.virus)) {
+  
+  ncbi.tax.virus$Virus[i] <- str_squish(str_replace(ncbi.tax.virus$Virus[i], " sp\\.", ""))
+  
+  ncbi.num <- taxize::get_uid(ncbi.tax.virus$Virus[i], rank_query = )
+  ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+  
+  match = 0 
+  if(!is.na(ncbi.high[[1]][1])){
+    if("genus" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
+    if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+    if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+    if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+    match = 1
+  }
+  
+  if(match == 0){
+    ncbi.num <- taxize::get_uid(ncbi.tax.virus$Virus[i], rank_query = c("genus"))
+    ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+    if(!is.na(ncbi.high[[1]][1])){
+      if("genus" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
+      if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+      if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+      if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+      match = 1
+      ncbi.tax.virus$Virus[i] <- NA
+    }
+  }
+  
+  if(match == 0){
+    ncbi.num <- taxize::get_uid(ncbi.tax.virus$Virus[i], rank_query = c("family"))
+    ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+    if(!is.na(ncbi.high[[1]][1])){
+      if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+      if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+      if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.virus$VirusClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+      match = 1
+      ncbi.tax.virus$Virus[i] <- NA
+    }
+  }
+}
+
+globi %>% pull(Host_Intermediate) %>% unique() %>% sort() -> ncbi.names
+
+ncbi.tax.host <- data.frame(Host_Intermediate = ncbi.names,
+                       Host = ncbi.names,
+                       HostGenus = NA, 
+                       HostFamily = NA, 
+                       HostOrder = NA,
+                       HostClass = NA)
+
+for (i in 1:nrow(ncbi.tax.host)) {
+  
+  ncbi.tax.host$Host[i] <- str_squish(str_replace(ncbi.tax.host$Host[i], " sp\\.", ""))
+  ncbi.tax.host$Host[i] <- str_squish(str_replace(ncbi.tax.host$Host[i], " gen\\.", ""))
+  ncbi.tax.host$Host[i] = word(ncbi.tax.host$Host[i], start = 1, end = 2)
+  
+  ncbi.num <- taxize::get_uid(ncbi.tax.host$Host[i], rank_query = c("species"))
+  ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+  if(!is.na(ncbi.high[[1]][1])){
+    if("genus" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
+    if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+    if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+    if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+    match = 1
+  }
+  
+  if(match == 0){
+    ncbi.num <- taxize::get_uid(ncbi.tax.host$Host[i], rank_query = c("genus"))
+    ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+    if(!is.na(ncbi.high[[1]][1])){
+      if("genus" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
+      if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+      if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+      if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+      match = 1
+      ncbi.tax.host$Host[i] <- NA
+    }
+  }
+  
+  if(match == 0){
+    ncbi.num <- taxize::get_uid(ncbi.tax.host$Host[i], rank_query = c("family"))
+    ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+    if(!is.na(ncbi.high[[1]][1])){
+      if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
+      if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+      if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+      match = 1
+      ncbi.tax.host$Host[i] <- NA
+    }
+  }
+  
+  if(match == 0){
+    ncbi.num <- taxize::get_uid(ncbi.tax.host$Host[i], rank_query = c("order"))
+    ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
+    if(!is.na(ncbi.high[[1]][1])){
+      if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
+      if("class" %in% ncbi.high[[1]]$rank) {ncbi.tax.host$HostClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+      match = 1
+      ncbi.tax.host$Host[i] <- NA
+    }
+  }
+}
+
+# NEED TO ADD A STEP TO BIND IN THE TAXONOMY
+
+##### Bind into VIRION
+
+virion <- read_csv('Intermediate/Virion-Temp.csv')
+
+virion <- bind_rows(virion, globi) %>% 
+  arrange(Host, Virus)
+
+write_csv(virion, 'Intermediate/Virion-Temp.csv')
