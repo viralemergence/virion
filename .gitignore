@@ -6,3 +6,10 @@ GenBank-Taxized.csv
 SRA_as_Edgelist.edges
 .Rproj.user
 Intermediate/clover.csv
+*.zip
+Intermediate/Virion-Temp.csv
+Intermediate/Virion-Temp.csv
+Intermediate/GLOBI-parsed.csv
+Intermediate/GBTaxized.zip
+Code_Dev/TaxonomyTempIn.csv
+Intermediate/Virion-Temp.csv

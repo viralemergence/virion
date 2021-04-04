@@ -46,16 +46,14 @@ if(file.exists("Intermediate/clover.csv")){
 # Mark the ones that are in CLOVER
 clo %<>% mutate(Clover = 1)
 
+sra.m %>% mutate(Virus = tolower(Virus),
+                 Host = tolower(Host)) -> sra.m2
+
 # Join CLOVER and SRA
-clo %<>% right_join(sra.m)
+clo %<>% right_join(sra.m2, by = c("Pathogen_Harmonised" = "Virus", "HostHarmonised_Taxize" = "Host"))
 
 # Mark the ones that AREN'T in CLOVER
 clo$Clover[is.na(clo$Clover)] <- 0
-
-# Check out how score behaves
-
-ggplot(clo, aes(x = factor(Clover), y = log(score))) + 
-  geom_violin()
 
 # Time to threshold this in such a way that we're sure of what we're working with ####
 
@@ -63,7 +61,7 @@ clo %>% mutate(rownum = c(1:nrow(clo)),
                scaled = log(score)/max(log(score))) -> clo
 
 clo %>% 
-  select(Host, Virus, Clover, rownum, scaled) %>%
+  select(HostHarmonised_Taxize, Pathogen_Harmonised, Clover, rownum, scaled) %>%
   unique() %>%
   select(rownum, Clover, scaled) -> 
   clo.sub
@@ -74,6 +72,22 @@ th <- optimal.thresholds(clo.sub,
                          req.sens = 0.99,
                          req.spec = 0.99,
                          na.rm = TRUE)
+
+# Check out how score behaves
+
+ggplot(clo, aes(x = factor(Clover), y = log(score)/max(log(clo$score)), fill = factor(Clover))) + 
+  geom_violin() + 
+  theme_bw() + 
+  xlab("SRA association recorded in CLOVER?") + ylab("Maximum recorded virus hits in sample (log-transformed, rescaled)") + 
+  geom_line(y = th$scaled[th$Method == 'MaxKappa'], col = 'red') + 
+  geom_hline(aes(yintercept = th$scaled[th$Method == 'MaxKappa']), col = 'red', lty = 2) + 
+  theme(axis.title.x = element_text(vjust = -1.5),
+        axis.title.y = element_text(vjust = 5)) +
+  scale_fill_manual(values = c("#00AFBB", "#00AFBB")) +
+  theme(plot.margin = unit(c(1,1,1,1),"cm"),
+        legend.position = 'n')
+
+# Cut it off 
 
 clo %<>% filter(Clover == 1 | scaled > th$scaled[th$Method == 'MaxKappa']) 
 
@@ -87,7 +101,7 @@ cut.score <- th$scaled[th$Method == 'MaxKappa']
 
 virion <- read_csv("Intermediate/Virion-Temp.csv")
 
-maxscore <- max(log(sra.m$score))
+maxscore <- max(log(clo$score))
 
 sra.v %>% 
 # sra.m %>% 
