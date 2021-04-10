@@ -20,6 +20,7 @@ jncbi <- function(spnames, type = 'host') {
   
   if(type == 'host') {system("julia C:/Users/cjcar/Documents/Github/virion/Code_Dev/host.jl")}
   if(type == 'virus') {system("julia C:/Users/cjcar/Documents/Github/virion/Code_Dev/virus.jl")}
+  if(type == 'pathogen') {system("julia C:/Users/cjcar/Documents/Github/virion/Code_Dev/pathogen.jl")}
   
   clean <- read_csv("~/Github/virion/Code_Dev/TaxonomyTempOut.csv")
   file.remove('~/Github/virion/Code_Dev/TaxonomyTempIn.csv')
