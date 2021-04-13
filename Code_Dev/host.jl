@@ -50,6 +50,6 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
     return vcat(results...)
 end
 
-hosts = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"))
+hosts = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
 reconciled_hosts = taxonomizer(hosts, :hosts; names=:Name)
 CSV.write("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(hosts), reconciled_hosts, on=:Name => :name))

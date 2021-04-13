@@ -36,6 +36,6 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 end
 
 # TODO IMPORTANT USE THE FILES YOU WANT HERE
-pathogens = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"))
+pathogens = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
 reconciled_pathogens = taxonomizer(pathogens, :pathogens; names=:Name)
 CSV.write("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(pathogens), reconciled_pathogens, on=:Name => :name))
