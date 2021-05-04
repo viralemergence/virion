@@ -1,4 +1,7 @@
 
+if(!exists('jncbi')) {source('Code/001_Julia functions.R')}
+if(!exists('findSyns3')) {source('Code/002_TaxiseCleaner.R')}
+
 library(tidyverse)
 library(taxize)
 
@@ -29,7 +32,6 @@ globi %>%
 globi %>% pull(Host.ID) %>% sapply(function(x) {word(string = x, 1, sep = ":")}) %>% table()
 globi %>% pull(Virus.ID) %>% sapply(function(x) {word(string = x, 1, sep = ":")}) %>% table()
 
-
 #### Actually call NCBI 
 # Only pull in names that are resolved enough to make sense of, and none of the messy names
 
@@ -42,7 +44,7 @@ globi %>% pull(Host) %>% unique() %>% sort() -> host.list
 host.table <- (jncbi(host.list, type = 'host') %>% filter(matched == TRUE))
 
 globi %>% pull(Virus) %>% unique() %>% sort() -> virus.list
-virus.table <- (jncbi(virus.list, type = 'virus') %>% filter(matched == TRUE))
+virus.table <- (jncbi(virus.list, type = 'virus')) #%>% filter(matched == TRUE))
 
 host.table %>% select(Name, match) %>%
   rename(Host_Original = 'Name',

@@ -15,12 +15,12 @@ temp <- data.frame(Host = character(),
                  HostFamily = character(),
                  HostOrder = character(),
                  HostClass = character(),
+                 HostOriginal = character(),
                  HostSynonyms = character(),
                  VirusGenus = character(),
                  VirusFamily = character(),
                  VirusOrder = character(),
                  VirusClass = character(),
-                 HostOriginal = character(),
                  VirusOriginal = character(),
                  HostFlagID = logical(),
                  VirusFlagContaminant = logical(),
@@ -31,7 +31,7 @@ temp <- data.frame(Host = character(),
                  PublicationYear = double(),
                  ReferenceText = character(),
                  PMID = double(),
-                 NCBIAccession = double(),
+                 NCBIAccession = character(),
                  ReleaseYear = double(),
                  ReleaseMonth = double(),
                  ReleaseDay = double(),
@@ -70,6 +70,8 @@ clo %<>% select(-c(PathogenType,
                    Detection_Serology,
                    Detection_Genetic,
                    Detection_Isolation))
+
+clo %<>% mutate(NCBIAccession = as.character(NCBIAccession))
 
 # colnames(clo)[!(colnames(clo) %in% colnames(temp))] # Deleted check 
 

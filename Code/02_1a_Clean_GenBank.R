@@ -8,7 +8,7 @@ library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip
 # setwd("~/Github/virion")
 # setwd(here::here())
 
-source("Code/00_TaxiseCleaner.R")
+source("Code/002_TaxiseCleaner.R")
 
 # Read in host data ####
 
