@@ -265,15 +265,7 @@ ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusGenus"] <- "Beta
 ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusFamily"] <- "Coronaviridae"
 ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusOrder"] <- "Nidovirales"
 
-# ### Test run NCBI 
-# 
-# ncbi.tax %>% filter(is.na(VirusGenus)) -> ncbi.fails
-# 
-# floop <- jncbi(ncbi.fails$Virus, type = 'virus')
-
-# Come back to this when fuzzy is enabled?
-
-# Merge that bastard in
+# ### Merge
 
 predict %<>% left_join(bind_rows(predictionary, ncbi.tax))
 

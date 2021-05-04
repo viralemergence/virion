@@ -1,5 +1,7 @@
 
 
+library(tidyverse)
+
 install.ncbi <- function() {
   library(JuliaCall)
   julia_setup()
