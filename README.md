@@ -27,7 +27,7 @@ VIRION aggregates five major sources of information, three of which are dynamic 
 
 For now, VIRION lives on Github in a 100\% open and reproducible format. To avoid relying on the Large File Storage system, VIRION is disaggregated into one backbone (Edgelist.csv), two taxonomic metadata files (HostTaxonomy.csv, VirusTaxonomy.csv), and three sampling metadata files (Provenance.csv.gz, Detection.csv.gz, Temporal.csv.gz). The metadata files are stored in a compressed format that can be easily manipulated, e.g., using the `vroom` package in `R`. 
 
-The taxonomy files can be joined to the backbone with the "Host" and "Virus" fields, while the metadata files can be joined by the ID field (which must first be separated into unique rows). For simple tasks, not every join will be needed. For example, this R code can be used to find every taxonomically-valid bat host in which any betacoronavirus (taxonomically valid or not!) has been isolated: 
+The taxonomy files can be joined to the backbone with the "Host" and "Virus" fields, while the metadata files can be joined by the ID field (which must first be separated into unique rows). For simple tasks, not every join will be needed. For example, this R code can be used to find the name of every taxonomically-valid bat host in which any betacoronavirus, classified or unclassified, has been isolated: 
 
 ```
 library(tidyverse); library(magrittr); library(vroom)
