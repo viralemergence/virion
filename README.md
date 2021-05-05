@@ -23,6 +23,19 @@ VIRION aggregates five major sources of information, three of which are dynamic 
   
 # How to use VIRION
 
+### File organization and assembly
+
+For now, VIRION lives on Github in a 100\% open and reproducible format. To avoid relying on the Large File Storage system, VIRION is disaggregated into one backbone (Edgelist.csv), two taxonomic metadata files (HostTaxonomy.csv, VirusTaxonomy.csv), and three sampling metadata files (Provenance.csv.gz, Detection.csv.gz, Temporal.csv.gz). The metadata files are stored in a compressed format that can be easily manipulated, e.g., using the `vroom` package in `R`. 
+
+The taxonomy files can be joined to the backbone with the "Host" and "Virus" fields, while the metadata files can be joined by the ID field (which must first be separated into unique rows). For simple tasks, not every join will be needed. For example, this R code can be used to find every taxonomically-valid bat host in which any betacoronavirus (taxonomically valid or not!) has been isolated: 
+
+```
+library(tidyverse); library(magrittr); library(vroom)
+
+```
+
+### What you should probably know about the data 
+
 You probably haven't worked with a dataset like VIRION before. Read this before you start your analysis:
 
 Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
