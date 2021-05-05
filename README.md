@@ -1,5 +1,5 @@
 <p align = "center">
-  <img src="Virion.png" width="200">
+  <img src="Figures/Virion.png" width="200">
 </p>
 &nbsp;
 &nbsp;
@@ -8,16 +8,24 @@
 
 # The workflow
 
-VIRION aggregates three major sources of information:
-- CLOVER (see github.com/viralemergence/clover), which combines four major datasets on host-pathogen interactions
-- NCBI GenBank, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database
-- NCBI SRA, which inculdes a mix of "normal" records and metagenomic samples, which have undergone an NCBI-based taxonomic analysis based on _k_-mers.
+VIRION aggregates five major sources of information, three of which are dynamic (\*):
+- CLOVER, a Verena-curated [database](github.com/viralemergence/clover), which reconciles four static datasets on host-pathogen interactions
+- The [public data](https://healthmap.org/predict) released by the USAID Emerging Pandemic Threats PREDICT program 
+- GLOBI\*, the [Global Biotic Interactions](http://globalbioticinteractions.org/) database
+- NCBI GenBank\*, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database
+- NCBI Sequence Read Archive\*, which includes metagenomic samples that have undergone taxonomic analysis
 
-Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
-
+<p align = "center">
+  <img src="Figures/0001.jpg" width="5000">
+</p>
+&nbsp;
+&nbsp;
+  
 # How to use VIRION
 
 You probably haven't worked with a dataset like VIRION before. Read this before you start your analysis:
+
+Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
 
 VIRION includes a mix of _fixed_ and _probabilistic_ interactions. Fixed interactions are known host-virus associations that come from NCBI GenBank and the CLOVER dataset (which is itself a reconciled version of four other datasets: HP3, GMPD2, EID2, and Shaw), and are based on a mix of serology, PCR, and isolation. Probabilistic interactions come from NCBI's Sequence Read Archive (SRA), which includes a mix of targeted sequencing (e.g. whole genomes of isolated virus or PCR products) and shotgun sequencing (e.g. metagenomic or metatranscriptomic data). In any given SRA sample, there may be a mix of different viruses from the given host, and it is challenging to know whether the genome fragments that are present in the sample necessarily indicate the _definite_ presence of a _specific_ virus.We take advantage of a taxonomic analysis using _k_-mer matching performed by NCBI, which returns a score indicating the relative likelihood any virus in NCBI's records has been found in that sample. We validated those data against known records to come up with a very strict cutoff, a test that only X% of possible host-virus pairs pass. The score column is calculated as... (@ryan or @tim please add details)
 
