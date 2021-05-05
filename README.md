@@ -47,18 +47,7 @@ Other, more advanced users may be interested in using the entire edgelist of pos
 
 In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, % of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
 
-# The team
-
-VIRION owes significant thanks to the entire Verena Consortium for conception, design input, and beta testing.
-
-### Developers 
-- Colin Carlson (Georgetown University)
-- Rory Gibb (London School of Tropical Medicine and Hygiene)
-- Gregory Albery (Georgetown University)
-- Ryan Connor (NCBI)
-- Timothée Poisot (Université de Montreal)
-
 ### Contact
-- For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu).
-- For specific questions about the SRA data, please contact Timothée Poisot (timothee.poisot@umontreal.ca) 
+- For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu) or Gregory Albery 
+- For specific questions about the SRA data, please contact Timothée Poisot (timothee.poisot@umontreal.ca) or Ryan Connor
 - For specific questions about the CLOVER dataset, please contact Rory Gibb (rory.gibb.14@ucl.ac.uk)
