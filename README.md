@@ -6,7 +6,7 @@
   
 #### The Global Virome, in One Network (VIRION) is an atlas of host-virus interactions. It is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org).
 
-# The workflow
+# How we built VIRION
 
 VIRION aggregates five major sources of information, three of which are dynamic (\*):
 - CLOVER, a Verena-curated [database](github.com/viralemergence/clover), which reconciles four static datasets on host-pathogen interactions
@@ -46,6 +46,11 @@ virion %<>% filter(!(Database == "SRA")) # option 2 (currently equivalent)
 Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. 
 
 In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, % of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
+
+# Additional information
+### Citing VIRION
+
+Please do not use VIRION for published research yet!
 
 ### Contact
 - For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu) or Gregory Albery 
