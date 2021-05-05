@@ -8,6 +8,8 @@
 
 #### VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
 
+We encourage researchers to review this entire guide before using these data.
+
 # How we built VIRION
 
 VIRION aggregates five major sources of information, three of which are dynamic (\*):
@@ -23,7 +25,7 @@ VIRION aggregates five major sources of information, three of which are dynamic 
 &nbsp;
 &nbsp;
  
-We encourage researchers to review this entire guide before using these data.
+These methods will be further described in a forthcoming preprint / publication by Carlson _et al._
 
 # How to use VIRION
 
