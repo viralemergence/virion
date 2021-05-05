@@ -3,13 +3,21 @@
 </p>
 &nbsp;
 &nbsp;
-
- 
- 
   
-# VIRION: The Virome, in One Network
+# VIRION: The Global Virome, in One Network
 
-VIRION is the most comprehensive open database describing the vertebrate-virus network. The VIRION database is curated by an entire team of researchers, with the aim of being up-to-date, accurate, transparent, and useful.
+VIRION is an atlas of host-virus interactions. It is the most comprehensive database of its kind, and is 100\% open.
+
+VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists. It draws data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry.
+
+# The workflow
+
+VIRION aggregates three major sources of information:
+- CLOVER (see github.com/viralemergence/clover), which combines four major datasets on host-pathogen interactions
+- NCBI GenBank, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database
+- NCBI SRA, which inculdes a mix of "normal" records and metagenomic samples, which have undergone an NCBI-based taxonomic analysis based on _k_-mers.
+
+Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
 
 # How to use VIRION
 
@@ -35,48 +43,18 @@ Other, more advanced users may be interested in using the entire edgelist of pos
 
 In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, % of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
 
-# The workflow
-
-VIRION aggregates three major sources of information:
-- CLOVER (see github.com/viralemergence/clover), which combines four major datasets on host-pathogen interactions
-- NCBI GenBank, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database
-- NCBI SRA, which inculdes a mix of "normal" records and metagenomic samples, which have undergone an NCBI-based taxonomic analysis based on _k_-mers.
-
-Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
-
-### Current Workflow (Dec. 20, 2020)
-
-1. Processing the NCBI GenBank dataset
-- GenBank data were downloaded as a flat file on Nov. 20, 2020
-- A script has been adapted from the CLOVER workflow that implements taxonomic cleaning using the R package `taxize`
-- All 8,000+ hosts in GenBank were cleaned following this protocol, and bound to the GenBank file
-- This was then subsetted to vertebrate records only
-- (Not yet implemented) These need to be linked to the NCBI taxonomy using either `taxize` or `NCBITaxonomy.jl`, which will capture records at high taxonomic levels (e.g., bacterial family: Enterobacteriaceae), including specific use cases of unresolved names (e.g., "Bacillus sp." needs to be split into "Bacillus" based on a special "* sp." case, so the genus can be linked to _Bacillus_)
-- (Not yet implemented) All host and virus taxonomy should be filtered to every virus recorded associated with vertebrates
-
-2. Processing the NCBI SRA dataset
-- @Tim and @Ryan eventually we need a lot more about how we get from SRA raw to NCBI-SRA 
-- Using a Python script with the list of host names, every mammal name is subsetted to a file that is used to filter the SRA data down
-- SRA-Mammals is compared against CLOVER and a cutoff log(score) is selected that maximizes the kappa statistic, treating CLOVER records as true presences and every other pair as pseudoabsences
-- SRA-Vertebrates is re-thresholded 
-
-3. VIRION is assembled
-- GenBank is formatted into the CLOVER template, and added
-- SRA is formatted into the CLOVER template, and added
-- (Not yet implemented) as a final step, all phage families are removed using NCBITaxonomy or Ryan's python script
-
 # The team
 
 VIRION owes significant thanks to the entire Verena Consortium for conception, design input, and beta testing.
 
 ### Developers 
-- Gregory Albery (Georgetown University)
 - Colin Carlson (Georgetown University)
-- Ryan Connor (NCBI)
 - Rory Gibb (London School of Tropical Medicine and Hygiene)
+- Gregory Albery (Georgetown University)
+- Ryan Connor (NCBI)
 - Timothée Poisot (Université de Montreal)
 
 ### Contact
 - For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu).
-- For specific questions about VIRION-SRA, please contact Timothée Poisot (timothee.poisot@umontreal.ca) 
-- For specific questions about CLOVER, please contact Rory Gibb (rory.gibb.14@ucl.ac.uk)
+- For specific questions about the SRA data, please contact Timothée Poisot (timothee.poisot@umontreal.ca) 
+- For specific questions about the CLOVER dataset, please contact Rory Gibb (rory.gibb.14@ucl.ac.uk)
