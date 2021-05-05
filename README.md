@@ -4,7 +4,7 @@
 &nbsp;
 &nbsp;
   
-# VIRION: The Global Virome, in One Network
+# The Global Virome, in One Network (VIRION)
 
 VIRION is an atlas of host-virus interactions. It is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org).
 
