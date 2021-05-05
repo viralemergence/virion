@@ -69,18 +69,15 @@ Unlike nearly every dataset familiar to disease ecologists, this dataset include
 
 <img src="Figures/SRA.jpeg" align="right" width="400">
 
-To generate the SRA component of the dataset, we used a _k_-mer based [taxonomy tool](https://www.biorxiv.org/content/10.1101/2021.02.16.431451v1) which identifies the number of virus "hits" in a host sample. Starting from an analysis of every possible pairwise combination (given in `SRA_as_Edgelist.zip` for any interested researchers), we identified the maximum number of hits for a given pair. Subsequently, we use the CLOVER data as a ground truth (for "known associations" or not) to identify the most plausible associations, with a threshold selected that maximizes the kappa statistic. This returns the top ~1% of possible associations (see the figure to the right). 
-
+To generate the SRA component of the dataset, we used a _k_-mer based [taxonomy tool](https://www.biorxiv.org/content/10.1101/2021.02.16.431451v1) which identifies the number of virus "hits" in a host sample. Starting from an analysis of every possible pairwise combination (given in `SRA_as_Edgelist.zip` for any interested researchers), we identified the maximum number of hits for a given pair. Subsequently, we use the CLOVER data as a ground truth (for "known associations" or not) to identify the most plausible associations, with a threshold selected that maximizes the kappa statistic. This returns the top ~1% of possible associations (see the figure to the right). Given that most matches are likely to be imprecise, we currently restrict the taxonomy of these matches to the genus level and above (though species matches can be reconstructed from the VirusTaxID field at this time).
 
 Even though this analysis is incredibly conservative, it is in a preliminary state, and only _predicts_ possible associations. (These could later be confirmed, for example, by assembling viral genomes from the original SRA samples.) As such, users should be _very_ careful about whether or not they include these interactions in their analysis. Example problems they might encounter:
 
-- The highest scoring match might be a known relative of an unknown virus (for example, in a sample with a novel bat betacoronavirus, the highest score might be returned for SARS-CoV)
-
-- The score could be indicative of cross-contamination 
+- The prediction could, simply, be a false positive. This is an imprecise method.
+- 
+- The highest scoring match might be a known relative of an unknown virus (for example, in a sample with a novel bat betacoronavirus, the highest score might be returned for SARS-CoV). This is partially solved by removing the Virus names, but not entirely.
  
-- The score could be indicative of experimental (laboratory) infection, which - unlike isolation records - might not necessarily indicate that host can be infected with that virus
- 
-- The score might be a product of technological issues (see the VirusFlagContaminant field)
+- The score might be a product of technological issues or cross-contamination (see the VirusFlagContaminant field).
 
 As such, users may want to remove all of these records entirely from the dataset, which can be done in a single line of code using the `DetectionMethod` or `Database` columns, e.g., 
 
@@ -90,7 +87,7 @@ virion %<>% filter(!(DetectionMethod == "kmer")) # option 1
 virion %<>% filter(!(Database == "SRA")) # option 2 (currently equivalent)
 ```
 
-Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, \% of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
+Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative but still easily incorporated into the VIRION architecture. 
 
 # Additional information
 ### Citing VIRION
