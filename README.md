@@ -1,5 +1,12 @@
-<img align="right" src="Virion.png" width="200">
+<p align = "center">
+  <img src="Virion.png" width="200">
+</p>
 
+\  
+\ 
+ 
+ 
+  
 # VIRION: The Virome, in One Network
 
 VIRION is the most comprehensive open database describing the vertebrate-virus network. The VIRION database is curated by an entire team of researchers, with the aim of being up-to-date, accurate, transparent, and useful.
