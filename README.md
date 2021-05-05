@@ -20,7 +20,7 @@ VIRION aggregates five major sources of information, three of which are dynamic 
 - NCBI Sequence Read Archive\*, which includes metagenomic samples that have undergone taxonomic analysis
 
 <p align = "center">
-  <img src="Figures/0001.jpg" width="5000">
+  <img src="Figures/VIRIONworkflow.jpg" width="5000">
 </p>
 &nbsp;
 &nbsp;
