@@ -4,7 +4,8 @@
 &nbsp;
 &nbsp;
   
-#### The Global Virome, in One Network (VIRION) is an atlas of host-virus interactions. It is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org).
+### The Global Virome, in One Network (VIRION) is an atlas of host-virus interactions. 
+#### VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated regularly, with the aim of being up-to-date, accurate, transparent, and useful for scientific inquiry. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org).
 
 # How we built VIRION
 
@@ -64,11 +65,12 @@ Like most datasets that record host-virus associations, this includes a mix of d
 
 ### A special note about the metagenomics 
 
-Unlike nearly every dataset familiar to disease ecologists, the dataset includes a mix of fixed interactions (records based on serology, PCR, or isolation that link a given host and virus pair) and probabilistic interactions (_k_-mer based estimates of the probability a given virus is being detected in a given sample). As such, the data cannot be used off the shelf, and should be *carefully* used with attention to the mix between fixed and probabilistic data.
+Unlike nearly every dataset familiar to disease ecologists, this dataset includes a mix of known interactions (e.g., PCR detection of virus) and _predicted interactions_ (the _k_-mer analysis conducted on the Sequence Read Archive). As such, the data cannot be used safely and uncritically off the shelf, **it should not be indexed in other datasets of known interactions**, and it should be carefully by researchers with attention to the mix of data standards.
 
-VIRION includes a mix of _fixed_ and _probabilistic_ interactions. Fixed interactions are known host-virus associations that come from NCBI GenBank and the CLOVER dataset (which is itself a reconciled version of four other datasets: HP3, GMPD2, EID2, and Shaw), and are based on a mix of serology, PCR, and isolation. Probabilistic interactions come from NCBI's Sequence Read Archive (SRA), which includes a mix of targeted sequencing (e.g. whole genomes of isolated virus or PCR products) and shotgun sequencing (e.g. metagenomic or metatranscriptomic data). In any given SRA sample, there may be a mix of different viruses from the given host, and it is challenging to know whether the genome fragments that are present in the sample necessarily indicate the _definite_ presence of a _specific_ virus.We take advantage of a taxonomic analysis using _k_-mer matching performed by NCBI, which returns a score indicating the relative likelihood any virus in NCBI's records has been found in that sample. We validated those data against known records to come up with a very strict cutoff, a test that only X% of possible host-virus pairs pass. The score column is calculated as... (@ryan or @tim please add details)
+To generate the SRA component of the dataset, we used a _k_-mer based [taxonomy tool](https://www.biorxiv.org/content/10.1101/2021.02.16.431451v1) which identifies the number of virus "hits" in a host sample. Starting from an analysis of every possible pairwise combination (given in `SRA_as_Edgelist.zip` for any interested researchers), we identified the maximum number of hits for a given pair. Subsequently, we use the CLOVER data as a ground truth (for "known associations" or not) to identify the most plausible associations, with a threshold selected that maximizes the kappa statistic. 
 
-Even though that analysis is incredibly conservative, users should be _very_ careful about whether or not they include these interactions in their analysis. Example problems they might encounter:
+
+Even though this analysis is incredibly conservative, it is in a preliminary state, and only _predicts_ possible associations. (These could later be confirmed, for example, by assembling viral genomes from the original SRA samples.) As such, users should be _very_ careful about whether or not they include these interactions in their analysis. Example problems they might encounter:
 
 - The highest scoring match might be a known relative of an unknown virus (for example, in a sample with a novel bat betacoronavirus, the highest score might be returned for SARS-CoV)
 
@@ -86,9 +88,7 @@ virion %<>% filter(!(DetectionMethod == "kmer")) # option 1
 virion %<>% filter(!(Database == "SRA")) # option 2 (currently equivalent)
 ```
 
-Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. 
-
-In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, % of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
+Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. In the long term, we're interested in partnering with virologists and bioinformaticians to develop score metrics that are more informative (for example, \% of reference genome recovered) or more advanced ways of mining metagenomic and metatranscriptomic samples for novel (currently undiscovered) viruses, which are both outside the scope of our current dataset and may confound certain analyses with it.
 
 # Additional information
 ### Citing VIRION
