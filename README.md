@@ -31,7 +31,21 @@ The taxonomy files can be joined to the backbone with the "Host" and "Virus" fie
 
 ```
 library(tidyverse); library(magrittr); library(vroom)
+setwd("~/Github/virion/Virion")
+edge <- vroom("Edgelist.csv")
+host <- vroom("TaxonomyHost.csv"); vir <- vroom("TaxonomyVirus.csv")
+det <- vroom("Detection.csv.gz", col_types = c("ID" = 'c'))
 
+host %<>% filter(HostOrder == "chiroptera", HostNCBIResolved == TRUE)
+vir %<>% filter(VirusGenus == "betacoronavirus")
+det %<>% filter(DetectionMethod == "Isolation/Observation")
+edge %<>% separate_rows(ID) %>%
+  inner_join(host) %>% inner_join(vir) %>% inner_join(det)
+
+edge %>% pull(Host) %>% unique()
+# [1] "chaerephon plicatus"       "pipistrellus abramus"      "rhinolophus affinis"      
+# [4] "rhinolophus ferrumequinum" "rhinolophus macrotis"      "rhinolophus pearsonii"    
+# [7] "rhinolophus sinicus"       "rousettus leschenaultii"   "tylonycteris pachypus" 
 ```
 
 ### What you should probably know about the data 
