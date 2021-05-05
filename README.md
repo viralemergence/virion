@@ -98,6 +98,6 @@ Other, more advanced users may be interested in using the entire edgelist of pos
 Please do not use VIRION for published research yet!
 
 ### Contact
-- For general questions about VIRION, please reach out to Colin Carlson (colin.carlson@georgetown.edu) or Gregory Albery 
-- For specific questions about the SRA data, please contact Timothée Poisot (timothee.poisot@umontreal.ca) or Ryan Connor
-- For specific questions about the CLOVER dataset, please contact Rory Gibb (rory.gibb.14@ucl.ac.uk)
+- For general questions about VIRION, please reach out to [Colin Carlson](colin.carlson@georgetown.edu) or [Gregory Albery](gfalbery@gmail.com).
+- For specific questions about the SRA data, please contact [Timothée Poisot](timothee.poisot@umontreal.ca) or [Ryan Connor](ryan.connor@nih.gov).
+- For specific questions about the CLOVER dataset, please contact [Rory Gibb](rory.gibb.14@ucl.ac.uk).
