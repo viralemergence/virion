@@ -36,19 +36,9 @@ temp <- data.frame(Host = character(),
                    CollectionDay = double(),
                    stringsAsFactors = FALSE)
 
-# Attaching GenBank ####
-
-# if(!file.exists("Intermediate/GenBank-Taxized.csv")){
-#   
-#   unzip(zipfile = 'Intermediate/GBTaxized.zip', exdir = 'Intermediate') 
-#   
-# }
-# 
-# gb <- read_csv("Intermediate/GenBank-Taxized.csv")
+# Attaching GenBank
 
 gb <- read_csv("Intermediate/Unformatted/GenBankUnformatted.csv")
-
-colnames(gb)[!(colnames(gb) %in% colnames(temp))]
 
 gb %<>% rename(NCBIAccession = 'Accession')
 

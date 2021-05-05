@@ -20,12 +20,17 @@ write_csv(host.table, 'Intermediate/GBHostTax.csv')
 
 gb %<>% rename(HostOriginal = "Host") %>%
   left_join(host.table) %>%
-  filter(HostClass %in% c("Mammalia", # Selecting host taxa
-                          "Aves",
-                          "Reptilia",
+  filter(HostClass %in% c("Actinopteri",
+                          "Actinopterygii",
                           "Amphibia",
+                          "Aves",
                           "Chondrichthyes",
-                          "Elasmobranchii"))
+                          "Cladistia",
+                          "Hyperoartia",
+                          "Lepidosauria",
+                          "Mammalia",
+                          "Myxini",
+                          "Reptilia") | HostOrder == "Testudines")
 
 # This isn't like the other workflows, but this comes first given that vertebrate viruses pare this down to about 20% of what it would be otherwise
 httr::GET("http://cran.r-project.org/Rlogo.jpg", config = httr::config(connecttimeout = 60))

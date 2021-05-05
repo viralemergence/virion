@@ -391,6 +391,8 @@ for (i in 1:length(mess)){
   }
 }
 
+predict %<>% select(-VirusIntermediate)
+
 write_csv(predict, "Intermediate/Unformatted/PREDICTUnformatted.csv")
 
 # ##### Double check the NCBItaxonomy on the viruses I guess

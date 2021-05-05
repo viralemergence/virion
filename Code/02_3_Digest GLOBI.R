@@ -60,4 +60,17 @@ globi %<>%
 globi %<>%
   mutate_cond(is.na(HostGenus), HostGenus = word(Host, 1))
 
+# A little cleaning
+globi %<>% filter(HostClass %in% c("Actinopteri",
+                        "Actinopterygii",
+                        "Amphibia",
+                        "Aves",
+                        "Chondrichthyes",
+                        "Cladistia",
+                        "Hyperoartia",
+                        "Lepidosauria",
+                        "Mammalia",
+                        "Myxini",
+                        "Reptilia") | HostOrder == "Testudines")
+
 write_csv(globi, "Intermediate/Unformatted/GLOBIUnformatted.csv")
