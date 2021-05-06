@@ -39,4 +39,4 @@ write_csv(virus.table, 'Intermediate/GBVirusTax.csv')
 gb %<>% rename(VirusOriginal = "Species") %>%
   left_join(virus.table)
 
-write_csv(gb, "Intermediate/Unformatted/GenBankUnformatted.csv")
+vroom_write(gb, "Intermediate/Unformatted/GenBankUnformatted.csv.gz")

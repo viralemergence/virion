@@ -1,5 +1,5 @@
 
-virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.tsv.gz")
+virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 
 # Is there anything that's not vertebrate in here?
 

@@ -70,4 +70,4 @@ gb %<>% mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", "HostClass",
                          "Virus", "VirusGenus", "VirusFamily", "VirusOrder", "VirusClass"),
                        tolower)
 
-write_csv(gb, "Intermediate/Formatted/GenbankFormatted.csv")
+vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")

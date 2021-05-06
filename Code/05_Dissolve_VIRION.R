@@ -79,7 +79,6 @@ virion %<>%
 virion %<>% 
   group_by(HostTaxID, VirusTaxID) %>%
   summarise_at(vars(c("AssocID")), ~list(.x)) %>%
-  arrange(Host, Virus) %>%
   mutate(AssocID = sapply(AssocID, fixer))
 
 write_csv(virion, "Virion/Edgelist.csv")

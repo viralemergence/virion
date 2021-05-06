@@ -13,5 +13,5 @@ if(class(clo$NCBIAccession)=='numeric') {clo %<>% mutate(NCBIAccession = as.char
 
 virion <- bind_rows(clo, pred, gb, sra, globi)
 
-vroom_write(virion, "Intermediate/Formatted/VIRIONUnprocessed.tsv.gz")
+vroom_write(virion, "Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 
