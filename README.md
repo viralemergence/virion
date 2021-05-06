@@ -29,30 +29,26 @@ These methods will be further described in a forthcoming preprint / publication 
 
 # How to use VIRION
 
+VIRION can be used for everything from deep learning to simple biological questions. For example, if you wanted to ask which bats a betacoronavirus (like SARS-CoV or MERS-CoV) has ever been isolated from, you could run this `R` code:
+
+```
+> library(tidyverse); library(vroom)
+> virion <- vroom("Virion/Virion.csv.gz")
+> virion %>% filter(VirusGenus == "betacoronavirus",
++                   HostOrder == "chiroptera",
++                   DetectionMethod == "Isolation/Observation") %>% 
++     pull(Host) %>% unique
+[1] "chaerephon plicatus"       "pipistrellus abramus"      "rhinolophus affinis"      
+[4] "rhinolophus ferrumequinum" "rhinolophus macrotis"      "rhinolophus pearsonii"    
+[7] "rhinolophus sinicus"       "rousettus leschenaultii"   "tylonycteris pachypus"    
+```
+
 ### File organization and assembly
 
-For now, VIRION lives on Github in a 100\% open and reproducible format. To avoid relying on the Large File Storage system, VIRION is disaggregated into one backbone (Edgelist.csv), two taxonomic metadata files (HostTaxonomy.csv, VirusTaxonomy.csv), and three sampling metadata files (Provenance.csv.gz, Detection.csv.gz, Temporal.csv.gz). The metadata files are stored in a compressed format that can be easily manipulated, e.g., using the `vroom` package in `R`. 
+For now, VIRION lives on Github in a 100\% open and reproducible format. To avoid relying on the Large File Storage system, VIRION is stored in two formats.
 
-The taxonomy files can be joined to the backbone with the "Host" and "Virus" fields, while the metadata files can be joined by the ID field (which must first be separated into unique rows). For simple tasks, not every join will be needed. For example, this R code can be used to find the name of every taxonomically-valid bat host in which any betacoronavirus, classified or unclassified, has been isolated: 
-
-```
-library(tidyverse); library(magrittr); library(vroom)
-setwd("~/Github/virion/Virion")
-edge <- vroom("Edgelist.csv")
-host <- vroom("TaxonomyHost.csv"); vir <- vroom("TaxonomyVirus.csv")
-det <- vroom("Detection.csv.gz", col_types = c("ID" = 'c'))
-
-host %<>% filter(HostOrder == "chiroptera", HostNCBIResolved == TRUE)
-vir %<>% filter(VirusGenus == "betacoronavirus")
-det %<>% filter(DetectionMethod == "Isolation/Observation")
-edge %<>% separate_rows(ID) %>%
-  inner_join(host) %>% inner_join(vir) %>% inner_join(det)
-
-edge %>% pull(Host) %>% unique()
-# [1] "chaerephon plicatus"       "pipistrellus abramus"      "rhinolophus affinis"      
-# [4] "rhinolophus ferrumequinum" "rhinolophus macrotis"      "rhinolophus pearsonii"    
-# [7] "rhinolophus sinicus"       "rousettus leschenaultii"   "tylonycteris pachypus" 
-```
+1. The entire database is available in `virion/Virion.csv.gz` which can be easily read as-is using the `vroom` package.
+2. The NCBI-matched components of the database are also available in a disaggregated format with a backbone (Edgelist.csv), two taxonomic metadata files (HostTaxonomy.csv, VirusTaxonomy.csv), and three sampling metadata files (Provenance.csv.gz, Detection.csv.gz, Temporal.csv.gz). The taxonomy files can be joined to the backbone with the `HostTaxID` and `VirusTaxID` fields, while the metadata files can be joined by the `AssocID` field (which must first be separated into unique rows). For simple tasks, not every join will be needed. 
 
 ### What you should probably know about the data 
 
