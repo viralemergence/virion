@@ -1,6 +1,7 @@
 
 if(!exists('jncbi')) {source('Code/001_Julia functions.R')}
 if(!exists('findSyns3')) {source('Code/002_TaxiseCleaner.R')}
+if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 
 library(tidyverse)
 library(magrittr)
@@ -144,32 +145,9 @@ predictionary$VirusIntermediate = predictionary$Virus
 
 predict %>% pull(VirusIntermediate) %>% str_subset("PREDICT", negate = TRUE) %>% unique() %>% sort() -> ncbi.names
 
-ncbi.tax <- data.frame(Virus = ncbi.names,
-                       VirusIntermediate = ncbi.names,
-                       VirusGenus = NA, 
-                       VirusFamily = NA, 
-                       VirusOrder = NA,
-                       VirusNCBIResolved = NA)
+ncbi.tax <- vdict(ncbi.names)
 
-# ncbi.match <- jncbi(ncbi.tax$Virus, type = 'virus')
-
-# usethis::edit_r_environ() then enter your API key
-
-for (i in 1:nrow(ncbi.tax)) {
-  ncbi.num <- taxize::get_uid(ncbi.tax$VirusIntermediate[i])
-  ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
-  if(!is.na(ncbi.high[[1]][1])){
-    ncbi.tax$VirusNCBIResolved[i] <- TRUE 
-    ncbi.tax$VirusTaxID[i] <- ncbi.num[[1]]
-    if("species" %in% ncbi.high[[1]]$rank) {ncbi.tax$Virus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='species'), 'name']}
-    if("genus" %in% ncbi.high[[1]]$rank) {ncbi.tax$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
-    if("family" %in% ncbi.high[[1]]$rank) {ncbi.tax$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
-    if("order" %in% ncbi.high[[1]]$rank) {ncbi.tax$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
-  } else {
-      ncbi.tax$Virus[i] <- ncbi.tax$VirusIntermediate[i]
-      ncbi.tax$VirusNCBIResolved[i] <- FALSE
-  }
-}
+ncbi.tax %<>% rename(VirusIntermediate = "VirusOriginal")
  
 # Add some guardrails 
 
@@ -287,7 +265,7 @@ for(i in 1:nrow(predict)) {
     if(!is.na(ncbi.high[[1]][1])){
       if(!(any(str_detect(ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='species')], c('unidentified', 'unclassified', 'sp.'))))) {
         predict$VirusNCBIResolved[i] <- TRUE 
-        predict$VirusTaxID[i] <- ncbi.num[[1]]
+        predict$VirusTaxID[i] <- tax
         if("species" %in% ncbi.high[[1]]$rank) {predict$Virus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='species'), 'name']}
         if("genus" %in% ncbi.high[[1]]$rank) {predict$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
         if("family" %in% ncbi.high[[1]]$rank) {predict$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
@@ -310,88 +288,22 @@ for(i in 1:nrow(predict)) {
 
 # Now, the host taxonomy 
 
+predict %<>% mutate(HostOriginal = recode(HostOriginal, !!!c("Hipposideros larvatus/grandis species complex" = "Hipposideros sp.")))
+
 predict %>% pull(Host) %>% unique() -> hosts
 
 predict %>% 
   mutate(Host = str_replace(Host, " sp\\.","")) %>% pull(Host) %>% unique() -> hosts
 
-hosts %>% # Go through these names and Taxize them 
-  lapply(findSyns3) %>%
-  bind_rows() -> test
+host.tax <- hdict(hosts)
 
-table(test$Submitted == test$Accepted_name) # That's good, all valid names
-
-test %>% rename(HostOriginal = 'Original',
-                Host = "Accepted_name",
-                HostFamily = "Selected_family",
-                HostOrder = "Selected_order", 
-                HostClass = "Selected_class",
-                HostSynonyms = "Synonyms") %>%
-  select(-Submitted) %>%
-  as_tibble() %>%
-  group_by_at(vars(-HostSynonyms)) %>%
-  summarise(HostSynonyms = toString(HostSynonyms)) -> test
-
-test %<>% mutate(HostNCBIResolved = TRUE)
-
-#### EXPERIMENTAL CODE
-for(i in 1:nrow(test)){
-  test$HostTaxID <- taxize::get_uid(test$Host[i])[[1]]
-}
-
-predict %>% rename(HostOriginal = "Host") %>% left_join(test) -> predict
+predict %>% rename(HostOriginal = "Host") %>% 
+  mutate(HostIntermediate = str_replace(HostOriginal, " sp\\.","")) %>%
+  left_join(host.tax, by = c("HostIntermediate" = "HostOriginal")) -> predict
 
 predict %>% filter(is.na(Host)) %>% pull(HostOriginal) %>% unique()
 
-# A little bit more host name cleaning
-
-predict %<>% mutate(HostOriginal = recode(HostOriginal, !!!c("Hipposideros larvatus/grandis species complex" = "Hipposideros sp.")))
-predict %>% filter(is.na(Host)) %>% pull(HostOriginal) %>% unique() -> mess
-
-predict %<>% mutate(HostGenus = word(Host, 1)) 
-
-mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
-  condition <- eval(substitute(condition), .data, envir)
-  .data[condition, ] <- .data[condition, ] %>% mutate(...)
-  .data
-}
-# https://stackoverflow.com/questions/34096162/dplyr-mutate-replace-several-columns-on-a-subset-of-rows
-
-for (i in 1:length(mess)){
-  badname <- mess[i]
-  goodname <- str_replace(badname," sp\\.", "")
-  ncbi.num <- taxize::get_uid(goodname, rank_filter = c("genus", "family", "order"))
-  ncbi.high <- taxize::classification(ncbi.num, db = "ncbi")
-  
-  if(last(ncbi.high[[1]]$rank) == 'order'){
-    predict %<>% mutate_cond(HostOriginal==badname, 
-                            HostOrder = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='order')],
-                            HostClass = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='class')],
-                            HostNCBIResolved = TRUE,
-                            HostTaxID = ncbi.num[[1]]) 
-  }
-  
-  if(last(ncbi.high[[1]]$rank) == 'family'){
-    predict %<>% mutate_cond(HostOriginal==badname, 
-                             HostFamily = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='family')],
-                             HostOrder = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='order')],
-                             HostClass = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='class')],
-                             HostNCBIResolved = TRUE,
-                             HostTaxID = ncbi.num[[1]]) 
-  }
-  
-  if(last(ncbi.high[[1]]$rank) == 'genus'){
-    predict %<>% mutate_cond(HostOriginal==badname, 
-                             HostGenus = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='genus')],
-                             HostFamily = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='family')],
-                             HostOrder = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='order')],
-                             HostClass = ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='class')],
-                             HostNCBIResolved = TRUE,
-                             HostTaxID = ncbi.num[[1]]) 
-  }
-}
-
-predict %<>% select(-VirusIntermediate)
+predict %<>% select(-c(VirusIntermediate, HostIntermediate))
 
 write_csv(predict, "Intermediate/Unformatted/PREDICTUnformatted.csv")
 

@@ -32,9 +32,6 @@ gb %<>% rename(HostOriginal = "Host") %>%
                           "Myxini",
                           "Reptilia") | HostOrder == "Testudines")
 
-# This isn't like the other workflows, but this comes first given that vertebrate viruses pare this down to about 20% of what it would be otherwise
-httr::GET("http://cran.r-project.org/Rlogo.jpg", config = httr::config(connecttimeout = 60))
-
 gb %>% pull(Species) %>% unique() %>% sort() -> virus.list
 virus.table <- vdict(virus.list)
 write_csv(virus.table, 'Intermediate/GBVirusTax.csv')

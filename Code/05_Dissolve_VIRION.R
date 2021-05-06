@@ -12,19 +12,16 @@ fixer <- function(x) {toString(unique(unlist(x)))}
 # Why is there no host genus? Needs to be fixed in NCBI
 
 virion %>% 
-  select(Host, HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostOriginal, HostSynonyms) %>% 
-  group_by_at(vars(-c("HostOriginal", "HostSynonyms"))) %>% 
-  summarise_at(vars(c("HostOriginal", "HostSynonyms")), ~list(.x)) %>%
+  select(Host, HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms) %>% 
+  group_by_at(vars(-c("HostSynonyms"))) %>% 
+  summarise_at(vars(c("HostSynonyms")), ~list(.x)) %>%
   arrange(Host) %>%
-  mutate(HostOriginal = sapply(HostOriginal, fixer),
-         HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
+  mutate(HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
 
 virion %>% 
-  select(Virus, VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusOriginal) %>% 
-  group_by_at(vars(-c("VirusOriginal"))) %>% 
-  summarise_at(vars(c("VirusOriginal")), ~list(.x)) %>%
+  select(Virus, VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass) %>% 
   arrange(Virus) %>%
-  mutate(VirusOriginal = sapply(VirusOriginal, fixer)) -> virus.tax
+  unique() -> virus.tax
 
 # Output the taxonomy files, and return associations without them
 
@@ -32,8 +29,8 @@ write_csv(host.tax, "Virion/TaxonomyHost.csv")
 write_csv(virus.tax, "Virion/TaxonomyVirus.csv")
 
 virion %<>% 
-  select(-c(HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostOriginal, HostSynonyms, 
-            VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusOriginal)) #
+  select(-c(HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, 
+            VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass)) #
 
 # Organize the sampling information into an ID-linked column
 
@@ -43,6 +40,7 @@ virion %<>%
   
 virion %>%
   select(ID, 
+         HostOriginal, VirusOriginal, 
          Database, DatabaseVersion,
          ReferenceText, 
          PMID) -> provenance
@@ -68,6 +66,7 @@ virion %<>%
             ReferenceText, 
             PMID,
             DetectionMethod, DetectionOriginal, 
+            HostOriginal, VirusOriginal,
             HostFlagID, VirusFlagContaminant,
             NCBIAccession,
             PublicationYear, 
