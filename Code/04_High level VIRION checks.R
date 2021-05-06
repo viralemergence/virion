@@ -19,8 +19,8 @@ virion %>% filter(!(HostClass %in% c("actinopteri",
 # Deal with the phage 
   
 virion %<>% 
-  filter(!str_detect(Virus, "phage"),
-         !str_detect(Virus, "bacteri")) %>%
+  filter(!str_detect(Virus, "phage")|is.na(Virus),
+         !str_detect(Virus, "bacteri")|is.na(Virus)) %>%
   filter(!(VirusFamily %in% c("turriviridae",
                              "ackermannviridae",
                              "myoviridae",
