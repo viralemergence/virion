@@ -116,7 +116,6 @@ virus.table <- vdict(virus.list)
 #                              "Chondrichthyes",
 #                              "Elasmobranchii"))
 
-
 sra %<>% ungroup %>% select(-c(Host, Virus)) %>%
   left_join(host.table) %>%
   left_join(virus.table) %>%

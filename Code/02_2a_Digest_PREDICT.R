@@ -307,7 +307,7 @@ predict %>% rename(HostOriginal = "Host") %>%
 
 predict %>% filter(is.na(Host)) %>% pull(HostOriginal) %>% unique()
 
-predict %<>% select(-c(VirusIntermediate, HostIntermediate))
+predict %<>% select(-VirusIntermediate)
 
 write_csv(predict, "Intermediate/Unformatted/PREDICTUnformatted.csv")
 

@@ -5,21 +5,24 @@ library(magrittr)
 library(tidyverse)
 library(vroom)
 
-virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.tsv.gz")
+virion <- vroom("Virion/Virion.csv.gz")
 
 fixer <- function(x) {toString(unique(unlist(x)))}
 
 # Why is there no host genus? Needs to be fixed in NCBI
 
+virion %<>% filter(!is.na(HostTaxID),
+                   !is.na(VirusTaxID))
+
 virion %>% 
-  select(Host, HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms) %>% 
+  select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, HostNCBIResolved) %>% 
   group_by_at(vars(-c("HostSynonyms"))) %>% 
   summarise_at(vars(c("HostSynonyms")), ~list(.x)) %>%
   arrange(Host) %>%
   mutate(HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
 
 virion %>% 
-  select(Virus, VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass) %>% 
+  select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved) %>% 
   arrange(Virus) %>%
   unique() -> virus.tax
 
@@ -29,30 +32,30 @@ write_csv(host.tax, "Virion/TaxonomyHost.csv")
 write_csv(virus.tax, "Virion/TaxonomyVirus.csv")
 
 virion %<>% 
-  select(-c(HostTaxID, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, 
-            VirusTaxID, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass)) #
+  select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, 
+            Virus, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass)) #
 
 # Organize the sampling information into an ID-linked column
 
 virion %<>%
-  mutate(ID = row_number()) %>%
-  relocate(ID, .before = everything())
+  mutate(AssocID = row_number()) %>%
+  relocate(AssocID, .before = everything())
   
 virion %>%
-  select(ID, 
+  select(AssocID, 
          HostOriginal, VirusOriginal, 
          Database, DatabaseVersion,
          ReferenceText, 
          PMID) -> provenance
 
 virion %>% 
-  select(ID,
+  select(AssocID,
          DetectionMethod, DetectionOriginal, 
          HostFlagID, VirusFlagContaminant,
          NCBIAccession) -> detection
 
 virion %>% 
-  select(ID, 
+  select(AssocID, 
          PublicationYear, 
          ReleaseYear, ReleaseMonth, ReleaseDay,
          CollectionYear, CollectionMonth, CollectionDay) -> temporal
@@ -74,9 +77,9 @@ virion %<>%
             CollectionYear, CollectionMonth, CollectionDay))
 
 virion %<>% 
-  group_by(Host, Virus) %>%
-  summarise_at(vars(c("ID")), ~list(.x)) %>%
+  group_by(HostTaxID, VirusTaxID) %>%
+  summarise_at(vars(c("AssocID")), ~list(.x)) %>%
   arrange(Host, Virus) %>%
-  mutate(ID = sapply(ID, fixer))
+  mutate(AssocID = sapply(AssocID, fixer))
 
 write_csv(virion, "Virion/Edgelist.csv")
