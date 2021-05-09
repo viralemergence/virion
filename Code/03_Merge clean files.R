@@ -3,7 +3,7 @@ setwd("~/Github/virion")
 
 library(tidyverse); library(magrittr); library(vroom)
 
-gb <- read_csv("Intermediate/Formatted/GenbankFormatted.csv")
+gb <- vroom("Intermediate/Formatted/GenbankFormatted.csv.gz")
 clo <- read_csv("Intermediate/Formatted/CloverFormatted.csv")
 sra <- read_csv("Intermediate/Formatted/SRAFormatted.csv")
 pred <- read_csv("Intermediate/Formatted/PredictFormatted.csv")

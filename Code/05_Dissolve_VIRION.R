@@ -22,7 +22,7 @@ virion %>%
   mutate(HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
 
 virion %>% 
-  select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved) %>% 
+  select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
   arrange(Virus) %>%
   unique() -> virus.tax
 
@@ -33,7 +33,7 @@ write_csv(virus.tax, "Virion/TaxonomyVirus.csv")
 
 virion %<>% 
   select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, 
-            Virus, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass)) #
+            Virus, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass, ICTVRatified)) #
 
 # Organize the sampling information into an ID-linked column
 

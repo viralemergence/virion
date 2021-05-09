@@ -1,20 +1,20 @@
 
 virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 
-# Is there anything that's not vertebrate in here?
-
-virion %>% filter(!(HostClass %in% c("actinopteri",
-                                     "actinopterygii",
-                                     "amphibia",
-                                     "aves",
-                                     "chondrichthyes",
-                                     "cladistia",
-                                     "hyperoartia",
-                                     "lepidosauria",
-                                     "mammalia",
-                                     "myxini",
-                                     "reptilia"))) %>%
-  filter(!is.na(HostClass)) %>% View()
+# # Is there anything that's not vertebrate in here?
+# 
+# virion %>% filter(!(HostClass %in% c("actinopteri",
+#                                      "actinopterygii",
+#                                      "amphibia",
+#                                      "aves",
+#                                      "chondrichthyes",
+#                                      "cladistia",
+#                                      "hyperoartia",
+#                                      "lepidosauria",
+#                                      "mammalia",
+#                                      "myxini",
+#                                      "reptilia"))) %>%
+#   filter(!is.na(HostClass)) %>% View()
 
 # Deal with the phage 
   
@@ -63,5 +63,7 @@ virion %<>%
 ictv <- read_csv("Source/ICTV Master Species List 2019.v1.csv")
 
 virion %<>% mutate(ICTVRatified = (Virus %in% str_to_lower(ictv$Species)))
+
+virion %<>% distinct()
 
 vroom_write(virion, "Virion/Virion.csv.gz")

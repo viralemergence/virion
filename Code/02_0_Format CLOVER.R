@@ -3,7 +3,7 @@ library(tidyverse)
 library(magrittr)
 library(lubridate)
 
-clo <- read_csv("~/Github/clovert_dev/clover/clovert/CLOVERT_Viruses_AssociationsFlatFile.csv")
+clo <- read_csv("~/Github/clovert_dev/clover/clover/CLOVER_1.0_Viruses_AssociationsFlatFile.csv")
 
 temp <- data.frame(Host = character(),
                  Virus = character(),
@@ -57,13 +57,10 @@ clo %<>% rename(Virus = "Pathogen",
                VirusFamily = "PathogenFamily",
                VirusOrder = "PathogenOrder",
                VirusClass = "PathogenClass",
-               DetectionOriginal = "DetectionMethod_Original",
-               HostNCBIResolved = "Host_NCBIMatch",
-               VirusNCBIResolved = "Pathogen_NCBIMatch",
-               HostOriginal = "Host_Original",
-               VirusOriginal = "Pathogen_Original",
-               HostTaxID = "HostTaxID_NCBI",
-               VirusTaxID = "PathogenTaxID_NCBI")
+               DetectionOriginal = "DetectionMethodOriginal",
+               VirusNCBIResolved = "PathogenNCBIResolved",
+               VirusOriginal = "PathogenOriginal",
+               VirusTaxID = "PathogenTaxID")
 
 clo %<>% select(-c(PathogenType, 
                    Detection_NotSpecified,
@@ -72,6 +69,8 @@ clo %<>% select(-c(PathogenType,
                    Detection_Isolation))
 
 clo %<>% mutate(NCBIAccession = as.character(NCBIAccession))
+
+clo %<>% select(-ICTVRatified)
 
 # colnames(clo)[!(colnames(clo) %in% colnames(temp))] # Deleted check 
 

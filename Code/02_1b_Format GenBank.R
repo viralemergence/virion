@@ -1,5 +1,5 @@
 
-library(tidyverse)
+library(tidyverse); library(magrittr); library(vroom)
 
 temp <- data.frame(Host = character(),
                    Virus = character(),
@@ -38,7 +38,7 @@ temp <- data.frame(Host = character(),
 
 # Attaching GenBank
 
-gb <- read_csv("Intermediate/Unformatted/GenBankUnformatted.csv")
+gb <- vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz")
 
 gb %<>% rename(NCBIAccession = 'Accession')
 
