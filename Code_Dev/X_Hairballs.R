@@ -5,13 +5,13 @@ library(ggraph)
 library(graphlayouts)
 library(oaqc)
 
-vir <- read_csv("~/Github/virion/Virion/Virion-Master.csv")
+vir <- vroom("Virion/Virion.csv.gz")
 
 clo <- read_csv("~/Github/clover/clover/Clover_v1.0_NBCIreconciled_20201218.csv")
 
 hp3 <- read_csv("~/Github/clover/data/source_databases/HP3_associations.csv")
 
-vir %>% select(Host,Virus) -> vir
+vir %>% select(Host,Virus) %>% na.omit() %>% unique() -> vir
 
 clo %>% select(Host, Virus) %>% 
   mutate(Host = str_c(Host, '_clo'),
@@ -45,6 +45,6 @@ ggraph(net, layout = "stress") + # layout = "centrality", cent = graph.strength(
   geom_node_point(aes(fill = Type), colour = "grey50", shape = 21, size = 1, stroke = 0.25) +
   scale_fill_manual(values = got_palette) +
   theme_graph() +
-  theme(legend.position = "none",
-        panel.background = element_rect(fill = "#ADEADD"))
+  theme(legend.position = "none") # ,
+    #   panel.background = element_rect(fill = "#ADEADD"))
 
