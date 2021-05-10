@@ -6,14 +6,14 @@
   
 ### The Global Virome, in One Network (VIRION) is an atlas of host-virus interactions. 
 
-#### VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](viralemergence.org), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+#### VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
 
 We encourage researchers to review this entire guide before using these data.
 
 # How we built VIRION
 
 VIRION aggregates five major sources of information, three of which are dynamic (\*):
-- CLOVER, a Verena-curated [database](github.com/viralemergence/clover), which reconciles four static datasets on host-pathogen interactions
+- CLOVER, a Verena-curated [database](https://github.com/viralemergence/clover), which reconciles four static datasets on host-pathogen interactions
 - The [public data](https://healthmap.org/predict) released by the USAID Emerging Pandemic Threats PREDICT program 
 - GLOBI\*, the [Global Biotic Interactions](http://globalbioticinteractions.org/) database
 - NCBI GenBank\*, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database
@@ -32,22 +32,33 @@ These methods will be further described in a forthcoming preprint / publication 
 VIRION can be used for everything from deep learning to simple biological questions. For example, if you wanted to ask which bats a betacoronavirus (like SARS-CoV or MERS-CoV) has ever been isolated from, you could run this `R` code:
 
 ```
-> library(tidyverse); library(vroom)
+> library(tidyverse)
+> library(vroom)
+> 
 > virion <- vroom("Virion/Virion.csv.gz")
-> virion %>% filter(VirusGenus == "betacoronavirus",
-+                   HostOrder == "chiroptera",
-+                   DetectionMethod == "Isolation/Observation") %>% 
-+     pull(Host) %>% unique
-[1] "chaerephon plicatus"       "pipistrellus abramus"      "rhinolophus affinis"      
-[4] "rhinolophus ferrumequinum" "rhinolophus macrotis"      "rhinolophus pearsonii"    
-[7] "rhinolophus sinicus"       "rousettus leschenaultii"   "tylonycteris pachypus"    
+> 
+> virion %>% 
++   filter(VirusGenus == "betacoronavirus",
++          HostOrder == "chiroptera",
++          DetectionMethod == "Isolation/Observation") %>% 
++   pull(Host) %>% 
++   unique()
+[1] "chaerephon plicatus"      
+[2] "pipistrellus abramus"     
+[3] "rhinolophus affinis"      
+[4] "rhinolophus ferrumequinum"
+[5] "rhinolophus macrotis"     
+[6] "rhinolophus pearsonii"    
+[7] "rhinolophus sinicus"      
+[8] "rousettus leschenaultii"  
+[9] "tylonycteris pachypus"
 ```
 
 ### File organization and assembly
 
 For now, VIRION lives on Github in a 100\% open and reproducible format. To avoid relying on the Large File Storage system, VIRION is stored in two formats.
 
-1. The entire database is available in `virion/Virion.csv.gz` which can be easily read as-is using the `vroom` package.
+1. The entire database is available in `Virion/Virion.csv.gz` which can be easily read as-is using the [`vroom` package](https://vroom.r-lib.org/).
 2. The NCBI-matched components of the database are also available in a disaggregated format with a backbone (Edgelist.csv), two taxonomic metadata files (HostTaxonomy.csv, VirusTaxonomy.csv), and three sampling metadata files (Provenance.csv.gz, Detection.csv.gz, Temporal.csv.gz). The taxonomy files can be joined to the backbone with the `HostTaxID` and `VirusTaxID` fields, while the metadata files can be joined by the `AssocID` field (which must first be separated into unique rows). For simple tasks, not every join will be needed. 
 
 ### What you should probably know about the data 
