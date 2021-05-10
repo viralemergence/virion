@@ -60,13 +60,13 @@ Like most datasets that record host-virus associations, this includes a mix of d
 
 - Limiting evidence standards based on diagnostic standards (e.g., using Nucleotide and Isolation/Observation records, but no Antibodies or k-mer) or based on redundancy (i.e., number of datasets that record an association) can also lead to stronger results.
 
-- We encourage particular caution with regard to the validity of virus names. Although the NCBI and ICTV taxonomies are updated against each other, valid NCBI names are not guaranteed to be ICTV-valid species level designations, and many may include sampling metadata. We recommend that researchers manually curate names where possible, but can also use simple rubrics to reduce down controversial names. For example, in the list of NCBI-accepted betacoronavirus names, eliminating all virus names that include a "/" will reduce many lineage-specific records ("bat coronavirus 2265/philippines/2010", "coronavirus n.noc/vm199/2007/nld") and leave behind cleaner names ("alpaca coronavirus") but won't necessarily catch everything ("bat coronavirus ank045f"). Anotehr option is to limit analysis to viruses that are ICTV ratified, but this is particularly conservative, and will leave a much larger number of valid virus names out.
+- We encourage particular caution with regard to the validity of virus names. Although the NCBI and ICTV taxonomies are updated against each other, valid NCBI names are not guaranteed to be ICTV-valid species level designations, and many may include sampling metadata. We recommend that researchers manually curate names where possible, but can also use simple rubrics to reduce down controversial names. For example, in the list of NCBI-accepted betacoronavirus names, eliminating all virus names that include a "/" will reduce many lineage-specific records ("bat coronavirus 2265/philippines/2010", "coronavirus n.noc/vm199/2007/nld") and leave behind cleaner names ("alpaca coronavirus") but won't necessarily catch everything ("bat coronavirus ank045f"). Another option is to limit analysis to viruses that are ICTV ratified, but this is particularly conservative, and will leave a much larger number of valid virus names out.
 
 - Finally, we encourage every researcher who uses this data to make a deliberate choice about the use of metagenomic data (see below).
 
 ### A special note about the metagenomics 
 
-Unlike nearly every dataset familiar to disease ecologists, this dataset includes a mix of known interactions (e.g., PCR detection of virus) and _predicted interactions_ (the _k_-mer analysis conducted on the Sequence Read Archive). As such, the data cannot be used safely and uncritically off the shelf, **it should not be indexed in other datasets of known interactions**, and it should be carefully by researchers with attention to the mix of data standards.
+Unlike nearly every dataset familiar to disease ecologists, this dataset includes a mix of known interactions (e.g., PCR detection of virus) and _predicted interactions_ (the _k_-mer analysis conducted on the Sequence Read Archive). As such, the data cannot be used safely and uncritically off the shelf, **it should not be indexed in other datasets of known interactions**, and it should be carefully evaluated by researchers with attention to the mix of data standards.
 
 <img src="Figures/SRA.jpeg" align="right" width="400">
 
@@ -88,7 +88,7 @@ virion %<>% filter(!(DetectionMethod == "kmer")) # option 1
 virion %<>% filter(!(Database == "SRA")) # option 2 (currently equivalent)
 ```
 
-Other, more advanced users may be interested in using the entire edgelist of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. In the long term, we hope to develop score metrics that are more informative but still easily incorporated into the VIRION architecture. 
+Other, more advanced users may be interested in using the entire edge list of possible host-virus associations in SRA, which is found in `SRA_as_Edgelist.zip`. Alternate scoring methods that are less conservative will include many more false positives, but also potentially more true positives. In the long term, we hope to develop score metrics that are more informative but still easily incorporated into the VIRION architecture. 
 
 # Additional information
 ### Citing VIRION
