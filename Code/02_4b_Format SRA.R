@@ -110,7 +110,7 @@ problems <- c("Vesicular stomatitis virus",
               "Torque teno virus",
               "Semliki Forest virus")
 
-sra %<>% mutate_cond(Virus %in% str_to_lower(problems), VirusFlagContaminant = TRUE)
+sra %<>% mutate_cond(str_to_lower(Virus) %in% str_to_lower(problems), VirusFlagContaminant = TRUE)
 
 sra %<>% mutate(HostTaxID = as.numeric(HostTaxID))
 sra %<>% mutate(VirusTaxID = as.numeric(VirusTaxID))
