@@ -73,4 +73,6 @@ globi %<>% filter(HostClass %in% c("Actinopteri",
                         "Myxini",
                         "Reptilia") | HostOrder == "Testudines")
 
+globi %<>% filter(!str_detect(VirusClass, "viricetes"))
+
 write_csv(globi, "Intermediate/Unformatted/GLOBIUnformatted.csv")
