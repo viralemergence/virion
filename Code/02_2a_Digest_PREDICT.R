@@ -265,7 +265,6 @@ for(i in 1:nrow(predict)) {
     if(!is.na(ncbi.high[[1]][1])){
       if(!(any(str_detect(ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='species')], c('unidentified', 'unclassified', 'sp.'))))) {
         predict$VirusNCBIResolved[i] <- TRUE 
-
         if("species" %in% ncbi.high[[1]]$rank) {predict$Virus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='species'), 'name']}
         if("genus" %in% ncbi.high[[1]]$rank) {predict$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
         if("family" %in% ncbi.high[[1]]$rank) {predict$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
@@ -274,6 +273,7 @@ for(i in 1:nrow(predict)) {
         
         levels <- c("species", "genus", "family", "order", "class")
         u <- last(ncbi.high[[1]][ncbi.high[[1]]$rank %in% levels,'id'])
+        predict$VirusTaxID[i] <- u
 
         print(ncbi.high)
       }
@@ -296,9 +296,6 @@ for(i in 1:nrow(predict)) {
 predict %<>% mutate(Host = recode(Host, !!!c("Hipposideros larvatus/grandis species complex" = "Hipposideros sp.")))
 
 predict %>% pull(Host) %>% unique() -> hosts
-
-predict %>% 
-  mutate(Host = str_replace(Host, " sp\\.","")) %>% pull(Host) %>% unique() -> hosts
 
 host.tax <- hdict(hosts)
 
