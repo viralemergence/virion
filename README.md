@@ -4,9 +4,9 @@
 &nbsp;
 &nbsp;
   
-### The Global Virome, in One Network (VIRION) is the largest, 100% open atlas of the vertebrate virome ever compiled by scientists. 
+### The Global Virome, in One Network (VIRION) is an open atlas of the vertebrate virome.
 
-#### VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+#### The VIRION database was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
 
 VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 2.8 million interactions that capture roughly 25% of known mammal diversity, 10% of bird diversity, and 6% of total vertebrate diversity. Unlike many other databases, VIRION has undergone a full taxonomic reconciliaton process, using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi), with a total of 3,767 valid vertebrate host species and 9,000 valid viruses, of which 1,667 are ICTV-ratified valid names. 
 
