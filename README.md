@@ -4,7 +4,7 @@
 &nbsp;
 &nbsp;
   
-### The Global Virome, in One Network (VIRION) is an atlas of host-virus interactions. 
+### The Global Virome, in One Network (VIRION) is the largest, 100% open atlas of the vertebrate virome ever compiled by scientists. 
 
 #### VIRION is curated by an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
 
