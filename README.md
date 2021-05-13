@@ -101,7 +101,7 @@ Other, more advanced users may be interested in using the entire edge list of po
 # Additional information
 ### Citing VIRION
 
-Please do not use VIRION for published research yet!
+Please do not use VIRION for published research yet! This is only an alpha release and probably contains a _number_ of bugs that we still need to fix. (Similarly, so those bugs don't escape our orbit, please don't reproduce the data elsewhere yet!)
 
 ### Contact
 - For general questions about VIRION, please reach out to [Colin Carlson](colin.carlson@georgetown.edu) or [Gregory Albery](gfalbery@gmail.com).
