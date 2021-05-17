@@ -51,19 +51,17 @@ net <- set_vertex_attr(net, 'Source', index = V(net),
 
 got_palette <- c("#325E9A", "#DD5D5D", "#325E9A", "#DD5D5D")
 
-ggraph(net, layout = "kk") + 
+print(Sys.time())
+
+g <- ggraph(net, layout = "kk") + 
   geom_edge_link(edge_colour = "grey80", alpha = 0.2) +
   geom_node_point(aes(fill = Type), colour = "grey50", shape = 21, size = 1.1, stroke = 0.8, alpha = 0.5) +
   scale_fill_manual(values = got_palette) +
-  theme_bw() +
   facet_nodes( ~ Source, scales = "free", shrink = TRUE) + 
-  theme(legend.position = "none",
-        strip.text = element_text(size = 20),
-        axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank(),
-        panel.background = element_rect(fill = "#ADEADD"),
-        plot.background = element_rect(fill = "#ADEADD"))
+  theme_graph(strip_text_size = 22)
+
+print(Sys.time())
+
+ggsave(g,  filename = 'hairball.jpg', width = 40, height = 20, units = 'cm', dpi = 300)
+
+print(Sys.time())
