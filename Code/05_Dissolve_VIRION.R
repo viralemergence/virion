@@ -14,12 +14,18 @@ fixer <- function(x) {toString(unique(unlist(x)))}
 virion %<>% filter(!is.na(HostTaxID),
                    !is.na(VirusTaxID))
 
+# virion %>% 
+#   select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, HostNCBIResolved) %>% 
+#   group_by_at(vars(-c("HostSynonyms"))) %>% 
+#   summarise_at(vars(c("HostSynonyms")), ~list(.x)) %>%
+#   arrange(Host) %>%
+#   mutate(HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
+
+# Temporary no-synonyms code:
 virion %>% 
-  select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, HostNCBIResolved) %>% 
-  group_by_at(vars(-c("HostSynonyms"))) %>% 
-  summarise_at(vars(c("HostSynonyms")), ~list(.x)) %>%
-  arrange(Host) %>%
-  mutate(HostSynonyms = sapply(HostSynonyms, fixer)) -> host.tax
+  select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostNCBIResolved) %>% 
+  distinct() %>% 
+  arrange(Host) -> host.tax
 
 virion %>% 
   select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
@@ -32,7 +38,7 @@ write_csv(host.tax, "Virion/TaxonomyHost.csv")
 write_csv(virus.tax, "Virion/TaxonomyVirus.csv")
 
 virion %<>% 
-  select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass, HostSynonyms, 
+  select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass,
             Virus, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass, ICTVRatified)) #
 
 # Organize the sampling information into an ID-linked column
@@ -51,7 +57,7 @@ virion %>%
 virion %>% 
   select(AssocID,
          DetectionMethod, DetectionOriginal, 
-         HostFlagID, VirusFlagContaminant,
+         HostFlagID,
          NCBIAccession) -> detection
 
 virion %>% 
@@ -70,7 +76,7 @@ virion %<>%
             PMID,
             DetectionMethod, DetectionOriginal, 
             HostOriginal, VirusOriginal,
-            HostFlagID, VirusFlagContaminant,
+            HostFlagID,
             NCBIAccession,
             PublicationYear, 
             ReleaseYear, ReleaseMonth, ReleaseDay,

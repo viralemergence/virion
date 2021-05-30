@@ -62,8 +62,18 @@ virion %<>%
 
 ictv <- read_csv("Source/ICTV Master Species List 2019.v1.csv")
 
-virion %<>% mutate(ICTVRatified = (Virus %in% str_to_lower(ictv$Species)))
+virion %<>% mutate(ICTVRatified = (Virus %in% str_to_lower(ictv$Species))) %>%
+  relocate(ICTVRatified, .after = VirusNCBIResolved)
+
+#### SOME TEMPORARY SCAFFOLDING: May 30, 2021
+#### From the SRA patch
+
+virion %<>% mutate(HostFlagID = replace_na(HostFlagID, "FALSE"))
+virion %<>% select(-c(HostSynonyms, VirusFlagContaminant))
+
+####
 
 virion %<>% distinct()
+virion %<>% mutate(across(everything(), ~replace_na(.x, '')))
 
 vroom_write(virion, "Virion/Virion.csv.gz")
