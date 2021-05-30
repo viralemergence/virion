@@ -10,13 +10,13 @@
 
 VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 2.8 million interactions that capture roughly 25% of known mammal diversity, 10% of bird diversity, and 6% of total vertebrate diversity. Unlike many other databases, VIRION has undergone a taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi), with a total (at last count) of 3,787 valid vertebrate host species and 9,003 valid viruses, of which 1,658 are ICTV-ratified valid names. 
 
-VIRION is part of an ongoing effort to build an open data ecosystem in viral ecology, and has been released prior to a preprint, publication, or peer-review process. As such (and because it includes a mix of known and predicted interactions), we strongly discourage the reproduction of the data in other databases at this time.
+VIRION is part of an ongoing effort to build an open data ecosystem in viral ecology, and has been released prior to a preprint, publication, or peer-review process. As such, we strongly discourage the reproduction of the data in other databases at this time.
 
 We encourage researchers to **review this entire guide** before using these data.
 
 # How we built VIRION
 
-VIRION aggregates five major sources of information, three of which are dynamic (\*):
+VIRION aggregates seven major sources of information, two of which can be dynamically updated (\*):
 - CLOVER, a Verena-curated [database](https://github.com/viralemergence/clover), which reconciles four static datasets on host-pathogen interactions.
 - The [public data](https://healthmap.org/predict) released by the USAID Emerging Pandemic Threats PREDICT program.
 - GLOBI\*, the [Global Biotic Interactions](http://globalbioticinteractions.org/) database.
