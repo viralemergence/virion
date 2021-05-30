@@ -23,7 +23,7 @@ VIRION aggregates seven major sources of information, two of which can be dynami
 - NCBI GenBank\*, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database.
 
 <p align = "center">
-  <img src="Figures/VIRION-no-SRA.jpg" width="5000">
+  <img src="Figures/VIRION2.jpg" width="5000">
 </p>
 &nbsp;
 &nbsp;
