@@ -1,9 +1,13 @@
 name: Compile virion
 
 # Controls when the action will run. 
-on:
+on:  
   push:
-    branches: [ master ]
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
   # run once a week
   schedule:
     - cron: "0 0 * * 0"
