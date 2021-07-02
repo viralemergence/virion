@@ -51,7 +51,7 @@ VIRION can be used for everything from deep learning to simple biological questi
 ```
 
 It's that simple! Here's a few small tips and tricks you should know:
-- All resolved taxonomy is lowercase (see the above example); original metadata retains case, and non-taxonomic metadata is not all lowercase
+- All resolved taxonomy is lowercase (see the above example); original metadata may retain case as reported in source files, and non-taxonomic metadata is not all lowercase
 - Some valid records have NA's in their taxonomy; for example, if an unclassified _Betacoronavirus_ is found in a mouse, it might be recorded as NA in the "Virus" field. This is an intentional feature, as it enables researchers to talk about higher-level taxonomic patterns, and [some studies](https://www.biorxiv.org/content/10.1101/2020.05.22.111344v3) may not need fully-resolved data. 
 - Sometimes, you'll see taxonomy that's outdated or strange. If you think there's an error, please leave an issue on the Github. Before you do, it may be worth checking whether a given name is correctly resolved to the NCBI taxonomy; for example, in R, you can use `taxize::classification("Whateverthe latinnameis", db = "ncbi")`. If the issue is related to that taxonomic backbone, please label your issue `ncbi-needed`
 - Different databases may have overlapping records. For example, some PREDICT records are deposited in GenBank, and some GenBank records are inherited by EID2. As different data has passed between these sources, they've often lost some metadata. Presence in different datasets therefore does not indicate stronger / weaker evidence, and conversely, conflicting evidence between databases may not be indicative of any biological evidence.
