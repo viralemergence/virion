@@ -64,10 +64,11 @@ predict %<>% left_join(classer)
 
 ### Format 
 
-predict <- bind_rows(temp, predict)
+predict <- bind_rows(temp, predict %>% mutate(HostTaxID = as.double(HostTaxID),
+                                              VirusTaxID = as.double(VirusTaxID)))
 
 predict %<>% mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", "HostClass",
                      "Virus", "VirusGenus", "VirusFamily", "VirusOrder", "VirusClass"),
                    tolower)
 
-write_csv(predict, "Intermediate/Formatted/PREDICTFormatted.csv")
+write_csv(predict, "Intermediate/Formatted/PREDICTMainFormatted.csv")
