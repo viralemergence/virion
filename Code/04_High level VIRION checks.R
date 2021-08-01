@@ -65,11 +65,11 @@ ictv <- read_csv("Source/ICTV Master Species List 2019.v1.csv")
 virion %<>% mutate(ICTVRatified = (Virus %in% str_to_lower(ictv$Species))) %>%
   relocate(ICTVRatified, .after = VirusNCBIResolved)
 
-#### SOME TEMPORARY SCAFFOLDING: May 30, 2021
-#### From the SRA patch
+virion %<>% mutate(HostFlagID = replace_na(HostFlagID, FALSE)) # This only applies to CLOVER and GLOBI, which both don't have any other internal flags
 
-virion %<>% mutate(HostFlagID = replace_na(HostFlagID, "FALSE"))
-virion %<>% select(-c(HostSynonyms, VirusFlagContaminant))
+virion %<>% mutate_cond(str_detect(HostOriginal, " cf\\."), HostFlagID = TRUE) 
+
+virion %<>% select(-c(HostSynonyms))
 
 ####
 

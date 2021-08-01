@@ -1,7 +1,7 @@
 
 library(tidyverse)
 
-predict <- read_csv("Intermediate/Unformatted/PREDICTSupplementUnformatted.csv")
+predict <- read_csv("Intermediate/Unformatted/PREDICTPCRUnformatted.csv")
 
 temp <- data.frame(Host = character(),
                    Virus = character(),
@@ -21,7 +21,6 @@ temp <- data.frame(Host = character(),
                    VirusClass = character(),
                    VirusOriginal = character(),
                    HostFlagID = logical(),
-                   VirusFlagContaminant = logical(),
                    DetectionMethod = character(),
                    DetectionOriginal = character(),
                    Database = character(),

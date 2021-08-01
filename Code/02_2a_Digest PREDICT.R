@@ -1,6 +1,5 @@
 
 if(!exists('jncbi')) {source('Code/001_Julia functions.R')}
-if(!exists('findSyns3')) {source('Code/002_TaxiseCleaner.R')}
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 
 library(tidyverse)
@@ -307,6 +306,3 @@ predict %>% filter(is.na(Host)) %>% pull(HostOriginal) %>% unique()
 predict %<>% select(-VirusIntermediate)
 
 write_csv(predict, "Intermediate/Unformatted/PREDICTMainUnformatted.csv")
-
-# ##### Double check the NCBItaxonomy on the viruses I guess
-# # test %>% filter(is.na(HostGenus))

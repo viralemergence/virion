@@ -5,9 +5,10 @@ library(tidyverse)
 library(magrittr)
 library(lubridate)
 library(naniar)
+library(vroom)
 
 predict.1 <- read_csv("~/Github/ept/PredictData (2).csv")
-predict.2 <- read_csv("~/Github/ept/PREDICT_PCR_Tests.csv")
+predict.2 <- vroom("~/Github/ept/PREDICT_PCR_Tests.csv.gz")
 
 predict.1 %<>% # select(`Species Scientific Name Based on Field Morphology`, 
                       #Virus) %>%

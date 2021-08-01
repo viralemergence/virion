@@ -20,7 +20,6 @@ temp <- data.frame(Host = character(),
                    VirusClass = character(),
                    VirusOriginal = character(),
                    HostFlagID = logical(),
-                   VirusFlagContaminant = logical(),
                    DetectionMethod = character(),
                    DetectionOriginal = character(),
                    Database = character(),
@@ -37,4 +36,4 @@ temp <- data.frame(Host = character(),
                    CollectionDay = double(),
                    stringsAsFactors = FALSE)
 
-write_csv(df, "Intermediate/Template.csv")
+write_csv(temp, "Intermediate/Template.csv")

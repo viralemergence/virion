@@ -15,6 +15,7 @@ mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
 
 hdict <- function(names) { 
   names.orig <- names
+  names <- str_replace(names, " cf\\.","")
   names <- str_replace(names, " sp\\.","")
   names <- str_replace(names, " gen\\.","")
   u <- get_uid(names, rank_filter = c("subspecies", "species", "genus", "family", "order", "class"), 
