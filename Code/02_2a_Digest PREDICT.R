@@ -21,9 +21,8 @@ predict.raw %>%
          Host = `Species Scientific Name Based on Field Morphology`,
          Accession = `Genbank #`) %>%
   
-  
-  group_by_at(vars(-Accession)) %>% 
-  summarize(Accession = str_c(Accession, collapse = ", ")) %>%
+  # group_by_at(vars(-Accession)) %>% 
+  # summarize(Accession = str_c(Accession, collapse = ", ")) %>%
   unique() %>%  
   
   # The below step deals with flagged host names and "cf." names equally

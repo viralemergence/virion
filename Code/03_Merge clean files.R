@@ -5,10 +5,10 @@ library(tidyverse); library(magrittr); library(vroom)
 
 source("./Code/001_TaxizeFunctions.R")
 
-gb <- vroom("Intermediate/Formatted/GenbankFormatted.csv.gz")
-clo <- read_csv("Intermediate/Formatted/CloverFormatted.csv")
-pred <- read_csv("Intermediate/Formatted/PREDICTAllFormatted.csv")
-globi <- read_csv("Intermediate/Formatted/GLOBIFormatted.csv")
+gb <- vroom("Intermediate/Formatted/GenbankFormatted.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+clo <- read_csv("Intermediate/Formatted/CloverFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+pred <- read_csv("Intermediate/Formatted/PREDICTAllFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+globi <- read_csv("Intermediate/Formatted/GLOBIFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 
 if(class(clo$NCBIAccession)=='numeric') {clo %<>% mutate(NCBIAccession = as.character(NCBIAccession))}
 

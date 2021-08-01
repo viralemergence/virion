@@ -5,7 +5,7 @@ library(magrittr)
 library(tidyverse)
 library(vroom)
 
-virion <- vroom("Virion/Virion.csv.gz")
+virion <- vroom("Virion/Virion.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 
 fixer <- function(x) {toString(unique(unlist(x)))}
 

@@ -506,17 +506,16 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2795017,astrovirus mnd-139,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2795016,astrovirus mnd-27,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2795015,astrovirus mnd-36,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-1403194,astrovirus pgastv-1,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403194,astrovirus pgastv-1,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-1403195,astrovirus pgastv-2,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403194,astrovirus pgastv-1,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403195,astrovirus pgastv-2,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-1403196,astrovirus pgastv-3,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403195,astrovirus pgastv-2,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403196,astrovirus pgastv-3,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403196,astrovirus pgastv-3,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403197,astrovirus pgastv-4,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-1403198,astrovirus pgastv-5,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403198,astrovirus pgastv-5,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-1403199,astrovirus pgastv-7,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403199,astrovirus pgastv-7,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403199,astrovirus pgastv-7,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403200,astrovirus pgastv-8,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1717145,astrovirus predict mastv-111,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1717146,astrovirus predict mastv-112,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -1274,8 +1273,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 622716,bat coronavirus hipposideros/ghanakwam/27/2008,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 622717,bat coronavirus hipposideros/ghanakwam/31/2008,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 622718,bat coronavirus hipposideros/ghanakwam/8/2008,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-890398,bat coronavirus hipposideros/kt/thailand/2007,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 890398,bat coronavirus hipposideros/kt/thailand/2007,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+890398,bat coronavirus hipposideros/kt/thailand/2007,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1018469,bat coronavirus hipposideros/ratcha-67/tha/2007,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1244203,bat coronavirus hku10,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 393045,bat coronavirus hku6,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -2322,8 +2321,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1933269,catu orthobunyavirus,orthobunyavirus,peribunyaviridae,bunyavirales,ellioviricetes,TRUE,TRUE
 2039781,cavia porcellus kobuvirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2039783,cavia porcellus picornavirus,NA,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-33706,caviid betaherpesvirus 2,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 33706,caviid betaherpesvirus 2,quwivirus,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
+33706,caviid betaherpesvirus 2,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 1125844,cebine betaherpesvirus 1,cytomegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 1881006,cebus albifrons cytomegalovirus,cytomegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1093777,cebus albifrons lymphocryptovirus 2,lymphocryptovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -2793,10 +2792,10 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 643399,coronavirus oystercatcher/p17/2006/gbr,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 745728,coronavirus p.pipi/vm312/2008/nld,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 745741,coronavirus p.pipi/vm314/2008/nld,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-1403203,coronavirus pgcov-1,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1403203,coronavirus pgcov-1,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-1403204,coronavirus pgcov-2,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+1403203,coronavirus pgcov-1,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1403204,coronavirus pgcov-2,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+1403204,coronavirus pgcov-2,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1403205,coronavirus pgcov-3,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1403206,coronavirus pgcov-4,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042537,coronavirus predict cov-10,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -2820,8 +2819,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2042554,coronavirus predict cov-28,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042555,coronavirus predict cov-29,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042556,coronavirus predict cov-30,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-2042557,coronavirus predict cov-32,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042557,coronavirus predict cov-32,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+2042557,coronavirus predict cov-32,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042558,coronavirus predict cov-33,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042559,coronavirus predict cov-34,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042560,coronavirus predict cov-35,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -2835,8 +2834,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2042568,coronavirus predict cov-42,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042569,coronavirus predict cov-43,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042570,coronavirus predict cov-44,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-2042571,coronavirus predict cov-45,gammacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042571,coronavirus predict cov-45,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+2042571,coronavirus predict cov-45,gammacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042572,coronavirus predict cov-46,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042573,coronavirus predict cov-47,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042574,coronavirus predict cov-48,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -2851,8 +2850,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2042583,coronavirus predict cov-59,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042584,coronavirus predict cov-60,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042585,coronavirus predict cov-61,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-2042586,coronavirus predict cov-62,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042586,coronavirus predict cov-62,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+2042586,coronavirus predict cov-62,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042587,coronavirus predict cov-63,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042588,coronavirus predict cov-64,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2042589,coronavirus predict cov-65,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -6521,7 +6520,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2711066,paramyxovirus predict_pmv-149,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647215,paramyxovirus predict_pmv-15,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711067,paramyxovirus predict_pmv-150,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2711068,paramyxovirus predict_pmv-151,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711069,paramyxovirus predict_pmv-152,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711070,paramyxovirus predict_pmv-153,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711071,paramyxovirus predict_pmv-155,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -6539,7 +6537,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2711087,paramyxovirus predict_pmv-171,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711088,paramyxovirus predict_pmv-172,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711089,paramyxovirus predict_pmv-173,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2711090,paramyxovirus predict_pmv-174,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711091,paramyxovirus predict_pmv-175,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711092,paramyxovirus predict_pmv-176,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647218,paramyxovirus predict_pmv-18,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -6583,8 +6580,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1647252,paramyxovirus predict_pmv-52,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647253,paramyxovirus predict_pmv-53,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647254,paramyxovirus predict_pmv-54,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1647255,paramyxovirus predict_pmv-55,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647255,paramyxovirus predict_pmv-55,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+1647255,paramyxovirus predict_pmv-55,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647256,paramyxovirus predict_pmv-56,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647257,paramyxovirus predict_pmv-57,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647258,paramyxovirus predict_pmv-58,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -6612,12 +6609,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2711101,paramyxovirus predict_pmv-80,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711102,paramyxovirus predict_pmv-81,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711103,paramyxovirus predict_pmv-82,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2711104,paramyxovirus predict_pmv-83,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711104,paramyxovirus predict_pmv-83,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+2711104,paramyxovirus predict_pmv-83,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711105,paramyxovirus predict_pmv-85,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711106,paramyxovirus predict_pmv-86,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2711110,paramyxovirus predict_pmv-91,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711110,paramyxovirus predict_pmv-91,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+2711110,paramyxovirus predict_pmv-91,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711111,paramyxovirus predict_pmv-92,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711112,paramyxovirus predict_pmv-93,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711113,paramyxovirus predict_pmv-94,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -6928,245 +6925,245 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1084372,picobirnavirus pig/bg-por-2/india/2010,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 933488,picobirnavirus pig/bra-01/1998,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 933489,picobirnavirus pig/bra-02/1999,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690685,picobirnavirus predict_pbv-1,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690685,picobirnavirus predict_pbv-1,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690686,picobirnavirus predict_pbv-10,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690685,picobirnavirus predict_pbv-1,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690686,picobirnavirus predict_pbv-10,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690687,picobirnavirus predict_pbv-100,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690686,picobirnavirus predict_pbv-10,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690687,picobirnavirus predict_pbv-100,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690688,picobirnavirus predict_pbv-101,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690687,picobirnavirus predict_pbv-100,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690688,picobirnavirus predict_pbv-101,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690689,picobirnavirus predict_pbv-102,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690688,picobirnavirus predict_pbv-101,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690689,picobirnavirus predict_pbv-102,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690690,picobirnavirus predict_pbv-103,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690689,picobirnavirus predict_pbv-102,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690690,picobirnavirus predict_pbv-103,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690691,picobirnavirus predict_pbv-104,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690690,picobirnavirus predict_pbv-103,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690691,picobirnavirus predict_pbv-104,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690692,picobirnavirus predict_pbv-105,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690691,picobirnavirus predict_pbv-104,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690692,picobirnavirus predict_pbv-105,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690693,picobirnavirus predict_pbv-106,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690692,picobirnavirus predict_pbv-105,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690693,picobirnavirus predict_pbv-106,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690694,picobirnavirus predict_pbv-107,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690693,picobirnavirus predict_pbv-106,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690694,picobirnavirus predict_pbv-107,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690695,picobirnavirus predict_pbv-108,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690694,picobirnavirus predict_pbv-107,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690695,picobirnavirus predict_pbv-108,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690696,picobirnavirus predict_pbv-109,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690695,picobirnavirus predict_pbv-108,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690696,picobirnavirus predict_pbv-109,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690697,picobirnavirus predict_pbv-11,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690696,picobirnavirus predict_pbv-109,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690697,picobirnavirus predict_pbv-11,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690698,picobirnavirus predict_pbv-110,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690697,picobirnavirus predict_pbv-11,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690698,picobirnavirus predict_pbv-110,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690699,picobirnavirus predict_pbv-111,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690698,picobirnavirus predict_pbv-110,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690699,picobirnavirus predict_pbv-111,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690700,picobirnavirus predict_pbv-112,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690699,picobirnavirus predict_pbv-111,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690700,picobirnavirus predict_pbv-112,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690701,picobirnavirus predict_pbv-113,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690700,picobirnavirus predict_pbv-112,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690701,picobirnavirus predict_pbv-113,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690702,picobirnavirus predict_pbv-114,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690701,picobirnavirus predict_pbv-113,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690702,picobirnavirus predict_pbv-114,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690703,picobirnavirus predict_pbv-115,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690702,picobirnavirus predict_pbv-114,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690703,picobirnavirus predict_pbv-115,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690704,picobirnavirus predict_pbv-116,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690703,picobirnavirus predict_pbv-115,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690704,picobirnavirus predict_pbv-116,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690705,picobirnavirus predict_pbv-117,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690704,picobirnavirus predict_pbv-116,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690705,picobirnavirus predict_pbv-117,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690706,picobirnavirus predict_pbv-118,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690705,picobirnavirus predict_pbv-117,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690706,picobirnavirus predict_pbv-118,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690707,picobirnavirus predict_pbv-119,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690706,picobirnavirus predict_pbv-118,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690707,picobirnavirus predict_pbv-119,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690708,picobirnavirus predict_pbv-12,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690707,picobirnavirus predict_pbv-119,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690708,picobirnavirus predict_pbv-12,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690709,picobirnavirus predict_pbv-120,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690708,picobirnavirus predict_pbv-12,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690709,picobirnavirus predict_pbv-120,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690709,picobirnavirus predict_pbv-120,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690710,picobirnavirus predict_pbv-121,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690711,picobirnavirus predict_pbv-13,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690711,picobirnavirus predict_pbv-13,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690712,picobirnavirus predict_pbv-14,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690711,picobirnavirus predict_pbv-13,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690712,picobirnavirus predict_pbv-14,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690713,picobirnavirus predict_pbv-15,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690712,picobirnavirus predict_pbv-14,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690713,picobirnavirus predict_pbv-15,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690714,picobirnavirus predict_pbv-16,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690713,picobirnavirus predict_pbv-15,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690714,picobirnavirus predict_pbv-16,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690715,picobirnavirus predict_pbv-17,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690714,picobirnavirus predict_pbv-16,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690715,picobirnavirus predict_pbv-17,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690716,picobirnavirus predict_pbv-18,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690715,picobirnavirus predict_pbv-17,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690716,picobirnavirus predict_pbv-18,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690717,picobirnavirus predict_pbv-19,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690716,picobirnavirus predict_pbv-18,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690717,picobirnavirus predict_pbv-19,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690718,picobirnavirus predict_pbv-2,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690717,picobirnavirus predict_pbv-19,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690718,picobirnavirus predict_pbv-2,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690719,picobirnavirus predict_pbv-20,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690718,picobirnavirus predict_pbv-2,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690719,picobirnavirus predict_pbv-20,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690720,picobirnavirus predict_pbv-21,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690719,picobirnavirus predict_pbv-20,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690720,picobirnavirus predict_pbv-21,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690721,picobirnavirus predict_pbv-22,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690720,picobirnavirus predict_pbv-21,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690721,picobirnavirus predict_pbv-22,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690722,picobirnavirus predict_pbv-23,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690721,picobirnavirus predict_pbv-22,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690722,picobirnavirus predict_pbv-23,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690723,picobirnavirus predict_pbv-24,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690722,picobirnavirus predict_pbv-23,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690723,picobirnavirus predict_pbv-24,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690724,picobirnavirus predict_pbv-25,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690723,picobirnavirus predict_pbv-24,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690724,picobirnavirus predict_pbv-25,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690725,picobirnavirus predict_pbv-26,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690724,picobirnavirus predict_pbv-25,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690725,picobirnavirus predict_pbv-26,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690726,picobirnavirus predict_pbv-27,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690725,picobirnavirus predict_pbv-26,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690726,picobirnavirus predict_pbv-27,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690727,picobirnavirus predict_pbv-28,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690726,picobirnavirus predict_pbv-27,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690727,picobirnavirus predict_pbv-28,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690728,picobirnavirus predict_pbv-29,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690727,picobirnavirus predict_pbv-28,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690728,picobirnavirus predict_pbv-29,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690729,picobirnavirus predict_pbv-3,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690728,picobirnavirus predict_pbv-29,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690729,picobirnavirus predict_pbv-3,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690730,picobirnavirus predict_pbv-30,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690729,picobirnavirus predict_pbv-3,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690730,picobirnavirus predict_pbv-30,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690731,picobirnavirus predict_pbv-31,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690730,picobirnavirus predict_pbv-30,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690731,picobirnavirus predict_pbv-31,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690732,picobirnavirus predict_pbv-32,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690731,picobirnavirus predict_pbv-31,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690732,picobirnavirus predict_pbv-32,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690733,picobirnavirus predict_pbv-33,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690732,picobirnavirus predict_pbv-32,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690733,picobirnavirus predict_pbv-33,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690734,picobirnavirus predict_pbv-34,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690733,picobirnavirus predict_pbv-33,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690734,picobirnavirus predict_pbv-34,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690735,picobirnavirus predict_pbv-35,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690734,picobirnavirus predict_pbv-34,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690735,picobirnavirus predict_pbv-35,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690736,picobirnavirus predict_pbv-36,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690735,picobirnavirus predict_pbv-35,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690736,picobirnavirus predict_pbv-36,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690737,picobirnavirus predict_pbv-37,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690736,picobirnavirus predict_pbv-36,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690737,picobirnavirus predict_pbv-37,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690738,picobirnavirus predict_pbv-38,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690737,picobirnavirus predict_pbv-37,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690738,picobirnavirus predict_pbv-38,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690739,picobirnavirus predict_pbv-39,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690738,picobirnavirus predict_pbv-38,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690739,picobirnavirus predict_pbv-39,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690740,picobirnavirus predict_pbv-4,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690739,picobirnavirus predict_pbv-39,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690740,picobirnavirus predict_pbv-4,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690741,picobirnavirus predict_pbv-40,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690740,picobirnavirus predict_pbv-4,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690741,picobirnavirus predict_pbv-40,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690742,picobirnavirus predict_pbv-41,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690741,picobirnavirus predict_pbv-40,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690742,picobirnavirus predict_pbv-41,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690743,picobirnavirus predict_pbv-42,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690742,picobirnavirus predict_pbv-41,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690743,picobirnavirus predict_pbv-42,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690744,picobirnavirus predict_pbv-43,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690743,picobirnavirus predict_pbv-42,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690744,picobirnavirus predict_pbv-43,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690745,picobirnavirus predict_pbv-44,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690744,picobirnavirus predict_pbv-43,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690745,picobirnavirus predict_pbv-44,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690746,picobirnavirus predict_pbv-45,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690745,picobirnavirus predict_pbv-44,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690746,picobirnavirus predict_pbv-45,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690747,picobirnavirus predict_pbv-46,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690746,picobirnavirus predict_pbv-45,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690747,picobirnavirus predict_pbv-46,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690748,picobirnavirus predict_pbv-47,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690747,picobirnavirus predict_pbv-46,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690748,picobirnavirus predict_pbv-47,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690749,picobirnavirus predict_pbv-48,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690748,picobirnavirus predict_pbv-47,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690749,picobirnavirus predict_pbv-48,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690750,picobirnavirus predict_pbv-49,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690749,picobirnavirus predict_pbv-48,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690750,picobirnavirus predict_pbv-49,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690751,picobirnavirus predict_pbv-5,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690750,picobirnavirus predict_pbv-49,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690751,picobirnavirus predict_pbv-5,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690752,picobirnavirus predict_pbv-50,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690751,picobirnavirus predict_pbv-5,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690752,picobirnavirus predict_pbv-50,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690753,picobirnavirus predict_pbv-51,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690752,picobirnavirus predict_pbv-50,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690753,picobirnavirus predict_pbv-51,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690754,picobirnavirus predict_pbv-52,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690753,picobirnavirus predict_pbv-51,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690754,picobirnavirus predict_pbv-52,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690755,picobirnavirus predict_pbv-53,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690754,picobirnavirus predict_pbv-52,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690755,picobirnavirus predict_pbv-53,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690756,picobirnavirus predict_pbv-54,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690755,picobirnavirus predict_pbv-53,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690756,picobirnavirus predict_pbv-54,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690757,picobirnavirus predict_pbv-55,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690756,picobirnavirus predict_pbv-54,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690757,picobirnavirus predict_pbv-55,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690758,picobirnavirus predict_pbv-57,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690757,picobirnavirus predict_pbv-55,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690758,picobirnavirus predict_pbv-57,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690759,picobirnavirus predict_pbv-58,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690758,picobirnavirus predict_pbv-57,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690759,picobirnavirus predict_pbv-58,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690760,picobirnavirus predict_pbv-59,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690759,picobirnavirus predict_pbv-58,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690760,picobirnavirus predict_pbv-59,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690761,picobirnavirus predict_pbv-6,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690760,picobirnavirus predict_pbv-59,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690761,picobirnavirus predict_pbv-6,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690762,picobirnavirus predict_pbv-60,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690761,picobirnavirus predict_pbv-6,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690762,picobirnavirus predict_pbv-60,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690763,picobirnavirus predict_pbv-61,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690762,picobirnavirus predict_pbv-60,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690763,picobirnavirus predict_pbv-61,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690764,picobirnavirus predict_pbv-62,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690763,picobirnavirus predict_pbv-61,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690764,picobirnavirus predict_pbv-62,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690765,picobirnavirus predict_pbv-63,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690764,picobirnavirus predict_pbv-62,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690765,picobirnavirus predict_pbv-63,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690766,picobirnavirus predict_pbv-64,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690765,picobirnavirus predict_pbv-63,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690766,picobirnavirus predict_pbv-64,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690767,picobirnavirus predict_pbv-65,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690766,picobirnavirus predict_pbv-64,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690767,picobirnavirus predict_pbv-65,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690768,picobirnavirus predict_pbv-66,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690767,picobirnavirus predict_pbv-65,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690768,picobirnavirus predict_pbv-66,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690769,picobirnavirus predict_pbv-67,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690768,picobirnavirus predict_pbv-66,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690769,picobirnavirus predict_pbv-67,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690770,picobirnavirus predict_pbv-68,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690769,picobirnavirus predict_pbv-67,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690770,picobirnavirus predict_pbv-68,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690771,picobirnavirus predict_pbv-69,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690770,picobirnavirus predict_pbv-68,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690771,picobirnavirus predict_pbv-69,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690772,picobirnavirus predict_pbv-7,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690771,picobirnavirus predict_pbv-69,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690772,picobirnavirus predict_pbv-7,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690773,picobirnavirus predict_pbv-70,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690772,picobirnavirus predict_pbv-7,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690773,picobirnavirus predict_pbv-70,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690774,picobirnavirus predict_pbv-71,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690773,picobirnavirus predict_pbv-70,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690774,picobirnavirus predict_pbv-71,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690775,picobirnavirus predict_pbv-72,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690774,picobirnavirus predict_pbv-71,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690775,picobirnavirus predict_pbv-72,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690776,picobirnavirus predict_pbv-73,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690775,picobirnavirus predict_pbv-72,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690776,picobirnavirus predict_pbv-73,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690777,picobirnavirus predict_pbv-74,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690776,picobirnavirus predict_pbv-73,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690777,picobirnavirus predict_pbv-74,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690778,picobirnavirus predict_pbv-75,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690777,picobirnavirus predict_pbv-74,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690778,picobirnavirus predict_pbv-75,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690779,picobirnavirus predict_pbv-76,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690778,picobirnavirus predict_pbv-75,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690779,picobirnavirus predict_pbv-76,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690780,picobirnavirus predict_pbv-77,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690779,picobirnavirus predict_pbv-76,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690780,picobirnavirus predict_pbv-77,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690781,picobirnavirus predict_pbv-78,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690780,picobirnavirus predict_pbv-77,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690781,picobirnavirus predict_pbv-78,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690782,picobirnavirus predict_pbv-79,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690781,picobirnavirus predict_pbv-78,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690782,picobirnavirus predict_pbv-79,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690783,picobirnavirus predict_pbv-8,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690782,picobirnavirus predict_pbv-79,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690783,picobirnavirus predict_pbv-8,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690784,picobirnavirus predict_pbv-80,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690783,picobirnavirus predict_pbv-8,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690784,picobirnavirus predict_pbv-80,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690785,picobirnavirus predict_pbv-81,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690784,picobirnavirus predict_pbv-80,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690785,picobirnavirus predict_pbv-81,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690786,picobirnavirus predict_pbv-82,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690785,picobirnavirus predict_pbv-81,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690786,picobirnavirus predict_pbv-82,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690787,picobirnavirus predict_pbv-83,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690786,picobirnavirus predict_pbv-82,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690787,picobirnavirus predict_pbv-83,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690788,picobirnavirus predict_pbv-84,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690787,picobirnavirus predict_pbv-83,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690788,picobirnavirus predict_pbv-84,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690789,picobirnavirus predict_pbv-85,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690788,picobirnavirus predict_pbv-84,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690789,picobirnavirus predict_pbv-85,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690790,picobirnavirus predict_pbv-86,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690789,picobirnavirus predict_pbv-85,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690790,picobirnavirus predict_pbv-86,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690791,picobirnavirus predict_pbv-87,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690790,picobirnavirus predict_pbv-86,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690791,picobirnavirus predict_pbv-87,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690792,picobirnavirus predict_pbv-88,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690791,picobirnavirus predict_pbv-87,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690792,picobirnavirus predict_pbv-88,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690793,picobirnavirus predict_pbv-89,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690792,picobirnavirus predict_pbv-88,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690793,picobirnavirus predict_pbv-89,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690794,picobirnavirus predict_pbv-9,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690793,picobirnavirus predict_pbv-89,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690794,picobirnavirus predict_pbv-9,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690795,picobirnavirus predict_pbv-90,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690794,picobirnavirus predict_pbv-9,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690795,picobirnavirus predict_pbv-90,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690796,picobirnavirus predict_pbv-91,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690795,picobirnavirus predict_pbv-90,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690796,picobirnavirus predict_pbv-91,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690797,picobirnavirus predict_pbv-92,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690796,picobirnavirus predict_pbv-91,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690797,picobirnavirus predict_pbv-92,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690798,picobirnavirus predict_pbv-93,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690797,picobirnavirus predict_pbv-92,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690798,picobirnavirus predict_pbv-93,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690799,picobirnavirus predict_pbv-94,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690798,picobirnavirus predict_pbv-93,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690799,picobirnavirus predict_pbv-94,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690800,picobirnavirus predict_pbv-95,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690799,picobirnavirus predict_pbv-94,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690800,picobirnavirus predict_pbv-95,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690801,picobirnavirus predict_pbv-96,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690800,picobirnavirus predict_pbv-95,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690801,picobirnavirus predict_pbv-96,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690802,picobirnavirus predict_pbv-97,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690801,picobirnavirus predict_pbv-96,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690802,picobirnavirus predict_pbv-97,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690803,picobirnavirus predict_pbv-98,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690802,picobirnavirus predict_pbv-97,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690803,picobirnavirus predict_pbv-98,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-1690804,picobirnavirus predict_pbv-99,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690803,picobirnavirus predict_pbv-98,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1690804,picobirnavirus predict_pbv-99,NA,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+1690804,picobirnavirus predict_pbv-99,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1068738,picobirnavirus puma/uru-01/2010,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 933490,picobirnavirus rabbit/bra-01/2004,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 573167,picobirnavirus rat/br-01/bra/2006,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
@@ -8090,8 +8087,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2734302,rodent chaphamaparvovirus 1,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 2734303,rodent chaphamaparvovirus 2,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 2050016,rodent circovirus,NA,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-2050018,rodent coronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2050018,rodent coronavirus,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+2050018,rodent coronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2751480,rodent deltavirus,deltavirus,kolmioviridae,NA,NA,TRUE,FALSE
 2734318,rodent dependoparvovirus 1,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 2734319,rodent dependoparvovirus 2,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
@@ -9188,8 +9185,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1768064,tupaia hepatovirus a,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2560827,tupaia narmovirus,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 1972580,tupaia tupavirus,tupavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
-10397,tupaiid betaherpesvirus 1,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 10397,tupaiid betaherpesvirus 1,quwivirus,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
+10397,tupaiid betaherpesvirus 1,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 255685,turbot nodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 323824,turbot reddish body syndrome iridovirus,NA,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2815062,turdus hortulorum cress-dna-virus sp.,NA,NA,NA,NA,TRUE,FALSE
@@ -9658,90 +9655,90 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1322248,zuerich pelophylax collection ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2734413,zurich hartmanivirus,hartmanivirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,TRUE
 2706560,zwiesel bat banyangvirus,banyangvirus,phenuiviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-68887,NA,alphatorquevirus,anelloviridae,NA,NA,TRUE,FALSE
-153135,NA,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-11646,NA,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-260964,NA,henipavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+10892,NA,orbivirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
+11572,NA,orthobunyavirus,peribunyaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
+11584,NA,phlebovirus,phenuiviridae,bunyavirales,ellioviricetes,TRUE,FALSE
+1980517,NA,orthonairovirus,nairoviridae,bunyavirales,ellioviricetes,TRUE,FALSE
+35323,NA,thogotovirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
+11118,NA,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+10492,NA,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
+12058,NA,NA,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 11051,NA,flavivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-1980442,NA,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 693996,NA,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-153136,NA,deltaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-10242,NA,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
+694002,NA,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+11271,NA,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+10260,NA,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 11019,NA,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
+249589,NA,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+11646,NA,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
+153135,NA,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
+197912,NA,betainfluenzavirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
+194961,NA,erbovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+260964,NA,henipavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+39743,NA,asfivirus,asfarviridae,asfuvirales,pokkesviricetes,TRUE,FALSE
+12109,NA,aphthovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+153136,NA,deltaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
+186536,NA,ebolavirus,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+1980442,NA,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
+10242,NA,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 138954,NA,parechovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 140052,NA,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-11572,NA,orthobunyavirus,peribunyaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-39743,NA,asfivirus,asfarviridae,asfuvirales,pokkesviricetes,TRUE,FALSE
-10292,NA,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-11095,NA,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-694002,NA,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-10492,NA,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-10240,NA,NA,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-11286,NA,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1980517,NA,orthonairovirus,nairoviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-1507401,NA,bocaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-194960,NA,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-32613,NA,ephemerovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1506574,NA,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-310911,NA,amdoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-186938,NA,respirovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-142786,NA,norovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 172653,NA,ictalurivirus,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-10882,NA,orthoreovirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
-118139,NA,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-194961,NA,erbovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-12103,NA,cardiovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-10365,NA,muromegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-325458,NA,etapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-11245,NA,pneumovirus,pneumoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-11229,NA,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-12058,NA,NA,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-10487,NA,iridovirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-11158,NA,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-11271,NA,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+249588,NA,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 10265,NA,capripoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-11306,NA,nucleorhabdovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-208294,NA,seadornavirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
-325456,NA,iotapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-10405,NA,orthohepadnavirus,hepadnaviridae,blubervirales,revtraviricetes,TRUE,FALSE
-100953,NA,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-325459,NA,epsilonpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-11155,NA,torovirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-333921,NA,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-12109,NA,aphthovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-95341,NA,sapovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-10509,NA,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-104394,NA,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
-12234,NA,tobamovirus,virgaviridae,martellivirales,alsuviricetes,TRUE,FALSE
-11584,NA,phlebovirus,phenuiviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-10270,NA,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-325461,NA,omikronpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-95339,NA,lagovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-186537,NA,marburgvirus,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-10911,NA,coltivirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
-39725,NA,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-10892,NA,orbivirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
-186536,NA,ebolavirus,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-11118,NA,NA,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-249589,NA,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+11095,NA,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
+11229,NA,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 325454,NA,deltapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-934804,NA,dyoiotapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+11245,NA,pneumovirus,pneumoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+186938,NA,respirovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+11102,NA,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
+12091,NA,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+12103,NA,cardiovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+68887,NA,alphatorquevirus,anelloviridae,NA,NA,TRUE,FALSE
+10365,NA,muromegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+10911,NA,coltivirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
+142786,NA,norovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+95339,NA,lagovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+11306,NA,nucleorhabdovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+10294,NA,simplexvirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+100953,NA,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
+10509,NA,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 10912,NA,rotavirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
-325457,NA,kappapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+11155,NA,torovirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+208294,NA,seadornavirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
+325459,NA,epsilonpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+32613,NA,ephemerovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+333921,NA,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+104394,NA,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
+10882,NA,orthoreovirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
+1507401,NA,bocaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
+1506574,NA,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
+10405,NA,orthohepadnavirus,hepadnaviridae,blubervirales,revtraviricetes,TRUE,FALSE
+10240,NA,NA,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
+548681,NA,NA,NA,herpesvirales,herviviricetes,TRUE,FALSE
+186537,NA,marburgvirus,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 333750,NA,alphapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 333922,NA,betapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-334202,NA,mupapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-325455,NA,gammapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-249588,NA,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-151340,NA,NA,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1542744,NA,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
-12091,NA,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-548681,NA,NA,NA,herpesvirales,herviviricetes,TRUE,FALSE
-10260,NA,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-10294,NA,simplexvirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-11102,NA,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-197912,NA,betainfluenzavirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
+934804,NA,dyoiotapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+325458,NA,etapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 197911,NA,alphainfluenzavirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
-11618,NA,arenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 12059,NA,enterovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-35323,NA,thogotovirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
+11286,NA,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+11618,NA,arenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
+12234,NA,tobamovirus,virgaviridae,martellivirales,alsuviricetes,TRUE,FALSE
+194960,NA,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+310911,NA,amdoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
+325455,NA,gammapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+334202,NA,mupapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+10270,NA,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
+11158,NA,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+325456,NA,iotapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+151340,NA,NA,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+10292,NA,NA,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+95341,NA,sapovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+325457,NA,kappapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+325461,NA,omikronpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+1542744,NA,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
+10487,NA,iridovirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
+118139,NA,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+39725,NA,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE

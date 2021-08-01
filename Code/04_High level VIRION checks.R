@@ -1,5 +1,5 @@
 
-virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
+virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 
 # # Is there anything that's not vertebrate in here?
 # 
@@ -75,5 +75,9 @@ virion %<>% select(-c(HostSynonyms))
 
 virion %<>% distinct()
 virion %<>% mutate(across(everything(), ~replace_na(.x, '')))
+
+virion %<>% 
+  group_by_at(vars(-NCBIAccession)) %>% 
+  summarize(NCBIAccession = str_c(NCBIAccession, collapse = ", "))
 
 vroom_write(virion, "Virion/Virion.csv.gz")

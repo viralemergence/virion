@@ -42,8 +42,8 @@ predict.raw %<>% select(Host,
   rename(NCBIAccession = "GenbankAccessionNumber") %>%
   
   # Collapse the Genbank info
-  group_by_at(vars(-NCBIAccession)) %>% 
-  summarize(NCBIAccession = str_c(NCBIAccession, collapse = ", ")) %>%
+  # group_by_at(vars(-NCBIAccession)) %>% 
+  # summarize(NCBIAccession = str_c(NCBIAccession, collapse = ", ")) %>%
   unique() %>% 
   
   # Clean up the host info
