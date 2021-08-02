@@ -16,8 +16,11 @@ library(raster)
 vir <- vroom("Virion/virion.csv.gz")
 
 # blank raster and extend to antarctica
-r <- raster::getData("worldclim",var="alt",res=10) 
+#r <- raster::getData("worldclim",var="alt",res=10)
+r <- raster::raster("./wc5/alt.bil")
+r <- raster::aggregate(r, fact=2)
 r <- raster::raster(ext=extent(c(-180, 180, -90, 90)), crs = crs(r), res=res(r))
+
 
 ##### mammals ####
 
@@ -38,7 +41,7 @@ map.num.m <- fasterize(iucn, r, field = NULL, fun = 'count')
 map.sum.m <- fasterize(iucn, r, field = "NVirus", fun = 'sum')
 
 
-# proportion of hosts with verbatim iucn range matches = 91%
+# proportion of hosts with verbatim iucn range matches = 91.1%
 n_distinct(iucn$binomial) / n_distinct(nvir$Host)
 
 
@@ -61,7 +64,7 @@ iucn %>% mutate(binomial = tolower(binomial)) %>%
 map.num.r <- fasterize(iucn, r, field = NULL, fun = 'count')
 map.sum.r <- fasterize(iucn, r, field = "NVirus", fun = 'sum')
 
-# proportion of hosts with verbatim iucn range matches = 67%
+# proportion of hosts with verbatim iucn range matches = 68.5%
 n_distinct(iucn$binomial) / n_distinct(nvir$Host)
 
 
@@ -84,7 +87,7 @@ iucn %>% mutate(binomial = tolower(binomial)) %>%
 map.num.a <- fasterize(iucn, r, field = NULL, fun = 'count')
 map.sum.a <- fasterize(iucn, r, field = "NVirus", fun = 'sum')
 
-# proportion of hosts with verbatim iucn range matches = 92%
+# proportion of hosts with verbatim iucn range matches = 92.3%
 n_distinct(iucn$binomial) / n_distinct(nvir$Host)
 
 
@@ -158,7 +161,7 @@ iucnf <- do.call(rbind.data.frame, list(iucnmf, iucnfw))
 map.num.f <- fasterize(iucnf, r, field = NULL, fun = 'count')
 map.sum.f <- fasterize(iucnf, r, field = "NVirus", fun = 'sum')
 
-# 47% of fishes
+# 47.6% of fishes
 n_distinct(iucnf$binomial) / n_distinct(nvir$Host)
 
 
