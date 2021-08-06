@@ -1,6 +1,6 @@
 # plots of viral richness per host family
 # maxwell j farrell (mawellfarrell@gmail.com)
-# may 14, 2021
+# aug 4, 2021
 
 require(dplyr)
 require(vroom)
@@ -10,7 +10,7 @@ require(ggtree)
 require(cowplot)
 
 
-virion <- vroom("../Virion/Virion.csv.gz")
+virion <- vroom("../../Virion/Virion.csv.gz")
 
 hosttax <- virion %>% select(HostClass, HostOrder, HostFamily, HostGenus, Host) %>% unique()
 
@@ -19,7 +19,7 @@ hosttax <- virion %>% select(HostClass, HostOrder, HostFamily, HostGenus, Host) 
 
 # remove all NAs
 hosttax <- hosttax[complete.cases(hosttax),]
-dim(hosttax) # 3679 species
+dim(hosttax) # 3585 species
 
 # viral richness across host families (per host class)
 # example figure: https://yulab-smu.top/treedata-book/chapter7.html#gheatmap
@@ -210,7 +210,7 @@ joint_plot <- plot_grid(p_mamms, p_aves, p_fish, p_herps, nrow=2, ncol=2,
 				align="l")
 # joint_plot
 
-ggsave("../Figures/viral_richness_hostfamilies.pdf", joint_plot, width=12.5, height=12.5)
-ggsave("../Figures/viral_richness_hostfamilies.jpg", joint_plot, width=12.5, height=12.5)
+ggsave("../../Figures/viral_richness_hostfamilies.pdf", joint_plot, width=12.5, height=12.5)
+ggsave("../../Figures/viral_richness_hostfamilies.jpg", joint_plot, width=12.5, height=12.5)
 
 

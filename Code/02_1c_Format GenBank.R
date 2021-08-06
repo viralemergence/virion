@@ -56,7 +56,7 @@ gb %<>%
 
 gb %<>% mutate(HostFlagID = str_detect(HostOriginal, "cf."),
                Database = "GenBank",
-               DatabaseVersion = "Jan2021FlatFile",
+               DatabaseVersion = "Aug2021FlatFile",
                DetectionMethod = "PCR/Sequencing", # Choice to call Nucleotide all sequence and not isolation is potentially problematic - revisit 
                DetectionOriginal = "GenBank") # Just to keep separate from EID2 Nucleotide entries # Fix the HostSynonyms at the 01 import stage
 

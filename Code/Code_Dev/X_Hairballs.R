@@ -61,6 +61,7 @@ g <- ggraph(net, layout = "kk") +
   labs(fill = "") +
   theme_graph(strip_text_face = "plain", strip_text_size = 22, caption_size = 20, base_size = 20) 
 
+
 ggsave(g,  filename = 'hairball.jpg', width = 40, height = 20, units = 'cm', dpi = 600)
 
 dev.off()
