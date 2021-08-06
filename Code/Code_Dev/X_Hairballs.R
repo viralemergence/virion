@@ -59,9 +59,8 @@ g <- ggraph(net, layout = "kk") +
   scale_fill_manual(values = got_palette) +
   facet_nodes( ~ Source, scales = "free", shrink = TRUE) + 
   labs(fill = "") +
-  theme_graph(strip_text_size = 22, caption_size = 20, base_size = 20) 
+  theme_graph(strip_text_face = "plain", strip_text_size = 22, caption_size = 20, base_size = 20) 
 
-print(Sys.time())
 
 ggsave(g,  filename = 'hairball.jpg', width = 40, height = 20, units = 'cm', dpi = 600)
 
@@ -69,4 +68,4 @@ dev.off()
 
 end <- print(Sys.time())
 
-print(end - start) 
+print(end - start)
