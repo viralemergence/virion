@@ -514,9 +514,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1403196,astrovirus pgastv-3,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403197,astrovirus pgastv-4,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403198,astrovirus pgastv-5,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403198,astrovirus pgastv-5,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403199,astrovirus pgastv-7,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403199,astrovirus pgastv-7,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1403200,astrovirus pgastv-8,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+1403200,astrovirus pgastv-8,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1717145,astrovirus predict mastv-111,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1717146,astrovirus predict mastv-112,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1717147,astrovirus predict mastv-113,NA,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -6520,6 +6522,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2711066,paramyxovirus predict_pmv-149,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647215,paramyxovirus predict_pmv-15,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711067,paramyxovirus predict_pmv-150,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+2711068,paramyxovirus predict_pmv-151,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711069,paramyxovirus predict_pmv-152,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711070,paramyxovirus predict_pmv-153,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711071,paramyxovirus predict_pmv-155,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -6537,6 +6540,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2711087,paramyxovirus predict_pmv-171,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711088,paramyxovirus predict_pmv-172,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711089,paramyxovirus predict_pmv-173,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+2711090,paramyxovirus predict_pmv-174,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711091,paramyxovirus predict_pmv-175,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2711092,paramyxovirus predict_pmv-176,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1647218,paramyxovirus predict_pmv-18,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -9709,6 +9713,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 325459,NA,epsilonpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 32613,NA,ephemerovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 333921,NA,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+10257,NA,parapoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 104394,NA,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 10882,NA,orthoreovirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1507401,NA,bocaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -9719,7 +9724,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 186537,NA,marburgvirus,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 333750,NA,alphapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 333922,NA,betapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+10358,NA,cytomegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+10375,NA,lymphocryptovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+10379,NA,rhadinovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+10319,NA,varicellovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 934804,NA,dyoiotapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
+95337,NA,vesivirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 325458,NA,etapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 197911,NA,alphainfluenzavirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
 12059,NA,enterovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE

@@ -3,7 +3,7 @@ library(tidyverse)
 library(magrittr)
 library(lubridate)
 
-clo <- read_csv("~/Github/clovert_dev/clover/clover/CLOVER_1.0_Viruses_AssociationsFlatFile.csv")
+clo <- read_csv("~/Github/clover/clover/clover_1.0_allpathogens/CLOVER_1.0_Viruses_AssociationsFlatFile.csv")
 
 temp <- data.frame(Host = character(),
                  Virus = character(),
