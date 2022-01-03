@@ -35,7 +35,7 @@ jobs:
       run: |
         Rscript -e 'source("Code/02_1c_Format GenBank.R")'
     - name: Save artifacts
-      uses: actions/upload-artifacts@v2
+      uses: actions/upload-artifact@v2
       with:
         name: GenBankFormatted
         path: Intermediate/Formatted/GenbankFormatted.csv.gz
@@ -53,7 +53,7 @@ jobs:
           sudo apt-get install libcurl4-openssl-dev
           sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr","zip", "fs", "PresenceAbsence"))'
       - name: Get GenBank
-        uses: actions/download-artifacts@v2
+        uses: actions/download-artifact@v2
         with:
           name: GenBankFormatted
       - name: Merge clean files
@@ -66,7 +66,7 @@ jobs:
         run: |
           Rscript -e 'source("Code/05_Dissolve VIRION.R")'
       - name: Save the artifacts
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
           name: VIRION
           path: Virion
