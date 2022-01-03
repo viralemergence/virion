@@ -4,11 +4,10 @@ name: Compile virion
 on:  
   push:
     branches:
-      - master
-      - githubActioning
+      - main
   pull_request:
     branches:
-      - master
+      - main
   # run once a week
   schedule:
     - cron: "0 0 * * 0"
