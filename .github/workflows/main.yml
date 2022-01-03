@@ -63,7 +63,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: GlobiFormatted
-        path: Intermediate/Formatted/GLOBIFormatted.csv'
+        path: Intermediate/Formatted/GLOBIFormatted.csv
   Finish:
     runs-on: ubuntu-latest
     needs: [GenBank]
