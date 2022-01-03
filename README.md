@@ -8,7 +8,7 @@
 
 #### The VIRION database was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
 
-VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes half a million records that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi).
+VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 20,000 species interactions that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi).
 
 VIRION is part of an ongoing effort to build an open data ecosystem in viral ecology, and has been released prior to a preprint, publication, or peer-review process. As such, we strongly discourage the reproduction of the data in other databases at this time.
 
@@ -27,8 +27,6 @@ VIRION aggregates seven major sources of information, two of which can be dynami
 </p>
 &nbsp;
 &nbsp;
- 
-These methods will be further described in a forthcoming preprint / publication by Carlson _et al._
 
 # How to use VIRION
 
@@ -52,7 +50,7 @@ VIRION can be used for everything from deep learning to simple biological questi
 
 It's that simple! Here's a few small tips and tricks you should know:
 - All resolved taxonomy is lowercase (see the above example); original metadata may retain case as reported in source files, and non-taxonomic metadata is not all lowercase
-- Some valid records have NA's in their taxonomy; for example, if an unclassified _Betacoronavirus_ is found in a mouse, it might be recorded as NA in the "Virus" field. This is an intentional feature, as it enables researchers to talk about higher-level taxonomic patterns, and [some studies](https://www.biorxiv.org/content/10.1101/2020.05.22.111344v3) may not need fully-resolved data. 
+- Some valid records have NA's in their taxonomy; for example, if an unclassified _Betacoronavirus_ is found in a mouse, it might be recorded as NA in the "Virus" field. This is an intentional feature, as it enables researchers to talk about higher-level taxonomic patterns, and [some studies](https://www.biorxiv.org/content/10.1101/2020.05.22.111344v4) may not need fully-resolved data. 
 - Sometimes, you'll see taxonomy that's outdated or strange. If you think there's an error, please leave an issue on the Github. Before you do, it may be worth checking whether a given name is correctly resolved to the NCBI taxonomy; for example, in R, you can use `taxize::classification("Whateverthe latinnameis", db = "ncbi")`. If the issue is related to that taxonomic backbone, please label your issue `ncbi-needed`
 - Different databases may have overlapping records. For example, some PREDICT records are deposited in GenBank, and some GenBank records are inherited by EID2. As different data has passed between these sources, they've often lost some metadata. Presence in different datasets therefore does not indicate stronger / weaker evidence, and conversely, conflicting evidence between databases may not be indicative of any biological evidence.
 
@@ -76,9 +74,13 @@ Like most datasets that record host-virus associations, this includes a mix of d
 - We encourage particular caution with regard to the validity of virus names. Although the NCBI and ICTV taxonomies are updated against each other, valid NCBI names are not guaranteed to be ICTV-valid species level designations, and many may include sampling metadata. We recommend that researchers manually curate names where possible, but can also use simple rubrics to reduce down controversial names. For example, in the list of NCBI-accepted betacoronavirus names, eliminating all virus names that include a "/" (e.g., using `stringr::str_detect()`) will reduce many lineage-specific records ("bat coronavirus 2265/philippines/2010", "coronavirus n.noc/vm199/2007/nld") and leave behind cleaner names ("alpaca coronavirus") but won't necessarily catch everything ("bat coronavirus ank045f"). Another option is to limit analysis to viruses that are ICTV ratified (`ICTVRatified == TRUE`), but this is particularly conservative, and will leave a much larger number of valid virus names out.
 
 # Additional information
+### Reproducing VIRION
+
+To ensure that one stable (raw) version of VIRION remains the database of record, we ask that you do not reproduce VIRION into other databases or include static copies as supplement to publications. If you develop improved versions with taxonomic corrections or new data sources added, please contact us so we can work together to keep improving the main VIRION database!
+
 ### Citing VIRION
 
-[forthcoming]
+Please cite: Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, de Lara Muylaert R. The Global Virome in One Network (VIRION): an atlas of vertebrate-virus associations. bioRxiv. 2021 Jan 1.
 
 ### Contact
 - For general questions about VIRION, please reach out to [Colin Carlson](colin.carlson@georgetown.edu).
