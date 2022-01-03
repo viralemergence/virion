@@ -78,8 +78,7 @@ jobs:
       - name: dependencies!!!!
         run: |
           sudo apt-get install libcurl4-openssl-dev
-          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"),
-        repos = "http://cran.us.r-project.org")'
+          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
       - name: Get GenBank
         uses: actions/download-artifact@v2
         with:
