@@ -23,7 +23,8 @@ jobs:
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev
-        sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr","zip", "fs", "PresenceAbsence"))'
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"),
+        repos = "http://cran.us.r-project.org")'
     - name: Download GenBank
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
@@ -38,6 +39,33 @@ jobs:
       with:
         name: GenBankFormatted
         path: Intermediate/Formatted/GenbankFormatted.csv.gz
+  Globi:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v1
+      with:
+        r-version: '3.5.3'
+    - name: dependencies!!!!
+      run: |
+        sudo apt-get install libcurl4-openssl-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"),
+        repos = "http://cran.us.r-project.org")'
+    - name: Download Globi
+      run: |
+        Rscript -e 'source("Code/02_3a_Download GLOBI.R")'
+    - name: Digest Globi
+      run: |
+        Rscript -e 'source("Code/02_3b_Digest GLOBI.R")'
+    - name: Format Globi
+      run: |
+        Rscript -e 'source("Code/02_3c_Format GLOBI.R")'
+    - name: Save artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: GlobiFormatted
+        path: Intermediate/Formatted/GLOBIFormatted.csv'
   Finish:
     runs-on: ubuntu-latest
     needs: [GenBank]
@@ -50,11 +78,16 @@ jobs:
       - name: dependencies!!!!
         run: |
           sudo apt-get install libcurl4-openssl-dev
-          sudo Rscript -e 'install.packages(c("taxize","rgbif","doParallel","tidyverse","magrittr","plyr","zip", "fs", "PresenceAbsence"))'
+          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"),
+        repos = "http://cran.us.r-project.org")'
       - name: Get GenBank
         uses: actions/download-artifact@v2
         with:
           name: GenBankFormatted
+      - name: Get Globi
+        uses: actions/download-artifact@v2
+        with:
+          name: GlobiFormatted 
       - name: Merge clean files
         run: |
           Rscript -e 'source("Code/03_Merge clean files.R")'
