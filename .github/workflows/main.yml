@@ -21,7 +21,7 @@ jobs:
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
-        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
     - name: Download GenBank
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
@@ -41,13 +41,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup R
-      uses: r-lib/actions/setup-r@v1
-      with:
-        r-version: '3.5.3'
+      uses: r-lib/actions/setup-r@v2
     - name: dependencies!!!!
       run: |
-        sudo apt-get install libcurl4-openssl-dev
-        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
     - name: Download Globi
       run: |
         Rscript -e 'source("Code/02_3a_Download GLOBI.R")'
@@ -66,39 +64,37 @@ jobs:
     runs-on: ubuntu-latest
     needs: [GenBank, Globi]
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v1
-        with:
-          r-version: '3.5.3'
-      - name: dependencies!!!!
-        run: |
-          sudo apt-get install libcurl4-openssl-dev
-          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
-      - name: Get GenBank
-        uses: actions/download-artifact@v2
-        with:
-          name: GenBankFormatted
-      - name: Get Globi
-        uses: actions/download-artifact@v2
-        with:
-          name: GlobiFormatted 
-      - name: Merge clean files
-        run: |
-          Rscript -e 'source("Code/03_Merge clean files.R")'
-      - name: High level checks
-        run: |
-          Rscript -e 'source("Code/04_High level VIRION checks.R")'
-      - name: Dissolve VIRION
-        run: |
-          Rscript -e 'source("Code/05_Dissolve VIRION.R")'
-      - name: Save the artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: VIRION
-          path: Virion
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: Virion # The folder the action should deploy.
+    - uses: actions/checkout@v2
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v2
+    - name: dependencies!!!
+      run: |
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+    - name: Get GenBank
+      uses: actions/download-artifact@v2
+      with:
+        name: GenBankFormatted
+    - name: Get Globi
+      uses: actions/download-artifact@v2
+      with:
+        name: GlobiFormatted 
+    - name: Merge clean files
+      run: |
+        Rscript -e 'source("Code/03_Merge clean files.R")'
+    - name: High level checks
+      run: |
+        Rscript -e 'source("Code/04_High level VIRION checks.R")'
+    - name: Dissolve VIRION
+      run: |
+        Rscript -e 'source("Code/05_Dissolve VIRION.R")'
+    - name: Save the artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: VIRION
+        path: Virion
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.7
+      with:
+        branch: gh-pages # The branch the action should deploy to.
+        folder: Virion # The folder the action should deploy.
