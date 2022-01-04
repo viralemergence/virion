@@ -1,6 +1,7 @@
 
 if(!exists('jncbi')) {source('Code/001_Julia functions.R')}
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
+rentrez::set_entrez_key("ec345b39079e565bdfa744c3ef0d4b03ba08")
 
 library(tidyverse)
 library(taxize)
