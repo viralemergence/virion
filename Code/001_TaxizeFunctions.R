@@ -50,13 +50,13 @@ sleepy.hdict <- function(names.big) {
   while (k == 1){
     names <- names.big[j:(min(j+9, length(names.big)))]
     
-    clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+    clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
     if(!is.data.frame(clean)) {
       Sys.sleep(60)
-      clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+      clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
       while(!is.data.frame(clean)) {      
-        Sys.sleep(60)
-        clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+        Sys.sleep(600)
+        clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
       }
     }
   
@@ -64,7 +64,7 @@ sleepy.hdict <- function(names.big) {
     
     if(length(names.big) <= j+9) {k = 2}
     j <- j + 10
-    Sys.sleep(10)
+    Sys.sleep(11)
   }
   return(clean.big)
 }
@@ -101,13 +101,13 @@ sleepy.vdict <- function(names.big) {
   while (k == 1){
     names <- names.big[j:(min(j+9, length(names.big)))]
     
-    clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+    clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
     if(!is.data.frame(clean)) {
       Sys.sleep(60)
-      clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+      clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
       while(!is.data.frame(clean)) {      
-        Sys.sleep(60)
-        clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+        Sys.sleep(600)
+        clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
       }
     }
     
@@ -115,7 +115,7 @@ sleepy.vdict <- function(names.big) {
     
     if(length(names.big) <= j+9) {k = 2}
     j <- j + 10
-    Sys.sleep(10)
+    Sys.sleep(11)
   }
   return(clean.big)
 }
