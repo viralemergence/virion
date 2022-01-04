@@ -23,7 +23,7 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 
     # GO BR
     Threads.@threads for i in 1:n
-        nm = taxon(namelist, synonyms[i])
+        nm = taxon(namelist, synonyms[i]; casesensitive=false)
         if !isnothing(nm)
             push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, nm.name, nm.id))
         else
@@ -36,6 +36,6 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 end
 
 # TODO IMPORTANT USE THE FILES YOU WANT HERE
-pathogens = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
+pathogens = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
 reconciled_pathogens = taxonomizer(pathogens, :pathogens; names=:Name)
-CSV.write("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(pathogens), reconciled_pathogens, on=:Name => :name))
+CSV.write("C:/Users/cjcar/Documents/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(pathogens), reconciled_pathogens, on=:Name => :name))

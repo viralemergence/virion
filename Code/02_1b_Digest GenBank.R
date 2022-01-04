@@ -15,7 +15,7 @@ gb <- data.table::fread("Source/sequences.csv") %>%
   as_tibble
 
 gb %>% pull(Host) %>% unique() %>% sort() -> host.list
-host.table <- hdict(host.list)
+host.table <- sleepy.hdict(host.list)
 write_csv(host.table, 'Intermediate/GBHostTax.csv')
 
 gb %<>% rename(HostOriginal = "Host") %>%
@@ -34,7 +34,7 @@ gb %<>% rename(HostOriginal = "Host") %>%
  # Reptilia is defunct but left in case GLOBI has something on it or it's reinstituted or something weird
 
 gb %>% pull(Species) %>% unique() %>% sort() -> virus.list
-virus.table <- vdict(virus.list)
+virus.table <- sleepy.vdict(virus.list)
 write_csv(virus.table, 'Intermediate/GBVirusTax.csv')
 
 gb %<>% rename(VirusOriginal = "Species") %>%

@@ -43,10 +43,10 @@ globi %>%
   mutate_cond(str_detect(Virus, "Influenza D"), Virus = "Influenza D")  -> globi
 
 globi %>% pull(Host) %>% unique() %>% sort() -> host.list
-host.table <- hdict(host.list)
+host.table <- sleepy.hdict(host.list)
 
 globi %>% pull(Virus) %>% unique() %>% sort() -> virus.list
-virus.table <- vdict(virus.list)
+virus.table <- sleepy.vdict(virus.list)
 
 globi %<>% 
   rename(HostIntermediate = 'Host') %>%

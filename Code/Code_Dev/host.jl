@@ -38,7 +38,7 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 
     # GO BR
     Threads.@threads for i in 1:n
-        nm = taxon(namelist, synonyms[i])
+        nm = taxon(namelist, synonyms[i]; casesensitive=false)
         if !isnothing(nm)
             push!(results[Threads.threadid()], (lowercase(synonyms[i]), true, nm.name, nm.id))
         else
@@ -50,6 +50,6 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
     return vcat(results...)
 end
 
-hosts = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
+hosts = DataFrame(CSV.File("C:/Users/cjcar/Documents/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv"; delim=';'))
 reconciled_hosts = taxonomizer(hosts, :hosts; names=:Name)
-CSV.write("C:/Users/cjcar/Documents/Github/virion/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(hosts), reconciled_hosts, on=:Name => :name))
+CSV.write("C:/Users/cjcar/Documents/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv", leftjoin(lowercasefirst.(hosts), reconciled_hosts, on=:Name => :name))

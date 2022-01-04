@@ -43,6 +43,22 @@ hdict <- function(names) {
              HostClass = c2) %>% mutate_cond(HostNCBIResolved == FALSE, Host = HostOriginal) %>% return()
 }
 
+sleepy.hdict <- function(names.big) {
+  j = 1 
+  k = 1
+  while (k == 1){
+    names <- names.big[j:(min(j+99, length(names.big)))]
+    
+    clean <- hdict(names)
+    if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
+    
+    if(length(names.big) <= j+99) {k = 2}
+    j <- j + 99
+    Sys.sleep(100)
+  }
+  return(clean.big)
+}
+
 vdict <- function(names) { 
   names.orig <- names
   u <- get_uid(names, ask = FALSE)
@@ -67,4 +83,20 @@ vdict <- function(names) {
              VirusFamily = f,
              VirusOrder = o, 
              VirusClass = c2) %>% mutate_cond(VirusNCBIResolved == FALSE, Virus = VirusOriginal) %>% return()
+}
+
+sleepy.vdict <- function(names.big) {
+  j = 1 
+  k = 1
+  while (k == 1){
+    names <- names.big[j:(min(j+99, length(names.big)))]
+    
+    clean <- vdict(names)
+    if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
+    
+    if(length(names.big) <= j+99) {k = 2}
+    j <- j + 99
+    Sys.sleep(100)
+  }
+  return(clean.big)
 }
