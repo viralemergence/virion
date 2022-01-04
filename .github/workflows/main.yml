@@ -23,7 +23,7 @@ jobs:
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev
-        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
     - name: Download GenBank
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
@@ -49,7 +49,7 @@ jobs:
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev
-        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
     - name: Download Globi
       run: |
         Rscript -e 'source("Code/02_3a_Download GLOBI.R")'
@@ -76,7 +76,7 @@ jobs:
       - name: dependencies!!!!
         run: |
           sudo apt-get install libcurl4-openssl-dev
-          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+          sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org", dependencies=TRUE)'
       - name: Get GenBank
         uses: actions/download-artifact@v2
         with:
