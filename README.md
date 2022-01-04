@@ -14,6 +14,8 @@ VIRION is part of an ongoing effort to build an open data ecosystem in viral eco
 
 We encourage researchers to **review this entire guide** before using these data.
 
+[![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363)
+
 # How we built VIRION
 
 VIRION aggregates seven major sources of information, two of which can be dynamically updated (\*):
