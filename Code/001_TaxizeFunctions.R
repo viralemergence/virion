@@ -13,6 +13,7 @@ mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
   .data
 }
 
+
 hdict <- function(names) { 
   names.orig <- names
   names <- str_replace(names, " cf\\.","")
@@ -20,7 +21,7 @@ hdict <- function(names) {
   names <- str_replace(names, " gen\\.","")
   u <- get_uid(names, rank_filter = c("subspecies", "species", "genus", "family", "order", "class"), 
                division_filter = "vertebrates", ask = FALSE)
-  c <- classification(u)
+  c <- classification(u, batch_size = 10)
   n <- !is.na(u)
   attributes(u) <- NULL
   s <- unlist(lapply(c, function(x){tryCatch(x$name[[which(x$rank=="species")]], error = function(e) {NA})}), use.names = FALSE)
@@ -47,22 +48,22 @@ sleepy.hdict <- function(names.big) {
   j = 1 
   k = 1
   while (k == 1){
-    names <- names.big[j:(min(j+99, length(names.big)))]
+    names <- names.big[j:(min(j+9, length(names.big)))]
     
     clean <- hdict(names)
     if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
     
-    if(length(names.big) <= j+99) {k = 2}
-    j <- j + 99
-    Sys.sleep(100)
+    if(length(names.big) <= j+9) {k = 2}
+    j <- j + 10
+    Sys.sleep(10)
   }
   return(clean.big)
 }
 
 vdict <- function(names) { 
   names.orig <- names
-  u <- get_uid(names, ask = FALSE)
-  c <- classification(u)
+  u <- get_uid(names, batch_size = 5, ask = FALSE)
+  c <- classification(u, batch_size = 5)
   n <- !is.na(u)
   attributes(u) <- NULL
   s <- unlist(lapply(c, function(x){tryCatch(x$name[[which(x$rank=="species")]], error = function(e) {NA})}), use.names = FALSE)
@@ -89,14 +90,14 @@ sleepy.vdict <- function(names.big) {
   j = 1 
   k = 1
   while (k == 1){
-    names <- names.big[j:(min(j+99, length(names.big)))]
+    names <- names.big[j:(min(j+9, length(names.big)))]
     
     clean <- vdict(names)
     if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
     
-    if(length(names.big) <= j+99) {k = 2}
-    j <- j + 99
-    Sys.sleep(100)
+    if(length(names.big) <= j+9) {k = 2}
+    j <- j + 10
+    Sys.sleep(10)
   }
   return(clean.big)
 }
