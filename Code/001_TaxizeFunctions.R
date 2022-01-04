@@ -50,7 +50,16 @@ sleepy.hdict <- function(names.big) {
   while (k == 1){
     names <- names.big[j:(min(j+9, length(names.big)))]
     
-    clean <- hdict(names)
+    clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+    if(!is.data.frame(clean)) {
+      Sys.sleep(60)
+      clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+      while(!is.data.frame(clean)) {      
+        Sys.sleep(60)
+        clean <- tryCatch(hdict(names), error = "Server error (429) happened, waiting 60s")
+      }
+    }
+  
     if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
     
     if(length(names.big) <= j+9) {k = 2}
@@ -92,7 +101,16 @@ sleepy.vdict <- function(names.big) {
   while (k == 1){
     names <- names.big[j:(min(j+9, length(names.big)))]
     
-    clean <- vdict(names)
+    clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+    if(!is.data.frame(clean)) {
+      Sys.sleep(60)
+      clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+      while(!is.data.frame(clean)) {      
+        Sys.sleep(60)
+        clean <- tryCatch(vdict(names), error = "Server error (429) happened, waiting 60s")
+      }
+    }
+    
     if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
     
     if(length(names.big) <= j+9) {k = 2}
