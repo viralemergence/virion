@@ -1,5 +1,8 @@
 
-virion <- vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+library(tidyverse); library(vroom); library(magrittr)
+if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
+
+virion <- vroom("./Intermediate/Formatted/VIRIONUnprocessed.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 
 # # Is there anything that's not vertebrate in here?
 # 

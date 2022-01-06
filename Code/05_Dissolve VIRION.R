@@ -5,7 +5,7 @@ library(magrittr)
 library(tidyverse)
 library(vroom)
 
-virion <- vroom("Virion/Virion.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+virion <- vroom("./Virion/Virion.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 
 fixer <- function(x) {toString(unique(unlist(x)))}
 
@@ -34,8 +34,8 @@ virion %>%
 
 # Output the taxonomy files, and return associations without them
 
-write_csv(host.tax, "Virion/TaxonomyHost.csv")
-write_csv(virus.tax, "Virion/TaxonomyVirus.csv")
+write_csv(host.tax, "./Virion/TaxonomyHost.csv")
+write_csv(virus.tax, "./Virion/TaxonomyVirus.csv")
 
 virion %<>% 
   select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass,
@@ -66,9 +66,9 @@ virion %>%
          ReleaseYear, ReleaseMonth, ReleaseDay,
          CollectionYear, CollectionMonth, CollectionDay) -> temporal
 
-vroom_write(provenance, "Virion/Provenance.csv.gz")
-vroom_write(detection, "Virion/Detection.csv.gz")
-vroom_write(temporal, "Virion/Temporal.csv.gz")
+vroom_write(provenance, "./Virion/Provenance.csv.gz")
+vroom_write(detection, "./Virion/Detection.csv.gz")
+vroom_write(temporal, "./Virion/Temporal.csv.gz")
 
 virion %<>%
   select(-c(Database, DatabaseVersion,
@@ -87,4 +87,4 @@ virion %<>%
   summarise_at(vars(c("AssocID")), ~list(.x)) %>%
   mutate(AssocID = sapply(AssocID, fixer))
 
-write_csv(virion, "Virion/Edgelist.csv")
+write_csv(virion, "./Virion/Edgelist.csv")
