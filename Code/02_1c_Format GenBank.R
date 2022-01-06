@@ -1,5 +1,7 @@
 
 library(tidyverse); library(magrittr); library(vroom)
+if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
+if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
 
 temp <- data.frame(Host = character(),
                    Virus = character(),

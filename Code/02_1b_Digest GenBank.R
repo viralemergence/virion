@@ -3,7 +3,7 @@
 
 rm(list = ls())
 
-library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip)
+library(tidyverse); library(taxize); library(magrittr); library(fs); library(zip); library(vroom)
 rentrez::set_entrez_key("ec345b39079e565bdfa744c3ef0d4b03ba08")
 
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
