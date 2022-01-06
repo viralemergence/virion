@@ -26,7 +26,7 @@ namelist = isequal(:hosts)(type) ? vertebratefilter() : virusfilter()
 synonyms = unique(uppercasefirst.(df[:,names]))
 
 # Prepare a dataframe from every thread
-results = [DataFrame(
+results = DataFrame(
     Original = String[],
     Rank = Symbol[],
     TaxId = Union{Missing,Int64}[],
@@ -34,17 +34,18 @@ results = [DataFrame(
     Genus = Union{Missing,String}[],
     Order = Union{Missing,String}[],
     Class = Union{Missing,String}[],
-    Family = Union{Missing,String}[]) for i in 1:Threads.nthreads()]
+    Family = Union{Missing,String}[]
+)
 
 # Prepare the progressbar
 n = length(synonyms)
 
 # GO BR
-Threads.@threads for i in 1:n
+for i in 1:n
     try
         nm = taxon(namelist, synonyms[i]; casesensitive=false)
         df_row = _prepare_name_tuple(synonyms[i], nm)
-        push!(results[i], df_row)
+        push!(results, df_row)
     catch err
         if isa(err, NameHasNoDirectMatch)
             continue
@@ -52,13 +53,13 @@ Threads.@threads for i in 1:n
         if isa(err, NameHasMultipleMatches)
             for nm in alternativetaxa(namelist, synonyms[i])
                 df_row = _prepare_name_tuple(synonyms[i], nm)
-                push!(results[i], df_row)
+                push!(results, df_row)
             end
         end
         continue
     end
 end
-return vcat(results...)
+return results
 end
 
 function _prepare_name_tuple(n, taxa; levels=[:species, :genus, :order, :class, :family])
