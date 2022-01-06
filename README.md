@@ -4,17 +4,19 @@
 &nbsp;
 &nbsp;
   
-### The Global Virome, in One Network (VIRION) is an open atlas of the vertebrate virome.
+### The Global Virome, in One Network (VIRION) is an atlas of vertebrate viruses.
 
-#### The VIRION database was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge.
+[![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/gh-pages)
 
-VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 20,000 species interactions that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi).
+The VIRION database was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge. VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 20,000 species interactions that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). We encourage researchers to **review this entire guide** before using these data.
 
-VIRION is part of an ongoing effort to build an open data ecosystem in viral ecology, and has been released prior to a preprint, publication, or peer-review process. As such, we strongly discourage the reproduction of the data in other databases at this time.
+# How to download VIRION
 
-We encourage researchers to **review this entire guide** before using these data.
+**I want the newest stable version!** The most recent hand-compiled (i.e., stable) version of VIRION is available in the 'Virion' subdirectory or [here](https://github.com/viralemergence/virion/Virion/virion.csv.gz) as a .csv.gz file.
 
-[![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363)
+**I want the most up-to-date copy!** VIRION also automatically updates with new data from two dynamic sources (GenBank and GLOBI). You can access the most recent updates [here](https://viralemergence.github.io/virion/). Note that taxonomy may be out-of-date in the CLOVER and PREDICT sub-datasets.
+
+**I want to reproduce the vignettes in the paper!:** If you want to reproduce the vignettes we present in the publication, you can also download the entire release of [version 1.0.0](https://github.com/viralemergence/virion/releases/tag/v1.0.0).
 
 # How we built VIRION
 
