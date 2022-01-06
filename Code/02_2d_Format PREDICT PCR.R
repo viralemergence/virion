@@ -1,5 +1,6 @@
 
 library(tidyverse)
+library(magrittr)
 
 predict <- read_csv("Intermediate/Unformatted/PREDICTPCRUnformatted.csv")
 

@@ -1,11 +1,20 @@
 
 library(taxize)
 library(tidyverse)
+library(magrittr)
 
-test <- c("Adeno-associated virus - 3", 
+virus.test <- c("Adeno-associated virus - 3", 
            "Adeno-associated virus 3B",
            "Adenovirus predict_adv-20",
            "A bad name")
+
+
+host.test <- c("Equus caballus ferus",
+               "Homo sapiens",
+               "Hongus bongus",
+               "Chiroptera",
+               "Mus",
+               "Bacillus anthracis")
 
 mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
   condition <- eval(substitute(condition), .data, envir)
@@ -44,31 +53,6 @@ hdict <- function(names) {
              HostClass = c2) %>% mutate_cond(HostNCBIResolved == FALSE, Host = HostOriginal) %>% return()
 }
 
-sleepy.hdict <- function(names.big) {
-  j = 1 
-  k = 1
-  while (k == 1){
-    names <- names.big[j:(min(j+9, length(names.big)))]
-    
-    clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-    if(!is.data.frame(clean)) {
-      Sys.sleep(60)
-      clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-      while(!is.data.frame(clean)) {      
-        Sys.sleep(600)
-        clean <- tryCatch(hdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-      }
-    }
-  
-    if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
-    
-    if(length(names.big) <= j+9) {k = 2}
-    j <- j + 10
-    Sys.sleep(11)
-  }
-  return(clean.big)
-}
-
 vdict <- function(names) { 
   names.orig <- names
   u <- get_uid(names, batch_size = 5, ask = FALSE)
@@ -95,27 +79,67 @@ vdict <- function(names) {
              VirusClass = c2) %>% mutate_cond(VirusNCBIResolved == FALSE, Virus = VirusOriginal) %>% return()
 }
 
-sleepy.vdict <- function(names.big) {
-  j = 1 
-  k = 1
-  while (k == 1){
-    names <- names.big[j:(min(j+9, length(names.big)))]
+
+jhdict <- function(spnames) {
+  raw <- data.frame(Name = spnames)
+  
+  write_csv(raw, './Code/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
+  system("julia --project Code/Code_Dev/host.jl")
+  clean <- read_csv("~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv")
+  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv')
+  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv')
+  
+  clean %<>% group_by(Name) %>% 
+    slice(which.min(TaxId))
     
-    clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-    if(!is.data.frame(clean)) {
-      Sys.sleep(60)
-      clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-      while(!is.data.frame(clean)) {      
-        Sys.sleep(600)
-        clean <- tryCatch(vdict(names), error = function(e){"Server error (429) happened, waiting 60s"})
-      }
-    }
-    
-    if( j == 1) { clean.big <- clean } else { clean.big <- bind_rows(clean.big, clean) }
-    
-    if(length(names.big) <= j+9) {k = 2}
-    j <- j + 10
-    Sys.sleep(11)
-  }
-  return(clean.big)
+  clean %<>% rename(HostOriginal = Name,
+                    HostTaxID = TaxId,
+                    Host = Species,
+                    HostGenus = Genus,
+                    HostFamily = Family,
+                    HostOrder = Order,
+                    HostClass = Class) %>%
+    mutate(HostNCBIResolved = TRUE) %>%
+    select(-Rank)
+  
+  bad <- data.frame(HostOriginal = spnames[!(spnames %in% clean$HostOriginal)],
+                    HostNCBIResolved = FALSE)
+  
+  clean %<>% bind_rows(bad) %>%
+    select(HostOriginal, HostTaxID, HostNCBIResolved, Host, HostGenus, HostFamily, HostOrder, HostClass)
+  
+  return(clean)
 }
+
+
+jvdict <- function(spnames) {
+  raw <- data.frame(Name = spnames)
+  
+  write_csv(raw, './Code/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
+  system("julia --project Code/Code_Dev/virus.jl")
+  clean <- read_csv("~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv")
+  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv')
+  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv')
+  
+  clean %<>% group_by(Name) %>% 
+    slice(which.min(TaxId))
+  
+  clean %<>% rename(VirusOriginal = Name,
+                    VirusTaxID = TaxId,
+                    Virus = Species,
+                    VirusGenus = Genus,
+                    VirusFamily = Family,
+                    VirusOrder = Order,
+                    VirusClass = Class) %>%
+    mutate(VirusNCBIResolved = TRUE) %>%
+    select(-Rank)
+  
+  bad <- data.frame(VirusOriginal = spnames[!(spnames %in% clean$VirusOriginal)],
+                    VirusNCBIResolved = FALSE)
+  
+  clean %<>% bind_rows(bad) %>%
+    select(VirusOriginal, VirusTaxID, VirusNCBIResolved, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass)
+  
+  return(clean)
+}
+

@@ -1,5 +1,6 @@
 
 library(tidyverse)
+library(magrittr)
 
 globi <- read_csv("Intermediate/Unformatted/GLOBIUnformatted.csv")
 
