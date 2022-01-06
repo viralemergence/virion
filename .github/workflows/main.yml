@@ -20,8 +20,10 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.7
-    - name: Julia dependencies
-      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("NCBITaxonomy"); Pkg.add("CSV"); Pkg.add("DataFrames")'
+    - name: Julia dependencies (DF)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames")'
+    - name: NCBITaxonomy (version from MAIN branch!)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
     - name: dependencies!!!!
@@ -52,6 +54,14 @@ jobs:
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
         sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+    - name: Setup Julia 
+      uses: julia-actions/setup-julia@v1
+      with:
+        version: 1.7
+    - name: Julia dependencies (DF)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames")'
+    - name: NCBITaxonomy (version from MAIN branch!)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
     - name: Download Globi
       run: |
         Rscript -e 'source("Code/02_3a_Download GLOBI.R")'
