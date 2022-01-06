@@ -85,9 +85,9 @@ jhdict <- function(spnames) {
   
   write_csv(raw, './Code/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
   system("julia --project Code/Code_Dev/host.jl")
-  clean <- read_csv("~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv")
-  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv')
-  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv')
+  clean <- read_csv("./Code/Code_Dev/TaxonomyTempOut.csv")
+  file.remove('./Code/Code_Dev/TaxonomyTempIn.csv')
+  file.remove('./Code/Code_Dev/TaxonomyTempOut.csv')
   
   clean %<>% group_by(Name) %>% 
     slice(which.min(TaxId))
@@ -117,9 +117,9 @@ jvdict <- function(spnames) {
   
   write_csv(raw, './Code/Code_Dev/TaxonomyTempIn.csv', eol = "\n")
   system("julia --project Code/Code_Dev/virus.jl")
-  clean <- read_csv("~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv")
-  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempIn.csv')
-  file.remove('~/Github/virion/Code/Code_Dev/TaxonomyTempOut.csv')
+  clean <- read_csv("./Code/Code_Dev/TaxonomyTempOut.csv")
+  file.remove('./Code/Code_Dev/TaxonomyTempIn.csv')
+  file.remove('./Code/Code_Dev/TaxonomyTempOut.csv')
   
   clean %<>% group_by(Name) %>% 
     slice(which.min(TaxId))
