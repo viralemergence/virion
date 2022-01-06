@@ -1,7 +1,7 @@
 name: Compile virion
 
-# Controls when the action will run. 
-on:  
+# Controls when the action will run.
+on:
   push:
     branches:
       - main
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Julia 
+    - name: Setup Julia
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.7
@@ -29,7 +29,7 @@ jobs:
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
-        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate", "R.utils"), repos = "http://cran.us.r-project.org")'
     - name: Download GenBank
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
@@ -54,7 +54,7 @@ jobs:
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
         sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
-    - name: Setup Julia 
+    - name: Setup Julia
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.7
@@ -94,7 +94,7 @@ jobs:
     - name: Get Globi
       uses: actions/download-artifact@v2
       with:
-        name: GlobiFormatted 
+        name: GlobiFormatted
     - name: Merge clean files
       run: |
         Rscript -e 'source("Code/03_Merge clean files.R")'
