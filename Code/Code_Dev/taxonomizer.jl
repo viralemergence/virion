@@ -22,6 +22,9 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 # And build the appropriate nametype
 namelist = isequal(:hosts)(type) ? vertebratefilter() : virusfilter()
 
+# Remove blast names
+filter!(row -> row.class != NCBITaxonomy.class_blast_name, namelist)
+
 # Get the names from the correct column (usually `Name` but we can change it with the `names` argument)
 synonyms = unique(uppercasefirst.(df[:,names]))
 
