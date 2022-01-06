@@ -2,8 +2,8 @@ using NCBITaxonomy
 using DataFrames
 import CSV
 
-include(joinpath(@__DIR__, "/Code/Code_Dev/taxonomizer.jl"))
+include(joinpath(pwd(), "/Code/Code_Dev/taxonomizer.jl"))
 
-names = DataFrame(CSV.File(joinpath(@__DIR__, "/Code/Code_Dev/TaxonomyTempIn.csv"); delim=';'))
+names = DataFrame(CSV.File(joinpath(pwd(), "/Code/Code_Dev/TaxonomyTempIn.csv"); delim=';'))
 reconciled_names = taxonomizer(names, :hosts; names=:Name)
-CSV.write(joinpath(@__DIR__, "/Code/Code_Dev/TaxonomyTempOut.csv"), leftjoin(names, reconciled_names, on=:Name => :Original))
+CSV.write(joinpath(pwd(), "/Code/Code_Dev/TaxonomyTempOut.csv"), leftjoin(names, reconciled_names, on=:Name => :Original))
