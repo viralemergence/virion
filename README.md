@@ -8,7 +8,7 @@ The VIRION database is an atlas of the vertebrate-virus network. It was built by
 
 # Download VIRION
 
-There are several versions of VIRION you can choose from. VIRION is periodically hand-compiled into a new stable version, which includes taxonomic updates to every sub-component of the dataset. The two dynamic sources (GLOBI and GenBank are also scraped and automatically recompiled into an "up-to-date" version on a daily basis. Note that, while the CLOVER and PREDICT source datasets are static, species name changes may not be reflected in these datasets until the entire dataset is manually recompiled, potentially creating discrepancies between these sources. If you want to reproduce the vignettes we present in the publication, you can also download the entire release of [version 0.2.0](https://github.com/viralemergence/virion/releases/tag/v0.2.1-beta).
+There are several versions of VIRION you can choose from. VIRION is periodically hand-compiled into a new stable version, which includes taxonomic updates to every sub-component of the dataset. The two dynamic sources (GLOBI and GenBank are also scraped and automatically recompiled into an "up-to-date" version on a daily basis. Note that, while the CLOVER and PREDICT source datasets are static, species name changes may not be reflected in these datasets until the entire dataset is manually recompiled, potentially creating discrepancies between these sources. If you want to reproduce the vignettes we present in the publication, you can also download the entire release of [version 0.2.1](https://github.com/viralemergence/virion/releases/tag/v0.2.1-beta).
 
 **Full database**: [Up-to-date](Virion.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz)
 
