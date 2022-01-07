@@ -1,6 +1,6 @@
 ### The Global Virome, in One Network
 
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/gh-pages)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/gh-pages) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/viralemergence/virion/Compile%20virion?label=Virion%20build)
 
 The VIRION database is an atlas of the vertebrate-virus network. It was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge. VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 20,000 species interactions that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). We encourage researchers to **review this entire guide** before using these data.
 
@@ -38,7 +38,11 @@ VIRION aggregates seven major sources of information, two of which can be dynami
 - GLOBI\*, the [Global Biotic Interactions](http://globalbioticinteractions.org/) database.
 - NCBI GenBank\*, specifically the entirety of NCBI Virus accessions stored in the Nucleotide database.
 
-![Virion overview](VIRION2.jpg)
+<p align = "center">
+<img src="https://github.com/viralemergence/virion/Figures/VIRION2.jpg" width="5000">
+</p>
+&nbsp;
+&nbsp;
 
 # How to use VIRION
 
