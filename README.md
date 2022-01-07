@@ -95,6 +95,6 @@ To ensure that one stable (raw) version of VIRION remains the database of record
 
 ## Contact
 
-- For general questions about VIRION, please reach out to [Colin Carlson](colin.carlson@georgetown.edu)
-- For specific questions about the CLOVER dataset, please contact [Rory Gibb](rory.gibb.14@ucl.ac.uk)
-- For specific questions about the GitHub actions pipeline, please contact [Timothée Poisot](timothee.poisot@umontreal.ca)
+- For general questions about VIRION, please reach out to [Colin Carlson](mailto:colin.carlson@georgetown.edu)
+- For specific questions about the CLOVER dataset, please contact [Rory Gibb](mailto:rory.gibb.14@ucl.ac.uk)
+- For specific questions about the GitHub actions pipeline, please contact [Timothée Poisot](mailto:timothee.poisot@umontreal.ca)
