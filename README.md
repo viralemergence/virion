@@ -26,9 +26,11 @@ There are several versions of VIRION you can choose from. VIRION is periodically
 
 ## Citing VIRION
 
-For now you can cite the preprint that accompanies the study as:
+You can cite the preprint that accompanies the study as:
 
 Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, de Lara Muylaert R, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an atlas of vertebrate-virus associations. bioRxiv. 2021 Jan 1. DOI: 10.1101/2021.08.06.455442.
+
+An updated citation is forthcoming.
 
 If you want to cite the VIRION database directly, you can also use refer to [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
 
@@ -91,7 +93,7 @@ Like most datasets that record host-virus associations, this includes a mix of d
 
 ## Reproducing VIRION
 
-To ensure that one stable (raw) version of VIRION remains the database of record, we ask that you do not reproduce VIRION into other databases or include static copies as supplement to publications. If you develop improved versions with taxonomic corrections or new data sources added, please contact us so we can work together to keep improving the main VIRION database!
+VIRION is an open database with a CC-0 license. As such, you can do just about anything with it that you'd like. We would _prefer_ it not be reproduced into other formats that lose intentional aspects of VIRION's design (e.g., in other databases that drop metadata like evidence standards; as static supplemental files on studies that will never be updated; etc.), but it's your party! That said: if you see ways to improve taxonomic corrections, add new data sources, or improve the format for credit and attribution, please contact us, so we can work together to keep improving this resource.
 
 ## Contact
 
