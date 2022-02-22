@@ -77,7 +77,7 @@ virion %<>% select(-c(HostSynonyms))
 ####
 
 virion %<>% distinct()
-virion %<>% mutate(across(everything(), ~replace_na(.x, '')))
+virion %<>% mutate_all(as.character) %>% mutate_all(~replace_na(.x, ''))
 
 virion %<>% 
   group_by_at(vars(-NCBIAccession)) %>% 
