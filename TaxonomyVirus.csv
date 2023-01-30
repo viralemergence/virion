@@ -1483,6 +1483,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1112689,bat paramyxovirus des_rot/br21/bra/2008,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112690,bat paramyxovirus des_rot/br22/bra/2008,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112691,bat paramyxovirus des_rot/br222/bra/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+1112651,bat paramyxovirus eid-hel/rca-p10/rca/2008,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+665603,bat paramyxovirus eid.hel/gh45/2008,henipavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112625,bat paramyxovirus eid_hel/cd287/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112626,bat paramyxovirus eid_hel/cd291/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112627,bat paramyxovirus eid_hel/cd297/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -1538,8 +1540,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1400383,bat paramyxovirus eid_hel/zfb11-76/zambia/2011,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1400384,bat paramyxovirus eid_hel/zfb11-88/zambia/2011,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1400385,bat paramyxovirus eid_hel/zfb11-91/zambia/2011,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1112651,bat paramyxovirus eid-hel/rca-p10/rca/2008,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-665603,bat paramyxovirus eid.hel/gh45/2008,henipavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112630,bat paramyxovirus epo_gam/cd078/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112622,bat paramyxovirus epo_gam/cd255/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1112624,bat paramyxovirus epo_gam/cd273/drc/2009,NA,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -1877,8 +1877,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2162699,bos taurus papillomavirus 25,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2162700,bos taurus papillomavirus 26,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2751155,bos taurus papillomavirus 28,xipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1891754,bos taurus polyomavirus 1,NA,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,TRUE
 1891754,bos taurus polyomavirus 1,epsilonpolyomavirus,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,TRUE
+1891754,bos taurus polyomavirus 1,NA,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,TRUE
 2597806,bos-associated insect adintovirus,NA,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
 2340908,bosavirus sp.,copiparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2843869,bostasmacovirus bovas1,bostasmacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -2225,7 +2225,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2582946,capybara genomovirus 7,NA,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2582947,capybara genomovirus 8,NA,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2582948,capybara genomovirus 9,NA,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
-2585047,capybara virus 1_cap1_34,NA,NA,NA,NA,TRUE,FALSE
 2585037,capybara virus 10_cap1_55,NA,NA,NA,NA,TRUE,FALSE
 2585038,capybara virus 11_cap1_98,NA,NA,NA,NA,TRUE,FALSE
 2585039,capybara virus 12_cap1_103,NA,NA,NA,NA,TRUE,FALSE
@@ -2236,7 +2235,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2585044,capybara virus 17_cap1_330,NA,NA,NA,NA,TRUE,FALSE
 2585045,capybara virus 18_cap1_371,NA,NA,NA,NA,TRUE,FALSE
 2585046,capybara virus 19_cap1_382,NA,NA,NA,NA,TRUE,FALSE
-2585058,capybara virus 2_cap1_255,NA,NA,NA,NA,TRUE,FALSE
+2585047,capybara virus 1_cap1_34,NA,NA,NA,NA,TRUE,FALSE
 2585048,capybara virus 20_cap1_494,NA,NA,NA,NA,TRUE,FALSE
 2585049,capybara virus 21_cap1_506,NA,NA,NA,NA,TRUE,FALSE
 2585050,capybara virus 22_cap1_591,NA,NA,NA,NA,TRUE,FALSE
@@ -2247,7 +2246,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2585055,capybara virus 27_cap1_2563,NA,NA,NA,NA,TRUE,FALSE
 2585056,capybara virus 28_cap1_2580,NA,NA,NA,NA,TRUE,FALSE
 2585057,capybara virus 29_cap3_1096,NA,NA,NA,NA,TRUE,FALSE
-2585067,capybara virus 3_cap1_260,NA,NA,NA,NA,TRUE,FALSE
+2585058,capybara virus 2_cap1_255,NA,NA,NA,NA,TRUE,FALSE
 2585059,capybara virus 30_cap3_1444,NA,NA,NA,NA,TRUE,FALSE
 2585060,capybara virus 31_cap3_4029,NA,NA,NA,NA,TRUE,FALSE
 2585061,capybara virus 32_cap3_4374,NA,NA,NA,NA,TRUE,FALSE
@@ -2256,6 +2255,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2585064,capybara virus 35_cap1_1079,NA,NA,NA,NA,TRUE,FALSE
 2585065,capybara virus 36_cap1_42,NA,NA,NA,NA,TRUE,FALSE
 2585066,capybara virus 37_cap1_578,NA,NA,NA,NA,TRUE,FALSE
+2585067,capybara virus 3_cap1_260,NA,NA,NA,NA,TRUE,FALSE
 2585068,capybara virus 4_cap1_390,NA,NA,NA,NA,TRUE,FALSE
 2585069,capybara virus 5_cap1_460,NA,NA,NA,NA,TRUE,FALSE
 2585070,capybara virus 6_cap1_1771,NA,NA,NA,NA,TRUE,FALSE
@@ -2495,7 +2495,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 762509,chicken parvovirus a1/hun/2009,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 762510,chicken parvovirus abu/hun/2009,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 762511,chicken parvovirus b1/hun/2009,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-1090532,chicken parvovirus ch_114_10,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 881301,chicken parvovirus ch1514/2007/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 881302,chicken parvovirus ch1515/2007/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 881303,chicken parvovirus ch189/2009/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -2506,6 +2505,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 881308,chicken parvovirus ch5596_7/2010/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 881309,chicken parvovirus ch841_3/2009/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 881310,chicken parvovirus ch852/2009/hun,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
+1090532,chicken parvovirus ch_114_10,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1048871,chicken parvovirus cro/glog/2010,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1930304,chicken picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1819751,chicken picornavirus,NA,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -2633,6 +2633,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2094725,circoviridae tacv2,NA,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 795382,circoviridae tm-6c,NA,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 745091,circoviridae tn4,NA,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+743529,circovirus ng1,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+743528,circovirus ng3,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742980,circovirus ng_chicken17,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742984,circovirus ng_chicken20,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742985,circovirus ng_chicken21,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -2641,8 +2643,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 742997,circovirus ng_chicken38,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742998,circovirus ng_chicken39,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742999,circovirus ng_chicken5,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-743529,circovirus ng1,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-743528,circovirus ng3,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 1964372,circovirus sp.,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 1525174,circovirus vs6600032,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 1148801,circovirus-like ni/2007-3,NA,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -2975,6 +2975,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 742942,cyclovirus chimp32,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742943,cyclovirus chimp53,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742941,cyclovirus chimp73,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+742945,cyclovirus ng15,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+742948,cyclovirus ng22,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+742944,cyclovirus ng23,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+742946,cyclovirus ng6,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
+742947,cyclovirus ng8,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742971,cyclovirus ng_camel27,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742972,cyclovirus ng_camel37,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742973,cyclovirus ng_camel40,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -3004,11 +3009,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 743005,cyclovirus ng_cow2,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 743006,cyclovirus ng_cow23,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 743007,cyclovirus ng_sheep50,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-742945,cyclovirus ng15,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-742948,cyclovirus ng22,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-742944,cyclovirus ng23,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-742946,cyclovirus ng6,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-742947,cyclovirus ng8,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 1572667,cyclovirus ni-204,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742926,cyclovirus pk10,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 742927,cyclovirus pk14,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -4220,8 +4220,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1263412,hepacivirus smkl-2012,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2202624,hepacivirus sp.,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 10407,hepatitis b virus,orthohepadnavirus,hepadnaviridae,blubervirales,revtraviricetes,TRUE,TRUE
-12475,hepatitis delta virus,deltavirus,NA,NA,NA,TRUE,TRUE
 12475,hepatitis delta virus,deltavirus,kolmioviridae,NA,NA,TRUE,TRUE
+12475,hepatitis delta virus,deltavirus,NA,NA,NA,TRUE,TRUE
 39113,hepatitis gb virus b,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 12092,hepatovirus a,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,TRUE
 1987123,hepatovirus b,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,TRUE
@@ -7887,10 +7887,10 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1094313,rhabdovirus r6146,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1578982,rhabdovirus rv-dk1,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1578983,rhabdovirus rv-dk2,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1094317,rhabdovirus sa_07_02434,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1094318,rhabdovirus sa_0800821,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1094315,rhabdovirus sa01000068,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1094316,rhabdovirus sa08_00821,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+1094317,rhabdovirus sa_07_02434,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
+1094318,rhabdovirus sa_0800821,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1094319,rhabdovirus x247,NA,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2064730,rhesus adenovirus 54,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2064731,rhesus adenovirus 55,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
