@@ -27,6 +27,8 @@ jobs:
       run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
+    - name: Libraries for tidyverse
+      run: sudo apt-get install -y libharfbuzz-dev libfribidi-dev
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
@@ -51,6 +53,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
+    - name: Libraries for tidyverse
+      run: sudo apt-get install -y libharfbuzz-dev libfribidi-dev
     - name: dependencies!!!!
       run: |
         sudo apt-get install libcurl4-openssl-dev libarchive-dev
@@ -86,7 +90,7 @@ jobs:
       uses: r-lib/actions/setup-r@v2
     - name: dependencies!!!
       run: |
-        sudo apt-get install libcurl4-openssl-dev libarchive-dev
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev libharfbuzz-dev libfribidi-dev
         sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate"), repos = "http://cran.us.r-project.org")'
     - name: Get GenBank
       uses: actions/download-artifact@v2
