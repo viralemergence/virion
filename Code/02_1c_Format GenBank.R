@@ -1,7 +1,9 @@
 # set up 
 library(tidyverse); library(magrittr); library(vroom)
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
+print("")
 if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
+print("jvdict")
 
 temp <- data.frame(Host = character(),
                    Virus = character(),
@@ -72,4 +74,4 @@ gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") %>%
                    tolower)
 
 # write intermediate file
-vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
+vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
