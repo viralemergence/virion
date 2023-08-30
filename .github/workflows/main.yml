@@ -16,7 +16,7 @@ jobs:
   GenBank:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: gautamkrishnar/keepalive-workflow@v1
     - name: Setup Julia
       uses: julia-actions/setup-julia@v1
@@ -51,7 +51,7 @@ jobs:
   Globi:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
     - name: Libraries for tidyverse
@@ -86,7 +86,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: [GenBank, Globi]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Setup R
       uses: r-lib/actions/setup-r@v2
     - name: dependencies!!!
