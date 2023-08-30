@@ -1,7 +1,7 @@
 # set up 
 library(tidyverse); library(magrittr); library(vroom)
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
-print("")
+print("vdict")
 if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
 print("jvdict")
 
@@ -40,21 +40,27 @@ temp <- data.frame(Host = character(),
                    stringsAsFactors = FALSE)
 
 # Attaching GenBank
-gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") %>% 
+gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") 
+print("read in")
+gb %<>% 
   dplyr::rename(NCBIAccession = 'Accession') %>% 
   dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
   dplyr::mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
                      stringr::str_split("T") %>% # Splitting at this midpoint
                      purrr::map_chr(1) %>% # Taking the first component 
                      lubridate::ymd() # Coding as YMD (shouldn't throw errors)
-  ) %>% 
+  ) 
+print("renamed")
+gb %<>% 
   # known that the collection date is a string and many observations don't
   # have year or month values, just the year, so many of these will turn up 
   # as missing
   tidyr::separate(Collection_Date, sep = "-", 
                   into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
   tidyr::separate(Release_Date, sep = "-", 
-                  into = paste0("Release", c("Year", "Month", "Day"))) %>% 
+                  into = paste0("Release", c("Year", "Month", "Day"))) 
+print("separated")
+gb %<>% 
   dplyr::mutate_at(vars(matches("Year|Month|Day")), as.numeric) %>% 
   dplyr::mutate(HostFlagID = str_detect(HostOriginal, "cf."),
             Database = "GenBank",
@@ -64,7 +70,9 @@ gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") %>%
             DetectionMethod = "PCR/Sequencing", 
             # Just to keep separate from EID2 Nucleotide entries # Fix 
             # the HostSynonyms at the 01 import stage
-            DetectionOriginal = "GenBank") %>%
+            DetectionOriginal = "GenBank") 
+print("mutated")
+gb %<>% 
   dplyr::mutate(VirusTaxID = as.numeric(VirusTaxID)) %>% 
   # stiching together the temp and the genbank data that's now been formatted
   dplyr::bind_rows(temp, .) %>%  
@@ -72,6 +80,7 @@ gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") %>%
                      "HostClass", "Virus", "VirusGenus", "VirusFamily", 
                      "VirusOrder", "VirusClass"),
                    tolower)
-
+print("mutate at")
 # write intermediate file
 vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
+print("written")

@@ -52,7 +52,7 @@ hdict <- function(names) {
              HostOrder = o, 
              HostClass = c2) %>% mutate_cond(HostNCBIResolved == FALSE, Host = HostOriginal) %>% return()
 }
-print("hdict")
+
 vdict <- function(names) { 
   names.orig <- names
   u <- get_uid(names, batch_size = 5, ask = FALSE)
@@ -78,7 +78,7 @@ vdict <- function(names) {
              VirusOrder = o, 
              VirusClass = c2) %>% mutate_cond(VirusNCBIResolved == FALSE, Virus = VirusOriginal) %>% return()
 }
-print("vdict")
+
 
 jhdict <- function(spnames) {
   raw <- data.frame(Name = spnames)
@@ -110,7 +110,7 @@ jhdict <- function(spnames) {
   
   return(clean)
 }
-print("jhdict")
+
 
 jvdict <- function(spnames) {
   raw <- data.frame(Name = spnames)
@@ -142,4 +142,4 @@ jvdict <- function(spnames) {
   
   return(clean)
 }
-print("jvdict")
+
