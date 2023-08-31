@@ -1,5 +1,5 @@
 # set up 
-library(tidyverse); library(magrittr); library(vroom)
+library(tidyverse); library(magrittr); library(vroom); library(data.table)
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 print("vdict")
 if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
@@ -60,9 +60,11 @@ gb %<>%
   tidyr::separate(Release_Date, sep = "-", 
                   into = paste0("Release", c("Year", "Month", "Day"))) 
 print("separated")
+
 gb %<>% 
-  dplyr::mutate_at(vars(matches("Year|Month|Day")), as.numeric) %>% 
-  dplyr::mutate(HostFlagID = str_detect(HostOriginal, "cf."),
+  dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 
+                   as.numeric) %>% 
+  dplyr::mutate(HostFlagID = stringr::str_detect(HostOriginal, "cf."),
             Database = "GenBank",
             DatabaseVersion = "Aug2021FlatFile",
             # Choice to call Nucleotide all sequence and not isolation is 
@@ -84,3 +86,27 @@ print("mutate at")
 # write intermediate file
 vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
 print("written")
+
+## little benchmarking 
+# microbenchmark::microbenchmark(
+#   data.table = {
+#     gb %>% 
+#       data.table::tstrsplit(Collection_Date, "-", 
+#                             names=paste0("Collection", 
+#                                          c("Year", "Month", "Day"))) %>% 
+#       data.table::tstrsplit(gRelease_Date, "-", 
+#                             names=paste0("Release", 
+#                                          c("Year", "Month", "Day")))
+#   },
+#   tidyr = {
+#     gb %>% 
+#       # known that the collection date is a string and many observations don't
+#       # have year or month values, just the year, so many of these will turn up 
+#       # as missing
+#       tidyr::separate(Collection_Date, sep = "-", 
+#                       into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
+#       tidyr::separate(Release_Date, sep = "-", 
+#                       into = paste0("Release", c("Year", "Month", "Day"))) 
+#   },
+#   times = 100
+# )
