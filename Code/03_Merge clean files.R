@@ -10,7 +10,7 @@ globi <- read_csv("./Intermediate/Formatted/GLOBIFormatted.csv", col_type = cols
 
 if(class(clo$NCBIAccession)=='numeric') {clo %<>% mutate(NCBIAccession = as.character(NCBIAccession))}
 
-virion <- bind_rows(clo, pred, gb, globi)
+virion <- dplyr::bind_rows(clo, pred, gb, globi)
 
 vroom_write(virion, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 

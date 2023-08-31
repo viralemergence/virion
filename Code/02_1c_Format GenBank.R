@@ -92,6 +92,8 @@ gb %<>%
                      "HostClass", "Virus", "VirusGenus", "VirusFamily", 
                      "VirusOrder", "VirusClass"),
                    tolower)
+
+
 print("mutate at")
 # write intermediate file
 vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")

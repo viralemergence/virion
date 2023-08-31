@@ -4,8 +4,43 @@ print("libs")
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 print("taxize")
 virion <- vroom::vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz", 
-                col_type = cols(PMID = col_double(), 
-                                PublicationYear = col_double()))
+                col_type = cols(
+                  Host = col_character(),
+                  Virus = col_character(),
+                  HostTaxID = col_double(),
+                  VirusTaxID = col_double(),
+                  HostNCBIResolved = col_logical(),
+                  VirusNCBIResolved = col_logical(),
+                  HostGenus = col_character(),
+                  HostFamily = col_character(),
+                  HostOrder = col_character(),
+                  HostClass = col_character(),
+                  HostOriginal = col_character(),
+                  HostSynonyms = col_character(),
+                  VirusGenus = col_character(),
+                  VirusFamily = col_character(),
+                  VirusOrder = col_character(),
+                  VirusClass = col_character(),
+                  VirusOriginal = col_character(),
+                  HostFlagID = col_logical(),
+                  DetectionMethod = col_character(),
+                  DetectionOriginal = col_character(),
+                  Database = col_character(),
+                  DatabaseVersion = col_character(),
+                  PublicationYear = col_double(),
+                  ReferenceText = col_character(),
+                  PMID = col_double(),
+                  NCBIAccession = col_character(),
+                  ReleaseYear = col_double(),
+                  ReleaseMonth = col_double(),
+                  ReleaseDay = col_double(),
+                  CollectionYear = col_double(),
+                  CollectionMonth = col_double(),
+                  CollectionDay = col_double(),
+                  AssocID = col_double(),
+                  DatabaseDOI = col_character(),
+                  Release_Date = col_date(),
+                  Collection_Date = col_date()))
 print("read")
 
 # # Is there anything that's not vertebrate in here?
