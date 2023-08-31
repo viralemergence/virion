@@ -5,6 +5,7 @@ if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 virion <- vroom::vroom("./Intermediate/Formatted/VIRIONUnprocessed.csv.gz", 
                 col_type = cols(PMID = col_double(), 
                                 PublicationYear = col_double()))
+print("read")
 
 # # Is there anything that's not vertebrate in here?
 # 
@@ -64,28 +65,37 @@ virion %<>%
                              "petitvirales",
                              "tubulavirales",
                              "vinavirales")))
+print("filter")
 
 ictv <- readr::read_csv("Source/ICTV Master Species List 2019.v1.csv")
+print("read2")
 
 virion %<>% dplyr::mutate(
   ICTVRatified = (Virus %in% stringr::str_to_lower(ictv$Species))) %>%
   dplyr::relocate(ICTVRatified, .after = VirusNCBIResolved)
+print("relocate")
+
 
 # This only applies to CLOVER and GLOBI, which both don't have any other internal flags
 virion %<>% dplyr::mutate(HostFlagID = replace_na(HostFlagID, FALSE)) 
+print("mutate1")
 
 virion %<>% mutate_cond(stringr::str_detect(HostOriginal, " cf\\."), HostFlagID = TRUE) 
+print("mutate condition")
 
 virion %<>% dplyr::select(-c(HostSynonyms))
+print("select")
 
 ####
 
 virion %<>% distinct()
 virion %<>% dplyr::mutate_all(as.character) %>% 
   dplyr::mutate_all(~tidyr::replace_na(.x, ''))
-
+print("replacing")
 virion %<>% 
   dplyr::group_by_at(dplyr::vars(-NCBIAccession)) %>% 
   dplyr::summarize(NCBIAccession = stringr::str_c(NCBIAccession, collapse = ", "))
+print("summarize")
 
 vroom::vroom_write(virion, "Virion/Virion.csv.gz")
+print("written")
