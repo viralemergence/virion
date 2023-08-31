@@ -51,14 +51,24 @@ gb %<>%
                      lubridate::ymd() # Coding as YMD (shouldn't throw errors)
   ) 
 print("renamed")
-gb %<>% 
-  # known that the collection date is a string and many observations don't
-  # have year or month values, just the year, so many of these will turn up 
-  # as missing
-  tidyr::separate(Collection_Date, sep = "-", 
-                  into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
-  tidyr::separate(Release_Date, sep = "-", 
-                  into = paste0("Release", c("Year", "Month", "Day"))) 
+
+gb[, c(paste0("Collection", c("Year", "Month", "Day")))] <- 
+  data.table::tstrsplit(gb$Collection_Date, "-", 
+                        names=paste0("Collection", 
+                                     c("Year", "Month", "Day"))) 
+gb[, c(paste0("Release", c("Year", "Month", "Day")))] <- 
+  data.table::tstrsplit(gb$Release_Date, "-", 
+                        names=paste0("Release", 
+                                     c("Year", "Month", "Day"))) 
+
+# gb %<>% 
+#   # known that the collection date is a string and many observations don't
+#   # have year or month values, just the year, so many of these will turn up 
+#   # as missing
+#   tidyr::separate(Collection_Date, sep = "-", 
+#                   into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
+#   tidyr::separate(Release_Date, sep = "-", 
+#                   into = paste0("Release", c("Year", "Month", "Day"))) 
 print("separated")
 
 gb %<>% 
