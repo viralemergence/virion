@@ -1,8 +1,9 @@
 
 library(tidyverse); library(vroom); library(magrittr)
+print("libs")
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
-
-virion <- vroom::vroom("./Intermediate/Formatted/VIRIONUnprocessed.csv.gz", 
+print("taxize")
+virion <- vroom::vroom("Intermediate/Formatted/VIRIONUnprocessed.csv.gz", 
                 col_type = cols(PMID = col_double(), 
                                 PublicationYear = col_double()))
 print("read")
