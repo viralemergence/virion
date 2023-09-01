@@ -12,5 +12,7 @@ if(class(clo$NCBIAccession)=='numeric') {clo %<>% mutate(NCBIAccession = as.char
 
 virion <- dplyr::bind_rows(clo, pred, gb, globi)
 
-vroom_write(virion, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
+vroom::locale(encoding = "UTF-8")
+
+vroom::vroom_write(virion, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 
