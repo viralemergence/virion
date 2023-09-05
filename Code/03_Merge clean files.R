@@ -6,9 +6,13 @@ source("./Code/001_TaxizeFunctions.R")
 vroom::locale(encoding = "UTF-8")
 
 gb <- vroom("./Intermediate/Formatted/GenbankFormatted.csv.gz", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+print("gb")
 clo <- vroom("./Intermediate/Formatted/CLOVERFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+print("clo")
 pred <- vroom("./Intermediate/Formatted/PREDICTAllFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+print("pred")
 globi <- vroom("./Intermediate/Formatted/GLOBIFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
+print("globi")
 
 if(is.numeric(clo$NCBIAccession)) {clo %<>% dplyr::mutate(NCBIAccession = as.character(NCBIAccession))}
 
