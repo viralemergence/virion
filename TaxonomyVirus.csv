@@ -8654,7 +8654,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 10364,simian cytomegalovirus,cytomegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1920706,simian erythroparvovirus 2,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 11642,simian foamy virus,spumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-11642,simian foamy virus,"c(""spumavirus"", ""spumavirus"", ""spumavirus"", ""spumavirus"", ""spumavirus"")",retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
+11642,simian foamy virus,"c(""""spumavirus"""", """"spumavirus"""", """"spumavirus"""", """"spumavirus"""", """"spumavirus"""")",retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 11723,simian immunodeficiency virus,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,TRUE
 298334,simian mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
 1962299,simian mastadenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
