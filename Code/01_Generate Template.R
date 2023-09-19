@@ -1,7 +1,13 @@
+#' Generate file template 
+#' 
+#' This file generates a dataframe of zero rows but 32 variables that has the 
+#' type coding for each variable that will be used later 
 
-library(tidyverse)
-library(magrittr)
+# Requires =====================================================================
+library(readr)
+library(here)
 
+# Generate example file ========================================================
 temp <- data.frame(Host = character(),
                    Virus = character(),
                    HostTaxID = double(),
@@ -36,4 +42,5 @@ temp <- data.frame(Host = character(),
                    CollectionDay = double(),
                    stringsAsFactors = FALSE)
 
-write_csv(temp, "Intermediate/Template.csv")
+# write file ===================================================================
+readr::write_csv(temp, here("Intermediate/Template.csv"))
