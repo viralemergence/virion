@@ -261,21 +261,15 @@ jvdict <- function(spnames) {
   return(clean)
 }
 
-
-
-
+# tests ========================================================================
 
 virus.test <- c("Adeno-associated virus - 3", 
            "Adeno-associated virus 3B",
            "Adenovirus predict_adv-20",
            "A bad name")
-
-
 host.test <- c("Equus caballus ferus",
                "Homo sapiens",
                "Hongus bongus",
                "Chiroptera",
                "Mus",
                "Bacillus anthracis")
-
-
