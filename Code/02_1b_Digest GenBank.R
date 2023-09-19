@@ -1,4 +1,4 @@
-#' Genback processing
+#' GenBank digesting with NCBI
 #' 
 #' There's some cleaning to do, and that's done here
 #' 
