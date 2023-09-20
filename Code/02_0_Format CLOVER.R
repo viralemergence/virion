@@ -4,12 +4,9 @@
 #' read it in from that location
 
 # Set up =======================================================================
-library(readr)
-library(stringr)
+
 library(magrittr)
-library(dplyr)
-library(lubridate)
-library(here)
+
 
 
 clo <- readr::read_csv(here::here(paste0(
@@ -61,11 +58,11 @@ if(!("HostGenus" %in% colnames(clo))) {
 # This step should go away after Rory updates to remove CitationID
 if("CitationID" %in% colnames(clo)) { 
     clo %>% 
-    rowwise() %>%
-    mutate(NCBIAccession = 
+    dplyr::rowwise() %>%
+    dplyr::mutate(NCBIAccession = 
              ifelse(CitationIDType=='NCBI Nucleotide', CitationID, NA),
            PMID = ifelse(CitationIDType=='PMID', CitationID, NA)) %>%
-    select(-c(CitationID, CitationIDType)) -> clo
+    dplyr::select(-c(CitationID, CitationIDType)) -> clo
 }
 
 # names need to be consistent
@@ -87,7 +84,7 @@ clo %<>% dplyr::select(-c(PathogenType,
 
 clo %<>% dplyr::mutate(NCBIAccession = as.character(NCBIAccession))
 clo %<>% dplyr::select(-ICTVRatified)
-dplyr::bind_rows(temp, clo) -> clo
+clo <- dplyr::bind_rows(temp, clo)
 
 # Consistency steps: all lowercase names
 clo %<>% dplyr::mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", 

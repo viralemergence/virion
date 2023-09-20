@@ -1,6 +1,6 @@
 # Set-up =======================================================================
 
-#' have all the source calls and library calls in the top of the file 
+#' have all the source calls etc in the top of the file 
 
 # Section 1 ====================================================================
 

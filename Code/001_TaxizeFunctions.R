@@ -3,12 +3,6 @@
 #' There are a couple of functions that we need for the taxonomic stuff, we'll 
 #' do that and test it here
 
-# Set up =======================================================================
-
-library(taxize)
-library(stringr)
-library(magrittr)
-
 # functions ====================================================================
 
 #' mutate_cond
@@ -174,7 +168,7 @@ jhdict <- function(spnames) {
   # after Julia has worked read in the cleaned file and get rid of the tmp files
   clean <- readr::read_csv(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
   file.remove(here::here("./Code/Code_Dev/TaxonomyTempIn.csv"))
-  file.remove(here("./Code/Code_Dev/TaxonomyTempOut.csv"))
+  file.remove(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
   
   # the clean file needs to be sliced up 
   clean %<>% dplyr::group_by(Name) %>% 
@@ -220,12 +214,13 @@ jvdict <- function(spnames) {
   raw <- data.frame(Name = spnames)
   
   # this raw temp df is going to be passed to julia
-  readr::write_csv(raw, here("./Code/Code_Dev/TaxonomyTempIn.csv"), eol = "\n")
+  readr::write_csv(raw, here::here("./Code/Code_Dev/TaxonomyTempIn.csv"), 
+                   eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
   system(paste0(
     "julia --project ",
-    here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
+    here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
   clean <- readr::read_csv(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
@@ -254,9 +249,9 @@ jvdict <- function(spnames) {
   
   # keeping both parts, but also want the bad ones, but it's noted in the 
   # HostNCBIResolved column
-  clean %<>% bind_rows(bad) %>%
-    select(VirusOriginal, VirusTaxID, VirusNCBIResolved, Virus, VirusGenus, 
-           VirusFamily, VirusOrder, VirusClass)
+  clean %<>% dplyr::bind_rows(bad) %>%
+    dplyr::select(VirusOriginal, VirusTaxID, VirusNCBIResolved, Virus, 
+                  VirusGenus, VirusFamily, VirusOrder, VirusClass)
   
   return(clean)
 }

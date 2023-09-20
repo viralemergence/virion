@@ -5,12 +5,7 @@
 
 # set up =======================================================================
 
-library(readr)
-library(vroom)
-library(here)
-library(data.table)
 library(magrittr)
-library(dplyr)
 
 # download and process =========================================================
 
