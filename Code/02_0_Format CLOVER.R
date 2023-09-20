@@ -4,9 +4,13 @@
 #' read it in from that location
 
 # Set up =======================================================================
-library(tidyverse)
+library(readr)
+library(stringr)
 library(magrittr)
+library(dplyr)
 library(lubridate)
+library(here)
+
 
 clo <- readr::read_csv(here::here(paste0(
   "../clover/clover/clover_1.0_allpathogens/",
@@ -52,7 +56,7 @@ temp <- data.frame(Host = character(),
 
 # This step should go away after Rory updates CLOVERT with the "sp." thing
 if(!("HostGenus" %in% colnames(clo))) { 
-  clo %<>% mutate(HostGenus = word(Host, 1)) }
+  clo %<>% dplyr::mutate(HostGenus = stringr::word(Host, 1)) }
 
 # This step should go away after Rory updates to remove CitationID
 if("CitationID" %in% colnames(clo)) { 
@@ -65,24 +69,24 @@ if("CitationID" %in% colnames(clo)) {
 }
 
 # names need to be consistent
-clo %<>% rename(Virus = "Pathogen",
-               VirusGenus = "PathogenGenus",
-               VirusFamily = "PathogenFamily",
-               VirusOrder = "PathogenOrder",
-               VirusClass = "PathogenClass",
-               DetectionOriginal = "DetectionMethodOriginal",
-               VirusNCBIResolved = "PathogenNCBIResolved",
-               VirusOriginal = "PathogenOriginal",
-               VirusTaxID = "PathogenTaxID")
+clo %<>% dplyr::rename(Virus = "Pathogen",
+                       VirusGenus = "PathogenGenus",
+                       VirusFamily = "PathogenFamily",
+                       VirusOrder = "PathogenOrder",
+                       VirusClass = "PathogenClass",
+                       DetectionOriginal = "DetectionMethodOriginal",
+                       VirusNCBIResolved = "PathogenNCBIResolved",
+                       VirusOriginal = "PathogenOriginal",
+                       VirusTaxID = "PathogenTaxID")
 
-clo %<>% select(-c(PathogenType, 
-                   Detection_NotSpecified,
-                   Detection_Serology,
-                   Detection_Genetic,
-                   Detection_Isolation))
+clo %<>% dplyr::select(-c(PathogenType, 
+                          Detection_NotSpecified,
+                          Detection_Serology,
+                          Detection_Genetic,
+                          Detection_Isolation))
 
-clo %<>% mutate(NCBIAccession = as.character(NCBIAccession))
-clo %<>% select(-ICTVRatified)
+clo %<>% dplyr::mutate(NCBIAccession = as.character(NCBIAccession))
+clo %<>% dplyr::select(-ICTVRatified)
 dplyr::bind_rows(temp, clo) -> clo
 
 # Consistency steps: all lowercase names

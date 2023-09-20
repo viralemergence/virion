@@ -1,7 +1,7 @@
-#' GenBank formatting to play nice with all the other pieces
-#' 
-#' Make sure that all the structure matches up with the structure we've laid
-#' out 
+#" GenBank formatting to play nice with all the other pieces
+#" 
+#" Make sure that all the structure matches up with the structure we"ve laid
+#" out 
 
 # set up =======================================================================
 
@@ -9,10 +9,8 @@ library(magrittr)
 library(vroom)
 library(data.table)
 
-if(!exists('vdict')) {source(here::here("./Code/001_TaxizeFunctions.R"))}
-print("vdict")
-if(!exists('jvdict')) {source(here::here("./Code/001_Julia functions.R"))}
-print("jvdict")
+if(!exists("vdict")) {source(here::here("./Code/001_TaxizeFunctions.R"))}
+if(!exists("jvdict")) {source(here::here("./Code/001_Julia functions.R"))}
 
 # Attaching GenBank
 gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") 
@@ -53,13 +51,14 @@ temp <- data.frame(Host = character(),
                    CollectionDay = double(),
                    stringsAsFactors = FALSE)
 
+## deal with naming and conventions ============================================
 gb %<>% 
-  dplyr::rename(NCBIAccession = 'Accession') %>% 
+  dplyr::rename(NCBIAccession = "Accession") %>% 
   dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
   dplyr::mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
                      stringr::str_split("T") %>% # Splitting at this midpoint
                      purrr::map_chr(1) %>% # Taking the first component 
-                     lubridate::ymd() # Coding as YMD (shouldn't throw errors)
+                     lubridate::ymd() # Coding as YMD (shouldn"t throw errors)
   ) 
 
 gb[, c(paste0("Collection", c("Year", "Month", "Day")))] <- 
@@ -70,15 +69,6 @@ gb[, c(paste0("Release", c("Year", "Month", "Day")))] <-
   data.table::tstrsplit(gb$Release_Date, "-", 
                         names=paste0("Release", 
                                      c("Year", "Month", "Day"))) 
-
-# gb %<>% 
-#   # known that the collection date is a string and many observations don't
-#   # have year or month values, just the year, so many of these will turn up 
-#   # as missing
-#   tidyr::separate(Collection_Date, sep = "-", 
-#                   into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
-#   tidyr::separate(Release_Date, sep = "-", 
-#                   into = paste0("Release", c("Year", "Month", "Day"))) 
 
 gb %<>% 
   dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 
@@ -95,7 +85,7 @@ gb %<>%
 
 gb %<>% 
   dplyr::mutate(VirusTaxID = as.numeric(VirusTaxID)) %>% 
-  # stiching together the temp and the genbank data that's now been formatted
+  # stiching together the temp and the genbank data that"s now been formatted
   dplyr::bind_rows(temp, .) %>%  
   dplyr::mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", 
                      "HostClass", "Virus", "VirusGenus", "VirusFamily", 
@@ -121,7 +111,7 @@ vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
 #   },
 #   tidyr = {
 #     gb %>% 
-#       # known that the collection date is a string and many observations don't
+#       # known that the collection date is a string and many observations don"t
 #       # have year or month values, just the year, so many of these will turn up 
 #       # as missing
 #       tidyr::separate(Collection_Date, sep = "-", 

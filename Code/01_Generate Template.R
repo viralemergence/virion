@@ -3,10 +3,6 @@
 #' This file generates a dataframe of zero rows but 32 variables that has the 
 #' type coding for each variable that will be used later 
 
-# Requires =====================================================================
-library(readr)
-library(here)
-
 # Generate example file ========================================================
 temp <- data.frame(Host = character(),
                    Virus = character(),

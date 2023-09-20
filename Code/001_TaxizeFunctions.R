@@ -168,8 +168,8 @@ jhdict <- function(spnames) {
   
   # ensure that the system() call is giving the whole path name of the file
   system(paste0(
-    "julia --project",
-    here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
+    "julia --project ",
+    here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
   clean <- readr::read_csv(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
@@ -224,7 +224,7 @@ jvdict <- function(spnames) {
   
   # ensure that the system() call is giving the whole path name of the file
   system(paste0(
-    "julia --project",
+    "julia --project ",
     here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files

@@ -6,9 +6,6 @@
 
 install.ncbi <- function() {
   
-  # call this here in case it gets used elsewhere, but this shouldn't be needed
-  library(JuliaCall)
-  
   # install the packages if needed 
   JuliaCall::julia_install_package_if_needed("NCBITaxonomy")
   JuliaCall::julia_install_package_if_needed("DataFrames")

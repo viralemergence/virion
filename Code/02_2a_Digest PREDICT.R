@@ -1,10 +1,16 @@
+#" Predict digestion
+#" 
+#" Predict is also a flat file that we pull in and deal with ourselves 
 
-if(!exists('jncbi')) {source('Code/001_Julia functions.R')}
-if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
+# set up =======================================================================
 
 library(tidyverse)
 library(magrittr)
 library(lubridate)
+library(here)
+
+if(!exists("jncbi")) {source(here::here("./Code/001_Julia functions.R"))}
+if(!exists("vdict")) {source(here::here("./Code/001_TaxizeFunctions.R"))}
 
 predict.raw <- read_csv("~/Github/ept/PredictData (2).csv")
 
@@ -52,7 +58,7 @@ predict.raw %>%
                    DetectionMethod = "PCR/Sequencing") %>%
   select(-Date) -> predict
 
-# First, let's fix some typos and such
+# First, let"s fix some typos and such
 
 predict %>% rowwise() %>% mutate(VirusIntermediate = strsplit(VirusIntermediate, split="\\(")[[1]][1]) -> predict
 predict %>% rowwise() %>% mutate(VirusIntermediate = strsplit(VirusIntermediate, split=", subtype")[[1]][1]) -> predict
@@ -151,7 +157,7 @@ ncbi.tax %<>% rename(VirusIntermediate = "VirusOriginal")
 
 for (i in 1:nrow(ncbi.tax)) {
   # "(?i)a"
-  if(is.na(ncbi.tax$VirusOrder[i])){ # Only pull ones that haven't already been queried
+  if(is.na(ncbi.tax$VirusOrder[i])){ # Only pull ones that haven"t already been queried
     if(str_detect(ncbi.tax$Virus[i], "(?i)cytomegalovirus")) {
       ncbi.tax$VirusGenus[i] <- "Cytomegalovirus"
       ncbi.tax$VirusFamily[i] <- "Herpesviridae"
@@ -245,7 +251,7 @@ ncbi.tax[ncbi.tax$Virus=="Philippines/Diliman1525G2/2008","VirusOrder"] <- "Nido
 
 predict %<>% left_join(bind_rows(predictionary, ncbi.tax))
 
-# How many don't have a genus?
+# How many don"t have a genus?
 
 predict %>% select(Virus, VirusGenus) %>% unique() %>% is.na %>% table()
 
@@ -261,16 +267,16 @@ for(i in 1:nrow(predict)) {
     if(!is.na(tax)) {
     ncbi.high <- taxize::classification(tax, db = "ncbi")
     if(!is.na(ncbi.high[[1]][1])){
-      if(!(any(str_detect(ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=='species')], c('unidentified', 'unclassified', 'sp.'))))) {
+      if(!(any(str_detect(ncbi.high[[1]]$name[which(ncbi.high[[1]]$rank=="species")], c("unidentified", "unclassified", "sp."))))) {
         predict$VirusNCBIResolved[i] <- TRUE 
-        if("species" %in% ncbi.high[[1]]$rank) {predict$Virus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='species'), 'name']}
-        if("genus" %in% ncbi.high[[1]]$rank) {predict$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='genus'), 'name']}
-        if("family" %in% ncbi.high[[1]]$rank) {predict$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='family'), 'name']}
-        if("order" %in% ncbi.high[[1]]$rank) {predict$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='order'), 'name']}
-        if("class" %in% ncbi.high[[1]]$rank) {predict$VirusClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=='class'), 'name']}
+        if("species" %in% ncbi.high[[1]]$rank) {predict$Virus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=="species"), "name"]}
+        if("genus" %in% ncbi.high[[1]]$rank) {predict$VirusGenus[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=="genus"), "name"]}
+        if("family" %in% ncbi.high[[1]]$rank) {predict$VirusFamily[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=="family"), "name"]}
+        if("order" %in% ncbi.high[[1]]$rank) {predict$VirusOrder[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=="order"), "name"]}
+        if("class" %in% ncbi.high[[1]]$rank) {predict$VirusClass[i] <- ncbi.high[[1]][which(ncbi.high[[1]]$rank=="class"), "name"]}
         
         levels <- c("species", "genus", "family", "order", "class")
-        u <- last(ncbi.high[[1]][ncbi.high[[1]]$rank %in% levels,'id'])
+        u <- last(ncbi.high[[1]][ncbi.high[[1]]$rank %in% levels,"id"])
         predict$VirusTaxID[i] <- u
 
         print(ncbi.high)
