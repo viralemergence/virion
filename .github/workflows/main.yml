@@ -15,7 +15,7 @@ on:
 jobs:
   GenBank:
     runs-on: ubuntu-latest
-    container: colebrookson/virion-latest
+    container: colebrookson/virion:latest
     steps:
     - uses: actions/checkout@v3
     - uses: gautamkrishnar/keepalive-workflow@v1
@@ -35,7 +35,7 @@ jobs:
         path: Intermediate/Formatted/GenbankFormatted.csv.gz
   Globi:
     runs-on: ubuntu-latest
-    container: colebrookson/virion-latest
+    container: colebrookson/virion:latest
     steps:
     - uses: actions/checkout@v3
     - name: Download Globi
@@ -54,7 +54,7 @@ jobs:
         path: Intermediate/Formatted/GLOBIFormatted.csv
   Finish:
     runs-on: ubuntu-latest
-    container: colebrookson/virion-latest
+    container: colebrookson/virion:latest
     needs: [GenBank, Globi]
     steps:
     - uses: actions/checkout@v3
