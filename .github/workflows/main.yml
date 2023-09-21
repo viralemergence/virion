@@ -18,7 +18,6 @@ jobs:
     container: colebrookson/virion:latest
     steps:
     - uses: actions/checkout@v3
-    - uses: gautamkrishnar/keepalive-workflow@v1
     - name: Download GenBank
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
