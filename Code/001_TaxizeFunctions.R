@@ -100,8 +100,8 @@ vdict <- function(names) {
   
   # first deal with the names and get rid of every misplaced prefix
   names.orig <- names
-  u <- get_uid(names, batch_size = 5, ask = FALSE)
-  c <- classification(u, batch_size = 5)
+  u <- taxize::get_uid(names, batch_size = 5, ask = FALSE)
+  c <- taxize::classification(u, batch_size = 5)
   n <- !is.na(u)
   attributes(u) <- NULL
   

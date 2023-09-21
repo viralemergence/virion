@@ -6,14 +6,13 @@
 # set up =======================================================================
 
 library(magrittr)
-library(vroom)
-library(data.table)
 
 if(!exists("vdict")) {source(here::here("./Code/001_TaxizeFunctions.R"))}
 if(!exists("jvdict")) {source(here::here("./Code/001_Julia functions.R"))}
 
 # Attaching GenBank
-gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") 
+gb <- vroom::vroom(
+  here::here("./Intermediate/Unformatted/GenBankUnformatted.csv.gz"))
 
 # structure ====================================================================
 
@@ -94,7 +93,8 @@ gb %<>%
 
 # write file ===================================================================
 
-vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
+vroom::vroom_write(
+  gb, here::here("./Intermediate/Formatted/GenbankFormatted.csv.gz"))
 
 # unused benchmarking ==========================================================
 
@@ -110,14 +110,16 @@ vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
 #                                          c("Year", "Month", "Day")))
 #   },
 #   tidyr = {
-#     gb %>% 
-#       # known that the collection date is a string and many observations don"t
-#       # have year or month values, just the year, so many of these will turn up 
+#     gb %>%
+#       # known that the collection date is a string and many observations don't
+#       # have year or month values just the year, so many of these will turn up
 #       # as missing
-#       tidyr::separate(Collection_Date, sep = "-", 
-#                       into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
-#       tidyr::separate(Release_Date, sep = "-", 
-#                       into = paste0("Release", c("Year", "Month", "Day"))) 
+#       tidyr::separate(
+#         Collection_Date, sep = "-",
+#         into = paste0("Collection", c("Year", "Month", "Day"))) %>%
+#       tidyr::separate(
+#         Release_Date, sep = "-",
+#         into = paste0("Release", c("Year", "Month", "Day")))
 #   },
 #   times = 100
 # )
