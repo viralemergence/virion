@@ -12,18 +12,22 @@ library(magrittr)
 url = paste0("https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/",
              "AllNuclMetadata.csv.gz")
 print("url")
-d = tryCatch(utils::download.file(url, destfile = here::here(
-  "./Source/AllNuclMetadata.csv.gz")),
-  error = function(e){-999})
-print(d)
-if(d == -999) {
-  while (d == -999){
-    Sys.sleep(5)
-    d = tryCatch(utils::download.file(
-      url, destfile = here::here("./Source/AllNuclMetadata.csv.gz")), 
-      error = function(e){-999})
-  }
-}
+# d = tryCatch(utils::download.file(url, destfile = here::here(
+#   "./Source/AllNuclMetadata.csv.gz")),
+#   error = function(e){-999})
+# print(d)
+# if(d == -999) {
+#   while (d == -999){
+#     Sys.sleep(5)
+#     d = tryCatch(utils::download.file(
+#       url, destfile = here::here("./Source/AllNuclMetadata.csv.gz")), 
+#       error = function(e){-999})
+#   }
+# }
+
+location = here::here("./Source/")
+system(paste0("wget ", url, " -P ", location))
+
 print("file")
 
 # reading this in - use data.table
