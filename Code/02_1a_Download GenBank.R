@@ -25,7 +25,7 @@ print("url")
 #   }
 # }
 
-location = here::here("./Source/")
+location <- here::here("./Source/")
 system(paste0("wget ", url, " -P ", location))
 
 print("file")
