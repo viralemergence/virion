@@ -15,10 +15,10 @@ print("url")
 d = tryCatch(utils::download.file(url, destfile = here::here(
   "./Source/AllNuclMetadata.csv.gz")),
   error = function(e){-999})
-print("d")
+print(d)
 if(d == -999) {
   while (d == -999){
-    Sys.sleep(600)
+    Sys.sleep(5)
     d = tryCatch(utils::download.file(
       url, destfile = here::here("./Source/AllNuclMetadata.csv.gz")), 
       error = function(e){-999})
