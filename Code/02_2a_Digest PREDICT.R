@@ -30,7 +30,7 @@ predict.raw %>%
                              TRUE,
                              FALSE)) %>%
   mutate(Host = str_replace(Host, " \\*",""),
-         Host = str_replace(Host, "cf. ","")) %>% 
+         Host = str_replace(Host, "cf. ","")) %>%  
   
   # Back up the virus names before doing anything else
   
