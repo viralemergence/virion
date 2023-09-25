@@ -6,6 +6,10 @@
 # set up =======================================================================
 
 library(magrittr)
+library(here)
+library(data.table)
+library(dplyr)
+library(vroom)
 
 # download and process =========================================================
 
