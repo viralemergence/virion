@@ -20,7 +20,7 @@ seq <- data.table::fread(here::here("./Source/AllNuclMetadata.csv.gz"),
                          select = c("#Accession", "Release_Date", "Species", 
                                     "Host", "Collection_Date"))
 print("readin")
-seq %<>% dplyr::rename(Accession = "#Accession") 
+seq %<>% dplyr::rename(Accession = "#Accession")  
 
 # write out ==================================================================== 
 vroom::vroom_write(seq, here::here("./Source/sequences.csv"))
