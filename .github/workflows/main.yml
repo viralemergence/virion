@@ -19,6 +19,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: julia-actions/setup-julia@v1
+      with:
+        version: 1.7
     - name: Download GenBank 
       run: |
         Rscript -e 'source("Code/02_1a_Download GenBank.R")'
