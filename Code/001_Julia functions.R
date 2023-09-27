@@ -7,7 +7,7 @@
 install.ncbi <- function() {
   
   # install the packages if needed 
-  JuliaCall::julia_install_package_if_needed("NCBITaxonomy")
+  JuliaCall::julia_install_package_if_needed("NCBITaxonomy") 
   JuliaCall::julia_install_package_if_needed("DataFrames")
   JuliaCall::julia_install_package_if_needed("CSV")
   JuliaCall::julia_install_package_if_needed("ProgressMeter")
