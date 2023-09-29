@@ -18,7 +18,7 @@ jobs:
     container: colebrookson/virion:latest 
     steps:
     - uses: actions/checkout@v3
-    - uses: julia-actions/setup-julia@v1
+    - uses: julia-actions/setup-julia@v1 
       with:
         version: 1.7
     - name: Download GenBank 
