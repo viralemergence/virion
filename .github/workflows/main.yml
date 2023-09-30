@@ -15,7 +15,7 @@ on:
 jobs:
   GenBank:
     runs-on: ubuntu-latest
-    container: colebrookson/virion:latest 
+    container: colebrookson/virion:latest  
     steps:
     - uses: actions/checkout@v3
     - uses: julia-actions/setup-julia@v1 
