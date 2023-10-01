@@ -11,12 +11,14 @@ library(magrittr)
 rentrez::set_entrez_key("ec345b39079e565bdfa744c3ef0d4b03ba08")
 
 # get the functions to do all the dictionary stuff
-if(!exists("vdict")) {source(here::here("./Code/001_TaxizeFunctions.R"))}
-if(!exists("jvdict")) {source(here::here("./Code/001_Julia functions.R"))}
+source(here::here("./Code/001_TaxizeFunctions.R"))
+source(here::here("./Code/001_Julia functions.R"))
 
 if(!file.exists(here::here("./Source/sequences.csv"))){
   zip::unzip(here::here("./Source/GenBank.zip"), exdir = "Source")
 }
+
+install.ncbi()
 
 gb <- data.table::fread(here::here("./Source/sequences.csv")) %>% 
   dplyr::as_tibble()

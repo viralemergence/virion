@@ -1,5 +1,5 @@
-using NCBITaxonomy
 using DataFrames
+using NCBITaxonomy
 import CSV
 using ProgressMeter
 
