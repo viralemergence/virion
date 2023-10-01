@@ -6,6 +6,7 @@ library(tidyverse)
 library(taxize)
 library(magrittr)
 library(vroom)
+install.ncbi()
 
 globi <- read_csv('Source/GLOBI-raw.csv')
 
