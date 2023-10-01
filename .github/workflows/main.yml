@@ -23,7 +23,7 @@ jobs:
         version: 1.7
     - name: Download GenBank 
       run: |
-        Rscript -e 'source("Code/02_1a_Download GenBank.R")'
+        Rscript -e 'source("Code/02_1a_Download GenBank.R")' 
     - name: Digest GenBank
       run: |
         Rscript -e 'source("Code/02_1b_Digest GenBank.R")'
