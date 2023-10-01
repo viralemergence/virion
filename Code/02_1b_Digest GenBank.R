@@ -18,6 +18,8 @@ if(!file.exists(here::here("./Source/sequences.csv"))){
   zip::unzip(here::here("./Source/GenBank.zip"), exdir = "Source")
 }
 
+install.ncbi()
+
 gb <- data.table::fread(here::here("./Source/sequences.csv")) %>% 
   dplyr::as_tibble()
 
