@@ -45,12 +45,14 @@ print("read in")
 gb %<>% 
   dplyr::rename(NCBIAccession = 'Accession') %>% 
   dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
+
+  # really don't know why we want or need this here?????
   dplyr::mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
                      stringr::str_split("T") %>% # Splitting at this midpoint
                      purrr::map_chr(1) %>% # Taking the first component 
                      lubridate::ymd() # Coding as YMD (shouldn't throw errors)
   ) 
-print("renamed")
+print("renamed") 
 
 gb[, c(paste0("Collection", c("Year", "Month", "Day")))] <- 
   data.table::tstrsplit(gb$Collection_Date, "-", 
