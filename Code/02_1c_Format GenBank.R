@@ -102,7 +102,7 @@ gb %<>%
                    tolower)
 
 
-print("mutate at")
+print("mutate at"); gc()
 # write intermediate file
 vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
 print("written")
