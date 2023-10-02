@@ -1,9 +1,7 @@
 # set up 
 library(tidyverse); library(magrittr); library(vroom); library(data.table)
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
-print("vdict")
 if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
-print("jvdict")
 
 temp <- data.frame(Host = character(),
                    Virus = character(),
@@ -41,7 +39,7 @@ temp <- data.frame(Host = character(),
 
 # Attaching GenBank
 gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") 
-print("read in")
+print("rows in genbank as of this run is: ", nrow(gb))
 gb %<>% 
   dplyr::rename(NCBIAccession = 'Accession') %>% 
   dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
