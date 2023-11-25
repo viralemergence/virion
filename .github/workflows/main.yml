@@ -8,28 +8,41 @@ on:
   pull_request:
     branches:
       - main
-  # run once a week 
+  # run once a week
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch: 
+  workflow_dispatch:
 jobs:
   GenBank:
     runs-on: ubuntu-latest
-    container: colebrookson/virion:latest   
     steps:
     - uses: actions/checkout@v3
-    - uses: julia-actions/setup-julia@v1  
+    - uses: gautamkrishnar/keepalive-workflow@v1
+    - name: Setup Julia
+      uses: julia-actions/setup-julia@v1
       with:
         version: 1.7
-    - name: Download GenBank 
+    - name: Julia dependencies (DF)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames")'
+    - name: NCBITaxonomy (version from MAIN branch!)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v2
+    - name: Libraries for tidyverse
+      run: sudo apt-get install -y libharfbuzz-dev libfribidi-dev
+    - name: dependencies!!!!
       run: |
-        Rscript -e 'source("Code/02_1a_Download GenBank.R")' 
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "rglobi", "lubridate", "R.utils"), repos = "http://cran.us.r-project.org")'
+    - name: Download GenBank
+      run: |
+        Rscript -e 'source("Code/02_1a_Download GenBank.R")'
     - name: Digest GenBank
       run: |
         Rscript -e 'source("Code/02_1b_Digest GenBank.R")'
     - name: Format GenBank
       run: |
-        Rscript -e 'source("Code/02_1c_Format GenBank.R")' 
+        Rscript -e 'source("Code/02_1c_Format GenBank.R")'
     - name: Save artifacts
       uses: actions/upload-artifact@v2
       with:
@@ -37,9 +50,25 @@ jobs:
         path: Intermediate/Formatted/GenbankFormatted.csv.gz
   Globi:
     runs-on: ubuntu-latest
-    container: colebrookson/virion:latest
     steps:
     - uses: actions/checkout@v3
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v2
+    - name: Libraries for tidyverse
+      run: sudo apt-get install -y libharfbuzz-dev libfribidi-dev
+    - name: dependencies!!!!
+      run: |
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "zip", "devtools", "lubridate"), repos = "http://cran.us.r-project.org")'
+        sudo Rscript -e 'devtools::install_github("ropensci/rglobi")'
+    - name: Setup Julia
+      uses: julia-actions/setup-julia@v1
+      with:
+        version: 1.7
+    - name: Julia dependencies (DF)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames")'
+    - name: NCBITaxonomy (version from MAIN branch!)
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
     - name: Download Globi
       run: |
         Rscript -e 'source("Code/02_3a_Download GLOBI.R")'
@@ -56,10 +85,15 @@ jobs:
         path: Intermediate/Formatted/GLOBIFormatted.csv
   Finish:
     runs-on: ubuntu-latest
-    container: colebrookson/virion:latest
     needs: [GenBank, Globi]
     steps:
     - uses: actions/checkout@v3
+    - name: Setup R
+      uses: r-lib/actions/setup-r@v2
+    - name: dependencies!!!
+      run: |
+        sudo apt-get install libcurl4-openssl-dev libarchive-dev libharfbuzz-dev libfribidi-dev
+        sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "R.utils", "zip", "rglobi", "lubridate", "tidyft"), repos = "http://cran.us.r-project.org")'
     - name: Get GenBank
       uses: actions/download-artifact@v2
       with:
