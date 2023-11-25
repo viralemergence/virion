@@ -1,5 +1,5 @@
-using NCBITaxonomy
 using DataFrames
+using NCBITaxonomy
 import CSV
 
 include(joinpath(pwd(), "Code/Code_Dev/taxonomizer.jl"))

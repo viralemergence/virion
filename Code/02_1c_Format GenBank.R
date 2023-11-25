@@ -1,5 +1,13 @@
-# set up 
-library(tidyverse); library(magrittr); library(vroom); library(data.table)
+
+#" GenBank formatting to play nice with all the other pieces
+#" 
+#" Make sure that all the structure matches up with the structure we"ve laid
+#" out 
+
+# set up =======================================================================
+
+library(magrittr)
+
 if(!exists('vdict')) {source('Code/001_TaxizeFunctions.R')}
 print("vdict")
 if(!exists('jvdict')) {source('Code/001_Julia functions.R')}
@@ -75,14 +83,14 @@ gb %<>%
   dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 
                    as.numeric) %>% 
   dplyr::mutate(HostFlagID = stringr::str_detect(HostOriginal, "cf."),
-            Database = "GenBank",
-            DatabaseVersion = "Aug2021FlatFile",
-            # Choice to call Nucleotide all sequence and not isolation is 
-            # potentially problematic - revisit 
-            DetectionMethod = "PCR/Sequencing", 
-            # Just to keep separate from EID2 Nucleotide entries # Fix 
-            # the HostSynonyms at the 01 import stage
-            DetectionOriginal = "GenBank") 
+                Database = "GenBank",
+                DatabaseVersion = "Aug2021FlatFile",
+                # Choice to call Nucleotide all sequence and not isolation is 
+                # potentially problematic - revisit 
+                DetectionMethod = "PCR/Sequencing", 
+                # Just to keep separate from EID2 Nucleotide entries # Fix 
+                # the HostSynonyms at the 01 import stage
+                DetectionOriginal = "GenBank") 
 print("mutated")
 gb %<>% 
   dplyr::mutate(VirusTaxID = as.numeric(VirusTaxID)) %>% 
@@ -94,10 +102,12 @@ gb %<>%
                    tolower)
 
 
-print("mutate at")
+print("mutate at"); gc()
 # write intermediate file
 vroom::vroom_write(gb, "Intermediate/Formatted/GenbankFormatted.csv.gz")
 print("written")
+
+# unused benchmarking ==========================================================
 
 ## little benchmarking 
 # microbenchmark::microbenchmark(
@@ -111,14 +121,16 @@ print("written")
 #                                          c("Year", "Month", "Day")))
 #   },
 #   tidyr = {
-#     gb %>% 
+#     gb %>%
 #       # known that the collection date is a string and many observations don't
-#       # have year or month values, just the year, so many of these will turn up 
+#       # have year or month values just the year, so many of these will turn up
 #       # as missing
-#       tidyr::separate(Collection_Date, sep = "-", 
-#                       into = paste0("Collection", c("Year", "Month", "Day"))) %>% 
-#       tidyr::separate(Release_Date, sep = "-", 
-#                       into = paste0("Release", c("Year", "Month", "Day"))) 
+#       tidyr::separate(
+#         Collection_Date, sep = "-",
+#         into = paste0("Collection", c("Year", "Month", "Day"))) %>%
+#       tidyr::separate(
+#         Release_Date, sep = "-",
+#         into = paste0("Release", c("Year", "Month", "Day")))
 #   },
 #   times = 100
 # )
