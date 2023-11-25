@@ -49,7 +49,8 @@ temp <- data.frame(Host = character(),
 
 # Attaching GenBank
 gb <- vroom::vroom("Intermediate/Unformatted/GenBankUnformatted.csv.gz") 
-print("read in")
+print("rows in genbank as of this run is: ", nrow(gb))
+
 gb %<>% 
   dplyr::rename(NCBIAccession = 'Accession') %>% 
   dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
