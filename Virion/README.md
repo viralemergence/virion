@@ -26,7 +26,7 @@ There are several versions of VIRION you can choose from. VIRION is periodically
 
 ## Citing VIRION
 
-You can cite the preprint that accompanies the study as:
+You can cite the study that describes VIRION as:
 
 Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, Muylaert RL, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an Atlas of Vertebrate-Virus Associations. mBio. 2022 Mar 1. DOI: 10.1128/mbio.02985-21.
 
