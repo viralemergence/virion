@@ -12,7 +12,7 @@ There are several versions of VIRION you can choose from. VIRION is periodically
 
 **Full database**: [Up-to-date](Virion.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz)
 
-**Simplified edgelist**: [Up-to-date](Edgelist.csv) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Edgelist.csv)
+**Simplified edgelist**: [Up-to-date](Edgelist.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Edgelist.csv.gz)
 
 **Provenance metadata**:  [Up-to-date](Provenance.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Provenance.csv.gz)
 
@@ -20,9 +20,9 @@ There are several versions of VIRION you can choose from. VIRION is periodically
 
 **Temporal metadata**: [Up-to-date](Temporal.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/Temporal.csv.gz)
 
-**Host higher taxonomy**:  [Up-to-date](TaxonomyHost.csv) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyHost.csv)
+**Host higher taxonomy**:  [Up-to-date](TaxonomyHost.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyHost.csv.gz)
 
-**Virus higher taxonomy**:  [Up-to-date](TaxonomyVirus.csv) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyVirus.csv)
+**Virus higher taxonomy**:  [Up-to-date](TaxonomyVirus.csv.gz) // [Stable](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyVirus.csv.gz)
 
 ## Citing VIRION
 
