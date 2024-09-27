@@ -44,7 +44,7 @@ jobs:
       run: |
         Rscript -e 'source("Code/02_1c_Format GenBank.R")'
     - name: Save artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: GenBankFormatted
         path: Intermediate/Formatted/GenbankFormatted.csv.gz
@@ -79,7 +79,7 @@ jobs:
       run: |
         Rscript -e 'source("Code/02_3c_Format GLOBI.R")'
     - name: Save artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: GlobiFormatted
         path: Intermediate/Formatted/GLOBIFormatted.csv
@@ -95,11 +95,11 @@ jobs:
         sudo apt-get install libcurl4-openssl-dev libarchive-dev libharfbuzz-dev libfribidi-dev
         sudo Rscript -e 'install.packages(c("taxize", "tidyverse", "RCurl", "readr", "vroom", "magrittr", "fs", "data.table", "R.utils", "zip", "rglobi", "lubridate", "tidyft", "here", "JuliaCall"), repos = "http://cran.us.r-project.org")'
     - name: Get GenBank
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: GenBankFormatted
     - name: Get Globi
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: GlobiFormatted
     - name: Merge clean files
@@ -112,7 +112,7 @@ jobs:
       run: |
         Rscript -e 'source("Code/05_Dissolve VIRION.R")'
     - name: Save the artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: VIRION
         path: Virion
