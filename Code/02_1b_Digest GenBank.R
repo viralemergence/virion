@@ -45,8 +45,8 @@ gb %<>% dplyr::rename(HostOriginal = "Host") %>%
                                  "Myxini",
                                  "Reptilia") | HostOrder %in% 
            c("Testudines", "Crocodylia"))
-            # Reptilia is defunct but left in case GLOBI has something on it 
-            # or it"s reinstituted or something weird
+            # Reptilia is defunct but left in case
+            # it's reinstituted or something weird
 
 # get vector of the species names 
 virus_vec <- gb %>% 
