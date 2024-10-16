@@ -5,24 +5,36 @@ Access the database at the web interface [here](https://viralemergence.github.io
 flowchart TB
 
 %% Nodes
-    GMPD2("fa:fa-box-archive GMPD2")
-    HP3("fa:fa-box-archive HP3")
-    Shaw("fa:fa-box-archive Shaw")
-    EID2("fa:fa-box-archive EID2 (2015)")
+    GMPD2("GMPD2")
+    HP3("HP3")
+    Shaw("Shaw")
+    EID2("EID2 (2015)")
 
-    RECON1("fa:fa-code Reconciliation 1")
+    RECON1("
+**Reconciliation 1**
+• names reconciled to NCBI taxonomy
+• temporal and sampling metadata standardized
+• manual curation of unmatched names
+*mammals only!*")
 
-    CLOVER("fa:fa-box-archive CLOVER")
+    style RECON1 text-align:left, fill:#efefef, stroke:#a0a0a0;
+    style RECON2 text-align:left, fill:#efefef, stroke:#a0a0a0;
 
+    CLOVER("CLOVER")
 
     GenBank("fa:fa-arrows-spin GenBank")
 
     PREDICT("fa:fa-box-archive PREDICT")
 
-    RECON2("fa:fa-code Reconcliliation 2")
+    RECON2("**Reconcliliation 2**
+• update of dynamic datasets (GenBank)
+• names reconciled to NCBI and ICTV
+• additional quality checks
+• community sourcing for validation
+")
 
 
-    subgraph virion[Virion flat files]
+    subgraph virion[**Virion flat files**]
         Virion["fa:fa-file-zipper Virion.csv.gz"]
         Edgelist["fa:fa-table Edgelist.csv"]
         TaxonomyHost["fa:fa-table TaxonomyHost.csv"]
@@ -38,6 +50,8 @@ flowchart TB
         Detection --> Virion
         Temporal --> Virion
     end
+
+    style virion stroke:#a0a0a0, fill:#efefef;
 
 %% Edge connections between nodes
     GMPD2 --> RECON1;
