@@ -61,7 +61,7 @@ flowchart TB
 • names reconciled to NCBI taxonomy
 • temporal and sampling metadata standardized
 • manual curation of unmatched names
-*mammals only!*")
+")
 
     style RECON1 text-align:left, fill:#efefef, stroke:#a0a0a0;
     style RECON2 text-align:left, fill:#efefef, stroke:#a0a0a0;
