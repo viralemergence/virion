@@ -138,7 +138,7 @@ VIRION aggregates seven major sources of information, two of which can be dynami
 
 VIRION can be used for everything from deep learning to simple biological questions. For example, if you wanted to ask which bats a betacoronavirus (like SARS-CoV or MERS-CoV) has ever been isolated from, you could run this `R` code:
 
-```
+```r
 > library(tidyverse); library(vroom)
 >
 > virion <- vroom("Virion/Virion.csv.gz")
