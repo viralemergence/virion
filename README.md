@@ -11,3 +11,4 @@ Over the coming months, we hope to roll out additional changes. Goals include:
 - a revision of the license VIRION is distributed under
 - incorporation of new data sources
 - improved data standardization and taxonomic reconciliation
+- periodic updates to the static components of CLOVER to address known errors
