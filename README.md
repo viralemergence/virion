@@ -128,7 +128,7 @@ flowchart TB
 
 # Additional information
 
-### Contact
+## Contact
 
 - For general questions about VIRION, please reach out to [Colin Carlson](mailto:colin.carlson@yale.edu)
 - For specific questions about the CLOVER dataset, please contact [Rory Gibb](mailto:rory.gibb.14@ucl.ac.uk)
