@@ -126,7 +126,7 @@ flowchart TB
 %% You can add notes with two "%" signs in a row!
 ```
 
-# Additional information
+## Additional information
 
 ### Contact
 
