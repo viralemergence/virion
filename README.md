@@ -1,12 +1,47 @@
-<p align="center">
-  <b>The Global Virome, in One Network</b>
-</p>
+# The VIRION database
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/gh-pages)
 ![](https://img.shields.io/badge/Code%20license-MIT-green)
 ![](https://img.shields.io/badge/Data%20license-CC--0-brightgreen)
 
-The VIRION database is an atlas of the vertebrate-virus network. It was built by, and is curated by, an interdisciplinary team of virologists, ecologists, and data scientists as part of the [Verena Consortium](https://www.viralemergence.org/), an effort to predict which viruses could infect humans, which animals host them, and where they could someday emerge. VIRION is the most comprehensive database of its kind, drawing data from scientific literature and online databases, and is updated automatically with new data. Today, it includes over 20,000 species interactions that capture the viromes of one in every four mammals, one in every ten birds, and roughly 6% of vertebrates. Unlike many other databases, VIRION has undergone a fully-consistent taxonomic reconciliaton process using a backbone provided by [NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). We encourage researchers to **review this entire guide** before using these data.
+VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https://www.viralemergence.org/), an NSF Biology Integration Institute developing an open data ecosystem for zoonotic and vector-borne disease ecology. The development of the VIRION database through 2022 is documented [here](https://journals.asm.org/doi/10.1128/mbio.02985-21); as we work to transition to a new platform, an interim changelog can also be found below. We strongly encourage researchers to read both the _mBio_ publication and this README file before using these data.
+
+> [!NOTE]
+> Over the coming months, we hope to roll out additional changes. Goals include:
+> - a revision of the license VIRION is distributed under
+> - incorporation of new data sources
+> - improved data standardization and taxonomic reconciliation
+> - periodic updates to the static components of CLOVER to address known errors
+
+
+## Citing VIRION
+
+You can cite the study that describes VIRION as:
+
+Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, Muylaert RL, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an Atlas of Vertebrate-Virus Associations. mBio. 2022 Mar 1. DOI: 10.1128/mbio.02985-21.
+
+If you want to cite the VIRION database directly, you can also use refer to [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
+
+
+## Download VIRION
+
+- [**Full database**](https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz)
+
+- [**Simplified edgelist**](https://github.com/viralemergence/virion/blob/main/Virion/Edgelist.csv.gz)
+
+- [**Provenance metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Provenance.csv.gz)
+
+- [**Detection metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Detection.csv.gz)
+
+- [**Temporal metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Temporal.csv.gz)
+
+- [**Host higher taxonomy**](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyHost.csv.gz)
+
+- [**Virus higher taxonomy**](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyVirus.csv.gz)
+
+## Pipeline
+
+The VIRION database is periodically re-compiled from two static sources (CLOVER and PREDICT) and one dynamic source (GenBank). If you want to reproduce the vignettes we present in the publication, you can also download the entire release of [version 0.2.1](https://github.com/viralemergence/virion/releases/tag/v0.2.1-beta).
 
 ```mermaid
 flowchart TB
@@ -33,7 +68,7 @@ flowchart TB
 
     PREDICT("fa:fa-box-archive PREDICT")
 
-    RECON2("**Reconcliliation 2**
+    RECON2("**Reconciliation 2**
 • update of dynamic datasets (GenBank)
 • names reconciled to NCBI and ICTV
 • additional quality checks
@@ -86,44 +121,6 @@ flowchart TB
 
 %% You can add notes with two "%" signs in a row!
 ```
-
-
-
-# Download VIRION
-
-There are several versions of VIRION you can choose from. Note that, while the CLOVER and PREDICT source datasets are static, species name changes may not be reflected in these datasets until the entire dataset is manually recompiled, potentially creating discrepancies between these sources. If you want to reproduce the vignettes we present in the publication, you can also download the entire release of [version 0.2.1](https://github.com/viralemergence/virion/releases/tag/v0.2.1-beta).
-
-<!-- VIRION is periodically hand-compiled into a new stable version, which includes taxonomic updates to every sub-component of the dataset. The dynamic dataset (GenBank) is also scraped and automatically recompiled into an "up-to-date" version on a daily basis. -->
-
-[**Full database**](https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz)
-
-[**Simplified edgelist**](https://github.com/viralemergence/virion/blob/main/Virion/Edgelist.csv.gz)
-
-[**Provenance metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Provenance.csv.gz)
-
-[**Detection metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Detection.csv.gz)
-
-[**Temporal metadata**](https://github.com/viralemergence/virion/blob/main/Virion/Temporal.csv.gz)
-
-[**Host higher taxonomy**](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyHost.csv.gz)
-
-[**Virus higher taxonomy**](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyVirus.csv.gz)
-
-
-> [!NOTE]
-> Over the coming months, we hope to roll out additional changes. Goals include:
-> - a revision of the license VIRION is distributed under
-> - incorporation of new data sources
-> - improved data standardization and taxonomic reconciliation
-> - periodic updates to the static components of CLOVER to address known errors
-
-## Citing VIRION
-
-You can cite the study that describes VIRION as:
-
-Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, Muylaert RL, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an Atlas of Vertebrate-Virus Associations. mBio. 2022 Mar 1. DOI: 10.1128/mbio.02985-21.
-
-If you want to cite the VIRION database directly, you can also use refer to [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
 
 # How we built VIRION
 
@@ -188,7 +185,7 @@ VIRION is an open database with a CC-0 license. As such, you can do just about a
 
 ## Contact
 
-- For general questions about VIRION, please reach out to [Colin Carlson](mailto:colin.carlson@georgetown.edu)
+- For general questions about VIRION, please reach out to [Colin Carlson](mailto:colin.carlson@yalen.edu)
 - For specific questions about the CLOVER dataset, please contact [Rory Gibb](mailto:rory.gibb.14@ucl.ac.uk)
 - For specific questions about the GitHub actions pipeline, please contact [Timothée Poisot](mailto:timothee.poisot@umontreal.ca)
 
