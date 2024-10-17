@@ -126,6 +126,14 @@ flowchart TB
 %% You can add notes with two "%" signs in a row!
 ```
 
+> [!NOTE]
+> Over the coming months, we hope to roll out additional changes. Goals include:
+> - a revision of the license VIRION is distributed under
+> - incorporation of new data sources
+> - improved data standardization and taxonomic reconciliation
+> - periodic updates to the static components of CLOVER to address known errors
+
+
 ## Additional information
 
 ### Contact
@@ -137,10 +145,3 @@ flowchart TB
 ### Changelog 
 
 **October 17, 2024**: The GLOBI dataset has been de-indexed from VIRION, due to a growing number of concerns about the reliability of text-mined data. This represents an important departure from the pipeline described in the _mBio_ publication. The current pipeline is described at the top of this README.
-
-> [!NOTE]
-> Over the coming months, we hope to roll out additional changes. Goals include:
-> - a revision of the license VIRION is distributed under
-> - incorporation of new data sources
-> - improved data standardization and taxonomic reconciliation
-> - periodic updates to the static components of CLOVER to address known errors
