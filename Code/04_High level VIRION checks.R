@@ -75,7 +75,7 @@ virion %<>% dplyr::mutate(
 print("relocate")
 
 
-# This only applies to CLOVER and GLOBI, which both don't have any other internal flags
+# This only applies to CLOVER, which doesn't have any other internal flags
 virion %<>% dplyr::mutate(HostFlagID = replace_na(HostFlagID, FALSE)) 
 print("mutate1")
 

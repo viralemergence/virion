@@ -12,12 +12,10 @@ clo <- readr::read_csv("./Intermediate/Formatted/CLOVERFormatted.csv", col_type 
 print("clo")
 pred <- vroom("./Intermediate/Formatted/PREDICTAllFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
 print("pred")
-globi <- vroom("./Intermediate/Formatted/GLOBIFormatted.csv", col_type = cols(PMID = col_double(), PublicationYear = col_double()))
-print("globi")
 
 if(is.numeric(clo$NCBIAccession)) {clo %<>% dplyr::mutate(NCBIAccession = as.character(NCBIAccession))}
 
-virion <- dplyr::bind_rows(clo, pred, gb, globi)
+virion <- dplyr::bind_rows(clo, pred, gb)
 #   
 # chr_cols <- names(virion[, sapply(virion, is.character)])
 # virion <- virion %>%
