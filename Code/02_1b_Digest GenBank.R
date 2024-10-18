@@ -6,6 +6,7 @@
 # set up =======================================================================
 
 library(magrittr)
+library(rentrez)
 
 # this is necessary for using the NCBI records of more than 10
 rentrez::set_entrez_key("ec345b39079e565bdfa744c3ef0d4b03ba08")
