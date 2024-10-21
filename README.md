@@ -1,6 +1,6 @@
 # The VIRION database
 
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/gh-pages)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/main)
 ![](https://img.shields.io/badge/Code%20license-MIT-green)
 ![](https://img.shields.io/badge/Data%20license-CC--0-brightgreen)
 
@@ -11,23 +11,23 @@ VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https
 
 ## How to get VIRION
 
-For now, VIRION lives on Github in a fully open and reproducible format. Downloading the data directly from this website, or cloning the repository, is the easiest way to access the data. The full database is available in a single comprehensive file (`Virion/Virion.csv.gz`), but specific components of the data are also shared as individual files. Currently, all files are compressed in .csv.gz format to minimize storage requirements. The data can be unzipped using tools such as the `vroom` R package or the `CSV.jl` Julia library.
+For now, VIRION lives on Github in a fully open and reproducible format. Downloading the data directly from this website, or cloning the repository, is the easiest way to access the data. The full database is available in a single comprehensive file (see *Full database* below), but specific components of the data are also shared as individual files. Currently, all files are compressed in .csv.gz format to minimize storage requirements. The data can be unzipped using tools such as the `vroom` R package or the `CSV.jl` Julia library.
 
 ### Download links
 
-- [**Full database**](https://github.com/viralemergence/virion/blob/main/Virion/Virion.csv.gz)
+- [**Full database**](https://github.com/viralemergence/virion/blob/gh-pages/Virion.csv.gz)
 
-- [Simplified edgelist](https://github.com/viralemergence/virion/blob/main/Virion/Edgelist.csv.gz)
+- [Simplified edgelist](https://github.com/viralemergence/virion/blob/gh-pages/Edgelist.csv.gz)
 
-- [Provenance metadata](https://github.com/viralemergence/virion/blob/main/Virion/Provenance.csv.gz)
+- [Provenance metadata](https://github.com/viralemergence/virion/blob/gh-pages/Provenance.csv.gz)
 
-- [Detection metadata](https://github.com/viralemergence/virion/blob/main/Virion/Detection.csv.gz)
+- [Detection metadata](https://github.com/viralemergence/virion/blob/gh-pages/Detection.csv.gz)
 
-- [Temporal metadata](https://github.com/viralemergence/virion/blob/main/Virion/Temporal.csv.gz)
+- [Temporal metadata](https://github.com/viralemergence/virion/blob/gh-pages/Temporal.csv.gz)
 
-- [Host higher taxonomy](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyHost.csv.gz)
+- [Host higher taxonomy](https://github.com/viralemergence/virion/blob/gh-pages/TaxonomyHost.csv.gz)
 
-- [Virus higher taxonomy](https://github.com/viralemergence/virion/blob/main/Virion/TaxonomyVirus.csv.gz)
+- [Virus higher taxonomy](https://github.com/viralemergence/virion/blob/gh-pages/TaxonomyVirus.csv.gz)
 
 ## How to use VIRION
 
