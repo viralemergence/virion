@@ -1,0 +1,19 @@
+gb_clean_hosts <- function(gb,host_table){
+  gb %<>% dplyr::rename(HostOriginal = "Host") %>%
+  dplyr::left_join(host_table) %>%
+  dplyr::filter(HostClass %in% c("Actinopteri",
+                                 "Amphibia",
+                                 "Aves",
+                                 "Chondrichthyes",
+                                 "Cladistia",
+                                 "Hyperoartia",
+                                 "Lepidosauria",
+                                 "Mammalia",
+                                 "Myxini",
+                                 "Reptilia") | HostOrder %in% 
+           c("Testudines", "Crocodylia"))
+            # Reptilia is defunct but left in case
+            # it's reinstituted or something weird
+
+  return(gb)
+}
