@@ -23,7 +23,7 @@ jobs:
       with:
         version: 1.7
     - name: Julia dependencies (DF)
-      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames")'
+      run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add("CSV"); Pkg.add("DataFrames");Pkg.add("Suppressor")'
     - name: NCBITaxonomy (version from MAIN branch!)
       run: julia -e 'using Pkg; Pkg.activate("."); Pkg.add(PackageSpec(name="NCBITaxonomy", rev="main"))'
     - name: Setup R
