@@ -152,19 +152,17 @@ vdict <- function(names) {
 #' 
 #' @return dataframe after all both Julia and R operations
 jhdict <- function(spnames) {
-  
+   # spnames <- "Homo sapiens"
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
-  
+
   # this raw temp df is going to be passed to julia 
   readr::write_csv(raw, here::here("Code/Code_Dev/TaxonomyTempIn.csv"),
             eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
-  # system(paste0(
-  #   "julia --project ",
-  #   here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
-  
+  # system(paste0("julia --project ", here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
+
   JuliaCall::julia_setup(version = "1.7")
   install.ncbi() ## add packages
   JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
@@ -226,7 +224,7 @@ jvdict <- function(spnames) {
   # system(paste0(
   #   "julia --project ",
   #   here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
-  JuliaCall::julia_setup(version = "1.7")
+  JuliaCall::julia_setup()
   install.ncbi() ## add packages
   JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
   
