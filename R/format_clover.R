@@ -33,7 +33,7 @@ clo %<>% dplyr::select(-c(PathogenType,
 
 clo %<>% dplyr::mutate(NCBIAccession = as.character(NCBIAccession))
 clo %<>% dplyr::select(-ICTVRatified)
-clo <- dplyr::bind_rows(temp, clo)
+clo <- dplyr::bind_rows(clover_template, clo)
 
 # Consistency steps: all lowercase names
 clo %<>% dplyr::mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", 

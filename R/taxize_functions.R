@@ -157,18 +157,23 @@ jhdict <- function(spnames) {
   raw <- data.frame(Name = spnames)
   
   # this raw temp df is going to be passed to julia 
-  readr::write_csv(raw, here::here("./Code/Code_Dev/TaxonomyTempIn.csv"),
+  readr::write_csv(raw, here::here("Code/Code_Dev/TaxonomyTempIn.csv"),
             eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
-  system(paste0(
-    "julia --project ",
-    here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
+  # system(paste0(
+  #   "julia --project ",
+  #   here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
+  
+  JuliaCall::julia_setup(version = "1.7")
+  install.ncbi() ## add packages
+  JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
+  
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
-  clean <- readr::read_csv(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
-  file.remove(here::here("./Code/Code_Dev/TaxonomyTempIn.csv"))
-  file.remove(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
+  clean <- readr::read_csv(here::here("Code/Code_Dev/TaxonomyTempOut.csv"))
+  file.remove(here::here("Code/Code_Dev/TaxonomyTempIn.csv"))
+  file.remove(here::here("Code/Code_Dev/TaxonomyTempOut.csv"))
   
   # the clean file needs to be sliced up 
   clean %<>% dplyr::group_by(Name) %>% 
@@ -214,18 +219,21 @@ jvdict <- function(spnames) {
   raw <- data.frame(Name = spnames)
   
   # this raw temp df is going to be passed to julia
-  readr::write_csv(raw, here::here("./Code/Code_Dev/TaxonomyTempIn.csv"), 
+  readr::write_csv(raw, here::here("Code/Code_Dev/TaxonomyTempIn.csv"), 
                    eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
-  system(paste0(
-    "julia --project ",
-    here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
+  # system(paste0(
+  #   "julia --project ",
+  #   here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
+  JuliaCall::julia_setup(version = "1.7")
+  install.ncbi() ## add packages
+  JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
-  clean <- readr::read_csv(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
-  file.remove(here::here("./Code/Code_Dev/TaxonomyTempIn.csv"))
-  file.remove(here::here("./Code/Code_Dev/TaxonomyTempOut.csv"))
+  clean <- readr::read_csv(here::here("Code/Code_Dev/TaxonomyTempOut.csv"))
+  file.remove(here::here("Code/Code_Dev/TaxonomyTempIn.csv"))
+  file.remove(here::here("Code/Code_Dev/TaxonomyTempOut.csv"))
   
   # there's a renaming process to keep all the names of the df standard
   clean %<>% dplyr::group_by(Name) %>% 
