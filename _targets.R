@@ -77,13 +77,13 @@ genbank_digest_targets <- tar_plan(
     )))
   )
 
-# 
-# # Format Genbank -----
-# 
-# format_genbank_targets <- tar_plan(
-#   tar_target(gb_formatted, format_genbank(gb_virus_clean, temp)),
-#   tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
-# )
+
+# Format Genbank -----
+
+format_genbank_targets <- tar_plan(
+  tar_target(gb_formatted, format_genbank(gb_virus_clean, temp)),
+  tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
+)
 # 
 # 
 # # digest predict ----
@@ -101,6 +101,6 @@ genbank_digest_targets <- tar_plan(
    initial_targets,
    clover_targets,
    genbank_download_targets,
-   genbank_digest_targets
-#   format_genbank_targets
+   genbank_digest_targets,
+   format_genbank_targets
  )
