@@ -11,6 +11,22 @@ source("Code/packages.R")
 # Run the R scripts in the R/ folder with your custom functions:
 targets::tar_source()
 
+# If you can run julia commands in terminal but not R, it may be a PATH issue
+# Depending on how you installed Julia, you may have to add homebrew to your PATH
+# in R
+# 
+# Get your terminal PATH - in terminal run
+# echo $PATH
+# use str_split to compare the ":" separated items in PATH
+# 
+# r_path <- Sys.getenv("PATH")
+# hb_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+# new_path <- paste0(hb_path,r_path,collapes = ":")
+# Sys.setenv(PATH=new_path)
+
+system2("sys_deps/julia_deps.sh")
+
+
 initial_targets <- tar_plan(
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
@@ -61,11 +77,12 @@ genbank_digest_targets <- tar_plan(
   # clean up hosts
   tar_target(host_table, jhdict(host_vec)),
   tar_target(
-    host_table_path, readr::write_csv(host_table, here::here("./Intermediate/GBHostTax.csv"))),
-    tar_target(gb_hosts_clean, gb_clean_hosts(gb, host_table)),
+    host_table_path, readr::write_csv(host_table, here::here("./Intermediate/GBHostTax.csv"))
+    ),
+  tar_target(gb_hosts_clean, gb_clean_hosts(gb, host_table)),
 
-    # clean up viruses
-    tar_target(virus_vec, gb %>%
+  # clean up viruses
+  tar_target(virus_vec, gb %>%
       dplyr::pull(Species) %>%
       unique() %>%
       sort()),
@@ -81,7 +98,7 @@ genbank_digest_targets <- tar_plan(
 # Format Genbank -----
 
 format_genbank_targets <- tar_plan(
-  tar_target(gb_formatted, format_genbank(gb_virus_clean, temp)),
+  tar_target(gb_formatted, format_genbank(gb_virus_clean, template)),
   tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
 )
 # 

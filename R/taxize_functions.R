@@ -154,8 +154,7 @@ vdict <- function(names) {
 jhdict <- function(spnames) {
   ## has to be lower case to work with the Julia funcs
   spnames  <- tolower(spnames)
-  
-   # spnames <- "Homo sapiens"
+
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
 
@@ -165,6 +164,9 @@ jhdict <- function(spnames) {
   
   # ensure that the system() call is giving the whole path name of the file
   ## ran system install steps from gh actions workflow first
+  ####################
+  ### ADD sys_deps/julia_deps.sh
+  
    system(paste0("julia --project ", here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
 
   # JuliaCall::julia_setup(JULIA_HOME = "/Users/cjs242/.julia/juliaup/julia-1.12.0-beta2+0.aarch64.apple.darwin14/bin",rebuild = TRUE)
@@ -200,7 +202,8 @@ jhdict <- function(spnames) {
   # HostNCBIResolved column
   clean %<>% dplyr::bind_rows(bad) %>%
     dplyr::select(HostOriginal, HostTaxID, HostNCBIResolved, Host, 
-           HostGenus, HostFamily, HostOrder, HostClass)
+           HostGenus, HostFamily, HostOrder, HostClass) %>% 
+    dplyr::mutate(HostOriginal = stringr::str_to_sentence(HostOriginal))
   
   return(clean)
 }
@@ -266,20 +269,21 @@ jvdict <- function(spnames) {
   # HostNCBIResolved column
   clean %<>% dplyr::bind_rows(bad) %>%
     dplyr::select(VirusOriginal, VirusTaxID, VirusNCBIResolved, Virus, 
-                  VirusGenus, VirusFamily, VirusOrder, VirusClass)
+                  VirusGenus, VirusFamily, VirusOrder, VirusClass) %>% 
+    dplyr::mutate(VirusOriginal = stringr::str_to_sentence(VirusOriginal))
   
   return(clean)
 }
 
 # tests ========================================================================
 
-virus.test <- c("Adeno-associated virus - 3", 
-           "Adeno-associated virus 3B",
-           "Adenovirus predict_adv-20",
-           "A bad name")
-host.test <- c("Equus caballus ferus",
-               "Homo sapiens",
-               "Hongus bongus",
-               "Chiroptera",
-               "Mus",
-               "Bacillus anthracis")
+# virus.test <- c("Adeno-associated virus - 3", 
+#            "Adeno-associated virus 3B",
+#            "Adenovirus predict_adv-20",
+#            "A bad name")
+# host.test <- c("Equus caballus ferus",
+#                "Homo sapiens",
+#                "Hongus bongus",
+#                "Chiroptera",
+#                "Mus",
+#                "Bacillus anthracis")
