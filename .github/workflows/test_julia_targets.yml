@@ -1,4 +1,4 @@
-name: Compile virion
+name: julia test
 
 # Controls when the action will run.
 on:
