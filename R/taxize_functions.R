@@ -152,6 +152,9 @@ vdict <- function(names) {
 #' 
 #' @return dataframe after all both Julia and R operations
 jhdict <- function(spnames) {
+  ## has to be lower case to work with the Julia funcs
+  spnames  <- tolower(spnames)
+  
    # spnames <- "Homo sapiens"
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
@@ -161,11 +164,12 @@ jhdict <- function(spnames) {
             eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
-  # system(paste0("julia --project ", here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
+  ## ran system install steps from gh actions workflow first
+   system(paste0("julia --project ", here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
 
-  JuliaCall::julia_setup(version = "1.7")
-  install.ncbi() ## add packages
-  JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
+  # JuliaCall::julia_setup(JULIA_HOME = "/Users/cjs242/.julia/juliaup/julia-1.12.0-beta2+0.aarch64.apple.darwin14/bin",rebuild = TRUE)
+  # install.ncbi() ## add packages
+  # JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
   
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
@@ -213,6 +217,9 @@ jhdict <- function(spnames) {
 #' @return dataframe after all both Julia and R operations
 jvdict <- function(spnames) {
   
+  ## has to be lower case to work with the Julia funcs
+  spnames  <- tolower(spnames)
+  
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
   
@@ -221,12 +228,14 @@ jvdict <- function(spnames) {
                    eol = "\n")
   
   # ensure that the system() call is giving the whole path name of the file
-  # system(paste0(
-  #   "julia --project ",
-  #   here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
-  JuliaCall::julia_setup()
-  install.ncbi() ## add packages
-  JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
+  # ran system install steps from gh actions workflow first
+  system(paste0(
+    "julia --project ",
+    here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
+  
+  # JuliaCall::julia_setup(JULIA_HOME = "/Users/cjs242/.julia/juliaup/julia-1.12.0-beta2+0.aarch64.apple.darwin14/bin",rebuild = TRUE)
+  # install.ncbi() ## add packages
+  # JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))
   
   # after Julia has worked read in the cleaned file and get rid of the tmp files
   clean <- readr::read_csv(here::here("Code/Code_Dev/TaxonomyTempOut.csv"))
