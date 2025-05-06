@@ -1,19 +1,15 @@
 library("data.table")
+library("dplyr")
 library("fs")
 library("here")
 library("JuliaCall")
 library("magrittr")
+library("purrr")
 library("RCurl")
 library("rentrez")
 library("R.utils")
+library("readr")
+library("stringr")
 library("tidyselect")
-library("taxize")
-library("tidyverse")
 library("vroom")
 library("zip")
-
-
-# from digest genbank
-library("ape")
-library("ggtree")
-library("cowplot")

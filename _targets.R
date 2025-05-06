@@ -6,7 +6,7 @@
 # Load packages required to define the pipeline:
 library(targets)
 library(tarchetypes) # Load other packages as needed.
-source("Code/packages.R")
+source("packages.R")
 
 # Run the R scripts in the R/ folder with your custom functions:
 targets::tar_source()
