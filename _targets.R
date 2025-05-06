@@ -24,8 +24,13 @@ targets::tar_source()
 # new_path <- paste0(hb_path,r_path,collapes = ":")
 # Sys.setenv(PATH=new_path)
 
-#  hb_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
-update_path()
+# when running locally
+#  homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+# when running on gh actions
+  github_actions_path <- "/__t/juliaup/1.17.4/x64:"
+# when running with act
+#  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64:"
+update_path(items_to_add = github_actions_path)
 
 system2("sys_deps/julia_deps.sh")
 
