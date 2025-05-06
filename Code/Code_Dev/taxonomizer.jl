@@ -45,7 +45,7 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
 
     # GO BR
     for i in 1:n
-        @info synonyms[i]
+        # @info synonyms[i]
         try
             nm = taxon(namelist, synonyms[i]; casesensitive=false, preferscientific=true)
             df_row = _prepare_name_tuple(synonyms[i], nm)
