@@ -18,7 +18,7 @@ jobs:
     container:
       image: rocker/verse:4.4.3
     steps:
-     - name: update permissions for container based workflows
+      - name: update permissions for container based workflows
         run: git config --global --add safe.directory /__w/virion/virion
       
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
