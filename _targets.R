@@ -24,6 +24,9 @@ targets::tar_source()
 # new_path <- paste0(hb_path,r_path,collapes = ":")
 # Sys.setenv(PATH=new_path)
 
+#  hb_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+update_path()
+
 system2("sys_deps/julia_deps.sh")
 
 
@@ -75,6 +78,7 @@ genbank_digest_targets <- tar_plan(
     sort()),
 
   # clean up hosts
+  # tar_target(test_julia_jhdict, jhdict(c("apis"))),
   tar_target(host_table, jhdict(host_vec)),
   tar_target(
     host_table_path, readr::write_csv(host_table, here::here("./Intermediate/GBHostTax.csv"))
