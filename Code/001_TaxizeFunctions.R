@@ -14,7 +14,7 @@
 #' @param envir note that this needs access to the parent set of call stacks
 #' 
 #' @return .data  
-mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
+mutate_cond_old <- function(.data, condition, ..., envir = parent.frame()) {
   condition <- eval(substitute(condition), .data, envir)
   .data[condition, ] <- .data[condition, ] %>% dplyr::mutate(...)
   .data
@@ -30,7 +30,7 @@ mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
 #' @param names vector of names of the object
 #' 
 #' @return dataframe after all taxonomic operations
-hdict <- function(names) { 
+hdict_old <- function(names) { 
   
   # first deal with the names and get rid of every misplaced prefix
   names.orig <- names
@@ -96,7 +96,7 @@ hdict <- function(names) {
 #' @param names vector of names of the object
 #' 
 #' @return dataframe after all taxonomic operations
-vdict <- function(names) { 
+vdict_old <- function(names) { 
   
   # first deal with the names and get rid of every misplaced prefix
   names.orig <- names
@@ -151,7 +151,7 @@ vdict <- function(names) {
 #' @param spnames vector of species names in the object
 #' 
 #' @return dataframe after all both Julia and R operations
-jhdict <- function(spnames) {
+jhdict_old <- function(spnames) {
   
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
@@ -208,7 +208,7 @@ jhdict <- function(spnames) {
 #' @param spnames vector of species names in the object
 #' 
 #' @return dataframe after all both Julia and R operations
-jvdict <- function(spnames) {
+jvdict_old <- function(spnames) {
   
   # turn this into a dataframe for ease
   raw <- data.frame(Name = spnames)
@@ -258,11 +258,11 @@ jvdict <- function(spnames) {
 
 # tests ========================================================================
 
-virus.test <- c("Adeno-associated virus - 3", 
+virus.test_old <- c("Adeno-associated virus - 3", 
            "Adeno-associated virus 3B",
            "Adenovirus predict_adv-20",
            "A bad name")
-host.test <- c("Equus caballus ferus",
+host.test_old <- c("Equus caballus ferus",
                "Homo sapiens",
                "Hongus bongus",
                "Chiroptera",
