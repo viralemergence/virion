@@ -37,6 +37,12 @@ jobs:
         run: |
           renv::restore()
         shell: Rscript {0}
+      
+      - name: Install Juliaup
+      - uses: julia-actions/install-juliaup@v2
+          with:
+            channel: '1.9'
+
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
