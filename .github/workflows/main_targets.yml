@@ -40,8 +40,8 @@ jobs:
       
       - name: Install Juliaup
       - uses: julia-actions/install-juliaup@v2
-          with:
-            channel: '1.9'
+        with:
+          channel: '1.9'
 
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
