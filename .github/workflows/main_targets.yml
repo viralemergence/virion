@@ -38,6 +38,9 @@ jobs:
         uses: julia-actions/install-juliaup@v2
         with:
           channel: '1.9'
+      - name: get path
+        run: |
+          echo $PATH
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
