@@ -63,13 +63,16 @@ function taxonomizer(df::DataFrame, type::Symbol=:hosts; names::Symbol=:Name)
             continue
         end
     end
-    return results
+
+    out = transform(results, :Original => ByRow(x -> lowercasefirst(x)) => :Original)
+    return out
 end
 
 function _prepare_name_tuple(n, taxa; levels=[:species, :genus, :order, :class, :family])
     ln = lineage(taxa)
     rk = rank.(ln)
     match = Any[n, rank(taxa), taxa.id]
+
     for level in levels
         rnk_i = findfirst(isequal(level), rk)
         if isnothing(rnk_i)
