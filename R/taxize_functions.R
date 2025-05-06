@@ -236,6 +236,11 @@ jvdict <- function(spnames) {
     "julia --project ",
     here::here("Code/Code_Dev/virus.jl"))) # this is better for reproducing this
   
+  print("made it through the julia")
+  if(!fs::file_exists(path = here::here("Code/Code_Dev/TaxonomyTempOut.csv"))){
+    stop("jvdict: TaxonomyTempOut.csv not written")
+  }
+  
   # JuliaCall::julia_setup(JULIA_HOME = "/Users/cjs242/.julia/juliaup/julia-1.12.0-beta2+0.aarch64.apple.darwin14/bin",rebuild = TRUE)
   # install.ncbi() ## add packages
   # JuliaCall::julia_source(file_name = here::here("Code/Code_Dev/virus.jl"))

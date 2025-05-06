@@ -16,17 +16,14 @@ jobs:
   targets:
     runs-on: ubuntu-latest
     container:
-      image: rocker/verse:4.4.3
+      image: rocker/verse:4.5.0
     steps:
       - name: update permissions for container based workflows
         run: git config --global --add safe.directory /__w/virion/virion
-      
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
-      
       - name: Install system dependencies
         run: |
           sh sys_deps/sys_deps.sh
-          
       - name: Install packages from renv.lock (with cache)
         if: ${{ !env.ACT }}  ## Doesn't work locally with ACT
         uses: r-lib/actions/setup-renv@v2
@@ -37,18 +34,15 @@ jobs:
         run: |
           renv::restore()
         shell: Rscript {0}
-      
       - name: Install Juliaup
-      - uses: julia-actions/install-juliaup@v2
+        uses: julia-actions/install-juliaup@v2
         with:
           channel: '1.9'
-
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
           targets::tar_make()
         shell: Rscript {0}
-        
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
@@ -61,7 +55,7 @@ jobs:
           path: Intermediate/Formatted/GenbankFormatted.csv.gz
   Finish:
     runs-on: ubuntu-latest
-    needs: [GenBank]
+    needs: [targets]
     steps:
     - uses: actions/checkout@v3
     - name: Save the artifacts

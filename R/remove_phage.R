@@ -1,0 +1,46 @@
+remove_phage <- function(virion_unprocessed){
+  
+  virion_no_phage <- virion_unprocessed %>% 
+  dplyr::filter(!stringr::str_detect(Virus, "phage")|is.na(Virus),
+                !stringr::str_detect(Virus, "bacteri")|is.na(Virus)) %>%
+    dplyr::filter(!(VirusFamily %in% c("turriviridae",
+                                       "ackermannviridae",
+                                       "myoviridae",
+                                       "siphoviridae",
+                                       "podoviridae",
+                                       "sphaerolipoviridae",
+                                       "pleoplipoviridae",
+                                       "tectiviridae",
+                                       "leviviridae",
+                                       "lipothrixviridae",
+                                       "rudiviridae",
+                                       "cystoviridae",
+                                       "microviridae",
+                                       "inoviridae",
+                                       "corticoviridae",
+                                       "ampullaviridae",
+                                       "bicaudaviridae",
+                                       "clavaviridae",
+                                       "finnlakeviridae",
+                                       "fuselloviridae",
+                                       "globuloviridae",
+                                       "guttaviridae",
+                                       "plasmaviridae",
+                                       "portogloboviridae",
+                                       "spiraviridae",
+                                       "tristomaviridae",
+                                       "megaviridae")),
+                  !(VirusOrder %in% c("belfryvirales",
+                                      "caudovirales",
+                                      "halopanivirales",
+                                      "haloruvirales",
+                                      "kalamavirales",
+                                      "levivirales",
+                                      "ligamenvirales",
+                                      "mindivirales",
+                                      "petitvirales",
+                                      "tubulavirales",
+                                      "vinavirales")))
+  
+  return(virion_no_phage)
+}
