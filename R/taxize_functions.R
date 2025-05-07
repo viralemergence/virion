@@ -14,7 +14,7 @@
 #' @param envir note that this needs access to the parent set of call stacks
 #' 
 #' @return .data  
-mutate_cond_old <- function(.data, condition, ..., envir = parent.frame()) {
+mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
   condition <- eval(substitute(condition), .data, envir)
   .data[condition, ] <- .data[condition, ] %>% dplyr::mutate(...)
   .data
@@ -44,7 +44,6 @@ jhdict <- function(spnames) {
   
   # ensure that the system() call is giving the whole path name of the file
   ## ran system install steps from gh actions workflow first
-  ####################
   ### ADD sys_deps/julia_deps.sh
   
    system(paste0("julia --project ", here::here("Code/Code_Dev/host.jl"))) # this is better for reproducing this
@@ -159,16 +158,3 @@ jvdict <- function(spnames) {
   
   return(clean)
 }
-
-# tests ========================================================================
-
-# virus.test <- c("Adeno-associated virus - 3", 
-#            "Adeno-associated virus 3B",
-#            "Adenovirus predict_adv-20",
-#            "A bad name")
-# host.test <- c("Equus caballus ferus",
-#                "Homo sapiens",
-#                "Hongus bongus",
-#                "Chiroptera",
-#                "Mus",
-#                "Bacillus anthracis")

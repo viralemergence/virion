@@ -12,28 +12,19 @@ source("packages.R")
 targets::tar_source()
 
 # If you can run julia commands in terminal but not R, it may be a PATH issue
-# Depending on how you installed Julia, you may have to add homebrew to your PATH
-# in R
-# 
-# Get your terminal PATH - in terminal run
-# echo $PATH
-# use str_split to compare the ":" separated items in PATH
-# 
-# r_path <- Sys.getenv("PATH")
-# hb_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
-# new_path <- paste0(hb_path,r_path,collapes = ":")
-# Sys.setenv(PATH=new_path)
+# Depending on how you installed Julia, you may have to add the julia binary 
+# location to your PATH in R
 
 # when running locally
 #  homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-  github_actions_path <- "/__t/juliaup/1.17.4/x64:"
+  github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
-#  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64:"
+#  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
 
-system2("sys_deps/julia_deps.sh")
-
+ system2("sys_deps/julia_deps.sh")
+#source_julia_deps()
 
 initial_targets <- tar_plan(
   tar_target(template, generate_template()),

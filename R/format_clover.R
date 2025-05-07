@@ -1,3 +1,14 @@
+#' Format clover data
+#'
+#' Uses data template to format clover data
+#'
+#' @param clo Data frame. Data frame of raw clover data
+#' @param clover_template  Data frame. Template for virion data
+#'
+#' @returns Data frame. Formatted clover data
+#' @export
+#'
+#' @examples
 format_clover <- function(clo,clover_template){
 
 # This step should go away after Rory updates CLOVERT with the "sp." thing

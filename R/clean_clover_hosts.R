@@ -1,3 +1,10 @@
+#' Clean Clover host data in virion
+#' 
+#' Light cleaning of clover host data in virion
+#'
+#' @param virion_ictv_ratified Data frame. Virion data with clover components
+#'
+#' @returns data frame. Data frame 
 clean_clover_hosts <- function(virion_ictv_ratified){
   
   virion_ictv_ratified %<>% 

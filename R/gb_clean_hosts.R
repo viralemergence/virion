@@ -1,3 +1,14 @@
+#' Clean Genbank Host Data
+#'
+#' Cleans host data, ensuring only vertebrates are included
+#'
+#' @param gb Data frame. Genbank data with hosts
+#' @param host_table Data frame. NCBI reconciled table of hosts
+#'
+#' @returns Data frame. Genbank host data with NCBI taxonomy for vertebrates
+#' @export
+#'
+#' @examples
 gb_clean_hosts <- function(gb,host_table){
   out <- gb %>% 
     dplyr::rename(HostOriginal = "Host") %>%

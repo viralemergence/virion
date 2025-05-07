@@ -1,3 +1,12 @@
+#' Get Genbank data
+#'
+#' @param url Character.Url for download
+#' @param location  Character destination for file
+#'
+#' @returns
+#' @export
+#'
+#' @examples
 get_genbank <- function(url = "https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/AllNuclMetadata.csv.gz", location = here::here("./Source/")){
   
 

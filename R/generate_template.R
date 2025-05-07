@@ -1,9 +1,12 @@
-#' Generate file template 
-#' 
-#' This file generates a dataframe of zero rows but 32 variables that has the 
-#' type coding for each variable that will be used later 
-
-# Generate example file ========================================================
+#' Generate data template 
+#'
+#' This function generates a dataframe of zero rows with 32 typed variables. This
+#' is essentially the structure for the Virion data. 
+#'
+#' @returns data frame
+#' @export
+#'
+#' @examples
 generate_template <- function(){
   temp <- data.frame(Host = character(),
   Virus = character(),

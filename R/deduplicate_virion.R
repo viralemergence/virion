@@ -1,3 +1,14 @@
+#' Deduplicate and clean Virion data
+#'
+#' Removes duplicate entries, mutates all fields to character, and does
+#' some cleaning and summarizing.
+#'
+#' @param virion_clover_hosts Data frame. DF from clean_clover_hosts
+#'
+#' @returns data frame
+#' @export
+#'
+#' @examples
 deduplicate_virion <- function(virion_clover_hosts){
   out <- virion_clover_hosts %>% 
     distinct() %>% 

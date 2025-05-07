@@ -1,3 +1,13 @@
+#' Remove phages and other organisms
+#' 
+#' Removes phages and bacteri*
+#'
+#' @param virion_unprocessed Data frame. Virion data
+#'
+#' @returns
+#' @export
+#'
+#' @examples
 remove_phage <- function(virion_unprocessed){
   
   virion_no_phage <- virion_unprocessed %>% 
