@@ -5,6 +5,21 @@
 
 # functions ====================================================================
 
+#' mutate_cond
+#' 
+#' @description a base R / dplyr mashup to do some data manipulation
+#' 
+#' @param .data implied data object that we need 
+#' @param condition the condition that we're checking 
+#' @param envir note that this needs access to the parent set of call stacks
+#' 
+#' @return .data  
+mutate_cond_old <- function(.data, condition, ..., envir = parent.frame()) {
+  condition <- eval(substitute(condition), .data, envir)
+  .data[condition, ] <- .data[condition, ] %>% dplyr::mutate(...)
+  .data
+}
+
 
 #' jhdict()
 #' 
