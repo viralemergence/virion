@@ -9,5 +9,11 @@
 #'
 #' @examples
 source_julia_deps <- function(path = "sys_deps/julia_deps.sh"){
-  system2(path)
-}
+  
+  status <- system2(path)
+  
+  # check for failures
+  if(status != 0){
+    stop("Julia dependencies not installed. Check PATH")
+  }
+  }
