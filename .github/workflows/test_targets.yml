@@ -1,4 +1,4 @@
-name: Compile virion targets
+name: Test targets on PR
 
 # Controls when the action will run.
 on:
