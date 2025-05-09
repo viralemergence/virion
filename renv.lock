@@ -480,6 +480,37 @@
       "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
       "Repository": "CRAN"
     },
+    "cellranger": {
+      "Package": "cellranger",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Title": "Translate Spreadsheet Cell Ranges to Rows and Columns",
+      "Authors@R": "c( person(\"Jennifer\", \"Bryan\", , \"jenny@stat.ubc.ca\", c(\"cre\", \"aut\")), person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", \"ctb\") )",
+      "Description": "Helper functions to work with spreadsheets and the \"A1:D10\" style of cell range specification.",
+      "Depends": [
+        "R (>= 3.0.0)"
+      ],
+      "License": "MIT + file LICENSE",
+      "LazyData": "true",
+      "URL": "https://github.com/rsheets/cellranger",
+      "BugReports": "https://github.com/rsheets/cellranger/issues",
+      "Suggests": [
+        "covr",
+        "testthat (>= 1.0.0)",
+        "knitr",
+        "rmarkdown"
+      ],
+      "RoxygenNote": "5.0.1.9000",
+      "VignetteBuilder": "knitr",
+      "Imports": [
+        "rematch",
+        "tibble"
+      ],
+      "NeedsCompilation": "no",
+      "Author": "Jennifer Bryan [cre, aut], Hadley Wickham [ctb]",
+      "Maintainer": "Jennifer Bryan <jenny@stat.ubc.ca>",
+      "Repository": "CRAN"
+    },
     "cli": {
       "Package": "cli",
       "Version": "3.6.5",
@@ -1795,6 +1826,66 @@
       "NeedsCompilation": "yes",
       "Author": "Hadley Wickham [aut], Jim Hester [aut], Romain Francois [ctb], Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>), Shelby Bearrows [ctb], Posit Software, PBC [cph, fnd], https://github.com/mandreyel/ [cph] (mio library), Jukka Jylänki [ctb, cph] (grisu3 implementation), Mikkel Jørgensen [ctb, cph] (grisu3 implementation)",
       "Maintainer": "Jennifer Bryan <jenny@posit.co>",
+      "Repository": "CRAN"
+    },
+    "readxl": {
+      "Package": "readxl",
+      "Version": "1.4.5",
+      "Source": "Repository",
+      "Title": "Read Excel Files",
+      "Authors@R": "c( person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\", comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Jennifer\", \"Bryan\", , \"jenny@posit.co\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-6983-2759\")), person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"), comment = \"Copyright holder of all R code and all C/C++ code without explicit copyright attribution\"), person(\"Marcin\", \"Kalicinski\", role = c(\"ctb\", \"cph\"), comment = \"Author of included RapidXML code\"), person(\"Komarov Valery\", role = c(\"ctb\", \"cph\"), comment = \"Author of included libxls code\"), person(\"Christophe Leitienne\", role = c(\"ctb\", \"cph\"), comment = \"Author of included libxls code\"), person(\"Bob Colbert\", role = c(\"ctb\", \"cph\"), comment = \"Author of included libxls code\"), person(\"David Hoerl\", role = c(\"ctb\", \"cph\"), comment = \"Author of included libxls code\"), person(\"Evan Miller\", role = c(\"ctb\", \"cph\"), comment = \"Author of included libxls code\") )",
+      "Description": "Import excel files into R. Supports '.xls' via the embedded 'libxls' C library <https://github.com/libxls/libxls> and '.xlsx' via the embedded 'RapidXML' C++ library <https://rapidxml.sourceforge.net/>. Works on Windows, Mac and Linux without external dependencies.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://readxl.tidyverse.org, https://github.com/tidyverse/readxl",
+      "BugReports": "https://github.com/tidyverse/readxl/issues",
+      "Depends": [
+        "R (>= 3.6)"
+      ],
+      "Imports": [
+        "cellranger",
+        "tibble (>= 2.0.1)",
+        "utils"
+      ],
+      "Suggests": [
+        "covr",
+        "knitr",
+        "rmarkdown",
+        "testthat (>= 3.1.6)",
+        "withr"
+      ],
+      "LinkingTo": [
+        "cpp11 (>= 0.4.0)",
+        "progress"
+      ],
+      "VignetteBuilder": "knitr",
+      "Config/Needs/website": "tidyverse/tidytemplate, tidyverse",
+      "Config/testthat/edition": "3",
+      "Encoding": "UTF-8",
+      "Note": "libxls v1.6.3 c199d13",
+      "RoxygenNote": "7.3.2",
+      "NeedsCompilation": "yes",
+      "Author": "Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>), Posit, PBC [cph, fnd] (Copyright holder of all R code and all C/C++ code without explicit copyright attribution), Marcin Kalicinski [ctb, cph] (Author of included RapidXML code), Komarov Valery [ctb, cph] (Author of included libxls code), Christophe Leitienne [ctb, cph] (Author of included libxls code), Bob Colbert [ctb, cph] (Author of included libxls code), David Hoerl [ctb, cph] (Author of included libxls code), Evan Miller [ctb, cph] (Author of included libxls code)",
+      "Maintainer": "Jennifer Bryan <jenny@posit.co>",
+      "Repository": "CRAN"
+    },
+    "rematch": {
+      "Package": "rematch",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Title": "Match Regular Expressions with a Nicer 'API'",
+      "Author": "Gabor Csardi",
+      "Maintainer": "Gabor Csardi <csardi.gabor@gmail.com>",
+      "Description": "A small wrapper on 'regexpr' to extract the matches and captured groups from the match of a regular expression to a character vector.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/gaborcsardi/rematch",
+      "BugReports": "https://github.com/gaborcsardi/rematch/issues",
+      "RoxygenNote": "5.0.1.9000",
+      "Suggests": [
+        "covr",
+        "testthat"
+      ],
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
       "Repository": "CRAN"
     },
     "rentrez": {
