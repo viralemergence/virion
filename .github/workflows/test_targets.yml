@@ -1,0 +1,47 @@
+name: Compile virion targets
+
+# Controls when the action will run.
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  targets:
+    runs-on: ubuntu-latest
+    container:
+      image: rocker/verse:4.5.0
+    steps:
+      - name: update permissions for container based workflows
+        run: git config --global --add safe.directory /__w/virion/virion
+      - uses: actions/checkout@v4 # https://github.com/actions/checkout
+      - name: Install system dependencies
+        run: |
+          sh sys_deps/sys_deps.sh
+      - name: Install packages from renv.lock (with cache)
+        if: ${{ !env.ACT }}  ## Doesn't work locally with ACT
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 4
+      - name: Install packages from renv.lock (local, no cache)
+        if: ${{ env.ACT }}  ## Only locally with ACT, use `act -r` to reuse containers, effectively caching locally
+        run: |
+          renv::restore()
+        shell: Rscript {0}
+      - name: Install Juliaup
+        uses: julia-actions/install-juliaup@v2
+        with:
+          channel: 'lts'
+      - name: get path
+        run: |
+          echo $PATH
+      - name: Run targets workflow in CI
+        if: ${{ !env.ACT }}
+        run: |
+          targets::tar_make(virion_ictv_ratified)
+        shell: Rscript {0}
+      - name: Run targets workflow local with ACT
+        if: ${{ env.ACT }}
+        run: |
+          targets::tar_make(virion_ictv_ratified)
+        shell: Rscript {0}

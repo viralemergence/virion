@@ -16,9 +16,9 @@ targets::tar_source()
 # location to your PATH in R
 
 # when running locally
-#  homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-  github_actions_path <- "/__t/juliaup/1.17.4/x64"
+ github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 #  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
@@ -27,6 +27,10 @@ update_path(items_to_add = github_actions_path)
 #source_julia_deps()
 
 initial_targets <- tar_plan(
+  tar_target(current_msl_path, download_current_msl(url = "https://ictv.global/msl/current"),
+             format = "file",
+             cue = tar_cue(mode = "always")),
+  tar_target(ictv, read_current_msl(current_msl_path)),
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
   tar_target(virus.test, c(
@@ -128,7 +132,7 @@ merge_clean_files_targets <- tar_plan(
 high_level_check_targets <- tar_plan(
   ### maybe convert to data.table - we will see
   tar_target(virion_no_phage, remove_phage(virion_unprocessed)),
-  ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
+  # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
   tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)),
