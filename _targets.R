@@ -18,13 +18,13 @@ targets::tar_source()
 # when running locally
 # homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
- github_actions_path <- "/__t/juliaup/1.17.4/x64"
+github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 #  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
 
- system2("sys_deps/julia_deps.sh")
-#source_julia_deps()
+# source julia packages
+source_julia_deps()
 
 initial_targets <- tar_plan(
   tar_target(current_msl_path, download_current_msl(url = "https://ictv.global/msl/current"),
