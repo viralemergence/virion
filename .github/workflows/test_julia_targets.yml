@@ -2,15 +2,9 @@ name: julia test
 
 # Controls when the action will run.
 on:
-  # push:
-  #   branches:
-  #     - main
   pull_request:
     branches:
       - feature/*
-  # # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
-  # schedule:
-  #   - cron: "21 0 * * *"
   workflow_dispatch:
 jobs:
   targets_julia:
@@ -37,7 +31,7 @@ jobs:
       - name: Install Juliaup
         uses: julia-actions/install-juliaup@v2
         with:
-          channel: '1.9'
+          channel: 'lts'
       - name: get path
         run: |
           echo $PATH
