@@ -1,5 +1,5 @@
 
-library(tidyverse); library(magrittr); library(vroom); library(tidyft)
+library(tidyverse); library(magrittr); library(vroom) 
 
 source("./Code/001_TaxizeFunctions.R")
 
@@ -17,6 +17,7 @@ if(is.numeric(clo$NCBIAccession)) {clo %<>% dplyr::mutate(NCBIAccession = as.cha
 
 virion <- dplyr::bind_rows(clo, pred, gb)
 #   
+# library(tidyft)
 # chr_cols <- names(virion[, sapply(virion, is.character)])
 # virion <- virion %>%
 #   tidyft::utf8_encoding(chr_cols)
