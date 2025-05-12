@@ -2,15 +2,9 @@ name: julia test
 
 # Controls when the action will run.
 on:
-  # push:
-  #   branches:
-  #     - main
-  # pull_request:
-  #   branches:
-  #     - main
-  # # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
-  # schedule:
-  #   - cron: "21 0 * * *"
+  pull_request:
+    branches:
+      - feature/*
   workflow_dispatch:
 jobs:
   targets_julia:
@@ -37,37 +31,18 @@ jobs:
       - name: Install Juliaup
         uses: julia-actions/install-juliaup@v2
         with:
-          channel: '1.9'
+          channel: 'lts'
       - name: get path
         run: |
           echo $PATH
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(test_julia_jhdict)
+          targets::tar_make(current_msl_path)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make(test_julia_jhdict)
+          targets::tar_make(current_msl_path)
         shell: Rscript {0}
-      - name: Save artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: GenBankFormatted
-          path: Intermediate/Formatted/GenbankFormatted.csv.gz
-  Finish_julia:
-    runs-on: ubuntu-latest
-    needs: [targets]
-    steps:
-    - uses: actions/checkout@v3
-    - name: Save the artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: VIRION
-        path: Virion
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.7
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: Virion # The folder the action should deploy.
+ 
