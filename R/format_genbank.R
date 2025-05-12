@@ -1,3 +1,12 @@
+#' Format genbank data for integration with Virion
+#'
+#' @param gb  Data frame. Genbank data from gb_clean_viruses
+#' @param temp Data frame. Template for Virion data
+#'
+#' @returns data frame. Genbank data formatted for virion
+#' @export
+#'
+#' @examples
 format_genbank <- function(gb,temp){
 
 gb %<>% 
