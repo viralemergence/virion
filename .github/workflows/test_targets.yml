@@ -8,7 +8,7 @@ on:
       # - feature/*
   workflow_dispatch:
 jobs:
-  targets:
+  test_targets:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
