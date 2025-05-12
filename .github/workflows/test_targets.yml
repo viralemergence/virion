@@ -8,7 +8,7 @@ on:
       # - feature/*
   workflow_dispatch:
 jobs:
-  targets:
+  test_targets:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
@@ -39,10 +39,10 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(virion_ictv_ratified)
+          targets::tar_make(all_of(c("clo_formatted","virion_ictv_ratified")))
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make(virion_ictv_ratified)
+          targets::tar_make(all_of(c("clo_formatted","virion_ictv_ratified")))
         shell: Rscript {0}

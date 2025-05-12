@@ -18,9 +18,9 @@ targets::tar_source()
 # when running locally
 # homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+ github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
-#  act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
+# act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
 
 # source julia packages
@@ -50,12 +50,37 @@ initial_targets <- tar_plan(
 )
 
 
-# from 02_0_Format Clover -----
+# CLOVER - from 02_0_Format Clover -----
 clover_targets <- tar_plan(
   tar_target(clo_path, get_clover()), # clover csv from github
-  tar_target(clo, readr::read_csv(clo_path)), # clover dataframe
-  # tar_target(clover_template, generate_template() ), # clover template - used as a data standard, same as temp
-  tar_target(clo_formatted, format_clover(clo, template)),
+  # Clover is a static dataset so NCBI taxonomy shifts and needs to be 
+  # validated
+  tar_target(clo, readr::read_csv(clo_path) |>
+               dplyr::mutate(HostNCBIResolved = FALSE,
+                             PathogenNCBIResolved = FALSE)
+             ),
+  ## clean clover hosts ----
+  tar_target(clo_host_vec, clo |>
+               dplyr::pull(Host) %>%
+               unique() %>%
+               sort()),
+  tar_target(clo_host_table, jhdict(spnames = clo_host_vec)),
+  tar_target(
+    clo_host_table_path, readr::write_csv(clo_host_table, here::here("./Intermediate/CLOVERHostTax.csv"))
+  ),
+  tar_target(clo_hosts_clean, clo_clean_hosts(clo, clo_host_table)),
+  ## clean clover viruses ----
+  tar_target(clo_virus_vec, clo %>%
+               dplyr::pull(Pathogen) %>%
+               unique() %>%
+               sort()),
+  tar_target(clo_virus_table, jvdict(spnames = clo_virus_vec)),
+  tar_target(clo_virus_table_path, readr::write_csv(clo_virus_table, here::here("./Intermediate/GBVirusTax.csv"))),
+  tar_target(clo_virus_clean, clo_clean_viruses(clo_hosts_clean, clo_virus_table)),
+  
+  ## format clover data ----
+  tar_target(clo_formatted, format_clover(clo = clo_virus_clean,
+                                          clover_template = template)),
   tar_target(clo_formatted_path, readr::write_csv(clo_formatted, here::here("./Intermediate/Formatted/CLOVERFormatted.csv")))
 )
 
