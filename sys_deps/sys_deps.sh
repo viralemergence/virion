@@ -6,4 +6,5 @@ apt-get update && apt-get install -y --no-install-recommends \
           libfribidi-dev \
           gdal-bin \
           libgdal-dev \
-          libudunits2-dev
+          libudunits2-dev \
+          rsync

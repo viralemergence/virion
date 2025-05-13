@@ -53,18 +53,8 @@ jobs:
         with:
           name: CloverHostTable
           path: Intermediate/CLOVERHostTax.csv
-  Deploy:
-    runs-on: ubuntu-latest
-    needs: [test_targets]
-    steps:
-    - uses: actions/checkout@v3
-    - name: Save the artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: VIRION
-        path: Virion
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4.7.3
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: Virion # The folder the action should deploy.
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: Virion # The folder the action should deploy.
