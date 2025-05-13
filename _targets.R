@@ -33,6 +33,7 @@ initial_targets <- tar_plan(
   tar_target(ictv, read_current_msl(current_msl_path)),
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
+  tar_target(temp_csv_virion, readr::write_csv(template, here::here("Virion/Template.csv"))),
   tar_target(virus.test, c(
     "Adeno-associated virus - 3",
     "Adeno-associated virus 3B",

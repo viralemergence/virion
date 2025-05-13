@@ -41,12 +41,12 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(clo_host_table_path)
+          targets::tar_make(temp_csv_virion)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make(clo_host_table_path)
+          targets::tar_make(temp_csv_virion)
         shell: Rscript {0}
       - name: Save artifacts
         uses: actions/upload-artifact@v4
