@@ -64,7 +64,7 @@ jobs:
         name: VIRION
         path: Virion
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@4.7.3
+      uses: JamesIves/github-pages-deploy-action@v4.7.3
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: Virion # The folder the action should deploy.
