@@ -2,9 +2,9 @@ name: Test Github Pages Deploy
 
 # Controls when the action will run.
 on:
-  push:
-    branches:
-      fix/github_pages
+  # push:
+  #   branches:
+  #     fix/github_pages
   pull_request:
     branches:
       - main
