@@ -151,7 +151,7 @@ merge_clean_files_targets <- tar_plan(
                                                            PublicationYear = col_double()
                                                            )
                                 ),
-  virion_unproce$ssed = dplyr::bind_rows(clo_formatted, predict_all_formatted, gb_formatted),
+  virion_unprocessed = dplyr::bind_rows(clo_formatted, predict_all_formatted, gb_formatted),
   virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # high level checks ----
