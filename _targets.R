@@ -18,7 +18,7 @@ targets::tar_source()
 # when running locally
 # homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
- github_actions_path <- "/__t/juliaup/1.17.4/x64"
+github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
@@ -151,7 +151,7 @@ merge_clean_files_targets <- tar_plan(
                                                            PublicationYear = col_double()
                                                            )
                                 ),
-  virion_unprocessed = dplyr::bind_rows(clo_formatted, predict_all_formatted, gb_formatted),
+  virion_unproce$ssed = dplyr::bind_rows(clo_formatted, predict_all_formatted, gb_formatted),
   virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # high level checks ----
@@ -161,25 +161,25 @@ high_level_check_targets <- tar_plan(
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
-  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)),
+  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
   tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "Virion/Virion.csv.gz"))
 )
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
   tar_target(virion_has_taxa_id, virion_unique_path %>%  
-             filter(!is.na(HostTaxID),
+             dplyr::filter(!is.na(HostTaxID),
                     !is.na(VirusTaxID))
              ),
   tar_target(host_tax,virion_has_taxa_id %>%
-               select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostNCBIResolved) %>% 
-               distinct() %>% 
-               arrange(Host)
+               dplyr::select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostNCBIResolved) %>% 
+               dplyr::distinct() %>% 
+               dplyr::arrange(Host)
                ),
   tar_target(virus_tax, 
              virion_has_taxa_id %>% 
-               select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
-               arrange(Virus) %>%
-               unique()
+               dplyr::select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
+               dplyr::arrange(Virus) %>%
+               unique() ## ??? why not distinct
              ),
   tar_target(host_tax_path, write_csv(host_tax, "./Virion/TaxonomyHost.csv")),
   tar_target(virus_tax_path, write_csv(virus_tax, "./Virion/TaxonomyVirus.csv")),
