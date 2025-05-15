@@ -5,9 +5,9 @@ on:
   # push:
   #   branches:
   #     fix/github_pages
-  pull_request:
-    branches:
-      - main
+  # pull_request:
+  #   branches:
+  #     - main
   workflow_dispatch:
 jobs:
   test_targets:

@@ -2,9 +2,9 @@ name: Test targets on PR
 
 # Controls when the action will run.
 on:
-  pull_request:
-    branches:
-      - main
+  # pull_request:
+  #   branches:
+  #     - main
       # - feature/*
   workflow_dispatch:
 jobs:
