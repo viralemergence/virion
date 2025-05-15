@@ -12,6 +12,8 @@ VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https
 ## How to get VIRION
 
 For now, VIRION lives on Github in a fully open and reproducible format. Downloading the data directly from this website, or cloning the repository, is the easiest way to access the data. The full database is available in a single comprehensive file (see *Full database* below), but specific components of the data are also shared as individual files. Currently, all files are compressed in .csv.gz format to minimize storage requirements. The data can be unzipped using tools such as the `vroom` R package or the `CSV.jl` Julia library.
+For more information about using specific versions of the code or data, see the versioning section of the [repo wiki](https://github.com/viralemergence/virion/wiki/Development-process#releases---code-versioning)
+
 
 ### Download links
 
@@ -136,11 +138,13 @@ flowchart TB
 
 ## Additional information
 
+See the [repo wiki](https://github.com/viralemergence/virion/wiki) for additional information on development processes and github actions.
+
 ### Contact
 
-- For general questions about VIRION, please reach out to [Cecilia Sanchez](mailto:cecilia@viralemergence.org)
+- For general questions about VIRION, please reach out to [Collin Schwantes](mailto:collin@viralemergence.org) or [Cecilia Sanchez](mailto:cecilia@viralemergence.org)
 - For specific questions about the CLOVER dataset, please contact [Rory Gibb](mailto:rory.gibb.14@ucl.ac.uk)
-- For specific questions about the GitHub actions pipeline, please contact [Timothée Poisot](mailto:timothee.poisot@umontreal.ca)
+- For specific questions about the GitHub actions pipeline, please contact [Collin Schwantes](mailto:collin@viralemergence.org) or [Timothée Poisot](mailto:timothee.poisot@umontreal.ca)
 
 ### Changelog 
 
