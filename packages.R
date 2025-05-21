@@ -1,6 +1,7 @@
 library("data.table")
 library("dplyr")
 library("fs")
+library("gitcreds")
 library("here")
 library("JuliaCall")
 library("magrittr")
