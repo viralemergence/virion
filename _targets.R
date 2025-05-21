@@ -8,6 +8,15 @@ library(targets)
 library(tarchetypes) # Load other packages as needed.
 source("packages.R")
 
+## set targets options
+
+targets::tar_option_set(
+  format = "qs",
+  resources = targets::tar_resources(qs = targets::tar_resources_qs())
+  )
+
+# targets::tar_option_reset()
+
 # Run the R scripts in the R/ folder with your custom functions:
 targets::tar_source()
 
@@ -16,12 +25,12 @@ targets::tar_source()
 # location to your PATH in R
 
 # when running locally
-# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+# github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = github_actions_path)
+update_path(items_to_add = homebrew_path)
 
 # source julia packages
 source_julia_deps()
