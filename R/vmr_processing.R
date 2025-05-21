@@ -1,9 +1,7 @@
-#' .. content for \description{} (no empty lines) ..
-#'
-#' .. content for \details{} ..
+#' Read in current VMR spreadsheet
 #'
 #' @title
-#' @param current_vmr_path
+#' @param current_vmr_path Character. Path to vmr spreadsheet
 #' @return
 #' @author Albert Vill, Collin Schwantes
 #' @export
