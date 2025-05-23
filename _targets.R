@@ -16,12 +16,12 @@ targets::tar_source()
 # location to your PATH in R
 
 # when running locally
-# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+# github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = github_actions_path)
+update_path(items_to_add = homebrew_path)
 
 # source julia packages
 source_julia_deps()
@@ -36,7 +36,7 @@ initial_targets <- tar_plan(
              format = "file",
              cue = tar_cue(mode = "always")),
   tar_target(vmr, read_current_vmr(current_vmr_path)),
-  tar_target(phage_taxa, find_uniform_taxa(vmr, c("bacteria","archaea"))),
+  tar_target(phage_taxa, find_uniform_taxa(data = vmr, host = c("bacteria","archaea"))),
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
   tar_target(temp_csv_virion, readr::write_csv(template, here::here("Virion/Template.csv"))),
@@ -224,6 +224,17 @@ dissovle_virion_targets <- tar_plan(
   temporal_path = vroom_write(temporal, "./Virion/Temporal.csv.gz"),
   tar_target(virion_edge_list, get_virion_edge_list(virion_reduced_tax)),
   tar_target(virion_edge_list_path,write_csv(virion_edge_list, "./Virion/Edgelist.csv") )
+)
+
+# deposit data ----
+
+# Everything that is current on the gh-pages site plus more metadata 
+
+deposit_targets <- tar_plan(
+  # create metadata
+  
+  # update resources
+  # deposit data
 )
 
 # 
