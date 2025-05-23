@@ -1467,6 +1467,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3064037,canis familiaris papillomavirus type 25,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 3004164,cape dune mole-rat hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 1692171,cape sugarbird pox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
+2959993,caphthovirinae sp.,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 485388,capra hircus papillomavirus type 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2716974,capra nubiana gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1273575,capreolus herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -4623,6 +4624,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 334203,mupapillomavirus 1,mupapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
 334204,mupapillomavirus 2,mupapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
 1961783,mupapillomavirus 3,mupapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
+2809583,mupivirus sp.,mupivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 10366,murid betaherpesvirus 1,muromegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 28304,murid betaherpesvirus 2,muromegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2928567,murid herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
@@ -5367,6 +5369,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2200830,orthopoxvirus akhmetapox,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,TRUE
 2035302,orthopoxvirus sp.,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 10245,orthopoxvirus vaccinia,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,TRUE
+3422298,orthoreovirus mammalis,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,TRUE
 3158380,orthoreovirus papionis,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,TRUE
 75888,orthoreovirus papionis,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,TRUE
 2558258,orthoreovirus sp.,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
