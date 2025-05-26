@@ -1021,8 +1021,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2499680,betaarterivirus suid 1,betaarterivirus,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2734498,betaarterivirus timiclar,betaarterivirus,arteriviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 694003,betacoronavirus 1,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-694009,betacoronavirus pandemicum,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 3418604,betacoronavirus pandemicum,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
+694009,betacoronavirus pandemicum,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 3418615,betacoronavirus rousetti,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 694006,betacoronavirus rousetti,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,TRUE
 1928434,betacoronavirus sp.,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -1363,6 +1363,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 60879,cabassou virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2853199,cabavirus 5395,salivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2951506,cabillus tongarevae astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
+3377427,cacatua sanguinea papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2115842,cacatuid alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2604840,cacatuid alphaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3400319,caiman lizard barthadenovirus,barthadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
@@ -3909,6 +3910,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 670570,lepidotrigla alata iridovirus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 670536,lepidotrigla alata nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2490445,lepilemur pegivirus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
+3423310,lepomis macrochirus rhabdovirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2729004,leporid gammaherpesvirus 5,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2077302,leptonychotes weddellii papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2077303,leptonychotes weddellii papillomavirus 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -8378,6 +8380,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 12317,tobacco streak virus,ilarvirus,bromoviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2803562,tod virus-1,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2803563,tod virus-2,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
+3377428,todiramphus sanctus papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2809912,togaviridae sp.,,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2926576,toitoi alloherpesvirus 1,,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2926579,toitoi astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
