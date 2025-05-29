@@ -3326,6 +3326,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 223492,parabuteo unicinctus,parabuteo,accipitridae,accipitriformes,aves,TRUE
 27757,paracyprichromis brieni,paracyprichromis,cichlidae,cichliformes,actinopteri,TRUE
 71117,paradoxurus hermaphroditus,paradoxurus,viverridae,carnivora,mammalia,TRUE
+1967840,paradoxurus musangus,paradoxurus,viverridae,carnivora,mammalia,TRUE
 643839,paradoxurus zeylonensis,paradoxurus,viverridae,carnivora,mammalia,TRUE
 172271,parahyaena brunnea,parahyaena,hyaenidae,carnivora,mammalia,TRUE
 1286224,parahypsugo crassulus,parahypsugo,vespertilionidae,chiroptera,mammalia,TRUE
