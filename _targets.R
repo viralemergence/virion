@@ -31,6 +31,12 @@ initial_targets <- tar_plan(
              format = "file",
              cue = tar_cue(mode = "always")),
   tar_target(ictv, read_current_msl(current_msl_path)),
+  ## get Virus Metadata Resource
+  tar_target(current_vmr_path, download_current_msl(url = "https://ictv.global/vmr/current"),
+             format = "file",
+             cue = tar_cue(mode = "always")),
+  tar_target(vmr, read_current_vmr(current_vmr_path)),
+  tar_target(phage_taxa, find_uniform_taxa(vmr, c("bacteria","archaea"))),
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
   tar_target(temp_csv_virion, readr::write_csv(template, here::here("Virion/Template.csv"))),
@@ -157,7 +163,7 @@ merge_clean_files_targets <- tar_plan(
 # # high level checks ----
 high_level_check_targets <- tar_plan(
   ### maybe convert to data.table - we will see
-  tar_target(virion_no_phage, remove_phage(virion_unprocessed)),
+  tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa)),
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
