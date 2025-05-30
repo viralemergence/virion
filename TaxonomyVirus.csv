@@ -22,89 +22,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 340187,acyrthosiphon pisum virus,,,,,TRUE,FALSE
 3115872,adabscovirus betta1,,,,,TRUE,FALSE
 272636,adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-2558248,adenoviridae sp.,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115873,adenovirus acanthiza15342,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115874,adenovirus bat33390,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115875,adenovirus capreolus32301,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115876,adenovirus desmodus35011,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115878,adenovirus homo5,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115879,adenovirus macaca35148,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115880,adenovirus myodes38640,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115881,adenovirus ornithorhynchus4936,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115882,adenovirus papio32916,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710946,adenovirus predict_adv-13,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710947,adenovirus predict_adv-14,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710948,adenovirus predict_adv-15,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710949,adenovirus predict_adv-16,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710950,adenovirus predict_adv-17,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710951,adenovirus predict_adv-18,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710952,adenovirus predict_adv-19,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710953,adenovirus predict_adv-2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710954,adenovirus predict_adv-20,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710955,adenovirus predict_adv-21,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710956,adenovirus predict_adv-22,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710957,adenovirus predict_adv-23,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710958,adenovirus predict_adv-24,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710959,adenovirus predict_adv-25,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710960,adenovirus predict_adv-26,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710961,adenovirus predict_adv-27,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710962,adenovirus predict_adv-28,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710963,adenovirus predict_adv-29,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710964,adenovirus predict_adv-30,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710965,adenovirus predict_adv-31,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710966,adenovirus predict_adv-32,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710967,adenovirus predict_adv-33,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710968,adenovirus predict_adv-34,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710969,adenovirus predict_adv-35,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710970,adenovirus predict_adv-36,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710971,adenovirus predict_adv-37,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710972,adenovirus predict_adv-38,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710973,adenovirus predict_adv-39,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710974,adenovirus predict_adv-40,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710975,adenovirus predict_adv-41,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710976,adenovirus predict_adv-42,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710977,adenovirus predict_adv-43,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710978,adenovirus predict_adv-44,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710979,adenovirus predict_adv-45,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710980,adenovirus predict_adv-46,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710981,adenovirus predict_adv-47,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710982,adenovirus predict_adv-48,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710983,adenovirus predict_adv-49,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710984,adenovirus predict_adv-50,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710985,adenovirus predict_adv-51,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710986,adenovirus predict_adv-52,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710987,adenovirus predict_adv-53,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710988,adenovirus predict_adv-54,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2558897,adenovirus predict_adv-55,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710989,adenovirus predict_adv-56,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710990,adenovirus predict_adv-57,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710991,adenovirus predict_adv-58,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710992,adenovirus predict_adv-59,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710993,adenovirus predict_adv-60,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710994,adenovirus predict_adv-61,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710995,adenovirus predict_adv-62,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710996,adenovirus predict_adv-63,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710997,adenovirus predict_adv-64,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710998,adenovirus predict_adv-65,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2558898,adenovirus predict_adv-66,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2558899,adenovirus predict_adv-67,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2710999,adenovirus predict_adv-68,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1717143,adenovirus predict_adv-69,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2558900,adenovirus predict_adv-70,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711000,adenovirus predict_adv-71,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711001,adenovirus predict_adv-73,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711002,adenovirus predict_adv-74,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711003,adenovirus predict_adv-75,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711004,adenovirus predict_adv-77,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711005,adenovirus predict_adv-78,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711006,adenovirus predict_adv-79,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711007,adenovirus predict_adv-80,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711008,adenovirus predict_adv-81,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711009,adenovirus predict_adv-87,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2558901,adenovirus predict_adv-90,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2711010,adenovirus predict_adv-91,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1967472,adenovirus sp.,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115884,adenovirus zootoca35082,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2832510,adintoviridae sp.,,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
 3115885,adintovirus abramis16382,,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
 3115886,adintovirus ambystoma12263,,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
@@ -168,10 +85,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 12480,african green monkey polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 338079,african green monkey simian foamy virus,spumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 3239073,african green monkey-like simian foamy virus,spumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-2591409,african pygmy hedgehog adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 10497,african swine fever virus,asfivirus,asfarviridae,asfuvirales,pokkesviricetes,TRUE,FALSE
-270904,agamid adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3037427,agile wallaby adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3081623,agile wallaby chaphamaparvovirus 1,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3081624,agile wallaby chaphamaparvovirus 2,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3081625,agile wallaby polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
@@ -193,7 +107,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2163422,akodon montensis polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2811222,albatrosspox virus,,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 3036203,alcelaphine herpesvirus 3,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-3070654,aldabra tortoise adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3408569,alectoris chukar avian leukosis like virus,alpharetrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 2169692,alefpapillomavirus 1,alefpapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
 3051412,aleptorquevirus lepor1,aleptorquevirus,anelloviridae,,,TRUE,TRUE
@@ -353,7 +266,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 175816,american bison gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1980455,amga orthohantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3403315,amphiprion percula tobanivirus,,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-1743020,amphisbaenian adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1986960,ampivirus apilisi,ampivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,TRUE
 2955330,amplylivirus cinereus,amplylivirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2934318,amugulang hantann virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
@@ -410,17 +322,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2175116,anguilla marmorata adomavirus 1,,,,,TRUE,FALSE
 2940173,anguilla rostrata adomavirus,,,,,TRUE,FALSE
 1743015,anguillid herpesvirus 2,cyprinivirus,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1342749,anolis adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1342750,anolis adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1585653,anolis carolinensis ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2303005,anolis sagrei adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303006,anolis sagrei adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303007,anolis sagrei adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303008,anolis sagrei adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303009,anolis sagrei adenovirus 5,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303010,anolis sagrei adenovirus 6,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303011,anolis sagrei adenovirus 7,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2303012,anolis sagrei adenovirus 8,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1585654,anolis sagrei ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2737702,anoura geoffroyi gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2794569,anser anser dependoparvovirus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -512,7 +414,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707193,artemyev virus,,,,,TRUE,FALSE
 2697055,arteriviridae sp.,,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3384639,artesian virus,,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-2211153,artibeus lituratus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2781353,artibeus lituratus betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2211154,artibeus lituratus papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2211152,artibeus lituratus parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -567,7 +468,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 178530,astrovirus sp.,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2052560,asturias virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2609866,astyanax tetra cavefish adintovirus,,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
-2671518,atadenovirus sp.,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1881005,ateles paniscus cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 209266,ateles paniscus lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1892857,atlantic cod betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -601,9 +501,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3051984,aveparvovirus gruiform1,aveparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 2715213,aveparvovirus sp.,aveparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2707194,averyanov virus,,,,,TRUE,FALSE
-3250174,aviadenovirus hydropericardii,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-2955388,aviadenovirus leucophthalmi,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-2217649,aviadenovirus sp.,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2936949,avian associated bastrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2936950,avian associated bastrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2936951,avian associated calicivirus 1,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -777,7 +674,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3162778,barramundi picorna-like virus 2,,,picornavirales,pisoniviricetes,TRUE,FALSE
 1930507,basavirus sp.,,,,,TRUE,FALSE
 3044602,bastrovirus sp.,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-2711011,bat adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3071093,bat aichivirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2419667,bat alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 ,bat alphacoronavirus/gs2013/hub2013,alphacoronavirus,coronaviridae,nidovirales,,FALSE,FALSE
@@ -916,8 +812,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3128441,bat kobuvirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3129298,bat ledantevirus,ledantevirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 3400610,bat ledantevirus 2,ledantevirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-740971,bat mastadenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1146877,bat mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3128412,bat mischivirus 4,mischivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3128413,bat mischivirus 5,mischivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2560340,bat mumps orthorubulavirus,orthorubulavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -1165,14 +1059,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2585335,birnaviridae sp.,,birnaviridae,,,TRUE,FALSE
 41996,birnavirus sp.,,birnaviridae,,,TRUE,FALSE
 2707198,biscoe virus,,,,,TRUE,FALSE
-2301493,black lemur adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301494,black lemur adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301495,black lemur adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3238854,black pinesnake adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301496,black-and-white ruffed lemur adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2304615,black-headed python circovirus 1,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2099352,blackbird arilivirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
-2936980,blackbird siadenovirus,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2776961,blencathra virus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2951502,blenniella astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2951496,blenniella picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -1238,7 +1126,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2808996,bornaviridae sp.,,bornaviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2056257,bornavirus sp.,,bornaviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2170193,bornean orangutan simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-3418866,bos adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3413222,bos astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3413223,bos hunnivirus 1,hunnivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3413224,bos kobuvirus 1,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -1284,10 +1171,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3065057,boulengerochromis microlepis metahepadnavirus,metahepadnavirus,hepadnaviridae,blubervirales,revtraviricetes,TRUE,FALSE
 2716969,bovidae gammaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2716972,bovidae gammaherpesvirus 5,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-2606475,bovine adenovirus 11,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-130500,bovine adenovirus e,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1435485,bovine astrovirus,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-130499,bovine atadenovirus d,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3145025,bovine boosepivirus,boosepivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2731271,bovine copiparvovirus 3,copiparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1105057,bovine endogenous retrovirus beta 1,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
@@ -1295,9 +1179,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3023698,bovine hunnivirus,hunnivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2876206,bovine kirkovirus,,,,,TRUE,FALSE
 11901,bovine leukemia virus,deltaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-129953,bovine mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-129950,bovine mastadenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-129952,bovine mastadenovirus c,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3035573,bovine narmovirus 1,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1661258,bovine nebovirus,nebovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1986112,bovine nidovirus 1,bostovirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -1320,10 +1201,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2971261,bovine-like parainfluenza virus 3,respirovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2843877,bovismacovirus bovas1,bovismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,TRUE
 2843878,bovismacovirus bovas2,bovismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,TRUE
-2853733,bowhead whale adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-572143,box turtle adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1766570,box turtle ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-3237126,box turtle testadenovirus 3,testadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2707200,bransfield virus,,,,,TRUE,FALSE
 2604331,brazilian bird anellovirus type 1,,anelloviridae,,,TRUE,FALSE
 2604332,brazilian bird anellovirus type 2,,anelloviridae,,,TRUE,FALSE
@@ -1340,7 +1218,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707201,bruce virus,,,,,TRUE,FALSE
 2776920,bruthen virus,phlebovirus,phenuiviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2489502,bubo bubo herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
-608831,budgerigar adenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2609873,bueycito anole adomavirus,,,,,TRUE,FALSE
 2950729,bufavirus sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1209382,bufavirus-1,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -1366,7 +1243,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3377427,cacatua sanguinea papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2115842,cacatuid alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2604840,cacatuid alphaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-3400319,caiman lizard barthadenovirus,barthadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1158192,caiman lizard rhabdovirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 169174,calabazo virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 870710,calhevirus 1,,,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -1374,10 +1250,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2219047,calhevirus 3,,,picornavirales,pisoniviricetes,TRUE,FALSE
 1916234,caliciviridae sp.,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2936928,california hare coltivirus,coltivirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
-2259112,california sea lion adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3048514,california sea lion adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3048515,california sea lion adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3048516,california sea lion adenovirus 5,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1073951,california sea lion astrovirus 10,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1073952,california sea lion astrovirus 11,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 645428,california sea lion astrovirus 3,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -1448,7 +1320,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2719550,canine chapparvovirus,chapparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1249509,canine hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 1836608,canine kobuvirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-10537,canine mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 11232,canine morbillivirus,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2986277,canine norovirus,norovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1134411,canine papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -1488,7 +1359,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3027785,capreolus pygargus genomovirus 1,,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 3027786,capreolus pygargus genomovirus 4,,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 3027771,capreolus pygargus kobuvirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-389485,caprine adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2870633,caprine astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2909748,caprine hunnivirus,hunnivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 169959,caprine lentivirus,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
@@ -1545,7 +1415,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2136037,carbovirus queenslandense,carbovirus,bornaviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2136038,carbovirus tapeti,carbovirus,bornaviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 1437125,cardamones virus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-3141913,cardioderma bat adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3141857,cardioderma bat astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3141858,cardioderma bat calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3119326,cardioderma bat coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -1586,7 +1455,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2794470,cecropis daurica parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2560375,central chimpanzee simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 2170194,central cimpanzee simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-1036587,central netted dragon adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1390975,centroberyx rubricaudus ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2716975,cephalophinae gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 670527,cephalopholis argus nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -1598,10 +1466,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 691496,cercocebus atys lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 50292,cercopithecine betaherpesvirus 5,cytomegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 172652,cercopithecine herpesvirus 3,,,herpesvirales,herviviricetes,TRUE,FALSE
-1916691,cercopithecus campbelli adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 308706,cercopithecus cephus cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 291843,cercopithecus cephus lymphocrytovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916692,cercopithecus diana adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 291839,cercopithecus hamlyni lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1869107,cercopithecus kandti cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1869105,cercopithecus kandti lymphocryptovirus,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -1635,10 +1501,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1276182,chaerephon polyomavirus 2,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2917966,chaerephon pumilus alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 670528,chaetodon bennetti nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-2690225,chalinolobus gouldii adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2687252,chalinolobus gouldii alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2687258,chalinolobus gouldii paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2690226,chalinolobus morio adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2687255,chalinolobus morio alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2687259,chalinolobus morio paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2989482,chalinolobus tuberculatus alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -1662,7 +1526,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3077552,chalinolobus tuberculatus reovirus,,,reovirales,resentoviricetes,TRUE,FALSE
 3077553,chalinolobus tuberculatus rhabdovirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2801034,chamaeleonid herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
-346175,chameleon adenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 40052,changuinola virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 910245,channel catfish reovirus 730,,,reovirales,resentoviricetes,TRUE,FALSE
 596240,chanos chanos nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -1813,7 +1676,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 37124,chikungunya virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2716656,chiles partiti-like virus,,partitiviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1608440,chimeric virus 14,,,,,TRUE,FALSE
-2510842,chimney swift adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1743410,chimpanzee anellovirus,,anelloviridae,,,TRUE,FALSE
 2170109,chimpanzee associated porprismacovirus 1,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2170110,chimpanzee associated porprismacovirus 2,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -1828,19 +1690,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2116326,chinese broad-headed pond turtle astro-like virus,,,,,TRUE,FALSE
 2116372,chinese broad-headed pond turtle hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 979227,chinese giant salamander virus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-3399616,chinese soft-shelled turtle adenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2814814,chinese soft-shelled turtle flavivirus,orthoflavivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2116373,chinese softshell turtle hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2116177,chinese softshell turtle picornavirus 2,,,picornavirales,pisoniviricetes,TRUE,FALSE
 2587490,chinook aquareovirus,aquareovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1986113,chinook salmon nidovirus 1,oncotshavirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-1434087,chinstrap penguin adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434089,chinstrap penguin adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434090,chinstrap penguin adenovirus 4,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434091,chinstrap penguin adenovirus 5,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434092,chinstrap penguin adenovirus 6,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434093,chinstrap penguin adenovirus 7,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1434094,chinstrap penguin adenovirus 8,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2734500,chinturpovirus 1,pontunivirus,cremegaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1177758,chipapillomavirus 1,chipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
 1177759,chipapillomavirus 2,chipapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
@@ -1853,7 +1707,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2928394,chloris chloris herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 291836,chlorocebus aethiops lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 691497,chlorocebus aethiops lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916693,chlorocebus sabaeus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1679172,chobar gorge virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 3028504,chodsigoa hypsibia henipavirus,henipavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 670559,choerodon azurio iridovirus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
@@ -1933,7 +1786,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2919018,civet picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1170232,clown fish nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2725395,clownfish picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
-2591362,coastal bearded dragon adenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3135977,cod amnoonvirus 1,,amnoonviridae,articulavirales,insthoviricetes,TRUE,FALSE
 2707206,coelho virus,,,,,TRUE,FALSE
 2832675,colacovirus sp.,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -1947,10 +1799,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3141869,coleura bat reovirus,,,reovirales,resentoviricetes,TRUE,FALSE
 3141870,coleura bat rhabdovirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 203137,colobus badius cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916694,colobus guereza adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076298,colobus guereza adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076299,colobus guereza adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076300,colobus guereza adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 203139,colobus guereza cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 212720,colobus guereza lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 691498,colobus polykomos lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -1983,16 +1831,9 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3127195,common gecko associated bunya-like virus,,,bunyavirales,ellioviricetes,TRUE,FALSE
 3127196,common gecko astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3351100,common grenadier circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-2915594,common lizard adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301497,common marmoset adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 540070,common midwife toad virus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-1530274,common pipistrelle adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1530275,common pipistrelle adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2776789,common pipistrelle bat rotavirus,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 437901,common seabream nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-2709242,common squirrel monkey adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301499,common squirrel monkey adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301500,common squirrel monkey adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3351101,common starling circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 3049970,condorpox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2707207,cook virus,,,,,TRUE,FALSE
@@ -2089,7 +1930,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1330491,cosavirus a,cosavirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2844020,cosmacovirus bovas1,cosmacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,TRUE
 39444,cotia virus,oryzopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-2301501,cotton-top tamarin adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1539386,covert mortality nodavirus,,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 10243,cowpox virus,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 12066,coxsackievirus,enterovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -2132,7 +1972,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2916856,crotalus viridis tobanivirus,,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2976362,crow astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3351102,crow circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-2301502,crowned lemur adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2942216,crowpox virus,,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2569971,crucivirus sp.,,,,,TRUE,FALSE
 2028225,ctenolabrus rupestris betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -2249,12 +2088,10 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707210,davis virus,,,,,TRUE,FALSE
 2716658,davola partiti-like virus,,partitiviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 3030940,dawn bat paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1104499,death adder adenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2832696,decacovirus sp.,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 670531,decapterus kurroides nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 685508,decapterus macrosoma nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 670561,decapterus russelli iridovirus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2169706,deer atadenovirus a,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 104223,deer malignant catarrhal fever virus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2997411,dehong virus,,,,,TRUE,FALSE
 2817778,delphin genomovirus 1,,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
@@ -2335,7 +2172,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1954226,diphylla ecaudata gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1537270,diplodus vulgaris betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 3041004,divaea bat lyssavirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-3078370,djungarian hamster adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1930308,dnistrovskyi 408 orbivirus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 2844091,dobrovirus bufonis,dobrovirus,kolmioviridae,,,TRUE,TRUE
 2421283,dode virus,,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
@@ -2376,11 +2212,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2955836,duamitovirus scsc3,duamitovirus,mitoviridae,cryppavirales,howeltoviricetes,TRUE,TRUE
 2707215,dubrovin virus,,,,,TRUE,FALSE
 2875326,duck adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-2233537,duck adenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2726020,duck adenovirus 4,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1897654,duck astrovirus 3,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-130328,duck atadenovirus a,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2875327,duck aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2212758,duck calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2605442,duck calicivirus 2,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2994410,duck circovirus 3,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -2465,9 +2297,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1177766,dyozetapapillomavirus 1,dyozetapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
 1410510,dzifa herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 2304054,eagle poxvirus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-1215919,eastern box turtle adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3238689,eastern box turtle atadenovirus 3,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3238690,eastern box turtle atadenovirus 4,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2762494,eastern chimpanzee porprismacovirus 1,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2762495,eastern chimpanzee porprismacovirus 2,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2762496,eastern chimpanzee porprismacovirus 3,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -2476,9 +2305,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2762499,eastern chimpanzee porprismacovirus 6,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2170195,eastern chimpanzee simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 11021,eastern equine encephalitis virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
-3238691,eastern indigo snake adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2734571,eastern kangaroopox virus,macropopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-2301503,eastern lesser bamboo lemur adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2830709,eastern mosquitofish arenavirus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2830722,eastern mosquitofish bastrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2830712,eastern mosquitofish hepevirus,,hepeviridae,hepelivirales,alsuviricetes,TRUE,FALSE
@@ -2499,8 +2326,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 690692,egyptian fruit bat betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 690693,egyptian fruit bat gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3141874,eidolon bat calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2717680,eidolon bat coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 ,eidolon bat coronavirus,betacoronavirus,coronaviridae,nidovirales,,FALSE,FALSE
+2717680,eidolon bat coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 983924,eidolon bat coronavirus/kenya/ky24/2006,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3141875,eidolon bat papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 3141876,eidolon bat picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -2520,10 +2347,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3153944,eidolon dupreanum sapovirus 3,sapovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3153945,eidolon dupreanum sapovirus 4,sapovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3144112,eidolon dupreanum teschovirus 1,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2039267,eidolon helvum adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1335467,eidolon helvum adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1335468,eidolon helvum adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1335469,eidolon helvum adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1335470,eidolon helvum herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
 1335471,eidolon helvum herpesvirus 2,,,herpesvirales,herviviricetes,TRUE,FALSE
 1335472,eidolon helvum herpesvirus 3,,,herpesvirales,herviviricetes,TRUE,FALSE
@@ -2555,7 +2378,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 353638,elephantid herpesvirus 4,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 439203,elephantid herpesvirus 6,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 462297,elephas maximus gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-3381501,eliomys quercinus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3344808,eliomys quercinus polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1834526,elk gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1834527,elk gammaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -2570,7 +2392,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2794479,emberiza tristrami parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1536430,emydid herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 1495287,emydid herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-2954873,emydoidea adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2726021,emydoidea blandingii herpesvirus 2,,,herpesvirales,herviviricetes,TRUE,FALSE
 2079459,emydoidea herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
 3065020,enantiopus melanogenys astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -2670,8 +2491,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1281455,equine hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 48410,equine herpesvirus sp.,,,herpesvirales,herviviricetes,TRUE,FALSE
 2876208,equine kirkovirus,,,,,TRUE,FALSE
-129954,equine mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-129955,equine mastadenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2676272,equine molluscum contagiosum-like virus,molluscipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2025828,equine papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 1686431,equine parapoxvirus,parapoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
@@ -2692,7 +2511,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3230302,erinaceus europaeus arenavirus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2772455,erinaceus hedgehog coronavirus cw_6c,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3046682,erinaceus hedgehog seoul orthohantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-1916695,erythrocebus patas adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 230177,erythrocebus patas lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1543320,erythrocytic necrosis virus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 3052188,erythroparvovirus pinniped1,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
@@ -2703,9 +2521,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052193,erythroparvovirus rodent1,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 3052194,erythroparvovirus ungulate1,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 1862331,esocid herpesvirus 1,,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-2844269,espurtavirus simiicola,espurtavirus,blumeviridae,timlovirales,leviviricetes,TRUE,TRUE
-2609082,estrildidae adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2609083,estrildidae adenovirus 2,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 464940,estuary cod nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2501969,etaarterivirus ugarco 1,etaarterivirus,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 197771,etapapillomavirus 1,etapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,TRUE
@@ -2721,19 +2536,15 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052200,etatorquevirus viver3,etatorquevirus,anelloviridae,,,TRUE,TRUE
 1862978,etheostoma fonticola aquareovirus,aquareovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 40056,eubenangee virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
-270903,eublepharid adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2911960,eumops bonariensis associated gemycircularvirus 4,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2911884,eumops bonariensis papillomavirus type 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2911885,eumops bonariensis papillomavirus type 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-3078371,eurasian beaver adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3078372,eurasian beaver adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3351103,eurasian blackcap circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 3406594,eurasian blackcap polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 3351104,eurasian jay circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2816966,eurasian otter gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1446361,eurasian oystercatcher coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3406595,eurasian tree sparrow polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-3078373,european adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3035005,european badger vesivirus,vesivirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 38768,european bat lyssavirus,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2922908,european bee-eater circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -2743,9 +2554,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3395328,european felid amdoparvovirus 1,amdoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3351105,european goldfinch circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 3406596,european goldfinch polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-3078374,european ground squirrel adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3078375,european ground squirrel adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3078376,european ground squirrel adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3395329,european mustelid amdoparvovirus 1,amdoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2565896,european roller astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2083198,everglades virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
@@ -2753,7 +2561,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2747210,eyach coltivirus,coltivirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1593423,faeces associated gemycircularvirus 1,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2928397,falco tinnunculus herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
-692069,falcon aviadenovirus a,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1964370,falcon picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1963254,fall chinook aquareovirus,aquareovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 333342,fallow deer lymphotropic herpesvirus,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -2764,7 +2571,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1027468,farmington virus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1965074,fathead minnow nidovirus 1,bafinivirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3004170,featherfin cichlid hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-2909268,felid mastadenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2421386,feline alphacoronavirus 1,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3388480,feline associated cyclovirus,,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 1389204,feline astrovirus 2,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -2790,7 +2596,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 10921,feline rotavirus,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 655222,feline sarcoid-associated papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2834154,feline stool-associated circular virus,,,,,TRUE,FALSE
-2067749,felis catus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1928473,felis catus papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2704502,felis catus papillomavirus 6,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2025339,felis catus papillomavirus type 5,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -2833,14 +2638,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 12110,foot-and-mouth disease virus,aphthovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 48544,fort morgan virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2933792,four-toed hedgehog papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1354736,fowl adenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-172858,fowl adenovirus 12,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-190061,fowl aviadenovirus a,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-190062,fowl aviadenovirus b,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-190063,fowl aviadenovirus c,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-190064,fowl aviadenovirus d,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-190065,fowl aviadenovirus e,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1972696,fowl aviadenovirus sp.,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 10261,fowlpox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 1328057,fox adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1328104,fox astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -2858,7 +2655,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3032433,freshwater turtle neural virus 1,chuvivirus,chuviridae,jingchuvirales,monjiviricetes,TRUE,FALSE
 2794507,fringilla montifringilla parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3004184,frog pestivirus,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-298331,frog siadenovirus a,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 10493,frog virus 3,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 1194635,fruit bat parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2707220,fuchs virus,,,,,TRUE,FALSE
@@ -2988,7 +2784,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 683900,gazza minuta nervous necrosis virus,,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 980879,gbagroube virus,arenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 1647921,geelong paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-346176,gekko adenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3390764,gekko chinensis astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3390765,gekko chinensis picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 2202566,geminiviridae sp.,,geminiviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
@@ -3089,7 +2884,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1504565,genet fecal picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 2202565,genomoviridae sp.,,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2707191,gentoo penguin virus,deltacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
-1530276,geoffroy's bat adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1390985,gephyroberyx darwinii ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2942126,gerbil astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2913445,gerbil hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
@@ -3120,9 +2914,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2939386,gilthead seabream picornavirus,potamipivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3004185,glass knifefish pestivirus,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2781101,glossophaga soricina betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-3230291,glyptemys adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3230292,glyptemys adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3230296,glyptemys adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1536431,glyptemys herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 2461425,goat astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2461431,goat blood associated circularviruslike virus,,,,,TRUE,FALSE
@@ -3146,9 +2937,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 681647,golden pompano nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2855312,golden shiner toti-like virus 1,,totiviridae,ghabrivirales,chrymotiviricetes,TRUE,FALSE
 1856030,golden shiner totivirus,,totiviridae,ghabrivirales,chrymotiviricetes,TRUE,FALSE
-2301504,golden-headed lion tamarin adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1286776,goldfish nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-1170688,goose adenovirus 5,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1349999,goose astrovirus,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2910303,goose astrovirus 1,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2810457,goose astrovirus 2,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -3158,29 +2947,19 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2830620,goose pegivirus 1,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2830621,goose pegivirus 2,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 3350144,goose picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-1399589,gorilla beringei beringei adenovirus 7,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1869108,gorilla beringei beringei cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1962169,gorilla beringei beringei cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1962168,gorilla beringei beringei cytomegalovirus 2,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1869106,gorilla beringei beringei lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1792572,gorilla beringei beringei polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1869110,gorilla beringei beringei rhadinovirus 1,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1399590,gorilla beringei graueri adenovirus 8,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1399591,gorilla beringei graueri adenovirus 9,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1790071,gorilla beringei graueri polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1236396,gorilla beringei graueri polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 ,gorilla bocavirus-1,bocaparvovirus,parvoviridae,picornavirales,,FALSE,FALSE
 ,gorilla cytomegalovirus 2,cytomegalovirus,herpesviridae,herpesvirales,,FALSE,FALSE
-1916696,gorilla gorilla adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076301,gorilla gorilla beringei adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076302,gorilla gorilla beringei adenovirus 4,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076303,gorilla gorilla beringei adenovirus 5,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076304,gorilla gorilla beringei adenovirus 6,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 660661,gorilla gorilla cytomegalovirus 1.1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 660662,gorilla gorilla cytomegalovirus 2.1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 660663,gorilla gorilla cytomegalovirus 2.2,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1076305,gorilla gorilla gorilla adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076306,gorilla gorilla gorilla adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1790070,gorilla gorilla gorilla polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1236397,gorilla gorilla gorilla polyomavirus 2,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1543219,gorilla gorilla herpesvirus 7,roseolovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -3193,7 +2972,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2558522,gorilla polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2558523,gorilla polyomavirus 2,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1285463,gou virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-1391178,gouldian finch adenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1221219,gouldian finch circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 3406597,gouldian finch polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2976376,grammomys betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -3203,9 +2981,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2776799,grapevine red globe-like virus,,,,,TRUE,FALSE
 2976363,graphiurus murinus adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3136006,grass carp influenza-like virus,,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
-2301505,gray-bellied night monkey adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 204269,great island virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
-1146876,great tit siadenovirus a,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3004173,greater mouse-eared bat hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 ,green monkey lymphocryptovirus/marrow/cii-040,lymphocryptovirus,herpesviridae,herpesvirales,,FALSE,FALSE
 ,green monkey lymphocryptovirus/marrow/cii-051,lymphocryptovirus,herpesviridae,herpesvirales,,FALSE,FALSE
@@ -3270,9 +3046,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1105348,guinea fowl astrovirus,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1267906,guinea fowl circovirus,,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2817032,guinea fowl picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-47901,guinea pig adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3078377,guinea pig adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1306817,gull adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2605444,gull coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2605443,gull metapneumovirus,metapneumovirus,pneumoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2562547,gull papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -3336,7 +3109,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2730539,harbor porpoise alphavirus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 679171,harbor seal coronavirus 1,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2730082,harbor seal picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
-1958807,harbour porpoise adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2830721,hardyhead chuvirus,,chuviridae,jingchuvirales,monjiviricetes,TRUE,FALSE
 1743398,hare calicivirus,lagovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3052213,hartmanivirus brazilense,hartmanivirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,TRUE
@@ -3374,7 +3146,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2917315,hedgehog dicipivirus 3,dicipivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2315400,hedgehog herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 2884278,hedwig virus,,peribunyaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-270906,helodermatid adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1746170,helodermatid herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3390766,hemidactylus frenatus arenavirus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3390767,hemidactylus frenatus astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -3473,7 +3244,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2912445,horse circo-like virus,,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 3068538,horseshoe bat sarbecovirus,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2039492,house shrew astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-2358482,howler monkey adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2116330,huanan hylidae astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1314972,huangpi virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 1922974,hubei noda-like virus 19,,,,,TRUE,FALSE
@@ -3510,12 +3280,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2844966,huchismacovirus chicas2,huchismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,TRUE
 2809473,huchismacovirus sp.,huchismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2021738,hudisavirus sp.,,,,,TRUE,FALSE
-3043599,human adenovirus 108,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1904885,human adenovirus 60,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1904886,human adenovirus 76,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1904888,human adenovirus 78,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2461378,human adenovirus 86,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1907210,human adenovirus sp.,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 10298,human alphaherpesvirus 1,simplexvirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2778524,human anellovirus zj-ad 1,,anelloviridae,,,TRUE,FALSE
 2169934,human associated huchismacovirus 1,huchismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -3548,13 +3312,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 12721,human immunodeficiency virus,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 2927897,human lung cancer-associated polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 341730,human mammary tumor virus,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-129875,human mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-108098,human mastadenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-129951,human mastadenovirus c,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-130310,human mastadenovirus d,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-130308,human mastadenovirus e,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-130309,human mastadenovirus f,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-536079,human mastadenovirus g,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2560525,human orthorubulavirus 2,orthorubulavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2560526,human orthorubulavirus 4,orthorubulavirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 10566,human papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -3668,7 +3425,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2951518,istigobius rigillus parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2922274,italian wall lizard associated cyclovirus 1,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 261204,itapua hantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-2845024,ivolevirus faecicola,ivolevirus,blumeviridae,timlovirales,leviviricetes,TRUE,TRUE
 11746,jaagsiekte sheep retrovirus,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 436077,jabora virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 1585656,japalura splendida ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
@@ -3791,9 +3547,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707229,kornilov virus,,,,,TRUE,FALSE
 2707230,korotkevich virus,,,,,TRUE,FALSE
 2042174,kotalahti bat lyssavirus,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1897653,kowari adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2707231,krenkel virus,,,,,TRUE,FALSE
-1530277,kuhl's pipistrelle adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2448017,kuka mita hah virus 1,reptarenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2497867,kumba picobirna-like virus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 1755590,kunsagivirus a,kunsagivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -3804,8 +3558,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2028226,labrus bergylta betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 930198,lacerta monticola erythrocytic virus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 1585657,lacerta monticola ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-1743021,lacertid adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1743022,lacertid adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1232896,lagenorhynchus alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3138818,lagomorph hepacivirus,,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2922427,lake sturgeon herpesvirus,,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -3878,9 +3630,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3400660,lemniscomys striatus muarterivirus,muarterivirus,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2976542,lemniscomys striatus polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2976380,lemniscomys striatus polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-2301506,lemur adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2170115,lemur associated porprismacovirus 1,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
-3043422,lemur mastadenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 11657,lentivirus bovimdef,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,TRUE
 3418645,lentivirus bovimdef,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,TRUE
 3418646,lentivirus bovjem,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,TRUE
@@ -3958,7 +3708,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3068941,lontra longicaudis gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 670537,lophiomus setigerus nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 291842,lophocebus albigena lymphocrytovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916697,lophocebus aterrimus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 987113,lophocebus aterrimus lymphocryptovirus 1,lymphocryptovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 987113,lophocebus aterrimus lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 ,lophocebus foamy virus,spumavirus,retroviridae,ortervirales,,FALSE,FALSE
@@ -3989,7 +3738,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1955165,luteoviridae sp.,,,tolivirales,tolucaviricetes,TRUE,FALSE
 2683335,lutjanus campechanus-associated papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 670571,lutjanus gibbus iridovirus,,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2023343,lutrine adenovirus type 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2751163,lycalopex gymnocercus torque teno virus 1,alphatorquevirus,anelloviridae,,,TRUE,FALSE
 2751164,lycalopex gymnocercus torque teno virus 2,alphatorquevirus,anelloviridae,,,TRUE,FALSE
 2734516,lycodon tobanivirus 1,lyctovirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -4042,11 +3790,10 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 12538,lyssavirus mokola,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 11292,lyssavirus rabies,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 746543,lyssavirus shimoni,lyssavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
-1076307,macaca fascicularis adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 308703,macaca fascicularis cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2663246,macaca fascicularis gammapapillomavirus,gammapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1195658,macaca fascicularis lymphocryptovirus,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1195658,macaca fascicularis lymphocryptovirus,lymphocryptovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
+1195658,macaca fascicularis lymphocryptovirus,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 212722,macaca fascicularis lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 57581,macaca fascicularis papillomavirus,betapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2763909,macaca fascicularis picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
@@ -4056,7 +3803,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2663259,macaca fascicularis stool-associated virus,,,,,TRUE,FALSE
 221244,macaca fuscata lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2506204,macaca fuscata papillomavirus 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1076308,macaca mulatta adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2499223,macaca mulatta feces associated virus 1,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2499227,macaca mulatta feces associated virus 5,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
 2499228,macaca mulatta feces associated virus 6,porprismacovirus,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -4148,7 +3894,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2670734,magpiepox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2874139,magpiepox virus 2,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 934028,mahaffey road virus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2845563,mahrahovirus simiicola,mahrahovirus,,,leviviricetes,TRUE,TRUE
 1883431,makokou virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2707239,maksutov virus,,,,,TRUE,FALSE
 670538,malakichthys elegans nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -4245,7 +3990,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 887570,mandrill polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 144210,mandrillus betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 144209,mandrillus cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916698,mandrillus sphinx adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 221690,mandrillus sphinx lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1766829,mangshi virus,seadornavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1562051,manhattan parechovirus,parechovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -4271,11 +4015,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 37108,mardivirus meleagridalpha1,mardivirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 3048326,mardivirus spheniscidalpha1,mardivirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 79600,marine birnavirus,aquabirnavirus,birnaviridae,,,TRUE,FALSE
-2301507,marmoset adenovirus 1.1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301508,marmoset adenovirus 1.2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3117544,marmoset morbillivirus,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2777468,marmoset pegivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-2915134,marmot adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2800896,marmot associated feces virus 1,,,,,TRUE,FALSE
 2800897,marmot associated feces virus 2,,,,,TRUE,FALSE
 2800898,marmot associated feces virus 3,,,,,TRUE,FALSE
@@ -4306,8 +4047,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2161805,marmot sapovirus,sapovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2707240,marr virus,,,,,TRUE,FALSE
 2497568,marsupial adeno-associated virus 1,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-2023337,marten adenovirus type 1,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2023342,marten adenovirus type 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1834529,marten alphaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2706556,marten alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2706557,marten alphaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -4320,16 +4059,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2831903,martes foina papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2984884,maser virus,,,,,TRUE,FALSE
 11855,mason-pfizer monkey virus,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-3136603,mastadenovirus dipodomysis,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241436,mastadenovirus ovisoctavum,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241437,mastadenovirus ovisprimum,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241438,mastadenovirus pipistrelli,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241439,mastadenovirus porcusquartum,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241440,mastadenovirus porcusquintum,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241441,mastadenovirus porcustertium,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-3241442,mastadenovirus pteropodidae,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,TRUE
-2050578,mastadenovirus sp.,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2976364,mastomys natalensis adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2973541,mastomys natalensis cytomegalovirus 1,muromegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2973540,mastomys natalensis cytomegalovirus 2,muromegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2662313,mastomys natalensis cytomegalovirus 3,muromegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -4345,10 +4074,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 59301,mayaro virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2776959,maypo virus,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 11234,measles morbillivirus,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-1530278,mediterranean horseshoe bat adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1530279,mediterranean horseshoe bat adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1530280,mediterranean horseshoe bat adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1530281,mediterranean horseshoe bat adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2126357,megabat betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1756189,megabat bufavirus 2,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1756190,megabat bufavirus 3,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -4512,7 +4237,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052339,mobatvirus xuansonense,mobatvirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,TRUE
 1408137,mobuck virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1172985,mogiana tick virus,,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-3238692,mojave rattlesnake adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3127199,moko skink parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 10279,molluscum contagiosum virus,molluscipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 11809,moloney murine sarcoma virus,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
@@ -4551,8 +4275,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3076667,molussus totiviridae 3,,totiviridae,ghabrivirales,chrymotiviricetes,TRUE,FALSE
 3076668,molussus totiviridae 4,,totiviridae,ghabrivirales,chrymotiviricetes,TRUE,FALSE
 3076669,molussus totiviridae 5,,totiviridae,ghabrivirales,chrymotiviricetes,TRUE,FALSE
-3078378,mongolian gerbil adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2904785,mongoose adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2684263,mongoose picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 2879287,mongoose-associated circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2879288,mongoose-associated cyclovirus,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
@@ -4631,7 +4353,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 28304,murid betaherpesvirus 2,muromegalovirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2928567,murid herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 3085322,murine adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-3384265,murine adenovirus 4,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1141625,murine astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2171379,murine astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2171380,murine astrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -4646,9 +4367,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 135748,murine herpesvirus 72,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 11786,murine leukemia virus,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 99182,murine leukemia-related retroviruses,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-129956,murine mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1146873,murine mastadenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-696859,murine mastadenovirus c,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2171388,murine picobirnavirus 1,,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 2171389,murine picobirnavirus 2,,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 2171390,murine picobirnavirus 3,,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
@@ -4772,11 +4490,9 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 11973,myeloproliferative leukemia virus,,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 1954186,mykissvirus tructae,mykissvirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,TRUE
 2956209,mykissvirus tructae,mykissvirus,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,TRUE
-2880954,myna aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2880955,myna calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2880956,myna chaphamaparvovirus,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2880957,myna hepatovirus,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2880958,myna siadenovirus,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3351110,mynah circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2169711,mynahpox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2304056,myocastor coypus polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
@@ -4819,7 +4535,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1835098,myotis escalerai betaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2971767,myotis fimbriatus alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2971768,myotis fimbriatus astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-2971769,myotis fimbriatus mastadenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2971770,myotis fimbriatus picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2971771,myotis fimbriatus poxvirus,,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 1780507,myotis gammaherpesvirus 8,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -4894,7 +4609,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2960825,naryaviridae sp.,,naryaviridae,rivendellvirales,arfiviricetes,TRUE,FALSE
 3068954,nasua nasua gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1163704,nasua sp. papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-1530282,nathusius's pipistrelle adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1357966,natorduori virus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2956213,nauglamirvirus anduin,nauglamirvirus,naryaviridae,rivendellvirales,arfiviricetes,TRUE,TRUE
 3139618,navarredonda bat picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -4930,7 +4644,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2951498,neopomacentrus bankieri picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2268043,neotoma cinerea papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2268044,neotoma cinerea papillomavirus 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-2086357,neotropic cormorant aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2086349,neotropic cormorant herpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3048213,nepovirus mori,nepovirus,secoviridae,picornavirales,pisoniviricetes,TRUE,TRUE
 2776965,netherby virus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -4993,7 +4706,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707245,nordenskjold virus,,,,,TRUE,FALSE
 3110223,normandy brook lamprey calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1938392,norovirus sp.,norovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-1530283,northern bat adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 345308,northern elephant seal herpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1204536,northern fur seal polyoma virus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 2714168,northern red-backed vole stool-associated circular virus 68,,,,,TRUE,FALSE
@@ -5027,8 +4739,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1325395,nyctalus noctula betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 291832,nycticebus coucang betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3394989,nyctinomops bat filovirus,,filoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2690214,nyctophilus geoffroyi adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2690227,nyctophilus gouldi adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2707247,oates virus,,,,,TRUE,FALSE
 2956232,oblavirus percae,oblavirus,filoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 3028509,ochotona cansus jeilongvirus,jeilongvirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -5070,7 +4780,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 10258,orf virus,parapoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 690695,oriental small-clawed otter gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3051319,oriental turtle dovepox virus,,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-2862777,oriolus adenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2809627,orivirus sp.,orivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2777033,ornate chorus frog influenza-like virus,,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
 3410100,ornithorhynchus anatinus chaphamaparvovirus 1,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -5408,8 +5117,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2211181,otariid herpesvirus 5,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2152471,otariid herpesvirus 6,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2571165,otariid herpesvirus 7,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1177633,otarine adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1204570,otarine adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2801541,otarine gammaherpesvirus 4,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1187973,otarine picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 3119329,otomops bat coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -5420,14 +5127,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1504566,otter fecal bunyavirus,,peribunyaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2794520,otus scops parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2707249,ousland virus,,,,,TRUE,FALSE
-130327,ovine atadenovirus d,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2901325,ovine enterovirus 2019-00927,enterovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 69576,ovine enzootic nasal tumor virus,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 119207,ovine herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
 2706558,ovine herpesvirus 3,macavirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1476551,ovine kobuvirus,kobuvirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 11663,ovine lentivirus,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-114424,ovine mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3142829,ovine nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE
 70064,ovine parainfluenza virus 3,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 3348409,ovine parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -5437,14 +5142,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1387296,ovine polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 253923,ovine progressive pneumonia virus,lentivirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 28869,ovine respiratory syncytial virus,,pneumoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2853431,owl adenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3127671,ozark orthohantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2759412,pacific black duck aalivirus,aalivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2759417,pacific black duck adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2759419,pacific black duck anativirus-like virus,anativirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2798286,pacific black duck astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2759420,pacific black duck aveparvovirus,aveparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-2798287,pacific black duck aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2798288,pacific black duck calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2759406,pacific black duck chaphamaparvovirus,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2592492,pacific black duck megrivirus,megrivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -5460,8 +5163,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1537280,pagellus acarne betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 1110524,pagellus sp. betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2836846,paguyaman orthoreovirus,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
-3237127,painted turtle testadenovirus 1,testadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3237128,painted turtle testadenovirus 2,testadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2707250,palmer virus,,,,,TRUE,FALSE
 40059,palyam virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 51317,pampa virus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
@@ -5471,7 +5172,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1543220,pan paniscus herpesvirus 7,roseolovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1790068,pan paniscus polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 171950,pan rhadino-herpesvirus 2,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916699,pan troglodytes adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 660664,pan troglodytes cytomegalovirus 1.1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 660665,pan troglodytes cytomegalovirus 1.2,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 660666,pan troglodytes cytomegalovirus 2.1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -5486,29 +5186,14 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 171371,pan troglodytes rhadinovirus 2,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 682884,pan troglodytes rhadinovirus 3,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 308725,pan troglodytes roseolovirus 1,roseolovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1076309,pan troglodytes schweinfurthii adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076310,pan troglodytes schweinfurthii adenovirus 10,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076311,pan troglodytes schweinfurthii adenovirus 11,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076312,pan troglodytes schweinfurthii adenovirus 12,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076313,pan troglodytes schweinfurthii adenovirus 13,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076314,pan troglodytes schweinfurthii adenovirus 14,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076315,pan troglodytes schweinfurthii adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076316,pan troglodytes schweinfurthii adenovirus 6,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076317,pan troglodytes schweinfurthii adenovirus 7,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076318,pan troglodytes schweinfurthii adenovirus 9,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1790069,pan troglodytes schweinfurthii polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 927575,pan troglodytes schweinfurthii polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1792571,pan troglodytes troglodytes polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1236400,pan troglodytes troglodytes polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-1076319,pan troglodytes verus adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076320,pan troglodytes verus adenovirus 4,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076321,pan troglodytes verus adenovirus 5,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076322,pan troglodytes verus adenovirus 8,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1578770,pan troglodytes verus polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 927577,pan troglodytes verus polyomavirus 2b,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1236404,pan troglodytes verus polyomavirus 6,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 1762024,pan troglodytes verus polyomavirus 9,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-1215920,pancake tortoise adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2833056,pandoravirus sp.,pandoravirus,,,,TRUE,FALSE
 2268421,pangasius aquareovirus,aquareovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 2951874,pangolin chaphamaparvovirus,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -5600,8 +5285,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3117007,papillomavirus sousa8206,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 3117010,papillomavirus xiphophorus6144,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 308704,papio anubis lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1916700,papio hamadryas adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076323,papio hamadryas adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1676472,papio hamadryas lymphocryptovirus,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 212730,papio hamadryas lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1173626,papio hamadryas papillomavirus 2,alphapapillomavirus,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -5900,12 +5583,10 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2794522,passer montanus parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2824657,passer montanus pegivirus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 199702,passerid herpesvirus 1,iltovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-2779174,passerine adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2576226,passerine astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2576227,passerine astrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2576228,passerine astrovirus 3,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2576229,passerine astrovirus 4,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-3237129,passerine-like atadenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1511803,passerivirus a,passerivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3050365,patagivirus vespertilionidgamma3,patagivirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 1545496,patawa virus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
@@ -6031,9 +5712,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1204578,phocid herpesvirus 6,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1628896,phocid herpesvirus 7,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2854225,phocid orthoreovirus 1,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
-1204571,phocine adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1204572,phocine adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1088787,phocoena adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1809460,phocoena phocoena herpesvirus type 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1809459,phocoena phocoena herpesvirus type 3,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1163706,phocoena phocoena papillomavirus 5,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -6181,12 +5859,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1530251,picornaviridae sp.,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3415630,pied avocet picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 2794618,pig astrovirus ahast-2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-3367550,pigeon adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1924072,pigeon adenovirus 2a,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1891777,pigeon adenovirus 2b,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1891778,pigeon adenovirus 3,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1891779,pigeon adenovirus 4,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1891780,pigeon adenovirus 5,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3079711,pigeon astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2766787,pigeon gyrovirus,gyrovirus,anelloviridae,,,TRUE,FALSE
 3397037,pigeon parvovirus 2,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -6197,9 +5869,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3027598,pika coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 219585,pike fry-like rhabdovirus,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2137544,pileated finch aveparvovirus,aveparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-1076324,piliocolobus badius adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076325,piliocolobus badius adenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1076326,piliocolobus badius adenovirus 3,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 212719,piliocolobus badius lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 691500,piliocolobus badius lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 ,pilocolobus badius lymphocryptovirus 2,lymphocryptovirus,herpesviridae,herpesvirales,,FALSE,FALSE
@@ -6253,7 +5922,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2916846,plethodon cinereus nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE
 2951510,pleurosicya actinovirus,actinovirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3243597,pliego virus,,,,revtraviricetes,TRUE,FALSE
-461346,plum headed parakeet adenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2501434,pneumovirus sp.,,pneumoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2115843,podargid alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2759496,poecivirus sp.,poecivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -6328,7 +5996,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 203134,pongo pygmaeus lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 691501,pongo pygmaeus lymphocryptovirus 2,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2909271,pontoporiid gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-114326,porcine adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2748371,porcine associated gemycircularvirus 3,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 3412427,porcine associated gemykibivirus,gemykibivirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 2748372,porcine associated gemykibivirus 1,gemykibivirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
@@ -6400,7 +6067,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2707541,porcine teschovirus 23,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 237020,porcine torovirus,torovirus,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 369960,porcine type-c oncovirus,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-2916973,porcupine adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2986120,porcupine astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2917170,porcupine astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2919013,porcupine astrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -6477,7 +6143,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1828549,posavirus strain 9225,posavirus,,picornavirales,pisoniviricetes,TRUE,FALSE
 1828550,posavirus strain 9532,posavirus,,picornavirales,pisoniviricetes,TRUE,FALSE
 1828551,posavirus strain 9676,posavirus,,picornavirales,pisoniviricetes,TRUE,FALSE
-121816,possum atadenovirus a,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2699478,possum hepacivrus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2707253,powell virus,,,,,TRUE,FALSE
 2717630,poxviridae sp.,,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
@@ -7126,11 +6791,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3090917,psittaciform chaphamaparvovirus 6,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3376689,psittaciform chaphamaparvovirus 7,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3042448,psittaciform parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-3134257,psittacine adenovirus 12,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1301246,psittacine adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2917163,psittacine chaphamaparvovirus 2,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 3042449,psittacine picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2737672,psittacine siadenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2169712,psittacinepox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2737726,pteronotus alitonus betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2948615,pteronotus bat paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -7219,7 +6881,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2917286,rabbit picornavirus 2,,,picornavirales,pisoniviricetes,TRUE,FALSE
 303317,rabbit vesivirus,vesivirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2716751,racaecavirus sp.,,,,,TRUE,FALSE
-2916974,raccoon adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2792258,raccoon dog acute diarrhea syndrome coronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2829102,raccoon dog astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2917175,raccoon dog astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -7264,8 +6925,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3051136,rangifer tarandus pegivirus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2653866,rangiferine gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2849006,ranid herpesvirus 4,,,herpesvirales,herviviricetes,TRUE,FALSE
-2963835,raptor adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-691961,raptor siadenovirus a,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1930508,rasavirus sp.,,,,,TRUE,FALSE
 2303482,rat adeno-associated virus,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 341227,rat adeno-associated virus 1,dependoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -7287,14 +6946,9 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1562069,rat picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3400670,rat rocahepevirus,rocahepevirus,hepeviridae,hepelivirales,alsuviricetes,TRUE,FALSE
 2928189,raton olivaceo morbillivirus,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-3238693,rattlesnake adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3238694,rattlesnake adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3238695,rattlesnake adenovirus 4,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2986443,rattus argentiventer mosavirus,mosavirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 431630,rattus exulans cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3085320,rattus gemycircularvirus,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
-1819364,rattus losea adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1819365,rattus norvegicus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3349238,rattus norvegicus associated picobirnavirus 1,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 3349239,rattus norvegicus associated picobirnavirus 10,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 3349240,rattus norvegicus associated picobirnavirus 11,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
@@ -7364,15 +7018,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3400672,rattus rattus rosavirus,rosavirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 ,rattus rhadinovirus 1,rhadinovirus,herpesviridae,herpesvirales,,FALSE,FALSE
 ,rattus rhadinovirus 3,rhadinovirus,herpesviridae,herpesvirales,,FALSE,FALSE
-1819366,rattus tanezumi adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2184404,rattus tanezumi hunnivirus,hunnivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2184405,rattus tanezumi parechovirus,parechovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 431632,rattus tiomanicus cytomegalovirus 1,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2219046,recovirus sp.,recovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2749928,red deerpox virus,parapoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
-1215921,red eared slider adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1883457,red footed tortoise adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1883458,red footed tortoise adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1504545,red fox fecal amdovirus,amdoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2864003,red panda associated partiti-like virus,,partitiviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 2864004,red panda associated partitivirus,,partitiviridae,durnavirales,duplopiviricetes,TRUE,FALSE
@@ -7390,19 +7040,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2871650,red panda feces-associated parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2864000,red panda picorna-like virus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 1399581,red tux swordtail iridovirus,megalocytivirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2301509,red-bellied tamarin adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2862952,red-billed gull papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2592494,red-capped plover megrivirus,megrivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2736690,red-eared slider ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-2301510,red-faced spider monkey adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301511,red-fronted lemur adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301512,red-fronted lemur adenovirus 2.1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301513,red-fronted lemur adenovirus 2.2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3351112,red-fronted serin circovirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
 3406600,red-fronted serin polomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
-2301514,red-handed tamarin adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301515,red-handed tamarin adenovirus 2.1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301516,red-handed tamarin adenovirus 2.2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2592512,red-necked stint avastrovirus,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2592516,red-necked stint gallivirus,gallivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 437902,redbanded seabream nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -7442,8 +7084,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2501435,respirovirus sp.,respirovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 3052733,respirovirus suis,respirovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 11636,reticuloendotheliosis virus,gammaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-3064104,retropinna adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3064105,retropinna adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3064106,retropinna adomavirus 1,,,,,TRUE,FALSE
 3064107,retropinna adomavirus 2,,,,,TRUE,FALSE
 3064108,retropinna adomavirus 3,,,,,TRUE,FALSE
@@ -7489,25 +7129,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3050328,rhadinovirus muridgamma7,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 10381,rhadinovirus saimiriinegamma2,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 3050350,rhadinovirus saimiriinegamma2,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
-2064730,rhesus adenovirus 54,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064731,rhesus adenovirus 55,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064732,rhesus adenovirus 56,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064733,rhesus adenovirus 57,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064735,rhesus adenovirus 59,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064736,rhesus adenovirus 60,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064737,rhesus adenovirus 61,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064738,rhesus adenovirus 62,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064739,rhesus adenovirus 63,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064740,rhesus adenovirus 64,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064741,rhesus adenovirus 65,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064742,rhesus adenovirus 66,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2064743,rhesus adenovirus 67,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3115817,rhesus adenovirus 68,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3112633,rhesus adenovirus 69,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3112634,rhesus adenovirus 70,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3112635,rhesus adenovirus 71,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3112636,rhesus adenovirus 72,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3112637,rhesus adenovirus 73,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 872275,rhesus macaque norovirus,norovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2575833,rhesus macaque picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 875071,rhesus macaque recovirus,recovirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -7642,7 +7263,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2730083,ribbon seal picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 2585031,riboviria sp.,,,,,TRUE,FALSE
 2707256,riiser virus,,,,,TRUE,FALSE
-2301517,ring tailer lemur adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1419111,ringed seal herpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2956371,ringilvirus thingol,ringilvirus,vilyaviridae,cirlivirales,arfiviricetes,TRUE,TRUE
 2956372,ringilvirus tuor,ringilvirus,vilyaviridae,cirlivirales,arfiviricetes,TRUE,TRUE
@@ -7658,15 +7278,14 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2961098,rocahepevirus sp.,rocahepevirus,hepeviridae,hepelivirales,alsuviricetes,TRUE,FALSE
 2497432,rockfish nackednavirus,,,ortervirales,revtraviricetes,TRUE,FALSE
 2962496,rockhopper penguin papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
-2050010,rodent adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1806636,rodent arterivirus,,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2863995,rodent associated picobirnavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
 1914442,rodent astrovirus,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 3027516,rodent betacoronavirus,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2137546,rodent bocavirus,bocaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2050016,rodent circovirus,,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
-2050018,rodent coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2050018,rodent coronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
+2050018,rodent coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2751480,rodent deltavirus,deltavirus,kolmioviridae,,,TRUE,FALSE
 2050013,rodent hantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 1281454,rodent hepacivirus,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
@@ -7684,9 +7303,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1074214,rodent stool-associated circular genome virus,glamdringvirus,vilyaviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2137541,rodent tetraparvovirus,tetraparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 2871643,rodent torque teno virus,,anelloviridae,,,TRUE,FALSE
-3237130,rodent-like mastadenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3237131,rodent-like mastadenovirus 2,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3003558,roe deer adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2707004,roe deer astrovirus,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 1911103,rolda virus,,,,,TRUE,FALSE
 1511805,rosavirus a,rosavirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -7702,8 +7318,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1608255,roseolovirus suidbeta2,roseolovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 11029,ross river virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 2707258,ross virus,,,,,TRUE,FALSE
-28875,rotavirus a,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 28875,rotavirus a,rotavirus,reoviridae,reovirales,resentoviricetes,TRUE,FALSE
+28875,rotavirus a,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 28876,rotavirus b,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 36427,rotavirus c,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 335100,rotavirus d,rotavirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
@@ -7714,7 +7330,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 642950,rough green snake reovirus,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 1494920,round goby circo-like virus,,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 11886,rous sarcoma virus,alpharetrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-1967296,rousettus aegyptiacus adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1325404,rousettus aegyptiacus betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1325405,rousettus aegyptiacus betaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1835095,rousettus aegyptiacus gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -7775,7 +7390,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2448019,s7-like reptarenavirus,reptarenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2781356,saccopteryx bilineata betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2169901,saguinine gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-1088786,saguinus adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 219817,saguinus midas lymphocryptovirus 1,lymphocryptovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1881009,saimiri boliviensis boliviensis cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1881010,saimiri boliviensis cytomegalovirus,cytomegalovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -7819,7 +7433,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3160823,samektorquevirus hominid17,samektorquevirus,anelloviridae,,,TRUE,TRUE
 3160824,samektorquevirus hominid18,samektorquevirus,anelloviridae,,,TRUE,TRUE
 3384640,samur virus,,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
-2915595,sand lizard adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3238819,sand tiger adomavirus 1,,,,,TRUE,FALSE
 3060677,sandeparvovirus perciform1,sandeparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE
 1246483,sander lucioperca betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
@@ -7844,15 +7457,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1289939,sathuvachari virus,orbivirus,sedoreoviridae,reovirales,resentoviricetes,TRUE,FALSE
 2707729,saudades virus-1,reptarenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 1390983,saurida undosquamis ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-3061128,saw-shelled turtle adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1697349,scale drop disease virus,megalocytivirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2937919,scaphiophryne madagascariensis ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 670547,scarus rubroviolaceus nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2916854,schizothorax waltoni tobanivirus,,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2707260,schouten virus,,,,,TRUE,FALSE
-2170312,schreiber's bent-winged bat adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3236710,schreibers's long-fingered bat gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-270908,scincid adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3040109,sciurotamias davidianus hepacivirus,,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2721741,sciurus carolinensis betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2721745,sciurus carolinensis gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -7885,7 +7495,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3050262,scutavirus chelonidalpha5,scutavirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 702736,scutavirus chelonidalpha5,scutavirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
 3050360,scutavirus testudinidalpha3,scutavirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE
-1882383,sea otter adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1906351,sea otter herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 1882382,sea otter parvovirus 1,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1552409,sea otter polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
@@ -7933,7 +7542,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3064115,shortfin eel nanghoshavirus 1,,nanghoshaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 3064116,shortfin eel nanghoshavirus 2,,nanghoshaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 1676984,shortnose sturgeon virus,,,,,TRUE,FALSE
-2050011,shrew adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3027517,shrew alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2050009,shrew astrovirus,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2050022,shrew calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -7943,8 +7551,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3378050,shrew hepevirus,,hepeviridae,hepelivirales,alsuviricetes,TRUE,FALSE
 2007184,shrew herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 1281453,shrew pegivirus,,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-2671519,siadenovirus sp.,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-3413138,siadenovirus sp. 'coturnicis',siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 577567,siberian sturgeon herpesvirus,ictalurivirus,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2863961,sichuan mosquito circovirus 3,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2863999,sichuan picorna-like virus,,,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -7967,16 +7573,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2978071,silurid herpesvirus 2,,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 95346,silurus glanis ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2783676,silver pomfret iridovirus,megalocytivirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
-1165908,simian adenovirus b,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2042693,simian bocavirus,bocaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1917078,simian bufavirus,protoparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1920706,simian erythroparvovirus 2,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 11642,simian foamy virus,spumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 11642,simian foamy virus,"c(""spumavirus"", ""spumavirus"", ""spumavirus"", ""spumavirus"", ""spumavirus"")",retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-3075435,simian mastadenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-298334,simian mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1986019,simian mastadenovirus f,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2980954,simian mastadenovirus sp.,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1917073,simian parvo-like virus 1,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1917074,simian parvo-like virus 2,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 1917075,simian parvo-like virus 3,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
@@ -8030,7 +7631,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2527734,siniperhavirus chuatsi,siniperhavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2482768,siniperhavirus chuatsi,siniperhavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2956454,siniperhavirus zoarces,siniperhavirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
-886980,skua siadenovirus a,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 160796,skunkpox virus,orthopoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 464941,sleepy cod nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
 2715094,smacoviridae sp.,,smacoviridae,cremevirales,arfiviricetes,TRUE,FALSE
@@ -8039,8 +7639,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 31604,small ruminant morbillivirus,morbillivirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2890915,small yellow croaker iridovirus,megalocytivirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 2707268,smith virus,,,,,TRUE,FALSE
-2691031,smooth billed ani adenovirus 1,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1146872,snake atadenovirus a,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1909409,snake nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE
 659372,snake paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 1621317,snakehead vesiculovirus,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -8057,7 +7655,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2795181,songling virus,orthonairovirus,nairoviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 286540,soochong virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3344892,sorex antinorii kidney parvovirus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
-1819367,sorex araneus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 516543,sorex araneus hantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3381477,sorex coronatus feces associated gemycircularvirus 1,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
 3381478,sorex coronatus feces associated gemycircularvirus 10,gemycircularvirus,genomoviridae,geplafuvirales,repensiviricetes,TRUE,FALSE
@@ -8075,10 +7672,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1497436,soricidae paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 3068943,sotalia guianensis alphaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1923962,sousa chinensis gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-886981,south polar skua adenovirus-2,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-886982,south polar skua adenovirus-3,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-886983,south polar skua adenovirus-4,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-886984,south polar skua adenovirus-5,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1159195,southern elephant seal virus,alphavirus,togaviridae,martellivirales,alsuviricetes,TRUE,FALSE
 1546178,southwest baboon virus 1,,arteriviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2778788,southwest bike trail virus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
@@ -8105,7 +7698,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 696863,sprivivirus cyprinus,sprivivirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 219584,sprivivirus esox,sprivivirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2809879,spumaretrovirinae sp.,,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
-1881633,spur-thighed tortoise adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3403329,squalus suckleyi nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE
 2917189,squirrel astrovirus 1,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 2917190,squirrel astrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
@@ -8113,8 +7705,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2917294,squirrel enterovirus,enterovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 538970,squirrel fibroma virus,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 2917256,squirrel hunnivirus,hunnivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2170003,squirrel mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2666326,squirrel monkey adenovirus,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 11856,squirrel monkey retrovirus,betaretrovirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 2170201,squirrel monkey simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 2917186,squirrel pestivirus,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
@@ -8151,15 +7741,12 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3074439,strix nebulosa herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 2489503,strix uralensis herpesvirus,,,herpesvirales,herviviricetes,TRUE,FALSE
 2707270,stroud virus,,,,,TRUE,FALSE
-691958,sturgeon ichtadenovirus a,ichtadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3136007,sturgeon influenza-like virus,,orthomyxoviridae,articulavirales,insthoviricetes,TRUE,FALSE
 2737721,sturnira angeli gammaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-2211155,sturnira lilium adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2781357,sturnira lilium betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 2737725,sturnira tildae betaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 3106067,sturnus papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 379730,suiformes rhadinovirus genogroup 1,rhadinovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-461347,sulawesi tortoise adenovirus 1,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1638619,sulid herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1643330,suncus coronavirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2184399,suncus murinus picornavirus,,,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -8242,7 +7829,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 99000,tanapox virus,yatapoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 425088,tanganya virus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3052759,tanzavirus daressalaamense,tanzavirus,phenuiviridae,bunyavirales,ellioviricetes,TRUE,TRUE
-3141934,taphozous bat adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 3141908,taphozous bat calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3128420,taphozous bat hepatovirus,hepatovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 3113749,taphozous bat papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -8295,8 +7881,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2976936,temminck's stint calicivirus,,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 1497435,tenrec paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 670550,terapon theraps nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-2820437,tern adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2913659,tern atadenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2942218,terrapene alphaherpesvirus 3,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 56053,terrapene carolina ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 1474808,terrapene herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
@@ -8305,7 +7889,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3022428,terrapene mexicana triunguis ranavirus 2,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 118140,teschovirus a,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 2004715,teschovirus sp.,teschovirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2961300,testadenovirus sp.,testadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2734343,testudine orthoreovirus,orthoreovirus,spinareoviridae,reovirales,resentoviricetes,TRUE,FALSE
 2966553,testudinid alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1699315,testudinid herpesvirus 1,,,herpesvirales,herviviricetes,TRUE,FALSE
@@ -8444,7 +8027,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2654407,traemmersee orthohantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 3004186,transcaucasian sand viper pestivirus,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2811193,tree shrew astrovirus,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-242710,tree shrew mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2562515,tree shrew papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2562516,tree shrew papillomavirus 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 2796354,tree shrew pegivirus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
@@ -8476,7 +8058,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2916853,triplophysa bleekeri tobanivirus,,tobaniviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2664900,triplophysa siluroides ranavirus,ranavirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE
 1110531,trisopterus minutus betanodavirus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-2691032,tropical screech owl adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2991697,trout granulomatous virus,,,nidovirales,pisoniviricetes,TRUE,FALSE
 2969702,trout perch letovirus,,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2970586,tuatara adintovirus-1,,adintoviridae,orthopolintovirales,polintoviricetes,TRUE,FALSE
@@ -8507,9 +8088,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2970604,tuatara cloaca-associated reovirus-1,,,reovirales,resentoviricetes,TRUE,FALSE
 2970605,tuatara cloaca-associated reovirus-2,,,reovirales,resentoviricetes,TRUE,FALSE
 2970606,tuatara cloaca-associated rhabdovirus-1,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
-2301518,tufted capuchin adenovirus 1,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301519,tufted capuchin adenovirus 2,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-2301520,tufted capuchin adenovirus 3,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2714171,tundra vole stool-associated circular virus,,,,,TRUE,FALSE
 2707275,tunzelmann virus,,,,,TRUE,FALSE
 10397,tupaiid betaherpesvirus 1,quwivirus,herpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
@@ -8529,11 +8107,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2794526,turdus pallidus parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE
 70793,turkey astrovirus,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
 298903,turkey astrovirus 3,avastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE
-878330,turkey aviadenovirus 2,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
-1146875,turkey aviadenovirus b,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 1494923,turkey picobirnavirus,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE
 1819752,turkey picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-298333,turkey siadenovirus a,siadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 336486,turkeypox virus,avipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,FALSE
 1923964,tursiops aduncus gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1508163,tursiops aduncus papillomavirus,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
@@ -8665,7 +8240,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3060799,vesiculovirus wufeng,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2956644,vesiculovirus yinshui,vesiculovirus,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,TRUE
 2809959,vesivirus sp.,vesivirus,caliciviridae,picornavirales,pisoniviricetes,TRUE,FALSE
-2690228,vespadelus regulus adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2687254,vespadelus regulus alphacoronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
 2687261,vespadelus regulus paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
 2042701,vespertilionid betacoronavirus,betacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -8703,7 +8277,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052820,wawtorquevirus crice1,wawtorquevirus,anelloviridae,,,TRUE,TRUE
 3052821,wawtorquevirus crice2,wawtorquevirus,anelloviridae,,,TRUE,TRUE
 3052822,wawtorquevirus crice3,wawtorquevirus,anelloviridae,,,TRUE,TRUE
-2562198,weasel adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2715103,wei-like virus sp.,,,,,TRUE,FALSE
 2744033,wels catfish papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE
 1508228,wencheng sm shrew coronavirus,alphacoronavirus,coronaviridae,nidovirales,pisoniviricetes,TRUE,FALSE
@@ -8785,7 +8358,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2682467,werosea circovirus,circovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 2714177,werosea cyclovirus,cyclovirus,circoviridae,cirlivirales,arfiviricetes,TRUE,FALSE
 11082,west nile virus,flavivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
-1036586,western bearded dragon adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2830710,western carp gudgeon arenavirus,,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE
 2830716,western carp gudgeon flavivirus,,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2830717,western carp gudgeon paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE
@@ -8884,7 +8456,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3045328,yellow catfish picornavirus,,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
 11089,yellow fever virus,flavivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 161600,yellow grouper nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE
-1215922,yellow-bellied slider adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2170206,yellow-breasted capuchin simian foamy virus,simiispumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE
 3021812,yellow-eyed penguin gyrovirus,gyrovirus,anelloviridae,,,TRUE,FALSE
 3085107,yellow-eyed penguin megrivirus,megrivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE
@@ -8928,7 +8499,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2860273,ziphius cavirostris alphaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1758218,ziphius cavirostris alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
 1758212,ziphius cavirostris alphaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE
-3073259,zoothera dauma adenovirus,,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE
 2875886,zygodontomys brevicauda hepacivirus 1,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2875887,zygodontomys brevicauda hepacivirus 2,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE
 2875888,zygodontomys brevicauda polyomavirus,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE
