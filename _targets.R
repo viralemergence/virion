@@ -16,12 +16,12 @@ targets::tar_source()
 # location to your PATH in R
 
 # when running locally
-# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+# github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = github_actions_path)
+update_path(items_to_add = homebrew_path)
 
 # source julia packages
 source_julia_deps()
@@ -148,16 +148,40 @@ format_genbank_targets <- tar_plan(
 # # digest predict  pcr ----
 # # format predict  pcr ----
 # # merge predict and add genera ----
+predict_targets <- tar_plan(
+  predict_all_formatted = vroom(here::here("./Intermediate/Formatted/PREDICTAllFormatted.csv"),
+                                col_type = cols(PMID = col_double(),
+                                                PublicationYear = col_double()
+                                )
+  ),
+  ## align hosts to NCBI taxonomy
+  tar_target(pre_host_vec, predict_all_formatted |>
+               dplyr::pull(Host) %>%
+               unique() %>%
+               sort()),
+  tar_target(pre_host_table, jhdict(spnames = pre_host_vec)),
+  tar_target(
+    pre_host_table_path, 
+    readr::write_csv(pre_host_table, 
+        here::here("./Intermediate/PREDICTHostTax.csv")
+        )
+  ),
+  tar_target(predict_all_formatted_hosts_clean, 
+             pre_clean_hosts(predict_all_formatted, pre_host_table)
+             )
+  
+  
+)
+
 # # merge clean files ----
 merge_clean_files_targets <- tar_plan(
   #gb_formatted
   #clo_formatted
-  predict_all_formatted = vroom(here::here("./Intermediate/Formatted/PREDICTAllFormatted.csv"),
-                                           col_type = cols(PMID = col_double(),
-                                                           PublicationYear = col_double()
-                                                           )
-                                ),
-  virion_unprocessed = dplyr::bind_rows(clo_formatted, predict_all_formatted, gb_formatted),
+  #predict formatted
+  virion_unprocessed = dplyr::bind_rows(
+    clo_formatted,
+    predict_all_formatted_hosts_clean, 
+    gb_formatted),
   virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # high level checks ----
@@ -233,6 +257,7 @@ dissovle_virion_targets <- tar_plan(
    genbank_download_targets,
    genbank_digest_targets,
    format_genbank_targets,
+   predict_targets,
    merge_clean_files_targets,
    high_level_check_targets,
    dissovle_virion_targets

@@ -11,8 +11,14 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     dplyr::mutate(HostFlagID = tidyr::replace_na(HostFlagID, FALSE)) 
   
   virion_ictv_ratified %<>%
-    mutate_cond(stringr::str_detect(HostOriginal, " cf\\."), HostFlagID = TRUE) 
-  
+    # mutate_cond(stringr::str_detect(HostOriginal, " cf\\."), HostFlagID = TRUE) 
+    dplyr::mutate(HostFlagID = case_when(
+      stringr::str_detect(HostOriginal, " cf\\.") ~ TRUE,
+      TRUE ~ HostFlagID
+    ))
+    
+    
+    
   virion_ictv_ratified %<>% 
     dplyr::select(-c(HostSynonyms))
   
