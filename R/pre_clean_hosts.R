@@ -9,18 +9,15 @@
 #' @export
 pre_clean_hosts <- function(predict_all_formatted, pre_host_table) {
 
-  # drop everything in clo except host
-  pre_col_filter <- !names(pre_host_table) %in% "Host"
+  # drop everything in predict except host
+  pre_col_filter <- !names(pre_host_table) %in% "HostOriginal"
   pre_cols_to_drop <- names(pre_host_table)[pre_col_filter]
-  
-
   
   # join to NCBI data
   out <- predict_all_formatted %>% 
     dplyr::select(-all_of(pre_cols_to_drop)) %>% 
-    dplyr::rename(HostOriginal = "Host") %>%
     dplyr::mutate(HostOriginal = stringr::str_to_sentence(HostOriginal)) %>% 
-    dplyr::left_join(pre_host_table,by = "HostOriginal") 
+    dplyr::left_join(pre_host_table,relationship = "many-to-many",by = "HostOriginal") 
 
   # get col order
   col_order <- names(predict_all_formatted)
