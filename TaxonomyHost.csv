@@ -1,145 +1,43 @@
 HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
-10040,,peromyscus,cricetidae,rodentia,mammalia,TRUE
-10045,,,muridae,rodentia,mammalia,TRUE
-10069,,akodon,cricetidae,rodentia,mammalia,TRUE
-10084,,cricetomys,nesomyidae,rodentia,mammalia,TRUE
-10088,,mus,muridae,rodentia,mammalia,TRUE
-10111,,praomys,muridae,rodentia,mammalia,TRUE
-10114,,rattus,muridae,rodentia,mammalia,TRUE
-10135,,,hystricidae,rodentia,mammalia,TRUE
-101675,,heteromys,heteromyidae,rodentia,mammalia,TRUE
-109484,,hypsugo,vespertilionidae,chiroptera,mammalia,TRUE
-112225,,malacomys,muridae,rodentia,mammalia,TRUE
-1188033,,chelidoperca,serranidae,perciformes,actinopteri,TRUE
-124754,,,rhinopomatidae,chiroptera,mammalia,TRUE
-128149,,sylvisorex,soricidae,eulipotyphla,mammalia,TRUE
-1526411,,mareca,anatidae,anseriformes,aves,TRUE
-153296,,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
-163860,,pudu,cervidae,artiodactyla,mammalia,TRUE
-172679,,chlamydotis,otididae,otidiformes,aves,TRUE
-186994,,,hipposideridae,chiroptera,mammalia,TRUE
-204266,,melogale,mustelidae,carnivora,mammalia,TRUE
-2068716,,,anatidae,anseriformes,aves,TRUE
-210425,,proteus,proteidae,caudata,amphibia,TRUE
-218788,,juliomys,cricetidae,rodentia,mammalia,TRUE
-258862,,mops,molossidae,chiroptera,mammalia,TRUE
-258954,,scotoecus,vespertilionidae,chiroptera,mammalia,TRUE
-27659,,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
-27671,,pipistrellus,vespertilionidae,chiroptera,mammalia,TRUE
-29075,,macroglossus,pteropodidae,chiroptera,mammalia,TRUE
-30560,,,,chiroptera,mammalia,TRUE
-30577,,,erinaceidae,eulipotyphla,mammalia,TRUE
-30639,,mastomys,muridae,rodentia,mammalia,TRUE
-30650,,,gliridae,rodentia,mammalia,TRUE
-314293,,,,primates,mammalia,TRUE
-33550,,,,rodentia,mammalia,TRUE
-3371007,,eptesicus,vespertilionidae,chiroptera,mammalia,TRUE
-34857,,hylomyscus,muridae,rodentia,mammalia,TRUE
-36211,,trachurus,carangidae,carangiformes,actinopteri,TRUE
-36291,,,muscicapidae,passeriformes,aves,TRUE
-36294,,,pycnonotidae,passeriformes,aves,TRUE
-36297,,,zosteropidae,passeriformes,aves,TRUE
-36801,,crocidura,soricidae,eulipotyphla,mammalia,TRUE
-37577,,morus,sulidae,suliformes,aves,TRUE
-379583,,,,carnivora,mammalia,TRUE
-38664,,chaetodipus,heteromyidae,rodentia,mammalia,TRUE
-38771,,gopherus,testudinidae,testudines,,TRUE
-40236,,,phyllostomidae,chiroptera,mammalia,TRUE
-40674,,,,,mammalia,TRUE
-41262,,tatera,muridae,rodentia,mammalia,TRUE
-42407,,neotoma,cricetidae,rodentia,mammalia,TRUE
-42414,,sigmodon,cricetidae,rodentia,mammalia,TRUE
-466544,,,phasianidae,galliformes,aves,TRUE
-49442,,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
-51347,,lophuromys,muridae,rodentia,mammalia,TRUE
-56259,,,accipitridae,accipitriformes,aves,TRUE
-568926,,neoromicia,vespertilionidae,chiroptera,mammalia,TRUE
-58066,,epomophorus,pteropodidae,chiroptera,mammalia,TRUE
-58068,,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
-58086,,thoopterus,pteropodidae,chiroptera,mammalia,TRUE
-59447,,,nycteridae,chiroptera,mammalia,TRUE
-59466,,nycteris,nycteridae,chiroptera,mammalia,TRUE
-60461,,agapornis,psittacidae,psittaciformes,aves,TRUE
-649456,,trioceros,chamaeleonidae,squamata,lepidosauria,TRUE
-723807,,cuniculus,cuniculidae,rodentia,mammalia,TRUE
-77236,,myonycteris,pteropodidae,chiroptera,mammalia,TRUE
-8166,,perca,percidae,perciformes,actinopteri,TRUE
-8266,,hippoglossus,pleuronectidae,pleuronectiformes,actinopteri,TRUE
-8292,,,,,amphibia,TRUE
-8342,,,,anura,amphibia,TRUE
-8487,,,testudinidae,testudines,,TRUE
-8507,,sphenodon,sphenodontidae,sphenodontia,lepidosauria,TRUE
-8570,,,,squamata,lepidosauria,TRUE
-86974,,testudo,testudinidae,testudines,,TRUE
-8782,,,,,aves,TRUE
-8830,,,anatidae,anseriformes,aves,TRUE
-8835,,anas,anatidae,anseriformes,aves,TRUE
-8842,,anser,anatidae,anseriformes,aves,TRUE
-8888,,tadorna,anatidae,anseriformes,aves,TRUE
-8899,,,ardeidae,pelecaniformes,aves,TRUE
-8911,,larus,laridae,charadriiformes,aves,TRUE
-8930,,,columbidae,columbiformes,aves,TRUE
-8931,,columba,columbidae,columbiformes,aves,TRUE
-8952,,falco,falconidae,falconiformes,aves,TRUE
-8976,,,,galliformes,aves,TRUE
-8990,,,numididae,galliformes,aves,TRUE
-9005,,,phasianidae,galliformes,aves,TRUE
-9030,,gallus,phasianidae,galliformes,aves,TRUE
-9072,,,phasianidae,galliformes,aves,TRUE
-9126,,,,passeriformes,aves,TRUE
-9158,,,passeridae,passeriformes,aves,TRUE
-91780,,ramphastos,ramphastidae,piciformes,aves,TRUE
-9181,,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
-9183,,,turdidae,passeriformes,aves,TRUE
-9215,,,phoenicopteridae,phoenicopteriformes,aves,TRUE
-9223,,,,psittaciformes,aves,TRUE
-9224,,,psittacidae,psittaciformes,aves,TRUE
-9231,,,spheniscidae,sphenisciformes,aves,TRUE
-9376,,,soricidae,eulipotyphla,mammalia,TRUE
-9397,,,,chiroptera,mammalia,TRUE
-9406,,rousettus,pteropodidae,chiroptera,mammalia,TRUE
-9431,,,vespertilionidae,chiroptera,mammalia,TRUE
-9432,,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
-9434,,myotis,vespertilionidae,chiroptera,mammalia,TRUE
-9436,,,molossidae,chiroptera,mammalia,TRUE
-9437,,tadarida,molossidae,chiroptera,mammalia,TRUE
-9443,,,,primates,mammalia,TRUE
-9445,,,lemuridae,primates,mammalia,TRUE
-9539,,macaca,cercopithecidae,primates,mammalia,TRUE
-9577,,,hylobatidae,primates,mammalia,TRUE
-9592,,gorilla,hominidae,primates,mammalia,TRUE
-9599,,pongo,hominidae,primates,mammalia,TRUE
-9605,,homo,hominidae,primates,mammalia,TRUE
-9608,,,canidae,carnivora,mammalia,TRUE
-9611,,canis,canidae,carnivora,mammalia,TRUE
-9625,,vulpes,canidae,carnivora,mammalia,TRUE
-9645,,ailuropoda,ursidae,carnivora,mammalia,TRUE
-9655,,,mustelidae,carnivora,mammalia,TRUE
-9673,,,viverridae,carnivora,mammalia,TRUE
-9702,,,otariidae,carnivora,mammalia,TRUE
-9723,,,platanistidae,artiodactyla,mammalia,TRUE
-9789,,equus,equidae,perissodactyla,mammalia,TRUE
-9800,,tapirus,tapiridae,perissodactyla,mammalia,TRUE
-9821,,,suidae,artiodactyla,mammalia,TRUE
-9836,,camelus,camelidae,artiodactyla,mammalia,TRUE
-9850,,,cervidae,artiodactyla,mammalia,TRUE
-9895,,,bovidae,artiodactyla,mammalia,TRUE
-9900,,bison,bovidae,artiodactyla,mammalia,TRUE
-9971,,,,pholidota,mammalia,TRUE
-9975,,,,lagomorpha,mammalia,TRUE
-9979,,,leporidae,lagomorpha,mammalia,TRUE
-9989,,,,rodentia,mammalia,TRUE
 57775,,acanthemblemaria,chaenopsidae,blenniiformes,actinopteri,TRUE
+8830,,,anatidae,anseriformes,aves,TRUE
+9443,,,,primates,mammalia,TRUE
+8487,,,testudinidae,testudines,,TRUE
+8782,,,,,aves,TRUE
+9397,,,,chiroptera,mammalia,TRUE
+9539,,macaca,cercopithecidae,primates,mammalia,TRUE
+337677,,,cricetidae,rodentia,mammalia,TRUE
+27659,,Sturnira,Phyllostomidae,Chiroptera,Mammalia,TRUE
+9397,,,,Chiroptera,Mammalia,TRUE
+9415,,,Phyllostomidae,Chiroptera,Mammalia,TRUE
+9376,,,Soricidae,Eulipotyphla,Mammalia,TRUE
+10111,,Praomys,Muridae,Rodentia,Mammalia,TRUE
+51347,,Lophuromys,Muridae,Rodentia,Mammalia,TRUE
+10066,,,Muridae,Rodentia,Mammalia,TRUE
+112225,,Malacomys,Muridae,Rodentia,Mammalia,TRUE
+34857,,Hylomyscus,Muridae,Rodentia,Mammalia,TRUE
+36801,,Crocidura,Soricidae,Eulipotyphla,Mammalia,TRUE
 8295,,ambystoma,ambystomatidae,caudata,amphibia,TRUE
 9499,,alouatta,atelidae,primates,mammalia,TRUE
 9788,,,equidae,perissodactyla,mammalia,TRUE
+379583,,,,carnivora,mammalia,TRUE
+9431,,,vespertilionidae,chiroptera,mammalia,TRUE
+9608,,,canidae,carnivora,mammalia,TRUE
+9625,,vulpes,canidae,carnivora,mammalia,TRUE
 9682,,felis,felidae,carnivora,mammalia,TRUE
+10114,,rattus,muridae,rodentia,mammalia,TRUE
+9432,,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
+30560,,,,chiroptera,mammalia,TRUE
+258862,,mops,molossidae,chiroptera,mammalia,TRUE
+27671,,pipistrellus,vespertilionidae,chiroptera,mammalia,TRUE
 119825,,,mephitidae,carnivora,mammalia,TRUE
 125862,,copsychus,muscicapidae,passeriformes,aves,TRUE
 13124,,lynx,felidae,carnivora,mammalia,TRUE
+1526411,,mareca,anatidae,anseriformes,aves,TRUE
 164646,,,icteridae,passeriformes,aves,TRUE
 172412,,sialia,turdidae,passeriformes,aves,TRUE
 198026,,melanitta,anatidae,anseriformes,aves,TRUE
+2068716,,,anatidae,anseriformes,aves,TRUE
 2558200,,,,accipitriformes,aves,TRUE
 2607033,,,apodidae,apodiformes,aves,TRUE
 28725,,,corvidae,passeriformes,aves,TRUE
@@ -156,24 +54,40 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 33617,,pelecanus,pelecanidae,pelecaniformes,aves,TRUE
 35549,,,cacatuidae,psittaciformes,aves,TRUE
 36242,,streptopelia,columbidae,columbiformes,aves,TRUE
+36294,,,pycnonotidae,passeriformes,aves,TRUE
 37056,,macronectes,procellariidae,procellariiformes,aves,TRUE
+466544,,,phasianidae,galliformes,aves,TRUE
 52791,,luscinia,turdidae,passeriformes,aves,TRUE
+56259,,,accipitridae,accipitriformes,aves,TRUE
 69507,,muscicapa,muscicapidae,passeriformes,aves,TRUE
 70608,,sterna,laridae,charadriiformes,aves,TRUE
 8796,,rhea,rheidae,rheiformes,aves,TRUE
 8798,,,,struthioniformes,aves,TRUE
 8800,,struthio,struthionidae,struthioniformes,aves,TRUE
 8826,,,,anseriformes,aves,TRUE
+8835,,anas,anatidae,anseriformes,aves,TRUE
+8842,,anser,anatidae,anseriformes,aves,TRUE
 8867,,cygnus,anatidae,anseriformes,aves,TRUE
 8877,,mergus,anatidae,anseriformes,aves,TRUE
+8888,,tadorna,anatidae,anseriformes,aves,TRUE
+8899,,,ardeidae,pelecaniformes,aves,TRUE
 8900,,nycticorax,ardeidae,pelecaniformes,aves,TRUE
 8906,,,,charadriiformes,aves,TRUE
 8910,,,laridae,charadriiformes,aves,TRUE
+8911,,larus,laridae,charadriiformes,aves,TRUE
 8917,,,scolopacidae,charadriiformes,aves,TRUE
 8918,,calidris,scolopacidae,charadriiformes,aves,TRUE
 8929,,,,columbiformes,aves,TRUE
+8930,,,columbidae,columbiformes,aves,TRUE
+8931,,columba,columbidae,columbiformes,aves,TRUE
+8952,,falco,falconidae,falconiformes,aves,TRUE
+8976,,,,galliformes,aves,TRUE
+8990,,,numididae,galliformes,aves,TRUE
 8995,,numida,numididae,galliformes,aves,TRUE
+9005,,,phasianidae,galliformes,aves,TRUE
+9030,,gallus,phasianidae,galliformes,aves,TRUE
 9048,,pavo,phasianidae,galliformes,aves,TRUE
+9072,,,phasianidae,galliformes,aves,TRUE
 9090,,coturnix,phasianidae,galliformes,aves,TRUE
 9102,,meleagris,phasianidae,galliformes,aves,TRUE
 9109,,,gruidae,gruiformes,aves,TRUE
@@ -181,65 +95,110 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9120,,fulica,rallidae,gruiformes,aves,TRUE
 9122,,gallinula,rallidae,gruiformes,aves,TRUE
 9133,,,fringillidae,passeriformes,aves,TRUE
+9158,,,passeridae,passeriformes,aves,TRUE
 9170,,,sturnidae,passeriformes,aves,TRUE
+9183,,,turdidae,passeriformes,aves,TRUE
 9193,,,laniidae,passeriformes,aves,TRUE
 9206,,,phalacrocoracidae,suliformes,aves,TRUE
 9207,,phalacrocorax,phalacrocoracidae,suliformes,aves,TRUE
 9220,,,picidae,piciformes,aves,TRUE
+9223,,,,psittaciformes,aves,TRUE
+9224,,,psittacidae,psittaciformes,aves,TRUE
 9237,,pygoscelis,spheniscidae,sphenisciformes,aves,TRUE
+9655,,,mustelidae,carnivora,mammalia,TRUE
+9673,,,viverridae,carnivora,mammalia,TRUE
 9709,,,phocidae,carnivora,mammalia,TRUE
+9821,,,suidae,artiodactyla,mammalia,TRUE
 9976,,,ochotonidae,lagomorpha,mammalia,TRUE
+10088,,mus,muridae,rodentia,mammalia,TRUE
+10026,,,cricetidae,rodentia,mammalia,TRUE
+9971,,,,pholidota,mammalia,TRUE
+10035,,mesocricetus,cricetidae,rodentia,mammalia,TRUE
+314293,,,,primates,mammalia,TRUE
+8033,,salvelinus,salmonidae,salmoniformes,actinopteri,TRUE
 30910,,,channidae,anabantiformes,actinopteri,TRUE
 30948,,,soleidae,pleuronectiformes,actinopteri,TRUE
 504568,,,salmonidae,salmoniformes,actinopteri,TRUE
 8008,,,esocidae,esociformes,actinopteri,TRUE
 8015,,,salmonidae,salmoniformes,actinopteri,TRUE
-8033,,salvelinus,salmonidae,salmoniformes,actinopteri,TRUE
 10128,,apodemus,muridae,rodentia,mammalia,TRUE
 52807,,menetes,sciuridae,rodentia,mammalia,TRUE
+9989,,,,rodentia,mammalia,TRUE
+9850,,,cervidae,artiodactyla,mammalia,TRUE
 188374,,ardeola,ardeidae,pelecaniformes,aves,TRUE
 8825,,,,,aves,TRUE
-,,,,,,
-,,,,,,FALSE
+53274,,Rhizomys,Spalacidae,Rodentia,Mammalia,TRUE
 53274,,rhizomys,spalacidae,rodentia,mammalia,TRUE
 142475,,poecile,paridae,passeriformes,aves,TRUE
+9231,,,spheniscidae,sphenisciformes,aves,TRUE
+48881,,geospiza,thraupidae,passeriformes,aves,TRUE
 28700,,fratercula,alcidae,charadriiformes,aves,TRUE
 9554,,papio,cercopithecidae,primates,mammalia,TRUE
+37577,,morus,sulidae,suliformes,aves,TRUE
 392898,,balistapus,balistidae,tetraodontiformes,actinopteri,TRUE
+9836,,camelus,camelidae,artiodactyla,mammalia,TRUE
+109484,,hypsugo,vespertilionidae,chiroptera,mammalia,TRUE
+49442,,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
+58068,,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
+153296,,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
+186994,,,hipposideridae,chiroptera,mammalia,TRUE
+30577,,,erinaceidae,eulipotyphla,mammalia,TRUE
 461397,,coleura,emballonuridae,chiroptera,mammalia,TRUE
+58066,,epomophorus,pteropodidae,chiroptera,mammalia,TRUE
 9416,,artibeus,phyllostomidae,chiroptera,mammalia,TRUE
+9437,,tadarida,molossidae,chiroptera,mammalia,TRUE
+124754,,,Rhinopomatidae,Chiroptera,Mammalia,TRUE
+49442,,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
+258954,,scotoecus,vespertilionidae,chiroptera,mammalia,TRUE
 909366,,glauconycteris,vespertilionidae,chiroptera,mammalia,TRUE
+77236,,myonycteris,pteropodidae,chiroptera,mammalia,TRUE
+59466,,nycteris,nycteridae,chiroptera,mammalia,TRUE
 157240,,arnoglossus,bothidae,pleuronectiformes,actinopteri,TRUE
 390361,,pentapodus,nemipteridae,spariformes,actinopteri,TRUE
 241304,,hologymnosus,labridae,labriformes,actinopteri,TRUE
 9822,,sus,suidae,artiodactyla,mammalia,TRUE
-10026,,,cricetidae,rodentia,mammalia,TRUE
+9895,,,bovidae,artiodactyla,mammalia,TRUE
 9944,,tragelaphus,bovidae,artiodactyla,mammalia,TRUE
+40674,,,,,mammalia,TRUE
 8511,,,,squamata,lepidosauria,TRUE
+9592,,gorilla,hominidae,primates,mammalia,TRUE
+9605,,homo,hominidae,primates,mammalia,TRUE
 9832,,hippopotamus,hippopotamidae,artiodactyla,mammalia,TRUE
+29075,,macroglossus,pteropodidae,chiroptera,mammalia,TRUE
 9362,,,,eulipotyphla,mammalia,TRUE
+9434,,myotis,vespertilionidae,chiroptera,mammalia,TRUE
+103819,,mycteroperca,serranidae,perciformes,actinopteri,TRUE
+274794,,,serranidae,perciformes,actinopteri,TRUE
+94231,,epinephelus,serranidae,perciformes,actinopteri,TRUE
 30871,,,serranidae,perciformes,actinopteri,TRUE
 9527,,,cercopithecidae,primates,mammalia,TRUE
 9520,,saimiri,cebidae,primates,mammalia,TRUE
 879711,,blenniella,blenniidae,blenniiformes,actinopteri,TRUE
-9845,,,,artiodactyla,mammalia,TRUE
-9903,,bos,bovidae,artiodactyla,mammalia,TRUE
 85610,,terrapene,emydidae,testudines,,TRUE
-48881,,geospiza,thraupidae,passeriformes,aves,TRUE
+568926,,neoromicia,vespertilionidae,chiroptera,mammalia,TRUE
+9611,,canis,canidae,carnivora,mammalia,TRUE
+9965,,capricornis,bovidae,artiodactyla,mammalia,TRUE
+9903,,bos,bovidae,artiodactyla,mammalia,TRUE
 7995,,,,siluriformes,actinopteri,TRUE
 9513,,cebus,cebidae,primates,mammalia,TRUE
 9738,,tursiops,delphinidae,artiodactyla,mammalia,TRUE
-29122,,oryzomys,cricetidae,rodentia,mammalia,TRUE
+258862,,Mops,Molossidae,Chiroptera,Mammalia,TRUE
 8126,,tilapia,cichlidae,cichliformes,actinopteri,TRUE
 8139,,oreochromis,cichlidae,cichliformes,actinopteri,TRUE
+34907,,,trionychidae,testudines,,TRUE
 12945,,aratinga,psittacidae,psittaciformes,aves,TRUE
+60461,,agapornis,psittacidae,psittaciformes,aves,TRUE
 58055,,,rhinolophidae,chiroptera,mammalia,TRUE
 867874,,phoniscus,vespertilionidae,chiroptera,mammalia,TRUE
-29132,,,castoridae,rodentia,mammalia,TRUE
-45478,,cynomys,sciuridae,rodentia,mammalia,TRUE
-8573,,boa,boidae,squamata,lepidosauria,TRUE
-9697,,,herpestidae,carnivora,mammalia,TRUE
-9799,,,tapiridae,perissodactyla,mammalia,TRUE
+9481,,callithrix,cebidae,primates,mammalia,TRUE
+9401,,Pteropus,Pteropodidae,Chiroptera,Mammalia,TRUE
+29075,,Macroglossus,Pteropodidae,Chiroptera,Mammalia,TRUE
+9406,,Rousettus,Pteropodidae,Chiroptera,Mammalia,TRUE
+9399,,Cynopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
+30639,,Mastomys,Muridae,Rodentia,Mammalia,TRUE
+9215,,,phoenicopteridae,phoenicopteriformes,aves,TRUE
+9800,,tapirus,tapiridae,perissodactyla,mammalia,TRUE
+36801,,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 51790,,cyprichromis,cichlidae,cichliformes,actinopteri,TRUE
 188718,,hyphessobrycon,acestrorhamphidae,characiformes,actinopteri,TRUE
 7777,,,,,chondrichthyes,TRUE
@@ -255,6 +214,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 84832,,molothrus,icteridae,passeriformes,aves,TRUE
 9053,,phasianus,phasianidae,galliformes,aves,TRUE
 9479,,,,primates,mammalia,TRUE
+10111,,praomys,muridae,rodentia,mammalia,TRUE
 392815,,chlorocebus,cercopithecidae,primates,mammalia,TRUE
 9859,,cervus,cervidae,artiodactyla,mammalia,TRUE
 150295,,exyrias,gobiidae,gobiiformes,actinopteri,TRUE
@@ -262,70 +222,102 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 110215,,atheris,viperidae,squamata,lepidosauria,TRUE
 42188,,daboia,viperidae,squamata,lepidosauria,TRUE
 8497,,caiman,alligatoridae,crocodylia,,TRUE
+8570,,,,squamata,lepidosauria,TRUE
 59516,,alcelaphus,bovidae,artiodactyla,mammalia,TRUE
+9845,,,,artiodactyla,mammalia,TRUE
 9896,,aepyceros,bovidae,artiodactyla,mammalia,TRUE
+9900,,bison,bovidae,artiodactyla,mammalia,TRUE
 9918,,bubalus,bovidae,artiodactyla,mammalia,TRUE
 9926,,connochaetes,bovidae,artiodactyla,mammalia,TRUE
 9933,,gazella,bovidae,artiodactyla,mammalia,TRUE
 9957,,oryx,bovidae,artiodactyla,mammalia,TRUE
+55533,,apalone,trionychidae,testudines,,TRUE
+8342,,,,anura,amphibia,TRUE
 29083,,arctocephalus,otariidae,carnivora,mammalia,TRUE
 176023,,eclectus,psittacidae,psittaciformes,aves,TRUE
 9225,,ara,psittacidae,psittaciformes,aves,TRUE
 210603,,cynodon,characidae,characiformes,actinopteri,TRUE
-9965,,capricornis,bovidae,artiodactyla,mammalia,TRUE
+38771,,gopherus,testudinidae,testudines,,TRUE
+9789,,equus,equidae,perissodactyla,mammalia,TRUE
 9159,,passer,passeridae,passeriformes,aves,TRUE
 9364,,erinaceus,erinaceidae,eulipotyphla,mammalia,TRUE
 9570,,colobus,cercopithecidae,primates,mammalia,TRUE
+38664,,chaetodipus,heteromyidae,rodentia,mammalia,TRUE
 59514,,addax,bovidae,artiodactyla,mammalia,TRUE
 270557,,hoplichthys,hoplichthyidae,perciformes,actinopteri,TRUE
 30989,,,siluridae,siluriformes,actinopteri,TRUE
-58219,,decapterus,carangidae,carangiformes,actinopteri,TRUE
-8163,,lateolabrax,lateolabracidae,acropomatiformes,actinopteri,TRUE
-8169,,,sparidae,spariformes,actinopteri,TRUE
-94231,,epinephelus,serranidae,perciformes,actinopteri,TRUE
-96885,,sardinella,clupeidae,clupeiformes,actinopteri,TRUE
-96902,,trichogaster,osphronemidae,anabantiformes,actinopteri,TRUE
+58068,,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
+58086,,Thoopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
+8835,,Anas,Anatidae,Anseriformes,Aves,TRUE
+8842,,Anser,Anatidae,Anseriformes,Aves,TRUE
+8911,,Larus,Laridae,Charadriiformes,Aves,TRUE
+9432,,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
+58066,,Epomophorus,Pteropodidae,Chiroptera,Mammalia,TRUE
+77236,,Myonycteris,Pteropodidae,Chiroptera,Mammalia,TRUE
+9436,,,molossidae,chiroptera,mammalia,TRUE
 9922,,capra,bovidae,artiodactyla,mammalia,TRUE
 9963,,,bovidae,artiodactyla,mammalia,TRUE
 183601,,regina,colubridae,squamata,lepidosauria,TRUE
 337744,,rita,bagridae,siluriformes,actinopteri,TRUE
-9481,,callithrix,cebidae,primates,mammalia,TRUE
+55153,,,sciuridae,rodentia,mammalia,TRUE
+10114,,Rattus,Muridae,Rodentia,Mammalia,TRUE
+8169,,,sparidae,spariformes,actinopteri,TRUE
 8252,,,,pleuronectiformes,actinopteri,TRUE
 9401,,pteropus,pteropodidae,chiroptera,mammalia,TRUE
+9376,,,soricidae,eulipotyphla,mammalia,TRUE
 169417,,,mustelidae,carnivora,mammalia,TRUE
+204266,,melogale,mustelidae,carnivora,mammalia,TRUE
 27621,,molossus,molossidae,chiroptera,mammalia,TRUE
 27625,,nyctinomops,molossidae,chiroptera,mammalia,TRUE
+29132,,,castoridae,rodentia,mammalia,TRUE
 303306,,cynomops,molossidae,chiroptera,mammalia,TRUE
 30541,,conepatus,mephitidae,carnivora,mammalia,TRUE
 30546,,mephitis,mephitidae,carnivora,mammalia,TRUE
 30550,,spilogale,mephitidae,carnivora,mammalia,TRUE
+30650,,,gliridae,rodentia,mammalia,TRUE
 33554,,,,carnivora,mammalia,TRUE
 337730,,,sciuridae,rodentia,mammalia,TRUE
 34879,,nyctereutes,canidae,carnivora,mammalia,TRUE
 40234,,,phyllostomidae,chiroptera,mammalia,TRUE
-55153,,,sciuridae,rodentia,mammalia,TRUE
 94189,,genetta,viverridae,carnivora,mammalia,TRUE
 9619,,dusicyon,canidae,carnivora,mammalia,TRUE
 9653,,procyon,procyonidae,carnivora,mammalia,TRUE
 9658,,martes,mustelidae,carnivora,mammalia,TRUE
 9676,,,hyaenidae,carnivora,mammalia,TRUE
+9697,,,herpestidae,carnivora,mammalia,TRUE
 9935,,ovis,bovidae,artiodactyla,mammalia,TRUE
 9952,,,bovidae,artiodactyla,mammalia,TRUE
-10035,,mesocricetus,cricetidae,rodentia,mammalia,TRUE
 100944,,hylopetes,sciuridae,rodentia,mammalia,TRUE
+153296,,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
+34857,,hylomyscus,muridae,rodentia,mammalia,TRUE
 9379,,sorex,soricidae,eulipotyphla,mammalia,TRUE
+10135,,,hystricidae,rodentia,mammalia,TRUE
 9394,,tupaia,tupaiidae,scandentia,mammalia,TRUE
 9398,,,pteropodidae,chiroptera,mammalia,TRUE
+42407,,neotoma,cricetidae,rodentia,mammalia,TRUE
+10069,,akodon,cricetidae,rodentia,mammalia,TRUE
+30639,,mastomys,muridae,rodentia,mammalia,TRUE
 9263,,,,,mammalia,TRUE
+10084,,cricetomys,nesomyidae,rodentia,mammalia,TRUE
+71161,,hybomys,muridae,rodentia,mammalia,TRUE
+58219,,decapterus,carangidae,carangiformes,actinopteri,TRUE
+8163,,lateolabrax,lateolabracidae,acropomatiformes,actinopteri,TRUE
+96902,,trichogaster,osphronemidae,anabantiformes,actinopteri,TRUE
 36795,,melomys,muridae,rodentia,mammalia,TRUE
 40156,,lonchura,estrildidae,passeriformes,aves,TRUE
+9126,,,,passeriformes,aves,TRUE
 9973,,manis,manidae,pholidota,mammalia,TRUE
-226679,,funisciurus,sciuridae,rodentia,mammalia,TRUE
 71116,,paradoxurus,viverridae,carnivora,mammalia,TRUE
+9702,,,otariidae,carnivora,mammalia,TRUE
 9717,,phoca,phocidae,carnivora,mammalia,TRUE
 34874,,saiga,bovidae,artiodactyla,mammalia,TRUE
 9867,,dama,cervidae,artiodactyla,mammalia,TRUE
 9740,,,phocoenidae,artiodactyla,mammalia,TRUE
+9989,,,,Rodentia,Mammalia,TRUE
+42414,,sigmodon,cricetidae,rodentia,mammalia,TRUE
+69078,,Bandicota,Muridae,Rodentia,Mammalia,TRUE
+69082,,Niviventer,Muridae,Rodentia,Mammalia,TRUE
+10084,,Cricetomys,Nesomyidae,Rodentia,Mammalia,TRUE
 9650,,nasua,procyonidae,carnivora,mammalia,TRUE
 32506,,neolamprologus,cichlidae,cichliformes,actinopteri,TRUE
 196074,,sprattus,clupeidae,clupeiformes,actinopteri,TRUE
@@ -339,6 +331,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 8045,,,gadidae,gadiformes,actinopteri,TRUE
 8048,,gadus,gadidae,gadiformes,actinopteri,TRUE
 81641,,,lotidae,gadiformes,actinopteri,TRUE
+29122,,oryzomys,cricetidae,rodentia,mammalia,TRUE
 245037,,acridotheres,sturnidae,passeriformes,aves,TRUE
 34923,,pica,corvidae,passeriformes,aves,TRUE
 35541,,platycercus,psittacidae,psittaciformes,aves,TRUE
@@ -367,43 +360,56 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 58200,,mimus,mimidae,passeriformes,aves,TRUE
 8926,,,ciconiidae,ciconiiformes,aves,TRUE
 75880,,tachyeres,anatidae,anseriformes,aves,TRUE
-337677,,,cricetidae,rodentia,mammalia,TRUE
 89456,,stenocephalemys,muridae,rodentia,mammalia,TRUE
+45478,,cynomys,sciuridae,rodentia,mammalia,TRUE
+8573,,boa,boidae,squamata,lepidosauria,TRUE
+9799,,,tapiridae,perissodactyla,mammalia,TRUE
+226679,,funisciurus,sciuridae,rodentia,mammalia,TRUE
+10045,,,muridae,rodentia,mammalia,TRUE
 29124,,oxymycterus,cricetidae,rodentia,mammalia,TRUE
 50592,,pagellus,sparidae,spariformes,actinopteri,TRUE
 37348,,mammuthus,elephantidae,proboscidea,mammalia,TRUE
+9527,,,Cercopithecidae,Primates,Mammalia,TRUE
+9529,,Cercocebus,Cercopithecidae,Primates,Mammalia,TRUE
+10069,,Akodon,Cricetidae,Rodentia,Mammalia,TRUE
+9434,,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
 50352,,chalinolobus,vespertilionidae,chiroptera,mammalia,TRUE
 30424,,emberiza,fringillidae,passeriformes,aves,TRUE
 9186,,turdus,turdidae,passeriformes,aves,TRUE
 8165,,,percidae,perciformes,actinopteri,TRUE
+41262,,tatera,muridae,rodentia,mammalia,TRUE
 77230,,epomops,pteropodidae,chiroptera,mammalia,TRUE
 662560,,rusa,cervidae,artiodactyla,mammalia,TRUE
 45806,,motacilla,motacillidae,passeriformes,aves,TRUE
+91780,,ramphastos,ramphastidae,piciformes,aves,TRUE
+9181,,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 595629,,pleurosicya,gobiidae,gobiiformes,actinopteri,TRUE
 30648,,,dipodidae,rodentia,mammalia,TRUE
+10168,,Thryonomys,Thryonomyidae,Rodentia,Mammalia,TRUE
+9577,,,hylobatidae,primates,mammalia,TRUE
 61393,,caracal,felidae,carnivora,mammalia,TRUE
 30869,,,scatophagidae,,actinopteri,TRUE
 171415,,pseudorhombus,paralichthyidae,pleuronectiformes,actinopteri,TRUE
 44521,,pelomedusa,pelomedusidae,testudines,,TRUE
-103819,,mycteroperca,serranidae,perciformes,actinopteri,TRUE
-274794,,,serranidae,perciformes,actinopteri,TRUE
 37579,,python,pythonidae,squamata,lepidosauria,TRUE
 40248,,,chamaeleonidae,squamata,lepidosauria,TRUE
+51347,,lophuromys,muridae,rodentia,mammalia,TRUE
 44233,,reithrodontomys,cricetidae,rodentia,mammalia,TRUE
 9486,,saguinus,cebidae,primates,mammalia,TRUE
 8459,,,,testudines,,TRUE
+86974,,testudo,testudinidae,testudines,,TRUE
+9599,,pongo,hominidae,primates,mammalia,TRUE
 9307,,,macropodidae,diprotodontia,mammalia,TRUE
 7953,,,cyprinidae,cypriniformes,actinopteri,TRUE
 443805,,pseudophycis,moridae,gadiformes,actinopteri,TRUE
 2828480,,gypsophila,pellorneidae,passeriformes,aves,TRUE
-55533,,apalone,trionychidae,testudines,,TRUE
 13745,,uria,alcidae,charadriiformes,aves,TRUE
 447134,,myodes,cricetidae,rodentia,mammalia,TRUE
 195630,,plagiopsetta,samaridae,pleuronectiformes,actinopteri,TRUE
+36211,,trachurus,carangidae,carangiformes,actinopteri,TRUE
 27764,,xenotilapia,cichlidae,cichliformes,actinopteri,TRUE
 117849,,platyrhina,platyrhinidae,,chondrichthyes,TRUE
 58057,Acerodon celebensis,Acerodon,Pteropodidae,Chiroptera,Mammalia,TRUE
-29096,Akodon cursor,Akodon,Cricetidae,Rodentia,Mammalia,TRUE
 54135,Allenopithecus nigroviridis,Allenopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 147649,Allochrocebus preussi,Allochrocebus,Cercopithecidae,Primates,Mammalia,TRUE
 121123,Alouatta sara,Alouatta,Atelidae,Primates,Mammalia,TRUE
@@ -412,14 +418,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 8843,Anser anser,Anser,Anatidae,Anseriformes,Aves,TRUE
 8845,Anser cygnoides,Anser,Anatidae,Anseriformes,Aves,TRUE
 214933,Apodemus latronum,Apodemus,Muridae,Rodentia,Mammalia,TRUE
-10129,Apodemus sylvaticus,Apodemus,Muridae,Rodentia,Mammalia,TRUE
 9417,Artibeus jamaicensis,Artibeus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 27634,Artibeus lituratus,Artibeus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 40228,Artibeus obscurus,Artibeus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 40230,Artibeus planirostris,Artibeus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 61156,Arvicanthis niloticus,Arvicanthis,Muridae,Rodentia,Mammalia,TRUE
 188568,Aselliscus stoliczkanus,Aselliscus,Hipposideridae,Chiroptera,Mammalia,TRUE
-77229,Balionycteris maculata,Balionycteris,Pteropodidae,Chiroptera,Mammalia,TRUE
 69079,Bandicota bengalensis,Bandicota,Muridae,Rodentia,Mammalia,TRUE
 456472,Bandicota indica,Bandicota,Muridae,Rodentia,Mammalia,TRUE
 249033,Bauerus dubiaquercus,Bauerus,Vespertilionidae,Chiroptera,Mammalia,TRUE
@@ -433,10 +437,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9612,Canis lupus,Canis,Canidae,Carnivora,Mammalia,TRUE
 40233,Carollia perspicillata,Carollia,Phyllostomidae,Chiroptera,Mammalia,TRUE
 208969,Carollia sowelli,Carollia,Phyllostomidae,Chiroptera,Mammalia,TRUE
-9477,Cephalopachus bancanus,Cephalopachus,Tarsiidae,Primates,Mammalia,TRUE
-129223,Cephalophorus callipygus,Cephalophorus,Bovidae,Artiodactyla,Mammalia,TRUE
-255237,Cercocebus agilis,Cercocebus,Cercopithecidae,Primates,Mammalia,TRUE
-75569,Cercocebus chrysogaster,Cercocebus,Cercopithecidae,Primates,Mammalia,TRUE
 36223,Cercopithecus ascanius,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 9535,Cercopithecus cephus,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 1137481,Cercopithecus kandti,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
@@ -444,18 +444,17 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 36226,Cercopithecus mona,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 36227,Cercopithecus neglectus,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 36228,Cercopithecus nictitans,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
-102108,Cercopithecus pogonias,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 263448,Cercopithecus wolfi,Cercopithecus,Cercopithecidae,Primates,Mammalia,TRUE
 9534,Chlorocebus aethiops,Chlorocebus,Cercopithecidae,Primates,Mammalia,TRUE
 60710,Chlorocebus pygerythrus,Chlorocebus,Cercopithecidae,Primates,Mammalia,TRUE
 60712,Chlorocebus tantalus,Chlorocebus,Cercopithecidae,Primates,Mammalia,TRUE
 907075,Coleura afra,Coleura,Emballonuridae,Chiroptera,Mammalia,TRUE
 54131,Colobus angolensis,Colobus,Cercopithecidae,Primates,Mammalia,TRUE
-33548,Colobus guereza,Colobus,Cercopithecidae,Primates,Mammalia,TRUE
 8932,Columba livia,Columba,Columbidae,Columbiformes,Aves,TRUE
 36249,Corvus macrorhynchos,Corvus,Corvidae,Passeriformes,Aves,TRUE
 701737,Corvus splendens,Corvus,Corvidae,Passeriformes,Aves,TRUE
 9091,Coturnix coturnix,Coturnix,Phasianidae,Galliformes,Aves,TRUE
+107265,Cricetomys emini,Cricetomys,Nesomyidae,Rodentia,Mammalia,TRUE
 167044,Crocidura attenuata,Crocidura,Soricidae,Eulipotyphla,Mammalia,TRUE
 148970,Crocidura goliath,Crocidura,Soricidae,Eulipotyphla,Mammalia,TRUE
 516697,Crocidura montis,Crocidura,Soricidae,Eulipotyphla,Mammalia,TRUE
@@ -464,10 +463,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 58060,Cynopterus brachyotis,Cynopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
 298109,Cynopterus horsfieldii,Cynopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
 9400,Cynopterus sphinx,Cynopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
+121564,Dasymys rufulus,Dasymys,Muridae,Rodentia,Mammalia,TRUE
 106343,Deomys ferrugineus,Deomys,Muridae,Rodentia,Mammalia,TRUE
-1001553,Dephomys defua,Dephomys,Muridae,Rodentia,Mammalia,TRUE
 40229,Dermanura phaeotis,Dermanura,Phyllostomidae,Chiroptera,Mammalia,TRUE
-9430,Desmodus rotundus,Desmodus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 249021,Doryrhina cyclops,Doryrhina,Hipposideridae,Chiroptera,Mammalia,TRUE
 226546,Dremomys rufigenis,Dremomys,Sciuridae,Rodentia,Mammalia,TRUE
 326081,Dyacopterus spadiceus,Dyacopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
@@ -481,11 +479,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1410044,Epomops buettikoferi,Epomops,Pteropodidae,Chiroptera,Mammalia,TRUE
 77231,Epomops franqueti,Epomops,Pteropodidae,Chiroptera,Mammalia,TRUE
 9538,Erythrocebus patas,Erythrocebus,Cercopithecidae,Primates,Mammalia,TRUE
-226680,Funisciurus pyrropus,Funisciurus,Sciuridae,Rodentia,Mammalia,TRUE
 9031,Gallus gallus,Gallus,Phasianidae,Galliformes,Aves,TRUE
-258909,Glauconycteris poensis,Glauconycteris,Vespertilionidae,Chiroptera,Mammalia,TRUE
+410301,Gerbilliscus kempi,Gerbilliscus,Muridae,Rodentia,Mammalia,TRUE
 909369,Glauconycteris variegata,Glauconycteris,Vespertilionidae,Chiroptera,Mammalia,TRUE
-177159,Glossophaga commissarisi,Glossophaga,Phyllostomidae,Chiroptera,Mammalia,TRUE
 27638,Glossophaga soricina,Glossophaga,Phyllostomidae,Chiroptera,Mammalia,TRUE
 499232,Gorilla beringei,Gorilla,Hominidae,Primates,Mammalia,TRUE
 9593,Gorilla gorilla,Gorilla,Hominidae,Primates,Mammalia,TRUE
@@ -496,9 +492,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 302402,Hipposideros caffer,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 170233,Hipposideros cervinus,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 59453,Hipposideros diadema,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
-584995,Hipposideros fuliginosus,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 58069,Hipposideros galeritus,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
-584997,Hipposideros jonesi,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 175524,Hipposideros larvatus,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 1207989,Hipposideros lekaguli,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 334201,Hipposideros pomona,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
@@ -506,26 +500,23 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 463808,Hipposideros ruber,Hipposideros,Hipposideridae,Chiroptera,Mammalia,TRUE
 9606,Homo sapiens,Homo,Hominidae,Primates,Mammalia,TRUE
 9589,Hylobates pileatus,Hylobates,Hylobatidae,Primates,Mammalia,TRUE
+209855,Hylomyscus parvus,Hylomyscus,Muridae,Rodentia,Mammalia,TRUE
 41265,Hylomyscus stella,Hylomyscus,Muridae,Rodentia,Mammalia,TRUE
 100945,Hylopetes phayrei,Hylopetes,Sciuridae,Rodentia,Mammalia,TRUE
+448084,Hypsignathus monstrosus,Hypsignathus,Pteropodidae,Chiroptera,Mammalia,TRUE
 143286,Hystrix brachyura,Hystrix,Hystricidae,Rodentia,Mammalia,TRUE
 360967,Ia io,Ia,Vespertilionidae,Chiroptera,Mammalia,TRUE
-155035,Kerivoula hardwickii,Kerivoula,Vespertilionidae,Chiroptera,Mammalia,TRUE
-685729,Kerivoula minuta,Kerivoula,Vespertilionidae,Chiroptera,Mammalia,TRUE
-258925,Kerivoula pellucida,Kerivoula,Vespertilionidae,Chiroptera,Mammalia,TRUE
 857467,Leopoldamys neilli,Leopoldamys,Muridae,Rodentia,Mammalia,TRUE
-69073,Leopoldamys sabanus,Leopoldamys,Muridae,Rodentia,Mammalia,TRUE
 1001577,Lichonycteris obscura,Lichonycteris,Phyllostomidae,Chiroptera,Mammalia,TRUE
 148061,Lonchorhina aurita,Lonchorhina,Phyllostomidae,Chiroptera,Mammalia,TRUE
 75567,Lophocebus albigena,Lophocebus,Cercopithecidae,Primates,Mammalia,TRUE
 75566,Lophocebus aterrimus,Lophocebus,Cercopithecidae,Primates,Mammalia,TRUE
 1116258,Lophuromys nudicaudus,Lophuromys,Muridae,Rodentia,Mammalia,TRUE
+83535,Lophuromys sikapusi,Lophuromys,Muridae,Rodentia,Mammalia,TRUE
 3371112,Lyroderma lyra,Lyroderma,Megadermatidae,Chiroptera,Mammalia,TRUE
 9541,Macaca fascicularis,Macaca,Cercopithecidae,Primates,Mammalia,TRUE
-90387,Macaca leonina,Macaca,Cercopithecidae,Primates,Mammalia,TRUE
 9544,Macaca mulatta,Macaca,Cercopithecidae,Primates,Mammalia,TRUE
 9545,Macaca nemestrina,Macaca,Cercopithecidae,Primates,Mammalia,TRUE
-54600,Macaca nigra,Macaca,Cercopithecidae,Primates,Mammalia,TRUE
 326083,Macroglossus sobrinus,Macroglossus,Pteropodidae,Chiroptera,Mammalia,TRUE
 110941,Macronycteris commersonii,Macronycteris,Hipposideridae,Chiroptera,Mammalia,TRUE
 584996,Macronycteris gigas,Macronycteris,Hipposideridae,Chiroptera,Mammalia,TRUE
@@ -536,18 +527,14 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 10112,Mastomys natalensis,Mastomys,Muridae,Rodentia,Mammalia,TRUE
 69081,Maxomys surifer,Maxomys,Muridae,Rodentia,Mammalia,TRUE
 69127,Maxomys whiteheadi,Maxomys,Muridae,Rodentia,Mammalia,TRUE
-9414,Megaderma spasma,Megaderma,Megadermatidae,Chiroptera,Mammalia,TRUE
-298110,Megaerops ecaudatus,Megaerops,Pteropodidae,Chiroptera,Mammalia,TRUE
 77233,Megaerops niphanae,Megaerops,Pteropodidae,Chiroptera,Mammalia,TRUE
 58073,Megaloglossus woermanni,Megaloglossus,Pteropodidae,Chiroptera,Mammalia,TRUE
 52808,Menetes berdmorei,Menetes,Sciuridae,Rodentia,Mammalia,TRUE
 148094,Mesophylla macconnelli,Mesophylla,Phyllostomidae,Chiroptera,Mammalia,TRUE
 221087,Miniopterus inflatus,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
 438766,Miniopterus magnater,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
-221086,Miniopterus minor,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
 258934,Miniopterus pusillus,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
 9433,Miniopterus schreibersii,Miniopterus,Miniopteridae,Chiroptera,Mammalia,TRUE
-27622,Molossus molossus,Molossus,Molossidae,Chiroptera,Mammalia,TRUE
 258863,Mops condylurus,Mops,Molossidae,Chiroptera,Mammalia,TRUE
 452595,Mops midas,Mops,Molossidae,Chiroptera,Mammalia,TRUE
 3370289,Mops plicatus,Mops,Molossidae,Chiroptera,Mammalia,TRUE
@@ -557,12 +544,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 10089,Mus caroli,Mus,Muridae,Rodentia,Mammalia,TRUE
 10097,Mus cervicolor,Mus,Muridae,Rodentia,Mammalia,TRUE
 10098,Mus cookii,Mus,Muridae,Rodentia,Mammalia,TRUE
-10105,Mus minutoides,Mus,Muridae,Rodentia,Mammalia,TRUE
 60742,Mus musculoides,Mus,Muridae,Rodentia,Mammalia,TRUE
 10090,Mus musculus,Mus,Muridae,Rodentia,Mammalia,TRUE
 10095,Mus sp.,Mus,Muridae,Rodentia,Mammalia,TRUE
 36240,Mustela sibirica,Mustela,Mustelidae,Carnivora,Mammalia,TRUE
-77243,Myonycteris torquata,Myonycteris,Pteropodidae,Chiroptera,Mammalia,TRUE
 159322,Myotis albescens,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
 415933,Myotis altarium,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
 257882,Myotis californicus,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
@@ -579,57 +564,38 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 258940,Myotis siligorensis,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
 9435,Myotis velifer,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
 160974,Myotis welwitschii,Myotis,Vespertilionidae,Chiroptera,Mammalia,TRUE
-71115,Nandinia binotata,Nandinia,Nandiniidae,Carnivora,Mammalia,TRUE
 43780,Nasalis larvatus,Nasalis,Cercopithecidae,Primates,Mammalia,TRUE
-258944,Neoromicia somalicus,Neoromicia,Vespertilionidae,Chiroptera,Mammalia,TRUE
 69083,Niviventer cremoriventer,Niviventer,Muridae,Rodentia,Mammalia,TRUE
-425033,Niviventer eha,Niviventer,Muridae,Rodentia,Mammalia,TRUE
 83774,Niviventer fulvescens,Niviventer,Muridae,Rodentia,Mammalia,TRUE
 375553,Nyctalus plancyi,Nyctalus,Vespertilionidae,Chiroptera,Mammalia,TRUE
-178896,Nycteris grandis,Nycteris,Nycteridae,Chiroptera,Mammalia,TRUE
 270766,Nycteris hispida,Nycteris,Nycteridae,Chiroptera,Mammalia,TRUE
-3370416,Nycteris major,Nycteris,Nycteridae,Chiroptera,Mammalia,TRUE
 59467,Nycteris thebaica,Nycteris,Nycteridae,Chiroptera,Mammalia,TRUE
-479723,Nycteris tragata,Nycteris,Nycteridae,Chiroptera,Mammalia,TRUE
-261741,Nycticebus bengalensis,Nycticebus,Lorisidae,Primates,Mammalia,TRUE
-1286224,Nycticeinops crassulus,Nycticeinops,Vespertilionidae,Chiroptera,Mammalia,TRUE
-170209,Nyctimene cephalotes,Nyctimene,Pteropodidae,Chiroptera,Mammalia,TRUE
 27627,Nyctinomops laticaudatus,Nyctinomops,Molossidae,Chiroptera,Mammalia,TRUE
-130843,Ochotona thibetana,Ochotona,Ochotonidae,Lagomorpha,Mammalia,TRUE
 258867,Otomops martiensseni,Otomops,Molossidae,Chiroptera,Mammalia,TRUE
 9940,Ovis aries,Ovis,Bovidae,Artiodactyla,Mammalia,TRUE
 9598,Pan troglodytes,Pan,Hominidae,Primates,Mammalia,TRUE
 9555,Papio anubis,Papio,Cercopithecidae,Primates,Mammalia,TRUE
 9556,Papio cynocephalus,Papio,Cercopithecidae,Primates,Mammalia,TRUE
 9557,Papio hamadryas,Papio,Cercopithecidae,Primates,Mammalia,TRUE
-71117,Paradoxurus hermaphroditus,Paradoxurus,Viverridae,Carnivora,Mammalia,TRUE
-358128,Phataginus tricuspis,Phataginus,Manidae,Pholidota,Mammalia,TRUE
-907742,Philantomba monticola,Philantomba,Bovidae,Artiodactyla,Mammalia,TRUE
 9423,Phyllostomus hastatus,Phyllostomus,Phyllostomidae,Chiroptera,Mammalia,TRUE
 591935,Piliocolobus tholloni,Piliocolobus,Cercopithecidae,Primates,Mammalia,TRUE
 258946,Pipistrellus coromandra,Pipistrellus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 294653,Pipistrellus hesperidus,Pipistrellus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 59472,Pipistrellus kuhlii,Pipistrellus,Vespertilionidae,Chiroptera,Mammalia,TRUE
-1001556,Pipistrellus nanulus,Pipistrellus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 59474,Pipistrellus pipistrellus,Pipistrellus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 61862,Plecotus auritus,Plecotus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 9600,Pongo pygmaeus,Pongo,Hominidae,Primates,Mammalia,TRUE
-273791,Potamochoerus porcus,Potamochoerus,Suidae,Artiodactyla,Mammalia,TRUE
 1159791,Praomys derooi,Praomys,Muridae,Rodentia,Mammalia,TRUE
 209866,Praomys jacksoni,Praomys,Muridae,Rodentia,Mammalia,TRUE
 209867,Praomys misonnei,Praomys,Muridae,Rodentia,Mammalia,TRUE
 209869,Praomys tullbergi,Praomys,Muridae,Rodentia,Mammalia,TRUE
-2778567,Pseudoromicia brunnea,Pseudoromicia,Vespertilionidae,Chiroptera,Mammalia,TRUE
 3370648,Pseudoromicia tenuipinnis,Pseudoromicia,Vespertilionidae,Chiroptera,Mammalia,TRUE
 94956,Pteronotus davyi,Pteronotus,Mormoopidae,Chiroptera,Mammalia,TRUE
 59476,Pteronotus parnellii,Pteronotus,Mormoopidae,Chiroptera,Mammalia,TRUE
 118856,Pteronotus personatus,Pteronotus,Mormoopidae,Chiroptera,Mammalia,TRUE
 9402,Pteropus alecto,Pteropus,Pteropodidae,Chiroptera,Mammalia,TRUE
-328804,Pteropus conspicillatus,Pteropus,Pteropodidae,Chiroptera,Mammalia,TRUE
 166054,Pteropus lylei,Pteropus,Pteropodidae,Chiroptera,Mammalia,TRUE
 132908,Pteropus vampyrus,Pteropus,Pteropodidae,Chiroptera,Mammalia,TRUE
-270475,Pycnonotus plumosus,Pycnonotus,Pycnonotidae,Passeriformes,Aves,TRUE
-310352,Pygathrix nigripes,Pygathrix,Cercopithecidae,Primates,Mammalia,TRUE
 83752,Rattus argentiventer,Rattus,Muridae,Rodentia,Mammalia,TRUE
 34854,Rattus exulans,Rattus,Muridae,Rodentia,Mammalia,TRUE
 435406,Rattus hoffmanni,Rattus,Muridae,Rodentia,Mammalia,TRUE
@@ -639,22 +605,20 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 35732,Rattus tanezumi,Rattus,Muridae,Rodentia,Mammalia,TRUE
 2683850,Rattus xanthurus,Rattus,Muridae,Rodentia,Mammalia,TRUE
 226822,Ratufa bicolor,Ratufa,Sciuridae,Rodentia,Mammalia,TRUE
-320431,Rhinolophus acuminatus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 59477,Rhinolophus affinis,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 249024,Rhinolophus alcyone,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 76834,Rhinolophus arcuatus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
-519037,Rhinolophus blasii,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 59478,Rhinolophus clivosus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 867891,Rhinolophus coelophyllus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 178895,Rhinolophus creaghi,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 109476,Rhinolophus euryale,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 59479,Rhinolophus ferrumequinum,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
+302410,Rhinolophus fumigatus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 519039,Rhinolophus landeri,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 188570,Rhinolophus lepidus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 342862,Rhinolophus mehelyi,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 188571,Rhinolophus pearsonii,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 159858,Rhinolophus pusillus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
-479477,Rhinolophus rex,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 188572,Rhinolophus rex,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 608708,Rhinolophus shameli,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
 89399,Rhinolophus sinicus,Rhinolophus,Rhinolophidae,Chiroptera,Mammalia,TRUE
@@ -664,29 +628,19 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 124756,Rhinopoma hardwickii,Rhinopoma,Rhinopomatidae,Chiroptera,Mammalia,TRUE
 226571,Rhinosciurus laticaudatus,Rhinosciurus,Sciuridae,Rodentia,Mammalia,TRUE
 53275,Rhizomys pruinosus,Rhizomys,Spalacidae,Rodentia,Mammalia,TRUE
-146130,Rhizomys sinensis,Rhizomys,Spalacidae,Rodentia,Mammalia,TRUE
-249017,Rhynchonycteris naso,Rhynchonycteris,Emballonuridae,Chiroptera,Mammalia,TRUE
 9407,Rousettus aegyptiacus,Rousettus,Pteropodidae,Chiroptera,Mammalia,TRUE
 58083,Rousettus amplexicaudatus,Rousettus,Pteropodidae,Chiroptera,Mammalia,TRUE
 9408,Rousettus leschenaultii,Rousettus,Pteropodidae,Chiroptera,Mammalia,TRUE
-150086,Ruwenzorisorex suncoides,Ruwenzorisorex,Soricidae,Eulipotyphla,Mammalia,TRUE
-30586,Saguinus midas,Saguinus,Cebidae,Primates,Mammalia,TRUE
-9515,Sapajus apella,Sapajus,Cebidae,Primates,Mammalia,TRUE
 258952,Scotophilus dinganii,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
-159339,Scotophilus heathii,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 153297,Scotophilus kuhlii,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 249034,Scotophilus leucogaster,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 258953,Scotophilus nux,Scotophilus,Vespertilionidae,Chiroptera,Mammalia,TRUE
 192403,Sturnira erythromos,Sturnira,Phyllostomidae,Chiroptera,Mammalia,TRUE
 27660,Sturnira lilium,Sturnira,Phyllostomidae,Chiroptera,Mammalia,TRUE
-192405,Sturnira ludovici,Sturnira,Phyllostomidae,Chiroptera,Mammalia,TRUE
 9378,Suncus murinus,Suncus,Soricidae,Eulipotyphla,Mammalia,TRUE
 1936103,Sundamys infraluteus,Sundamys,Muridae,Rodentia,Mammalia,TRUE
 83761,Sundamys muelleri,Sundamys,Muridae,Rodentia,Mammalia,TRUE
-1620830,Sundasciurus hippurus,Sundasciurus,Sciuridae,Rodentia,Mammalia,TRUE
-1002722,Sundasciurus lowii,Sundasciurus,Sciuridae,Rodentia,Mammalia,TRUE
 9823,Sus scrofa,Sus,Suidae,Artiodactyla,Mammalia,TRUE
-119562,Sylvicapra grimmia,Sylvicapra,Bovidae,Artiodactyla,Mammalia,TRUE
 9438,Tadarida brasiliensis,Tadarida,Molossidae,Chiroptera,Mammalia,TRUE
 45639,Tadorna ferruginea,Tadorna,Anatidae,Anseriformes,Aves,TRUE
 3049457,Taeromys dominator,Taeromys,Muridae,Rodentia,Mammalia,TRUE
@@ -694,16 +648,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 302395,Taphozous mauritianus,Taphozous,Emballonuridae,Chiroptera,Mammalia,TRUE
 187003,Taphozous melanopogon,Taphozous,Emballonuridae,Chiroptera,Mammalia,TRUE
 1381355,Taphozous perforatus,Taphozous,Emballonuridae,Chiroptera,Mammalia,TRUE
-58087,Thoopterus nigrescens,Thoopterus,Pteropodidae,Chiroptera,Mammalia,TRUE
 10169,Thryonomys swinderianus,Thryonomys,Thryonomyidae,Rodentia,Mammalia,TRUE
-271260,Trachypithecus germaini,Trachypithecus,Cercopithecidae,Primates,Mammalia,TRUE
 329870,Triaenops persicus,Triaenops,Rhinonycteridae,Chiroptera,Mammalia,TRUE
-9395,Tupaia glis,Tupaia,Tupaiidae,Scandentia,Mammalia,TRUE
-70687,Tupaia tana,Tupaia,Tupaiidae,Scandentia,Mammalia,TRUE
 258959,Tylonycteris pachypus,Tylonycteris,Vespertilionidae,Chiroptera,Mammalia,TRUE
-27663,Uroderma bilobatum,Uroderma,Phyllostomidae,Chiroptera,Mammalia,TRUE
-9642,Ursus thibetanus,Ursus,Ursidae,Carnivora,Mammalia,TRUE
-148074,Vampyrum spectrum,Vampyrum,Phyllostomidae,Chiroptera,Mammalia,TRUE
+41272,Uranomys ruddi,Uranomys,Muridae,Rodentia,Mammalia,TRUE
 105273,Vespertilio sinensis,Vespertilio,Vespertilionidae,Chiroptera,Mammalia,TRUE
 101278,Xanthonycticebus pygmaeus,Xanthonycticebus,Lorisidae,Primates,Mammalia,TRUE
 38527,abramis brama,abramis,leuciscidae,cypriniformes,actinopteri,TRUE
@@ -714,9 +662,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 229088,abudefduf bengalensis,abudefduf,pomacentridae,,actinopteri,TRUE
 57777,acanthemblemaria crockeri,acanthemblemaria,chaenopsidae,blenniiformes,actinopteri,TRUE
 54769,acanthis flammea,acanthis,fringillidae,passeriformes,aves,TRUE
+117199,acanthiza uropygialis,acanthiza,acanthizidae,passeriformes,aves,TRUE
 8177,acanthopagrus latus,acanthopagrus,sparidae,spariformes,actinopteri,TRUE
 72011,acanthopagrus schlegelii,acanthopagrus,sparidae,spariformes,actinopteri,TRUE
+8605,acanthophis antarcticus,acanthophis,elapidae,squamata,lepidosauria,TRUE
 239748,acanthophis rugosus,acanthophis,elapidae,squamata,lepidosauria,TRUE
+266336,acanthorhynchus tenuirostris,acanthorhynchus,meliphagidae,passeriformes,aves,TRUE
 670521,acanthurus bariene,acanthurus,acanthuridae,acanthuriformes,actinopteri,TRUE
 238051,acanthurus dussumieri,acanthurus,acanthuridae,acanthuriformes,actinopteri,TRUE
 175435,acanthurus triostegus,acanthurus,acanthuridae,acanthuriformes,actinopteri,TRUE
@@ -734,17 +685,13 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 7907,acipenser brevirostrum,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
 41871,acipenser fulvescens,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
 7902,acipenser gueldenstaedtii,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
-42330,acipenser naccarii,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
+7908,acipenser medirostris,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
 36177,acipenser oxyrinchus,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
-7906,acipenser ruthenus,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
-7903,acipenser stellatus,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
 7904,acipenser transmontanus,acipenser,acipenseridae,acipenseriformes,actinopteri,TRUE
 10068,acomys cahirinus,acomys,muridae,rodentia,mammalia,TRUE
 60744,acomys dimidiatus,acomys,muridae,rodentia,mammalia,TRUE
 83762,acomys kempi,acomys,muridae,rodentia,mammalia,TRUE
-81631,acomys subspinosus,acomys,muridae,rodentia,mammalia,TRUE
 37436,acomys wilsoni,acomys,muridae,rodentia,mammalia,TRUE
-51850,acrantophis dumerili,acrantophis,boidae,squamata,lepidosauria,TRUE
 451382,acridotheres cristatellus,acridotheres,sturnidae,passeriformes,aves,TRUE
 279927,acridotheres tristis,acridotheres,sturnidae,passeriformes,aves,TRUE
 317300,acris crepitans,acris,hylidae,anura,amphibia,TRUE
@@ -768,7 +715,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 284517,aethomys ineptus,aethomys,muridae,rodentia,mammalia,TRUE
 253247,aethomys kaiseri,aethomys,muridae,rodentia,mammalia,TRUE
 197464,agalychnis callidryas,agalychnis,hylidae,anura,amphibia,TRUE
-103336,agama agama,agama,agamidae,squamata,lepidosauria,TRUE
 706245,agamia agami,agamia,ardeidae,pelecaniformes,aves,TRUE
 60463,agapornis fischeri,agapornis,psittacidae,psittaciformes,aves,TRUE
 60464,agapornis lilianae,agapornis,psittacidae,psittaciformes,aves,TRUE
@@ -794,15 +740,14 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 240584,akodon dolores,akodon,cricetidae,rodentia,mammalia,TRUE
 106112,akodon montensis,akodon,cricetidae,rodentia,mammalia,TRUE
 230113,akodon paranaensis,akodon,cricetidae,rodentia,mammalia,TRUE
-106114,akodon serrensis,akodon,cricetidae,rodentia,mammalia,TRUE
 484371,akodon simulator,akodon,cricetidae,rodentia,mammalia,TRUE
 140762,akodon varius,akodon,cricetidae,rodentia,mammalia,TRUE
 88112,alauda arvensis,alauda,alaudidae,passeriformes,aves,TRUE
-54909,albula vulpes,albula,albulidae,albuliformes,actinopteri,TRUE
 36245,alcedo atthis,alcedo,alcedinidae,coraciiformes,aves,TRUE
 59517,alcelaphus buselaphus,alcelaphus,bovidae,artiodactyla,mammalia,TRUE
 9852,alces alces,alces,cervidae,artiodactyla,mammalia,TRUE
 999462,alces americanus,alces,cervidae,artiodactyla,mammalia,TRUE
+167804,aldabrachelys gigantea,aldabrachelys,testudinidae,testudines,,TRUE
 40177,alectoris barbara,alectoris,phasianidae,galliformes,aves,TRUE
 9078,alectoris chukar,alectoris,phasianidae,galliformes,aves,TRUE
 40178,alectoris graeca,alectoris,phasianidae,galliformes,aves,TRUE
@@ -823,7 +768,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 147650,allochrocebus solatus,allochrocebus,cercopithecidae,primates,mammalia,TRUE
 329634,allocricetulus eversmanni,allocricetulus,cricetidae,rodentia,mammalia,TRUE
 30382,alopochen aegyptiaca,alopochen,anatidae,anseriformes,aves,TRUE
-34774,alosa pseudoharengus,alosa,clupeidae,clupeiformes,actinopteri,TRUE
 30590,alouatta belzebul,alouatta,atelidae,primates,mammalia,TRUE
 9502,alouatta caraya,alouatta,atelidae,primates,mammalia,TRUE
 183328,alouatta guariba,alouatta,atelidae,primates,mammalia,TRUE
@@ -938,20 +882,23 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 141892,anolis allogus,anolis,dactyloidae,squamata,lepidosauria,TRUE
 323568,anolis auratus,anolis,dactyloidae,squamata,lepidosauria,TRUE
 28377,anolis carolinensis,anolis,dactyloidae,squamata,lepidosauria,TRUE
+933497,anolis ignigularis,anolis,dactyloidae,squamata,lepidosauria,TRUE
+933499,anolis ravitergum,anolis,dactyloidae,squamata,lepidosauria,TRUE
 38937,anolis sagrei,anolis,dactyloidae,squamata,lepidosauria,TRUE
 229290,anoplopoma fimbria,anoplopoma,anoplopomatidae,perciformes,actinopteri,TRUE
 27642,anoura caudifer,anoura,phyllostomidae,chiroptera,mammalia,TRUE
 148021,anoura geoffroyi,anoura,phyllostomidae,chiroptera,mammalia,TRUE
 127560,anourosorex squamipes,anourosorex,soricidae,eulipotyphla,mammalia,TRUE
 268756,anourosorex yamashinai,anourosorex,soricidae,eulipotyphla,mammalia,TRUE
+298326,anous minutus,anous,laridae,charadriiformes,aves,TRUE
 297802,anous stolidus,anous,laridae,charadriiformes,aves,TRUE
 297803,anous tenuirostris,anous,laridae,charadriiformes,aves,TRUE
 50365,anser albifrons,anser,anatidae,anseriformes,aves,TRUE
 8843,anser anser,anser,anatidae,anseriformes,aves,TRUE
 132585,anser brachyrhynchus,anser,anatidae,anseriformes,aves,TRUE
-8849,anser caerulescens,anser,anatidae,anseriformes,aves,TRUE
 440516,anser caerulescens,anser,anatidae,anseriformes,aves,TRUE
 70340,anser caerulescens,anser,anatidae,anseriformes,aves,TRUE
+8849,anser caerulescens,anser,anatidae,anseriformes,aves,TRUE
 107021,anser canagicus,anser,anatidae,anseriformes,aves,TRUE
 8845,anser cygnoides,anser,anatidae,anseriformes,aves,TRUE
 132586,anser erythropus,anser,anatidae,anseriformes,aves,TRUE
@@ -966,16 +913,15 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 3370983,anteliomys chinensis,anteliomys,cricetidae,rodentia,mammalia,TRUE
 3370984,anteliomys custos,anteliomys,cricetidae,rodentia,mammalia,TRUE
 241820,antennarius striatus,antennarius,antennariidae,lophiiformes,actinopteri,TRUE
+266367,anthochaera chrysoptera,anthochaera,meliphagidae,passeriformes,aves,TRUE
 698975,anthornis melanura,anthornis,meliphagidae,passeriformes,aves,TRUE
 1171711,anthropoides paradiseus,anthropoides,gruidae,gruiformes,aves,TRUE
 9111,anthropoides virgo,anthropoides,gruidae,gruiformes,aves,TRUE
-45798,anthus berthelotii,anthus,motacillidae,passeriformes,aves,TRUE
 1463608,anthus rufulus,anthus,motacillidae,passeriformes,aves,TRUE
 45804,anthus trivialis,anthus,motacillidae,passeriformes,aves,TRUE
 59523,antidorcas marsupialis,antidorcas,bovidae,artiodactyla,mammalia,TRUE
 2717063,antigone antigone,antigone,gruidae,gruiformes,aves,TRUE
 1977160,antigone canadensis,antigone,gruidae,gruiformes,aves,TRUE
-96785,antigone canadensis,antigone,gruidae,gruiformes,aves,TRUE
 2717088,antigone vipio,antigone,gruidae,gruiformes,aves,TRUE
 9891,antilocapra americana,antilocapra,antilocapridae,artiodactyla,mammalia,TRUE
 59525,antilope cervicapra,antilope,bovidae,artiodactyla,mammalia,TRUE
@@ -983,6 +929,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9440,antrozous pallidus,antrozous,vespertilionidae,chiroptera,mammalia,TRUE
 452597,aonyx cinereus,aonyx,mustelidae,carnivora,mammalia,TRUE
 30591,aotus azarai,aotus,aotidae,primates,mammalia,TRUE
+292213,aotus griseimembra,aotus,aotidae,primates,mammalia,TRUE
 37293,aotus nancymaae,aotus,aotidae,primates,mammalia,TRUE
 231953,aotus sp. (in: primates),aotus,aotidae,primates,mammalia,TRUE
 9505,aotus trivirgatus,aotus,aotidae,primates,mammalia,TRUE
@@ -1000,7 +947,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 129247,apodemus draco,apodemus,muridae,rodentia,mammalia,TRUE
 54292,apodemus flavicollis,apodemus,muridae,rodentia,mammalia,TRUE
 256595,apodemus ilex,apodemus,muridae,rodentia,mammalia,TRUE
-214933,apodemus latronum,apodemus,muridae,rodentia,mammalia,TRUE
 100382,apodemus mystacinus,apodemus,muridae,rodentia,mammalia,TRUE
 262051,apodemus pallipes,apodemus,muridae,rodentia,mammalia,TRUE
 105297,apodemus peninsulae,apodemus,muridae,rodentia,mammalia,TRUE
@@ -1055,12 +1001,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 148034,ardops nichollsi,ardops,phyllostomidae,chiroptera,mammalia,TRUE
 54971,arenaria interpres,arenaria,scolopacidae,charadriiformes,aves,TRUE
 279931,arenaria melanocephala,arenaria,scolopacidae,charadriiformes,aves,TRUE
-446415,argentina silus,argentina,argentinidae,argentiniformes,actinopteri,TRUE
 442169,argentina sphyraena,argentina,argentinidae,argentiniformes,actinopteri,TRUE
 9081,argusianus argus,argusianus,phasianidae,galliformes,aves,TRUE
 172269,argyrosomus regius,argyrosomus,sciaenidae,,actinopteri,TRUE
 300221,arothron hispidus,arothron,tetraodontidae,tetraodontiformes,actinopteri,TRUE
-1109026,arremon taciturnus,arremon,passerellidae,passeriformes,aves,TRUE
 3352246,arripis georgiana,arripis,arripidae,scombriformes,actinopteri,TRUE
 40224,artibeus cinereus,artibeus,phyllostomidae,chiroptera,mammalia,TRUE
 51010,artibeus fimbriatus,artibeus,phyllostomidae,chiroptera,mammalia,TRUE
@@ -1074,7 +1018,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 68478,arundinax aedon,arundinax,sylviidae,passeriformes,aves,TRUE
 121563,arvicanthis neumanni,arvicanthis,muridae,rodentia,mammalia,TRUE
 61156,arvicanthis niloticus,arvicanthis,muridae,rodentia,mammalia,TRUE
-61158,arvicanthis sp.,arvicanthis,muridae,rodentia,mammalia,TRUE
 1047088,arvicola amphibius,arvicola,cricetidae,rodentia,mammalia,TRUE
 1276134,arvicola scherman,arvicola,cricetidae,rodentia,mammalia,TRUE
 188568,aselliscus stoliczkanus,aselliscus,hipposideridae,chiroptera,mammalia,TRUE
@@ -1089,7 +1032,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 258924,astur gentilis,astur,accipitridae,accipitriformes,aves,TRUE
 7994,astyanax mexicanus,astyanax,acestrorhamphidae,characiformes,actinopteri,TRUE
 9368,atelerix albiventris,atelerix,erinaceidae,eulipotyphla,mammalia,TRUE
-9507,ateles belzebuth,ateles,atelidae,primates,mammalia,TRUE
 118643,ateles chamek,ateles,atelidae,primates,mammalia,TRUE
 9508,ateles fusciceps,ateles,atelidae,primates,mammalia,TRUE
 9509,ateles geoffroyi,ateles,atelidae,primates,mammalia,TRUE
@@ -1149,7 +1091,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 219385,bathybates fasciatus,bathybates,cichlidae,cichliformes,actinopteri,TRUE
 10172,bathyergus suillus,bathyergus,bathyergidae,rodentia,mammalia,TRUE
 59527,beatragus hunteri,beatragus,bovidae,artiodactyla,mammalia,TRUE
-129037,belone belone,belone,belonidae,beloniformes,actinopteri,TRUE
 559342,benthochromis horii,benthochromis,cichlidae,cichliformes,actinopteri,TRUE
 83759,berylmys bowersi,berylmys,muridae,rodentia,mammalia,TRUE
 274813,betta hipposideros,betta,osphronemidae,anabantiformes,actinopteri,TRUE
@@ -1165,9 +1106,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 8693,bitis caudalis,bitis,viperidae,squamata,lepidosauria,TRUE
 8694,bitis gabonica,bitis,viperidae,squamata,lepidosauria,TRUE
 8695,bitis nasicornis,bitis,viperidae,squamata,lepidosauria,TRUE
+227091,blanus cinereus,blanus,blanidae,squamata,lepidosauria,TRUE
 9387,blarina brevicauda,blarina,soricidae,eulipotyphla,mammalia,TRUE
-183658,blarina carolinensis,blarina,soricidae,eulipotyphla,mammalia,TRUE
-183659,blarina hylophaga,blarina,soricidae,eulipotyphla,mammalia,TRUE
 248133,blastocerus dichotomus,blastocerus,cervidae,artiodactyla,mammalia,TRUE
 58317,blicca bjoerkna,blicca,leuciscidae,cypriniformes,actinopteri,TRUE
 8574,boa constrictor,boa,boidae,squamata,lepidosauria,TRUE
@@ -1213,7 +1153,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 89462,bubalus bubalis,bubalus,bovidae,artiodactyla,mammalia,TRUE
 3119969,bubalus kerabau,bubalus,bovidae,artiodactyla,mammalia,TRUE
 85875,bubalus sp.,bubalus,bovidae,artiodactyla,mammalia,TRUE
+126803,bubo bengalensis,bubo,strigidae,strigiformes,aves,TRUE
 30461,bubo bubo,bubo,strigidae,strigiformes,aves,TRUE
+126804,bubo lacteus,bubo,strigidae,strigiformes,aves,TRUE
 371907,bubo scandiacus,bubo,strigidae,strigiformes,aves,TRUE
 748877,bubo sumatranus,bubo,strigidae,strigiformes,aves,TRUE
 56268,bubo virginianus,bubo,strigidae,strigiformes,aves,TRUE
@@ -1243,7 +1185,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 116585,buteo rufinus,buteo,accipitridae,accipitriformes,aves,TRUE
 223437,buteo rufofuscus,buteo,accipitridae,accipitriformes,aves,TRUE
 156757,buteo swainsoni,buteo,accipitridae,accipitriformes,aves,TRUE
-223496,buteogallus meridionalis,buteogallus,accipitridae,accipitriformes,aves,TRUE
 223497,buteogallus urubitinga,buteogallus,accipitridae,accipitriformes,aves,TRUE
 433628,butorides striata,butorides,ardeidae,pelecaniformes,aves,TRUE
 110671,butorides virescens,butorides,ardeidae,pelecaniformes,aves,TRUE
@@ -1280,6 +1221,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 670340,calidris minuta,calidris,scolopacidae,charadriiformes,aves,TRUE
 279935,calidris minutilla,calidris,scolopacidae,charadriiformes,aves,TRUE
 217132,calidris ptilocnemis,calidris,scolopacidae,charadriiformes,aves,TRUE
+198806,calidris pugnax,calidris,scolopacidae,charadriiformes,aves,TRUE
 279961,calidris pusilla,calidris,scolopacidae,charadriiformes,aves,TRUE
 425635,calidris pygmaea,calidris,scolopacidae,charadriiformes,aves,TRUE
 272047,calidris ruficollis,calidris,scolopacidae,charadriiformes,aves,TRUE
@@ -1331,10 +1273,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 68723,canis adustus,canis,canidae,carnivora,mammalia,TRUE
 68724,canis aureus,canis,canidae,carnivora,mammalia,TRUE
 9614,canis latrans,canis,canidae,carnivora,mammalia,TRUE
-425934,canis lupus,canis,canidae,carnivora,mammalia,TRUE
-443256,canis lupus,canis,canidae,carnivora,mammalia,TRUE
-9612,canis lupus,canis,canidae,carnivora,mammalia,TRUE
 9615,canis lupus,canis,canidae,carnivora,mammalia,TRUE
+9612,canis lupus,canis,canidae,carnivora,mammalia,TRUE
+425934,canis lupus,canis,canidae,carnivora,mammalia,TRUE
 246882,canis lupus,canis,canidae,carnivora,mammalia,TRUE
 143281,canis lupus,canis,canidae,carnivora,mammalia,TRUE
 2841922,canis lupus,canis,canidae,carnivora,mammalia,TRUE
@@ -1400,7 +1341,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 317158,cecropis daurica,cecropis,hirundinidae,passeriformes,aves,TRUE
 990671,centroberyx rubricaudus,centroberyx,berycidae,beryciformes,actinopteri,TRUE
 9002,centrocercus urophasianus,centrocercus,phasianidae,galliformes,aves,TRUE
-1540822,centrochelys sulcata,centrochelys,testudinidae,testudines,,TRUE
 171732,centrolabrus exoletus,centrolabrus,labridae,labriformes,actinopteri,TRUE
 28806,centropomus undecimalis,centropomus,centropomidae,,actinopteri,TRUE
 184440,centropristis striata,centropristis,serranidae,perciformes,actinopteri,TRUE
@@ -1454,7 +1394,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 163843,cervidae sp.,,cervidae,artiodactyla,mammalia,TRUE
 1088058,cervus albirostris,cervus,cervidae,artiodactyla,mammalia,TRUE
 1574408,cervus canadensis,cervus,cervidae,artiodactyla,mammalia,TRUE
-9864,cervus canadensis,cervus,cervidae,artiodactyla,mammalia,TRUE
 9860,cervus elaphus,cervus,cervidae,artiodactyla,mammalia,TRUE
 144737,cervus elaphus,cervus,cervidae,artiodactyla,mammalia,TRUE
 9863,cervus nippon,cervus,cervidae,artiodactyla,mammalia,TRUE
@@ -1472,6 +1411,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 281677,chaetodon lunulatus,chaetodon,chaetodontidae,chaetodontiformes,actinopteri,TRUE
 39045,chaetodon miliaris,chaetodon,chaetodontidae,chaetodontiformes,actinopteri,TRUE
 340076,chaetophractus vellerosus,chaetophractus,chlamyphoridae,cingulata,mammalia,TRUE
+8897,chaetura pelagica,chaetura,apodidae,apodiformes,aves,TRUE
 1124596,chaeturichthys stigmatias,chaeturichthys,gobiidae,gobiiformes,actinopteri,TRUE
 63341,chalcides ocellatus,chalcides,scincidae,squamata,lepidosauria,TRUE
 187108,chalcophaps indica,chalcophaps,columbidae,columbiformes,aves,TRUE
@@ -1487,23 +1427,22 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 933992,chanodichthys erythropterus,chanodichthys,xenocyprididae,cypriniformes,actinopteri,TRUE
 29144,chanos chanos,chanos,chanidae,gonorynchiformes,actinopteri,TRUE
 279942,charadrius melodus,charadrius,charadriidae,charadriiformes,aves,TRUE
+1630616,charadrius placidus,charadrius,charadriidae,charadriiformes,aves,TRUE
 291285,chasiempis sandwichensis,chasiempis,monarchidae,passeriformes,aves,TRUE
 30388,chauna torquata,chauna,anhimidae,anseriformes,aves,TRUE
 290113,cheilinus trilobatus,cheilinus,labridae,labriformes,actinopteri,TRUE
 1146961,cheilodipterus quinquelineatus,cheilodipterus,apogonidae,kurtiformes,actinopteri,TRUE
 546515,cheilopogon heterurus,cheilopogon,exocoetidae,beloniformes,actinopteri,TRUE
-426094,chelidonichthys cuculus,chelidonichthys,triglidae,perciformes,actinopteri,TRUE
 2576622,chelidonichthys lucerna,chelidonichthys,triglidae,perciformes,actinopteri,TRUE
 450224,chelidonichthys spinosus,chelidonichthys,triglidae,perciformes,actinopteri,TRUE
-3051875,chelidoperca sp.,chelidoperca,serranidae,perciformes,actinopteri,TRUE
 109905,chelmon rostratus,chelmon,chaetodontidae,chaetodontiformes,actinopteri,TRUE
 48191,chelon auratus,chelon,mugilidae,mugiliformes,actinopteri,TRUE
 48171,chelon labrosus,chelon,mugilidae,mugiliformes,actinopteri,TRUE
 8469,chelonia mydas,chelonia,cheloniidae,testudines,,TRUE
+50047,chelonoidis carbonarius,chelonoidis,testudinidae,testudines,,TRUE
 904182,chelonoidis chilensis,chelonoidis,testudinidae,testudines,,TRUE
 8475,chelydra serpentina,chelydra,chelydridae,testudines,,TRUE
 45644,chenonetta jubata,chenonetta,anatidae,anseriformes,aves,TRUE
-286001,chersina angulata,chersina,testudinidae,testudines,,TRUE
 51747,chilabothrus inornatus,chilabothrus,boidae,squamata,lepidosauria,TRUE
 30516,chimaera sp.,chimaera,chimaeridae,chimaeriformes,chondrichthyes,TRUE
 34839,chinchilla lanigera,chinchilla,chinchillidae,rodentia,mammalia,TRUE
@@ -1518,14 +1457,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 297806,chlidonias leucopterus,chlidonias,laridae,charadriiformes,aves,TRUE
 44316,chloebia gouldiae,chloebia,passeridae,passeriformes,aves,TRUE
 8861,chloephaga picta,chloephaga,anatidae,anseriformes,aves,TRUE
-541009,chloephaga poliocephala,chloephaga,anatidae,anseriformes,aves,TRUE
 37601,chloris chloris,chloris,fringillidae,passeriformes,aves,TRUE
 9534,chlorocebus aethiops,chlorocebus,cercopithecidae,primates,mammalia,TRUE
 460675,chlorocebus cynosuros,chlorocebus,cercopithecidae,primates,mammalia,TRUE
 60710,chlorocebus pygerythrus,chlorocebus,cercopithecidae,primates,mammalia,TRUE
 60711,chlorocebus sabaeus,chlorocebus,cercopithecidae,primates,mammalia,TRUE
 60712,chlorocebus tantalus,chlorocebus,cercopithecidae,primates,mammalia,TRUE
-64799,chlorodrepanis virens,chlorodrepanis,fringillidae,passeriformes,aves,TRUE
 862699,chodsigoa hypsibia,chodsigoa,soricidae,eulipotyphla,mammalia,TRUE
 1868624,chodsigoa smithii,chodsigoa,soricidae,eulipotyphla,mammalia,TRUE
 193513,choerodon azurio,choerodon,labridae,labriformes,actinopteri,TRUE
@@ -1563,7 +1500,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 2675520,clanga pomarina,clanga,accipitridae,accipitriformes,aves,TRUE
 197941,clangula hyemalis,clangula,anatidae,anseriformes,aves,TRUE
 13013,clarias gariepinus,clarias,clariidae,siluriformes,actinopteri,TRUE
-172537,cleithracara maronii,cleithracara,cichlidae,cichliformes,actinopteri,TRUE
 473866,clethrionomys gapperi,clethrionomys,cricetidae,rodentia,mammalia,TRUE
 537920,clethrionomys rutilus,clethrionomys,cricetidae,rodentia,mammalia,TRUE
 403224,clupanodon thrissa,clupanodon,clupeidae,clupeiformes,actinopteri,TRUE
@@ -1589,10 +1525,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 555237,colaptes campestris,colaptes,picidae,piciformes,aves,TRUE
 907075,coleura afra,coleura,emballonuridae,chiroptera,mammalia,TRUE
 1244808,coleura kibomalandy,coleura,emballonuridae,chiroptera,mammalia,TRUE
-2542735,colinus virginianus,colinus,odontophoridae,galliformes,aves,TRUE
 9014,colinus virginianus,colinus,odontophoridae,galliformes,aves,TRUE
 240159,collichthys lucidus,collichthys,sciaenidae,,actinopteri,TRUE
-54131,colobus angolensis,colobus,cercopithecidae,primates,mammalia,TRUE
 33548,colobus guereza,colobus,cercopithecidae,primates,mammalia,TRUE
 9572,colobus polykomos,colobus,cercopithecidae,primates,mammalia,TRUE
 30423,coloeus monedula,coloeus,corvidae,passeriformes,aves,TRUE
@@ -1608,12 +1542,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 111974,columbina passerina,columbina,columbidae,columbiformes,aves,TRUE
 115618,columbina picui,columbina,columbidae,columbiformes,aves,TRUE
 504887,columbina talpacoti,columbina,columbidae,columbiformes,aves,TRUE
-30543,conepatus leuconotus,conepatus,mephitidae,carnivora,mammalia,TRUE
 86968,conger japonicus,conger,congridae,anguilliformes,actinopteri,TRUE
 59528,connochaetes gnou,connochaetes,bovidae,artiodactyla,mammalia,TRUE
 9927,connochaetes taurinus,connochaetes,bovidae,artiodactyla,mammalia,TRUE
 101659,connochaetes taurinus,connochaetes,bovidae,artiodactyla,mammalia,TRUE
-31140,conolophus subcristatus,conolophus,iguanidae,squamata,lepidosauria,TRUE
 237657,conopophaga aurita,conopophaga,conopophagidae,passeriformes,aves,TRUE
 266347,conopophila rufogularis,conopophila,meliphagidae,passeriformes,aves,TRUE
 183522,contopus sordidulus,contopus,tyrannidae,passeriformes,aves,TRUE
@@ -1625,23 +1557,21 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 51860,corallus annulatus,corallus,boidae,squamata,lepidosauria,TRUE
 51861,corallus caninus,corallus,boidae,squamata,lepidosauria,TRUE
 3147912,corallus hortulana,corallus,boidae,squamata,lepidosauria,TRUE
+126612,cordylus tropidosternum,cordylus,cordylidae,squamata,lepidosauria,TRUE
 27773,coregonus autumnalis,coregonus,salmonidae,salmoniformes,actinopteri,TRUE
 59861,coregonus clupeaformis,coregonus,salmonidae,salmoniformes,actinopteri,TRUE
 59291,coregonus lavaretus,coregonus,salmonidae,salmoniformes,actinopteri,TRUE
 884168,coregonus migratorius,coregonus,salmonidae,salmoniformes,actinopteri,TRUE
 1196223,corvus bennetti,corvus,corvidae,passeriformes,aves,TRUE
 85066,corvus brachyrhynchos,corvus,corvidae,passeriformes,aves,TRUE
-279967,corvus caurinus,corvus,corvidae,passeriformes,aves,TRUE
 56781,corvus corax,corvus,corvidae,passeriformes,aves,TRUE
 181096,corvus cornix,corvus,corvidae,passeriformes,aves,TRUE
 30422,corvus corone,corvus,corvidae,passeriformes,aves,TRUE
 108826,corvus coronoides,corvus,corvidae,passeriformes,aves,TRUE
 75140,corvus frugilegus,corvus,corvidae,passeriformes,aves,TRUE
-134902,corvus hawaiiensis,corvus,corvidae,passeriformes,aves,TRUE
 36249,corvus macrorhynchos,corvus,corvidae,passeriformes,aves,TRUE
 349685,corvus ossifragus,corvus,corvidae,passeriformes,aves,TRUE
 701737,corvus splendens,corvus,corvidae,passeriformes,aves,TRUE
-27674,corynorhinus rafinesquii,corynorhinus,vespertilionidae,chiroptera,mammalia,TRUE
 124745,corynorhinus townsendii,corynorhinus,vespertilionidae,chiroptera,mammalia,TRUE
 163118,coryphaenoides rupestris,coryphaenoides,macrouridae,gadiformes,actinopteri,TRUE
 664758,coryphospingus pileatus,coryphospingus,thraupidae,passeriformes,aves,TRUE
@@ -1680,7 +1610,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 167043,crocidura lasiura,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 109474,crocidura leucodon,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 641488,crocidura luna,crocidura,soricidae,eulipotyphla,mammalia,TRUE
-516697,crocidura montis,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 148977,crocidura obscurior,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 214449,crocidura olivieri,crocidura,soricidae,eulipotyphla,mammalia,TRUE
 36802,crocidura russula,crocidura,soricidae,eulipotyphla,mammalia,TRUE
@@ -1698,6 +1627,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9678,crocuta crocuta,crocuta,hyaenidae,carnivora,mammalia,TRUE
 304459,cromileptes altivelis,cromileptes,serranidae,perciformes,actinopteri,TRUE
 9096,crossoptilon auritum,crossoptilon,phasianidae,galliformes,aves,TRUE
+8729,crotalus adamanteus,crotalus,viperidae,squamata,lepidosauria,TRUE
 8730,crotalus atrox,crotalus,viperidae,squamata,lepidosauria,TRUE
 125866,crotalus catalinensis,crotalus,viperidae,squamata,lepidosauria,TRUE
 8746,crotalus cerastes,crotalus,viperidae,squamata,lepidosauria,TRUE
@@ -1711,13 +1641,16 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 8734,crotalus molossus,crotalus,viperidae,squamata,lepidosauria,TRUE
 31151,crotalus molossus,crotalus,viperidae,squamata,lepidosauria,TRUE
 8737,crotalus scutulatus,crotalus,viperidae,squamata,lepidosauria,TRUE
+2878423,crotalus sp.,crotalus,viperidae,squamata,lepidosauria,TRUE
 8739,crotalus viridis,crotalus,viperidae,squamata,lepidosauria,TRUE
+103947,crotophaga ani,crotophaga,crotophagidae,cuculiformes,aves,TRUE
 33598,crotophaga sulcirostris,crotophaga,crotophagidae,cuculiformes,aves,TRUE
 2058948,cryptoblepharus virgatus,cryptoblepharus,scincidae,squamata,lepidosauria,TRUE
 43048,cryptobranchus alleganiensis,cryptobranchus,cryptobranchidae,caudata,amphibia,TRUE
 10166,ctenodactylus gundi,ctenodactylus,ctenodactylidae,rodentia,mammalia,TRUE
 171735,ctenolabrus rupestris,ctenolabrus,labridae,labriformes,actinopteri,TRUE
 7959,ctenopharyngodon idella,ctenopharyngodon,xenocyprididae,cypriniformes,actinopteri,TRUE
+116115,ctenophorus nuchalis,ctenophorus,agamidae,squamata,lepidosauria,TRUE
 500334,ctenosaura bakeri,ctenosaura,iguanidae,squamata,lepidosauria,TRUE
 51212,ctenosaura similis,ctenosaura,iguanidae,squamata,lepidosauria,TRUE
 55661,cuculus canorus,cuculus,cuculidae,cuculiformes,aves,TRUE
@@ -1759,7 +1692,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 102207,cynops ensicauda,cynops,salamandridae,caudata,amphibia,TRUE
 8330,cynops pyrrhogaster,cynops,salamandridae,caudata,amphibia,TRUE
 58060,cynopterus brachyotis,cynopterus,pteropodidae,chiroptera,mammalia,TRUE
-298109,cynopterus horsfieldii,cynopterus,pteropodidae,chiroptera,mammalia,TRUE
 1898386,cynopterus sp.,cynopterus,pteropodidae,chiroptera,mammalia,TRUE
 9400,cynopterus sphinx,cynopterus,pteropodidae,chiroptera,mammalia,TRUE
 80640,cynoscion arenarius,cynoscion,sciaenidae,,actinopteri,TRUE
@@ -1777,7 +1709,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9017,cyrtonyx montezumae,cyrtonyx,odontophoridae,galliformes,aves,TRUE
 39293,cystophora cristata,cystophora,phocidae,carnivora,mammalia,TRUE
 1170828,daboia palaestinae,daboia,viperidae,squamata,lepidosauria,TRUE
-8707,daboia russelii,daboia,viperidae,squamata,lepidosauria,TRUE
 8939,dacelo novaeguineae,dacelo,alcedinidae,coraciiformes,aves,TRUE
 94924,dactylopterus volitans,dactylopterus,dactylopteridae,syngnathiformes,actinopteri,TRUE
 30532,dama dama,dama,cervidae,artiodactyla,mammalia,TRUE
@@ -1791,12 +1722,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 50790,dascyllus trimaculatus,dascyllus,pomacentridae,,actinopteri,TRUE
 32542,dasycercus cristicauda,dasycercus,dasyuridae,dasyuromorphia,mammalia,TRUE
 71173,dasymys incomtus,dasymys,muridae,rodentia,mammalia,TRUE
-121564,dasymys rufulus,dasymys,muridae,rodentia,mammalia,TRUE
 186579,dasypeltis atra,dasypeltis,colubridae,squamata,lepidosauria,TRUE
 193455,dasyprocta fuliginosa,dasyprocta,dasyproctidae,rodentia,mammalia,TRUE
 42152,dasyprocta leporina,dasyprocta,dasyproctidae,rodentia,mammalia,TRUE
 34846,dasyprocta punctata,dasyprocta,dasyproctidae,rodentia,mammalia,TRUE
 9361,dasypus novemcinctus,dasypus,dasypodidae,cingulata,mammalia,TRUE
+32544,dasyuroides byrnei,dasyuroides,dasyuridae,dasyuromorphia,mammalia,TRUE
 146142,decapterus kurroides,decapterus,carangidae,carangiformes,actinopteri,TRUE
 146143,decapterus macarellus,decapterus,carangidae,carangiformes,actinopteri,TRUE
 166264,decapterus macrosoma,decapterus,carangidae,carangiformes,actinopteri,TRUE
@@ -1820,7 +1751,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 69260,dendrolagus goodfellowi,dendrolagus,macropodidae,diprotodontia,mammalia,TRUE
 1392542,dendromus insignis,dendromus,nesomyidae,rodentia,mammalia,TRUE
 435234,dendrophysa russelii,dendrophysa,sciaenidae,,actinopteri,TRUE
-106343,deomys ferrugineus,deomys,muridae,rodentia,mammalia,TRUE
 1001553,dephomys defua,dephomys,muridae,rodentia,mammalia,TRUE
 40229,dermanura phaeotis,dermanura,phyllostomidae,chiroptera,mammalia,TRUE
 27794,dermochelys coriacea,dermochelys,dermochelyidae,testudines,,TRUE
@@ -1850,7 +1780,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9829,dicotyles tajacu,dicotyles,tayassuidae,artiodactyla,mammalia,TRUE
 85953,dicrostonyx groenlandicus,dicrostonyx,cricetidae,rodentia,mammalia,TRUE
 42716,didelphis albiventris,didelphis,didelphidae,didelphimorphia,mammalia,TRUE
-85694,didelphis aurita,didelphis,didelphidae,didelphimorphia,mammalia,TRUE
 9268,didelphis marsupialis,didelphis,didelphidae,didelphimorphia,mammalia,TRUE
 9267,didelphis virginiana,didelphis,didelphidae,didelphimorphia,mammalia,TRUE
 229062,diodon holocanthus,diodon,diodontidae,tetraodontiformes,actinopteri,TRUE
@@ -1870,8 +1799,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 94248,dipodomys microps,dipodomys,heteromyidae,rodentia,mammalia,TRUE
 323374,dipodomys nitratoides,dipodomys,heteromyidae,rodentia,mammalia,TRUE
 10020,dipodomys ordii,dipodomys,heteromyidae,rodentia,mammalia,TRUE
-323382,dipodomys simulans,dipodomys,heteromyidae,rodentia,mammalia,TRUE
-105255,dipodomys spectabilis,dipodomys,heteromyidae,rodentia,mammalia,TRUE
 73863,dipus sagitta,dipus,dipodidae,rodentia,mammalia,TRUE
 83878,ditrema temminckii,ditrema,embiotocidae,,actinopteri,TRUE
 170213,dobsonia andersoni,dobsonia,pteropodidae,chiroptera,mammalia,TRUE
@@ -1884,8 +1811,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 249021,doryrhina cyclops,doryrhina,hipposideridae,chiroptera,mammalia,TRUE
 420545,dracaena guianensis,dracaena,teiidae,squamata,lepidosauria,TRUE
 234634,dremomys pernyi,dremomys,sciuridae,rodentia,mammalia,TRUE
-1843719,dremomys rufigenis,dremomys,sciuridae,rodentia,mammalia,TRUE
-3149790,drepanis coccinea,drepanis,fringillidae,passeriformes,aves,TRUE
 8790,dromaius novaehollandiae,dromaius,dromaiidae,casuariiformes,aves,TRUE
 859256,drymarchon couperi,drymarchon,colubridae,squamata,lepidosauria,TRUE
 761979,drymotoxeres pucheranii,drymotoxeres,dendrocolaptidae,passeriformes,aves,TRUE
@@ -1901,7 +1826,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 30335,duttaphrynus melanostictus,duttaphrynus,bufonidae,anura,amphibia,TRUE
 326081,dyacopterus spadiceus,dyacopterus,pteropodidae,chiroptera,mammalia,TRUE
 913735,echelus uropterus,echelus,ophichthidae,anguilliformes,actinopteri,TRUE
-162630,echinosorex gymnura,echinosorex,erinaceidae,eulipotyphla,mammalia,TRUE
 176024,eclectus roratus,eclectus,psittacidae,psittaciformes,aves,TRUE
 110682,egretta caerulea,egretta,ardeidae,pelecaniformes,aves,TRUE
 188379,egretta garzetta,egretta,ardeidae,pelecaniformes,aves,TRUE
@@ -1919,11 +1843,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 109298,elaphodus cephalophus,elaphodus,cervidae,artiodactyla,mammalia,TRUE
 43332,elaphurus davidianus,elaphurus,cervidae,artiodactyla,mammalia,TRUE
 1539979,elapsoidea loveridgei,elapsoidea,elapidae,squamata,lepidosauria,TRUE
-8005,electrophorus electricus,electrophorus,gymnotidae,gymnotiformes,actinopteri,TRUE
 8047,eleginus gracilis,eleginus,gadidae,gadiformes,actinopteri,TRUE
 9783,elephas maximus,elephas,elephantidae,proboscidea,mammalia,TRUE
-99487,elephas maximus,elephas,elephantidae,proboscidea,mammalia,TRUE
 1239296,elephas maximus,elephas,elephantidae,proboscidea,mammalia,TRUE
+99487,elephas maximus,elephas,elephantidae,proboscidea,mammalia,TRUE
 210139,eleutheronema tetradactylum,eleutheronema,polynemidae,,actinopteri,TRUE
 53277,eliomys quercinus,eliomys,gliridae,rodentia,mammalia,TRUE
 107283,eliurus majori,eliurus,nesomyidae,rodentia,mammalia,TRUE
@@ -1932,7 +1855,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 50406,elseyornis melanops,elseyornis,charadriidae,charadriiformes,aves,TRUE
 460200,emberiza calandra,emberiza,fringillidae,passeriformes,aves,TRUE
 504295,emberiza chrysophrys,emberiza,fringillidae,passeriformes,aves,TRUE
-260902,emberiza cioides,emberiza,fringillidae,passeriformes,aves,TRUE
 37595,emberiza citrinella,emberiza,fringillidae,passeriformes,aves,TRUE
 160761,emberiza elegans,emberiza,fringillidae,passeriformes,aves,TRUE
 74588,emberiza pusilla,emberiza,fringillidae,passeriformes,aves,TRUE
@@ -1944,7 +1866,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 183525,empidonax difficilis,empidonax,tyrannidae,passeriformes,aves,TRUE
 164674,empidonax traillii,empidonax,tyrannidae,passeriformes,aves,TRUE
 85613,emydoidea blandingii,emydoidea,emydidae,testudines,,TRUE
-251359,emydura subglobosa,emydura,chelidae,testudines,,TRUE
 81640,enchelyopus cimbrius,enchelyopus,gaidropsaridae,gadiformes,actinopteri,TRUE
 349311,engraulis australis,engraulis,engraulidae,clupeiformes,actinopteri,TRUE
 42892,engraulis japonicus,engraulis,engraulidae,clupeiformes,actinopteri,TRUE
@@ -1957,6 +1878,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 176039,eolophus roseicapilla,eolophus,cacatuidae,psittaciformes,aves,TRUE
 58065,eonycteris spelaea,eonycteris,pteropodidae,chiroptera,mammalia,TRUE
 175941,eophona migratoria,eophona,fringillidae,passeriformes,aves,TRUE
+44318,eopsaltria australis,eopsaltria,petroicidae,passeriformes,aves,TRUE
 274060,eos bornea,eos,psittaculidae,psittaciformes,aves,TRUE
 176075,eos reticulata,eos,psittaculidae,psittaciformes,aves,TRUE
 146132,eospalax fontanierii,eospalax,spalacidae,rodentia,mammalia,TRUE
@@ -1990,7 +1912,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 203262,epinephelus tauvina,epinephelus,serranidae,perciformes,actinopteri,TRUE
 62291,episoriculus caudatus,episoriculus,soricidae,eulipotyphla,mammalia,TRUE
 862700,episoriculus leucops,episoriculus,soricidae,eulipotyphla,mammalia,TRUE
-268760,episoriculus macrurus,episoriculus,soricidae,eulipotyphla,mammalia,TRUE
 3369967,epomophorus dobsonii,epomophorus,pteropodidae,chiroptera,mammalia,TRUE
 372077,epomophorus gambianus,epomophorus,pteropodidae,chiroptera,mammalia,TRUE
 903567,epomophorus labiatus,epomophorus,pteropodidae,chiroptera,mammalia,TRUE
@@ -2002,8 +1923,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 7764,eptatretus burgeri,eptatretus,myxinidae,myxiniformes,myxini,TRUE
 29078,eptesicus fuscus,eptesicus,vespertilionidae,chiroptera,mammalia,TRUE
 3042450,eptesicus sp.,eptesicus,vespertilionidae,chiroptera,mammalia,TRUE
-582580,equus asinus,equus,equidae,perissodactyla,mammalia,TRUE
 9793,equus asinus,equus,equidae,perissodactyla,mammalia,TRUE
+582580,equus asinus,equus,equidae,perissodactyla,mammalia,TRUE
 83772,equus asinus,equus,equidae,perissodactyla,mammalia,TRUE
 73336,equus asinus,equus,equidae,perissodactyla,mammalia,TRUE
 9796,equus caballus,equus,equidae,perissodactyla,mammalia,TRUE
@@ -2025,7 +1946,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 757341,erinaceus amurensis,erinaceus,erinaceidae,eulipotyphla,mammalia,TRUE
 9365,erinaceus europaeus,erinaceus,erinaceidae,eulipotyphla,mammalia,TRUE
 1052165,erinaceus roumanicus,erinaceus,erinaceidae,eulipotyphla,mammalia,TRUE
-61237,erinaceus sp.,erinaceus,erinaceidae,eulipotyphla,mammalia,TRUE
 37610,erithacus rubecula,erithacus,turdidae,passeriformes,aves,TRUE
 9538,erythrocebus patas,erythrocebus,cercopithecidae,primates,mammalia,TRUE
 425633,erythrogonys cinctus,erythrogonys,charadriidae,charadriiformes,aves,TRUE
@@ -2046,16 +1966,16 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 153291,euderma maculatum,euderma,vespertilionidae,chiroptera,mammalia,TRUE
 371913,eudocimus albus,eudocimus,threskiornithidae,pelecaniformes,aves,TRUE
 69308,eudorcas thomsonii,eudorcas,bovidae,artiodactyla,mammalia,TRUE
-8805,eudromia elegans,eudromia,tinamidae,tinamiformes,aves,TRUE
 79626,eudyptes chrysocome,eudyptes,spheniscidae,sphenisciformes,aves,TRUE
 79627,eudyptes chrysolophus,eudyptes,spheniscidae,sphenisciformes,aves,TRUE
 37083,eudyptula minor,eudyptula,spheniscidae,sphenisciformes,aves,TRUE
 1215604,eulemur albifrons,eulemur,lemuridae,primates,mammalia,TRUE
 13514,eulemur coronatus,eulemur,lemuridae,primates,mammalia,TRUE
 87288,eulemur flavifrons,eulemur,lemuridae,primates,mammalia,TRUE
-47178,eulemur fulvus,eulemur,lemuridae,primates,mammalia,TRUE
 13515,eulemur fulvus,eulemur,lemuridae,primates,mammalia,TRUE
+47178,eulemur fulvus,eulemur,lemuridae,primates,mammalia,TRUE
 30602,eulemur macaco,eulemur,lemuridae,primates,mammalia,TRUE
+859984,eulemur rufifrons,eulemur,lemuridae,primates,mammalia,TRUE
 34886,eumetopias jubatus,eumetopias,otariidae,carnivora,mammalia,TRUE
 124747,eumops auripendulus,eumops,molossidae,chiroptera,mammalia,TRUE
 649740,eumops bonariensis,eumops,molossidae,chiroptera,mammalia,TRUE
@@ -2081,17 +2001,17 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 43325,euryzygomatomys spinosus,euryzygomatomys,echimyidae,rodentia,mammalia,TRUE
 426098,eutrigla gurnardus,eutrigla,triglidae,perciformes,actinopteri,TRUE
 1459826,eviota zebrina,eviota,gobiidae,gobiiformes,actinopteri,TRUE
-497151,evynnis cardinalis,evynnis,sparidae,spariformes,actinopteri,TRUE
 119711,evynnis tumifrons,evynnis,sparidae,spariformes,actinopteri,TRUE
 345155,falco biarmicus,falco,falconidae,falconiformes,aves,TRUE
 345164,falco cherrug,falco,falconidae,falconiformes,aves,TRUE
 495941,falco chicquera,falco,falconidae,falconiformes,aves,TRUE
 8953,falco columbarius,falco,falconidae,falconiformes,aves,TRUE
+495962,falco deiroleucus,falco,falconidae,falconiformes,aves,TRUE
 453957,falco fasciinucha,falco,falconidae,falconiformes,aves,TRUE
+56349,falco femoralis,falco,falconidae,falconiformes,aves,TRUE
 321056,falco longipennis,falco,falconidae,falconiformes,aves,TRUE
 279964,falco mexicanus,falco,falconidae,falconiformes,aves,TRUE
 148594,falco naumanni,falco,falconidae,falconiformes,aves,TRUE
-495990,falco peregrinus,falco,falconidae,falconiformes,aves,TRUE
 8954,falco peregrinus,falco,falconidae,falconiformes,aves,TRUE
 148596,falco punctatus,falco,falconidae,falconiformes,aves,TRUE
 120794,falco rusticolus,falco,falconidae,falconiformes,aves,TRUE
@@ -2099,6 +2019,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 344233,falco subbuteo,falco,falconidae,falconiformes,aves,TRUE
 100819,falco tinnunculus,falco,falconidae,falconiformes,aves,TRUE
 56351,falco vespertinus,falco,falconidae,falconiformes,aves,TRUE
+254539,falcunculus frontatus,falcunculus,,passeriformes,aves,TRUE
 2491053,falsistrellus mackenziei,falsistrellus,vespertilionidae,chiroptera,mammalia,TRUE
 110108,fejervarya limnocharis,fejervarya,dicroglossidae,anura,amphibia,TRUE
 1935980,felidae sp.,,felidae,carnivora,mammalia,TRUE
@@ -2150,17 +2071,14 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 210644,galerella sanguinea,galerella,herpestidae,carnivora,mammalia,TRUE
 263710,galeus sauteri,galeus,scyliorhinidae,carcharhiniformes,chondrichthyes,TRUE
 470561,galictis cuja,galictis,mustelidae,carnivora,mammalia,TRUE
-61400,galidia elegans,galidia,eupleridae,carnivora,mammalia,TRUE
 261967,gallicrex cinerea,gallicrex,rallidae,gruiformes,aves,TRUE
 107377,gallinago gallinago,gallinago,scolopacidae,charadriiformes,aves,TRUE
 9123,gallinula chloropus,gallinula,rallidae,gruiformes,aves,TRUE
 9031,gallus gallus,gallus,phasianidae,galliformes,aves,TRUE
 208525,gallus gallus,gallus,phasianidae,galliformes,aves,TRUE
 208526,gallus gallus,gallus,phasianidae,galliformes,aves,TRUE
-9033,gallus sonneratii,gallus,phasianidae,galliformes,aves,TRUE
 9036,gallus sp.,gallus,phasianidae,galliformes,aves,TRUE
 37273,gambusia holbrooki,gambusia,poeciliidae,cyprinodontiformes,actinopteri,TRUE
-137080,garra rufa,garra,cyprinidae,cypriniformes,actinopteri,TRUE
 238855,garrulax canorus,garrulax,leiothrichidae,passeriformes,aves,TRUE
 98127,garrulax leucolophus,garrulax,leiothrichidae,passeriformes,aves,TRUE
 56783,garrulus glandarius,garrulus,corvidae,passeriformes,aves,TRUE
@@ -2176,6 +2094,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 123934,gazella subgutturosa,gazella,bovidae,artiodactyla,mammalia,TRUE
 218819,gazza minuta,gazza,leiognathidae,chaetodontiformes,actinopteri,TRUE
 515997,gekko chinensis,gekko,gekkonidae,squamata,lepidosauria,TRUE
+36310,gekko gecko,gekko,gekkonidae,squamata,lepidosauria,TRUE
 2116494,gekko similignum,gekko,gekkonidae,squamata,lepidosauria,TRUE
 94190,genetta genetta,genetta,viverridae,carnivora,mammalia,TRUE
 205595,genetta maculata,genetta,viverridae,carnivora,mammalia,TRUE
@@ -2183,6 +2102,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 154954,genypterus blacodes,genypterus,ophidiidae,ophidiiformes,actinopteri,TRUE
 180179,geochelone elegans,geochelone,testudinidae,testudines,,TRUE
 286019,geochelone platynota,geochelone,testudinidae,testudines,,TRUE
+260639,geoclemys hamiltonii,geoclemys,geoemydidae,testudines,,TRUE
 74936,geoemyda spengleri,geoemyda,geoemydidae,testudines,,TRUE
 27682,geomys bursarius,geomys,geomyidae,rodentia,mammalia,TRUE
 115648,geopelia cuneata,geopelia,columbidae,columbiformes,aves,TRUE
@@ -2190,7 +2110,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 471127,geopelia placida,geopelia,columbidae,columbiformes,aves,TRUE
 81339,geophagus brasiliensis,geophagus,cichlidae,cichliformes,actinopteri,TRUE
 48883,geospiza fortis,geospiza,thraupidae,passeriformes,aves,TRUE
-48884,geospiza fuliginosa,geospiza,thraupidae,passeriformes,aves,TRUE
 142474,geothlypis tolmiei,geothlypis,parulidae,passeriformes,aves,TRUE
 135433,geothlypis trichas,geothlypis,parulidae,passeriformes,aves,TRUE
 71168,geotria australis,geotria,geotriidae,petromyzontiformes,hyperoartia,TRUE
@@ -2199,7 +2118,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 410299,gerbilliscus brantsii,gerbilliscus,muridae,rodentia,mammalia,TRUE
 410301,gerbilliscus kempi,gerbilliscus,muridae,rodentia,mammalia,TRUE
 410302,gerbilliscus leucogaster,gerbilliscus,muridae,rodentia,mammalia,TRUE
-1890199,gerbilliscus sp.,gerbilliscus,muridae,rodentia,mammalia,TRUE
 410306,gerbilliscus validus,gerbilliscus,muridae,rodentia,mammalia,TRUE
 411108,gerbilliscus vicinus,gerbilliscus,muridae,rodentia,mammalia,TRUE
 298880,gerbillus gerbillus,gerbillus,muridae,rodentia,mammalia,TRUE
@@ -2212,15 +2130,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 409609,giraffa reticulata,giraffa,giraffidae,artiodactyla,mammalia,TRUE
 214657,girella nigricans,girella,girellidae,centrarchiformes,actinopteri,TRUE
 163149,girella punctata,girella,girellidae,centrarchiformes,actinopteri,TRUE
-214659,girella tricuspidata,girella,girellidae,centrarchiformes,actinopteri,TRUE
 247715,glaucestrilda caerulescens,glaucestrilda,estrildidae,passeriformes,aves,TRUE
 78217,glaucidium brasilianum,glaucidium,strigidae,strigiformes,aves,TRUE
 121724,glaucidium passerinum,glaucidium,strigidae,strigiformes,aves,TRUE
 64683,glaucomys volans,glaucomys,sciuridae,rodentia,mammalia,TRUE
 909367,glauconycteris argentata,glauconycteris,vespertilionidae,chiroptera,mammalia,TRUE
-258909,glauconycteris poensis,glauconycteris,vespertilionidae,chiroptera,mammalia,TRUE
 2448840,glauconycteris superba,glauconycteris,vespertilionidae,chiroptera,mammalia,TRUE
-909369,glauconycteris variegata,glauconycteris,vespertilionidae,chiroptera,mammalia,TRUE
 41261,glis glis,glis,gliridae,rodentia,mammalia,TRUE
 38241,globicephala macrorhynchus,globicephala,delphinidae,artiodactyla,mammalia,TRUE
 9731,globicephala melas,globicephala,delphinidae,artiodactyla,mammalia,TRUE
@@ -2232,7 +2147,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 27638,glossophaga soricina,glossophaga,phyllostomidae,chiroptera,mammalia,TRUE
 176041,glossopsitta concinna,glossopsitta,psittaculidae,psittaciformes,aves,TRUE
 3003238,gloydius angusticeps,gloydius,viperidae,squamata,lepidosauria,TRUE
-135974,glyphorynchus spirurus,glyphorynchus,furnariidae,passeriformes,aves,TRUE
 335392,glyptemys insculpta,glyptemys,emydidae,testudines,,TRUE
 335393,glyptemys muhlenbergii,glyptemys,emydidae,testudines,,TRUE
 34819,glyptocephalus cynoglossus,glyptocephalus,pleuronectidae,pleuronectiformes,actinopteri,TRUE
@@ -2251,9 +2165,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1159185,gorilla beringei,gorilla,hominidae,primates,mammalia,TRUE
 46359,gorilla beringei,gorilla,hominidae,primates,mammalia,TRUE
 499232,gorilla beringei,gorilla,hominidae,primates,mammalia,TRUE
-406788,gorilla gorilla,gorilla,hominidae,primates,mammalia,TRUE
-9593,gorilla gorilla,gorilla,hominidae,primates,mammalia,TRUE
 9595,gorilla gorilla,gorilla,hominidae,primates,mammalia,TRUE
+9593,gorilla gorilla,gorilla,hominidae,primates,mammalia,TRUE
 115654,goura cristata,goura,columbidae,columbiformes,aves,TRUE
 915434,goura scheepmakeri,goura,columbidae,columbiformes,aves,TRUE
 116992,gracula religiosa,gracula,sturnidae,passeriformes,aves,TRUE
@@ -2275,12 +2188,11 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 40818,grus monacha,grus,gruidae,gruiformes,aves,TRUE
 40817,grus nigricollis,grus,gruidae,gruiformes,aves,TRUE
 51906,guaruba guarouba,guaruba,psittacidae,psittaciformes,aves,TRUE
+555261,gubernatrix cristata,gubernatrix,thraupidae,passeriformes,aves,TRUE
 30392,guira guira,guira,crotophagidae,cuculiformes,aves,TRUE
 48420,gulo gulo,gulo,mustelidae,carnivora,mammalia,TRUE
 42494,gymnocorymbus ternetzi,gymnocorymbus,acestrorhamphidae,characiformes,actinopteri,TRUE
-263517,gymnocypris namensis,gymnocypris,cyprinidae,cypriniformes,actinopteri,TRUE
 33616,gymnogyps californianus,gymnogyps,cathartidae,accipitriformes,aves,TRUE
-468484,gymnopithys rufigula,gymnopithys,thamnophilidae,passeriformes,aves,TRUE
 9132,gymnorhina tibicen,gymnorhina,artamidae,passeriformes,aves,TRUE
 189505,gymnothorax reticularis,gymnothorax,muraenidae,anguilliformes,actinopteri,TRUE
 33610,gypaetus barbatus,gypaetus,accipitridae,accipitriformes,aves,TRUE
@@ -2309,23 +2221,23 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 101187,halobatrachus didactylus,halobatrachus,batrachoididae,batrachoidiformes,actinopteri,TRUE
 530171,handleyomys alfaroi,handleyomys,cricetidae,rodentia,mammalia,TRUE
 218786,handleyomys fuscatus,handleyomys,cricetidae,rodentia,mammalia,TRUE
+13557,hapalemur griseus,hapalemur,lemuridae,primates,mammalia,TRUE
 8153,haplochromis burtoni,haplochromis,cichlidae,cichliformes,actinopteri,TRUE
 303557,haplochromis elegans,haplochromis,cichlidae,cichliformes,actinopteri,TRUE
 435155,harpadon nehereus,harpadon,synodontidae,aulopiformes,actinopteri,TRUE
 1591025,hebius popei,hebius,colubridae,squamata,lepidosauria,TRUE
 209871,heimyscus fumosus,heimyscus,muridae,rodentia,mammalia,TRUE
 9634,helarctos malayanus,helarctos,ursidae,carnivora,mammalia,TRUE
-443698,helicolenus barathri,helicolenus,sebastidae,perciformes,actinopteri,TRUE
 1235482,heliosciurus gambianus,heliosciurus,sciuridae,rodentia,mammalia,TRUE
 1096448,heliosciurus rufobrachium,heliosciurus,sciuridae,rodentia,mammalia,TRUE
 8551,heloderma horridum,heloderma,helodermatidae,squamata,lepidosauria,TRUE
 8554,heloderma suspectum,heloderma,helodermatidae,squamata,lepidosauria,TRUE
-175788,hemibagrus guttatus,hemibagrus,bagridae,siluriformes,actinopteri,TRUE
 75350,hemiculter leucisculus,hemiculter,xenocyprididae,cypriniformes,actinopteri,TRUE
 146913,hemidactylus bowringii,hemidactylus,gekkonidae,squamata,lepidosauria,TRUE
 47729,hemidactylus frenatus,hemidactylus,gekkonidae,squamata,lepidosauria,TRUE
 217708,hemiechinus auritus,hemiechinus,erinaceidae,eulipotyphla,mammalia,TRUE
 262124,hemiphaga novaeseelandiae,hemiphaga,columbidae,columbiformes,aves,TRUE
+96741,hemitheconyx caudicinctus,hemitheconyx,eublepharidae,squamata,lepidosauria,TRUE
 37179,hemitragus jemlahicus,hemitragus,bovidae,artiodactyla,mammalia,TRUE
 376633,hemitriakis japanica,hemitriakis,triakidae,carcharhiniformes,chondrichthyes,TRUE
 2704970,hemitrygon akajei,hemitrygon,dasyatidae,myliobatiformes,chondrichthyes,TRUE
@@ -2371,7 +2283,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 584995,hipposideros fuliginosus,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
 58069,hipposideros galeritus,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
 2921318,hipposideros gentilis,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
-354743,hipposideros grandis,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
 584997,hipposideros jonesi,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
 867828,hipposideros lankadiva,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
 175524,hipposideros larvatus,hipposideros,hipposideridae,chiroptera,mammalia,TRUE
@@ -2392,7 +2303,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 742904,histiotus velatus,histiotus,vespertilionidae,chiroptera,mammalia,TRUE
 68165,histrionicus histrionicus,histrionicus,anatidae,anseriformes,aves,TRUE
 75024,holacanthus ciliaris,holacanthus,pomacanthidae,,actinopteri,TRUE
-218787,holochilus chacarius,holochilus,cricetidae,rodentia,mammalia,TRUE
 89098,holochilus sciureus,holochilus,cricetidae,rodentia,mammalia,TRUE
 192599,homalopsis buccata,homalopsis,homalopsidae,squamata,lepidosauria,TRUE
 9606,homo sapiens,homo,hominidae,primates,mammalia,TRUE
@@ -2404,9 +2314,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 561366,horabagrus nigricollaris,horabagrus,bagridae,siluriformes,actinopteri,TRUE
 138705,hsunycteris thomasi,hsunycteris,phyllostomidae,chiroptera,mammalia,TRUE
 201498,hucho taimen,hucho,salmonidae,salmoniformes,actinopteri,TRUE
-61971,huso huso,huso,acipenseridae,acipenseriformes,actinopteri,TRUE
 95912,hyaena hyaena,hyaena,hyaenidae,carnivora,mammalia,TRUE
-181607,hybognathus hankinsoni,hybognathus,leuciscidae,cypriniformes,actinopteri,TRUE
 2107262,hybomys planifrons,hybomys,muridae,rodentia,mammalia,TRUE
 71162,hybomys univittatus,hybomys,muridae,rodentia,mammalia,TRUE
 10149,hydrochoerus hydrochaeris,hydrochoerus,hydrochaeridae,rodentia,mammalia,TRUE
@@ -2422,7 +2330,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 89099,hylaeamys megacephalus,hylaeamys,cricetidae,rodentia,mammalia,TRUE
 530176,hylaeamys yunganus,hylaeamys,cricetidae,rodentia,mammalia,TRUE
 9579,hylobates agilis,hylobates,hylobatidae,primates,mammalia,TRUE
-716691,hylobates albibarbis,hylobates,hylobatidae,primates,mammalia,TRUE
 9580,hylobates lar,hylobates,hylobatidae,primates,mammalia,TRUE
 81572,hylobates moloch,hylobates,hylobatidae,primates,mammalia,TRUE
 9588,hylobates muelleri,hylobates,hylobatidae,primates,mammalia,TRUE
@@ -2433,10 +2340,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 34858,hylomyscus alleni,hylomyscus,muridae,rodentia,mammalia,TRUE
 1427027,hylomyscus endorobae,hylomyscus,muridae,rodentia,mammalia,TRUE
 913014,hylomyscus pamfi,hylomyscus,muridae,rodentia,mammalia,TRUE
-209855,hylomyscus parvus,hylomyscus,muridae,rodentia,mammalia,TRUE
 337584,hylomyscus simus,hylomyscus,muridae,rodentia,mammalia,TRUE
 41265,hylomyscus stella,hylomyscus,muridae,rodentia,mammalia,TRUE
-100945,hylopetes phayrei,hylopetes,sciuridae,rodentia,mammalia,TRUE
 294368,hynobius nebulosus,hynobius,hynobiidae,caudata,amphibia,TRUE
 88175,hypocnemis cantator,hypocnemis,thamnophilidae,passeriformes,aves,TRUE
 300346,hypomesus pretiosus,hypomesus,osmeridae,osmeriformes,actinopteri,TRUE
@@ -2446,7 +2351,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 159453,hyporhamphus australis,hyporhamphus,hemiramphidae,beloniformes,actinopteri,TRUE
 293917,hyporhamphus sajori,hyporhamphus,hemiramphidae,beloniformes,actinopteri,TRUE
 232417,hyporthodus septemfasciatus,hyporthodus,serranidae,perciformes,actinopteri,TRUE
-107210,hypothymis azurea,hypothymis,monarchidae,passeriformes,aves,TRUE
 166778,hypseleotris klunzingeri,hypseleotris,eleotridae,gobiiformes,actinopteri,TRUE
 3399148,hypselotriton orientalis,hypselotriton,salamandridae,caudata,amphibia,TRUE
 448084,hypsignathus monstrosus,hypsignathus,pteropodidae,chiroptera,mammalia,TRUE
@@ -2459,14 +2363,16 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 143286,hystrix brachyura,hystrix,hystricidae,rodentia,mammalia,TRUE
 10137,hystrix cristata,hystrix,hystricidae,rodentia,mammalia,TRUE
 360967,ia io,ia,vespertilionidae,chiroptera,mammalia,TRUE
+178820,iberolacerta cyreni,iberolacerta,lacertidae,squamata,lepidosauria,TRUE
 178821,iberolacerta monticola,iberolacerta,lacertidae,squamata,lepidosauria,TRUE
 205599,ichneumia albicauda,ichneumia,herpestidae,carnivora,mammalia,TRUE
 126702,ichthyaetus ichthyaetus,ichthyaetus,laridae,charadriiformes,aves,TRUE
 328043,ichthyaetus leucophthalmus,ichthyaetus,laridae,charadriiformes,aves,TRUE
 1288290,ichthyaetus melanocephalus,ichthyaetus,laridae,charadriiformes,aves,TRUE
+328046,ichthyaetus relictus,ichthyaetus,laridae,charadriiformes,aves,TRUE
 8453,ichthyophis bannanicus,ichthyophis,ichthyophiidae,gymnophiona,amphibia,TRUE
-54263,ichthyosaura alpestris,ichthyosaura,salamandridae,caudata,amphibia,TRUE
 385666,ichthyosaura alpestris,ichthyosaura,salamandridae,caudata,amphibia,TRUE
+54263,ichthyosaura alpestris,ichthyosaura,salamandridae,caudata,amphibia,TRUE
 270582,ichthyscopus lebeck,ichthyscopus,uranoscopidae,uranoscopiformes,actinopteri,TRUE
 66913,ictalurus furcatus,ictalurus,ictaluridae,siluriformes,actinopteri,TRUE
 7998,ictalurus punctatus,ictalurus,ictaluridae,siluriformes,actinopteri,TRUE
@@ -2509,7 +2415,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1429989,kerivoula argentata,kerivoula,vespertilionidae,chiroptera,mammalia,TRUE
 2015597,kerivoula furva,kerivoula,vespertilionidae,chiroptera,mammalia,TRUE
 155035,kerivoula hardwickii,kerivoula,vespertilionidae,chiroptera,mammalia,TRUE
-258925,kerivoula pellucida,kerivoula,vespertilionidae,chiroptera,mammalia,TRUE
 633648,kerivoula titania,kerivoula,vespertilionidae,chiroptera,mammalia,TRUE
 142487,kinosternon subrubrum,kinosternon,kinosternidae,testudines,,TRUE
 9962,kobus ellipsiprymnus,kobus,bovidae,artiodactyla,mammalia,TRUE
@@ -2525,6 +2430,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 241309,labroides dimidiatus,labroides,labridae,labriformes,actinopteri,TRUE
 56723,labrus bergylta,labrus,labridae,labriformes,actinopteri,TRUE
 508554,labrus mixtus,labrus,labridae,labriformes,actinopteri,TRUE
+301600,lacerta agilis,lacerta,lacertidae,squamata,lepidosauria,TRUE
+80442,lacerta schreiberi,lacerta,lacertidae,squamata,lepidosauria,TRUE
 65476,lacerta viridis,lacerta,lacertidae,squamata,lepidosauria,TRUE
 110938,laephotis capensis,laephotis,vespertilionidae,chiroptera,mammalia,TRUE
 103594,lagenodelphis hosei,lagenodelphis,delphinidae,artiodactyla,mammalia,TRUE
@@ -2535,7 +2442,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 64668,lagopus muta,lagopus,phasianidae,galliformes,aves,TRUE
 65624,lagorchestes conspicillatus,lagorchestes,macropodidae,diprotodontia,mammalia,TRUE
 9519,lagothrix lagotricha,lagothrix,atelidae,primates,mammalia,TRUE
-767355,lagothrix lugens,lagothrix,atelidae,primates,mammalia,TRUE
 175522,lagurus lagurus,lagurus,cricetidae,rodentia,mammalia,TRUE
 9844,lama glama,lama,camelidae,artiodactyla,mammalia,TRUE
 9840,lama guanicoe,lama,camelidae,artiodactyla,mammalia,TRUE
@@ -2543,9 +2449,11 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 7750,lampetra planeri,lampetra,petromyzontidae,petromyzontiformes,hyperoartia,TRUE
 272724,lamprologus lemairii,lamprologus,cichlidae,cichliformes,actinopteri,TRUE
 195090,lamprologus ocellatus,lamprologus,cichlidae,cichliformes,actinopteri,TRUE
+163491,lampropeltis calligaster,lampropeltis,colubridae,squamata,lepidosauria,TRUE
 165023,lampropeltis getula,lampropeltis,colubridae,squamata,lepidosauria,TRUE
 94888,lampropeltis mexicana,lampropeltis,colubridae,squamata,lepidosauria,TRUE
 1437855,lampropeltis micropholis,lampropeltis,colubridae,squamata,lepidosauria,TRUE
+140017,lampropeltis triangulum,lampropeltis,colubridae,squamata,lepidosauria,TRUE
 316451,lampropholis delicata,lampropholis,scincidae,squamata,lepidosauria,TRUE
 56324,lanius collurio,lanius,laniidae,passeriformes,aves,TRUE
 337178,lanius cristatus,lanius,laniidae,passeriformes,aves,TRUE
@@ -2638,7 +2546,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 55054,leptonycteris curasoae,leptonycteris,phyllostomidae,chiroptera,mammalia,TRUE
 59456,leptonycteris nivalis,leptonycteris,phyllostomidae,chiroptera,mammalia,TRUE
 3150064,leptoptilos crumenifer,leptoptilos,ciconiidae,ciconiiformes,aves,TRUE
-115657,leptotila rufaxilla,leptotila,columbidae,columbiformes,aves,TRUE
 48086,lepus americanus,lepus,leporidae,lagomorpha,mammalia,TRUE
 48087,lepus californicus,lepus,leporidae,lagomorpha,mammalia,TRUE
 9981,lepus capensis,lepus,leporidae,lagomorpha,mammalia,TRUE
@@ -2661,7 +2568,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 127929,leucopsar rothschildi,leucopsar,sturnidae,passeriformes,aves,TRUE
 571888,leucosticte brandti,leucosticte,fringillidae,passeriformes,aves,TRUE
 217134,leucosticte tephrocotis,leucosticte,fringillidae,passeriformes,aves,TRUE
-1001577,lichonycteris obscura,lichonycteris,phyllostomidae,chiroptera,mammalia,TRUE
 27771,limanda limanda,limanda,pleuronectidae,pleuronectiformes,actinopteri,TRUE
 27749,limnochromis auritus,limnochromis,cichlidae,cichliformes,actinopteri,TRUE
 279949,limnodromus griseus,limnodromus,scolopacidae,charadriiformes,aves,TRUE
@@ -2716,14 +2622,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 51348,lophuromys flavopunctatus,lophuromys,muridae,rodentia,mammalia,TRUE
 2082263,lophuromys laticeps,lophuromys,muridae,rodentia,mammalia,TRUE
 2082264,lophuromys machangui,lophuromys,muridae,rodentia,mammalia,TRUE
-1116258,lophuromys nudicaudus,lophuromys,muridae,rodentia,mammalia,TRUE
 83535,lophuromys sikapusi,lophuromys,muridae,rodentia,mammalia,TRUE
 2082267,lophuromys stanleyi,lophuromys,muridae,rodentia,mammalia,TRUE
 471714,lorius chlorocercus,lorius,psittaculidae,psittaciformes,aves,TRUE
 274062,lorius lory,lorius,psittaculidae,psittaciformes,aves,TRUE
 69944,lota lota,lota,lotidae,gadiformes,actinopteri,TRUE
 64802,loxia curvirostra,loxia,fringillidae,passeriformes,aves,TRUE
-286692,loxioides bailleui,loxioides,fringillidae,passeriformes,aves,TRUE
 9785,loxodonta africana,loxodonta,elephantidae,proboscidea,mammalia,TRUE
 89122,loxodontomys micropus,loxodontomys,cricetidae,rodentia,mammalia,TRUE
 391696,luscinia luscinia,luscinia,turdidae,passeriformes,aves,TRUE
@@ -2753,7 +2657,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 3371112,lyroderma lyra,lyroderma,megadermatidae,chiroptera,mammalia,TRUE
 1233216,lyrurus tetrix,lyrurus,phasianidae,galliformes,aves,TRUE
 9540,macaca arctoides,macaca,cercopithecidae,primates,mammalia,TRUE
-9551,macaca assamensis,macaca,cercopithecidae,primates,mammalia,TRUE
 281404,macaca balantak,macaca,cercopithecidae,primates,mammalia,TRUE
 281405,macaca balantak x tonkeana,macaca,cercopithecidae,primates,mammalia,TRUE
 78449,macaca cyclopis,macaca,cercopithecidae,primates,mammalia,TRUE
@@ -2794,17 +2697,21 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 473319,macrourus berglax,macrourus,macrouridae,gadiformes,actinopteri,TRUE
 66434,madoqua kirkii,madoqua,bovidae,artiodactyla,mammalia,TRUE
 1027994,madoqua saltiana,madoqua,bovidae,artiodactyla,mammalia,TRUE
+8485,malaclemys terrapin,malaclemys,emydidae,testudines,,TRUE
 630739,malacocephalus occidentalis,malacocephalus,macrouridae,gadiformes,actinopteri,TRUE
+286009,malacochersus tornieri,malacochersus,testudinidae,testudines,,TRUE
 112226,malacomys longipes,malacomys,muridae,rodentia,mammalia,TRUE
 45646,malacorhynchus membranaceus,malacorhynchus,anatidae,anseriformes,aves,TRUE
 223801,malakichthys elegans,malakichthys,malakichthyidae,acropomatiformes,actinopteri,TRUE
 1496311,malayopython reticulatus,malayopython,pythonidae,squamata,lepidosauria,TRUE
 51753,malayopython timoriensis,malayopython,pythonidae,squamata,lepidosauria,TRUE
+55807,malurus cyaneus,malurus,maluridae,passeriformes,aves,TRUE
 9568,mandrillus leucophaeus,mandrillus,cercopithecidae,primates,mammalia,TRUE
 9561,mandrillus sphinx,mandrillus,cercopithecidae,primates,mammalia,TRUE
 9974,manis javanica,manis,manidae,pholidota,mammalia,TRUE
 143292,manis pentadactyla,manis,manidae,pholidota,mammalia,TRUE
 749565,manis pentadactyla,manis,manidae,pholidota,mammalia,TRUE
+44314,manorina melanocephala,manorina,meliphagidae,passeriformes,aves,TRUE
 75832,mareca americana,mareca,anatidae,anseriformes,aves,TRUE
 75844,mareca falcata,mareca,anatidae,anseriformes,aves,TRUE
 8838,mareca penelope,mareca,anatidae,anseriformes,aves,TRUE
@@ -2813,7 +2720,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 75875,marmaronetta angustirostris,marmaronetta,anatidae,anseriformes,aves,TRUE
 42719,marmosa demerarae,marmosa,didelphidae,didelphimorphia,mammalia,TRUE
 126295,marmosa murina,marmosa,didelphidae,didelphimorphia,mammalia,TRUE
-225729,marmosa paraguayana,marmosa,didelphidae,didelphimorphia,mammalia,TRUE
 91496,marmosa robinsoni,marmosa,didelphidae,didelphimorphia,mammalia,TRUE
 126298,marmosops parvidens,marmosops,didelphidae,didelphimorphia,mammalia,TRUE
 71802,marmota caudata,marmota,sciuridae,rodentia,mammalia,TRUE
@@ -2836,18 +2742,14 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 70830,mastomys sp.,mastomys,muridae,rodentia,mammalia,TRUE
 260622,mauremys megalocephala,mauremys,geoemydidae,testudines,,TRUE
 260615,mauremys reevesii,mauremys,geoemydidae,testudines,,TRUE
-260630,mauremys sinensis,mauremys,geoemydidae,testudines,,TRUE
 69081,maxomys surifer,maxomys,muridae,rodentia,mammalia,TRUE
 69127,maxomys whiteheadi,maxomys,muridae,rodentia,mammalia,TRUE
 43334,mazama americana,mazama,cervidae,artiodactyla,mammalia,TRUE
 397613,mazama nana,mazama,cervidae,artiodactyla,mammalia,TRUE
-3242303,megaderma sp.,megaderma,megadermatidae,chiroptera,mammalia,TRUE
 9414,megaderma spasma,megaderma,megadermatidae,chiroptera,mammalia,TRUE
 915257,megadontomys nelsoni,megadontomys,cricetidae,rodentia,mammalia,TRUE
 37085,megadyptes antipodes,megadyptes,spheniscidae,sphenisciformes,aves,TRUE
-298110,megaerops ecaudatus,megaerops,pteropodidae,chiroptera,mammalia,TRUE
 374419,megaerops kusnotoi,megaerops,pteropodidae,chiroptera,mammalia,TRUE
-77233,megaerops niphanae,megaerops,pteropodidae,chiroptera,mammalia,TRUE
 58073,megaloglossus woermanni,megaloglossus,pteropodidae,chiroptera,mammalia,TRUE
 9773,megaptera novaeangliae,megaptera,balaenopteridae,artiodactyla,mammalia,TRUE
 507958,megascops choliba,megascops,strigidae,strigiformes,aves,TRUE
@@ -2863,7 +2765,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 47582,melanophryniscus stelzneri,melanophryniscus,bufonidae,anura,amphibia,TRUE
 111991,melanospiza bicolor,melanospiza,thraupidae,passeriformes,aves,TRUE
 120843,melanotaenia duboulayi,melanotaenia,melanotaeniidae,atheriniformes,actinopteri,TRUE
-120844,melanotaenia fluviatilis,melanotaenia,melanotaeniidae,atheriniformes,actinopteri,TRUE
 9103,meleagris gallopavo,meleagris,phasianidae,galliformes,aves,TRUE
 109972,meleagris gallopavo,meleagris,phasianidae,galliformes,aves,TRUE
 109973,meleagris gallopavo,meleagris,phasianidae,galliformes,aves,TRUE
@@ -2902,7 +2803,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 361449,merops ornatus,merops,meropidae,coraciiformes,aves,TRUE
 10036,mesocricetus auratus,mesocricetus,cricetidae,rodentia,mammalia,TRUE
 30627,mesomys hispidus,mesomys,echimyidae,rodentia,mammalia,TRUE
-148094,mesophylla macconnelli,mesophylla,phyllostomidae,chiroptera,mammalia,TRUE
 48745,mesoplodon bidens,mesoplodon,ziphiidae,artiodactyla,mammalia,TRUE
 48708,mesoplodon densirostris,mesoplodon,ziphiidae,artiodactyla,mammalia,TRUE
 27616,mesoplodon europaeus,mesoplodon,ziphiidae,artiodactyla,mammalia,TRUE
@@ -2918,6 +2818,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1523041,microcarbo coronatus,microcarbo,phalacrocoracidae,suliformes,aves,TRUE
 146618,microcarbo melanoleucos,microcarbo,phalacrocoracidae,suliformes,aves,TRUE
 1517963,microcarbo niger,microcarbo,phalacrocoracidae,suliformes,aves,TRUE
+143354,microcebus griseorufus,microcebus,cheirogaleidae,primates,mammalia,TRUE
 30608,microcebus murinus,microcebus,cheirogaleidae,primates,mammalia,TRUE
 461219,microeca fascinans,microeca,petroicidae,passeriformes,aves,TRUE
 80721,microgadus proximus,microgadus,gadidae,gadiformes,actinopteri,TRUE
@@ -2941,7 +2842,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 225060,micropterus punctulatus,micropterus,centrarchidae,centrarchiformes,actinopteri,TRUE
 27706,micropterus salmoides,micropterus,centrarchidae,centrarchiformes,actinopteri,TRUE
 106175,microstomus kitt,microstomus,pleuronectidae,pleuronectiformes,actinopteri,TRUE
-89058,microstomus pacificus,microstomus,pleuronectidae,pleuronectiformes,actinopteri,TRUE
 29092,microtus agrestis,microtus,cricetidae,rodentia,mammalia,TRUE
 47230,microtus arvalis,microtus,cricetidae,rodentia,mammalia,TRUE
 100895,microtus californicus,microtus,cricetidae,rodentia,mammalia,TRUE
@@ -2964,10 +2864,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 357707,milvago chimango,milvago,falconidae,falconiformes,aves,TRUE
 52810,milvus migrans,milvus,accipitridae,accipitriformes,aves,TRUE
 43518,milvus milvus,milvus,accipitridae,accipitriformes,aves,TRUE
-245849,mimus parvulus,mimus,mimidae,passeriformes,aves,TRUE
 60713,mimus polyglottos,mimus,mimidae,passeriformes,aves,TRUE
 441364,miniopterus africanus,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
-117605,miniopterus australis,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
 258933,miniopterus fraterculus,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
 187007,miniopterus fuliginosus,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
 187008,miniopterus fuscus,miniopterus,miniopteridae,chiroptera,mammalia,TRUE
@@ -2992,11 +2890,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9715,mirounga leonina,mirounga,phocidae,carnivora,mammalia,TRUE
 75329,misgurnus anguillicaudatus,misgurnus,cobitidae,cypriniformes,actinopteri,TRUE
 405651,misgurnus mohoity,misgurnus,cobitidae,cypriniformes,actinopteri,TRUE
+194921,mitu mitu,mitu,cracidae,galliformes,aves,TRUE
 182936,mniotilta varia,mniotilta,parulidae,passeriformes,aves,TRUE
 409036,molossops neglectus,molossops,molossidae,chiroptera,mammalia,TRUE
-1001576,molossops temminckii,molossops,molossidae,chiroptera,mammalia,TRUE
 999942,molossus coibensis,molossus,molossidae,chiroptera,mammalia,TRUE
-1269259,molossus currentium,molossus,molossidae,chiroptera,mammalia,TRUE
 27622,molossus molossus,molossus,molossidae,chiroptera,mammalia,TRUE
 2997257,molossus nigricans,molossus,molossidae,chiroptera,mammalia,TRUE
 1982945,molossus pretiosus,molossus,molossidae,chiroptera,mammalia,TRUE
@@ -3010,7 +2907,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 181435,monocentris japonica,monocentris,monocentridae,trachichthyiformes,actinopteri,TRUE
 302772,monocirrhus polyacanthus,monocirrhus,polycentridae,,actinopteri,TRUE
 13616,monodelphis domestica,monodelphis,didelphidae,didelphimorphia,mammalia,TRUE
-587434,monodelphis iheringi,monodelphis,didelphidae,didelphimorphia,mammalia,TRUE
 40151,monodon monoceros,monodon,monodontidae,artiodactyla,mammalia,TRUE
 43700,monopterus albus,monopterus,synbranchidae,synbranchiformes,actinopteri,TRUE
 2557930,montifringilla henrici,montifringilla,passeridae,passeriformes,aves,TRUE
@@ -3045,8 +2941,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 196770,moxostoma macrolepidotum,moxostoma,catostomidae,cypriniformes,actinopteri,TRUE
 48193,mugil cephalus,mugil,mugilidae,mugiliformes,actinopteri,TRUE
 88200,mugilogobius abei,mugilogobius,gobiidae,gobiiformes,actinopteri,TRUE
-430080,mullus barbatus,mullus,mullidae,syngnathiformes,actinopteri,TRUE
 37007,mullus barbatus,mullus,mullidae,syngnathiformes,actinopteri,TRUE
+430080,mullus barbatus,mullus,mullidae,syngnathiformes,actinopteri,TRUE
 94224,mullus sp.,mullus,mullidae,syngnathiformes,actinopteri,TRUE
 87757,mullus surmuletus,mullus,mullidae,syngnathiformes,actinopteri,TRUE
 210652,mungos mungo,mungos,herpestidae,carnivora,mammalia,TRUE
@@ -3070,9 +2966,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 10105,mus minutoides,mus,muridae,rodentia,mammalia,TRUE
 60742,mus musculoides,mus,muridae,rodentia,mammalia,TRUE
 10090,mus musculus,mus,muridae,rodentia,mammalia,TRUE
-10091,mus musculus,mus,muridae,rodentia,mammalia,TRUE
 10092,mus musculus,mus,muridae,rodentia,mammalia,TRUE
 39442,mus musculus,mus,muridae,rodentia,mammalia,TRUE
+10091,mus musculus,mus,muridae,rodentia,mammalia,TRUE
 57486,mus musculus,mus,muridae,rodentia,mammalia,TRUE
 10093,mus pahari,mus,muridae,rodentia,mammalia,TRUE
 10102,mus setulosus,mus,muridae,rodentia,mammalia,TRUE
@@ -3081,8 +2977,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 10096,mus spretus,mus,muridae,rodentia,mammalia,TRUE
 254704,mus terricolor,mus,muridae,rodentia,mammalia,TRUE
 473865,mus triton,mus,muridae,rodentia,mammalia,TRUE
-39082,muscardinus avellanarius,muscardinus,gliridae,rodentia,mammalia,TRUE
-670349,muscicapa latirostris,muscicapa,muscicapidae,passeriformes,aves,TRUE
 1293958,muscicapa striata,muscicapa,muscicapidae,passeriformes,aves,TRUE
 119412,musophaga rossae,musophaga,musophagidae,musophagiformes,aves,TRUE
 36723,mustela erminea,mustela,mustelidae,carnivora,mammalia,TRUE
@@ -3148,12 +3042,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 384635,myotis grisescens,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 138977,myotis horsfieldii,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 155915,myotis ikonnikovi,myotis,vespertilionidae,chiroptera,mammalia,TRUE
-159327,myotis keaysi,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 257881,myotis keenii,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 452654,myotis laniger,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 27668,myotis leibii,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 153285,myotis levis,myotis,vespertilionidae,chiroptera,mammalia,TRUE
-587652,myotis longipes,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 59463,myotis lucifugus,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 187014,myotis macrodactylus,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 138979,myotis macropus,myotis,vespertilionidae,chiroptera,mammalia,TRUE
@@ -3178,7 +3070,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 153287,myotis thysanodes,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 9435,myotis velifer,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 159335,myotis volans,myotis,vespertilionidae,chiroptera,mammalia,TRUE
-160974,myotis welwitschii,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 159337,myotis yumanensis,myotis,vespertilionidae,chiroptera,mammalia,TRUE
 68557,myoxocephalus octodecemspinosus,myoxocephalus,cottidae,perciformes,actinopteri,TRUE
 71006,myrmecophaga tridactyla,myrmecophaga,myrmecophagidae,pilosa,mammalia,TRUE
@@ -3188,18 +3079,17 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 94961,mystacina tuberculata,mystacina,mystacinidae,chiroptera,mammalia,TRUE
 568893,mystus gulio,mystus,bagridae,siluriformes,actinopteri,TRUE
 1041117,myuchelys georgesi,myuchelys,chelidae,testudines,,TRUE
+1041116,myuchelys latisternum,myuchelys,chelidae,testudines,,TRUE
 7769,myxine glutinosa,myxine,myxinidae,myxiniformes,myxini,TRUE
+414973,nadzikambia mlanjensis,nadzikambia,chamaeleonidae,squamata,lepidosauria,TRUE
 34871,naemorhedus goral,naemorhedus,bovidae,artiodactyla,mammalia,TRUE
 8656,naja atra,naja,elapidae,squamata,lepidosauria,TRUE
 35670,naja naja,naja,elapidae,squamata,lepidosauria,TRUE
 84476,naja siamensis,naja,elapidae,squamata,lepidosauria,TRUE
-71115,nandinia binotata,nandinia,nandiniidae,carnivora,mammalia,TRUE
 27591,nanger granti,nanger,bovidae,artiodactyla,mammalia,TRUE
 1026970,nannospalax galili,nannospalax,spalacidae,rodentia,mammalia,TRUE
 498220,nanonycteris veldkampii,nanonycteris,pteropodidae,chiroptera,mammalia,TRUE
-125878,nanorana parkeri,nanorana,dicroglossidae,anura,amphibia,TRUE
 101671,napaeozapus insignis,napaeozapus,dipodidae,rodentia,mammalia,TRUE
-43780,nasalis larvatus,nasalis,cercopithecidae,primates,mammalia,TRUE
 352831,nasua narica,nasua,procyonidae,carnivora,mammalia,TRUE
 9651,nasua nasua,nasua,procyonidae,carnivora,mammalia,TRUE
 155040,natalus stramineus,natalus,natalidae,chiroptera,mammalia,TRUE
@@ -3215,7 +3105,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 2116606,necromys sp.,necromys,cricetidae,rodentia,mammalia,TRUE
 30399,necrosyrtes monachus,necrosyrtes,accipitridae,accipitriformes,aves,TRUE
 29117,nectomys squamipes,nectomys,cricetidae,rodentia,mammalia,TRUE
-7821,negaprion brevirostris,negaprion,carcharhinidae,carcharhiniformes,chondrichthyes,TRUE
 316163,nematalosa erebi,nematalosa,clupeidae,clupeiformes,actinopteri,TRUE
 1426789,nemipterus randalli,nemipterus,nemipteridae,spariformes,actinopteri,TRUE
 450225,nemipterus virgatus,nemipterus,nemipteridae,spariformes,actinopteri,TRUE
@@ -3257,7 +3146,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1381466,neoromicia helios,neoromicia,vespertilionidae,chiroptera,mammalia,TRUE
 258944,neoromicia somalicus,neoromicia,vespertilionidae,chiroptera,mammalia,TRUE
 42408,neotoma albigula,neotoma,cricetidae,rodentia,mammalia,TRUE
-394588,neotoma bryanti,neotoma,cricetidae,rodentia,mammalia,TRUE
 105147,neotoma cinerea,neotoma,cricetidae,rodentia,mammalia,TRUE
 42409,neotoma floridana,neotoma,cricetidae,rodentia,mammalia,TRUE
 105199,neotoma fuscipes,neotoma,cricetidae,rodentia,mammalia,TRUE
@@ -3287,8 +3175,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 252795,nisaetus cirrhatus,nisaetus,accipitridae,accipitriformes,aves,TRUE
 214438,nisaetus nipalensis,nisaetus,accipitridae,accipitriformes,aves,TRUE
 248811,niviventer confucianus,niviventer,muridae,rodentia,mammalia,TRUE
-357352,niviventer coninga,niviventer,muridae,rodentia,mammalia,TRUE
-69083,niviventer cremoriventer,niviventer,muridae,rodentia,mammalia,TRUE
 425033,niviventer eha,niviventer,muridae,rodentia,mammalia,TRUE
 349709,niviventer excelsior,niviventer,muridae,rodentia,mammalia,TRUE
 83774,niviventer fulvescens,niviventer,muridae,rodentia,mammalia,TRUE
@@ -3327,7 +3213,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 270766,nycteris hispida,nycteris,nycteridae,chiroptera,mammalia,TRUE
 175523,nycteris macrotis,nycteris,nycteridae,chiroptera,mammalia,TRUE
 59467,nycteris thebaica,nycteris,nycteridae,chiroptera,mammalia,TRUE
-479723,nycteris tragata,nycteris,nycteridae,chiroptera,mammalia,TRUE
 9470,nycticebus coucang,nycticebus,lorisidae,primates,mammalia,TRUE
 1286224,nycticeinops crassulus,nycticeinops,vespertilionidae,chiroptera,mammalia,TRUE
 153288,nycticeinops schlieffeni,nycticeinops,vespertilionidae,chiroptera,mammalia,TRUE
@@ -3338,6 +3223,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 258865,nyctinomops femorosaccus,nyctinomops,molossidae,chiroptera,mammalia,TRUE
 27627,nyctinomops laticaudatus,nyctinomops,molossidae,chiroptera,mammalia,TRUE
 124753,nyctinomops macrotis,nyctinomops,molossidae,chiroptera,mammalia,TRUE
+258945,nyctophilus geoffroyi,nyctophilus,vespertilionidae,chiroptera,mammalia,TRUE
+59471,nyctophilus gouldi,nyctophilus,vespertilionidae,chiroptera,mammalia,TRUE
 13180,nymphicus hollandicus,nymphicus,cacatuidae,psittaciformes,aves,TRUE
 126871,oceanodroma castro,oceanodroma,,procellariiformes,aves,TRUE
 126866,oceanodroma homochroa,oceanodroma,,procellariiformes,aves,TRUE
@@ -3347,18 +3234,15 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 130825,ochotona curzoniae,ochotona,ochotonidae,lagomorpha,mammalia,TRUE
 1868627,ochotona sp.,ochotona,ochotonidae,lagomorpha,mammalia,TRUE
 130843,ochotona thibetana,ochotona,ochotonidae,lagomorpha,mammalia,TRUE
-10160,octodon degus,octodon,octodontidae,rodentia,mammalia,TRUE
 187128,ocyphaps lophotes,ocyphaps,columbidae,columbiformes,aves,TRUE
 9707,odobenus rosmarus,odobenus,odobenidae,carnivora,mammalia,TRUE
 9708,odobenus rosmarus,odobenus,odobenidae,carnivora,mammalia,TRUE
 62698,odobenus rosmarus,odobenus,odobenidae,carnivora,mammalia,TRUE
 9872,odocoileus hemionus,odocoileus,cervidae,artiodactyla,mammalia,TRUE
-9873,odocoileus hemionus,odocoileus,cervidae,artiodactyla,mammalia,TRUE
 9878,odocoileus hemionus,odocoileus,cervidae,artiodactyla,mammalia,TRUE
 9874,odocoileus virginianus,odocoileus,cervidae,artiodactyla,mammalia,TRUE
 886794,odontophorus gujanensis,odontophorus,odontophoridae,galliformes,aves,TRUE
 1394125,odorrana graminea,odorrana,ranidae,anura,amphibia,TRUE
-448114,odorrana tormota,odorrana,ranidae,anura,amphibia,TRUE
 326940,odorrana versabilis,odorrana,ranidae,anura,amphibia,TRUE
 200943,oecomys auyantepui,oecomys,cricetidae,rodentia,mammalia,TRUE
 48011,oecomys bicolor,oecomys,cricetidae,rodentia,mammalia,TRUE
@@ -3381,7 +3265,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 48008,oligoryzomys microtis,oligoryzomys,cricetidae,rodentia,mammalia,TRUE
 37017,oligoryzomys nigripes,oligoryzomys,cricetidae,rodentia,mammalia,TRUE
 37019,oligoryzomys sp.,oligoryzomys,cricetidae,rodentia,mammalia,TRUE
-1132650,oligoryzomys utiaritensis,oligoryzomys,cricetidae,rodentia,mammalia,TRUE
 37018,oligoryzomys vegetus,oligoryzomys,cricetidae,rodentia,mammalia,TRUE
 105716,oligosoma aeneum,oligosoma,scincidae,squamata,lepidosauria,TRUE
 105734,oligosoma moco,oligosoma,scincidae,squamata,lepidosauria,TRUE
@@ -3428,6 +3311,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 99873,oreoscoptes montanus,oreoscoptes,sturnidae,passeriformes,aves,TRUE
 66444,oreotragus oreotragus,oreotragus,bovidae,artiodactyla,mammalia,TRUE
 234626,orientallactaga sibirica,orientallactaga,dipodidae,rodentia,mammalia,TRUE
+409288,oriolus chinensis,oriolus,corvidae,passeriformes,aves,TRUE
 449354,oriolus flavocinctus,oriolus,corvidae,passeriformes,aves,TRUE
 181099,oriolus oriolus,oriolus,corvidae,passeriformes,aves,TRUE
 9258,ornithorhynchus anatinus,ornithorhynchus,ornithorhynchidae,monotremata,mammalia,TRUE
@@ -3497,10 +3381,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 316145,pampus punctatissimus,pampus,stromateidae,scombriformes,actinopteri,TRUE
 9597,pan paniscus,pan,hominidae,primates,mammalia,TRUE
 37010,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
+9598,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
 37011,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
 37012,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
 756884,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
-9598,pan troglodytes,pan,hominidae,primates,mammalia,TRUE
 56262,pandion haliaetus,pandion,pandionidae,accipitriformes,aves,TRUE
 310915,pangasianodon hypophthalmus,pangasianodon,pangasiidae,siluriformes,actinopteri,TRUE
 9689,panthera leo,panthera,felidae,carnivora,mammalia,TRUE
@@ -3510,11 +3394,11 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9691,panthera pardus,panthera,felidae,carnivora,mammalia,TRUE
 421001,panthera pardus,panthera,felidae,carnivora,mammalia,TRUE
 9692,panthera pardus,panthera,felidae,carnivora,mammalia,TRUE
-253258,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
 74533,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
-74535,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
 9694,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
+74535,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
 419130,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
+253258,panthera tigris,panthera,felidae,carnivora,mammalia,TRUE
 29064,panthera uncia,panthera,felidae,carnivora,mammalia,TRUE
 94885,pantherophis guttatus,pantherophis,colubridae,squamata,lepidosauria,TRUE
 39099,pantherophis obsoletus,pantherophis,colubridae,squamata,lepidosauria,TRUE
@@ -3529,7 +3413,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 100937,papio papio,papio,cercopithecidae,primates,mammalia,TRUE
 61183,papio sp.,papio,cercopithecidae,primates,mammalia,TRUE
 36229,papio ursinus,papio,cercopithecidae,primates,mammalia,TRUE
-3370481,parablarinella griselda,parablarinella,soricidae,eulipotyphla,mammalia,TRUE
 223492,parabuteo unicinctus,parabuteo,accipitridae,accipitriformes,aves,TRUE
 27757,paracyprichromis brieni,paracyprichromis,cichlidae,cichliformes,actinopteri,TRUE
 71117,paradoxurus hermaphroditus,paradoxurus,viverridae,carnivora,mammalia,TRUE
@@ -3547,6 +3430,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 360507,parapristipoma trilineatum,parapristipoma,haemulidae,lutjaniformes,actinopteri,TRUE
 626229,parascorpaena picta,parascorpaena,scorpaenidae,perciformes,actinopteri,TRUE
 712816,parastrellus hesperus,parastrellus,vespertilionidae,chiroptera,mammalia,TRUE
+254575,pardalotus punctatus,pardalotus,pardalotidae,passeriformes,aves,TRUE
 182947,parkesia noveboracensis,parkesia,parulidae,passeriformes,aves,TRUE
 172659,parophrys vetulus,parophrys,pleuronectidae,pleuronectiformes,actinopteri,TRUE
 586844,parupeneus cyclostomus,parupeneus,mullidae,syngnathiformes,actinopteri,TRUE
@@ -3564,7 +3448,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 10023,pedetes capensis,pedetes,pedetidae,rodentia,mammalia,TRUE
 76720,pekania pennanti,pekania,mustelidae,carnivora,mammalia,TRUE
 546549,pelates quadrilineatus,pelates,terapontidae,centrarchiformes,actinopteri,TRUE
-59552,pelea capreolus,pelea,bovidae,artiodactyla,mammalia,TRUE
 317791,pelecanus conspicillatus,pelecanus,pelecanidae,pelecaniformes,aves,TRUE
 36300,pelecanus crispus,pelecanus,pelecanidae,pelecaniformes,aves,TRUE
 33618,pelecanus erythrorhynchos,pelecanus,pelecanidae,pelecaniformes,aves,TRUE
@@ -3579,7 +3462,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 45623,pelophylax lessonae,pelophylax,ranidae,anura,amphibia,TRUE
 8409,pelophylax nigromaculatus,pelophylax,ranidae,anura,amphibia,TRUE
 8403,pelophylax perezi,pelophylax,ranidae,anura,amphibia,TRUE
-109178,pelophylax plancyi,pelophylax,ranidae,anura,amphibia,TRUE
 8406,pelophylax ridibundus,pelophylax,ranidae,anura,amphibia,TRUE
 3071454,pelophylax sp.,pelophylax,ranidae,anura,amphibia,TRUE
 55535,pelusios williamsi,pelusios,pelomedusidae,testudines,,TRUE
@@ -3612,20 +3494,15 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 144753,peromyscus crinitus,peromyscus,cricetidae,rodentia,mammalia,TRUE
 97207,peromyscus difficilis,peromyscus,cricetidae,rodentia,mammalia,TRUE
 42410,peromyscus eremicus,peromyscus,cricetidae,rodentia,mammalia,TRUE
-144755,peromyscus fraterculus,peromyscus,cricetidae,rodentia,mammalia,TRUE
 42411,peromyscus gossypinus,peromyscus,cricetidae,rodentia,mammalia,TRUE
-57104,peromyscus hylocetes,peromyscus,cricetidae,rodentia,mammalia,TRUE
 10041,peromyscus leucopus,peromyscus,cricetidae,rodentia,mammalia,TRUE
-97209,peromyscus levipes,peromyscus,cricetidae,rodentia,mammalia,TRUE
 10042,peromyscus maniculatus,peromyscus,cricetidae,rodentia,mammalia,TRUE
 322709,peromyscus megalops,peromyscus,cricetidae,rodentia,mammalia,TRUE
 246392,peromyscus melanophrys,peromyscus,cricetidae,rodentia,mammalia,TRUE
 42412,peromyscus melanotis,peromyscus,cricetidae,rodentia,mammalia,TRUE
 56317,peromyscus mexicanus,peromyscus,cricetidae,rodentia,mammalia,TRUE
-414442,peromyscus ochraventer,peromyscus,cricetidae,rodentia,mammalia,TRUE
 97213,peromyscus pectoralis,peromyscus,cricetidae,rodentia,mammalia,TRUE
 97218,peromyscus sp.,peromyscus,cricetidae,rodentia,mammalia,TRUE
-57105,peromyscus spicilegus,peromyscus,cricetidae,rodentia,mammalia,TRUE
 89101,peromyscus truei,peromyscus,cricetidae,rodentia,mammalia,TRUE
 249015,peropteryx macrotis,peropteryx,emballonuridae,chiroptera,mammalia,TRUE
 34899,petaurus breviceps,petaurus,petauridae,diprotodontia,mammalia,TRUE
@@ -3634,7 +3511,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 287489,petrochromis fasciolatus,petrochromis,cichlidae,cichliformes,actinopteri,TRUE
 287480,petrochromis macrognathus,petrochromis,cichlidae,cichliformes,actinopteri,TRUE
 244514,petrochromis polyodon,petrochromis,cichlidae,cichliformes,actinopteri,TRUE
-54082,petrogale godmani,petrogale,macropodidae,diprotodontia,mammalia,TRUE
 256038,petroica australis,petroica,petroicidae,passeriformes,aves,TRUE
 369490,petroica longipes,petroica,petroicidae,passeriformes,aves,TRUE
 369484,petroica macrocephala,petroica,petroicidae,passeriformes,aves,TRUE
@@ -3666,8 +3542,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 39088,phoca fasciata,phoca,phocidae,carnivora,mammalia,TRUE
 39089,phoca groenlandica,phoca,phocidae,carnivora,mammalia,TRUE
 39090,phoca largha,phoca,phocidae,carnivora,mammalia,TRUE
-271025,phoca vitulina,phoca,phocidae,carnivora,mammalia,TRUE
 9720,phoca vitulina,phoca,phocidae,carnivora,mammalia,TRUE
+271025,phoca vitulina,phoca,phocidae,carnivora,mammalia,TRUE
 693432,phoca vitulina,phoca,phocidae,carnivora,mammalia,TRUE
 51092,phoca vitulina,phoca,phocidae,carnivora,mammalia,TRUE
 34888,phocarctos hookeri,phocarctos,otariidae,carnivora,mammalia,TRUE
@@ -3677,7 +3553,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 109678,phodopus roborovskii,phodopus,cricetidae,rodentia,mammalia,TRUE
 10044,phodopus sungorus,phodopus,cricetidae,rodentia,mammalia,TRUE
 54020,phoebastria immutabilis,phoebastria,diomedeidae,procellariiformes,aves,TRUE
-704175,phoeniconaias minor,phoeniconaias,phoenicopteridae,phoenicopteriformes,aves,TRUE
 704177,phoenicoparrus andinus,phoenicoparrus,phoenicopteridae,phoenicopteriformes,aves,TRUE
 117000,phoenicopterus chilensis,phoenicopterus,phoenicopteridae,phoenicopteriformes,aves,TRUE
 435638,phoenicopterus roseus,phoenicopterus,phoenicopteridae,phoenicopteriformes,aves,TRUE
@@ -3692,6 +3567,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 274455,photopectoralis bindus,photopectoralis,leiognathidae,chaetodontiformes,actinopteri,TRUE
 500582,phrynocephalus erythrurus,phrynocephalus,agamidae,squamata,lepidosauria,TRUE
 171650,phrynocephalus theobaldi,phrynocephalus,agamidae,squamata,lepidosauria,TRUE
+266418,phylidonyris novaehollandiae,phylidonyris,meliphagidae,passeriformes,aves,TRUE
 111132,phyllobates terribilis,phyllobates,dendrobatidae,anura,amphibia,TRUE
 36273,phylloscopus borealis,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 48150,phylloscopus collybita,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
@@ -3700,7 +3576,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 56436,phylloscopus inornatus,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 56435,phylloscopus proregulus,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 56429,phylloscopus schwarzi,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
-56440,phylloscopus tenellipes,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 9182,phylloscopus trochilus,phylloscopus,phylloscopidae,passeriformes,aves,TRUE
 89673,phyllostomus discolor,phyllostomus,phyllostomidae,chiroptera,mammalia,TRUE
 187005,phyllostomus elongatus,phyllostomus,phyllostomidae,chiroptera,mammalia,TRUE
@@ -3748,6 +3623,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 285955,pithecia pithecia,pithecia,pitheciidae,primates,mammalia,TRUE
 9163,pitta sordida,pitta,pittidae,passeriformes,aves,TRUE
 94850,pituophis catenifer,pituophis,colubridae,squamata,lepidosauria,TRUE
+94865,pituophis melanoleucus,pituophis,colubridae,squamata,lepidosauria,TRUE
+94866,pituophis melanoleucus,pituophis,colubridae,squamata,lepidosauria,TRUE
 8595,pituophis melanoleucus,pituophis,colubridae,squamata,lepidosauria,TRUE
 479651,planiliza affinis,planiliza,mugilidae,mugiliformes,actinopteri,TRUE
 455471,planiliza tade,planiliza,mugilidae,mugiliformes,actinopteri,TRUE
@@ -3806,6 +3683,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 80367,podiceps grisegena,podiceps,podicipedidae,podicipediformes,aves,TRUE
 555330,podiceps major,podiceps,podicipedidae,podicipediformes,aves,TRUE
 85099,podiceps nigricollis,podiceps,podicipedidae,podicipediformes,aves,TRUE
+9252,podilymbus podiceps,podilymbus,podicipedidae,podicipediformes,aves,TRUE
 48891,poecile atricapillus,poecile,paridae,passeriformes,aves,TRUE
 48892,poecile carolinensis,poecile,paridae,passeriformes,aves,TRUE
 48895,poecile montanus,poecile,paridae,passeriformes,aves,TRUE
@@ -3814,18 +3692,20 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 69231,poecilia parae,poecilia,poeciliidae,cyprinodontiformes,actinopteri,TRUE
 8081,poecilia reticulata,poecilia,poeciliidae,cyprinodontiformes,actinopteri,TRUE
 69235,poecilia sphenops,poecilia,poeciliidae,cyprinodontiformes,actinopteri,TRUE
+259256,poephila acuticauda,poephila,estrildidae,passeriformes,aves,TRUE
 247741,poephila cincta,poephila,estrildidae,passeriformes,aves,TRUE
 522439,poephila personata,poephila,estrildidae,passeriformes,aves,TRUE
+52202,pogona barbata,pogona,agamidae,squamata,lepidosauria,TRUE
+206602,pogona minor,pogona,agamidae,squamata,lepidosauria,TRUE
 103695,pogona vitticeps,pogona,agamidae,squamata,lepidosauria,TRUE
 234075,poicephalus cryptoxanthus,poicephalus,psittacidae,psittaciformes,aves,TRUE
-241588,poicephalus gulielmi,poicephalus,psittacidae,psittaciformes,aves,TRUE
 1702108,poicephalus gulielmi,poicephalus,psittacidae,psittaciformes,aves,TRUE
+241588,poicephalus gulielmi,poicephalus,psittacidae,psittaciformes,aves,TRUE
 281916,poicephalus meyeri,poicephalus,psittacidae,psittaciformes,aves,TRUE
 190152,poicephalus robustus,poicephalus,psittacidae,psittaciformes,aves,TRUE
 1549155,poicephalus rueppellii,poicephalus,psittacidae,psittaciformes,aves,TRUE
 523728,poicephalus rufiventris,poicephalus,psittacidae,psittaciformes,aves,TRUE
 176045,poicephalus senegalus,poicephalus,psittacidae,psittaciformes,aves,TRUE
-66707,polioptila caerulea,polioptila,certhiidae,passeriformes,aves,TRUE
 8060,pollachius virens,pollachius,gadidae,gadiformes,actinopteri,TRUE
 68449,polypedates megacephalus,polypedates,rhacophoridae,anura,amphibia,TRUE
 142660,polyplectron malacense,polyplectron,phasianidae,galliformes,aves,TRUE
@@ -3854,10 +3734,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9310,potorous tridactylus,potorous,potoroidae,diprotodontia,mammalia,TRUE
 29067,potos flavus,potos,procyonidae,carnivora,mammalia,TRUE
 10113,praomys daltoni,praomys,muridae,rodentia,mammalia,TRUE
-1159791,praomys derooi,praomys,muridae,rodentia,mammalia,TRUE
 209866,praomys jacksoni,praomys,muridae,rodentia,mammalia,TRUE
 209867,praomys misonnei,praomys,muridae,rodentia,mammalia,TRUE
-209868,praomys petteri,praomys,muridae,rodentia,mammalia,TRUE
+526885,praomys mutoni,praomys,muridae,rodentia,mammalia,TRUE
 476587,praomys rostratus,praomys,muridae,rodentia,mammalia,TRUE
 209869,praomys tullbergi,praomys,muridae,rodentia,mammalia,TRUE
 78451,presbytis melalophos,presbytis,cercopithecidae,primates,mammalia,TRUE
@@ -3878,7 +3757,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 157669,procapra gutturosa,procapra,bovidae,artiodactyla,mammalia,TRUE
 157668,procapra przewalskii,procapra,bovidae,artiodactyla,mammalia,TRUE
 175932,procarduelis nipalensis,procarduelis,fringillidae,passeriformes,aves,TRUE
-9813,procavia capensis,procavia,procaviidae,hyracoidea,mammalia,TRUE
 53665,procellaria aequinoctialis,procellaria,procellariidae,procellariiformes,aves,TRUE
 373033,procolobus verus,procolobus,cercopithecidae,primates,mammalia,TRUE
 92522,procyon cancrivorus,procyon,procyonidae,carnivora,mammalia,TRUE
@@ -3953,8 +3831,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 232655,psittacula eupatria,psittacula,psittacidae,psittaciformes,aves,TRUE
 703991,psittacula finschii,psittacula,psittacidae,psittaciformes,aves,TRUE
 232620,psittacula himalayana,psittacula,psittacidae,psittaciformes,aves,TRUE
-9228,psittacula krameri,psittacula,psittacidae,psittaciformes,aves,TRUE
 232646,psittacula krameri,psittacula,psittacidae,psittaciformes,aves,TRUE
+9228,psittacula krameri,psittacula,psittacidae,psittaciformes,aves,TRUE
 2100722,psittacula sp.,psittacula,psittacidae,psittaciformes,aves,TRUE
 274071,psittaculirostris edwardsii,psittaculirostris,psittacidae,psittaciformes,aves,TRUE
 57247,psittacus erithacus,psittacus,psittacidae,psittaciformes,aves,TRUE
@@ -3974,13 +3852,13 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 94956,pteronotus davyi,pteronotus,mormoopidae,chiroptera,mammalia,TRUE
 59476,pteronotus parnellii,pteronotus,mormoopidae,chiroptera,mammalia,TRUE
 118856,pteronotus personatus,pteronotus,mormoopidae,chiroptera,mammalia,TRUE
-280976,pteronotus rubiginosus,pteronotus,mormoopidae,chiroptera,mammalia,TRUE
 74131,pterophyllum scalare,pterophyllum,cichlidae,cichliformes,actinopteri,TRUE
 58082,pteropus admiralitatum,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 9402,pteropus alecto,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 1291037,pteropus capistratus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 328804,pteropus conspicillatus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 385575,pteropus dasymallus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
+126282,pteropus dasymallus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 9405,pteropus hypomelanus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 166054,pteropus lylei,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 143291,pteropus medius,pteropus,pteropodidae,chiroptera,mammalia,TRUE
@@ -3995,6 +3873,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 77217,pteropus tonganus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 132908,pteropus vampyrus,pteropus,pteropodidae,chiroptera,mammalia,TRUE
 1367116,pterygotrigla hemisticta,pterygotrigla,triglidae,perciformes,actinopteri,TRUE
+28724,ptilonorhynchus violaceus,ptilonorhynchus,ptilonorhynchidae,passeriformes,aves,TRUE
+481899,ptilotula penicillata,ptilotula,meliphagidae,passeriformes,aves,TRUE
 192173,ptyas major,ptyas,colubridae,squamata,lepidosauria,TRUE
 109989,ptychadena sp.,ptychadena,ptychadenidae,anura,amphibia,TRUE
 163861,pudu puda,pudu,cervidae,artiodactyla,mammalia,TRUE
@@ -4021,8 +3901,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 114375,pyroderus scutatus,pyroderus,cotingidae,passeriformes,aves,TRUE
 56789,pyrrhocorax graculus,pyrrhocorax,corvidae,passeriformes,aves,TRUE
 175815,pyrrhula erythaca,pyrrhula,fringillidae,passeriformes,aves,TRUE
-176086,pyrrhula pyrrhula,pyrrhula,fringillidae,passeriformes,aves,TRUE
 37607,pyrrhula pyrrhula,pyrrhula,fringillidae,passeriformes,aves,TRUE
+176086,pyrrhula pyrrhula,pyrrhula,fringillidae,passeriformes,aves,TRUE
 311901,pyrrhura cruentata,pyrrhura,psittacidae,psittaciformes,aves,TRUE
 211511,pyrrhura frontalis,pyrrhura,psittacidae,psittaciformes,aves,TRUE
 311890,pyrrhura griseipectus,pyrrhura,psittacidae,psittaciformes,aves,TRUE
@@ -4068,11 +3948,10 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 69834,rana pretiosa,rana,ranidae,anura,amphibia,TRUE
 168099,rana pyrenaica,rana,ranidae,anura,amphibia,TRUE
 8407,rana temporaria,rana,ranidae,anura,amphibia,TRUE
-86329,rangifer tarandus,rangifer,cervidae,artiodactyla,mammalia,TRUE
 9870,rangifer tarandus,rangifer,cervidae,artiodactyla,mammalia,TRUE
 86327,rangifer tarandus,rangifer,cervidae,artiodactyla,mammalia,TRUE
+86329,rangifer tarandus,rangifer,cervidae,artiodactyla,mammalia,TRUE
 191431,rangifer tarandus,rangifer,cervidae,artiodactyla,mammalia,TRUE
-85591,ranitomeya ventrimaculata,ranitomeya,dendrobatidae,anura,amphibia,TRUE
 336083,ranoidea alboguttata,ranoidea,hylidae,anura,amphibia,TRUE
 317313,ranoidea brevipes,ranoidea,hylidae,anura,amphibia,TRUE
 30344,ranoidea caerulea,ranoidea,hylidae,anura,amphibia,TRUE
@@ -4093,6 +3972,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 583359,rattus pyctoris,rattus,muridae,rodentia,mammalia,TRUE
 10117,rattus rattus,rattus,muridae,rodentia,mammalia,TRUE
 796024,rattus rattus,rattus,muridae,rodentia,mammalia,TRUE
+69076,rattus satarae,rattus,muridae,rodentia,mammalia,TRUE
 10120,rattus sordidus,rattus,muridae,rodentia,mammalia,TRUE
 10118,rattus sp.,rattus,muridae,rodentia,mammalia,TRUE
 35732,rattus tanezumi,rattus,muridae,rodentia,mammalia,TRUE
@@ -4136,6 +4016,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 519037,rhinolophus blasii,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 337452,rhinolophus borneensis,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 302408,rhinolophus capensis,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
+867890,rhinolophus chaseni,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 59478,rhinolophus clivosus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 867891,rhinolophus coelophyllus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 196296,rhinolophus cornutus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
@@ -4157,6 +4038,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 476588,rhinolophus marshalli,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 76836,rhinolophus megaphyllus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 342862,rhinolophus mehelyi,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
+3344654,rhinolophus microglobosus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 169756,rhinolophus monoceros,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 188571,rhinolophus pearsonii,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 76837,rhinolophus philippinensis,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
@@ -4172,13 +4054,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 3075052,rhinolophus sp.,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 430491,rhinolophus stheno,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 476589,rhinolophus thomasi,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
-430492,rhinolophus trifoliatus,rhinolophus,rhinolophidae,chiroptera,mammalia,TRUE
 391222,rhinomuraena quaesita,rhinomuraena,muraenidae,anguilliformes,actinopteri,TRUE
-270786,rhinonicteris aurantia,rhinonicteris,rhinonycteridae,chiroptera,mammalia,TRUE
 138707,rhinophylla pumilio,rhinophylla,phyllostomidae,chiroptera,mammalia,TRUE
 61622,rhinopithecus roxellana,rhinopithecus,cercopithecidae,primates,mammalia,TRUE
 124756,rhinopoma hardwickii,rhinopoma,rhinopomatidae,chiroptera,mammalia,TRUE
 226571,rhinosciurus laticaudatus,rhinosciurus,sciuridae,rodentia,mammalia,TRUE
+315356,rhipidura albiscapa,rhipidura,rhipiduridae,passeriformes,aves,TRUE
 381039,rhipidura fuliginosa,rhipidura,rhipiduridae,passeriformes,aves,TRUE
 53275,rhizomys pruinosus,rhizomys,spalacidae,rodentia,mammalia,TRUE
 146130,rhizomys sinensis,rhizomys,spalacidae,rodentia,mammalia,TRUE
@@ -4194,7 +4075,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 317125,riparia paludicola,riparia,hirundinidae,passeriformes,aves,TRUE
 88110,riparia riparia,riparia,hirundinidae,passeriformes,aves,TRUE
 75485,rissa tridactyla,rissa,laridae,charadriiformes,aves,TRUE
-69158,rodentia sp.,,,rodentia,mammalia,TRUE
 9407,rousettus aegyptiacus,rousettus,pteropodidae,chiroptera,mammalia,TRUE
 58083,rousettus amplexicaudatus,rousettus,pteropodidae,chiroptera,mammalia,TRUE
 9408,rousettus leschenaultii,rousettus,pteropodidae,chiroptera,mammalia,TRUE
@@ -4216,7 +4096,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 446910,saccolaimus flaviventris,saccolaimus,emballonuridae,chiroptera,mammalia,TRUE
 526813,saccolaimus saccolaimus,saccolaimus,emballonuridae,chiroptera,mammalia,TRUE
 59482,saccopteryx bilineata,saccopteryx,emballonuridae,chiroptera,mammalia,TRUE
-106347,saccostomus sp.,saccostomus,nesomyidae,rodentia,mammalia,TRUE
 56258,sagittarius serpentarius,sagittarius,sagittariidae,accipitriformes,aves,TRUE
 3371155,sagmatias obliquidens,sagmatias,delphinidae,artiodactyla,mammalia,TRUE
 3371156,sagmatias obscurus,sagmatias,delphinidae,artiodactyla,mammalia,TRUE
@@ -4229,14 +4108,12 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9490,saguinus oedipus,saguinus,cebidae,primates,mammalia,TRUE
 34875,saiga tatarica,saiga,bovidae,artiodactyla,mammalia,TRUE
 1218238,saiga tatarica,saiga,bovidae,artiodactyla,mammalia,TRUE
-39432,saimiri boliviensis,saimiri,cebidae,primates,mammalia,TRUE
 27679,saimiri boliviensis,saimiri,cebidae,primates,mammalia,TRUE
+39432,saimiri boliviensis,saimiri,cebidae,primates,mammalia,TRUE
 495297,saimiri boliviensis,saimiri,cebidae,primates,mammalia,TRUE
 70928,saimiri oerstedii,saimiri,cebidae,primates,mammalia,TRUE
-190117,saimiri sciureus,saimiri,cebidae,primates,mammalia,TRUE
-495298,saimiri sciureus,saimiri,cebidae,primates,mammalia,TRUE
-495300,saimiri sciureus,saimiri,cebidae,primates,mammalia,TRUE
 9521,saimiri sciureus,saimiri,cebidae,primates,mammalia,TRUE
+495298,saimiri sciureus,saimiri,cebidae,primates,mammalia,TRUE
 1561164,saimiri sp.,saimiri,cebidae,primates,mammalia,TRUE
 66265,saimiri ustus,saimiri,cebidae,primates,mammalia,TRUE
 57571,salamandra salamandra,salamandra,salamandridae,caudata,amphibia,TRUE
@@ -4265,7 +4142,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 1874197,sapajus sp.,sapajus,cebidae,primates,mammalia,TRUE
 174599,sapajus xanthosternos,sapajus,cebidae,primates,mammalia,TRUE
 9305,sarcophilus harrisii,sarcophilus,dasyuridae,dasyuromorphia,mammalia,TRUE
-334879,sarda australis,sarda,scombridae,scombriformes,actinopteri,TRUE
 8230,sarda orientalis,sarda,scombridae,scombriformes,actinopteri,TRUE
 27697,sardina pilchardus,sardina,clupeidae,clupeiformes,actinopteri,TRUE
 196071,sardinella aurita,sardinella,clupeidae,clupeiformes,actinopteri,TRUE
@@ -4287,9 +4163,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 71119,scalopus aquaticus,scalopus,talpidae,eulipotyphla,mammalia,TRUE
 161785,scaphiophryne madagascariensis,scaphiophryne,microhylidae,anura,amphibia,TRUE
 36178,scaphirhynchus albus,scaphirhynchus,acipenseridae,acipenseriformes,actinopteri,TRUE
-7910,scaphirhynchus platorynchus,scaphirhynchus,acipenseridae,acipenseriformes,actinopteri,TRUE
 241146,scapteromys aquaticus,scapteromys,cricetidae,rodentia,mammalia,TRUE
-3370766,scaptonyx fusicauda,scaptonyx,talpidae,eulipotyphla,mammalia,TRUE
 58319,scardinius erythrophthalmus,scardinius,leuciscidae,cypriniformes,actinopteri,TRUE
 73861,scarturus elater,scarturus,dipodidae,rodentia,mammalia,TRUE
 2926640,scarturus heptneri,scarturus,dipodidae,rodentia,mammalia,TRUE
@@ -4318,14 +4192,11 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 52904,scophthalmus maximus,scophthalmus,scophthalmidae,pleuronectiformes,actinopteri,TRUE
 2269373,scorpaena jacksoniensis,scorpaena,scorpaenidae,perciformes,actinopteri,TRUE
 210004,scorpaena scrofa,scorpaena,scorpaenidae,perciformes,actinopteri,TRUE
-214431,scortum barcoo,scortum,terapontidae,centrarchiformes,actinopteri,TRUE
 89107,scotinomys xerampelinus,scotinomys,cricetidae,rodentia,mammalia,TRUE
 258952,scotophilus dinganii,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
 159339,scotophilus heathii,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
 153297,scotophilus kuhlii,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
-249034,scotophilus leucogaster,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
 380359,scotophilus nigrita,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
-258953,scotophilus nux,scotophilus,vespertilionidae,chiroptera,mammalia,TRUE
 72066,sebastes constellatus,sebastes,sebastidae,perciformes,actinopteri,TRUE
 160818,sebastes inermis,sebastes,sebastidae,perciformes,actinopteri,TRUE
 72084,sebastes maliger,sebastes,sebastidae,perciformes,actinopteri,TRUE
@@ -4344,7 +4215,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 88029,semnopithecus entellus,semnopithecus,cercopithecidae,primates,mammalia,TRUE
 2804203,semnopithecus schistaceus,semnopithecus,cercopithecidae,primates,mammalia,TRUE
 67558,semotilus atromaculatus,semotilus,leuciscidae,cypriniformes,actinopteri,TRUE
-94903,senticolis triaspis,senticolis,colubridae,squamata,lepidosauria,TRUE
 507604,sericulus ardens,sericulus,ptilonorhynchidae,passeriformes,aves,TRUE
 9135,serinus canaria,serinus,fringillidae,passeriformes,aves,TRUE
 163852,serinus pusillus,serinus,fringillidae,passeriformes,aves,TRUE
@@ -4357,7 +4227,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 111975,setophaga coronata,setophaga,parulidae,passeriformes,aves,TRUE
 92121,setophaga magnolia,setophaga,parulidae,passeriformes,aves,TRUE
 92122,setophaga pensylvanica,setophaga,parulidae,passeriformes,aves,TRUE
-1134348,setophaga petechia,setophaga,parulidae,passeriformes,aves,TRUE
 123631,setophaga petechia,setophaga,parulidae,passeriformes,aves,TRUE
 182949,setophaga ruticilla,setophaga,parulidae,passeriformes,aves,TRUE
 1212470,setophaga striata,setophaga,parulidae,passeriformes,aves,TRUE
@@ -4371,8 +4240,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 42415,sigmodon hispidus,sigmodon,cricetidae,rodentia,mammalia,TRUE
 42416,sigmodon mascotensis,sigmodon,cricetidae,rodentia,mammalia,TRUE
 134745,sigmodon toltecus,sigmodon,cricetidae,rodentia,mammalia,TRUE
-443722,sillago ciliata,sillago,sillaginidae,,actinopteri,TRUE
-443723,sillago flindersi,sillago,sillaginidae,,actinopteri,TRUE
 43258,sillago japonica,sillago,sillaginidae,,actinopteri,TRUE
 435225,sillago sihama,sillago,sillaginidae,,actinopteri,TRUE
 30991,silurus asotus,silurus,siluridae,siluriformes,actinopteri,TRUE
@@ -4382,6 +4249,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 278166,sinibotia superciliaris,sinibotia,botiidae,cypriniformes,actinopteri,TRUE
 119488,siniperca chuatsi,siniperca,sinipercidae,centrarchiformes,actinopteri,TRUE
 228252,siniperca scherzeri,siniperca,sinipercidae,centrarchiformes,actinopteri,TRUE
+8758,sistrurus miliarius,sistrurus,viperidae,squamata,lepidosauria,TRUE
 50249,sitta canadensis,sitta,sittidae,passeriformes,aves,TRUE
 50250,sitta carolinensis,sitta,sittidae,passeriformes,aves,TRUE
 50251,sitta europaea,sitta,sittidae,passeriformes,aves,TRUE
@@ -4395,27 +4263,18 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 268768,sorex antinorii,sorex,soricidae,eulipotyphla,mammalia,TRUE
 42254,sorex araneus,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62898,sorex arcticus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-113357,sorex bairdi,sorex,soricidae,eulipotyphla,mammalia,TRUE
 862701,sorex bedfordiae,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62276,sorex caecutiens,sorex,soricidae,eulipotyphla,mammalia,TRUE
-36803,sorex cinereus,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62895,sorex coronatus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-268767,sorex cylindricauda,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62272,sorex daphaenodon,sorex,soricidae,eulipotyphla,mammalia,TRUE
-62283,sorex fumeus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-9383,sorex haydeni,sorex,soricidae,eulipotyphla,mammalia,TRUE
 9384,sorex hoyi,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62281,sorex isodon,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62274,sorex minutissimus,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62280,sorex minutus,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62289,sorex mirabilis,sorex,soricidae,eulipotyphla,mammalia,TRUE
-62903,sorex monticolus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-46219,sorex palustris,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62288,sorex roboratus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-62906,sorex trowbridgii,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62287,sorex tundrensis,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62275,sorex unguiculatus,sorex,soricidae,eulipotyphla,mammalia,TRUE
-62905,sorex vagrans,sorex,soricidae,eulipotyphla,mammalia,TRUE
 62900,sorex volnuchini,sorex,soricidae,eulipotyphla,mammalia,TRUE
 338729,sotalia guianensis,sotalia,delphinidae,artiodactyla,mammalia,TRUE
 103600,sousa chinensis,sousa,delphinidae,artiodactyla,mammalia,TRUE
@@ -4424,7 +4283,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 75840,spatula cyanoptera,spatula,anatidae,anseriformes,aves,TRUE
 75842,spatula discors,spatula,anatidae,anseriformes,aves,TRUE
 75853,spatula platalea,spatula,anatidae,anseriformes,aves,TRUE
-3150535,spatula puna,spatula,anatidae,anseriformes,aves,TRUE
 75856,spatula querquedula,spatula,anatidae,anseriformes,aves,TRUE
 75863,spatula versicolor,spatula,anatidae,anseriformes,aves,TRUE
 68741,speothos venaticus,speothos,canidae,carnivora,mammalia,TRUE
@@ -4445,7 +4303,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 30552,spilogale putorius,spilogale,mephitidae,carnivora,mammalia,TRUE
 115700,spilopelia chinensis,spilopelia,columbidae,columbiformes,aves,TRUE
 135635,spilopelia senegalensis,spilopelia,columbidae,columbiformes,aves,TRUE
-208451,spilornis cheela,spilornis,accipitridae,accipitriformes,aves,TRUE
 160755,spinus atratus,spinus,fringillidae,passeriformes,aves,TRUE
 273489,spinus cucullatus,spinus,fringillidae,passeriformes,aves,TRUE
 54768,spinus magellanicus,spinus,fringillidae,passeriformes,aves,TRUE
@@ -4457,7 +4314,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 3151062,spodiopsar cineraceus,spodiopsar,sturnidae,passeriformes,aves,TRUE
 3151063,spodiopsar sericeus,spodiopsar,sturnidae,passeriformes,aves,TRUE
 50595,spondyliosoma cantharus,spondyliosoma,sparidae,spariformes,actinopteri,TRUE
-3151064,sporathraupis cyanocephala,sporathraupis,thraupidae,passeriformes,aves,TRUE
 2578067,sporophila angolensis,sporophila,thraupidae,passeriformes,aves,TRUE
 256689,sporophila caerulescens,sporophila,thraupidae,passeriformes,aves,TRUE
 3150545,sporophila crassirostris,sporophila,thraupidae,passeriformes,aves,TRUE
@@ -4468,8 +4324,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 335062,squalus megalops,squalus,squalidae,squaliformes,chondrichthyes,TRUE
 7798,squalus suckleyi,squalus,squalidae,squaliformes,chondrichthyes,TRUE
 1890068,steatomys pratensis,steatomys,nesomyidae,rodentia,mammalia,TRUE
-81634,steatomys sp.,steatomys,nesomyidae,rodentia,mammalia,TRUE
-144197,stegastes partitus,stegastes,pomacentridae,,actinopteri,TRUE
 331524,stellifer lanceolatus,stellifer,sciaenidae,,actinopteri,TRUE
 9737,stenella coeruleoalba,stenella,delphinidae,artiodactyla,mammalia,TRUE
 103590,stenella frontalis,stenella,delphinidae,artiodactyla,mammalia,TRUE
@@ -4491,6 +4345,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 507597,sternula albifrons,sternula,laridae,charadriiformes,aves,TRUE
 471862,sternula antillarum,sternula,laridae,charadriiformes,aves,TRUE
 569598,stigmochelys pardalis,stigmochelys,testudinidae,testudines,,TRUE
+247775,stizoptera bichenovii,stizoptera,estrildidae,passeriformes,aves,TRUE
 183614,storeria dekayi,storeria,colubridae,squamata,lepidosauria,TRUE
 135634,streptopelia capicola,streptopelia,columbidae,columbiformes,aves,TRUE
 177147,streptopelia decaocto,streptopelia,columbidae,columbiformes,aves,TRUE
@@ -4508,7 +4363,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 56329,sturnella magna,sturnella,icteridae,passeriformes,aves,TRUE
 451425,sturnia pagodarum,sturnia,sturnidae,passeriformes,aves,TRUE
 2737875,sturnira angeli,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
-192403,sturnira erythromos,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
 27660,sturnira lilium,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
 192405,sturnira ludovici,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
 196700,sturnira parvidens,sturnira,phyllostomidae,chiroptera,mammalia,TRUE
@@ -4524,16 +4378,13 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9378,suncus murinus,suncus,soricidae,eulipotyphla,mammalia,TRUE
 1936103,sundamys infraluteus,sundamys,muridae,rodentia,mammalia,TRUE
 83761,sundamys muelleri,sundamys,muridae,rodentia,mammalia,TRUE
-1620830,sundasciurus hippurus,sundasciurus,sciuridae,rodentia,mammalia,TRUE
 37032,suricata suricatta,suricata,herpestidae,carnivora,mammalia,TRUE
 69940,surnia ulula,surnia,strigidae,strigiformes,aves,TRUE
-673351,sus barbatus,sus,suidae,artiodactyla,mammalia,TRUE
-673352,sus barbatus,sus,suidae,artiodactyla,mammalia,TRUE
 41807,sus barbatus,sus,suidae,artiodactyla,mammalia,TRUE
 273789,sus celebensis,sus,suidae,artiodactyla,mammalia,TRUE
-415978,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
 9823,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
 9825,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
+415978,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
 309913,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
 375578,sus scrofa,sus,suidae,artiodactyla,mammalia,TRUE
 9826,sus sp.,sus,suidae,artiodactyla,mammalia,TRUE
@@ -4571,7 +4422,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 49445,tachyoryctes splendens,tachyoryctes,spalacidae,rodentia,mammalia,TRUE
 1234273,tachysurus fulvidraco,tachysurus,bagridae,siluriformes,actinopteri,TRUE
 175792,tachysurus vachellii,tachysurus,bagridae,siluriformes,actinopteri,TRUE
-302412,tadarida aegyptiaca,tadarida,molossidae,chiroptera,mammalia,TRUE
 9438,tadarida brasiliensis,tadarida,molossidae,chiroptera,mammalia,TRUE
 242197,tadarida brasiliensis,tadarida,molossidae,chiroptera,mammalia,TRUE
 187006,tadarida insignis,tadarida,molossidae,chiroptera,mammalia,TRUE
@@ -4579,7 +4429,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 45639,tadorna ferruginea,tadorna,anatidae,anseriformes,aves,TRUE
 75865,tadorna tadorna,tadorna,anatidae,anseriformes,aves,TRUE
 45638,tadorna tadornoides,tadorna,anatidae,anseriformes,aves,TRUE
-107024,tadorna variegata,tadorna,anatidae,anseriformes,aves,TRUE
 644770,taeniopygia castanotis,taeniopygia,estrildidae,passeriformes,aves,TRUE
 59729,taeniopygia guttata,taeniopygia,estrildidae,passeriformes,aves,TRUE
 3049457,taeromys dominator,taeromys,muridae,rodentia,mammalia,TRUE
@@ -4588,10 +4437,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 433684,takifugu flavidus,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
 309541,takifugu obscurus,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
 98921,takifugu pardalis,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
-176188,takifugu poecilonotus,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
 31033,takifugu rubripes,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
 119041,takifugu xanthopterus,takifugu,tetraodontidae,tetraodontiformes,actinopteri,TRUE
-118848,takydromus sexlineatus,takydromus,lacertidae,squamata,lepidosauria,TRUE
 118850,takydromus tachydromoides,takydromus,lacertidae,squamata,lepidosauria,TRUE
 235402,takydromus wolteri,takydromus,lacertidae,squamata,lepidosauria,TRUE
 114409,talpa altaica,talpa,talpidae,eulipotyphla,mammalia,TRUE
@@ -4612,7 +4459,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 38762,tanichthys albonubes,tanichthys,tanichthyidae,cypriniformes,actinopteri,TRUE
 309852,tanygnathus lucionensis,tanygnathus,psittacidae,psittaciformes,aves,TRUE
 1002354,taphozous hildegardeae,taphozous,emballonuridae,chiroptera,mammalia,TRUE
-463807,taphozous longimanus,taphozous,emballonuridae,chiroptera,mammalia,TRUE
 302395,taphozous mauritianus,taphozous,emballonuridae,chiroptera,mammalia,TRUE
 187003,taphozous melanopogon,taphozous,emballonuridae,chiroptera,mammalia,TRUE
 1381355,taphozous perforatus,taphozous,emballonuridae,chiroptera,mammalia,TRUE
@@ -4620,7 +4466,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 2029311,taphozous theobaldi,taphozous,emballonuridae,chiroptera,mammalia,TRUE
 9801,tapirus terrestris,tapirus,tapiridae,perissodactyla,mammalia,TRUE
 8569,tarentola mauritanica,tarentola,phyllodactylidae,squamata,lepidosauria,TRUE
-36314,taricha torosa,taricha,salamandridae,caudata,amphibia,TRUE
 1364862,tarsiger cyanurus,tarsiger,turdidae,passeriformes,aves,TRUE
 186471,tatera indica,tatera,muridae,rodentia,mammalia,TRUE
 30554,taxidea taxus,taxidea,mustelidae,carnivora,mammalia,TRUE
@@ -4633,25 +4478,23 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 102174,teratoscincus roborowskii,teratoscincus,sphaerodactylidae,squamata,lepidosauria,TRUE
 158814,terrapene carolina,terrapene,emydidae,testudines,,TRUE
 391345,terrapene carolina,terrapene,emydidae,testudines,,TRUE
+85611,terrapene ornata,terrapene,emydidae,testudines,,TRUE
 2587831,terrapene triunguis,terrapene,emydidae,testudines,,TRUE
 86975,testudo graeca,testudo,testudinidae,testudines,,TRUE
 86976,testudo hermanni,testudo,testudinidae,testudines,,TRUE
 101699,testudo horsfieldii,testudo,testudinidae,testudines,,TRUE
 101700,testudo kleinmanni,testudo,testudinidae,testudines,,TRUE
-101701,testudo marginata,testudo,testudinidae,testudines,,TRUE
 73823,tetracerus quadricornis,tetracerus,bovidae,artiodactyla,mammalia,TRUE
 100830,tetrao urogallus,tetrao,phasianidae,galliformes,aves,TRUE
 311393,tetrao urogallus,tetrao,phasianidae,galliformes,aves,TRUE
 1155787,tetrastes bonasia,tetrastes,phasianidae,galliformes,aves,TRUE
 7787,tetronarce californica,tetronarce,torpedinidae,torpediniformes,chondrichthyes,TRUE
 54017,thalassarche chlororhynchos,thalassarche,diomedeidae,procellariiformes,aves,TRUE
-54026,thalassarche melanophris,thalassarche,diomedeidae,procellariiformes,aves,TRUE
 297817,thalasseus elegans,thalasseus,laridae,charadriiformes,aves,TRUE
 555356,thalasseus maximus,thalasseus,laridae,charadriiformes,aves,TRUE
 126723,thalasseus sandvicensis,thalasseus,laridae,charadriiformes,aves,TRUE
 240832,thaleichthys pacificus,thaleichthys,osmeridae,osmeriformes,actinopteri,TRUE
 371826,thallomys nigricauda,thallomys,muridae,rodentia,mammalia,TRUE
-332673,thallomys paedulcus,thallomys,muridae,rodentia,mammalia,TRUE
 325629,thamnaconus modestus,thamnaconus,monacanthidae,tetraodontiformes,actinopteri,TRUE
 435163,thamnaconus septentrionalis,thamnaconus,monacanthidae,tetraodontiformes,actinopteri,TRUE
 2116108,thamnaconus striatus,thamnaconus,monacanthidae,tetraodontiformes,actinopteri,TRUE
@@ -4664,13 +4507,9 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9565,theropithecus gelada,theropithecus,cercopithecidae,primates,mammalia,TRUE
 425654,thinornis novaeseelandiae,thinornis,charadriidae,charadriiformes,aves,TRUE
 35660,thomomys talpoides,thomomys,geomyidae,rodentia,mammalia,TRUE
-58087,thoopterus nigrescens,thoopterus,pteropodidae,chiroptera,mammalia,TRUE
-58209,thraupis episcopus,thraupis,thraupidae,passeriformes,aves,TRUE
 100858,threskiornis aethiopicus,threskiornis,threskiornithidae,pelecaniformes,aves,TRUE
 2671080,threskiornis molucca,threskiornis,threskiornithidae,pelecaniformes,aves,TRUE
 241536,thryomanes bewickii,thryomanes,certhiidae,passeriformes,aves,TRUE
-423060,thryonomys gregorianus,thryonomys,thryonomyidae,rodentia,mammalia,TRUE
-1695229,thryonomys sp.,thryonomys,thryonomyidae,rodentia,mammalia,TRUE
 10169,thryonomys swinderianus,thryonomys,thryonomyidae,rodentia,mammalia,TRUE
 74200,thryothorus ludovicianus,thryothorus,certhiidae,passeriformes,aves,TRUE
 1150470,thryssa dussumieri,thryssa,engraulidae,clupeiformes,actinopteri,TRUE
@@ -4681,6 +4520,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 36185,thymallus thymallus,thymallus,salmonidae,salmoniformes,actinopteri,TRUE
 30879,tilapia sp.,tilapia,cichlidae,cichliformes,actinopteri,TRUE
 8527,tiliqua rugosa,tiliqua,scincidae,squamata,lepidosauria,TRUE
+71010,tiliqua scincoides,tiliqua,scincidae,squamata,lepidosauria,TRUE
 27717,tinca tinca,tinca,tincidae,cypriniformes,actinopteri,TRUE
 1006542,todiramphus cinnamominus,todiramphus,alcedinidae,coraciiformes,aves,TRUE
 342380,todiramphus sanctus,todiramphus,alcedinidae,coraciiformes,aves,TRUE
@@ -4689,6 +4529,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9426,tonatia bidens,tonatia,phyllostomidae,chiroptera,mammalia,TRUE
 58210,toxostoma rufum,toxostoma,mimidae,passeriformes,aves,TRUE
 31138,trachemys scripta,trachemys,emydidae,testudines,,TRUE
+365635,trachemys scripta,trachemys,emydidae,testudines,,TRUE
 34903,trachemys scripta,trachemys,emydidae,testudines,,TRUE
 435999,trachinotus blochii,trachinotus,carangidae,carangiformes,actinopteri,TRUE
 173342,trachinotus carolinus,trachinotus,carangidae,carangiformes,actinopteri,TRUE
@@ -4698,10 +4539,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 189388,trachurus mediterraneus,trachurus,carangidae,carangiformes,actinopteri,TRUE
 271942,trachurus novaezelandiae,trachurus,carangidae,carangiformes,actinopteri,TRUE
 36212,trachurus trachurus,trachurus,carangidae,carangiformes,actinopteri,TRUE
-318376,trachycephalus resinifictrix,trachycephalus,hylidae,anura,amphibia,TRUE
 122765,trachypithecus cristatus,trachypithecus,cercopithecidae,primates,mammalia,TRUE
 54180,trachypithecus francoisi,trachypithecus,cercopithecidae,primates,mammalia,TRUE
-66063,trachypithecus johnii,trachypithecus,cercopithecidae,primates,mammalia,TRUE
 54181,trachypithecus obscurus,trachypithecus,cercopithecidae,primates,mammalia,TRUE
 61618,trachypithecus phayrei,trachypithecus,cercopithecidae,primates,mammalia,TRUE
 164651,trachypithecus pileatus,trachypithecus,cercopithecidae,primates,mammalia,TRUE
@@ -4763,6 +4602,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 498271,trimma okinawae,trimma,gobiidae,gobiiformes,actinopteri,TRUE
 1402064,trimma striatum,trimma,gobiidae,gobiiformes,actinopteri,TRUE
 195658,trinectes maculatus,trinectes,achiridae,pleuronectiformes,actinopteri,TRUE
+272050,tringa erythropus,tringa,scolopacidae,charadriiformes,aves,TRUE
 161739,tringa flavipes,tringa,scolopacidae,charadriiformes,aves,TRUE
 171269,tringa glareola,tringa,scolopacidae,charadriiformes,aves,TRUE
 171270,tringa nebularia,tringa,scolopacidae,charadriiformes,aves,TRUE
@@ -4771,7 +4611,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 240204,tringa tobata,tringa,scolopacidae,charadriiformes,aves,TRUE
 171271,tringa totanus,tringa,scolopacidae,charadriiformes,aves,TRUE
 42830,trinomys iheringi,trinomys,echimyidae,rodentia,mammalia,TRUE
-116114,trioceros jacksonii,trioceros,chamaeleonidae,squamata,lepidosauria,TRUE
 179915,trioceros melleri,trioceros,chamaeleonidae,squamata,lepidosauria,TRUE
 595395,triplophysa bleekeri,triplophysa,nemacheilidae,cypriniformes,actinopteri,TRUE
 422203,triplophysa siluroides,triplophysa,nemacheilidae,cypriniformes,actinopteri,TRUE
@@ -4800,8 +4639,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 338146,turdus pelios,turdus,turdidae,passeriformes,aves,TRUE
 127946,turdus philomelos,turdus,turdidae,passeriformes,aves,TRUE
 357736,turdus pilaris,turdus,turdidae,passeriformes,aves,TRUE
-311356,turdus rufiventris,turdus,turdidae,passeriformes,aves,TRUE
-411531,turdus serranus,turdus,turdidae,passeriformes,aves,TRUE
 79784,tursiops aduncus,tursiops,delphinidae,artiodactyla,mammalia,TRUE
 9739,tursiops truncatus,tursiops,delphinidae,artiodactyla,mammalia,TRUE
 218839,tylomys nudicaudus,tylomys,cricetidae,rodentia,mammalia,TRUE
@@ -4818,7 +4655,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 121427,tyrannus melancholicus,tyrannus,tyrannidae,passeriformes,aves,TRUE
 56313,tyto alba,tyto,tytonidae,strigiformes,aves,TRUE
 94955,umbrina cirrosa,umbrina,sciaenidae,,actinopteri,TRUE
-334902,upeneichthys vlamingii,upeneichthys,mullidae,syngnathiformes,actinopteri,TRUE
 435235,upeneus japonicus,upeneus,mullidae,syngnathiformes,actinopteri,TRUE
 115431,upeneus moluccensis,upeneus,mullidae,syngnathiformes,actinopteri,TRUE
 435238,upeneus sulphureus,upeneus,mullidae,syngnathiformes,actinopteri,TRUE
@@ -4842,10 +4678,8 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 106106,urotrichus talpoides,urotrichus,talpidae,eulipotyphla,mammalia,TRUE
 9643,ursus americanus,ursus,ursidae,carnivora,mammalia,TRUE
 62692,ursus americanus,ursus,ursidae,carnivora,mammalia,TRUE
-116960,ursus arctos,ursus,ursidae,carnivora,mammalia,TRUE
-563924,ursus arctos,ursus,ursidae,carnivora,mammalia,TRUE
-627478,ursus arctos,ursus,ursidae,carnivora,mammalia,TRUE
 9644,ursus arctos,ursus,ursidae,carnivora,mammalia,TRUE
+116960,ursus arctos,ursus,ursidae,carnivora,mammalia,TRUE
 29073,ursus maritimus,ursus,ursidae,carnivora,mammalia,TRUE
 9641,ursus sp.,ursus,ursidae,carnivora,mammalia,TRUE
 9642,ursus thibetanus,ursus,ursidae,carnivora,mammalia,TRUE
@@ -4859,8 +4693,6 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 50404,vanellus chilensis,vanellus,charadriidae,charadriiformes,aves,TRUE
 8909,vanellus spinosus,vanellus,charadriidae,charadriiformes,aves,TRUE
 100859,vanellus vanellus,vanellus,charadriidae,charadriiformes,aves,TRUE
-8558,varanus albigularis,varanus,varanidae,squamata,lepidosauria,TRUE
-61221,varanus komodoensis,varanus,varanidae,squamata,lepidosauria,TRUE
 62050,varanus prasinus,varanus,varanidae,squamata,lepidosauria,TRUE
 554167,varecia rubra,varecia,lemuridae,primates,mammalia,TRUE
 9455,varecia variegata,varecia,lemuridae,primates,mammalia,TRUE
@@ -4875,14 +4707,13 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 9843,vicugna vicugna,vicugna,camelidae,artiodactyla,mammalia,TRUE
 318738,vieja melanura,vieja,cichlidae,cichliformes,actinopteri,TRUE
 2267889,vini kuhlii,vini,psittaculidae,psittaciformes,aves,TRUE
-194601,vipera aspis,vipera,viperidae,squamata,lepidosauria,TRUE
+8706,vipera aspis,vipera,viperidae,squamata,lepidosauria,TRUE
 235552,vipera transcaucasiana,vipera,viperidae,squamata,lepidosauria,TRUE
 81621,vireo flavifrons,vireo,vireonidae,passeriformes,aves,TRUE
 34945,vireo gilvus,vireo,vireonidae,passeriformes,aves,TRUE
 34948,vireo griseus,vireo,vireonidae,passeriformes,aves,TRUE
 28733,vireo olivaceus,vireo,vireonidae,passeriformes,aves,TRUE
 94196,viverricula indica,viverricula,viverridae,carnivora,mammalia,TRUE
-164384,volemys millicens,volemys,cricetidae,rodentia,mammalia,TRUE
 29139,vombatus ursinus,vombatus,vombatidae,diprotodontia,mammalia,TRUE
 9626,vulpes chama,vulpes,canidae,carnivora,mammalia,TRUE
 9629,vulpes corsac,vulpes,canidae,carnivora,mammalia,TRUE
