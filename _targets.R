@@ -95,7 +95,9 @@ clover_targets <- tar_plan(
 # download genbank ----
 
 genbank_download_targets <- tar_plan(
-  tar_target(genbank_path, get_genbank()),
+  tar_target(genbank_path, get_genbank(), 
+             format = "file",
+             cue = tar_cue(mode = "always")),
   tar_target(seq, read_genbank(genbank_path)),
   tar_target(write_seq, vroom::vroom_write(seq, here::here("./Source/sequences.csv")))
 )
@@ -152,11 +154,15 @@ predict_targets <- tar_plan(
   predict_all_formatted = vroom(here::here("./Intermediate/Formatted/PREDICTAllFormatted.csv"),
                                 col_type = cols(PMID = col_double(),
                                                 PublicationYear = col_double()
-                                )
-  ),
+                                ) 
+  ) %>% 
+    # drop sp as it returns false specificity,
+    dplyr::mutate(HostOriginal= stringr::str_replace(HostOriginal," sp\\.","")) %>% 
+    # some work as has already been done to reconcile names with NCBI
+    dplyr::mutate(HostOriginal = dplyr::coalesce(Host, HostOriginal)), 
   ## align hosts to NCBI taxonomy
   tar_target(pre_host_vec, predict_all_formatted |>
-               dplyr::pull(Host) %>%
+               dplyr::pull(HostOriginal) %>% 
                unique() %>%
                sort()),
   tar_target(pre_host_table, jhdict(spnames = pre_host_vec)),
@@ -197,8 +203,12 @@ high_level_check_targets <- tar_plan(
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
   tar_target(virion_has_taxa_id, virion_unique_path %>%  
-             dplyr::filter(!is.na(HostTaxID),
-                    !is.na(VirusTaxID))
+               dplyr::filter(
+             # dplyr::filter(!is.na(HostTaxID),
+             #        !is.na(VirusTaxID))
+               HostTaxID != "",
+               VirusTaxID != ""
+               )
              ),
   tar_target(host_tax,virion_has_taxa_id %>%
                dplyr::select(HostTaxID, Host, HostGenus, HostFamily, HostOrder, HostClass, HostNCBIResolved) %>% 
@@ -207,9 +217,11 @@ dissovle_virion_targets <- tar_plan(
                ),
   tar_target(virus_tax, 
              virion_has_taxa_id %>% 
-               dplyr::select(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
+               dplyr::group_by(VirusTaxID, Virus, VirusGenus, VirusFamily, VirusOrder, VirusClass, VirusNCBIResolved, ICTVRatified) %>% 
+               dplyr::summarise(Database = paste(unique(Database),collapse = "; ")) %>% 
+               dplyr::ungroup() %>% 
                dplyr::arrange(Virus) %>%
-               unique() ## ??? why not distinct
+               unique() 
              ),
   tar_target(host_tax_path, write_csv(host_tax, "./Virion/TaxonomyHost.csv")),
   tar_target(virus_tax_path, write_csv(virus_tax, "./Virion/TaxonomyVirus.csv")),
