@@ -7,14 +7,14 @@
 #' @export
 #'
 #' @examples
-get_genbank <- function(url = "https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/AllNuclMetadata.csv.gz", location = here::here("./Source/")){
+get_genbank <- function(gb_url = "https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/AllNuclMetadata.csv.gz", location = here::here("Source/AllNuclMetadata.csv.gz")){
   
   message("this takes a minute or two")
   # download with wget
-  system(paste0("wget ", url, " -qP ", location))
+  system(paste0("wget ", gb_url, " -qO ", location))
 
-  if(fs::file_exists("./Source/AllNuclMetadata.csv.gz")){
-    return("./Source/AllNuclMetadata.csv.gz")
+  if(fs::file_exists(location)){
+    return(location)
   }
 
   stop("Genbank file didn't download :(")

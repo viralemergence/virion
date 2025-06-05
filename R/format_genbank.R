@@ -38,12 +38,15 @@ gb[, c(paste0("Release", c("Year", "Month", "Day")))] <-
 #                   into = paste0("Release", c("Year", "Month", "Day"))) 
 print("separated")
 
+
+database_version <- sprintf("https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/ accessed on %s", lubridate::today(tzone = "UTC"))
+
 gb %<>% 
   dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 
                    as.numeric) %>% 
   dplyr::mutate(HostFlagID = stringr::str_detect(HostOriginal, "cf."),
                 Database = "GenBank",
-                DatabaseVersion = "Aug2021FlatFile",
+                DatabaseVersion = database_version,
                 # Choice to call Nucleotide all sequence and not isolation is 
                 # potentially problematic - revisit 
                 DetectionMethod = "PCR/Sequencing", 
