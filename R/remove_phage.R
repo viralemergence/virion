@@ -4,18 +4,26 @@
 #'
 #' @param virion_data Data frame. Virion data to be processed
 #' @param phage_taxa Data frame. Phage taxa from vmr data.
+#' @param taxa_ranks Character. Vector of taxa ranks. See ICTV taxonomy for ranks.
 #'
 #' @returns
 #' @export
 #'
 #' @examples
-remove_phage <- function(virion_data = virion_unprocessed,phage_taxa){
+remove_phage <- function(virion_data = virion_unprocessed,
+                         phage_taxa, 
+                         taxa_ranks = c("order","family","genus","species")){
+  
+  if(is.null(taxa_ranks)){
+    message("No taxa ranks supplied, returning virion_data")
+    return(virion_data)
+  }
   
   # set taxonomic names to lower for joining
   phage_taxa$taxonomic_name <- tolower(phage_taxa$taxonomic_name)
   
   
-  for(taxa_rank in c("class","order","family","genus","species")){
+  for(taxa_rank in taxa_ranks){
     virion_data <- anti_join_taxa_rank(virion_data = virion_data, 
                                                   taxa_to_filter = phage_taxa,
                         taxa_rank = taxa_rank)
@@ -43,6 +51,7 @@ anti_join_taxa_rank <- function(virion_data,taxa_to_filter, taxa_rank){
     virion_col <- "Virus"
   }
   
+  ### equivalent to by = c("taxonmic_name" = virion_col)
   virion_rename <- purrr::set_names(x = c("taxonomic_name") ,nm = virion_col )
   
   taxa_filtered <- taxa_to_filter |>
