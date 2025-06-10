@@ -779,6 +779,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 182253,alouatta pigra,alouatta,atelidae,primates,mammalia,TRUE
 121123,alouatta sara,alouatta,atelidae,primates,mammalia,TRUE
 9503,alouatta seniculus,alouatta,atelidae,primates,mammalia,TRUE
+9501,alouatta sp.,alouatta,atelidae,primates,mammalia,TRUE
 400184,alticola argentatus,alticola,cricetidae,rodentia,mammalia,TRUE
 34793,altolamprologus compressiceps,altolamprologus,cichlidae,cichliformes,actinopteri,TRUE
 8443,alytes obstetricans,alytes,alytidae,anura,amphibia,TRUE

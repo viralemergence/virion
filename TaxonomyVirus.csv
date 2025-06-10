@@ -8097,6 +8097,8 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2654407,traemmersee orthohantavirus,orthohantavirus,hantaviridae,bunyavirales,ellioviricetes,TRUE,FALSE,GenBank
 3004186,transcaucasian sand viper pestivirus,pestivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE,GenBank
 2811193,tree shrew astrovirus,mamastrovirus,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE,GenBank
+3392205,tree shrew hepacivirus 1,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE,GenBank
+3392206,tree shrew hepacivirus 2,hepacivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE,GenBank
 242710,tree shrew mastadenovirus a,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,HP3; Shaw; EID2
 2562515,tree shrew papillomavirus 1,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE,GenBank
 2562516,tree shrew papillomavirus 2,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE,GenBank
