@@ -30,16 +30,18 @@ initial_targets <- tar_plan(
   tar_target(current_msl_path, download_current_msl(url = "https://ictv.global/msl/current"),
              format = "file",
              cue = tar_cue(mode = "always")),
+  tar_target(ictv_msl_version, get_ictv_version(current_msl_path = current_msl_path)),
   tar_target(ictv, read_current_msl(current_msl_path)),
   ## get Virus Metadata Resource
   tar_target(current_vmr_path, download_current_msl(url = "https://ictv.global/vmr/current"),
              format = "file",
              cue = tar_cue(mode = "always")),
+  tar_target(ictv_vmr_version, get_ictv_version(ictv_url = "https://ictv.global/sites/default/files/VMR/", current_vmr_path)),
   tar_target(vmr, read_current_vmr(current_vmr_path)),
   tar_target(phage_taxa, find_uniform_taxa(data = vmr, host = c("bacteria","archaea"))),
   tar_target(template, generate_template()),
   tar_target(temp_csv, readr::write_csv(template, here::here("Intermediate/Template.csv"))),
-  tar_target(temp_csv_virion, readr::write_csv(template, here::here("Virion/Template.csv"))),
+  # tar_target(temp_csv_virion, readr::write_csv(template, here::here("outputs/template.csv"))),
   tar_target(virus.test, c(
     "Adeno-associated virus - 3",
     "Adeno-associated virus 3B",
@@ -98,8 +100,7 @@ genbank_download_targets <- tar_plan(
   tar_target(genbank_path, get_genbank(), 
              format = "file",
              cue = tar_cue(mode = "always")),
-  tar_target(seq, read_genbank(genbank_path)),
-  tar_target(write_seq, vroom::vroom_write(seq, here::here("./Source/sequences.csv")))
+  tar_target(seq, read_genbank(genbank_path))
 )
 
 # Digest genbank ----
@@ -136,7 +137,9 @@ genbank_digest_targets <- tar_plan(
 # Format Genbank -----
 
 format_genbank_targets <- tar_plan(
-  tar_target(gb_formatted, format_genbank(gb_virus_clean, template)),
+  tar_target(gb_database_version, sprintf("https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/ accessed on %s",
+                                       lubridate::today(tzone = "UTC"))),
+  tar_target(gb_formatted, format_genbank(gb_virus_clean, template, gb_database_version)),
   tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
 )
 
@@ -198,7 +201,7 @@ high_level_check_targets <- tar_plan(
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
   tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
-  tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "Virion/Virion.csv.gz"))
+  tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz"))
 )
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
@@ -223,8 +226,8 @@ dissovle_virion_targets <- tar_plan(
                dplyr::arrange(Virus) %>%
                unique() 
              ),
-  tar_target(host_tax_path, write_csv(host_tax, "./Virion/TaxonomyHost.csv")),
-  tar_target(virus_tax_path, write_csv(virus_tax, "./Virion/TaxonomyVirus.csv")),
+  tar_target(host_tax_path, write_csv(host_tax, "./outputs/taxonomy_host.csv")),
+  tar_target(virus_tax_path, write_csv(virus_tax, "./outputs/taxonomy_virus.csv")),
   tar_target(virion_reduced_tax, 
              virion_has_taxa_id %>% 
                select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass,
@@ -243,7 +246,8 @@ dissovle_virion_targets <- tar_plan(
   tar_target(detection,
              virion_reduced_tax %>% 
                select(AssocID,
-                      DetectionMethod, DetectionOriginal, 
+                      DetectionMethod,
+                      DetectionOriginal, 
                       HostFlagID,
                       NCBIAccession)
              ),
@@ -251,15 +255,19 @@ dissovle_virion_targets <- tar_plan(
              virion_reduced_tax %>% 
                select(AssocID, 
                       PublicationYear, 
-                      ReleaseYear, ReleaseMonth, ReleaseDay,
-                      CollectionYear, CollectionMonth, CollectionDay)
+                      ReleaseYear, 
+                      ReleaseMonth, 
+                      ReleaseDay,
+                      CollectionYear, 
+                      CollectionMonth, 
+                      CollectionDay)
              ),
   ### write csvs
-  provenance_path =  vroom_write(provenance, "./Virion/Provenance.csv.gz"),
-  detection_path = vroom_write(detection, "./Virion/Detection.csv.gz"),
-  temporal_path = vroom_write(temporal, "./Virion/Temporal.csv.gz"),
+  provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz"),
+  detection_path = vroom_write(detection, "./outputs/detection.csv.gz"),
+  temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz"),
   tar_target(virion_edge_list, get_virion_edge_list(virion_reduced_tax)),
-  tar_target(virion_edge_list_path,write_csv(virion_edge_list, "./Virion/Edgelist.csv") )
+  tar_target(virion_edge_list_path,write_csv(virion_edge_list, "./outputs/edgelist.csv") )
 )
 
 # deposit data ----
@@ -268,6 +276,97 @@ dissovle_virion_targets <- tar_plan(
 
 deposit_targets <- tar_plan(
   # create metadata
+  ## link to original paper
+  ## link to github repo
+  tar_target(latest_repo_doi, get_zenodo_release_doi()),
+  ## link to CLOVER, PREDICT, GENBANK
+  tar_target(isPartOf,
+              # code
+              list(
+                list (
+                  identifier = latest_repo_doi, # assumes we are making releases after PRs
+                  relation = "isDerivedFrom",
+                  resource_type = "software"
+                ),
+                # paper
+                list (
+                  identifier = "10.1128/mbio.02985-21",
+                  relation = "isDescribedBy",
+                  resource_type = "publication"
+                ),
+                # genbank
+                list(
+                  identifier = gb_database_version,
+                  relation = "requires",
+                  resource_type = "dataset"
+                ),
+                # clover
+                list(
+                  identifier = "10.5281/zenodo.5167655",
+                  relation = "requires",
+                  resource_type = "dataset"
+                ),
+                # predict
+                list(
+                  identifier = "https://catalog.data.gov/dataset/predict-animals-sampled-c593d",
+                  relation = "requires",
+                  resource_type = "dataset"
+                ),
+                # ictv msl
+                list(
+                  identifier = ictv_msl_version,
+                  relation = "requires",
+                  resource_type = "dataset"
+                ),
+                # ictv vmr
+                list(
+                  identifier = ictv_vmr_version,
+                  relation = "requires",
+                  resource_type = "dataset"
+                )
+              )
+            ),
+  ## get creators
+  tar_target(deposit_creators, get_creators(gh_url = "https://api.github.com/repos/viralemergence/virion/contributors")),
+  
+  # time created
+  tar_target(time_created, dcmi_date_time()),
+  
+  
+  # description 
+  tar_target(zenodo_description,
+             "This deposit contains a dynamically maintained database of vertebrate-virus associations. 
+             The VIRION database has been assembled through both reconciliation 
+             of static data sets and integration of dynamically updated databases.
+             These data sources are all harmonized against one taxonomic backbone,
+             including metadata on host and virus taxonomic validity and higher 
+             classification; additional metadata on sampling methodology and 
+             evidence strength are also available in a harmonized format.
+             
+             Data Products:
+             1) virion.csv.gz - Virion dataset. All other data products are derived
+             from Virion. 
+             2) temporal.csv.gz - Publication and collection data from Virion.
+             3) provenance.csv.gz - Sources used to compile virion.
+             4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.
+             5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.
+             6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.
+             7) taxonomy_virus.csv"),
+  
+  # make metadata list 
+  tar_target(metadata,
+               list(
+                 title = "The Global Virome in One Network (VIRION): Data Package",
+                 description = zenodo_description,
+                 creator = creators,
+                 created = time_created,
+                 isPartOf = isPartOf,
+                 accessRights = "open",
+                 license = "cc0-1.0",
+                 language = "eng"
+               )
+             )
+  
   
   # update resources
   # deposit data
