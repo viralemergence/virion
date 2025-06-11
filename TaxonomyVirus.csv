@@ -168,11 +168,11 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3239073,african green monkey-like simian foamy virus,spumavirus,retroviridae,ortervirales,revtraviricetes,TRUE,FALSE,GenBank
 2591409,african pygmy hedgehog adenovirus 1,mastadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 270904,agamid adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
+3049984,agile wallaby associated picobirnavirus 1,,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE,GenBank
 3081623,agile wallaby chaphamaparvovirus 1,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE,GenBank
 3081624,agile wallaby chaphamaparvovirus 2,chaphamaparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE,GenBank
 3081625,agile wallaby polyomavirus 1,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE,GenBank
 3081626,agile wallaby polyomavirus 2,,polyomaviridae,sepolyvirales,papovaviricetes,TRUE,FALSE,GenBank
-3081627,agile wallaby-associated picobirnavirus 1,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE,GenBank
 3081628,agile wallaby-associated picobirnavirus 2,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE,GenBank
 3081629,agile wallaby-associated picobirnavirus 3,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE,GenBank
 3081630,agile wallaby-associated picobirnavirus 4,picobirnavirus,picobirnaviridae,durnavirales,duplopiviricetes,TRUE,FALSE,GenBank
@@ -6258,7 +6258,6 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 1809460,phocoena phocoena herpesvirus type 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 1809459,phocoena phocoena herpesvirus type 3,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 1163706,phocoena phocoena papillomavirus 5,,papillomaviridae,zurhausenvirales,papovaviricetes,TRUE,FALSE,GenBank
-1720233,phocoenid herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 1643444,phoenicopterid herpesvirus 1,iltovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 2794528,phoenicopteridae parvo-like hybrid virus,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE,GenBank
 2794529,phoenicopteridae parvoviridae sp.,,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE,GenBank
@@ -8288,7 +8287,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3050294,varicellovirus humanalpha3,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 3050322,varicellovirus monodontidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 3050340,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
-47418,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,Shaw; HP3; GMPD2; EID2
+47418,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,Shaw; HP3; GMPD2; EID2; GenBank
 10345,varicellovirus suidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,HP3; Shaw; EID2; GMPD2
 3050355,varicellovirus suidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 2707278,varley virus,,,,,TRUE,FALSE,GenBank
