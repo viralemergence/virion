@@ -1273,6 +1273,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 35551,calyptorhynchus banksii,calyptorhynchus,cacatuidae,psittaciformes,aves,TRUE
 986098,calyptorhynchus lathami,calyptorhynchus,cacatuidae,psittaciformes,aves,TRUE
 48878,camarhynchus pallidus,camarhynchus,thraupidae,passeriformes,aves,TRUE
+87175,camarhynchus parvulus,camarhynchus,thraupidae,passeriformes,aves,TRUE
 9837,camelus bactrianus,camelus,camelidae,artiodactyla,mammalia,TRUE
 9838,camelus dromedarius,camelus,camelidae,artiodactyla,mammalia,TRUE
 68723,canis adustus,canis,canidae,carnivora,mammalia,TRUE
@@ -1396,6 +1397,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 263448,cercopithecus wolfi,cercopithecus,cercopithecidae,primates,mammalia,TRUE
 9620,cerdocyon thous,cerdocyon,canidae,carnivora,mammalia,TRUE
 8858,cereopsis novaehollandiae,cereopsis,anatidae,anseriformes,aves,TRUE
+48880,certhidea olivacea,certhidea,thraupidae,passeriformes,aves,TRUE
 163843,cervidae sp.,,cervidae,artiodactyla,mammalia,TRUE
 1088058,cervus albirostris,cervus,cervidae,artiodactyla,mammalia,TRUE
 1574408,cervus canadensis,cervus,cervidae,artiodactyla,mammalia,TRUE
@@ -2118,6 +2120,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 471127,geopelia placida,geopelia,columbidae,columbiformes,aves,TRUE
 81339,geophagus brasiliensis,geophagus,cichlidae,cichliformes,actinopteri,TRUE
 48883,geospiza fortis,geospiza,thraupidae,passeriformes,aves,TRUE
+48884,geospiza fuliginosa,geospiza,thraupidae,passeriformes,aves,TRUE
 142474,geothlypis tolmiei,geothlypis,parulidae,passeriformes,aves,TRUE
 135433,geothlypis trichas,geothlypis,parulidae,passeriformes,aves,TRUE
 71168,geotria australis,geotria,geotriidae,petromyzontiformes,hyperoartia,TRUE
@@ -3001,6 +3004,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 52781,mycteria leucocephala,mycteria,ciconiidae,ciconiiformes,aves,TRUE
 989309,mycteroperca marginata,mycteroperca,serranidae,perciformes,actinopteri,TRUE
 238987,myiarchus crinitus,myiarchus,tyrannidae,passeriformes,aves,TRUE
+1149680,myiarchus magnirostris,myiarchus,tyrannidae,passeriformes,aves,TRUE
 196038,myiarchus tyrannulus,myiarchus,tyrannidae,passeriformes,aves,TRUE
 190023,myiobius barbatus,myiobius,tyrannidae,passeriformes,aves,TRUE
 176066,myiopsitta monachus,myiopsitta,psittacidae,psittaciformes,aves,TRUE
@@ -4238,6 +4242,7 @@ HostTaxID,Host,HostGenus,HostFamily,HostOrder,HostClass,HostNCBIResolved
 92121,setophaga magnolia,setophaga,parulidae,passeriformes,aves,TRUE
 92122,setophaga pensylvanica,setophaga,parulidae,passeriformes,aves,TRUE
 123631,setophaga petechia,setophaga,parulidae,passeriformes,aves,TRUE
+1134348,setophaga petechia,setophaga,parulidae,passeriformes,aves,TRUE
 182949,setophaga ruticilla,setophaga,parulidae,passeriformes,aves,TRUE
 1212470,setophaga striata,setophaga,parulidae,passeriformes,aves,TRUE
 56278,sibirionetta formosa,sibirionetta,anatidae,anseriformes,aves,TRUE

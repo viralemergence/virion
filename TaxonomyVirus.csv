@@ -2364,6 +2364,13 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2844055,daletvirus boae,daletvirus,kolmioviridae,,,TRUE,TRUE,GenBank
 2844056,dalvirus anatis,dalvirus,kolmioviridae,,,TRUE,TRUE,GenBank
 3385012,dandong mammarenavirus,mammarenavirus,arenaviridae,bunyavirales,ellioviricetes,TRUE,FALSE,GenBank
+3435564,darwin's finch alphaherpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
+3435565,darwin's finch alphaherpesvirus 2,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
+3435566,darwin's finch alphaherpesvirus 3,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
+3435570,darwin's finch aviadenovirus 1,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
+3435572,darwin's finch aviadenovirus 2,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
+3435569,darwin's finch barthadenovirus 1,barthadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
+3435571,darwin's finch barthadenovirus 2,barthadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 3400615,dasymys incomtus picorna-like virus,,,picornavirales,pisoniviricetes,TRUE,FALSE,GenBank
 2220004,dasyurid herpesvirus 1,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 2529495,dasyurid herpesvirus 3,,,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
@@ -2994,6 +3001,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3163281,gainesville rodent jeilong virus 1,jeilongvirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE,GenBank
 2789418,gakugsa tick virus,orthonairovirus,nairoviridae,bunyavirales,ellioviricetes,TRUE,FALSE,GenBank
 2796359,galago hepevirus,,hepeviridae,hepelivirales,alsuviricetes,TRUE,FALSE,GenBank
+3435567,galapagos flycatcher aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 3064102,galaxias nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE,GenBank
 670532,galeus sauteri nervous necrosis virus,betanodavirus,nodaviridae,nodamuvirales,magsaviricetes,TRUE,FALSE,GenBank
 3068935,galictis cuja betaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
@@ -4032,6 +4040,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2490445,lepilemur pegivirus,pegivirus,flaviviridae,amarillovirales,flasuviricetes,TRUE,FALSE,GenBank
 3423310,lepomis macrochirus rhabdovirus,,rhabdoviridae,mononegavirales,monjiviricetes,TRUE,FALSE,GenBank
 2729004,leporid gammaherpesvirus 5,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
+3435784,leporid gammaherpesvirus 6,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 10273,leporipoxvirus myxoma,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,TRUE,Shaw; GenBank; EID2; HP3
 3430367,leporipoxvirus myxoma,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,TRUE,GenBank
 10271,leporipoxvirus shope,leporipoxvirus,poxviridae,chitovirales,pokkesviricetes,TRUE,TRUE,HP3; Shaw; EID2
@@ -6130,6 +6139,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2576227,passerine astrovirus 2,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE,GenBank
 2576228,passerine astrovirus 3,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE,GenBank
 2576229,passerine astrovirus 4,,astroviridae,stellavirales,stelpaviricetes,TRUE,FALSE,GenBank
+3435573,passerine barthadenovirus,barthadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 3237129,passerine-like atadenovirus,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 1511803,passerivirus a,passerivirus,picornaviridae,picornavirales,pisoniviricetes,TRUE,FALSE,Shaw
 3050365,patagivirus vespertilionidgamma3,patagivirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
@@ -7692,6 +7702,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 2890915,small yellow croaker iridovirus,megalocytivirus,iridoviridae,pimascovirales,megaviricetes,TRUE,FALSE,GenBank
 2707268,smith virus,,,,,TRUE,FALSE,GenBank
 2691031,smooth billed ani adenovirus 1,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
+3435568,smooth-billed ani aviadenovirus,aviadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
 1146872,snake atadenovirus a,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,Shaw
 1909409,snake nidovirus,,,nidovirales,pisoniviricetes,TRUE,FALSE,GenBank
 659372,snake paramyxovirus,,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE,GenBank
@@ -8287,7 +8298,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3050294,varicellovirus humanalpha3,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 3050322,varicellovirus monodontidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 3050340,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
-47418,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,Shaw; HP3; GMPD2; EID2; GenBank
+47418,varicellovirus phocidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,Shaw; HP3; GMPD2; EID2
 10345,varicellovirus suidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,HP3; Shaw; EID2; GMPD2
 3050355,varicellovirus suidalpha1,varicellovirus,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,TRUE,GenBank
 2707278,varley virus,,,,,TRUE,FALSE,GenBank
