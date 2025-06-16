@@ -937,7 +937,7 @@
     },
     "deposits": {
       "Package": "deposits",
-      "Version": "0.2.1.061",
+      "Version": "0.2.1.063",
       "Source": "GitHub",
       "Title": "A universal client for depositing and accessing research data anywhere",
       "Authors@R": "person(\"Mark\", \"Padgham\", , \"mark.padgham@email.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0003-2172-5265\"))",
@@ -974,10 +974,10 @@
       "Maintainer": "Mark Padgham <mark.padgham@email.com>",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteUsername": "ropenscilabs",
+      "RemoteUsername": "viralemergence",
       "RemoteRepo": "deposits",
       "RemoteRef": "main",
-      "RemoteSha": "3495041f03c4d29c58f392cb46e7a621aeece0c6"
+      "RemoteSha": "f283ddaa312a13828d0d55b10200b7fbc0946636"
     },
     "digest": {
       "Package": "digest",
@@ -1190,6 +1190,49 @@
       "Author": "Richard Iannone [aut, cre] (<https://orcid.org/0000-0003-3925-190X>), Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>), Winston Chang [ctb], Dave Gandy [ctb, cph] (Font-Awesome font), Posit Software, PBC [cph, fnd]",
       "Maintainer": "Richard Iannone <rich@posit.co>",
       "Repository": "RSPM"
+    },
+    "frictionless": {
+      "Package": "frictionless",
+      "Version": "1.2.1",
+      "Source": "Repository",
+      "Title": "Read and Write Frictionless Data Packages",
+      "Date": "2025-05-23",
+      "Authors@R": "c( person(\"Peter\", \"Desmet\", , \"peter.desmet@inbo.be\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-8442-8025\", affiliation = \"Research Institute for Nature and Forest (INBO)\")), person(\"Damiano\", \"Oldoni\", , \"damiano.oldoni@inbo.be\", role = \"aut\", comment = c(ORCID = \"0000-0003-3445-7562\", affiliation = \"Research Institute for Nature and Forest (INBO)\")), person(\"Pieter\", \"Huybrechts\", , \"pieter.huybrechts@inbo.be\", role = \"aut\", comment = c(ORCID = \"0000-0002-6658-6062\", affiliation = \"Research Institute for Nature and Forest (INBO)\")), person(\"Sanne\", \"Govaert\", , \"sanne.govaert@inbo.be\", role = \"aut\", comment = c(ORCID = \"0000-0002-8939-1305\", affiliation = \"Research Institute for Nature and Forest (INBO)\")),        person(\"Kyle\", \"Husmann\", , \"kdh38@psu.edu\", role = \"ctb\", comment = c(ORCID = \"0000-0001-9875-8976\", affiliation = \"Pennsylvania State University\")), person(\"Research Institute for Nature and Forest (INBO)\", role = \"cph\", comment = c(ROR = \"00j54wy13\")), person(\"Research Foundation - Flanders\", role = \"fnd\", comment = \"https://lifewatch.be\"), person(\"Beatriz\", \"Milz\", , \"milz.bea@gmail.com\", role = \"rev\", comment = c(ORCID = \"0000-0002-3064-4486\")), person(\"João\", \"Martins\", , \"joao.martins@gmx.net\", role = \"rev\", comment = c(ORCID = \"0000-0001-7961-4280\")) )",
+      "Description": "Read and write Frictionless Data Packages. A 'Data Package' (<https://specs.frictionlessdata.io/data-package/>) is a simple container format and standard to describe and package a collection of (tabular) data. It is typically used to publish FAIR (<https://www.go-fair.org/fair-principles/>) and open datasets.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/frictionlessdata/frictionless-r, https://docs.ropensci.org/frictionless/",
+      "BugReports": "https://github.com/frictionlessdata/frictionless-r/issues",
+      "Depends": [
+        "R (>= 3.6.0)"
+      ],
+      "Imports": [
+        "cli",
+        "dplyr",
+        "httr",
+        "jsonlite",
+        "purrr",
+        "readr (>= 2.1.0)",
+        "rlang",
+        "utils",
+        "yaml"
+      ],
+      "Suggests": [
+        "hms",
+        "knitr",
+        "lubridate",
+        "rmarkdown",
+        "stringi",
+        "testthat (>= 3.0.0)",
+        "tibble"
+      ],
+      "VignetteBuilder": "knitr",
+      "Config/testthat/edition": "3",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "NeedsCompilation": "no",
+      "Author": "Peter Desmet [aut, cre] (ORCID: <https://orcid.org/0000-0002-8442-8025>, affiliation: Research Institute for Nature and Forest (INBO)), Damiano Oldoni [aut] (ORCID: <https://orcid.org/0000-0003-3445-7562>, affiliation: Research Institute for Nature and Forest (INBO)), Pieter Huybrechts [aut] (ORCID: <https://orcid.org/0000-0002-6658-6062>, affiliation: Research Institute for Nature and Forest (INBO)), Sanne Govaert [aut] (ORCID: <https://orcid.org/0000-0002-8939-1305>, affiliation: Research Institute for Nature and Forest (INBO)), Kyle Husmann [ctb] (ORCID: <https://orcid.org/0000-0001-9875-8976>, affiliation: Pennsylvania State University), Research Institute for Nature and Forest (INBO) [cph] (ROR: <https://ror.org/00j54wy13>), Research Foundation - Flanders [fnd] (https://lifewatch.be), Beatriz Milz [rev] (ORCID: <https://orcid.org/0000-0002-3064-4486>), João Martins [rev] (ORCID: <https://orcid.org/0000-0001-7961-4280>)",
+      "Maintainer": "Peter Desmet <peter.desmet@inbo.be>",
+      "Repository": "CRAN"
     },
     "fs": {
       "Package": "fs",
