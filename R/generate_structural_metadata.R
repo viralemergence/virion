@@ -57,8 +57,9 @@ virion_definitions <- function(){
              Virus = "Virus species name",
              HostTaxID = "Taxonomic identification number from NCBI for host taxa.",
              VirusTaxID = "Taxonomic identification number from NCBI for virus taxa.",
-             HostNCBIResolved = "Indicates where or not the host taxa could harmonized with the NCBI taxonomy.",
-             VirusNCBIResolved = "Indicates where or not the virus taxa could harmonized with the NCBI taxonomy.",
+             HostNCBIResolved = "Indicates whether or not the host taxa could harmonized with the NCBI taxonomy.",
+             VirusNCBIResolved = "Indicates whether or not the virus taxa could harmonized with the NCBI taxonomy.",
+             ICTVRatified = "Indicates whether or not the virus taxa is ratified by the nternational Committee on Taxonomy of Viruses (ICTV).",
              HostGenus = "Host genus name",
              HostFamily = "Host family name",
              HostOrder = "Host order name",
@@ -84,7 +85,12 @@ virion_definitions <- function(){
              ReleaseDay = "The day a given association was “released” to the public",
              CollectionYear = "Reports the year of actual sample collection (GenBank and Predict)",
              CollectionMonth = "Reports the month of actual sample collection (GenBank and Predict)",
-             CollectionDay = "Reports the day of actual sample collection (GenBank and Predict)")
+             CollectionDay = "Reports the day of actual sample collection (GenBank and Predict)",
+             AssocID = "Row number. Used as an id. Will be specific to a given version of the data",
+             DatabaseDOI = "Persistent digital identifer for the database",
+             Release_Date = "Date data were released",
+             Collection_Date = "Date of actual sample collection")
+             
 }
 
 
@@ -186,5 +192,14 @@ temporal_definitions <- function(fields = c("AssocID",
   return(h_defs)
 }
 
-
+all_definitions <- function(){
+  list(virion= virion_definitions(),
+       taxonomy_host = host_taxa_definitions(),
+       taxonomy_virus = virus_taxa_definitions(),
+       provenance = provenance_definitions(),
+       detection = detection_definitions(),
+       edgelist = edgelist_definitions(),
+       temporal = temporal_definitions()
+       )
+}
 

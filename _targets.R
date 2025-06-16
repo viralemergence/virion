@@ -201,7 +201,7 @@ high_level_check_targets <- tar_plan(
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
   tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
-  tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz"))
+  tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
 )
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
@@ -263,9 +263,9 @@ dissovle_virion_targets <- tar_plan(
                       CollectionDay)
              ),
   ### write csvs
-  provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz"),
-  detection_path = vroom_write(detection, "./outputs/detection.csv.gz"),
-  temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz"),
+  provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
+  detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
+  temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
   tar_target(virion_edge_list, get_virion_edge_list(virion_reduced_tax)),
   tar_target(virion_edge_list_path,write_csv(virion_edge_list, "./outputs/edgelist.csv") )
 )
@@ -336,40 +336,50 @@ deposit_targets <- tar_plan(
   # description 
   tar_target(zenodo_description,
              "This deposit contains a dynamically maintained database of vertebrate-virus associations. 
-             The VIRION database has been assembled through both reconciliation 
-             of static data sets and integration of dynamically updated databases.
-             These data sources are all harmonized against one taxonomic backbone,
-             including metadata on host and virus taxonomic validity and higher 
-             classification; additional metadata on sampling methodology and 
-             evidence strength are also available in a harmonized format.
-             
-             Data Products:
-             1) virion.csv.gz - Virion dataset. All other data products are derived
-             from Virion. 
-             2) temporal.csv.gz - Publication and collection data from Virion.
-             3) provenance.csv.gz - Sources used to compile virion.
-             4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.
-             5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.
-             6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.
-             7) taxonomy_virus.csv"),
+ The VIRION database has been assembled through both reconciliation 
+ of static data sets and integration of dynamically updated databases.
+ These data sources are all harmonized against one taxonomic backbone,
+ including metadata on host and virus taxonomic validity and higher 
+ classification; additional metadata on sampling methodology and 
+ evidence strength are also available in a harmonized format.
+ 
+ Data Products:
+ 1) virion.csv.gz - Virion dataset. All other data products are derived
+ from Virion. 
+ 2) temporal.csv.gz - Publication and collection data from Virion.
+ 3) provenance.csv.gz - Sources used to compile virion.
+ 4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.
+ 5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.
+ 6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.
+ 7) taxonomy_virus.csv"),
   
   # make metadata list 
   tar_target(metadata,
                list(
                  title = "The Global Virome in One Network (VIRION): Data Package",
                  description = zenodo_description,
-                 creator = creators,
+                 creator = deposit_creators,
                  created = time_created,
                  isPartOf = isPartOf,
                  accessRights = "open",
-                 license = "cc0-1.0",
-                 language = "eng"
+                 license = "cc-zero",
+                 language = "eng",
+                 subject = list(keywords = list("global vertebrate virome","host-virus interactions","ecological networks"))
                )
+             ),
+  # update resources and deposit data
+  ## need to add dependencies to files
+  tar_target(deposit_outcome, 
+             deposit_data(metadata = metadata, 
+                          outputs = list(virion = virion_unique_path,
+                                         host_tax = host_tax_path,
+                                         virus_tax = virus_tax_path,
+                                         provenance = provenance_path,
+                                         detection = detection_path,
+                                         temporal = temporal_path,
+                                         virion_edge_list = virion_edge_list_path),
+                          resource = here::here("outputs"))
              )
-  
-  
-  # update resources
-  # deposit data
 )
 
 # 
@@ -382,5 +392,6 @@ deposit_targets <- tar_plan(
    predict_targets,
    merge_clean_files_targets,
    high_level_check_targets,
-   dissovle_virion_targets
+   dissovle_virion_targets,
+   deposit_targets
  )
