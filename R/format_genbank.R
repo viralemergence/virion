@@ -2,12 +2,13 @@
 #'
 #' @param gb  Data frame. Genbank data from gb_clean_viruses
 #' @param temp Data frame. Template for Virion data
+#' @param database_version Character. database version for genbank
 #'
 #' @returns data frame. Genbank data formatted for virion
 #' @export
 #'
 #' @examples
-format_genbank <- function(gb,temp){
+format_genbank <- function(gb,temp, database_version){
 
 gb %<>% 
   dplyr::rename(NCBIAccession = 'Accession') %>% 
@@ -38,8 +39,6 @@ gb[, c(paste0("Release", c("Year", "Month", "Day")))] <-
 #                   into = paste0("Release", c("Year", "Month", "Day"))) 
 print("separated")
 
-
-database_version <- sprintf("https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/ accessed on %s", lubridate::today(tzone = "UTC"))
 
 gb %<>% 
   dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 

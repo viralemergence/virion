@@ -43,7 +43,7 @@ not_all_na <- function(x){any(!is.na(x))}
 #'
 #' @returns Data frame. All taxa that are associated with a particular host.
 #' @export
-#' @autho Albert Vill
+#' @author Albert Vill
 #'
 #' @examples
 find_uniform_taxa <- function(data, host) {
@@ -58,22 +58,22 @@ find_uniform_taxa <- function(data, host) {
     
     for (rank in taxonomic_ranks) {
       grouped_data <-
-        filter(data, !is.na(!!sym(rank))) |>
-        group_by(across(all_of(rank))) |>
-        summarise(All_Same_Host = all(host_source %in% host),
+        dplyr::filter(data, !is.na(!!sym(rank))) |>
+        dplyr::group_by(across(all_of(rank))) |>
+        dplyr::summarise(All_Same_Host = all(host_source %in% host),
                   .groups = 'drop')
       
       uniform_taxa <-
-        filter(grouped_data, All_Same_Host) |>
-        select(taxonomic_name = !!sym(rank))
+        dplyr::filter(grouped_data, All_Same_Host) |>
+        dplyr::select(taxonomic_name = !!sym(rank))
       
       if (nrow(uniform_taxa) > 0) {
         uniform_taxa <- uniform_taxa |>
-          mutate(taxonomic_rank = rank)
+         dplyr::mutate(taxonomic_rank = rank)
         results[[rank]] <- uniform_taxa
       }
     }
     
     bind_rows(results) |>
-      select(taxonomic_rank, taxonomic_name)
+      dplyr::select(taxonomic_rank, taxonomic_name)
   }
