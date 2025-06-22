@@ -2835,6 +2835,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052191,erythroparvovirus primate3,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE,Shaw; HP3
 3052192,erythroparvovirus primate4,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE,Shaw; HP3
 3052193,erythroparvovirus rodent1,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE,GenBank; Shaw; HP3
+2809396,erythroparvovirus sp.,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,FALSE,GenBank
 3052194,erythroparvovirus ungulate1,erythroparvovirus,parvoviridae,piccovirales,quintoviricetes,TRUE,TRUE,GenBank; Shaw
 1862331,esocid herpesvirus 1,,alloherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 2609082,estrildidae adenovirus 1,atadenovirus,adenoviridae,rowavirales,tectiliviricetes,TRUE,FALSE,GenBank
@@ -5038,6 +5039,7 @@ VirusTaxID,Virus,VirusGenus,VirusFamily,VirusOrder,VirusClass,VirusNCBIResolved,
 3052352,narmovirus myodesis,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,TRUE,GenBank
 3052353,narmovirus narivaense,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,TRUE,HP3; GenBank
 3431057,narmovirus ninovense,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,TRUE,GenBank
+2809601,narmovirus sp.,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE,GenBank
 3052354,narmovirus tupaiae,narmovirus,paramyxoviridae,mononegavirales,monjiviricetes,TRUE,FALSE,HP3
 3229861,narrow-ridged finless porpoise gammaherpesvirus,,orthoherpesviridae,herpesvirales,herviviricetes,TRUE,FALSE,GenBank
 2960825,naryaviridae sp.,,naryaviridae,rivendellvirales,arfiviricetes,TRUE,FALSE,GenBank
