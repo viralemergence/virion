@@ -4,46 +4,46 @@
 ![](https://img.shields.io/badge/Code%20license-MIT-green)
 ![](https://img.shields.io/badge/Data%20license-CC--0-brightgreen)
 
-VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https://www.viralemergence.org/), an NSF Biology Integration Institute. The development of the VIRION database through 2022 is documented [here](https://journals.asm.org/doi/10.1128/mbio.02985-21); as we work to transition to a new platform, an interim changelog can also be found below. We strongly encourage researchers to read both the _mBio_ publication and this README file before using these data.
+VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https://www.viralemergence.org/), an NSF Biology Integration Institute. 
+The development of the VIRION database through 2022 is documented [here](https://journals.asm.org/doi/10.1128/mbio.02985-21); as we work to transition to a new platform, an interim changelog can also be found below.
+We strongly encourage researchers to read both the _mBio_ publication and this README file before using these data.
 
 > [!CAUTION]
-> Several known taxonomic errors exist in the data. These are documented in the issues on this repository, and we encourage users to add new issues as appropriate. Major changes to viral taxonomy, such as the switch to binomial nomenclature, are also not currently reflected. Finally, users should be cautious about interpretation of the data, and consult the manuscript for guidance about how to handle some of VIRION's unique features, such as a mix of evidentiary standards.
+> Several known taxonomic errors exist in the data. These are documented in the issues on this repository, and we encourage users to add new issues as appropriate.
+> Major changes to viral taxonomy, such as the switch to binomial nomenclature, may not be currently reflected.
+> Finally, users should be cautious about interpretation of the data, and consult the manuscript for guidance about how to handle some of VIRION's unique features, such as a mix of evidentiary standards.
 
 ## How to get VIRION
 
-For now, VIRION lives on Github in a fully open and reproducible format. Downloading the data directly from this website, or cloning the repository, is the easiest way to access the data. The full database is available in a single comprehensive file (see *Full database* below), but specific components of the data are also shared as individual files. Currently, all files are compressed in .csv.gz format to minimize storage requirements. The data can be unzipped using tools such as the `vroom` R package or the `CSV.jl` Julia library.
-For more information about using specific versions of the code or data, see the versioning section of the [repo wiki](https://github.com/viralemergence/virion/wiki/Development-process#releases---code-versioning)
+The code for producing the virion data set can be found in this repository. 
+See the [reproducing virion wiki](https://github.com/viralemergence/virion/wiki/Reproducing-Virion) for details.
 
+The easiest way to get the data is to use the [virionData R package](https://viralemergence.github.io/virionData/) or
+download it from [Zenodo](https://doi.org/10.5281/zenodo.15643003) .
 
-### Download links
+Currently, all large files are compressed in .csv.gz format to minimize storage requirements. 
+These files are comma delimited with period decimal separators. 
+The data can be unzipped using tools such as the `vroom` R package or the `CSV.jl` Julia library.
+For more information about using specific versions of the code or data, see the [code versioning](https://github.com/viralemergence/virion/wiki/Development-process#releases---code-versioning) or
+[data versioning](https://github.com/viralemergence/virion/wiki/Data-Versioning) sections of the wiki.
 
-- [**Full database**](https://github.com/viralemergence/virion/blob/gh-pages/Virion.csv.gz)
-
-- [Simplified edgelist](https://github.com/viralemergence/virion/blob/gh-pages/Edgelist.csv.gz)
-
-- [Provenance metadata](https://github.com/viralemergence/virion/blob/gh-pages/Provenance.csv.gz)
-
-- [Detection metadata](https://github.com/viralemergence/virion/blob/gh-pages/Detection.csv.gz)
-
-- [Temporal metadata](https://github.com/viralemergence/virion/blob/gh-pages/Temporal.csv.gz)
-
-- [Host higher taxonomy](https://github.com/viralemergence/virion/blob/gh-pages/TaxonomyHost.csv.gz)
-
-- [Virus higher taxonomy](https://github.com/viralemergence/virion/blob/gh-pages/TaxonomyVirus.csv.gz)
 
 ## How to use VIRION
 
 ### Citing VIRION
 
-If you use VIRION for your research, please both:
+If you use VIRION for your research, please:
 1. Cite the publication: Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, Muylaert RL, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an Atlas of Vertebrate-Virus Associations. mBio. 2022 Mar 1. DOI: 10.1128/mbio.02985-21.
-2. Include the following statement in your acknowledgements: "This project was supported by the Verena data ecosystem, funded by the U.S. National Science Foundation (NSF DBI 2213854)."
+2. Cite the version of the data you used - `virionData::get_citation(zenodo_id = "ZENODO_ID_FOR_VERSION", style = "apa")`
+3. Include the following statement in your acknowledgements: "This project was supported by the Verena data ecosystem, funded by the U.S. National Science Foundation (NSF DBI 2213854)."
  
-If necessary (e.g., for specific journal requirements), you can also cite VIRION itself using this DOI: [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
+If necessary (e.g., for specific journal requirements), you can also cite the VIRION codebase itself using this DOI: [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
 
 ### Reproducing VIRION
 
-VIRION is currently distributed under a CC-0 license. As such, you can do just about anything with it that you'd like. We would _prefer_ it not be reproduced into other formats that lose intentional aspects of VIRION's design (e.g., in other databases that drop metadata like evidence standards; as static supplemental files on studies that will never be updated; etc.), but it's your party! 
+VIRION is currently distributed under a CC-0 license.
+As such, you can do just about anything with it that you'd like.
+We would _prefer_ it not be reproduced into other formats that lose intentional aspects of VIRION's design (e.g., in other databases that drop metadata like evidence standards; as static supplemental files on studies that will never be updated; etc.), but it's your party! 
 
 ## How VIRION works
 
@@ -129,11 +129,8 @@ flowchart TB
 ```
 
 > [!NOTE]
-> Over the coming months, we hope to roll out additional changes. Goals include:
-> - a revision of the license VIRION is distributed under
-> - incorporation of new data sources
-> - improved data standardization and taxonomic reconciliation
-> - periodic updates to the static components of CLOVER to address known errors
+> Over the coming months, we hope to roll out additional changes. 
+> See the github issues to get an understanding of where the project is headed.
 
 
 ## Additional information
@@ -148,4 +145,6 @@ See the [repo wiki](https://github.com/viralemergence/virion/wiki) for additiona
 
 ### Changelog 
 
-**October 17, 2024**: The GLOBI dataset has been de-indexed from VIRION, due to a growing number of concerns about the reliability of text-mined data. This represents an important departure from the pipeline described in the _mBio_ publication. The current pipeline is described at the top of this README.
+**October 17, 2024**: The GLOBI dataset has been de-indexed from VIRION, due to a growing number of concerns about the reliability of text-mined data.
+This represents an important departure from the pipeline described in the _mBio_ publication.
+The current pipeline is described at the top of this README.
