@@ -5,7 +5,7 @@
 #' @return
 #' @author collinschwantes
 #' @export
-get_zenodo_release_doi <- function(parent_id = "15643003") {
+get_zenodo_release_doi <- function(parent_id = "5819055") {
 
   parent_url <- sprintf("https://zenodo.org/api/records/%s",parent_id)
   

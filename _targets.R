@@ -277,7 +277,7 @@ dissovle_virion_targets <- tar_plan(
 deposit_targets <- tar_plan(
   # create metadata
   ## link to original paper
-  ## link to github repo
+  ## link to github repo for the virion code NOT for virionData
   tar_target(latest_repo_doi, get_zenodo_release_doi()),
   ## link to CLOVER, PREDICT, GENBANK
   tar_target(isPartOf,
