@@ -191,7 +191,7 @@ merge_clean_files_targets <- tar_plan(
     clo_formatted,
     predict_all_formatted_hosts_clean, 
     gb_formatted),
-  virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
+  # virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # high level checks ----
 high_level_check_targets <- tar_plan(
