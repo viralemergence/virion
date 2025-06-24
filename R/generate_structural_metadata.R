@@ -59,7 +59,7 @@ virion_definitions <- function(){
              VirusTaxID = "Taxonomic identification number from NCBI for virus taxa.",
              HostNCBIResolved = "Indicates whether or not the host taxa could harmonized with the NCBI taxonomy.",
              VirusNCBIResolved = "Indicates whether or not the virus taxa could harmonized with the NCBI taxonomy.",
-             ICTVRatified = "Indicates whether or not the virus taxa is ratified by the nternational Committee on Taxonomy of Viruses (ICTV).",
+             ICTVRatified = "Indicates whether or not the virus taxa is ratified by the International Committee on Taxonomy of Viruses (ICTV).",
              HostGenus = "Host genus name",
              HostFamily = "Host family name",
              HostOrder = "Host order name",
