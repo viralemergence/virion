@@ -2,7 +2,9 @@
   "bioconductor.version": null,
   "external.libraries": [],
   "ignored.packages": [
-    "fnmate"
+    "fnmate",
+    "usethis",
+    "tidyverse"
   ],
   "package.dependency.fields": [
     "Imports",

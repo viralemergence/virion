@@ -10,13 +10,16 @@ on:
       - main
   # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
   schedule:
-    - cron: "21 0 * * *"
+    - cron: "21 0 * * 2"
   workflow_dispatch:
 jobs:
   targets:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
+    env:
+      ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+      ZENODO_SANDBOX_TOKEN: ${{ secrets.ZENODO_SANDBOX_TOKEN }}
     steps:
       - name: update permissions for container based workflows
         run: git config --global --add safe.directory /__w/virion/virion
@@ -51,18 +54,3 @@ jobs:
         run: |
           targets::tar_make()
         shell: Rscript {0}
-      - name: Save artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: GenBankFormatted
-          path: Intermediate/Formatted/GenbankFormatted.csv.gz
-      - name: Save the artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: VIRION
-          path: Virion
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.7
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: Virion # The folder the action should deploy.

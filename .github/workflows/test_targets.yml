@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
+    env:
+      ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+      ZENODO_SANDBOX_TOKEN: ${{ secrets.ZENODO_SANDBOX_TOKEN }}
     steps:
       - name: update permissions for container based workflows
         run: git config --global --add safe.directory /__w/virion/virion
