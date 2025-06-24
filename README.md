@@ -9,8 +9,9 @@ The development of the VIRION database through 2022 is documented [here](https:/
 We strongly encourage researchers to read both the _mBio_ publication and this README file before using these data.
 
 > [!CAUTION]
-> Several known taxonomic errors exist in the data. These are documented in the issues on this repository, and we encourage users to add new issues as appropriate.
-> Major changes to viral taxonomy, such as the switch to binomial nomenclature, may not be currently reflected.
+> Several known taxonomic errors exist in the data. 
+> These are documented in the issues on this repository, and we encourage users to add new issues as appropriate.
+> Major changes to viral taxonomy, such as the switch to binomial nomenclature as described by ICTV and [adopted by NCBI](https://ncbiinsights.ncbi.nlm.nih.gov/2025/04/25/ncbi-taxonomy-updates-virus-classification-april-2025/), may not be reflected in all instances.
 > Finally, users should be cautious about interpretation of the data, and consult the manuscript for guidance about how to handle some of VIRION's unique features, such as a mix of evidentiary standards.
 
 ## How to get VIRION
@@ -144,6 +145,13 @@ See the [repo wiki](https://github.com/viralemergence/virion/wiki) for additiona
 - For specific questions about the GitHub actions pipeline, please contact [Collin Schwantes](mailto:collin@viralemergence.org) or [Timothée Poisot](mailto:timothee.poisot@umontreal.ca)
 
 ### Changelog 
+
+This section highlights major changes to the repo.
+
+See [release notes](https://github.com/viralemergence/virion/releases) for details on changes. 
+
+**June 24, 2025**: Virion data will be stored in Zenodo and can be accessed via
+the [virionData package](https://github.com/viralemergence/virionData).
 
 **October 17, 2024**: The GLOBI dataset has been de-indexed from VIRION, due to a growing number of concerns about the reliability of text-mined data.
 This represents an important departure from the pipeline described in the _mBio_ publication.
