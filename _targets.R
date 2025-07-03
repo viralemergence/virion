@@ -15,6 +15,7 @@ targets::tar_source()
 # Depending on how you installed Julia, you may have to add the julia binary 
 # location to your PATH in R
 
+#set path ----
 # when running locally
 # homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
@@ -362,7 +363,7 @@ deposit_targets <- tar_plan(
                  created = time_created,
                  isPartOf = isPartOf,
                  accessRights = "open",
-                 license = "cc-zero",
+                 license = "ODbL-1.0",
                  language = "eng",
                  subject = list(keywords = list("global vertebrate virome","host-virus interactions","ecological networks"))
                )

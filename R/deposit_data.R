@@ -47,6 +47,7 @@ deposit_data <- function(metadata = metadata,
   
   cli$deposit_retrieve(deposit_id = deposit_id)
   cli$deposit_version()
+
   # add files
   cli$deposit_add_resource(path = resource)
   
@@ -58,9 +59,9 @@ deposit_data <- function(metadata = metadata,
   
   # cli$deposit_update(path = "outputs/detection.csv.gz")
   
-  # cli$deposit_delete(deposit_id)
   # update metadata 
   cli$metadata <- metadata
+  cli$deposit_fill_metadata(metadata)
   # add descriptions to datapackage.json
   
   data_package <- jsonlite::read_json("outputs/datapackage.json")
@@ -90,6 +91,8 @@ deposit_data <- function(metadata = metadata,
     data_package$resources[[i]] <- resource_item
   }
   
+  data_package$metadata <- metadata
+
   # write 
   data_package_json <- jsonlite::write_json(x = data_package,path = "outputs/datapackage.json",pretty = TRUE,auto_unbox = TRUE)
   
