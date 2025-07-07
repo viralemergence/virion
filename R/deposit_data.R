@@ -6,6 +6,7 @@
 #' @param sandbox Logical. Should we be using the zenodo sandbox? Good for testing.
 #' @param resource Character. Path to deposit resources
 #' @param outputs List. Targets that created outputs to be deposited.
+#' @param publish Logical. Should the data be published? Good for testing
 #'
 #' @return Data frame. deposit information for the updated deposit.
 #' @author collinschwantes
@@ -13,7 +14,8 @@
 deposit_data <- function(metadata = metadata,
                          outputs,
                          resource = here::here("outputs"),
-                         sandbox = FALSE) {
+                         sandbox = FALSE,
+                         publish = TRUE) {
   
   ## check that outputs are not null
   
@@ -47,7 +49,7 @@ deposit_data <- function(metadata = metadata,
   
   cli$deposit_retrieve(deposit_id = deposit_id)
   cli$deposit_version()
-
+  
   # add files
   cli$deposit_add_resource(path = resource)
   
@@ -56,12 +58,15 @@ deposit_data <- function(metadata = metadata,
     cli$deposit_upload_file(path = i)
   }
   
-  
-  # cli$deposit_update(path = "outputs/detection.csv.gz")
-  
   # update metadata 
   cli$metadata <- metadata
   cli$deposit_fill_metadata(metadata)
+  
+  # get id of new version and add identifier to metadata
+  # only adding identifier to data package
+  identifier <- list("identifier" = sprintf("10.5281/zenodo.%s",cli$id))
+  metadata <- c(identifier,metadata)
+  
   # add descriptions to datapackage.json
   
   data_package <- jsonlite::read_json("outputs/datapackage.json")
@@ -103,7 +108,14 @@ deposit_data <- function(metadata = metadata,
   # update it!
   cli$deposit_update()
   # publish it!
-  cli$deposit_publish()
+  if(publish){
+    cli$deposit_publish()  
+  } else {
+    rlang::warn("Data not published. A version of the data lives in zenodo.
+                Navigate to your dashboard to see it.
+                https://zenodo.org/me/uploads?")
+  }
+  
   
   out <- cli$deposits %>% 
     dplyr::filter(id == deposit_id)
