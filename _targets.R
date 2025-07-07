@@ -331,7 +331,7 @@ deposit_targets <- tar_plan(
   tar_target(deposit_creators, get_creators(gh_url = "https://api.github.com/repos/viralemergence/virion/contributors")),
   
   # time created
-  tar_target(time_created, dcmi_date_time()),
+  tar_target(time_created, dcmi_date_time(), cue = tar_cue("always")),
   
   
   # description 
@@ -369,7 +369,9 @@ deposit_targets <- tar_plan(
                )
              ),
   # update resources and deposit data
-  ## need to add dependencies to files
+  ## publish the data?
+  tar_target(publish, TRUE),
+  ## 
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
@@ -379,7 +381,8 @@ deposit_targets <- tar_plan(
                                          detection = detection_path,
                                          temporal = temporal_path,
                                          virion_edge_list = virion_edge_list_path),
-                          resource = here::here("outputs"))
+                          resource = here::here("outputs"),
+                          publish = publish)
              )
 )
 
