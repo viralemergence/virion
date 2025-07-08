@@ -40,11 +40,21 @@ If you use VIRION for your research, please:
  
 If necessary (e.g., for specific journal requirements), you can also cite the VIRION codebase itself using this DOI: [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
 
-### Reproducing VIRION
+### Code and data licenses
 
-VIRION is currently distributed under a CC-0 license.
+The code in this repository is covered by an LGPL3 license. 
+This is a copy left license that requires anyone redistributing this code to 
+include an LGPL3 license for that portion of the code base.  
+
+Checkout the full license language here: https://choosealicense.com/licenses/lgpl-3.0/
+
+VIRION data is currently distributed under a ODbL-1.0 license.
 As such, you can do just about anything with it that you'd like.
-We would _prefer_ it not be reproduced into other formats that lose intentional aspects of VIRION's design (e.g., in other databases that drop metadata like evidence standards; as static supplemental files on studies that will never be updated; etc.), but it's your party! 
+If you reproduce and re-distribute the data, you must include an equivalent share-a-like license.
+If you place the data behind an authentication portal or paywall, you must also share a freely available version.
+
+Check out the full license language for the data here: https://opendatacommons.org/licenses/odbl/1-0/
+
 
 ## How VIRION works
 
