@@ -15,6 +15,8 @@ get_creators <- function(gh_url =
   
   contribs_list <- httr::content(contribs)
   
+  print(contribs_list)
+  
   creators <- purrr::map(contribs_list,function(x){
     creator_list <- list(name = character(),
                          orcid = character())
