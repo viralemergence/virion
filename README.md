@@ -35,7 +35,7 @@ For more information about using specific versions of the code or data, see the 
 
 If you use VIRION for your research, please:
 1. Cite the publication: Carlson CJ, Gibb RJ, Albery GF, Brierley L, Connor R, Dallas T, Eskew EA, Fagre AC, Farrell MJ, Frank HK, Muylaert RL, Poisot T, Rasmussen AL, Ryan SJ, Seifert SN. The Global Virome in One Network (VIRION): an Atlas of Vertebrate-Virus Associations. mBio. 2022 Mar 1. DOI: 10.1128/mbio.02985-21.
-2. Cite the version of the data you used - `virionData::get_citation(zenodo_id = "ZENODO_ID_FOR_VERSION", style = "apa")`
+2. Cite the version of the data you used. In R `virionData::get_citation(zenodo_id = "ZENODO_ID_FOR_VERSION", style = "apa")`. In python `deposit.get_citation(style = "apa",zenodo_id = "ZENODO_ID_FOR_VERSION" )`.
 3. Include the following statement in your acknowledgements: "This project was supported by the Verena data ecosystem, funded by the U.S. National Science Foundation (NSF DBI 2213854)."
  
 If necessary (e.g., for specific journal requirements), you can also cite the VIRION codebase itself using this DOI: [![DOI](https://zenodo.org/badge/319686363.svg)](https://zenodo.org/badge/latestdoi/319686363).
