@@ -19,7 +19,7 @@ We strongly encourage researchers to read both the _mBio_ publication and this R
 The code for producing the virion data set can be found in this repository. 
 See the [reproducing virion wiki](https://github.com/viralemergence/virion/wiki/Reproducing-Virion) for details.
 
-The easiest way to get the data is to use the [virionData R package](https://viralemergence.github.io/virionData/) or
+The easiest way to get the data is to use the [virionData R package](https://viralemergence.github.io/virionData/), the [py-virion-data package](https://pypi.org/project/py-virion-data/) or
 download it from [Zenodo](https://doi.org/10.5281/zenodo.15643003) .
 
 Currently, all large files are compressed in .csv.gz format to minimize storage requirements. 
