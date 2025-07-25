@@ -8,6 +8,10 @@ library(targets)
 library(tarchetypes) # Load other packages as needed.
 source("packages.R")
 
+# set tar options
+
+tar_option_set(format = "qs")
+
 # Run the R scripts in the R/ folder with your custom functions:
 targets::tar_source()
 
@@ -140,7 +144,9 @@ genbank_digest_targets <- tar_plan(
 format_genbank_targets <- tar_plan(
   tar_target(gb_database_version, sprintf("https://ftp.ncbi.nlm.nih.gov/genomes/Viruses/AllNuclMetadata/ accessed on %s",
                                        lubridate::today(tzone = "UTC"))),
-  tar_target(gb_formatted, format_genbank(gb_virus_clean, template, gb_database_version)),
+  tar_target(gb_formatted, format_genbank(gb = gb_virus_clean,
+                                          temp = template,
+                                          database_version = gb_database_version)),
   tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
 )
 
@@ -201,7 +207,7 @@ high_level_check_targets <- tar_plan(
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
-  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
+  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts),garbage_collection = TRUE), ## rolls up NCBI accession numbers
   tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
 )
 # # dissolve virion ----
