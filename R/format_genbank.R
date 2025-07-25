@@ -10,21 +10,38 @@
 #' @examples
 format_genbank <- function(gb,temp, database_version){
 
-gb %<>% 
-  dplyr::rename(NCBIAccession = 'Accession') %>% 
-  dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
-  dplyr::mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
-                     stringr::str_split("T") %>% # Splitting at this midpoint
-                     purrr::map_chr(1) %>% # Taking the first component 
-                     lubridate::ymd() # Coding as YMD (shouldn't throw errors)
-  ) 
+  name_to_update <- which(names(gb) == 'Accession')
+  names(gb)[name_to_update] <- "NCBIAccession"
+  
+  gb$Release_Date <- lubridate::ymd(gb$Release_Date)
+  gb$VirusTaxID <- as.numeric(gb$VirusTaxID)
+
+  
+# gb <- gb %>%
+#   dplyr::rename(NCBIAccession = 'Accession')%>%
+#   # dplyr::rename(Release_Date = Release_Date) %>% # not sure what this is doing?
+#   dplyr::mutate(Release_Date = lubridate::ymd(Release_Date))
+# # mutate_at is very expensive and doesnt seem to be doing anything.
+#   #   dplyr::mutate_at("Release_Date", ~.x %>% # Modifying date column to make sense
+#   #                    stringr::str_split("T") %>% # Splitting at this midpoint
+#   #                    purrr::map_chr(1) %>% # Taking the first component
+#   #                    lubridate::ymd() # Coding as YMD (shouldn't throw errors)
+#   # )
+
+
+
 print("renamed")
 
-gb[, c(paste0("Collection", c("Year", "Month", "Day")))] <- 
+collection_cols <- c(paste0("Collection", c("Year", "Month", "Day")))
+
+gb[, collection_cols] <- 
   data.table::tstrsplit(gb$Collection_Date, "-", 
                         names=paste0("Collection", 
                                      c("Year", "Month", "Day"))) 
-gb[, c(paste0("Release", c("Year", "Month", "Day")))] <- 
+
+release_cols <-  c(paste0("Release", c("Year", "Month", "Day")))
+
+gb[, release_cols] <- 
   data.table::tstrsplit(gb$Release_Date, "-", 
                         names=paste0("Release", 
                                      c("Year", "Month", "Day"))) 
@@ -41,26 +58,29 @@ print("separated")
 
 
 gb %<>% 
-  dplyr::mutate_at(dplyr::vars(tidyselect::matches("Year|Month|Day")), 
-                   as.numeric) %>% 
-  dplyr::mutate(HostFlagID = stringr::str_detect(HostOriginal, "cf."),
-                Database = "GenBank",
-                DatabaseVersion = database_version,
-                # Choice to call Nucleotide all sequence and not isolation is 
-                # potentially problematic - revisit 
-                DetectionMethod = "PCR/Sequencing", 
-                # Just to keep separate from EID2 Nucleotide entries # Fix 
-                # the HostSynonyms at the 01 import stage
-                DetectionOriginal = "GenBank") 
+  dplyr::mutate(dplyr::across(tidyselect::all_of(c(collection_cols,release_cols)), 
+                   as.numeric)) 
+
+gb$HostFlagID <- stringr::str_detect(gb$HostOriginal, "cf.")
+gb$Database <- "GenBank"
+gb$DatabaseVersion <- database_version
+# Choice to call Nucleotide all sequence and not isolation is 
+# potentially problematic - revisit 
+gb$DetectionMethod <- "PCR/Sequencing"
+# Just to keep separate from EID2 Nucleotide entries # Fix 
+# the HostSynonyms at the 01 import stage
+gb$DetectionOriginal = "GenBank"
+
 print("mutated")
 gb %<>% 
-  dplyr::mutate(VirusTaxID = as.numeric(VirusTaxID)) %>% 
   # stiching together the temp and the genbank data that's now been formatted
   dplyr::bind_rows(temp, .) %>%  
-  dplyr::mutate_at(c("Host", "HostGenus", "HostFamily", "HostOrder", 
+  dplyr::mutate(dplyr::across(
+    tidyselect::all_of(c("Host", "HostGenus", "HostFamily", "HostOrder", 
                      "HostClass", "Virus", "VirusGenus", "VirusFamily", 
-                     "VirusOrder", "VirusClass"),
+                     "VirusOrder", "VirusClass")),
                    tolower)
+    )
   
 # garbage collection to remove extras stuff from memory
 gc()

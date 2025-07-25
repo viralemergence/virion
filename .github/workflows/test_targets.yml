@@ -42,7 +42,7 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(all_of(c("clo_formatted","virion_ictv_ratified")))
+          targets::tar_make(deposit_creators)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}

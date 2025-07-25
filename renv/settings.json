@@ -4,7 +4,8 @@
   "ignored.packages": [
     "fnmate",
     "usethis",
-    "tidyverse"
+    "tidyverse",
+    "proffer"
   ],
   "package.dependency.fields": [
     "Imports",
