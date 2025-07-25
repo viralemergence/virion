@@ -206,8 +206,8 @@ high_level_check_targets <- tar_plan(
   tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa)),
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
-  tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified)),
-  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts),garbage_collection = TRUE), ## rolls up NCBI accession numbers
+  tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified),garbage_collection = TRUE),
+  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
   tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
 )
 # # dissolve virion ----
