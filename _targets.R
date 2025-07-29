@@ -203,7 +203,7 @@ merge_clean_files_targets <- tar_plan(
 # # high level checks ----
 high_level_check_targets <- tar_plan(
   ### maybe convert to data.table - we will see
-  tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa)),
+  tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa),garbage_collection = TRUE),
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
   tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
   tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified),garbage_collection = TRUE),

@@ -8,15 +8,18 @@
 #' @returns data frame. Data frame 
 clean_clover_hosts <- function(virion_ictv_ratified){
   
-  virion_host_flag <- virion_ictv_ratified %>%  
-    dplyr::mutate(HostFlagID = tidyr::replace_na(HostFlagID, FALSE)) 
+  virion_ictv_ratified$HostFlagID <- tidyr::replace_na(virion_ictv_ratified$HostFlagID, FALSE)
+
+  print("converted NA's to falses")
   
-  virion_flag_cf <- virion_host_flag %>% 
+  virion_flag_cf <- virion_ictv_ratified %>% 
     dplyr::mutate(HostFlagID = case_when(
       stringr::str_detect(HostOriginal, " cf\\.") ~ TRUE,
       TRUE ~ HostFlagID
-    )) %>% 
+    )) %>%
     dplyr::select(-c(HostSynonyms))
+  
+  print("flagged cf\\.")
   
   return(virion_flag_cf)
   
