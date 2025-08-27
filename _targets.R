@@ -21,12 +21,12 @@ targets::tar_source()
 
 #set path ----
 # when running locally
-homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-# github_actions_path <- "/__t/juliaup/1.17.4/x64"
+github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = homebrew_path)
+update_path(items_to_add = github_actions_path)
 
 # source julia packages
 source_julia_deps()
@@ -410,7 +410,6 @@ deposit_targets <- tar_plan(
    predict_targets,
    merge_clean_files_targets,
    high_level_check_targets,
-   dissovle_virion_targets
-   # ,
-   # deposit_targets
+   dissovle_virion_targets,
+   deposit_targets
  )
