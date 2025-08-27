@@ -84,7 +84,7 @@ gb %<>%
   
 # garbage collection to remove extras stuff from memory
 gc()
-  
+
 return(gb)
 
 }

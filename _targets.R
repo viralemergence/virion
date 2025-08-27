@@ -21,12 +21,12 @@ targets::tar_source()
 
 #set path ----
 # when running locally
-# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+# github_actions_path <- "/__t/juliaup/1.17.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = github_actions_path)
+update_path(items_to_add = homebrew_path)
 
 # source julia packages
 source_julia_deps()
@@ -105,13 +105,13 @@ genbank_download_targets <- tar_plan(
   tar_target(genbank_path, get_genbank(), 
              format = "file",
              cue = tar_cue(mode = "always")),
-  tar_target(seq, read_genbank(genbank_path))
+  tar_target(gb, read_genbank(genbank_path))
 )
 
 # Digest genbank ----
 
 genbank_digest_targets <- tar_plan(
-  tar_target(gb, tibble::as_tibble(seq)), # this actually takes awhile
+  # tar_target(gb, tibble::as_tibble(seq)), # this actually takes awhile
   tar_target(host_vec, gb |>
     dplyr::pull(Host) %>%
     unique() %>%
@@ -132,10 +132,10 @@ genbank_digest_targets <- tar_plan(
       sort()),
     tar_target(virus_table, jvdict(virus_vec)),
     tar_target(virus_table_path, readr::write_csv(virus_table, here::here("./Intermediate/GBVirusTax.csv"))),
-    tar_target(gb_virus_clean, gb_clean_viruses(gb_hosts_clean, virus_table)),
-    tar_target(gb_virus_clean_path, vroom::vroom_write(gb, here::here(
-      "./Intermediate/Unformatted/GenBankUnformatted.csv.gz"
-    )))
+    tar_target(gb_virus_clean, gb_clean_viruses(gb_hosts_clean, virus_table))
+    # tar_target(gb_virus_clean_path, vroom::vroom_write(gb, here::here(
+    #   "./Intermediate/Unformatted/GenBankUnformatted.csv.gz"
+    # )))
   )
 
 
@@ -146,8 +146,8 @@ format_genbank_targets <- tar_plan(
                                        lubridate::today(tzone = "UTC"))),
   tar_target(gb_formatted, format_genbank(gb = gb_virus_clean,
                                           temp = template,
-                                          database_version = gb_database_version)),
-  tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
+                                          database_version = gb_database_version))
+  # tar_target(gb_formatted_path, vroom::vroom_write(gb_formatted, "Intermediate/Formatted/GenbankFormatted.csv.gz"))
 )
 
 
@@ -203,12 +203,17 @@ merge_clean_files_targets <- tar_plan(
 # # high level checks ----
 high_level_check_targets <- tar_plan(
   ### maybe convert to data.table - we will see
-  tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa),garbage_collection = TRUE),
+  # tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa),garbage_collection = TRUE),
   # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
-  tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
-  tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified),garbage_collection = TRUE),
-  tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
-  tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
+  # tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
+  # tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified),garbage_collection = TRUE),
+  # tar_target(virion_unique_path, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers and writes data
+  tar_target(virion_unique_path, high_level_checks(virion_unprocessed = virion_unprocessed, 
+                                                   phage_taxa = phage_taxa,
+                                                   ictv = ictv
+                                                   ))
+  
+  # tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
 )
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
@@ -242,23 +247,25 @@ dissovle_virion_targets <- tar_plan(
                mutate(AssocID = row_number()) %>%
                relocate(AssocID, .before = everything())#
               ),
-  tar_target(provenance, 
+  tar_target(provenance_path, 
              virion_reduced_tax %>%
                select(AssocID, 
                       HostOriginal, VirusOriginal, 
                       Database, DatabaseVersion,
                       ReferenceText, 
-                      PMID)
+                      PMID) %>% 
+               vroom_write("./outputs/provenance.csv.gz",delim = ",")
              ),
-  tar_target(detection,
+  tar_target(detection_path,
              virion_reduced_tax %>% 
                select(AssocID,
                       DetectionMethod,
                       DetectionOriginal, 
                       HostFlagID,
-                      NCBIAccession)
+                      NCBIAccession) %>% 
+               vroom::vroom_write( file = "./outputs/detection.csv.gz",delim = ",")
              ),
-  tar_target(temporal, 
+  tar_target(temporal_path, 
              virion_reduced_tax %>% 
                select(AssocID, 
                       PublicationYear, 
@@ -267,12 +274,13 @@ dissovle_virion_targets <- tar_plan(
                       ReleaseDay,
                       CollectionYear, 
                       CollectionMonth, 
-                      CollectionDay)
+                      CollectionDay) %>% 
+               vroom_write( "./outputs/temporal.csv.gz",delim = ",")
              ),
   ### write csvs
-  provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
-  detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
-  temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
+  # provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
+  # detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
+  # temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
   tar_target(virion_edge_list, get_virion_edge_list(virion_reduced_tax)),
   tar_target(virion_edge_list_path,write_csv(virion_edge_list, "./outputs/edgelist.csv") )
 )
@@ -402,6 +410,7 @@ deposit_targets <- tar_plan(
    predict_targets,
    merge_clean_files_targets,
    high_level_check_targets,
-   dissovle_virion_targets,
-   deposit_targets
+   dissovle_virion_targets
+   # ,
+   # deposit_targets
  )
