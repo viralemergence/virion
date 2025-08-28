@@ -8,6 +8,7 @@
 #' @returns data frame. Data frame 
 clean_clover_hosts <- function(virion_ictv_ratified){
   
+  print("cleaning clover hosts")
   virion_ictv_ratified$HostFlagID <- tidyr::replace_na(virion_ictv_ratified$HostFlagID, FALSE)
 
   print("converted NA's to falses")

@@ -33,3 +33,6 @@ Source/AllNuclMetadata.csv.gz
 Intermediate/Formatted/CLOVERFormatted.csv
 Intermediate/Formatted/GenbankFormatted.csv.gz
 Intermediate/Unformatted/GenBankUnformatted.csv.gz
+Intermediate/CLOVERHostTax.csv
+Intermediate/CLOVERHostTax.csv
+Intermediate/Raw/CLOVER_1.0_Viruses_AssociationsFlatFile.csv

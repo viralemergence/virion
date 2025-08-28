@@ -42,7 +42,7 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(deposit_creators)
+          targets::tar_make(high_level_checks)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
