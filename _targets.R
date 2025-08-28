@@ -211,7 +211,7 @@ high_level_check_targets <- tar_plan(
   tar_target(virion_unique_path, high_level_checks(virion_unprocessed = virion_unprocessed, 
                                                    phage_taxa = phage_taxa,
                                                    ictv = ictv
-                                                   ))
+                                                   ), garbage_collection = TRUE)
   
   # tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
 )
