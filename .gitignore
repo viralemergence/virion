@@ -30,3 +30,6 @@ wc5/alt.bil
 wc5/alt.hdr
 Source/AllNuclMetadata.csv
 Source/AllNuclMetadata.csv.gz
+Intermediate/Formatted/CLOVERFormatted.csv
+Intermediate/Formatted/GenbankFormatted.csv.gz
+Intermediate/Unformatted/GenBankUnformatted.csv.gz
