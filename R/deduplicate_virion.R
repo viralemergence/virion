@@ -14,20 +14,22 @@
 deduplicate_virion <- function(virion_clover_hosts, path = "outputs/virion.csv.gz"){
   
   print("deduplicate_virion: starting")
-  v_ <- virion_clover_hosts %>% 
+  v_ <- virion_clover_hosts |> 
     dplyr::distinct()
   print("deduplicate_virion: distinct")
-  v_ <- v_ %>% 
+  v_ <- v_ |> 
     dplyr::mutate_all(as.character) 
   print("deduplicate_virion: character")
   
-  v_ <- v_ %>%   
+  gc()
+  
+  v_ <- v_ |>   
     dplyr::mutate_all(~tidyr::replace_na(.x, ''))
   print("deduplicate_virion: blank")
   
-  v_ <- v_ %>% 
-  dplyr::group_by_at(dplyr::vars(-NCBIAccession)) %>% 
-    dplyr::summarize(NCBIAccession = stringr::str_c(NCBIAccession, collapse = ", ")) %>% 
+  v_ <- v_ |> 
+  dplyr::group_by_at(dplyr::vars(-NCBIAccession)) |> 
+    dplyr::summarize(NCBIAccession = stringr::str_c(NCBIAccession, collapse = ", ")) |> 
     dplyr::ungroup()
   print("deduplicate_virion: deduplicated")
   
