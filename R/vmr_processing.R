@@ -7,8 +7,12 @@
 #' @export
 read_current_vmr <- function(current_vmr_path) {
   
+  vmr_msl <- stringr::str_extract(current_vmr_path,pattern = "VMR_MSL\\d{2}")
+  vmr_msl_sheet <- stringr::str_replace(string = vmr_msl,pattern = "_",replacement = " ")
+  
+  
   vmr <- readxl::read_xlsx(path = current_vmr_path,
-              sheet = "VMR MSL40",
+              sheet = vmr_msl_sheet,
               col_names = TRUE,
               col_ = c("text",
                        rep("numeric",2),
