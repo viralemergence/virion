@@ -23,9 +23,9 @@ targets::tar_source()
 # when running locally
 # homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-github_actions_path <- "/__t/juliaup/1.17.4/x64"
+github_actions_path <- "/__t/juliaup/1.19.4/x64"
 # when running with act
-# act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
+# act_path <- "/opt/hostedtoolcache/juliaup/1.19.4/x64"
 update_path(items_to_add = github_actions_path)
 
 # source julia packages
