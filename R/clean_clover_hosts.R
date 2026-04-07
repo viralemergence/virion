@@ -8,17 +8,23 @@
 #' @returns data frame. Data frame 
 clean_clover_hosts <- function(virion_ictv_ratified){
   
+  
+  # clean up host data
+  virion_ictv_ratified <- virion_ictv_ratified %>%
+    dplyr::select(-c(HostSynonyms)) %>% 
+    dplyr::mutate(Host = tolower(Host))
+  
+  rlang::inform("host to lower case and dropped host synonyms col")
+  
   virion_ictv_ratified$HostFlagID <- tidyr::replace_na(virion_ictv_ratified$HostFlagID, FALSE)
 
-  print("converted NA's to falses")
+  rlang::inform("converted NA's to falses")
   
   virion_flag_cf <- virion_ictv_ratified %>% 
     dplyr::mutate(HostFlagID = case_when(
       stringr::str_detect(HostOriginal, " cf\\.") ~ TRUE,
       TRUE ~ HostFlagID
-    )) %>%
-    dplyr::select(-c(HostSynonyms)) %>% 
-    dplyr::mutate(Host = tolower(Host))
+    )) 
   
   print("flagged cf\\.")
   
