@@ -17,7 +17,8 @@ clean_clover_hosts <- function(virion_ictv_ratified){
       stringr::str_detect(HostOriginal, " cf\\.") ~ TRUE,
       TRUE ~ HostFlagID
     )) %>%
-    dplyr::select(-c(HostSynonyms))
+    dplyr::select(-c(HostSynonyms)) %>% 
+    dplyr::mutate(Host = tolower(Host))
   
   print("flagged cf\\.")
   
