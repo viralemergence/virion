@@ -10,11 +10,33 @@
 #'
 #' @examples
 deduplicate_virion <- function(virion_clover_hosts){
+  # out <- virion_clover_hosts %>% 
+  #   distinct() %>% 
+  #   dplyr::mutate_all(as.character) %>% 
+  #   dplyr::mutate_all(~tidyr::replace_na(.x, '')) %>%  
+  #   dplyr::group_by_at(dplyr::vars(-NCBIAccession)) %>% 
+  #   dplyr::summarize(NCBIAccession = stringr::str_c(NCBIAccession, collapse = ", ")) %>% 
+  #   dplyr::ungroup()
+  
+  
   out <- virion_clover_hosts %>% 
-    distinct() %>% 
-    dplyr::mutate_all(as.character) %>% 
-    dplyr::mutate_all(~tidyr::replace_na(.x, '')) %>%  
-    dplyr::group_by_at(dplyr::vars(-NCBIAccession)) %>% 
+    # get unique records
+    dplyr::distinct() %>%
+    # convert everything to character
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        as.character)
+    ) %>% 
+    # remove all NAs and replace with blanks
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        ~tidyr::replace_na(.x, '')
+      )
+    ) %>% 
+    # roll up the ncbi accession numbers 
+    dplyr::group_by(dplyr::pick(-NCBIAccession)) %>% 
     dplyr::summarize(NCBIAccession = stringr::str_c(NCBIAccession, collapse = ", ")) %>% 
     dplyr::ungroup()
 

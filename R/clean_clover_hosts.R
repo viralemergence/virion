@@ -26,7 +26,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
       TRUE ~ HostFlagID
     )) 
   
-  print("flagged cf\\.")
+  rlang::inform("flagged cf\\.")
   
   return(virion_flag_cf)
   
