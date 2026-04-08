@@ -31,7 +31,7 @@ jobs:
         if: ${{ !env.ACT }}  ## Doesn't work locally with ACT
         uses: r-lib/actions/setup-renv@v2
         with:
-          cache-version: 4
+          cache-version: 1
       - name: Install packages from renv.lock (local, no cache)
         if: ${{ env.ACT }}  ## Only locally with ACT, use `act -r` to reuse containers, effectively caching locally
         run: |
