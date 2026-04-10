@@ -8,6 +8,9 @@ library(targets)
 library(tarchetypes) # Load other packages as needed.
 source("packages.R")
 
+options(timeout = max(1000, getOption("timeout")))
+
+
 # set tar options
 
 tar_option_set(format = "qs")
@@ -210,10 +213,17 @@ high_level_check_targets <- tar_plan(
   # tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
   # tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
   
-  tar_target(virion_unique_path, make_virion_unique_path(virion_unprocessed,phage_taxa,ictv,file = "outputs/virion.csv.gz"))
+  
+  tar_target(viron_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv)),
+  tar_target(virion_ncbi_accession_numbers, get_ncbi_accession_numbers(viron_unique)),
+  tar_target(virion_unique_path, write_virion_unique(viron_unique = viron_unique,file = "outputs/virion.csv.gz")
+             
+             )
+  
 )
 # # dissolve virion ----
 dissovle_virion_targets <- tar_plan(
+  
   tar_target(virion_has_taxa_id, virion_unique_path %>%  
                dplyr::filter(
              # dplyr::filter(!is.na(HostTaxID),
@@ -241,7 +251,7 @@ dissovle_virion_targets <- tar_plan(
              virion_has_taxa_id %>% 
                select(-c(Host, HostNCBIResolved, HostGenus, HostFamily, HostOrder, HostClass,
                          Virus, VirusNCBIResolved, VirusGenus, VirusFamily, VirusOrder, VirusClass, ICTVRatified)) %>% 
-               mutate(AssocID = row_number()) %>%
+               # mutate(AssocID = row_number()) %>%
                relocate(AssocID, .before = everything())#
               ),
   tar_target(provenance, 
@@ -257,8 +267,7 @@ dissovle_virion_targets <- tar_plan(
                select(AssocID,
                       DetectionMethod,
                       DetectionOriginal, 
-                      HostFlagID,
-                      NCBIAccession)
+                      HostFlagID)
              ),
   tar_target(temporal, 
              virion_reduced_tax %>% 
@@ -272,6 +281,7 @@ dissovle_virion_targets <- tar_plan(
                       CollectionDay)
              ),
   ### write csvs
+  ncbi_accession_path = vroom_write(virion_ncbi_accession_numbers, "./outputs/ncbi_accession.csv.gz",delim = ","),
   provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
   detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
   temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
@@ -360,7 +370,8 @@ deposit_targets <- tar_plan(
  4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.
  5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.
  6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.
- 7) taxonomy_virus.csv"),
+ 7) taxonomy_virus.csv - Virus taxonomic data. Only contains taxa aligned to NCBI taxonomy.
+ 8) ncbi_accession.csv.gz - NCBI accession numbers for host-virus associations. Accession numbers are provided as comma delimited strings.           " ),
   
   # make metadata list 
   tar_target(metadata,
@@ -388,7 +399,8 @@ deposit_targets <- tar_plan(
                                          provenance = provenance_path,
                                          detection = detection_path,
                                          temporal = temporal_path,
-                                         virion_edge_list = virion_edge_list_path),
+                                         virion_edge_list = virion_edge_list_path,
+                                         ncbi_accession = ncbi_accession_path),
                           resource = here::here("outputs"),
                           publish = publish)
              )
