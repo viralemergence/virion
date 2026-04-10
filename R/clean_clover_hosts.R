@@ -20,7 +20,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
 
   rlang::inform("converted NA's to falses")
   
-  virion_flag_cf <- virion_ictv_ratified %>% 
+  virion_ictv_ratified <- virion_ictv_ratified %>% 
     dplyr::mutate(HostFlagID = case_when(
       stringr::str_detect(HostOriginal, " cf\\.") ~ TRUE,
       TRUE ~ HostFlagID
@@ -28,6 +28,33 @@ clean_clover_hosts <- function(virion_ictv_ratified){
   
   rlang::inform("flagged cf\\.")
   
-  return(virion_flag_cf)
+  virion_ictv_ratified <- virion_ictv_ratified %>% 
+    # get unique records 
+    dplyr::distinct() %>% 
+    # convert everything to character
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        as.character)
+    ) %>% 
+    # remove all NAs and replace with blanks
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        ~tidyr::replace_na(.x, '')
+      )
+    )
+  
+  rlang::inform("unique and character")
+  
+  
+  virion_ictv_ratified <- virion_ictv_ratified %>% 
+    # roll up the ncbi accession numbers 
+    dplyr::group_by(dplyr::pick(-NCBIAccession)) %>% 
+    dplyr::mutate(AssocID = as.character(dplyr::cur_group_id())) %>% 
+    dplyr::ungroup()
+  
+  
+  return(virion_ictv_ratified)
   
 }
