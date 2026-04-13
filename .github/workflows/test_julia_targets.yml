@@ -34,6 +34,9 @@ jobs:
         run: |
           renv::restore()
         shell: Rscript {0}
+      - name: Check runner size
+        run: |
+          sh df -H
       - name: Install Juliaup
         uses: julia-actions/install-juliaup@v2
         with:
