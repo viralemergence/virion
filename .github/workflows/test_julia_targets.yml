@@ -36,7 +36,7 @@ jobs:
         shell: Rscript {0}
       - name: Check runner size
         run: |
-          sh df -H
+          sh sys_deps/sys_specs.sh
       - name: Install Juliaup
         uses: julia-actions/install-juliaup@v2
         with:
