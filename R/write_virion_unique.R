@@ -4,12 +4,12 @@
 #' Writes this much smaller dataset with vroom.
 #' 
 #' 
-#' @param viron_unique Dataframe. Cleaned and unique records from make_virion_unique
+#' @param virion_unique Dataframe. Cleaned and unique records from make_virion_unique
 #' @param file String. Location for vroom to write to. 
 #' @return Dataframe. Data written via vroom.
 #' @author collinschwantes
 
-write_virion_unique <- function(viron_unique = viron_unique, file =
+write_virion_unique <- function(virion_unique, file =
                                 "outputs/virion.csv.gz") {
 
   virion_out <- viron_unique |>

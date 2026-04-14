@@ -15,10 +15,12 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     dplyr::mutate(Host = tolower(Host))
   
   rlang::inform("host to lower case and dropped host synonyms col")
+  print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_ictv_ratified$HostFlagID <- tidyr::replace_na(virion_ictv_ratified$HostFlagID, FALSE)
 
   rlang::inform("converted NA's to falses")
+  print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_ictv_ratified <- virion_ictv_ratified %>% 
     dplyr::mutate(HostFlagID = case_when(
@@ -27,6 +29,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     )) 
   
   rlang::inform("flagged cf\\.")
+  print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_ictv_ratified <- virion_ictv_ratified %>% 
     # get unique records 
@@ -46,7 +49,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     )
   
   rlang::inform("unique and character")
-  
+  print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_ictv_ratified <- virion_ictv_ratified %>% 
     # roll up the ncbi accession numbers 
@@ -54,6 +57,8 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     dplyr::mutate(AssocID = as.character(dplyr::cur_group_id())) %>% 
     dplyr::ungroup()
   
+  rlang::inform("now with group ids")
+  print(lobstr::obj_size(virion_ictv_ratified))
   
   return(virion_ictv_ratified)
   

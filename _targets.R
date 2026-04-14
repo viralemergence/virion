@@ -13,7 +13,9 @@ options(timeout = max(1000, getOption("timeout")))
 
 # set tar options
 
-tar_option_set(format = "qs")
+tar_option_set(format = "qs",
+               memory = "transient",
+               garbage_collection = 5)
 
 # Run the R scripts in the R/ folder with your custom functions:
 targets::tar_source()
@@ -28,7 +30,7 @@ targets::tar_source()
 # when running on gh actions
 github_actions_path <- "/__t/juliaup/1.19.4/x64"
 # when running with act
-# act_path <- "/opt/hostedtoolcache/juliaup/1.19.4/x64"
+# act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
 update_path(items_to_add = github_actions_path)
 
 # source julia packages
@@ -203,7 +205,7 @@ merge_clean_files_targets <- tar_plan(
     gb_formatted),
   # virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
-# # high level checks ----
+# # process and write virion ----
 high_level_check_targets <- tar_plan(
   # ### maybe convert to data.table - we will see
   # tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa),garbage_collection = TRUE),
@@ -213,10 +215,9 @@ high_level_check_targets <- tar_plan(
   # tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
   # tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
   
-  
-  tar_target(viron_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv)),
-  tar_target(virion_ncbi_accession_numbers, get_ncbi_accession_numbers(viron_unique)),
-  tar_target(virion_unique_path, write_virion_unique(viron_unique = viron_unique,file = "outputs/virion.csv.gz")
+  tar_target(virion_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv),garbage_collection = TRUE),
+  tar_target(virion_ncbi_accession_numbers, get_ncbi_accession_numbers(virion_unique),garbage_collection = TRUE),
+  tar_target(virion_unique_path, write_virion_unique(virion_unique = virion_unique,file = "outputs/virion.csv.gz")
              
              )
   

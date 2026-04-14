@@ -13,7 +13,7 @@ on:
   #   - cron: "21 0 * * 2"
   workflow_dispatch:
 jobs:
-  targets:
+  test_unique_virion:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
