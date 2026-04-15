@@ -5,9 +5,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
   # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
   schedule:
     - cron: "21 0 * * 2"
