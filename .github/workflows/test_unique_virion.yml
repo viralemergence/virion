@@ -2,15 +2,12 @@ name: test unique virion
 
 # Controls when the action will run.
 on:
-  push:
-    branches:
-      - fix/callr_crash_clover_hosts
+  # push:
+  #   branches:
+  #     - fix/callr_crash_clover_hosts
   pull_request:
     branches:
       - main
-  # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
-  # schedule:
-  #   - cron: "21 0 * * 2"
   workflow_dispatch:
 jobs:
   test_unique_virion:
