@@ -10,12 +10,19 @@
 #' @examples
 format_genbank <- function(gb,temp, database_version){
 
-  name_to_update <- which(names(gb) == 'Accession')
-  names(gb)[name_to_update] <- "NCBIAccession"
+  # name_to_update <- which(names(gb) == 'Accession')
+  # names(gb)[name_to_update] <- "NCBIAccession"
   
-  gb$Release_Date <- lubridate::ymd(gb$Release_Date)
-  gb$VirusTaxID <- as.numeric(gb$VirusTaxID)
+  # gb$Release_Date <- lubridate::ymd(gb$Release_Date)
+  # gb$VirusTaxID <- as.numeric(gb$VirusTaxID)
 
+  # with dtplyr should take advantage of optimized calls
+  gb <- gb %>%
+    dplyr::rename(NCBIAccession = 'Accession') %>% 
+    dplyr::mutate(Release_Date = lubridate::ymd(Release_Date)) %>% 
+    dplyr::mutate(VirusTaxID = as.numeric(VirusTaxID))
+    
+  
   
 # gb <- gb %>%
 #   dplyr::rename(NCBIAccession = 'Accession')%>%
@@ -34,17 +41,21 @@ print("renamed")
 
 collection_cols <- c(paste0("Collection", c("Year", "Month", "Day")))
 
-gb[, collection_cols] <- 
-  data.table::tstrsplit(gb$Collection_Date, "-", 
-                        names=paste0("Collection", 
-                                     c("Year", "Month", "Day"))) 
+collection_dates <- data.table::tstrsplit(gb[,Collection_Date], "-",
+                      names = collection_cols) |>
+  as.data.table()
+
+
+gb <- cbind(gb,collection_dates)
+
 
 release_cols <-  c(paste0("Release", c("Year", "Month", "Day")))
 
-gb[, release_cols] <- 
-  data.table::tstrsplit(gb$Release_Date, "-", 
-                        names=paste0("Release", 
-                                     c("Year", "Month", "Day"))) 
+release_dates <- data.table::tstrsplit(gb[,Release_Date], "-",
+                                          names = release_cols) |>
+  as.data.table()
+
+gb <- cbind(gb, release_dates)
 
 # gb %<>% 
 #   # known that the collection date is a string and many observations don't
@@ -57,19 +68,27 @@ gb[, release_cols] <-
 print("separated")
 
 
+# leverage dtplyr
 gb %<>% 
   dplyr::mutate(dplyr::across(tidyselect::all_of(c(collection_cols,release_cols)), 
-                   as.numeric)) 
+                   as.numeric)) %>% 
+  dplyr::mutate(HostFlagID = stringr::str_detect(gb$HostOriginal, "cf."),
+                Database = "GenBank",
+                DatabaseVersion = database_version,
+                DetectionMethod = "PCR/Sequencing",
+                DetectionOriginal = "GenBank")
+  
 
-gb$HostFlagID <- stringr::str_detect(gb$HostOriginal, "cf.")
-gb$Database <- "GenBank"
-gb$DatabaseVersion <- database_version
-# Choice to call Nucleotide all sequence and not isolation is 
-# potentially problematic - revisit 
-gb$DetectionMethod <- "PCR/Sequencing"
-# Just to keep separate from EID2 Nucleotide entries # Fix 
-# the HostSynonyms at the 01 import stage
-gb$DetectionOriginal = "GenBank"
+
+# gb$HostFlagID <- stringr::str_detect(gb$HostOriginal, "cf.")
+# gb$Database <- "GenBank"
+# gb$DatabaseVersion <- database_version
+# # Choice to call Nucleotide all sequence and not isolation is 
+# # potentially problematic - revisit 
+# gb$DetectionMethod <- "PCR/Sequencing"
+# # Just to keep separate from EID2 Nucleotide entries # Fix 
+# # the HostSynonyms at the 01 import stage
+# gb$DetectionOriginal = "GenBank"
 
 print("mutated")
 gb %<>% 
@@ -81,9 +100,6 @@ gb %<>%
                      "VirusOrder", "VirusClass")),
                    tolower)
     )
-  
-# garbage collection to remove extras stuff from memory
-gc()
   
 return(gb)
 

@@ -14,21 +14,21 @@
 make_virion_unique<- function(virion_unprocessed,phage_taxa,ictv){
   
   rlang::inform("removing phages")
-  virion_out <-remove_phage(virion_unprocessed,phage_taxa)
+  virion_no_phage <-remove_phage(virion_unprocessed,phage_taxa)
   
   
   rlang::inform("ratifying with ictv")  
-  virion_out <- ratify_virus(virion_out,ictv)
+  virion_ratified <- ratify_virus(virion_no_phage,ictv)
   
   # system_stats
   
-  system2(command = "sh",args = "sys_deps/sys_specs.sh")
+  # system2(command = "sh",args = "sys_deps/sys_specs.sh")
   
   # remove other inputs from memory before going into the memory intensive bit
-  gc(verbose = FALSE)
+  # gc(verbose = FALSE)
   
   rlang::inform("cleaning clover hosts")
-  virion_out <- clean_clover_hosts(virion_out)
+  virion_out <- clean_clover_hosts(virion_ratified)
 
   
   return(virion_out)
