@@ -17,7 +17,7 @@ get_clover <- function(
   # download.file(url,destfile = destfile)
 
   if(fs::is_file(destfile)){
-    clo <- readr::read_csv(destfile)
+    # clo <- readr::read_csv(destfile)
 
     return(destfile)
   }
@@ -28,7 +28,7 @@ get_clover <- function(
   destfile <- download_deposit_version("4435127", "data/clover","CLOVER_1\\.0_Viruses_AssociationsFlatFile\\.csv")
   
   if(fs::is_file(destfile)){
-    clo <- readr::read_csv(destfile)
+    # clo <- readr::read_csv(destfile)
     
     return(destfile)
   }

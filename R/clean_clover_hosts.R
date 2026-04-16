@@ -14,12 +14,13 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     dplyr::select(-c(HostSynonyms)) %>% 
     dplyr::mutate(Host = tolower(Host))
   
-  rlang::inform("host to lower case and dropped host synonyms col")
+  # rlang::inform("host to lower case and dropped host synonyms col")
   # print(lobstr::obj_size(virion_ictv_ratified))
   
-  virion_clean_host$HostFlagID <- tidyr::replace_na(virion_clean_host$HostFlagID, FALSE)
+  virion_clean_host <- virion_clean_host %>% 
+    dplyr::mutate(HostFlagID = tidyr::replace_na(HostFlagID, FALSE))
 
-  rlang::inform("converted NA's to falses")
+  # rlang::inform("converted NA's to falses")
   # print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_host_flag <- virion_clean_host %>% 
@@ -28,7 +29,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
       TRUE ~ HostFlagID
     )) 
   
-  rlang::inform("flagged cf\\.")
+  # rlang::inform("flagged cf\\.")
   # print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_unique <- virion_host_flag %>% 
@@ -48,7 +49,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
       )
     )
   
-  rlang::inform("unique and character")
+  # rlang::inform("unique and character")
   # print(lobstr::obj_size(virion_ictv_ratified))
   
   virion_out <- virion_unique %>% 
@@ -57,7 +58,7 @@ clean_clover_hosts <- function(virion_ictv_ratified){
     dplyr::mutate(AssocID = as.character(dplyr::cur_group_id())) %>% 
     dplyr::ungroup()
   
-  rlang::inform("now with group ids")
+  # rlang::inform("now with group ids")
   # print(lobstr::obj_size(virion_ictv_ratified))
   
   return(virion_out)

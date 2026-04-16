@@ -1,6 +1,7 @@
 library("data.table")
 library("deposits")
 library("dplyr")
+library("dtplyr")
 library("fs")
 library("gitcreds")
 library("here")

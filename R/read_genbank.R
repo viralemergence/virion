@@ -7,11 +7,24 @@
 #'
 #' @examples
 read_genbank <- function(genbank_path){
-  seq <- data.table::fread(here::here("./Source/AllNuclMetadata.csv.gz"),
-                         select = c("#Accession", "Release_Date", "Species", 
+  
+  # vroom is slower but this is a possible refactor to 
+  # drop an additional package dependency
+  # gb_raw <- vroom::vroom(file = genbank_path,
+  #                        delim = ",",
+  #                        col_select = c("#Accession",
+  #                                      "Release_Date",
+  #                                      "Species",
+  #                                      "Host",
+  #                                      "Collection_Date"),
+  #                        altrep = TRUE
+  #                        )
+  # 
+  gb_raw <- data.table::fread(genbank_path,
+                         select = c("#Accession", "Release_Date", "Species",
                                     "Host", "Collection_Date"))
-print("readin genbank")
-seq %<>% dplyr::rename(Accession = "#Accession")  
+print("read in genbank")
+gb_raw %<>% dplyr::rename(Accession = "#Accession")  
 
-  return(seq)
+  return(gb_raw)
 }

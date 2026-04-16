@@ -26,12 +26,12 @@ targets::tar_source()
 
 #set path ----
 # when running locally
-homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
+# homebrew_path <- "/opt/homebrew/bin:/opt/homebrew/sbin"
 # when running on gh actions
-# github_actions_path <- "/__t/juliaup/1.19.4/x64"
+github_actions_path <- "/__t/juliaup/1.19.4/x64"
 # when running with act
 # act_path <- "/opt/hostedtoolcache/juliaup/1.17.4/x64"
-update_path(items_to_add = homebrew_path)
+update_path(items_to_add = github_actions_path)
 
 # source julia packages
 source_julia_deps()
@@ -74,7 +74,7 @@ clover_targets <- tar_plan(
   tar_target(clo_path, get_clover()), # clover csv from github
   # Clover is a static dataset so NCBI taxonomy shifts and needs to be 
   # validated
-  tar_target(clo, readr::read_csv(clo_path) |>
+  tar_target(clo, data.table::fread(clo_path, colClasses = list(double = "PMID")) |>
                dplyr::mutate(HostNCBIResolved = FALSE,
                              PathogenNCBIResolved = FALSE)
              ),
@@ -94,7 +94,7 @@ clover_targets <- tar_plan(
                unique() %>%
                sort()),
   tar_target(clo_virus_table, jvdict(spnames = clo_virus_vec)),
-  tar_target(clo_virus_table_path, readr::write_csv(clo_virus_table, here::here("./Intermediate/GBVirusTax.csv"))),
+  tar_target(clo_virus_table_path, readr::write_csv(clo_virus_table, here::here("./Intermediate/CLOVERVirusTax.csv"))),
   tar_target(clo_virus_clean, clo_clean_viruses(clo_hosts_clean, clo_virus_table)),
   
   ## format clover data ----
@@ -110,14 +110,14 @@ genbank_download_targets <- tar_plan(
   tar_target(genbank_path, get_genbank(), 
              format = "file",
              cue = tar_cue(mode = "always")),
-  tar_target(seq, read_genbank(genbank_path))
+  tar_target(gb_dt, read_genbank(genbank_path))
 )
 
 # Digest genbank ----
 
 genbank_digest_targets <- tar_plan(
-  tar_target(gb, tibble::as_tibble(seq)), # this actually takes awhile
-  tar_target(host_vec, gb |>
+  # tar_target(gb, tibble::as_tibble(seq)), # this actually takes awhile
+  tar_target(host_vec, gb_dt |>
     dplyr::pull(Host) %>%
     unique() %>%
     sort()),
@@ -128,17 +128,17 @@ genbank_digest_targets <- tar_plan(
   tar_target(
     host_table_path, readr::write_csv(host_table, here::here("./Intermediate/GBHostTax.csv"))
     ),
-  tar_target(gb_hosts_clean, gb_clean_hosts(gb, host_table)),
+  tar_target(gb_hosts_clean, gb_clean_hosts(gb_dt, host_table)),
 
   # clean up viruses
-  tar_target(virus_vec, gb %>%
+  tar_target(virus_vec, gb_dt %>%
       dplyr::pull(Species) %>%
       unique() %>%
       sort()),
     tar_target(virus_table, jvdict(virus_vec)),
     tar_target(virus_table_path, readr::write_csv(virus_table, here::here("./Intermediate/GBVirusTax.csv"))),
     tar_target(gb_virus_clean, gb_clean_viruses(gb_hosts_clean, virus_table)),
-    tar_target(gb_virus_clean_path, vroom::vroom_write(gb, here::here(
+    tar_target(gb_virus_clean_path, vroom::vroom_write(gb_virus_clean, here::here(
       "./Intermediate/Unformatted/GenBankUnformatted.csv.gz"
     )))
   )
@@ -166,11 +166,11 @@ format_genbank_targets <- tar_plan(
 # # format predict  pcr ----
 # # merge predict and add genera ----
 predict_targets <- tar_plan(
-  predict_all_formatted = vroom(here::here("./Intermediate/Formatted/PREDICTAllFormatted.csv"),
-                                col_type = cols(PMID = col_double(),
-                                                PublicationYear = col_double()
-                                ) 
-  ) %>% 
+  predict_all_formatted = data.table::fread(here::here("./Intermediate/Formatted/PREDICTAllFormatted.csv"), 
+                                            colClasses = list(double = c("PMID",
+                                                                         "PublicationYear")
+                                                              )
+                                ) %>% 
     # drop sp as it returns false specificity,
     dplyr::mutate(HostOriginal= stringr::str_replace(HostOriginal," sp\\.","")) %>% 
     # some work has already been done to reconcile names with NCBI
@@ -208,17 +208,25 @@ merge_clean_files_targets <- tar_plan(
 # # process and write virion ----
 high_level_check_targets <- tar_plan(
   # ### maybe convert to data.table - we will see
-  # tar_target(virion_no_phage, remove_phage(virion_unprocessed,phage_taxa),garbage_collection = TRUE),
+    tar_target(virion_no_phage, 
+               remove_phage(virion_unprocessed,phage_taxa),
+               garbage_collection = TRUE),
   # # ictv = readr::read_csv("Source/ICTV Master Species List 2019.v1.csv"),
-  # tar_target(virion_ictv_ratified, ratify_virus(virion_no_phage,ictv)),
-  # tar_target(virion_clover_hosts, clean_clover_hosts(virion_ictv_ratified),garbage_collection = TRUE),
+  tar_target(virion_ictv_ratified, 
+             ratify_virus(virion_no_phage,ictv)),
+  tar_target(virion_clover_hosts, 
+             clean_clover_hosts(virion_ictv_ratified),
+             garbage_collection = TRUE),
   # tar_target(virion_unique, deduplicate_virion(virion_clover_hosts)), ## rolls up NCBI accession numbers
   # tar_target(virion_unique_path, vroom::vroom_write(virion_unique, "outputs/virion.csv.gz",delim = ","))
   
-  tar_target(virion_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv),garbage_collection = TRUE),
-  tar_target(virion_ncbi_accession_numbers, get_ncbi_accession_numbers(virion_unique),garbage_collection = TRUE),
-  tar_target(virion_unique_path, write_virion_unique(virion_unique = virion_unique,file = "outputs/virion.csv.gz")
-             
+  # tar_target(virion_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv),garbage_collection = TRUE),
+  tar_target(virion_ncbi_accession_numbers,
+             get_ncbi_accession_numbers(virion_clover_hosts),
+             garbage_collection = TRUE),
+  tar_target(virion_unique_path, 
+             write_virion_unique(virion_unique = virion_clover_hosts,
+                                 file = "outputs/virion.csv.gz")
              )
   
 )

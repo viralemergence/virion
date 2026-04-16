@@ -8,7 +8,7 @@
 #'
 #' @examples
 generate_template <- function(){
-  temp <- data.frame(Host = character(),
+  temp <- data.table(Host = character(),
   Virus = character(),
   HostTaxID = double(),
   VirusTaxID = double(),
