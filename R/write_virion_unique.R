@@ -12,7 +12,7 @@
 write_virion_unique <- function(virion_unique, file =
                                 "outputs/virion.csv.gz") {
 
-  virion_out <- viron_unique |>
+  virion_out <- virion_unique |>
     dplyr::select(-NCBIAccession) |>
     dplyr::distinct()
 
