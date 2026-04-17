@@ -17,7 +17,7 @@ get_virion_edge_list <- function(virion_reduced_tax){
               DetectionMethod, DetectionOriginal, 
               HostOriginal, VirusOriginal,
               HostFlagID,
-              NCBIAccession,
+              # NCBIAccession,
               PublicationYear, 
               ReleaseYear, ReleaseMonth, ReleaseDay,
               CollectionYear, CollectionMonth, CollectionDay)) %>% 

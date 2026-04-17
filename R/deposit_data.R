@@ -47,7 +47,21 @@ deposit_data <- function(metadata = metadata,
     stop("Multiple deposits with the same title")
   }
   
+
   cli$deposit_retrieve(deposit_id = deposit_id)
+  
+  if(stringr::str_detect(cli$metadata$identifier,
+                         pattern = as.character(deposit_id),
+                         negate = TRUE)){
+    msg <- glue::glue("The deposit ID {deposit_id} is not in the
+                      datapackage.json identifier {cli$metadata$identifier}.
+                      Update the datapackage on zenodo so that it contains
+                      the proper identifier")
+    
+    rlang::abort(message = msg)
+  }
+  
+  # create a new version of the deposit
   cli$deposit_version()
   
   # add files
@@ -70,6 +84,7 @@ deposit_data <- function(metadata = metadata,
   # add descriptions to datapackage.json
   
   data_package <- jsonlite::read_json("outputs/datapackage.json")
+  ## see R/generate_structural_metadata.R for more details
   all_defs  <- all_definitions()
   
   for(i in 1:length(data_package$resources)){

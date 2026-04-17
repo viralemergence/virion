@@ -8,7 +8,7 @@
 #'
 #' @examples
 generate_template <- function(){
-  temp <- data.frame(Host = character(),
+  temp <- data.table(Host = character(),
   Virus = character(),
   HostTaxID = double(),
   VirusTaxID = double(),
@@ -86,7 +86,7 @@ virion_definitions <- function(){
              CollectionYear = "Reports the year of actual sample collection (GenBank and Predict)",
              CollectionMonth = "Reports the month of actual sample collection (GenBank and Predict)",
              CollectionDay = "Reports the day of actual sample collection (GenBank and Predict)",
-             AssocID = "Row number. Used as an id. Will be specific to a given version of the data",
+             AssocID = "Row number used as an id for a host-virus association. Will be specific to a given version of the data",
              DatabaseDOI = "Persistent digital identifer for the database",
              Release_Date = "Date data were released",
              Collection_Date = "Date of actual sample collection")
@@ -134,7 +134,8 @@ provenance_definitions <- function(fields = c("AssocID",
                                               "Database",
                                               "DatabaseVersion",
                                               "ReferenceText", 
-                                              "PMID")){
+                                              "PMID",
+                                              "NCBIAccession")){
   
   v_defs <- virion_definitions()
   
@@ -192,6 +193,15 @@ temporal_definitions <- function(fields = c("AssocID",
   return(h_defs)
 }
 
+ncbi_accession_definitions <- function(fields = c("AssocID", 
+                                            "NCBIAccession")){
+  v_defs <- virion_definitions()
+  
+  h_defs <- v_defs[fields]
+  
+  return(h_defs)
+}
+
 all_definitions <- function(){
   list(virion= virion_definitions(),
        taxonomy_host = host_taxa_definitions(),
@@ -199,7 +209,8 @@ all_definitions <- function(){
        provenance = provenance_definitions(),
        detection = detection_definitions(),
        edgelist = edgelist_definitions(),
-       temporal = temporal_definitions()
+       temporal = temporal_definitions(),
+       ncbi_accession = ncbi_accession_definitions()
        )
 }
 

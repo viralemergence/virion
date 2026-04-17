@@ -1,16 +1,16 @@
-name: Compile virion targets
+name: check unique virion
 
 # Controls when the action will run.
 on:
-  push:
+  # push:
+  #   branches:
+  #     - fix/callr_crash_clover_hosts
+  pull_request:
     branches:
       - main
-  # run once a week - - github servers often get a lot of requests on the hour and may fail silently 
-  schedule:
-    - cron: "21 0 * * 2"
   workflow_dispatch:
 jobs:
-  targets:
+  check_unique_virion:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
@@ -44,10 +44,10 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make()
+          targets::tar_make(virion_quality_control)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make()
+          targets::tar_make(virion_quality_control)
         shell: Rscript {0}
