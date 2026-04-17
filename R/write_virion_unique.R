@@ -16,7 +16,7 @@ write_virion_unique <- function(virion_unique, file =
     dplyr::select(-NCBIAccession) |>
     dplyr::distinct()
 
-  vroom::vroom_write(virion_out,file = "outputs/virion.csv.gz",
+  vroom::vroom_write(virion_out,file = file,
                      delim = ","
                      )
   
