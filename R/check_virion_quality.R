@@ -108,6 +108,15 @@ check_virion_quality <- function(virion_unique_path) {
  ### check for 1:many relationships between viruses and taxa ids
   
 
+  # c(msg_size_total,
+  #       msg_size_host,
+  #       msg_host_coverage,
+  #       msg_size_virus,
+  #       msg_virus_coverage,
+  #       msg_ictv_coverage)
+  
+  return(TRUE)
+  
 }
 
 #' Check coverage for a given metric
