@@ -1,4 +1,4 @@
-name: test unique virion
+name: check unique virion
 
 # Controls when the action will run.
 on:
@@ -10,7 +10,7 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  test_unique_virion:
+  check_unique_virion:
     runs-on: ubuntu-latest
     container:
       image: rocker/verse:4.5.0
@@ -44,10 +44,10 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make(virion_unique_path)
+          targets::tar_make(virion_quality_control)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make(virion_unique_path)
+          targets::tar_make(virion_quality_control)
         shell: Rscript {0}
