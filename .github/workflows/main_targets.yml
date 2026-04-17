@@ -44,10 +44,10 @@ jobs:
       - name: Run targets workflow in CI
         if: ${{ !env.ACT }}
         run: |
-          targets::tar_make()
+          targets::tar_make(deposit_outcome)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
         run: |
-          targets::tar_make()
+          targets::tar_make(deposit_outcome)
         shell: Rscript {0}
