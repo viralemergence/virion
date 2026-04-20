@@ -1,8 +1,8 @@
 # The VIRION database
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/viralemergence/virion/main)
-![](https://img.shields.io/badge/Code%20license-MIT-green)
-![](https://img.shields.io/badge/Data%20license-CC--0-brightgreen)
+![](https://img.shields.io/badge/Code%20license-LGPL3-green)
+![](https://img.shields.io/badge/Data%20license-ODbl--0-brightgreen)
 
 VIRION is an atlas of the vertebrate-virus network, maintained by [Verena](https://www.viralemergence.org/), an NSF Biology Integration Institute. 
 The development of the VIRION database through 2022 is documented [here](https://journals.asm.org/doi/10.1128/mbio.02985-21); as we work to transition to a new platform, an interim changelog can also be found below.
