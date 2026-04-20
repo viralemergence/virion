@@ -226,7 +226,8 @@ high_level_check_targets <- tar_plan(
                                  file = "outputs/virion.csv.gz")
              ),
   tar_target(virion_quality_control,
-             check_virion_quality(virion_unique_path))
+             check_virion_quality(virion_unique_path,
+                                  virion_ncbi_accession_numbers))
 
 
   
