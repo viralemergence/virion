@@ -239,8 +239,6 @@ dissovle_virion_targets <- tar_plan(
   
   tar_target(virion_has_taxa_id, virion_unique_path %>%  
                dplyr::filter(
-             # dplyr::filter(!is.na(HostTaxID),
-             #        !is.na(VirusTaxID))
                HostTaxID != "",
                VirusTaxID != ""
                )
@@ -407,12 +405,12 @@ deposit_targets <- tar_plan(
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
-                                         host_tax = host_tax_path,
-                                         virus_tax = virus_tax_path,
-                                         provenance = provenance_path,
-                                         detection = detection_path,
-                                         temporal = temporal_path,
-                                         virion_edge_list = virion_edge_list_path,
+                                         # host_tax = host_tax_path,
+                                         # virus_tax = virus_tax_path,
+                                         # provenance = provenance_path,
+                                         # detection = detection_path,
+                                         # temporal = temporal_path,
+                                         # virion_edge_list = virion_edge_list_path,
                                          ncbi_accession = ncbi_accession_path),
                           resource = here::here("outputs"),
                           publish = publish)
