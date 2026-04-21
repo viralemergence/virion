@@ -196,13 +196,15 @@ predict_targets <- tar_plan(
 
 # # merge clean files ----
 merge_clean_files_targets <- tar_plan(
+  
+  
   #gb_formatted
   #clo_formatted
   #predict formatted
-  virion_unprocessed = dplyr::bind_rows(
-    clo_formatted,
-    predict_all_formatted_hosts_clean, 
-    gb_formatted),
+  tar_target(virion_unprocessed, 
+             make_virion_unprocessed(clo_formatted,
+                                     predict_all_formatted_hosts_clean,
+                                     gb_formatted)),
   # virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # process and write virion ----
