@@ -196,13 +196,15 @@ predict_targets <- tar_plan(
 
 # # merge clean files ----
 merge_clean_files_targets <- tar_plan(
+  
+  
   #gb_formatted
   #clo_formatted
   #predict formatted
-  virion_unprocessed = dplyr::bind_rows(
-    clo_formatted,
-    predict_all_formatted_hosts_clean, 
-    gb_formatted),
+  tar_target(virion_unprocessed, 
+             make_virion_unprocessed(clo_formatted,
+                                     predict_all_formatted_hosts_clean,
+                                     gb_formatted)),
   # virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # process and write virion ----
@@ -226,7 +228,8 @@ high_level_check_targets <- tar_plan(
                                  file = "outputs/virion.csv.gz")
              ),
   tar_target(virion_quality_control,
-             check_virion_quality(virion_unique_path))
+             check_virion_quality(virion_unique_path,
+                                  virion_ncbi_accession_numbers))
 
 
   
@@ -236,8 +239,6 @@ dissovle_virion_targets <- tar_plan(
   
   tar_target(virion_has_taxa_id, virion_unique_path %>%  
                dplyr::filter(
-             # dplyr::filter(!is.na(HostTaxID),
-             #        !is.na(VirusTaxID))
                HostTaxID != "",
                VirusTaxID != ""
                )
@@ -404,12 +405,12 @@ deposit_targets <- tar_plan(
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
-                                         host_tax = host_tax_path,
-                                         virus_tax = virus_tax_path,
-                                         provenance = provenance_path,
-                                         detection = detection_path,
-                                         temporal = temporal_path,
-                                         virion_edge_list = virion_edge_list_path,
+                                         # host_tax = host_tax_path,
+                                         # virus_tax = virus_tax_path,
+                                         # provenance = provenance_path,
+                                         # detection = detection_path,
+                                         # temporal = temporal_path,
+                                         # virion_edge_list = virion_edge_list_path,
                                          ncbi_accession = ncbi_accession_path),
                           resource = here::here("outputs"),
                           publish = publish)

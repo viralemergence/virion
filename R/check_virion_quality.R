@@ -3,11 +3,13 @@
 #' Looks at certain descriptive statistics 
 #'
 #' @param virion_unique_path data.table Virion unique data
+#' @param virion_ncbi_accession_numbers data.table NCBI Accession Numbers
 #'
 #' @return
 #' @author collinschwantes
 #' @export
-check_virion_quality <- function(virion_unique_path) {
+check_virion_quality <- function(virion_unique_path,
+                                 virion_ncbi_accession_numbers) {
   
   # check that data has grown?
   # 484464 from preprint
@@ -102,7 +104,22 @@ check_virion_quality <- function(virion_unique_path) {
   
   rlang::inform(msg_ictv_coverage)
 
+
+ ### look at NCBI accession numbers
+  ncbi_acc_total <- virion_ncbi_accession_numbers |>
+                      dplyr::pull(NCBIAccession) |>
+                      stringr::str_split(pattern = ",") |>
+                      unlist() |>
+                      unique() |>
+                      length()
   
+                      
+ 
+  msg_ncbi_acc_total <- glue::glue("{ncbi_acc_total} unique accession numbers from NCBI")
+  
+  rlang::inform(msg_ncbi_acc_total)
+  
+     
  ### check for 1:many relationships between hosts and taxa ids
   
  ### check for 1:many relationships between viruses and taxa ids
