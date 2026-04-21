@@ -3,6 +3,7 @@
 #' Looks at certain descriptive statistics 
 #'
 #' @param virion_unique_path data.table Virion unique data
+#' @param virion_ncbi_accession_numbers data.table NCBI Accession Numbers
 #'
 #' @return
 #' @author collinschwantes

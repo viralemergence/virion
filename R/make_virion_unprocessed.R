@@ -1,11 +1,9 @@
-#' .. content for \description{} (no empty lines) ..
-#'
-#' .. content for \details{} ..
-#'
-#' @title
-#' @param clo_formatted
-#' @param predict_all_formatted_hosts_clean
-#' @param gb_formatted
+#' binds data sets and shows resource use.
+#' 
+#' 
+#' @param clo_formatted data.table Clover data
+#' @param predict_all_formatted_hosts_clean data.table Predict data
+#' @param gb_formatted data.table genbank data
 #' @return
 #' @author collinschwantes
 #' @export
