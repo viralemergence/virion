@@ -22,8 +22,20 @@ pre_clean_hosts <- function(predict_all_formatted, pre_host_table) {
   # get col order
   col_order <- names(predict_all_formatted)
   
+  # host columns to lower
+  host_cols <- c("Host",
+                 "HostGenus",
+                 "HostFamily",
+                 "HostOrder",
+                 "HostClass")
+  
   out <- out %>% 
-    select(all_of(col_order))
+    dplyr::select(all_of(col_order)) |>
+    dplyr::mutate(across(all_of(host_cols), tolower))
+  
+  # to lower all host names
+  
+  
   
   return(out)
 }
