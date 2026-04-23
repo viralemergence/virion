@@ -1,35 +1,44 @@
-#' Clean and deduplicate VIRION data
+#' Make virion data character and unique
 #' 
-#' combines several cleaning functions into a single step to reduce
-#' targets overhead. See descriptions in remove_phage, ratify_virus, and clean_clover hosts.
+#'  Takes unprocessed virion data and makes it unique.
 #'
-#' @param virion_unprocessed Data.frame. Uncleaned VIRION data.
-#' @param phage_taxa Data.frame. Taxa identified as phages and unlikely to infect non-bacterial hosts
-#' @param ictv Data.frame. Master species list.
+#' @param virion_unprocessed Data frame. Virion data with clover components
 #'
-#' @returns Dataframe of cleaned VIRION data.
-#' @export
-#'
-#' @examples
-make_virion_unique<- function(virion_unprocessed,phage_taxa,ictv){
+#' @returns data frame. Data frame 
+make_virion_unique <- function(virion_unprocessed){
   
-  rlang::inform("removing phages")
-  virion_no_phage <-remove_phage(virion_unprocessed,phage_taxa)
+  # rlang::inform("flagged cf\\.")
+  # print(lobstr::obj_size(virion_ictv_ratified))
   
+  virion_unique <- virion_unprocessed %>% 
+    # get unique records 
+    dplyr::distinct() %>% 
+    # convert everything to character
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        as.character)
+    ) %>% 
+    # remove all NAs and replace with blanks
+    dplyr::mutate(
+      dplyr::across(
+        dplyr::everything(),
+        ~tidyr::replace_na(.x, '')
+      )
+    )
   
-  rlang::inform("ratifying with ictv")  
-  virion_ratified <- ratify_virus(virion_no_phage,ictv)
+  # rlang::inform("unique and character")
+  # print(lobstr::obj_size(virion_ictv_ratified))
   
-  # system_stats
+  virion_out <- virion_unique %>% 
+    # roll up the ncbi accession numbers 
+    dplyr::group_by(dplyr::pick(-NCBIAccession)) %>% 
+    dplyr::mutate(AssocID = as.character(dplyr::cur_group_id())) %>% 
+    dplyr::ungroup()
   
-  # system2(command = "sh",args = "sys_deps/sys_specs.sh")
-  
-  # remove other inputs from memory before going into the memory intensive bit
-  # gc(verbose = FALSE)
-  
-  rlang::inform("cleaning clover hosts")
-  virion_out <- clean_clover_hosts(virion_ratified)
-
+  # rlang::inform("now with group ids")
+  # print(lobstr::obj_size(virion_ictv_ratified))
   
   return(virion_out)
+  
 }

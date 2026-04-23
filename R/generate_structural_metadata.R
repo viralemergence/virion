@@ -40,6 +40,8 @@ generate_template <- function(){
   CollectionYear = double(),
   CollectionMonth = double(),
   CollectionDay = double(),
+  HostTaxHashID = character(),
+  VirusTaxHashID = character(),
   stringsAsFactors = FALSE)
   
   return(temp)
@@ -53,23 +55,23 @@ generate_template <- function(){
 #'
 #' @examples
 virion_definitions <- function(){
-  list(Host = "Host species name",
-             Virus = "Virus species name",
-             HostTaxID = "Taxonomic identification number from NCBI for host taxa.",
-             VirusTaxID = "Taxonomic identification number from NCBI for virus taxa.",
-             HostNCBIResolved = "Indicates whether or not the host taxa could harmonized with the NCBI taxonomy.",
-             VirusNCBIResolved = "Indicates whether or not the virus taxa could harmonized with the NCBI taxonomy.",
+  list(Host = "Genus and specific epithet commonly referred to as a binomial or scientific name.",
+             Virus = "Genus and specific epithet commonly referred to as a binomial or scientific name.",
+             HostTaxID = "Taxonomic identification number from NCBI.",
+             VirusTaxID = "Taxonomic identification number from NCBI.",
+             HostNCBIResolved = "Indicates whether or not the taxa could harmonized with the NCBI taxonomy.",
+             VirusNCBIResolved = "Indicates whether or not the taxa could harmonized with the NCBI taxonomy.",
              ICTVRatified = "Indicates whether or not the virus taxa is ratified by the International Committee on Taxonomy of Viruses (ICTV).",
-             HostGenus = "Host genus name",
-             HostFamily = "Host family name",
-             HostOrder = "Host order name",
-             HostClass = "Host class name",
+             HostGenus = "Genus name",
+             HostFamily = "Family name",
+             HostOrder = "Order name",
+             HostClass = "Class name",
              HostOriginal = "Host name from original dataset",
              HostSynonyms = "Synonyms for the host taxa",
-             VirusGenus = "Virus genus name",
-             VirusFamily = "Virus family name",
-             VirusOrder = "Virus order name",
-             VirusClass = "Virus class name",
+             VirusGenus = "Genus name",
+             VirusFamily = "Family name",
+             VirusOrder = "Order name",
+             VirusClass = "Class name",
              VirusOriginal = "Virus name from original dataset",
              HostFlagID = "Denotes the presence of possible uncertainty in host identification, which users may want to check before proceeding any further.",
              DetectionMethod = "Four harmonized categories in descending order of strength of evidence: “Isolation/Observation,” “PCR/Sequencing,” “Antibodies,” and “Not specified”. In some cases where detection method is not available via metadata, source information is used as DetectionOriginal (e.g., “NCBI Nucleotide”).",
@@ -89,7 +91,9 @@ virion_definitions <- function(){
              AssocID = "Row number used as an id for a host-virus association. Will be specific to a given version of the data",
              DatabaseDOI = "Persistent digital identifer for the database",
              Release_Date = "Date data were released",
-             Collection_Date = "Date of actual sample collection")
+             Collection_Date = "Date of actual sample collection",
+             HostTaxHashID = "Foreign Key for the taxa definitions table",      
+             VirusTaxHashID = "Foreign Key for the taxa definitions table")
              
 }
 
@@ -202,6 +206,50 @@ ncbi_accession_definitions <- function(fields = c("AssocID",
   return(h_defs)
 }
 
+virion_db_info_definitions <- function(fields = c("DatabaseVersion",
+                                                  "Database",
+                                                  "DatabaseDOI")){
+  v_defs <- virion_definitions()
+  
+  h_defs <- v_defs[fields]
+  
+  return(h_defs)
+}
+
+
+virion_tax_table_definitions <- function(fields = c("HostTaxHashID",
+                                                    "Host",
+                                                    "HostGenus",
+                                                    "HostFamily",
+                                                    "HostOrder",
+                                                    "HostClass",
+                                                    "HostTaxID",
+                                                    "HostNCBIResolved",
+                                                    "ICTVRatified")){
+  
+  v_defs <- virion_definitions()
+  
+  h_defs <- v_defs[fields]
+  
+  ## rename
+  
+  names(h_defs) <- names(h_defs) |>
+    purrr::map_chr(function(x){
+      if(x == "Host"){
+         return("ScientificName")
+      }
+      
+      if(x == "HostTaxID"){
+        return("NCBITaxID")
+      }
+      stringr::str_remove(x,"Host")
+    })
+  
+  return(h_defs)
+  
+}
+
+
 all_definitions <- function(){
   list(virion= virion_definitions(),
        taxonomy_host = host_taxa_definitions(),
@@ -210,7 +258,9 @@ all_definitions <- function(){
        detection = detection_definitions(),
        edgelist = edgelist_definitions(),
        temporal = temporal_definitions(),
-       ncbi_accession = ncbi_accession_definitions()
+       ncbi_accession = ncbi_accession_definitions(),
+       virion_db_info = virion_db_info_definitions(),
+       virion_tax_table = virion_tax_table_definitions()
        )
 }
 
