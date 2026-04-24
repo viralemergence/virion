@@ -54,7 +54,7 @@ generate_template <- function(){
 #' @export
 #'
 #' @examples
-virion_definitions <- function(){
+field_definitions <- function(){
   list(Host = "Genus and specific epithet commonly referred to as a binomial or scientific name.",
              Virus = "Genus and specific epithet commonly referred to as a binomial or scientific name.",
              HostTaxID = "Taxonomic identification number from NCBI.",
@@ -98,6 +98,35 @@ virion_definitions <- function(){
 }
 
 
+virion_definitions <- function(fields =   c('HostOriginal',
+                                            'VirusOriginal',
+                                            'HostFlagID',
+                                            'DetectionMethod',
+                                            'DetectionOriginal',
+                                            'DatabaseVersion',
+                                            'PublicationYear',
+                                            'ReferenceText',
+                                            'PMID',
+                                            'ReleaseYear',
+                                            'ReleaseMonth',
+                                            'ReleaseDay',
+                                            'CollectionYear',
+                                            'CollectionMonth',
+                                            'CollectionDay',
+                                            'HostTaxHashID',
+                                            'VirusTaxHashID',
+                                            'AssocID',
+                                            'Release_Date',
+                                            'Collection_Date')){
+  v_defs <- field_definitions()
+  
+  h_defs <- v_defs[fields]
+  
+  return(h_defs)
+}
+
+
+
 host_taxa_definitions <- function(fields =   c("HostTaxID",
                                                "Host",
                                                "HostGenus",
@@ -105,7 +134,7 @@ host_taxa_definitions <- function(fields =   c("HostTaxID",
                                                "HostOrder",
                                                "HostClass",
                                                "HostNCBIResolved")){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   h_defs <- v_defs[fields]
   
@@ -123,7 +152,7 @@ virus_taxa_definitions <- function(fields = c("VirusTaxID",
                                               "Database")){
   
   
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   h_defs <- v_defs[fields]
   
@@ -141,7 +170,7 @@ provenance_definitions <- function(fields = c("AssocID",
                                               "PMID",
                                               "NCBIAccession")){
   
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   v_defs$AssocID <- "Row number from current VIRION version"
   
@@ -159,7 +188,7 @@ detection_definitions <- function(fields = c(
                       "HostFlagID",
                       "NCBIAccession"
 )){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   v_defs$AssocID <- "Row number from current VIRION version"
   
@@ -171,7 +200,7 @@ detection_definitions <- function(fields = c(
 edgelist_definitions <- function(fields = c(
   "HostTaxID", "VirusTaxID", "AssocID"
 )){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   v_defs$AssocID <- "Row number from current VIRION version"
   
@@ -188,7 +217,7 @@ temporal_definitions <- function(fields = c("AssocID",
                                             "CollectionYear", 
                                             "CollectionMonth", 
                                             "CollectionDay")){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   v_defs$AssocID <- "Row number from current VIRION version"
   
@@ -199,7 +228,7 @@ temporal_definitions <- function(fields = c("AssocID",
 
 ncbi_accession_definitions <- function(fields = c("AssocID", 
                                             "NCBIAccession")){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   h_defs <- v_defs[fields]
   
@@ -209,7 +238,7 @@ ncbi_accession_definitions <- function(fields = c("AssocID",
 virion_db_table_definitions <- function(fields = c("DatabaseVersion",
                                                   "Database",
                                                   "DatabaseDOI")){
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   h_defs <- v_defs[fields]
   
@@ -227,7 +256,7 @@ virion_tax_table_definitions <- function(fields = c("HostTaxHashID",
                                                     "HostNCBIResolved",
                                                     "ICTVRatified")){
   
-  v_defs <- virion_definitions()
+  v_defs <- field_definitions()
   
   h_defs <- v_defs[fields]
   
