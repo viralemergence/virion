@@ -11,7 +11,7 @@
 check_virion_quality <- function(virion_unique_path,
                                  virion_ncbi_accession_numbers,
                                  virion_tax_table,
-                                 virion_db_info) {
+                                 virion_db_table) {
   
   # check that data has grown?
   # 484464 from preprint
@@ -134,15 +134,15 @@ check_virion_quality <- function(virion_unique_path,
   
   ### check data sources
   
-  database_check <- all(sort(unique(virion_db_info$Database)) ==  sort(c("GenBank","PREDICT","EID2","Shaw","HP3","GMPD2")))
+  database_check <- all(sort(unique(virion_db_table$Database)) ==  sort(c("GenBank","PREDICT","EID2","Shaw","HP3","GMPD2")))
   
   if(!database_check){
     rlang::abort(message = "A database is missing from virion or has been added. 
                  Should contain GenBank, PREDICT, EID2, SHAW, HP3,GMPD2")
   }
   
-  if(nrow(virion_db_info) <7){
-    rlang::abort(message = "virion_db_info appears to have lost a source. 
+  if(nrow(virion_db_table) <7){
+    rlang::abort(message = "virion_db_table appears to have lost a source. 
                  Should contain at least 7 sources.")
   } 
      

@@ -206,7 +206,7 @@ ncbi_accession_definitions <- function(fields = c("AssocID",
   return(h_defs)
 }
 
-virion_db_info_definitions <- function(fields = c("DatabaseVersion",
+virion_db_table_definitions <- function(fields = c("DatabaseVersion",
                                                   "Database",
                                                   "DatabaseDOI")){
   v_defs <- virion_definitions()
@@ -259,7 +259,7 @@ all_definitions <- function(){
        edgelist = edgelist_definitions(),
        temporal = temporal_definitions(),
        ncbi_accession = ncbi_accession_definitions(),
-       virion_db_info = virion_db_info_definitions(),
+       virion_db_table = virion_db_table_definitions(),
        virion_tax_table = virion_tax_table_definitions()
        )
 }

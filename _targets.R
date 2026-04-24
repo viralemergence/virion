@@ -209,7 +209,7 @@ merge_clean_files_targets <- tar_plan(
   tar_target(clo_formatted_cleanHosts,
              clean_host_fields(clo_formatted_ictv)),
   # make db table and drop db cols
-  tar_target(clo_db_info,
+  tar_target(clo_db_table,
              clo_formatted_cleanHosts |>
                dplyr::select(DatabaseVersion,
                              Database,
@@ -240,7 +240,7 @@ merge_clean_files_targets <- tar_plan(
   tar_target(predict_all_formatted_cleaned,
              clean_host_fields(predict_all_formatted_ratified)),
   ### make db table
-  tar_target(predict_db_info,
+  tar_target(predict_db_table,
              predict_all_formatted_cleaned |>
                dplyr::select(DatabaseVersion,
                              Database) |>
@@ -269,7 +269,7 @@ merge_clean_files_targets <- tar_plan(
   tar_target(gb_formatted_cleaned,
              clean_host_fields(gb_formatted_ratified)),
   ### make db table
-  tar_target(gb_db_info,
+  tar_target(gb_db_table,
              gb_formatted_cleaned |>
                dplyr::select(DatabaseVersion,
                              Database) |>
@@ -297,8 +297,8 @@ merge_clean_files_targets <- tar_plan(
   
   
   ## make virion db table
-  tar_target(virion_db_info, 
-             dplyr::bind_rows(gb_db_info,predict_db_info,clo_db_info)
+  tar_target(virion_db_table, 
+             dplyr::bind_rows(gb_db_table,predict_db_table,clo_db_table)
              ),
   
   
@@ -335,7 +335,7 @@ high_level_check_targets <- tar_plan(
              check_virion_quality(virion_unique_path,
                                   virion_ncbi_accession_numbers,
                                   virion_tax_table,
-                                  virion_db_info))
+                                  virion_db_table))
 
 
   
@@ -403,7 +403,7 @@ dissovle_virion_targets <- tar_plan(
   virion_tax_table_path = vroom_write(virion_tax_table, "./outputs/virion_tax_table.csv.gz",delim = ","),
   
   
-  virion_db_info_path = vroom_write(virion_db_info, "./outputs/virion_db_info.csv",delim = ","),
+  virion_db_table_path = vroom_write(virion_db_table, "./outputs/virion_db_table.csv",delim = ","),
   provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
   detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
   temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
@@ -516,7 +516,7 @@ deposit_targets <- tar_plan(
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
-                                         virion_db_info = virion_db_info_path,
+                                         virion_db_table = virion_db_table_path,
                                          virion_tax_table = virion_tax_table_path,
                                          # host_tax = host_tax_path,
                                          # virus_tax = virus_tax_path,
