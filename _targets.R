@@ -197,39 +197,145 @@ predict_targets <- tar_plan(
 # # merge clean files ----
 merge_clean_files_targets <- tar_plan(
   
+  ## make database table and drop database columns
+  ## clover
+  ## remove phage
+  tar_target(clo_formatted_no_phage,
+             remove_phage(clo_formatted,phage_taxa)),
+  ## ratify viruses
+  tar_target(clo_formatted_ictv,
+             ratify_virus(clo_formatted_no_phage,ictv)),
+  ## clean up host fields
+  tar_target(clo_formatted_cleanHosts,
+             clean_host_fields(clo_formatted_ictv)),
+  # make db table and drop db cols
+  tar_target(clo_db_table,
+             clo_formatted_cleanHosts |>
+               dplyr::select(DatabaseVersion,
+                             Database,
+                             DatabaseDOI) |>
+               distinct()),
+  tar_target(clo_formatted_no_db,
+             clo_formatted_cleanHosts |>
+               dplyr::select(-Database,-DatabaseDOI) |>
+               make_tax_hash() ## adds two columns so no impact on size
+             ),
+
+  ## pull taxonomy table
+  tar_target(clo_tax_table,
+             make_tax_table(clo_formatted_no_db)
+              ),
   
-  #gb_formatted
-  #clo_formatted
-  #predict formatted
+  ## drop taxonomy cols
+  tar_target(clo_formatted_no_tax,
+             drop_tax_columns(clo_formatted_no_db)),
+  ## predict
+  ### drop phages
+  tar_target(predict_all_formatted_no_phage,
+             remove_phage(predict_all_formatted_hosts_clean,phage_taxa)),
+  ### ratify viruses
+  tar_target(predict_all_formatted_ratified,
+             ratify_virus(predict_all_formatted_no_phage,ictv)),
+  ### clean up host fields
+  tar_target(predict_all_formatted_cleaned,
+             clean_host_fields(predict_all_formatted_ratified)),
+  ### make db table
+  tar_target(predict_db_table,
+             predict_all_formatted_cleaned |>
+               dplyr::select(DatabaseVersion,
+                             Database) |>
+               distinct()),
+  ### drop db cols and make tax hash
+  tar_target(predict_all_formatted_no_db,
+             predict_all_formatted_cleaned |>
+               dplyr::select(-Database) |>
+               make_tax_hash()
+  ),
+  ## make tax table
+  tar_target(predict_tax_table,
+             make_tax_table(predict_all_formatted_no_db)
+  ),
+  ## drop tax cols
+  tar_target(predict_formatted_no_tax,
+             drop_tax_columns(predict_all_formatted_no_db)),
+  ## genbank 
+  ### drop phages
+  tar_target(gb_formatted_no_phage,
+             remove_phage(gb_formatted,phage_taxa)),
+  ### ratify viruses
+  tar_target(gb_formatted_ratified,
+             ratify_virus(gb_formatted_no_phage,ictv)),
+  ### clean up host fields
+  tar_target(gb_formatted_cleaned,
+             clean_host_fields(gb_formatted_ratified)),
+  ### make db table
+  tar_target(gb_db_table,
+             gb_formatted_cleaned |>
+               dplyr::select(DatabaseVersion,
+                             Database) |>
+               distinct()),
+  ### drop db cols and make tax hash
+  tar_target(gb_formatted_no_db,
+             gb_formatted_cleaned |>
+               dplyr::select(-Database) |>
+               make_tax_hash()
+  ),
+  
+  ## make tax table
+  tar_target(gb_tax_table,
+             make_tax_table(gb_formatted_no_db)
+  ),
+  ## drop tax cols
+  tar_target(gb_formatted_no_tax,
+             drop_tax_columns(gb_formatted_no_db)),
+  ## make virion tax table
+  
+  tar_target(virion_tax_table, 
+             dplyr::bind_rows(gb_tax_table,predict_tax_table,clo_tax_table) |>
+               dplyr::distinct()
+  ),
+  
+  
+  ## make virion db table
+  tar_target(virion_db_table, 
+             dplyr::bind_rows(gb_db_table,predict_db_table,clo_db_table)
+             ),
+  
+  
+  
+  #roll a virion
   tar_target(virion_unprocessed, 
-             make_virion_unprocessed(clo_formatted,
-                                     predict_all_formatted_hosts_clean,
-                                     gb_formatted)),
+             make_virion_unprocessed(clo_formatted_no_tax,
+                                     predict_formatted_no_tax,
+                                     gb_formatted_no_tax)),
   # virion_unprocessed_path = vroom::vroom_write(virion_unprocessed, "./Intermediate/Formatted/VIRIONUnprocessed.csv.gz")
 )
 # # process and write virion ----
 high_level_check_targets <- tar_plan(
   # ### maybe convert to data.table - we will see
-    tar_target(virion_no_phage, 
-               remove_phage(virion_unprocessed,phage_taxa),
-               garbage_collection = TRUE),
-  tar_target(virion_ictv_ratified, 
-             ratify_virus(virion_no_phage,ictv)),
-  tar_target(virion_clover_hosts, 
-             clean_clover_hosts(virion_ictv_ratified),
-             garbage_collection = TRUE),
+  #   tar_target(virion_no_phage, 
+  #              remove_phage(virion_unprocessed,phage_taxa),
+  #              garbage_collection = TRUE),
+  # tar_target(virion_ictv_ratified, 
+  #            ratify_virus(virion_no_phage,ictv)),
+  # tar_target(virion_clover_hosts, 
+  #            clean_clover_hosts(virion_ictv_ratified),
+  #            garbage_collection = TRUE),
   
-  # tar_target(virion_unique, make_virion_unique(virion_unprocessed,phage_taxa,ictv),garbage_collection = TRUE),
+  tar_target(virion_unique, make_virion_unique(virion_unprocessed),
+             garbage_collection = TRUE),
   tar_target(virion_ncbi_accession_numbers,
-             get_ncbi_accession_numbers(virion_clover_hosts),
+             get_ncbi_accession_numbers(virion_unique),
              garbage_collection = TRUE),
   tar_target(virion_unique_path, 
-             write_virion_unique(virion_unique = virion_clover_hosts,
+             write_virion_unique(virion_unique = virion_unique,
                                  file = "outputs/virion.csv.gz")
              ),
   tar_target(virion_quality_control,
              check_virion_quality(virion_unique_path,
-                                  virion_ncbi_accession_numbers))
+                                  virion_ncbi_accession_numbers,
+                                  virion_tax_table,
+                                  virion_db_table))
 
 
   
@@ -293,6 +399,11 @@ dissovle_virion_targets <- tar_plan(
              ),
   ### write csvs
   ncbi_accession_path = vroom_write(virion_ncbi_accession_numbers, "./outputs/ncbi_accession.csv.gz",delim = ","),
+  
+  virion_tax_table_path = vroom_write(virion_tax_table, "./outputs/virion_tax_table.csv.gz",delim = ","),
+  
+  
+  virion_db_table_path = vroom_write(virion_db_table, "./outputs/virion_db_table.csv",delim = ","),
   provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
   detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
   temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
@@ -405,6 +516,8 @@ deposit_targets <- tar_plan(
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
+                                         virion_db_table = virion_db_table_path,
+                                         virion_tax_table = virion_tax_table_path,
                                          # host_tax = host_tax_path,
                                          # virus_tax = virus_tax_path,
                                          # provenance = provenance_path,

@@ -9,7 +9,9 @@
 #' @author collinschwantes
 #' @export
 check_virion_quality <- function(virion_unique_path,
-                                 virion_ncbi_accession_numbers) {
+                                 virion_ncbi_accession_numbers,
+                                 virion_tax_table,
+                                 virion_db_table) {
   
   # check that data has grown?
   # 484464 from preprint
@@ -25,7 +27,7 @@ check_virion_quality <- function(virion_unique_path,
   # check that data has hosts
   
   has_hosts <- virion_unique_path %>% 
-    pull(Host) |>
+    pull(HostTaxHashID) |>
     unique() |>
     length()
   
@@ -39,7 +41,7 @@ check_virion_quality <- function(virion_unique_path,
   
   # check that data has viruses
   has_viruses <- virion_unique_path %>% 
-    pull(Virus) |>
+    pull(VirusTaxHashID) |>
     unique() |>
     length()
   
@@ -54,7 +56,8 @@ check_virion_quality <- function(virion_unique_path,
   ## check that all hosts are lower case #####
   
   uppercase_hosts <- virion_unique_path |>
-    dplyr::filter(stringr::str_detect(string = Host,pattern = "[A-Z]")) |>
+    dplyr::inner_join(virion_tax_table, by = c("HostTaxHashID" = "TaxHashID")) |>
+    dplyr::filter(stringr::str_detect(string = ScientificName,pattern = "[A-Z]")) |>
     nrow()
   
   if(uppercase_hosts != 0){
@@ -64,17 +67,20 @@ check_virion_quality <- function(virion_unique_path,
   
   ### check that all viruses are lower case ####
   uppercase_viruses <- virion_unique_path |>
-    dplyr::filter(stringr::str_detect(string = Virus,pattern = "[A-Z]")) |>
+    dplyr::inner_join(virion_tax_table, by = c("VirusTaxHashID" = "TaxHashID")) |>
+    dplyr::filter(stringr::str_detect(string = ScientificName,pattern = "[A-Z]")) |>
     nrow()
   
-  if(uppercase_hosts != 0){
+  if(uppercase_viruses != 0){
     rlang::abort(message = "Virus case: there are upper case viruses for some reason.")
   } 
   
   # check that data has NCBI tax
   
-  ncbi_hosts <- virion_unique_path %>% 
-    filter(as.logical(HostNCBIResolved)) |>
+  ncbi_hosts <- virion_unique_path |>
+    dplyr::left_join(virion_tax_table, by = c("HostTaxHashID" = "TaxHashID"), 
+                     relationship = "many-to-one") |>
+    filter(as.logical(NCBIResolved)) |>
     nrow()
   
   host_ncbi_coverage <- coverage_x(ncbi_hosts,virion_size)
@@ -83,8 +89,15 @@ check_virion_quality <- function(virion_unique_path,
   
   rlang::inform(msg_host_coverage)
   
-  ncbi_virus <- virion_unique_path %>% 
-    filter(as.logical(VirusNCBIResolved)) |>
+  ### check virus coverage
+  
+  virion_unique_virus_tax <- virion_unique_path %>% 
+    dplyr::left_join(virion_tax_table, 
+                     by = c("VirusTaxHashID" = "TaxHashID"),
+                     relationship = "many-to-one")
+  
+  ncbi_virus <-  virion_unique_virus_tax |>
+    filter(as.logical(NCBIResolved)) |>
     nrow()
   
   virus_ncbi_coverage <- coverage_x(ncbi_virus,virion_size)
@@ -94,7 +107,7 @@ check_virion_quality <- function(virion_unique_path,
   rlang::inform(msg_virus_coverage)
   # check that data has ICTV tax
   
-  ictv_rat_virus <- virion_unique_path %>% 
+  ictv_rat_virus <- virion_unique_virus_tax %>% 
     filter(as.logical(ICTVRatified)) |>
     nrow()
   
@@ -119,6 +132,19 @@ check_virion_quality <- function(virion_unique_path,
   
   rlang::inform(msg_ncbi_acc_total)
   
+  ### check data sources
+  
+  database_check <- all(sort(unique(virion_db_table$Database)) ==  sort(c("GenBank","PREDICT","EID2","Shaw","HP3","GMPD2")))
+  
+  if(!database_check){
+    rlang::abort(message = "A database is missing from virion or has been added. 
+                 Should contain GenBank, PREDICT, EID2, SHAW, HP3,GMPD2")
+  }
+  
+  if(nrow(virion_db_table) <7){
+    rlang::abort(message = "virion_db_table appears to have lost a source. 
+                 Should contain at least 7 sources.")
+  } 
      
  ### check for 1:many relationships between hosts and taxa ids
   
