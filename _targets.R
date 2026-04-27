@@ -400,10 +400,10 @@ dissovle_virion_targets <- tar_plan(
   ### write csvs
   ncbi_accession_path = vroom_write(virion_ncbi_accession_numbers, "./outputs/ncbi_accession.csv.gz",delim = ","),
   
-  virion_tax_table_path = vroom_write(virion_tax_table, "./outputs/virion_tax_table.csv.gz",delim = ","),
+  tax_table_path = vroom_write(virion_tax_table, "./outputs/tax_table.csv.gz",delim = ","),
   
   
-  virion_db_table_path = vroom_write(virion_db_table, "./outputs/virion_db_table.csv",delim = ","),
+  db_table_path = vroom_write(virion_db_table, "./outputs/db_table.csv",delim = ","),
   provenance_path =  vroom_write(provenance, "./outputs/provenance.csv.gz",delim = ","),
   detection_path = vroom::vroom_write(x = detection, file = "./outputs/detection.csv.gz",delim = ","),
   temporal_path = vroom_write(temporal, "./outputs/temporal.csv.gz",delim = ","),
@@ -516,8 +516,8 @@ deposit_targets <- tar_plan(
   tar_target(deposit_outcome, 
              deposit_data(metadata = metadata, 
                           outputs = list(virion = virion_unique_path,
-                                         virion_db_table = virion_db_table_path,
-                                         virion_tax_table = virion_tax_table_path,
+                                         db_table = db_table_path,
+                                         tax_table = tax_table_path,
                                          # host_tax = host_tax_path,
                                          # virus_tax = virus_tax_path,
                                          # provenance = provenance_path,

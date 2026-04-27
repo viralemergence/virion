@@ -235,7 +235,7 @@ ncbi_accession_definitions <- function(fields = c("AssocID",
   return(h_defs)
 }
 
-virion_db_table_definitions <- function(fields = c("DatabaseVersion",
+db_table_definitions <- function(fields = c("DatabaseVersion",
                                                   "Database",
                                                   "DatabaseDOI")){
   v_defs <- field_definitions()
@@ -246,7 +246,7 @@ virion_db_table_definitions <- function(fields = c("DatabaseVersion",
 }
 
 
-virion_tax_table_definitions <- function(fields = c("HostTaxHashID",
+tax_table_definitions <- function(fields = c("HostTaxHashID",
                                                     "Host",
                                                     "HostGenus",
                                                     "HostFamily",
@@ -288,8 +288,8 @@ all_definitions <- function(){
        edgelist = edgelist_definitions(),
        temporal = temporal_definitions(),
        ncbi_accession = ncbi_accession_definitions(),
-       virion_db_table = virion_db_table_definitions(),
-       virion_tax_table = virion_tax_table_definitions()
+       db_table = db_table_definitions(),
+       tax_table = tax_table_definitions()
        )
 }
 
