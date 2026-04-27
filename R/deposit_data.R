@@ -90,9 +90,6 @@ deposit_data <- function(metadata = metadata,
   for(i in 1:length(data_package$resources)){
     print(i)
     
-    if(i == 3){
-      browser()
-    }
     resource_item <- data_package$resources[[i]]
     # get the definition
     def_filter <- stringr::str_detect(resource_item$name,pattern = names(all_defs))  
