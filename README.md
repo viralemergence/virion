@@ -69,12 +69,12 @@ flowchart TB
     Shaw("Shaw")
     EID2("EID2 (2015)")
 
-    RECON1("
+    RECON1("`
 __Reconciliation 1__
 • names reconciled to NCBI taxonomy
 • temporal and sampling metadata standardized
 • manual curation of unmatched names
-")
+`")
 
     style RECON1 text-align:left, fill:#efefef, stroke:#a0a0a0;
     style RECON2 text-align:left, fill:#efefef, stroke:#a0a0a0;
@@ -85,12 +85,12 @@ __Reconciliation 1__
 
     PREDICT("fa:fa-box-archive PREDICT")
 
-    RECON2("__Reconciliation 2__
+    RECON2("`__Reconciliation 2__
 • update of dynamic datasets (GenBank)
 • names reconciled to NCBI and ICTV
 • additional quality checks
 • community sourcing for validation
-")
+`")
 
 
     subgraph virion[__Virion flat files__]
@@ -106,12 +106,12 @@ __Reconciliation 1__
 
     style virion stroke:#a0a0a0, fill:#efefef;
 
-    ZenodoDeposit("
+    ZenodoDeposit("`
 __Zenodo Deposit__
 • Creates frictionless data package for Virion
 • Adds descriptive and structural metadata
 • Deposits a new version of Virion into Zenodo
-")
+`")
 
 %% Edge connections between nodes
     GMPD2 --> RECON1;
