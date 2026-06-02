@@ -69,48 +69,49 @@ flowchart TB
     Shaw("Shaw")
     EID2("EID2 (2015)")
 
-    RECON1("
-**Reconciliation 1**
+    RECON1("`
+__Reconciliation 1__
 • names reconciled to NCBI taxonomy
 • temporal and sampling metadata standardized
 • manual curation of unmatched names
-")
+`")
 
     style RECON1 text-align:left, fill:#efefef, stroke:#a0a0a0;
     style RECON2 text-align:left, fill:#efefef, stroke:#a0a0a0;
 
     CLOVER("CLOVER")
 
-    GenBank("fa:fa-arrows-spin GenBank")
+    GenBank("🔄 GenBank")
 
-    PREDICT("fa:fa-box-archive PREDICT")
+    PREDICT("📦 PREDICT")
 
-    RECON2("**Reconciliation 2**
+    RECON2("`__Reconciliation 2__
 • update of dynamic datasets (GenBank)
 • names reconciled to NCBI and ICTV
 • additional quality checks
 • community sourcing for validation
-")
+`")
 
 
-    subgraph virion[**Virion flat files**]
-        Virion["fa:fa-file-zipper Virion.csv.gz"]
-        Edgelist["fa:fa-table Edgelist.csv"]
-        TaxonomyHost["fa:fa-table TaxonomyHost.csv"]
-        TaxonomyVirus["fa:fa-table TaxonomyVirus.csv"]
-        Provenance["fa:fa-file-zipper Provenance.csv.gz"]
-        Detection["fa:fa-file-zipper Detection.csv.gz"]
-        Temporal["fa:fa-file-zipper Temporal.csv.gz"]
+    subgraph virion["`__Virion flat files__`"]
+        Virion["💾 Virion.csv.gz"]
+        db_table["💾 db_table.csv"]
+        tax_table["💾 tax_table.csv.gz"]
+        ncbi_accession["💾 ncbi_accession.csv.gz"]
         direction TB
-        Edgelist --> Virion
-        TaxonomyHost --> Virion
-        TaxonomyVirus --> Virion
-        Provenance --> Virion
-        Detection --> Virion
-        Temporal --> Virion
+        db_table --"One to Many"--- Virion
+        tax_table --"One to Many"--- Virion
+        Virion --"One to One"---> ncbi_accession
     end
 
     style virion stroke:#a0a0a0, fill:#efefef;
+
+    ZenodoDeposit("`
+__Zenodo Deposit__
+• Creates frictionless data package for Virion
+• Adds descriptive and structural metadata
+• Deposits a new version of Virion into Zenodo
+`")
 
 %% Edge connections between nodes
     GMPD2 --> RECON1;
@@ -124,6 +125,8 @@ flowchart TB
     PREDICT --> RECON2;
 
     RECON2 --> virion;
+
+    virion --> ZenodoDeposit;
 
 %% Individual node styling. Try the visual editor toolbar for easier styling!
     style GMPD2 color:#FFFFFF, fill:#AA00FF, stroke:#AA00FF
@@ -159,6 +162,8 @@ See the [repo wiki](https://github.com/viralemergence/virion/wiki) for additiona
 This section highlights major changes to the repo.
 
 See [release notes](https://github.com/viralemergence/virion/releases) for details on changes. 
+
+**May 21, 2026** Virion 2.0 is release with a significant restructure of the final outputs in order to save compute resources on GHA. The taxa table contains all taxonomic data for virion data and is linked to virion from `HashTaxID` to `HostTaxHashID` and `VirusTaxHashID`. Simlarly, database information is linked from Virion to the db_table via DatabaseVersion. Finally, all derived outputs with the except of a table of NCBI Accession numbers are no longer created. The NCBI Accession numbers table links to virion via the AssocID field. See https://dbdiagram.io/d/virion-69ea77f6d80a958d1cc9121b for a database diagram.
 
 **June 24, 2025**: Virion data will be stored in Zenodo and can be accessed via
 the [virionData package](https://github.com/viralemergence/virionData).
