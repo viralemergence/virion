@@ -81,9 +81,9 @@ __Reconciliation 1__
 
     CLOVER("CLOVER")
 
-    GenBank("fa:fa-arrows-spin GenBank")
+    GenBank("🔄 GenBank")
 
-    PREDICT("fa:fa-box-archive PREDICT")
+    PREDICT("📦 PREDICT")
 
     RECON2("`__Reconciliation 2__
 • update of dynamic datasets (GenBank)
@@ -94,10 +94,10 @@ __Reconciliation 1__
 
 
     subgraph virion[__Virion flat files__]
-        Virion["fa:fa-file-zipper Virion.csv.gz"]
-        db_table["fa:fa-file-zipper db_table.csv"]
-        tax_table["fa:fa-file-zipper tax_table.csv.gz"]
-        ncbi_accession["fa:fa-file-zipper ncbi_accession.csv.gz"]
+        Virion["💾 Virion.csv.gz"]
+        db_table["💾 db_table.csv"]
+        tax_table["💾 tax_table.csv.gz"]
+        ncbi_accession["💾 ncbi_accession.csv.gz"]
         direction TB
         db_table --"One to Many"--- Virion
         tax_table --"One to Many"--- Virion
