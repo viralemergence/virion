@@ -487,13 +487,10 @@ deposit_targets <- tar_plan(
  Data Products:
  1) virion.csv.gz - Virion dataset. All other data products are derived
  from Virion. 
- 2) temporal.csv.gz - Publication and collection data from Virion.
- 3) provenance.csv.gz - Sources used to compile virion.
- 4) detection.csv.gz - Methods used to determine the presence of viruses in Virion.
- 5) edgelist.csv - Host Virus associations. Only contains taxa aligned to NCBI taxonomy.
- 6) taxonomy_host.csv - Host taxonomic data. Only contains taxa aligned to NCBI taxonomy.
- 7) taxonomy_virus.csv - Virus taxonomic data. Only contains taxa aligned to NCBI taxonomy.
- 8) ncbi_accession.csv.gz - NCBI accession numbers for host-virus associations. Accession numbers are provided as comma delimited strings.           " ),
+ 2) ncbi_accession.csv.gz - NCBI Accession numbers for virion associations. Linked via AssocID.
+ 3) db_table.csv - Databases used to compile virion. Linked via DatabaseVersion. 
+ 4) tax_table.csv.gz - Taxa information for virion. Linked via HashTaxID to HostHashTaxID or VirusHashTaxID.
+           " ),
   
   # make metadata list 
   tar_target(metadata,
