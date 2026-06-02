@@ -93,7 +93,7 @@ __Reconciliation 1__
 `")
 
 
-    subgraph virion[__Virion flat files__]
+    subgraph virion["`__Virion flat files__`"]
         Virion["💾 Virion.csv.gz"]
         db_table["💾 db_table.csv"]
         tax_table["💾 tax_table.csv.gz"]
