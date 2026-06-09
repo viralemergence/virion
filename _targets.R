@@ -485,8 +485,7 @@ deposit_targets <- tar_plan(
  evidence strength are also available in a harmonized format.
  
  Data Products:
- 1) virion.csv.gz - Virion dataset. All other data products are derived
- from Virion. 
+ 1) virion.csv.gz - Virion dataset. 
  2) ncbi_accession.csv.gz - NCBI Accession numbers for virion associations. Linked via AssocID.
  3) db_table.csv - Databases used to compile virion. Linked via DatabaseVersion. 
  4) tax_table.csv.gz - Taxa information for virion. Linked via HashTaxID to HostHashTaxID or VirusHashTaxID.
@@ -515,12 +514,6 @@ deposit_targets <- tar_plan(
                           outputs = list(virion = virion_unique_path,
                                          db_table = db_table_path,
                                          tax_table = tax_table_path,
-                                         # host_tax = host_tax_path,
-                                         # virus_tax = virus_tax_path,
-                                         # provenance = provenance_path,
-                                         # detection = detection_path,
-                                         # temporal = temporal_path,
-                                         # virion_edge_list = virion_edge_list_path,
                                          ncbi_accession = ncbi_accession_path),
                           resource = here::here("outputs"),
                           publish = publish)
