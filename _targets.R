@@ -292,7 +292,13 @@ merge_clean_files_targets <- tar_plan(
   
   tar_target(virion_tax_table, 
              dplyr::bind_rows(gb_tax_table,predict_tax_table,clo_tax_table) |>
-               dplyr::distinct()
+               dplyr::distinct() 
+               # dplyr::mutate(
+               #   ICTVRatified = as.character(ICTVRatified),
+               #   ICTVRatified = tidyr::replace_na(ICTVRatified, ""),
+               #   NCBIResolved = as.character(NCBIResolved),
+               #   NCBIResolved = as.character(NCBIResolv)
+                             # )
   ),
   
   
