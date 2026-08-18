@@ -64,6 +64,18 @@ deposit_data <- function(metadata = metadata,
   # create a new version of the deposit
   cli$deposit_version()
   
+
+  
+  # remove files 
+  old_file_names <- cli$hostdata$files$filename
+  for(i in old_file_names){
+    # don't remove the data package
+    if(i == "datapackage.json"){
+      next()
+    }
+    cli$deposit_delete_file(filename = i)  
+  }
+  
   # add files
   cli$deposit_add_resource(path = resource)
   
