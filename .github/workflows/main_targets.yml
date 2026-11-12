@@ -30,7 +30,7 @@ jobs:
         with:
           cache-version: 1
       - name: Change cache value on failure and retry 
-        if: ${{ !env.ACT }} && failure() ## Doesn't work locally with ACT
+        if: ${{ !env.ACT && failure() }} ## Doesn't work locally with ACT
         uses: r-lib/actions/setup-renv@v2 
         with:
           cache-version: 2 ## use a different cache if failure 
