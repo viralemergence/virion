@@ -67,7 +67,7 @@ jobs:
       - name: Run targets workflow in CI second try
         if: ${{ !env.ACT && failure() }}
         run: |
-          targets::tar_make(deposit_outcome)
+          targets::tar_make(virion_quality_control)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}

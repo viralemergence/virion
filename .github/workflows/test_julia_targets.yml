@@ -70,7 +70,7 @@ jobs:
       - name: Run targets workflow in CI second try
         if: ${{ !env.ACT && failure() }}
         run: |
-          targets::tar_make(deposit_outcome)
+          targets::tar_make(current_msl_path)
         shell: Rscript {0}
       - name: Run targets workflow local with ACT
         if: ${{ env.ACT }}
