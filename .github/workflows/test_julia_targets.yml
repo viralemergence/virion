@@ -9,6 +9,9 @@ on:
       - enhancement/*
       - main
   workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # Stops the active run immediately
 jobs:
   targets_julia:
     runs-on: ubuntu-latest

@@ -9,6 +9,9 @@ on:
     branches:
       - main
   workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # Stops the active run immediately
 jobs:
   check_unique_virion:
     runs-on: ubuntu-latest
