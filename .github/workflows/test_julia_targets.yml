@@ -9,6 +9,9 @@ on:
       - enhancement/*
       - main
   workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # Stops the active run immediately
 jobs:
   targets_julia:
     runs-on: ubuntu-latest
@@ -29,11 +32,6 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
-      - name: Change cache value on failure and retry 
-        if: ${{ !env.ACT  && failure() }} ## Doesn't work locally with ACT
-        uses: r-lib/actions/setup-renv@v2 
-        with:
-          cache-version: 2 ## use a different cache if failure 
       - name: Install packages from renv.lock (local, no cache)
         if: ${{ env.ACT }}  ## Only locally with ACT, use `act -r` to reuse containers, effectively caching locally
         run: |
@@ -50,7 +48,29 @@ jobs:
         run: |
           echo $PATH
       - name: Run targets workflow in CI
+        id: run_targets
         if: ${{ !env.ACT }}
+        run: |
+          targets::tar_make(current_msl_path)
+        shell: Rscript {0}
+        continue-on-error: true
+      ### second try
+      - name: Change cache value on failure and retry 
+        if: ${{ !env.ACT && steps.run_targets.outcome != 'success' }} ## Doesn't work locally with ACT
+        uses: r-lib/actions/setup-renv@v2 
+        with:
+          cache-version: 2 ## use a different cache if failure 
+      - name: Install Juliaup second try
+        if: ${{ !env.ACT && steps.run_targets.outcome != 'success' }}
+        uses: julia-actions/install-juliaup@v2
+        with:
+          channel: 'lts'
+      - name: get path 2
+        if: ${{ !env.ACT && steps.run_targets.outcome != 'success' }}
+        run: |
+          echo $PATH
+      - name: Run targets workflow in CI second try
+        if: ${{ !env.ACT && steps.run_targets.outcome != 'success' }}
         run: |
           targets::tar_make(current_msl_path)
         shell: Rscript {0}
